@@ -5,7 +5,10 @@
 
     <body{{ if eq .Kind "home" }} class="loading"{{ end }}>
 
-        {{ if eq .Section "stories" }}
+        {{ if and (eq .Section "stories") .IsPage }}
+                {{- partial "header/stories/header.html" . -}}
+                {{- block "main" . }}{{- end }}
+        {{ else if not (eq .Section "stories") .IsPage }}
             <!-- stories -->
             <div class="container">
                 {{- partial "header/stories/header.html" . -}}
