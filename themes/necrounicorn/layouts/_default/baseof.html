@@ -6,7 +6,6 @@
     <body{{ if eq .Kind "home" }} class="loading"{{ end }}>
 
         {{ if and (eq .Section "stories") .IsPage }}
-                {{- partial "header/stories/header.html" . -}}
                 {{- block "main" . }}{{- end }}
         {{ else if and (eq .Section "stories") .IsSection }}
             <!-- stories -->
