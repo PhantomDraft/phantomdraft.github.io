@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html{{ if eq .Site.Language.LanguageCode "en" }} class="rooTykhon" {{ end }} lang="{{ .Site.Language.LanguageCode }}" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="{{ .Site.Language.LanguageCode }}" xmlns="http://www.w3.org/1999/xhtml">
 
     {{- partial "head/head.html" . -}}
 
     <body>
 
         {{ if and (eq .Section "stories") .IsPage }}
-            {{ .Content | safeHTML }}
+            {{- block "main" . }}{{- end }}
         {{ else if and (eq .Section "stories") .IsSection }}
             <!-- stories -->
             <div class="container">
