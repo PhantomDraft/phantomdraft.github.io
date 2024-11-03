@@ -3,10 +3,10 @@
 
     {{- partial "head/head.html" . -}}
 
-    <body{{ if eq .Kind "home" }} class="loading"{{ end }}>
+    <body>
 
         {{ if and (eq .Section "stories") .IsPage }}
-                {{- block "main" . }}{{- end }}
+            {{- block "main" . }}{{- end }}
         {{ else if and (eq .Section "stories") .IsSection }}
             <!-- stories -->
             <div class="container">
