@@ -54,6 +54,7 @@
             </p>
         </footer>
     {{ end }}
+
 {{ else if eq .Kind "term" }}
     {{ range .Pages }}
         {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSection)) }}
