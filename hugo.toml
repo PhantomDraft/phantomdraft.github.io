@@ -299,10 +299,10 @@ paginate = 15
          [markup.goldmark.renderer]
              unsafe = true
 
-    [frontmatter]
-        [frontmatter.defaults]
-        # stories
-        [[frontmatter.defaults]]
-            where.section = "stories"
-        [frontmatter.defaults.params]
-            markup = "html"
+[frontmatter]
+  [frontmatter.defaults]
+    # Определите раздел, для которого применится настройка
+    [[frontmatter.defaults]]
+      where.section = "stories" # Замените на нужный раздел
+      [frontmatter.defaults.params]
+        markup = "html"
