@@ -300,9 +300,7 @@ paginate = 15
              unsafe = true
 
 [frontmatter]
-  [frontmatter.defaults]
-    # Определите раздел, для которого применится настройка
-    [[frontmatter.defaults]]
-      where.section = "stories" # Замените на нужный раздел
-      [frontmatter.defaults.params]
-        markup = "html"
+  [[frontmatter.defaults]]
+    section = "stories" # Замените на нужный раздел
+    [frontmatter.defaults.params]
+      markup = "html"
