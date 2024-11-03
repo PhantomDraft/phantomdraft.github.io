@@ -30,7 +30,7 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     {{ if and (eq .Section "stories") .IsPage }}
         {{- partial "head/stories/journal-init.html" . -}}
-    {{ else if eq .Section "stories" }}
+    {{ else if not (eq .Section "stories") .IsPage }}
         {{- partial "head/stories/hugr-init.html" . -}}
     {{ else }}
         {{- partial "head/hugr-init.html" . -}}
