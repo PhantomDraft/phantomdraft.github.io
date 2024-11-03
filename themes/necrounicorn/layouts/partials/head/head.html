@@ -28,9 +28,7 @@
     {{- end -}}
     <!-- rel icon -->
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    {{ if eq .Kind "home" }}
-        {{- partial "head/main/hugr-init.html" . -}}
-    {{ else if eq .Section "stories" }}
+    {{ if eq .Section "stories" }}
         {{- partial "head/stories/hugr-init.html" . -}}
     {{ else }}
         {{- partial "head/hugr-init.html" . -}}
