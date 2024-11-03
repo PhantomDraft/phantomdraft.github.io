@@ -85,37 +85,22 @@ paginate = 15
         weight = 2
         pre = ""
     [[menus.main]]
-        name = "Stories"
-        url = "/stories"
+        name = "Library"
+        url = "/library"
         weight = 3
         pre = ""
     [[menus.main]]
-        name = "Projects"
-        url = "/projects"
+        name = "Stories - soon!"
+        url = "#"
         weight = 4
-        pre = ""
-    [[menus.main]]
-        name = "About"
-        url = "/about"
-        weight = 5
-        pre = ""
-    [[menus.main]]
-        name = "Collections"
-        url = "/series"
-        weight = 6
-        pre = ""
-    [[menus.main]]
-        name = "Library"
-        url = "/library"
-        weight = 7
         pre = ""
 
     # social, maxum 6
     [[menus.social]]
-        name = "YouTube"
-        url = "https://www.youtube.com/@spirits-show"
+        name = "horrorprom"
+        url = "https://www.instagram.com/horrorprom/"
+        pre = ""
         weight = 1
-        pre = "<i class='fa fa-youtube'></i>"
 
 [languages]
     [languages.en]
@@ -147,42 +132,22 @@ paginate = 15
                 weight = 2
                 pre = ""
             [[languages.uk.menus.main]]
-                name = "Історії"
-                url = "/uk/stories"
+                name = "Бібліотека"
+                url = "/uk/library"
                 weight = 3
                 pre = ""
             [[languages.uk.menus.main]]
-                name = "Проекти"
-                url = "/uk/page/projects"
+                name = "Історії - скоро!"
+                url = "#"
                 weight = 4
-                pre = ""
-            [[languages.uk.menus.main]]
-                name = "Про нас"
-                url = "/uk/about"
-                weight = 5
-                pre = ""
-            [[languages.uk.menus.main]]
-                name = "Колекції"
-                url = "/uk/series"
-                weight = 6
-                pre = ""
-            [[languages.uk.menus.main]]
-                name = "Бібліотека"
-                url = "/uk/library"
-                weight = 7
                 pre = ""
 
             # social
             [[languages.uk.menus.social]]
-                name = "Telegram"
-                url = "https://t.me/spiritsshow"
-                pre = "<i class='fa fa-telegram'></i>"
+                name = "horrorprom"
+                url = "https://www.instagram.com/horrorprom/"
+                pre = ""
                 weight = 1
-            [[languages.uk.menus.social]]
-                name = "YouTube"
-                url = "https://www.youtube.com/@spirits-show"
-                pre = "<i class='fa fa-youtube'></i>"
-                weight = 2
 
         [languages.ru.menus]
             # navigation
@@ -197,46 +162,26 @@ paginate = 15
                 weight = 2
                 pre = ""
             [[languages.ru.menus.main]]
-                name = "Истории"
-                url = "/ru/stories"
+                name = "Библиотека"
+                url = "/ru/library"
                 weight = 3
                 pre = ""
             [[languages.ru.menus.main]]
-                name = "Проекты"
-                url = "/ru/page/projects"
+                name = "Истории - скоро!"
+                url = "#"
                 weight = 4
-                pre = ""
-            [[languages.ru.menus.main]]
-                name = "Про нас"
-                url = "/ru/about"
-                weight = 5
-                pre = ""
-            [[languages.ru.menus.main]]
-                name = "Коллекции"
-                url = "/ru/series"
-                weight = 6
-                pre = ""
-            [[languages.ru.menus.main]]
-                name = "Библиотека"
-                url = "/ru/library"
-                weight = 7
                 pre = ""
 
             # social
             [[languages.ru.menus.social]]
-                name = "Telegram"
-                url = "https://t.me/spiritsshow"
-                pre = "<i class='fa fa-telegram'></i>"
+                name = "horrorprom"
+                url = "https://www.instagram.com/horrorprom/"
+                pre = ""
                 weight = 1
-            [[languages.ru.menus.social]]
-                name = "YouTube"
-                url = "https://www.youtube.com/@spirits-show"
-                pre = "<i class='fa fa-youtube'></i>"
-                weight = 2
 
 [author]
     name = "Ruslan D."
-    description = "Be Water, My Friend."
+    description = "Notes on Horror and Punk Subgenre Projects"
     # profile photo of author in author card
     image = "/img/author.jpeg"
     # link of followme in author card and footer
