@@ -1,0 +1,22 @@
+{{ define "main" }}
+    {{ $kind := .Kind }}
+    {{ partial "widgets/aside.html" . }}
+
+    <section class="castration fl p_relative modules">
+        <ul id="content">
+            {{ range first .Site.Params.page.maxHomePostCount .Site.RegularPages }}
+                {{ if and (not .Params.hideFromCenter) (eq $kind "home") }}
+                    {{ partial "widgets/post-card.html" . }}
+                {{ end }}
+            {{ end }}
+        </ul>
+
+        <div class="t_center not_twitch">
+            <a class="page-numbers" href='{{ if and (ne .Site.Language.Weight 1) (and .Site.IsMultiLingual (not .Site.Params.Site.OnlyOneLang)) }}
+                {{ .Lang | relURL}}/library
+            {{ else }}
+                {{ "library" | relURL }}
+            {{ end }}' class="page-numbers">{{ i18n "Home_allPosts" }}</a>
+        </div>
+    </section>
+{{ end }}

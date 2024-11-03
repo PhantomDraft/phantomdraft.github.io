@@ -1,0 +1,39 @@
+{{ $langNow := .Lang }}
+{{ $isMultiLingual := and (ne .Site.Language.Weight 1) (and .Site.IsMultiLingual (not .Site.Params.Site.OnlyOneLang)) }}
+<ul>
+    <li><a href='{{ if $isMultiLingual }}
+        {{ $langNow | relURL}}/articles
+    {{ else }}
+        {{ "articles/" | relURL }}
+    {{ end }}'>
+        {{ i18n "sidebar_articles" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "articles") }}
+    </a></li>
+    <li><a href='{{ if $isMultiLingual }}
+        {{ $langNow | relURL}}/library
+    {{ else }}
+        {{ "library/" | relURL }}
+    {{ end }}'>
+        {{ i18n "sidebar_posts" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "library") }}
+    </a></li>
+    <li><a href='{{ if $isMultiLingual }}
+        {{ $langNow | relURL}}/series
+    {{ else }}
+        {{ "series/" | relURL }}
+    {{ end }}'>
+        {{ i18n "sidebar_series" (len .Site.Taxonomies.series) }} : {{ len .Site.Taxonomies.series }}
+    </a></li>
+    <li><a href='{{ if $isMultiLingual }}
+        {{ $langNow | relURL}}/categories
+    {{ else }}
+        {{ "categories/" | relURL }}
+    {{ end }}'>
+        {{ i18n "sidebar_categories" (len .Site.Taxonomies.categories) }} : {{ len .Site.Taxonomies.categories }}
+    </a></li>
+    <li><a href='{{ if $isMultiLingual }}
+        {{ $langNow | relURL}}/tags
+    {{ else }}
+        {{ "tags/" | relURL }}
+    {{ end }}'>
+        {{ i18n "sidebar_tags" (len .Site.Taxonomies.tags) }} : {{ len .Site.Taxonomies.tags }}
+    </a></li>
+</ul>

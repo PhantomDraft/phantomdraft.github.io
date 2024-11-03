@@ -1,0 +1,37 @@
+body {
+width: expression(document.body.clientWidth > 1201 ? "1200px" : "auto");
+min-width: 1200px;
+}
+
+ol {list-style-type: decimal;}
+
+input[type=submit], 
+input[type=button], 
+input[type=reset], 
+.comment .ava, 
+.comment .comment-block, 
+.comment .comment-block-form {behavior: url(/css/border-radius.htc);}
+
+.main_slide, 
+.main body > div.p_fixed {filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000, endColorstr=#7f000000);}
+
+.main_slide section {filter: none;}
+
+.slider-nav__item {filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff, endColorstr=#7fffffff);}
+
+.slider-nav__item--current, 
+.slider-nav__item:hover {filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff, endColorstr=#7fffffff);}
+
+.grid .text {
+min-height: 200px;
+height: auto !important;
+height: expression(this.scrollHeight > 351 ? "350px" : "auto");
+}
+
+.sidebar section .inner {
+min-height: 500px;
+height: auto !important;
+height: 500px;
+width: 299px !important; /* Альтернативное решение: boxsizing.htc */
+margin-right: -32px !important;
+}

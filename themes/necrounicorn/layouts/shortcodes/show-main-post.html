@@ -1,0 +1,8 @@
+{{- $postPath := .Get "path" -}}
+{{- $post := .Site.GetPage $postPath -}}
+{{- if $post -}}
+	<h2>{{ $post.Title }}</h2>
+	<div>{{ $post.Content }}</div>
+{{- else -}}
+	<p>Post "{{ $postPath }}" not found.</p>
+{{- end -}}

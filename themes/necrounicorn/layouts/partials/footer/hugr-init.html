@@ -1,0 +1,26 @@
+<script type="text/javascript" src="/js/intro.min.js"></script>
+<script type="text/javascript" src="/js/core/jquery.tagcanvas.min.js"></script>
+<script type="text/javascript" src="/js/hugr.js?v=0.3"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        // introJs
+        introJs().setOptions({
+            tooltipClass: 'customTooltip',
+            position: 'left',
+            showButtons: false
+        }).addHints();
+    };
+
+    window.onload = TagCanvas.Start('root_biopunk', 'associative_biopunk', {
+        // tag
+        activeAudio: "/audio/Go_Tell_Aunt_Rhody.ogg",
+        centreImage: '/img/main/icon/biohazard.png',
+        dragControl: true,
+        initial: [0.200, 0.000],
+        lock: 'y',
+        shape: 'DblHelix',
+        textFont: '"Metal Mania", cursive',
+        textHeight: 16,
+        textColour: null,
+    });
+</script>

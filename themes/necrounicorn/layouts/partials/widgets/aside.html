@@ -1,0 +1,54 @@
+<aside class="fr p_relative sidebar">
+    <section class="update">
+
+        <ul class="castration fr p_relative tabs-titles">
+            <li class="castration p_relative">
+                <a class="base_width p_relative" href="#update-categories">
+                    <span>Beauty tab</span>
+                </a>
+            </li>
+            <li class="castration p_relative">
+                <a class="base_width p_relative" href="#update-interesting">
+                    <span>{{ i18n "Home_latestPosts" }}</span>
+                </a>
+            </li>
+            <li class="castration p_relative">
+                <a class="base_width p_relative" href="#update-test">
+                    <span>Online</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="castration fl p_relative inner">
+            <div id="update-categories">
+                <div class="commercial">
+                    <canvas id="root_biopunk" width="300" height="300" class="center">
+                        <p>In Internet Explorer versions up to 8, things inside the canvas are inaccessible!</p>
+                    </canvas>
+
+                    <div id="associative_biopunk" style="display: none;">
+                        <a href="#" onclick="return false">c</a>
+                        <a href="#" onclick="return false">n</a>
+                        <a href="#" onclick="return false">i</a>
+                        <a href="#" onclick="return false">o</a>
+                        <a href="#" onclick="return false">t</a>
+                        <a href="#" onclick="return false">s</a>
+                        <a href="#" onclick="return false">s</a>
+                        <a href="#" onclick="return false">i</a>
+                        <a href="#" onclick="return false">y</a>
+                        <a href="#" onclick="return false">o</a>
+                        <a href="/">#m</a>
+                        <a href="/">#p</a>
+                    </div>
+                </div>
+            </div>
+            <div id="update-interesting">
+                {{ partial "widgets/other.html" . }}
+            </div>
+            <div id="update-test">
+                {{ partial "widgets/stat.html" . }}
+            </div>
+        </div>
+
+    </section>
+</aside>

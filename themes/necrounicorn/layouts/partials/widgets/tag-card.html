@@ -1,0 +1,16 @@
+{{ range .Data.Terms.ByCount }}
+    {{ $pageTitle := .Page.Title }}
+    {{ $pageCount := .Count }}
+    <div class="content-block">
+        <div class="content-list-col">
+            <ul>
+                <li>
+                    <a href="{{ .Page.Permalink }}">
+                        <span><i class="fa fa-tag"></i></span> 
+                        {{ $pageTitle }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+{{ end }}

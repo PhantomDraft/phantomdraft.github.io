@@ -1,0 +1,15 @@
+<footer class="castration center media_base_width p_relative shoes">
+    <section>
+        {{ if .Site.Params.footer.enable }}
+            <p>
+                {{ if .Site.Params.footer.copyRight }}
+                    {{ .Site.Title }} © {{ .Site.Params.footer.from }} <br /> 
+                    Theme created by <a href="{{ .Site.Author.link }}">{{ .Site.Author.name }}</a> | 
+                {{ end }}
+                {{ if .Site.Params.footer.themeInfo }}
+                    Powered by <a href="https://gohugo.io/">Hugo</a>
+                {{ end }}
+            </p>
+        {{ end }}
+    </section>
+</footer>

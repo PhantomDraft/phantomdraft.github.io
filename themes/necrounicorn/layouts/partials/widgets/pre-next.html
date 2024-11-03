@@ -1,0 +1,43 @@
+<div class="t_center bl base_height media_base_width p_fixed mobile_navigation">
+    <ul class="base_width p_relative">
+        {{ if .PrevInSection }}
+            {{ if .NextInSection }}
+                {{ with .PrevInSection }}
+                    <li class="max fl">
+                        <a class="t_center base_height base_width p_relative" href="{{ .Permalink }}">
+                            <i class="fa fa-hand-o-left"></i> {{ .Title }}
+                        </a>
+                    </li>
+                {{ end }}
+
+                {{ with .NextInSection }}
+                    <li class="max fl">
+                        <a class="t_center base_height base_width p_relative" href="{{ .Permalink }}">
+                            {{ .Title }} <i class="fa fa-hand-o-right"></i>
+                        </a>
+                    </li>
+                {{ end }}
+
+            {{ else }}
+                {{ with .PrevInSection }}
+                    <li class="max fl">
+                        <a class="t_center base_height base_width p_relative" href="{{ .Permalink }}">
+                            <i class="fa fa-hand-o-left"></i> {{ .Title }}
+                        </a>
+                    </li>
+                {{ end }}
+            {{ end }}
+
+        {{ else }}
+            {{ if .NextInSection }}
+                {{ with .NextInSection }}
+                    <li class="max fl">
+                        <a class="t_center base_height base_width p_relative" href="{{ .Permalink }}">
+                            {{ .Title }} <i class="fa fa-hand-o-right"></i>
+                        </a>
+                    </li>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </ul>
+</div>

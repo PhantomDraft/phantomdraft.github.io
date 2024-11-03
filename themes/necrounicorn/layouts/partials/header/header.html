@@ -1,0 +1,40 @@
+<header id="hat" class="default">
+    <div class="center p_relative in_the_middle">
+        <div class="castration base_height fr p_relative search-form">
+            <input id="s" class="base_height base_width query" type="text" name="q" placeholder="Search" value="" required>
+            <div class="base_height p_absolute search-bat">
+                <input class="search-button" type="submit" name="sfSbm" value="GO">
+            </div>
+        </div>
+
+        <nav class="base_height fl p_relative menu-main">
+            <ul>
+                <li class="fl"><a class="menuBtn" title="Ссылки" href="javascript:void(0)" href="/">
+                    <span class="logo">inside</span>
+                </a></li>
+                {{ range .Site.Menus.main }}
+                    <li class="fl"><a href="{{ .URL }}">
+                        {{ .Pre }} {{ .Name }}
+                    </a></li>
+                {{ end }}
+            </ul>
+        </nav>
+    </div>
+
+    <a id="pull" href="#" class="t_center base_height base_width p_relative">Menu</a>
+</header>
+
+<div class="p_fixed slidenav">
+    <div class="content-block">
+        <div class="content-list-col">
+            {{ if and .Site.IsMultiLingual (not .Site.Params.Site.OnlyOneLang) }}
+                {{ partial "widgets/selectLang.html" . }}
+            {{ end }}
+        </div>
+    </div>
+    <div class="content-block">
+        <div class="content-list-col">
+            {{ partial "widgets/author-card.html" . }}
+        </div>
+    </div>
+</div>

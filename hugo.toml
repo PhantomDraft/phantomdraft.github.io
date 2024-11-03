@@ -1,0 +1,300 @@
+#[deployment]
+
+#[deployment.targets]
+#name = "production"
+#URL = "https://phantomdraft.github.io/"
+#publishDir = "public"
+
+baseURL = 'https://phantomdraft.github.io/'
+# website title
+title = 'PhantomDraft'
+# theme
+theme = "necrounicorn"
+#mystery
+disableHugoGeneratorInject = true
+# whether to use robots.txt
+enableRobotsTXT = true
+# length of summary
+summaryLength = 50
+# default content of website
+deFaultContentLanguage = "en"
+# If true, auto-detect Chinese/Japanese/Korean Languages in the content.
+# This will make .Summary and .WordCount behave correctly for CJK languages.
+hasCJKLanguage = false
+#paginate
+paginate = 15
+
+[params]
+    [params.site]
+        onlyOneLang = false
+
+    # page configuration
+    [params.page]
+    # top image in home page, note that the "/" in path is necessary, the same applies below
+    homeTopImg = "/img/cover/home.jpg"
+    # title in home top image, support Markdown
+    homeTitle = "Associative Connection"
+    # content in home top image, support Markdown
+    homeContent = "Be Water, My Friend"
+    # top image in categories terms page
+    categoryTopImg = "/img/cover/categories.jpg"
+    # description of categories terms page
+    categoryDes = "description of categories page"
+    # top image in tags terms page
+    tagTopImg = "/img/cover/tag.jpg"
+    # description of tags terms page
+    tagDes = "description of tags page"
+    # top image in allosts page
+    allPostsTopImg = "/img/cover/allPosts.jpg"
+    # description of allposts page
+    allPostsDes = "description of allPosts page"
+    # top image in about page
+    aboutTopImg = "/img/cover/about.jpg"
+    # description of about page
+    aboutDes = "description of about page"
+    # default image for a post without "image" param
+    defaultPostImg = "/img/cover/default.jpg"
+    # The maximum number of articles displayed on the homepage
+    maxHomePostCount = 9
+    # Maximum number of related articles displayed
+    maxPageRelatedCount = 6
+    # Maximum number of latest articles displayed
+    maxPageNewestCount = 3
+
+    # footer
+    [params.footer]
+        # whether to enable footer
+        enable = true
+        # copyright
+        copyRight = true
+        from = 2024
+        # wheher to enable theme information
+        themeInfo = true
+
+[menus]
+    [[menus.main]]
+        name = "Root"
+        url = "/"
+        # order weight, more small more close to left, at least 1
+        weight = 1
+        # icon from FontAwesome in front of single entry
+        pre = ""
+    [[menus.main]]
+        name = "Articles"
+        url = "/articles"
+        weight = 2
+        pre = ""
+    [[menus.main]]
+        name = "Stories"
+        url = "/stories"
+        weight = 3
+        pre = ""
+    [[menus.main]]
+        name = "Projects"
+        url = "/projects"
+        weight = 4
+        pre = ""
+    [[menus.main]]
+        name = "About"
+        url = "/about"
+        weight = 5
+        pre = ""
+    [[menus.main]]
+        name = "Collections"
+        url = "/series"
+        weight = 6
+        pre = ""
+    [[menus.main]]
+        name = "Library"
+        url = "/library"
+        weight = 7
+        pre = ""
+
+    # social, maxum 6
+    [[menus.social]]
+        name = "YouTube"
+        url = "https://www.youtube.com/@spirits-show"
+        weight = 1
+        pre = "<i class='fa fa-youtube'></i>"
+
+[languages]
+    [languages.en]
+        languageCode = 'en'
+        languageName = 'English'
+        contentDir = 'content/en'
+        weight = 1
+    [languages.uk]
+        languageCode = 'uk'
+        languageName = 'Український'
+        contentDir = 'content/uk'
+        weight = 2
+    [languages.ru]
+        languageCode = 'ru'
+        languageName = 'Русский'
+        contentDir = 'content/ru'
+        weight = 3
+
+        [languages.uk.menus]
+            # navigation
+            [[languages.uk.menus.main]]
+                name = "Root"
+                url = "/uk"
+                weight = 1
+                pre = ""
+            [[languages.uk.menus.main]]
+                name = "Статті"
+                url = "/uk/articles"
+                weight = 2
+                pre = ""
+            [[languages.uk.menus.main]]
+                name = "Історії"
+                url = "/uk/stories"
+                weight = 3
+                pre = ""
+            [[languages.uk.menus.main]]
+                name = "Проекти"
+                url = "/uk/page/projects"
+                weight = 4
+                pre = ""
+            [[languages.uk.menus.main]]
+                name = "Про нас"
+                url = "/uk/about"
+                weight = 5
+                pre = ""
+            [[languages.uk.menus.main]]
+                name = "Колекції"
+                url = "/uk/series"
+                weight = 6
+                pre = ""
+            [[languages.uk.menus.main]]
+                name = "Бібліотека"
+                url = "/uk/library"
+                weight = 7
+                pre = ""
+
+            # social
+            [[languages.uk.menus.social]]
+                name = "Telegram"
+                url = "https://t.me/spiritsshow"
+                pre = "<i class='fa fa-telegram'></i>"
+                weight = 1
+            [[languages.uk.menus.social]]
+                name = "YouTube"
+                url = "https://www.youtube.com/@spirits-show"
+                pre = "<i class='fa fa-youtube'></i>"
+                weight = 2
+
+        [languages.ru.menus]
+            # navigation
+            [[languages.ru.menus.main]]
+                name = "Стержень"
+                url = "/ru"
+                weight = 1
+                pre = ""
+            [[languages.ru.menus.main]]
+                name = "Статьи"
+                url = "/ru/articles"
+                weight = 2
+                pre = ""
+            [[languages.ru.menus.main]]
+                name = "Истории"
+                url = "/ru/stories"
+                weight = 3
+                pre = ""
+            [[languages.ru.menus.main]]
+                name = "Проекты"
+                url = "/ru/page/projects"
+                weight = 4
+                pre = ""
+            [[languages.ru.menus.main]]
+                name = "Про нас"
+                url = "/ru/about"
+                weight = 5
+                pre = ""
+            [[languages.ru.menus.main]]
+                name = "Коллекции"
+                url = "/ru/series"
+                weight = 6
+                pre = ""
+            [[languages.ru.menus.main]]
+                name = "Библиотека"
+                url = "/ru/library"
+                weight = 7
+                pre = ""
+
+            # social
+            [[languages.ru.menus.social]]
+                name = "Telegram"
+                url = "https://t.me/spiritsshow"
+                pre = "<i class='fa fa-telegram'></i>"
+                weight = 1
+            [[languages.ru.menus.social]]
+                name = "YouTube"
+                url = "https://www.youtube.com/@spirits-show"
+                pre = "<i class='fa fa-youtube'></i>"
+                weight = 2
+
+[author]
+    name = "Ruslan D."
+    description = "Be Water, My Friend."
+    # profile photo of author in author card
+    image = "/img/author.jpeg"
+    # link of followme in author card and footer
+    link = "https://www.linkedin.com/in/ruslan-dubinetsky/"
+
+# Taxonomies, Currently, only the following 3 taxonomies are supported
+# If you don't want one of them，delete it in [menus] instead here
+[taxonomies]
+    series = "series"
+    category = "categories"
+    tag = "tags"
+
+# related configuration, see more: https://gohugo.io/content-management/related/
+[related]
+    threshold = 0
+    # Allow inclusion of latest articles
+    includeNewer = true
+    # When set to true, lowercase keywords can be used in both indexes and queries.
+    # This may provide more accurate results at a slight performance penalty.
+    # This value can also be set separately in the subkeys below.
+    toLower = true
+
+    [[related.indices]]
+        name = "categories"
+        # An integer weight indicating the importance of this parameter relative to other parameters.
+        # Can be 0, which has the effect of closing this index, or even a negative number.
+        # Test with different values to see what works best for your content.
+        weight = 100
+        toLower = true
+
+    [[related.indices]]
+        name = "tags"
+        weight = 80
+        toLower = true
+
+    [[related.indices]]
+        name = "date"
+        weight = 10
+
+# Markup related configuration in Hugo
+[markup]
+    # syntax highlight, see more: https://gohugo.io/functions/highlight/
+    [markup.highlight]
+        codeFences = true
+        guessSyntax = false
+        hl_Lines = ''
+        lineAnchors = ''
+        lineNoStart = 1
+        lineNos = true
+        anchorLineNos = false
+        lineNumbersInTable = true
+        noClasses = false
+        noHl = false
+        hl_inline = false
+        style = 'monokailight'
+        tabWidth = 4
+
+    # enable the following code if there are html statements in your md file
+    [markup.goldmark]
+         [markup.goldmark.renderer]
+             unsafe = true

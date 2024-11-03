@@ -1,0 +1,115 @@
+# String in Home
+[Home_latestPosts]
+	other = 'Останні публікації'
+[Home_allPosts]
+	other = 'Всі публікації'
+
+# String in Posts
+[Posts_libraryPosts]
+	other = 'Бібліотека'
+
+# String in Articles
+[Articles_articles]
+	other = 'Статті'
+
+# String in Categories taxonomy
+[Categories_categories]
+	other = 'Категорії'
+[Categories_postUnit] # make 'one' and 'other' same If there is no singular and plural
+	one = 'пост'
+	other = 'пости'
+# String in Categories terms
+[CategoriesTerms_category]
+	other = 'Категорія'
+
+# String in Tags taxonomy
+[Tags_tags]
+	other = 'Теги'
+# String in Tags terms
+[TagsTerms_tag]
+	other = 'Теґ'
+
+# String in Series taxonomy
+[Series_series]
+	other = 'Серії'
+# String in Series terms
+[SeriesTerms_series]
+	other = 'Серії'
+
+# String in About
+[About_about]
+	other = 'Про нас'
+
+# String in sidebar
+[sidebar_content] # This button will not appear until the comment function is turned on
+	other = 'контент'
+[sidebar_comment] # This button will not appear until the comment function is turned on
+	other = 'коментар'
+[sidebar_articles]
+	other = 'статті'
+[sidebar_posts]
+	other = 'пости'
+[sidebar_series]
+	other = 'серії'
+[sidebar_categories]
+	other = 'категорії'
+[sidebar_tags]
+	other = 'теги'
+[sidebar_followMe]
+	other = 'Автор сайту'
+[sidebar_tableOfContent]
+	other = 'Зміст'
+[sidebar_latestPosts]
+	other = 'останні публікації'
+[sidebar_relatedPosts]
+	other = 'Схожі публікації'
+
+# String in postInfo
+[postInfo_postedOn]
+	other = 'розміщено'
+[postInfo_updatedOn]
+	other = 'оновлено'
+[postInfo_includedIn]
+	other = 'категорії'
+[postInfo_notIncluded]
+	other = 'без категорії'
+[postInfo_wordsCount]
+	other = 'кількість слів'
+[postInfo_readingTime]
+	other = 'час читання'
+[postInfo_minute] # make 'one' and 'other' same If there is no singular and plural
+	one = 'хв'
+	other = 'хвилин'
+[postInfo_viewers]
+	other = 'читачів'
+
+# String in search
+[search_search]
+	other = 'пошук'
+[search_enterAKeyWord]
+	other = 'Введіть ключове слово'
+[search_found]
+	other = 'Знайдено'
+# keep '[search_result]' and '[search_results]' same
+# If there is no singular and plural
+[search_result] # singular
+	other = 'результат'
+[search_results] # plural
+	other = 'результати'
+[search_theEnd]
+	other = 'Кінець'
+[search_nothing]
+	other = 'Нічого не знайдено'
+
+# String in 404 page
+[_404_sorry]
+	other = 'Моссад знайде все. З часом.'
+[_404_backToHome]
+	other = 'Додому'
+
+# String in imageLoadingFailed
+[imageLoadingFailed]
+	other = 'Не вдалося завантажити зображення'
+
+[Author_name]
+	other = 'Руслан Дубінецький'

@@ -1,0 +1,50 @@
+<div class="main">
+	<ul id="bk-list" class="bk-list clearfix">
+		{{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSection)) }}
+			{{ range .Pages }}
+				<li>
+					<div class="bk-book book-1 bk-bookdefault">
+						<div class="bk-front">
+							<div class="bk-cover-back"></div>
+							<div class="bk-cover">
+								<h2>
+									<span>{{ .Title }}</span>
+								</h2>
+							</div>
+						</div>
+						<div class="bk-page">
+							<div class="bk-content bk-content-current">
+								<p>{{ .Title }}</p>
+							</div>
+							<div class="bk-content">
+								<p>{{ .Title }}</p>
+							</div>
+							<div class="bk-content">
+								<p>{{ .Title }}</p>
+							</div>
+						</div>
+						<div class="bk-back">
+							<p>{{ .Title }}</p>
+						</div>
+						<div class="bk-right"></div>
+						<div class="bk-left">
+							<h2>
+								<span>{{ .Title }}</span>
+							</h2>
+						</div>
+						<div class="bk-top"></div>
+						<div class="bk-bottom"></div>
+					</div>
+					<div class="bk-info">
+						<button class="bk-bookback">Flip</button>
+						<button class="bk-bookview">View inside</button>
+						<h3>
+							<span>{{ .Title }}</span>
+						</h3>
+						<p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+					</div>
+				</li>
+			{{ end }}
+		{{ end }}
+	</ul>
+</div>

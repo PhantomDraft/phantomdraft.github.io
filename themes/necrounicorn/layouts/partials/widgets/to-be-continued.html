@@ -1,0 +1,26 @@
+{{ $lastGroup := "" }}
+{{ $firstNextGroup := "" }}
+<!-- Если есть группы на текущей странице -->
+{{ if gt (len .Paginator.PageGroups) 0 }}
+    <!-- Получаем последнюю группу на текущей странице -->
+    {{ $lastGroup = index .Paginator.PageGroups (sub (len .Paginator.PageGroups) 1) }}
+{{ end }}
+<!-- Проверяем, существует ли следующая страница -->
+{{ $followingPage := .Paginator.Next }}
+{{ if $followingPage }}
+    <!-- Получаем группы на следующей странице -->
+    {{ $followingPageGroups := $followingPage.PageGroups }}
+    <!-- Если есть группы на следующей странице -->
+    {{ if gt (len $followingPageGroups) 0 }}
+        <!-- Получаем первую группу на следующей странице -->
+        {{ $firstNextGroup = index $followingPageGroups 0 }}
+    {{ end }}
+{{ end }}
+<!-- Сравнение названий последней группы на текущей странице с первой группой на следующей -->
+{{ if and (ne $lastGroup "") (ne $firstNextGroup "") (eq $lastGroup.Key $firstNextGroup.Key) }}
+    <div class="t_center castration cover p_relative atcScreen">
+        <p>Продолжение материалов за {{ $lastGroup.Key }} на следующей странице</p>
+    </div>
+{{ else if and (ne $lastGroup "") (ne $firstNextGroup "") }}
+    <!-- <p>Группы на текущей и следующей страницах не совпадают</p> -->
+{{ end }}
