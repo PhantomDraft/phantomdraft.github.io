@@ -8,7 +8,7 @@
         {{ if and (eq .Section "stories") .IsPage }}
                 {{- partial "header/stories/header.html" . -}}
                 {{- block "main" . }}{{- end }}
-        {{ else if not (eq .Section "stories") .IsPage }}
+        {{ else if and (eq .Section "stories") .IsSection }}
             <!-- stories -->
             <div class="container">
                 {{- partial "header/stories/header.html" . -}}
