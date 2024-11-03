@@ -33,9 +33,9 @@ paginate = 15
     # top image in home page, note that the "/" in path is necessary, the same applies below
     homeTopImg = "/img/cover/home.jpg"
     # title in home top image, support Markdown
-    homeTitle = "Associative Connection"
+    homeTitle = "PhantomDraft"
     # content in home top image, support Markdown
-    homeContent = "Be Water, My Friend"
+    homeContent = "Notes on Horror and Punk Subgenre Projects"
     # top image in categories terms page
     categoryTopImg = "/img/cover/categories.jpg"
     # description of categories terms page
@@ -175,7 +175,7 @@ paginate = 15
             # social
             [[languages.ru.menus.social]]
                 name = "horrorprom"
-                url = "https://www.instagram.com/horrorprom/"
+                url = "https://t.me/horrorprom"
                 pre = ""
                 weight = 1
 
