@@ -6,7 +6,7 @@
     <body>
 
         {{ if and (eq .Section "stories") .IsPage }}
-            {{- block "main" . }}{{- end }}
+            {{ .Content | safeHTML }}
         {{ else if and (eq .Section "stories") .IsSection }}
             <!-- stories -->
             <div class="container">
