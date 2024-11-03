@@ -1,3 +1,50 @@
 {{ define "main" }}
-    {{ partial "widgets/content-all.html" . }}
+<div id="fb5-ajax">
+    <div data-current="book5" class="fb5" id="fb5">
+
+        <div class="fb5-preloader">
+            <div id="wBall_1" class="wBall">
+                <div class="wInnerBall"></div>
+            </div>
+            <div id="wBall_2" class="wBall">
+                <div class="wInnerBall"></div>
+            </div>
+            <div id="wBall_3" class="wBall">
+                <div class="wInnerBall"></div>
+            </div>
+            <div id="wBall_4" class="wBall">
+                <div class="wInnerBall"></div>
+            </div>
+            <div id="wBall_5" class="wBall">
+                <div class="wInnerBall"></div>
+            </div>
+        </div>
+
+        <a href="#" id="fb5-button-back">BACK</a>
+
+        <div class="fb5-bcg-book"></div>
+
+        {{ partial "widgets/content-all.html" . }}
+
+    </div>
+</div>
+
+<script>
+    jQuery('#fb5').data('config', {
+        "page_width":"550",
+        "page_height":"715",
+        "email_form":"office@somedomain.com",
+        "zoom_double_click":"1",
+        "zoom_step":"0.06",
+        "double_click_enabled":"true",
+        "tooltip_visible":"true",
+        "toolbar_visible":"true",
+        "gotopage_width":"30",
+        "deeplinking_enabled":"true",
+        "rtl":"false",
+        'full_area':'true',
+        'lazy_loading_thumbs':'false',
+        'lazy_loading_pages':'false'
+    });
+</script>
 {{ end }}

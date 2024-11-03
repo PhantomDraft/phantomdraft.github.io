@@ -23,57 +23,26 @@ hideFromArchives: false
 # Hide from everything but the archive
 hideFromSection: false
 ---
-<div id="fb5-ajax">    
-      <div data-current="book5" class="fb5" id="fb5">      
+<div id="fb5-container-book">
+    <section id="fb5-deeplinking">
+        <ul>
+            <li data-address="page1" data-page="1"></li>
+            <li data-address="page2-page3" data-page="2"></li>
+            <li data-address="page2-page3" data-page="3"></li>
+            <li data-address="page4-5" data-page="4"></li>
+            <li data-address="page4-5" data-page="5"></li>
+            <li data-address="page6-page7" data-page="6"></li>
+            <li data-address="page6-page7" data-page="7"></li>
+            <li data-address="page8-page9" data-page="8"></li>
+            <li data-address="page8-page9" data-page="9"></li>
+            <li data-address="10-11" data-page="10"></li>
+            <li data-address="10-11" data-page="11"></li>
+            <li data-address="end" data-page="12"></li>
+        </ul>
+    </section>
 
-            <div class="fb5-preloader">
-            <div id="wBall_1" class="wBall">
-            <div class="wInnerBall">
-            </div>
-            </div>
-            <div id="wBall_2" class="wBall">
-            <div class="wInnerBall">
-            </div>
-            </div>
-            <div id="wBall_3" class="wBall">
-            <div class="wInnerBall">
-            </div>
-            </div>
-            <div id="wBall_4" class="wBall">
-            <div class="wInnerBall">
-            </div>
-            </div>
-            <div id="wBall_5" class="wBall">
-            <div class="wInnerBall">
-            </div>
-            </div>
-            </div>
-
-            <a href="#" id="fb5-button-back">BACK</a>
-
-            <div class="fb5-bcg-book"></div>
-
-            <div id="fb5-container-book">
-
-                <section id="fb5-deeplinking">
-                     <ul>
-                          <li data-address="page1" data-page="1"></li>
-                          <li data-address="page2-page3" data-page="2"></li>
-                          <li data-address="page2-page3" data-page="3"></li>
-                          <li data-address="page4-5" data-page="4"></li>
-                          <li data-address="page4-5" data-page="5"></li>
-                          <li data-address="page6-page7" data-page="6"></li>
-                          <li data-address="page6-page7" data-page="7"></li>
-                          <li data-address="page8-page9" data-page="8"></li>
-                          <li data-address="page8-page9" data-page="9"></li>
-                          <li data-address="10-11" data-page="10"></li>
-                          <li data-address="10-11" data-page="11"></li>
-                          <li data-address="end" data-page="12"></li>
-                     </ul>
-                 </section>
-
-                <section id="fb5-about">
-                <h3>How to read a book?</h3>
+    <section id="fb5-about">
+        <h3>How to read a book?</h3>
         <p>Nulla congue pulvinar pharetra. Cras sed malesuada arcu. Duis eleifend nunc laoreet odio dapibus ac convallis sapien ornare. Nullam a est id diam elementum rhoncus.Ad dicam diceret pri. Cu animal eligendi eam, nam ea alia oratio constituam, ad elit dolore possim est. Usu in nostro delectus, ne definitionem delicatissimi has. Cu sea iriure vivendum dignissim, choro nonumy philosophia ex mea. In usu reque liber fabellas, omnes omittam te per, ei novum percipitur cum. An eum erat facer, persius delectus ei vis.</p>
         <p>&nbsp;</p>
         <h3>Short description</h3>
@@ -82,15 +51,12 @@ hideFromSection: false
         <h3>Start reading!</h3>
         <p>Nulla congue pulvinar pharetra. Cras sed malesuada arcu. Duis eleifend nunc laoreet odio dapibus ac convallis sapien ornare. Nullam a est id diam elementum <a href="javascript:setPage(2)">rhoncus</a>.Te amet disputando vel. Cu vim persius consequat consetetur, eam id melius fuisset principes. Clita habemus et vix, ius doming philosophia et. Eos mutat luptatum ad. Ad iudico repudiandae nec, mel an tempor accusata eloquentiam, choro forensibus et eam.</p>
         <p>&nbsp;</p>
-                </section>
+    </section>
 
-                <div id="fb5-book">
-
-                <div data-background-image="" class="">
-
-                     <div class="fb5-cont-page-book">
-
-                                    <div class="fb5-page-book">
+    <div id="fb5-book">
+        <div data-background-image="" class="">
+            <div class="fb5-cont-page-book">
+                <div class="fb5-page-book">
                                        <div id="fb5-cover">
                                           <ul>
                                             <li><a href="javascript:setPage(2)"><img data-src="img/cover-photo1.jpg"></a></li>
@@ -604,27 +570,3 @@ hideFromSection: false
           </section>
     
          </div>
-
-      </div>
-
-</div>
-
-    <script>    
-    jQuery('#fb5').data('config',
-    {
-    "page_width":"550",
-    "page_height":"715",
-    "email_form":"office@somedomain.com",
-    "zoom_double_click":"1",
-    "zoom_step":"0.06",
-    "double_click_enabled":"true",
-    "tooltip_visible":"true",
-    "toolbar_visible":"true",
-    "gotopage_width":"30",
-    "deeplinking_enabled":"true",
-    "rtl":"false",
-    'full_area':'true',
-    'lazy_loading_thumbs':'false',
-    'lazy_loading_pages':'false'
-    })    
-    </script>

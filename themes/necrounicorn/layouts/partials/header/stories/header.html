@@ -1,8 +1,7 @@
 <header class="clearfix">
 	<h1>{{ .Page.Title }}</h1>
 	<nav class="menu">
-		<a class="link" href="index.html">Root</a>
-		<a href="index2.html">Projects</a>
+		<a class="link" href="{{ "/" | absLangURL }}">{{ .Site.Title }}</a>
 	</nav>
 	<span class="support-note">description</span>
 </header>
