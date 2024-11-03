@@ -299,8 +299,9 @@ paginate = 15
          [markup.goldmark.renderer]
              unsafe = true
 
-[frontmatter]
-  [[frontmatter.defaults]]
-    section = "stories" # Замените на нужный раздел
-    [frontmatter.defaults.params]
-      markup = "html"
+    # html posts
+    [frontmatter]
+        [[frontmatter.defaults]]
+            section = "stories"
+            [frontmatter.defaults.params]
+            markup = "html"
