@@ -5,11 +5,7 @@
 
     <body{{ if eq .Kind "home" }} class="loading"{{ end }}>
 
-        {{ if eq .Kind "home" }}
-            <!-- home -->
-            {{- partial "home.html" . -}}
-            {{- partial "footer/main/hugr-init.html" . -}}
-        {{ else if eq .Section "stories" }}
+        {{ if eq .Section "stories" }}
             <!-- stories -->
             <div class="container">
                 {{- partial "header/stories/header.html" . -}}
