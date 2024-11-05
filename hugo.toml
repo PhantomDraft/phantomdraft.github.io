@@ -73,7 +73,7 @@ paginate = 15
 
 [menus]
     [[menus.main]]
-        name = "Root"
+        name = "Log"
         url = "/"
         # order weight, more small more close to left, at least 1
         weight = 1
@@ -122,7 +122,7 @@ paginate = 15
         [languages.uk.menus]
             # navigation
             [[languages.uk.menus.main]]
-                name = "Root"
+                name = "Лог"
                 url = "/uk"
                 weight = 1
                 pre = ""
@@ -152,7 +152,7 @@ paginate = 15
         [languages.ru.menus]
             # navigation
             [[languages.ru.menus.main]]
-                name = "Стержень"
+                name = "Лог"
                 url = "/ru"
                 weight = 1
                 pre = ""
