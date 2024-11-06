@@ -46,5 +46,44 @@
         'lazy_loading_thumbs':'false',
         'lazy_loading_pages':'false'
     });
+
+    $(function() {
+    // Отслеживаем изменения адреса
+        $.address.change(function(event) {
+            // Получаем текущий хэш URL и убираем начальный слэш
+            var currentAddress = event.value.slice(1);
+            // Ищем страницы по текущему адресу
+            var pageMatch = currentAddress.match(/page(\d+)-page(\d+)/);
+            // Проверяем, совпадает ли текущий адрес с шаблоном разворота
+            if (pageMatch) {
+                // Извлекаем номера страниц из адреса
+                var page1 = pageMatch[1];
+                var page2 = pageMatch[2];
+                // Логируем номера страниц для проверки
+                console.log("Анимация для страниц:", page1, page2);
+                // Находим изображения на страницах разворота
+                var $images = $('.turn-page-wrapper[page="' + page1 + '"], .turn-page-wrapper[page="' + page2 + '"]').find('.fb5-cont-page-book img');
+                // Проверяем, были ли выбраны изображения
+                if ($images.length === 0) {
+                    console.warn("Изображения не найдены для текущего разворота:", currentAddress);
+                    return;
+                }
+                // Применяем анимацию с плавным появлением изображений
+                $images.each(function(index, img) {
+                    $(img).css({
+                        'opacity': 0, // Начальная прозрачность
+                        'transition': 'opacity 1s ease-in', // Плавное изменение прозрачности
+                        'transition-delay': (index * 0.5) + 's' // Задержка для каждого изображения
+                    });
+                    // Запускаем анимацию появления
+                    setTimeout(function() {
+                        $(img).css('opacity', 1); // Делаем изображение видимым
+                    }, index * 500);
+                });
+            } else {
+                console.warn("Не удалось извлечь номера страниц из адреса:", currentAddress);
+            }
+        });
+    });
 </script>
 {{ end }}
