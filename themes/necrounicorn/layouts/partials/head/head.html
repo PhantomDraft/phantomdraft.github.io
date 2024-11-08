@@ -10,20 +10,14 @@
 {{ $lang := .Site.Language.Lang }}
 {{ $taxonomyData := index .Site.Data.taxonomy (print "taxonomyDescriptions_" $lang) }}
 
-<!-- Отладочный вывод -->
-{{ printf "Language: %s" $lang }}
-{{ printf "Taxonomy Data: %v" $taxonomyData }}
-{{ printf "Page Kind: %s" .Kind }}
-{{ printf "Page Title: %s" .Title }}
-
 <meta name="description" content="
     {{ if .Description }}
         {{ .Description }}
-    {{ else if eq .Kind "taxonomy" }}
-        {{ $taxonomy := .Kind }}
-        {{ $term := .Title }}
+    {{ else if eq .Kind "term" }}
+        {{ $taxonomy := .Section }}
+        {{ $term := .Title | urlize }}
         
-        <!-- Отладка для значений таксономий -->
+        <!-- Отладка для значений термина -->
         {{ printf "Taxonomy: %s, Term: %s" $taxonomy $term }}
         
         {{ $taxonomyDesc := index $taxonomyData $taxonomy }}
@@ -49,7 +43,6 @@
         {{ .Site.Params.description | default "Default fallback description" }}
     {{ end }}
 ">
-
     <!-- rel canonical -->
     <link rel="canonical" href="{{ .Permalink }}" />
     <!-- rel alternate : processing of the main page -->
