@@ -8,7 +8,8 @@
     {{ end }}
     <title>{{ .Site.Title }}{{ if not .IsHome }}{{ with .Title }} | {{ . }}{{ end }}{{ end }}</title>
 {{ $lang := .Site.Language.Lang }}
-{{ $taxonomyData := (index .Site.Data.taxonomy (print "taxonomyDescriptions_" $lang)) }}
+{{ $taxonomyData := index .Site.Data.taxonomy (print "taxonomyDescriptions_" $lang) }}
+
 <meta name="description" content="
     {{ with .Description }}
         {{ . }}
