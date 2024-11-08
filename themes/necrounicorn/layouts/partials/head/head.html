@@ -10,21 +10,12 @@
 {{ $lang := .Site.Language.Lang }}
 {{ $taxonomyData := index .Site.Data.taxonomy (print "taxonomyDescriptions_" $lang) }}
 
-<!-- Отладочный вывод -->
-{{ printf "Current Language: %s" $lang }}
-{{ printf "Taxonomy Data: %v" $taxonomyData }}
-
 <meta name="description" content="
     {{ with .Description }}
         {{ . }}
     {{ else if .IsTaxonomy }}
         {{ $taxonomy := .Kind }}
         {{ $term := .Title }}
-        
-        <!-- Отладочный вывод для текущей таксономии и термина -->
-        {{ printf "Taxonomy: %s" $taxonomy }}
-        {{ printf "Term: %s" $term }}
-
         {{ with index (index $taxonomyData $taxonomy) $term }}
             {{ . }}
         {{ else }}
@@ -38,6 +29,7 @@
         {{ .Site.Params.description }}
     {{ end }}
 ">
+
     <!-- rel canonical -->
     <link rel="canonical" href="{{ .Permalink }}" />
     <!-- rel alternate : processing of the main page -->
