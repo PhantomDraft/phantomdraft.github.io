@@ -12,7 +12,7 @@
 <meta name="description" content="
     {{ if .Description }}
         {{ .Description }}
-    {{ else if .Kind | eq "taxonomy" }}
+    {{ else if .Kind | eq 'taxonomy' }}
         {{ $taxonomy := .Kind }}
         {{ $term := .Title }}
         
