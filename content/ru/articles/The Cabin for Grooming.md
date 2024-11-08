@@ -1,10 +1,9 @@
 ---
 title: "The Cabin for Grooming"
-date: 2024-31-10
-
+description: "The Cabin for Grooming"
 # format for string: "xxxx-xx-xx"
-lastmod: "2024-07-11"
-
+date: 2024-10-31
+lastmod: "2024-11-08"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]

@@ -7,7 +7,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ end }}
     <title>{{ .Site.Title }}{{ if not .IsHome }}{{ with .Title }} | {{ . }}{{ end }}{{ end }}</title>
-    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+{{ $lang := .Site.Language.Lang }}
+{{ $taxonomyData := (index .Site.Data.taxonomy (print "taxonomyDescriptions_" $lang)) }}
+<meta name="description" content="
+    {{ with .Description }}
+        {{ . }}
+    {{ else if .IsTaxonomy }}
+        {{ $taxonomy := .Kind }}
+        {{ $term := .Title }}
+        {{ with index (index $taxonomyData $taxonomy) $term }}
+            {{ . }}
+        {{ else }}
+            {{ .Site.Params.description }}
+        {{ end }}
+    {{ else if .IsHome }}
+        {{ .Site.Params.description }}
+    {{ else if .Summary }}
+        {{ .Summary }}
+    {{ else }}
+        {{ .Site.Params.description }}
+    {{ end }}
+">
     <!-- rel canonical -->
     <link rel="canonical" href="{{ .Permalink }}" />
     <!-- rel alternate : processing of the main page -->
