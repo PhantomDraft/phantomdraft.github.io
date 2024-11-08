@@ -1,6 +1,6 @@
 ---
 title: "The Cabin for Grooming"
-date: 2024-31-10
+date: 2024-10-31
 
 # format for string: "xxxx-xx-xx"
 lastmod: "2024-07-11"
