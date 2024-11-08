@@ -11,13 +11,20 @@
 {{ $taxonomyData := index .Site.Data.taxonomy (print "taxonomyDescriptions_" $lang) }}
 
 <meta name="description" content="
-    {{ if with .Description }}
-        {{ . }}
+    {{ if .Description }}
+        {{ .Description }}
     {{ else if .IsTaxonomy }}
         {{ $taxonomy := .Kind }}
         {{ $term := .Title }}
-        {{ with index (index $taxonomyData $taxonomy) $term }}
-            {{ . }}
+        
+        {{ $taxonomyDesc := index $taxonomyData $taxonomy }}
+        {{ if $taxonomyDesc }}
+            {{ $termDesc := index $taxonomyDesc $term }}
+            {{ if $termDesc }}
+                {{ $termDesc }}
+            {{ else }}
+                {{ .Site.Params.description }}
+            {{ end }}
         {{ else }}
             {{ .Site.Params.description }}
         {{ end }}
@@ -29,7 +36,6 @@
         {{ .Site.Params.description }}
     {{ end }}
 ">
-
     <!-- rel canonical -->
     <link rel="canonical" href="{{ .Permalink }}" />
     <!-- rel alternate : processing of the main page -->
