@@ -15,17 +15,12 @@
         {{ .Description }}
     {{ else if eq .Kind "term" }}
         {{ $taxonomy := .Section }}
-        {{ $term := .Title | urlize }}
-        
-        <!-- Отладка для значений термина -->
-        {{ printf "Taxonomy: %s, Term: %s" $taxonomy $term }}
+        {{ $term := .Title }}
         
         {{ $taxonomyDesc := index $taxonomyData $taxonomy }}
-        {{ printf "Taxonomy Desc: %v" $taxonomyDesc }}
-
+        
         {{ if $taxonomyDesc }}
             {{ $termDesc := index $taxonomyDesc $term }}
-            {{ printf "Term Desc: %v" $termDesc }}
 
             {{ if $termDesc }}
                 {{ $termDesc }}
