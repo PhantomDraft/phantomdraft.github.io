@@ -18,13 +18,10 @@
         {{ $term := .Title }}
         
         {{ $taxonomyDesc := index $taxonomyData $taxonomy }}
-        {{ if $taxonomyDesc }}
-            {{ $termDesc := index $taxonomyDesc $term }}
-            {{ if $termDesc }}
-                {{ $termDesc }}
-            {{ else }}
-                {{ .Site.Params.description }}
-            {{ end }}
+        {{ if and $taxonomyDesc (index $taxonomyDesc $term) }}
+            {{ index $taxonomyDesc $term }}
+        {{ else if .Summary }}
+            {{ .Summary }}
         {{ else }}
             {{ .Site.Params.description }}
         {{ end }}
@@ -36,6 +33,7 @@
         {{ .Site.Params.description }}
     {{ end }}
 ">
+
     <!-- rel canonical -->
     <link rel="canonical" href="{{ .Permalink }}" />
     <!-- rel alternate : processing of the main page -->
