@@ -11,7 +11,7 @@
 {{ $taxonomyData := index .Site.Data.taxonomy (print "taxonomyDescriptions_" $lang) }}
 
 <meta name="description" content="
-    {{ if .Description }}
+    {{ if with .Description }}
         {{ . }}
     {{ else if .IsTaxonomy }}
         {{ $taxonomy := .Kind }}
