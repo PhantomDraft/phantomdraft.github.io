@@ -10,30 +10,43 @@
 {{ $lang := .Site.Language.Lang }}
 {{ $taxonomyData := index .Site.Data.taxonomy (print "taxonomyDescriptions_" $lang) }}
 
+<!-- Отладочный вывод -->
+{{ printf "Language: %s" $lang }}
+{{ printf "Taxonomy Data: %v" $taxonomyData }}
+{{ printf "Page Kind: %s" .Kind }}
+{{ printf "Page Title: %s" .Title }}
+
 <meta name="description" content="
     {{ if .Description }}
         {{ .Description }}
-    {{ else if .Kind | eq "taxonomy" }}
+    {{ else if eq .Kind "taxonomy" }}
         {{ $taxonomy := .Kind }}
         {{ $term := .Title }}
         
-        {{ $taxonomyDesc := index $taxonomyData $taxonomy }}
+        <!-- Отладка для значений таксономий -->
+        {{ printf "Taxonomy: %s, Term: %s" $taxonomy $term }}
         
+        {{ $taxonomyDesc := index $taxonomyData $taxonomy }}
+        {{ printf "Taxonomy Desc: %v" $taxonomyDesc }}
+
         {{ if $taxonomyDesc }}
-            {{ with index $taxonomyDesc $term }}
-                {{ . }}
+            {{ $termDesc := index $taxonomyDesc $term }}
+            {{ printf "Term Desc: %v" $termDesc }}
+
+            {{ if $termDesc }}
+                {{ $termDesc }}
             {{ else }}
-                {{ .Site.Params.description }}
+                {{ .Site.Params.description | default "Default site description" }}
             {{ end }}
         {{ else }}
-            {{ .Site.Params.description }}
+            {{ .Site.Params.description | default "Default site description" }}
         {{ end }}
     {{ else if .IsHome }}
-        {{ .Site.Params.description }}
+        {{ .Site.Params.description | default "Default home description" }}
     {{ else if .Summary }}
         {{ .Summary }}
     {{ else }}
-        {{ .Site.Params.description }}
+        {{ .Site.Params.description | default "Default fallback description" }}
     {{ end }}
 ">
 
