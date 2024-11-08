@@ -6,7 +6,9 @@
 
 
 #fb5{
-   font-family:Arial,sans-serif;	
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+  font-style: normal;
    font-size:14px;	
    position:relative;
    overflow:hidden;
