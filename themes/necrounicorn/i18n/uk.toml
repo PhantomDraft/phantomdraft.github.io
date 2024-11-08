@@ -66,17 +66,19 @@
 
 # String in postInfo
 [postInfo_postedOn]
-	other = 'розміщено'
+	other = 'Розміщено'
 [postInfo_updatedOn]
-	other = 'оновлено'
+	other = 'Оновлено'
 [postInfo_includedIn]
-	other = 'категорії'
+	other = 'Категорії'
 [postInfo_notIncluded]
-	other = 'без категорії'
+	other = 'Без категорії'
+[postInfo_series]
+	other = 'Серії'
 [postInfo_wordsCount]
-	other = 'кількість слів'
+	other = 'Кількість слів'
 [postInfo_readingTime]
-	other = 'час читання'
+	other = 'Час читання'
 [postInfo_minute] # make 'one' and 'other' same If there is no singular and plural
 	one = 'хв'
 	other = 'хвилин'

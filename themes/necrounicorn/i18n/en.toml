@@ -66,17 +66,19 @@
 
 # String in postInfo
 [postInfo_postedOn]
-	other = 'posted'
+	other = 'Posted'
 [postInfo_updatedOn]
-	other = 'updated'
+	other = 'Updated'
 [postInfo_includedIn]
-	other = 'categories'
+	other = 'Categories'
 [postInfo_notIncluded]
-	other = 'not included'
+	other = 'Not included'
+[postInfo_series]
+	other = 'Series'
 [postInfo_wordsCount]
-	other = 'words count'
+	other = 'Words count'
 [postInfo_readingTime]
-	other = 'reading time'
+	other = 'Reading time'
 [postInfo_minute] # make 'one' and 'other' same If there is no singular and plural
 	one = 'min'
 	other = 'mins'
