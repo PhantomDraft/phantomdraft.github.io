@@ -10,27 +10,32 @@
 {{ $lang := .Site.Language.Lang }}
 {{ $taxonomyData := index .Site.Data.taxonomy (print "taxonomyDescriptions_" $lang) }}
 
+<!-- Проверка: отладочный вывод -->
+{{ printf "Current Language: %s" $lang }}
+{{ printf "Taxonomy Data: %v" $taxonomyData }}
+
 <meta name="description" content="
     {{ if .Description }}
         {{ .Description }}
     {{ else if .Kind | eq "taxonomy" }}
+        {{ printf "Taxonomy: %s" .Kind }}
+        {{ printf "Term: %s" .Title }}
+
         {{ $taxonomy := .Kind }}
         {{ $term := .Title }}
         
         {{ $taxonomyDesc := index $taxonomyData $taxonomy }}
         {{ if and $taxonomyDesc (index $taxonomyDesc $term) }}
             {{ index $taxonomyDesc $term }}
-        {{ else if .Summary }}
-            {{ .Summary }}
         {{ else }}
-            {{ .Site.Params.description }}
+            {{ .Site.Params.description | default "Default site description" }}
         {{ end }}
     {{ else if .IsHome }}
-        {{ .Site.Params.description }}
+        {{ .Site.Params.description | default "Default home description" }}
     {{ else if .Summary }}
         {{ .Summary }}
     {{ else }}
-        {{ .Site.Params.description }}
+        {{ .Site.Params.description | default "Default fallback description" }}
     {{ end }}
 ">
 
