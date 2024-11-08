@@ -13,7 +13,7 @@ categories: ["My projects"]
 # refer to categories
 tags: ["ai", "chatgpt"]
 # seires
-series: ["horrorprom"]
+series: ["Project: horrorprom"]
 # Top image for the post /uk/images/acid-dreams/cover.jpg
 image: ""
 # Hide from home and other main page
