@@ -39,6 +39,8 @@ hideFromSection: false
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img src="/ru/images/articles/the-cabin-for-grooming/transparent-cosmetic-case1.jpg" alt="Прозрачный бьют-кейс" />
+	</p>
+	<p>
 		<img src="/ru/images/articles/the-cabin-for-grooming/transparent-cosmetic-case2.jpg" alt="Прозрачный бьют-кейс" />
 	</p>
 </div>
@@ -51,7 +53,7 @@ hideFromSection: false
 	</p>
 </div>
 
-Окей. Вот только какого монстра?
+<p class="t_center">Окей. Вот только какого монстра?</p>
 
 ### Создание персонажи в духе Хижины в лесу
 
@@ -105,7 +107,11 @@ hideFromSection: false
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img src="/ru/images/articles/the-cabin-for-grooming/lady-dimitrescus-bathroom.jpg" alt="Ванная комната леди Димитреску" />
+	</p>
+	<p>
 		<img src="/ru/images/articles/the-cabin-for-grooming/bathroom-1.jpg" alt="Винтажная ванная" />
+	</p>
+	<p>
 		<img src="/ru/images/articles/the-cabin-for-grooming/bathroom-2.jpg" alt="Занавеска для ванной с логотипом Обитель Зла" />
 	</p>
 </div>
@@ -133,8 +139,13 @@ hideFromSection: false
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img src="/ru/images/articles/the-cabin-for-grooming/printing-1.jpg" alt="Печать изображений сгенерированных AI" />
+	</p>
+	<p>
 		<img src="/ru/images/articles/the-cabin-for-grooming/printing-2.jpg" alt="Печать изображений сгенерированных AI" />
+	</p>
+	<p>
 		<img src="/ru/images/articles/the-cabin-for-grooming/printing-3.jpg" alt="Печать изображений сгенерированных AI" />
+	</p>
 		<img src="/ru/images/articles/the-cabin-for-grooming/printing-4.jpg" alt="Печать изображений сгенерированных AI" />
 	</p>
 </div>
@@ -153,9 +164,8 @@ hideFromSection: false
 
 ### The Cabin For Grooming
 
-Получилось, что получилось.
-
 <div class="t_center castration cover p_relative atcScreen">
+	<p>Получилось, что получилось.</p>
 	<script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="horrorprom/45" data-width="100%" data-color="962715"></script>
 </div>
 
@@ -163,9 +173,9 @@ hideFromSection: false
 
 Возможно, вам пригодится это пособие и вы захотите поселить своего монстра в бутылке, кружке или где\-то ещё.
 
+Подписывайтесь на мой <a href="https://t.me/horrorprom/6">канал horrorprom в Телеграм</a>, где я оставляю промты генераций\!
+
 История с гламурной Хель из камеры будет иметь продолжение и она появится в нескольких следующих моих работах\! 😉
 
 Вдохновением для создания музыка во время появления Хель Монро послужила песня германской рок группы, о чём я расскажу позже.
-
-Буду рад вам в <a href="https://t.me/horrorprom/6">своём в Телеграм</a>, где я оставляю промты для генераций\!
 <!--more-->
