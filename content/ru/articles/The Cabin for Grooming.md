@@ -14,7 +14,7 @@ tags: ["ai", "chatgpt"]
 # seires
 series: ["Project: horrorprom"]
 # Top image for the post /ru/images/articles/the-cabin-for-grooming/cover.jpg
-image: ""
+image: "/ru/images/articles/the-cabin-for-grooming/cover.jpg"
 # Hide from home and other main page
 hideFromCenter: false
 # Hide from archive page
@@ -36,13 +36,20 @@ hideFromSection: false
 
 Моей жене была нужна новая косметичка. Я искал в интернете различные варианты и нашёл этот прозрачный бьют-кейс.
 
-<img src="/ru/images/articles/the-cabin-for-grooming/transparent-cosmetic-case1.jpg" alt="Прозрачный бьют-кейс" />
-
-<img src="/ru/images/articles/the-cabin-for-grooming/transparent-cosmetic-case2.jpg" alt="Прозрачный бьют-кейс" />
+<div class="t_center castration cover p_relative atcScreen">
+	<p>
+		<img src="/ru/images/articles/the-cabin-for-grooming/transparent-cosmetic-case1.jpg" alt="Прозрачный бьют-кейс" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/transparent-cosmetic-case2.jpg" alt="Прозрачный бьют-кейс" />
+	</p>
+</div>
 
 Сперва я хотел просто подарить его таким какой он был, но потом Хэллуинское настроение взяло верх и я убедил себя в том, что это вылитая камера для монстра из фильма Хижина в лесу.
 
-<img src="/ru/images/articles/the-cabin-for-grooming/monsters-cabin-from-cabin-in-the-woods.jpg" alt="Прозрачный бьют-кейс" />
+<div class="t_center castration cover p_relative atcScreen">
+	<p>
+		<img src="/ru/images/articles/the-cabin-for-grooming/monsters-cabin-from-cabin-in-the-woods.jpg" alt="Прозрачный бьют-кейс" />
+	</p>
+</div>
 
 Окей. Вот только какого монстра?
 
@@ -50,7 +57,11 @@ hideFromSection: false
 
 Я потратил некоторое время на то, чтобы мы с ИИ (а именно, с чатом GPT) смогли создать *неназванного в фильме персонажа*, который будет обитать в бьюти-коробочке.
 
-<img src="/ru/images/articles/the-cabin-for-grooming/hel-as-marilyn-monroe.jpg" alt="Хель в образе Мэрилин Монро" />
+<div class="t_center castration cover p_relative atcScreen">
+	<p>
+		<img src="/ru/images/articles/the-cabin-for-grooming/hel-as-marilyn-monroe.webp" alt="Хель в образе Мэрилин Монро" />
+	</p>
+</div>
 
 * Референс образа – Хель из фильма Метрополис. Ну, а в германском фильме Метрополис робот является отсылкой на Германо-скандинавскую богиню смерти Хель;  
 * Референс человеческой половины – Мэрилин Монро.
@@ -61,13 +72,21 @@ hideFromSection: false
 
 Брошюру, посвящённую призыву персонажа я придумал уже после того, как вручил подарок, потому её я показать не смогу, но вообще её можно было бы оформить в духе той религиозной брошюры, что раздавал священник из фильма Ветер.
 
-<img src="/ru/images/articles/the-cabin-for-grooming/demons-of-the-prairie.jpg" alt="Демоны прерий" />
+<div class="t_center castration cover p_relative atcScreen">
+	<p>
+		<img src="/ru/images/articles/the-cabin-for-grooming/demons-of-the-prairie.jpg" alt="Демоны прерий" />
+	</p>
+</div>
 
 ### Создание логотипа
 
 Самое интересное здесь в шрифте, который использовался в оформлении логотипа фильма. Я долго искал похожие и в итоге выбрал шрифт "Optimus Princeps" от Manfred Klein, его возможно использовать бесплатно.
 
-<img src="/ru/images/articles/the-cabin-for-grooming/cover.jpg" alt="Шрифт из фильма Хижина в лесу" />
+<div class="t_center castration cover p_relative atcScreen">
+	<p>
+		<img src="/ru/images/articles/the-cabin-for-grooming/cover.jpg" alt="Шрифт из фильма Хижина в лесу" />
+	</p>
+</div>
 
 ### Обстановка камеры монстра
 
@@ -75,19 +94,29 @@ hideFromSection: false
 
 #### Ванная леди Димитреску
 
-<img src="/ru/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-bathroom.webp" alt="The Cabin for Grooming: ванная комната" />
+<div class="t_center castration cover p_relative atcScreen">
+	<p>
+		<img src="/ru/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-bathroom.webp" alt="The Cabin for Grooming: ванная комната" />
+	</p>
+</div>
 
 Референс ванной комнаты — ванная комната леди Димитреску из игры Обитель зла: Деревня, а также изображение винтажной ванной и фото шторки с логотипом Обителя зла.
 
-<img src="/ru/images/articles/the-cabin-for-grooming/lady-dimitrescus-bathroom.jpg" alt="Ванная комната леди Димитреску" />
-
-<img src="/ru/images/articles/the-cabin-for-grooming/bathroom-1.jpg" alt="Винтажная ванная" />
-
-<img src="/ru/images/articles/the-cabin-for-grooming/bathroom-2.jpg" alt="Занавеска для ванной с логотипом Обитель Зла" />
+<div class="t_center castration cover p_relative atcScreen">
+	<p>
+		<img src="/ru/images/articles/the-cabin-for-grooming/lady-dimitrescus-bathroom.jpg" alt="Ванная комната леди Димитреску" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/bathroom-1.jpg" alt="Винтажная ванная" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/bathroom-2.jpg" alt="Занавеска для ванной с логотипом Обитель Зла" />
+	</p>
+</div>
 
 #### Гардеробная
 
-<img src="/ru/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-dressing-room.webp" alt="The Cabin for Grooming: гардеробная" />
+<div class="t_center castration cover p_relative atcScreen">
+	<p>
+		<img src="/ru/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-dressing-room.webp" alt="The Cabin for Grooming: гардеробная" />
+	</p>
+</div>
 
 А вот с полками уставленными масками референс наш с женой разговор, посвящённый “ношению масок в жизни”. Одни для семьи, другие для работы, третьи ещё для чего… их много.
 
@@ -101,13 +130,14 @@ hideFromSection: false
 
 Я измерил коробку и отправился в местную печать. Я попросил напечатать изображения определённого размера, но будучи программистом, который забыл о том, что альфа-канал в реальности работает чуть-чуть по другому случилось то, что я не предусмотрел.
 
-<img src="/ru/images/articles/the-cabin-for-grooming/printing-1.jpg" alt="Печать изображений сгенерированных AI" />
-
-<img src="/ru/images/articles/the-cabin-for-grooming/printing-1.jpg" alt="Печать изображений сгенерированных AI" />
-
-<img src="/ru/images/articles/the-cabin-for-grooming/printing-1.jpg" alt="Печать изображений сгенерированных AI" />
-
-<img src="/ru/images/articles/the-cabin-for-grooming/printing-1.jpg" alt="Печать изображений сгенерированных AI" />
+<div class="t_center castration cover p_relative atcScreen">
+	<p>
+		<img src="/ru/images/articles/the-cabin-for-grooming/printing-1.jpg" alt="Печать изображений сгенерированных AI" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/printing-2.jpg" alt="Печать изображений сгенерированных AI" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/printing-3.jpg" alt="Печать изображений сгенерированных AI" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/printing-4.jpg" alt="Печать изображений сгенерированных AI" />
+	</p>
+</div>
 
 Во-первых (о, неужели?\!) прозрачные наклейки печатаются на плёнке. Мы живём в небольшом городе, где печать на плёнке нужно заказывать за неделю, потому пришлось экстренно добавить фон. Эх.
 
@@ -125,7 +155,9 @@ hideFromSection: false
 
 Получилось, что получилось.
 
-<script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="horrorprom/45" data-width="100%" data-color="962715"></script>
+<div class="t_center castration cover p_relative atcScreen">
+	<script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="horrorprom/45" data-width="100%" data-color="962715"></script>
+</div>
 
 Это крупный чемоданчик, который с трудом помещается в шкаф. Он вместил в себя в нашу мыльницу-ванную и внезапно аппликация стала 3D.
 
@@ -135,5 +167,5 @@ hideFromSection: false
 
 Вдохновением для создания музыка во время появления Хель Монро послужила песня германской рок группы, о чём я расскажу позже.
 
-Буду рад вам в своём в Телеграм\!
+Буду рад вам в <a href="https://t.me/horrorprom/6">своём в Телеграм</a>, где я оставляю промты для генераций\!
 <!--more-->
