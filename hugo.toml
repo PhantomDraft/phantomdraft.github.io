@@ -85,13 +85,13 @@ paginate = 15
         weight = 2
         pre = ""
     [[menus.main]]
-        name = "Library"
-        url = "/library"
+        name = "Stories - soon!"
+        url = "#"
         weight = 3
         pre = ""
     [[menus.main]]
-        name = "Stories - soon!"
-        url = "#"
+        name = "Library - soon!"
+        url = "/library"
         weight = 4
         pre = ""
 
@@ -132,13 +132,13 @@ paginate = 15
                 weight = 2
                 pre = ""
             [[languages.uk.menus.main]]
-                name = "Бібліотека"
-                url = "/uk/library"
+                name = "Історії - скоро!"
+                url = "#"
                 weight = 3
                 pre = ""
             [[languages.uk.menus.main]]
-                name = "Історії - скоро!"
-                url = "#"
+                name = "Бібліотека - скоро!"
+                url = "/uk/library"
                 weight = 4
                 pre = ""
 
@@ -162,13 +162,13 @@ paginate = 15
                 weight = 2
                 pre = ""
             [[languages.ru.menus.main]]
-                name = "Библиотека"
-                url = "/ru/library"
+                name = "Истории - скоро!"
+                url = "#"
                 weight = 3
                 pre = ""
             [[languages.ru.menus.main]]
-                name = "Истории - скоро!"
-                url = "#"
+                name = "Библиотека - скоро!"
+                url = "/ru/library"
                 weight = 4
                 pre = ""
 
@@ -180,7 +180,7 @@ paginate = 15
                 weight = 1
 
 [author]
-    name = "Ruslan D."
+    name = "Ruslan Dubinetsky"
     description = "Notes on Horror and Punk Subgenre Projects"
     # profile photo of author in author card
     image = "/img/author.jpeg"
