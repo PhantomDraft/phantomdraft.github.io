@@ -14,7 +14,7 @@ tags: ["ai", "chatgpt"]
 # seires
 series: ["Project: horrorprom"]
 # Top image for the post /ru/images/articles/the-cabin-for-grooming/cover.jpg
-image: "/ru/images/articles/the-cabin-for-grooming/cover.jpg"
+image: "/ru/images/articles/the-cabin-for-grooming/hel-monroe.webp"
 # Hide from home and other main page
 hideFromCenter: false
 # Hide from archive page
@@ -59,7 +59,7 @@ hideFromSection: false
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/ru/images/articles/the-cabin-for-grooming/hel-as-marilyn-monroe.webp" alt="Хель в образе Мэрилин Монро" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/hel-monroe.webp" alt="Хель в образе Мэрилин Монро" />
 	</p>
 </div>
 
@@ -84,7 +84,7 @@ hideFromSection: false
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/ru/images/articles/the-cabin-for-grooming/cover.jpg" alt="Шрифт из фильма Хижина в лесу" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-logo.jpg" alt="Шрифт из фильма Хижина в лесу" />
 	</p>
 </div>
 

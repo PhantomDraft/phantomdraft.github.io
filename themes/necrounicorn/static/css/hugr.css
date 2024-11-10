@@ -1,11 +1,10 @@
 /*
 	Theme Name: Necrounicorn
 	Theme URI: localhost
-	Author: Sam aka Сиреноголова
-	Author URI: https://github.com/vsezlotov
-	Version: 21.3
+	Author: Ruslan Dubinetsky
+	Author URI: https://github.com/PhantomDraft
+	Version: 21.4
 */
-@import url('Tykhon.css') supports( (--test: 1) ); /* default startup check for wretched */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('font-awesome.min.css');
 
@@ -793,7 +792,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
 .grid_cover img {
     min-width: 100%; max-height: 200%;
     top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -25%);
 }
 
 .grid video {
@@ -1021,21 +1020,19 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
     font-family: 'Roboto', sans-serif; color: #1e1e20;
 }
 
-.aMessage > h2, .aMessage > h4, .aMessage > p, .aMessage > form p, .tnp-subscription, .wpcf7 {padding: 0px 35px;}
+.aMessage > h2, .aMessage > h3, .aMessage > h4, .aMessage > p, .aMessage > form p, .tnp-subscription, .wpcf7 {padding: 0px 35px;}
 
 .aMessage h2 {font-size: 200%;}
 
-.aMessage h3 {
+.aMessage h3, .aMessage h4 {
     position: relative;
     display: block;
-    max-width: calc(50% + 60px); min-height: 100px;
-    padding: 70px 110px 70px 35px !important;
-    background-image: url(/img/seamGLOBAL.svg);
-    background-size: 100px auto;
-    background-position: center right;
-    background-repeat: no-repeat;
-    text-align: center; font-size: 170%; word-break: break-word; hyphens: auto; content: '';
+    min-height: 100px;
+    padding-top: 70px !important; padding-bottom: 70px !important;
+    text-align: center; word-break: break-word; hyphens: auto;
 }
+
+.aMessage h3 {font-size: 170%;}
 
 .aMessage h4 {font-size: 150%;}
 
