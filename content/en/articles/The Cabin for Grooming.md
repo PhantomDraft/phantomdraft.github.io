@@ -1,6 +1,6 @@
 ---
 title: "The Cabin for Grooming"
-description: "Turning a Beauty Case into a Monster Cabinet, like in Cabin in the Woods"
+description: "Turning a Beauty Case into a Monster Cabin, like in Cabin in the Woods"
 # format for string: "xxxx-xx-xx"
 date: 2024-10-31
 lastmod: "2024-11-11"
@@ -22,7 +22,7 @@ hideFromArchives: false
 # Hide from everything but the archive
 hideFromSection: false
 ---
-## Turning a Beauty Case into a Monster Cabinet, like in *Cabin in the Woods*
+## Turning a Beauty Case into a Monster Cabin, like in *Cabin in the Woods*
 
 **What You'll Need:**
 
@@ -36,7 +36,7 @@ My wife’s birthday is in October, followed shortly by Halloween. These are two
 
 My wife needed a new makeup bag, so I looked up different options online and found this transparent beauty case.
 
-At first, I was just going to gift it as it was, but the Halloween spirit took over, and I convinced myself that this case could perfectly resemble a monster's cabinet from *Cabin in the Woods*.
+At first, I was just going to gift it as it was, but the Halloween spirit took over, and I convinced myself that this case could perfectly resemble a monster's camera from *Cabin in the Woods*.
 
 Alright. But which monster?
 
@@ -65,7 +65,7 @@ All the monsters in *Cabin in the Woods* lived in simple transparent chambers, b
 
 #### Lady Dimitrescu’s Bathroom
 
-The bathroom reference is Lady Dimitrescu’s bathroom from the game *Resident Evil Village*.
+The bathroom reference — Lady Dimitrescu’s bathroom from the game *Resident Evil Village*, as well as an image of a vintage bathtub and a photo of a curtain with the *Resident Evil* logo.
 
 #### Dressing Room
 
