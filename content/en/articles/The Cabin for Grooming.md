@@ -30,6 +30,8 @@ hideFromSection: false
 * GPT chat license or another AI generator;  
 * Color printer.
 
+<img src="#" />
+
 ### Background
 
 My wife’s birthday is in October, followed shortly by Halloween. These are two great reasons to surprise a loved one with something special.
