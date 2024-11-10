@@ -1,9 +1,9 @@
 ---
 title: "The Cabin for Grooming"
-description: "The Cabin for Grooming"
+description: "Turning a Beauty Case into a Monster Cabinet, like in Cabin in the Woods"
 # format for string: "xxxx-xx-xx"
 date: 2024-10-31
-lastmod: "2024-11-08"
+lastmod: "2024-11-11"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
@@ -13,7 +13,7 @@ categories: ["My projects"]
 tags: ["ai", "chatgpt"]
 # seires
 series: ["Project: horrorprom"]
-# Top image for the post /uk/images/acid-dreams/cover.jpg
+# Top image for the post /en/images/acid-dreams/cover.jpg
 image: ""
 # Hide from home and other main page
 hideFromCenter: false
@@ -29,8 +29,6 @@ hideFromSection: false
 * Transparent cosmetic case;  
 * GPT chat license or another AI generator;  
 * Color printer.
-
-<img src="#" />
 
 ### Background
 
