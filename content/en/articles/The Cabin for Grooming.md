@@ -38,10 +38,10 @@ My wife needed a new makeup bag, so I looked up different options online and fou
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/en/images/articles/the-cabin-for-grooming/transparent-cosmetic-case1.jpg" alt="Прозрачный бьют-кейс" />
+		<img src="/images/articles/the-cabin-for-grooming/transparent-cosmetic-case1.jpg" alt="Прозрачный бьют-кейс" />
 	</p>
 	<p>
-		<img src="/en/images/articles/the-cabin-for-grooming/transparent-cosmetic-case2.jpg" alt="Прозрачный бьют-кейс" />
+		<img src="/images/articles/the-cabin-for-grooming/transparent-cosmetic-case2.jpg" alt="Прозрачный бьют-кейс" />
 	</p>
 </div>
 
@@ -49,7 +49,7 @@ At first, I was just going to gift it as it was, but the Halloween spirit took o
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/en/images/articles/the-cabin-for-grooming/monsters-cabin-from-cabin-in-the-woods.jpg" alt="Прозрачный бьют-кейс" />
+		<img src="/images/articles/the-cabin-for-grooming/monsters-cabin-from-cabin-in-the-woods.jpg" alt="Прозрачный бьют-кейс" />
 	</p>
 </div>
 
@@ -63,7 +63,7 @@ I spent some time working with the AI (specifically, GPT chat) to create an unna
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/en/images/articles/the-cabin-for-grooming/hel-monroe.webp" alt="Хель в образе Мэрилин Монро" />
+		<img src="/images/articles/the-cabin-for-grooming/hel-monroe.webp" alt="Хель в образе Мэрилин Монро" />
 	</p>
 </div>
 
@@ -78,7 +78,7 @@ I came up with a brochure detailing the monster's summoning after I had already 
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/en/images/articles/the-cabin-for-grooming/demons-of-the-prairie.jpg" alt="Демоны прерий" />
+		<img src="/images/articles/the-cabin-for-grooming/demons-of-the-prairie.jpg" alt="Демоны прерий" />
 	</p>
 </div>
 
@@ -88,7 +88,7 @@ The most interesting part here was the font used in the movie’s logo design. I
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/en/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-logo.jpg" alt="Шрифт из фильма Хижина в лесу" />
+		<img src="/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-logo.jpg" alt="Шрифт из фильма Хижина в лесу" />
 	</p>
 </div>
 
@@ -100,7 +100,7 @@ All the monsters in *Cabin in the Woods* lived in simple transparent chambers, b
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/en/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-bathroom.webp" alt="The Cabin for Grooming: ванная комната" />
+		<img src="/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-bathroom.webp" alt="The Cabin for Grooming: ванная комната" />
 	</p>
 </div>
 
@@ -108,13 +108,13 @@ The bathroom reference — Lady Dimitrescu’s bathroom from the game *Resident 
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/en/images/articles/the-cabin-for-grooming/lady-dimitrescus-bathroom.jpg" alt="Ванная комната леди Димитреску" />
+		<img src="/images/articles/the-cabin-for-grooming/lady-dimitrescus-bathroom.jpg" alt="Ванная комната леди Димитреску" />
 	</p>
 	<p>
-		<img src="/en/images/articles/the-cabin-for-grooming/bathroom-1.jpg" alt="Винтажная ванная" />
+		<img src="/images/articles/the-cabin-for-grooming/bathroom-1.jpg" alt="Винтажная ванная" />
 	</p>
 	<p>
-		<img src="/en/images/articles/the-cabin-for-grooming/bathroom-2.jpg" alt="Занавеска для ванной с логотипом Обитель Зла" />
+		<img src="/images/articles/the-cabin-for-grooming/bathroom-2.jpg" alt="Занавеска для ванной с логотипом Обитель Зла" />
 	</p>
 </div>
 
@@ -122,7 +122,7 @@ The bathroom reference — Lady Dimitrescu’s bathroom from the game *Resident 
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/en/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-dressing-room.webp" alt="The Cabin for Grooming: гардеробная" />
+		<img src="/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-dressing-room.webp" alt="The Cabin for Grooming: гардеробная" />
 	</p>
 </div>
 
@@ -140,15 +140,15 @@ I measured the box and went to the local print shop. I requested images of a spe
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/en/images/articles/the-cabin-for-grooming/printing-1.jpg" alt="Печать изображений сгенерированных AI" />
+		<img src="/images/articles/the-cabin-for-grooming/printing-1.jpg" alt="Печать изображений сгенерированных AI" />
 	</p>
 	<p>
-		<img src="/en/images/articles/the-cabin-for-grooming/printing-2.jpg" alt="Печать изображений сгенерированных AI" />
+		<img src="/images/articles/the-cabin-for-grooming/printing-2.jpg" alt="Печать изображений сгенерированных AI" />
 	</p>
 	<p>
-		<img src="/en/images/articles/the-cabin-for-grooming/printing-3.jpg" alt="Печать изображений сгенерированных AI" />
+		<img src="/images/articles/the-cabin-for-grooming/printing-3.jpg" alt="Печать изображений сгенерированных AI" />
 	</p>
-		<img src="/en/images/articles/the-cabin-for-grooming/printing-4.jpg" alt="Печать изображений сгенерированных AI" />
+		<img src="/images/articles/the-cabin-for-grooming/printing-4.jpg" alt="Печать изображений сгенерированных AI" />
 	</p>
 </div>
 
