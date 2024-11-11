@@ -1,162 +1,177 @@
-Как-то раз, закончив катку в The Texas Chain Saw Massacre, я решил пересмотреть фильм-исходник 1974 года, а затем начал читать мнения критиков об этом фильме. Я нашёл рецензию критика Кристофера Шарретта, которого дословно процитирую:
+---
+title: "The idea of Apocalypse in horror films, particularly slashers films"
+description: ""
+# format for string: "xxxx-xx-xx"
+date: 2024-11-11
+lastmod: "2024-11-11"
+# set false when you want the post publish
+draft: false
+# one category: ["category-1"]
+# more categories: ["category-1", "category-2", ...]
+categories: ["My Insights"]
+# refer to categories
+tags: ["The Texas Chain Saw Massacre"]
+# seires
+series: ["Associative Connection"]
+# Top image for the post /local/images/test/cover.jpg
+image: "/images/articles/the-idea-of-apocalypse-in-horror-films-particularly-slashers-films/cover.webp"
+# Hide from home and other main page
+hideFromCenter: false
+# Hide from archive page
+hideFromArchives: false
+# Hide from everything but the archive
+hideFromSection: false
+---
+Once, after finishing a round in *The Texas Chain Saw Massacre*, I decided to rewatch the original 1974 film and then started reading critics' opinions on it. I found a review by critic Christopher Sharrett, whom I’ll quote verbatim:
 
-Критик Кристофер Шарретт утверждает, что начиная с фильмов Альфреда Хичкока «Психо» (1960) и «Птицы» (1963), американский фильм ужасов определяется вопросами, которые он поднимает «о фундаментальной обоснованности процесса цивилизации в Америке»\[142\], а в 1970-х годах эти вопросы были усилены «делегитимацией авторитета на фоне Вьетнама и Уотергейта»\[143\]. «Если „Психо“ начал исследование нового ощущения абсурдности в современной жизни, краха причинности и болезненной изнанки американской готики», — пишет он, — «Техасская резня бензопилой» доводит это исследование до логического завершения, затрагивая многие вопросы, поднятые в фильме Хичкока, но отказываясь от утешительного завершения»\[144\].
+<div class="t_center castration cover p_relative atcScreen">
+	<p>"If *Psycho* began an exploration of a new sense of absurdity in contemporary life, of the collapse of causality and the diseased underbelly of American Gothic, *The Texas Chain Saw Massacre* carries this exploration to a logical conclusion, addressing many of the issues of Hitchcock's film while refusing comforting closure."</p>
+</div>
 
-Шарретт, Кристофер (2004). «Идея апокалипсиса в „Техасской резне бензопилой“». В книге Грант, Барри Кит; Шарретт, Кристофер (ред.). Planks of Reason: Essays on the Horror Film. Scarecrow Press. ISBN 978-0-8108-5013-2.
+Critic Christopher Sharrett argues that since the release of Alfred Hitchcock’s Psycho (1960) and The Birds (1963), American horror film has been defined by questions it poses "regarding the fundamental validity of the civilizing process in America", with concerns deepening in the 1970s due to "the delegitimation of authority amidst the Vietnam War and Watergate".
 
-## Слэшер vs. пост-апокалипсис
+## Slasher vs. Post-Apocalypse
 
-Порой искусство свидетельствует о настроении внутри определённого региона на планете, порой оно не может об этом свидетельствовать из\-за строгой цензуры внутри страны, но хоррор, а тем более слэшер на мой взгляд не является жанром предназначенным для анализа общества или решения проблем, обстоятельства которых этот жанр утрирует. Слэшер акцентируется на проблемных вопросах, часто эти проблемы сведены лишь к цели выживания, а обстоятельства описываются фразой "Wrong Turn". Смотреть через слэшер на мир или тем более с помощью слэшера пытаться обосновать уместность действий нации весьма пессимистичная идея обреченная на что-то нехорошее.
+Sometimes art reflects the mood within a certain region of the planet; sometimes it cannot reflect this due to strict censorship within a country. However, horror—and especially the slasher genre—is, in my view, not a genre meant to analyze society or resolve the issues that it exaggerates. The slasher focuses on problematic issues, often reducing them merely to the goal of survival, with circumstances summarized by the phrase "Wrong Turn." Looking at the world through the slasher genre, or even more so attempting to justify a nation's actions through it, is a rather pessimistic idea doomed to something unpleasant.
 
-Мне захотелось устроить небольшое путешествие во времени, в которое я с радостью приглашаю и вас. Итак, все на борт нашей машины времени\!
+I felt inspired to take a little journey through time, and I gladly invite you along. So, all aboard our time machine\!
 
-*Мы переносимся с вами назад во времени, в 1830 год.*
+We’re going back in time to the year 1830\.
 
-## История создания бензопилы
+## The History of the Chainsaw’s Creation
 
-В 1830 году германский дантист-протезист по имени Бернард Хайн разработал инструмент для разрезания кости и мы – люди из будущего уже знаем, что это первый в мире остеотом. Скрепленные между собой звенья, с расположенными под углом зубьями образовывают цепь, приводимую в движение с помощью ручки-звездочки, которая крутит эту цепь по шине.
+In 1830, a German dentist and prosthetics specialist named Bernard Heine developed a tool for cutting bone, and we—people of the future—know this as the world’s first osteotome. Linked segments with angled teeth formed a chain that was moved by a star-shaped handle, which rotated the chain along a guide bar.
 
-История будет иметь продолжение спустя 100 лет, когда в 20 веке появятся первые цепные пилорамы, которые аналогично остеотому Хайна приводились в движение вручную. Эти пилорамы были весьма громоздкими и для управления таким инструментом требовалось, как минимум двое людей.
+This story would continue 100 years later, in the 20th century, when the first chainsaw mills appeared, which, like Heine’s osteotome, were manually operated. These mills were quite bulky, and operating such a tool required at least two people.
 
-В 1926 году инженер-механик Андреас Штиль, опять же германец по происхождению сконструировал и запатентовал первую в мире цепную пилу с электрическим мотором. Занимательно то, что многие мои знакомые думали будто первой пилой обязательно должна была быть бензо-пила, но это не так.
+In 1926, Andreas Stihl, a mechanical engineer and again a German, designed and patented the world’s first chainsaw with an electric motor. Interestingly, many people I know assumed the first saw had to be gas-powered, but that wasn’t the case.
 
-На следующий год, Емиль Лерп – уже третий германец в этой истории, продемонстрировал миру и своё творение – Dolmar А, которое стало первой цепной пилой с бензиновым двигателем.
+The following year, Emil Lerp—the third German in this story—unveiled his creation to the world: the Dolmar A, which became the first chainsaw with a gasoline engine.
 
-Двое германцев начали конкурировать и Штиль разработал свою пилу с бензодвигателем. Инструмент оснащенный бензобаком стал мобильнее, был автономным, но всё-равно оставался тяжёлым – он весил 50кг.
+Two Germans now started competing, and Stihl developed his own gas-powered saw. This tool, equipped with a fuel tank, became more mobile and autonomous but remained heavy, weighing 50 kg.
 
-В 1935 году пальму первенства вновь перехватила компания Dolmar. Dolmar презентовала первую в мире цепную пилу, с которой мог справиться один человек и у неё был электрический двигатель. Аналог на основе бензинового двигателя Dolmar выпустит 17 лет спустя, которую назовёт Dolmar CP.
+In 1935, Dolmar reclaimed the lead by presenting the world’s first chainsaw that could be operated by one person, powered by an electric motor. A gasoline-powered equivalent from Dolmar, called the Dolmar CP, would appear 17 years later.
 
-В 1957 пилы Dolmar обзавелись карбюратором, который позволил использовать пилу, как в горизонтальном, так и вертикальном положении, а в 1959 году вновь подала голос компания Штиль представив миру первую бензопилу без редуктора.
+In 1957, Dolmar chainsaws were equipped with a carburetor, allowing the saw to be used in both horizontal and vertical positions. And in 1959, Stihl once again made headlines by introducing the first gearless gasoline chainsaw.
 
-В 1962 году была создана первая супер-лёгкая бензопила: вес Husqvarna 70 составил 5,5 кг. Разработали её не Штиль и не Dolmar, а шведская компания Husqvarna. В 1969 году Husqvarna создали Husqvarna 180, которая была спроектирована по принципу двух масс, а также оснащена системой подавления вибраций.
+In 1962, the first ultra-light chainsaw was created: the Husqvarna 70, which weighed just 5.5 kg. This saw wasn’t developed by Stihl or Dolmar but by the Swedish company Husqvarna. In 1969, Husqvarna introduced the Husqvarna 180, designed with a two-mass principle and equipped with a vibration-damping system.
 
-### Бензопилы вгрызаются в слэшер
+### Chainsaws Bite into the Slasher Genre
 
-С 1969 году бензопилы Husqvarna успели быстро распространиться по миру и лишь спустя пять лет вышла кинолента The Texas Chain Saw Massacre.
+In 1969, Husqvarna chainsaws had already quickly spread across the world, and only five years later, *The Texas Chain Saw Massacre* hit the big screen.
 
-Картинка с Фредди цитата.
+*Image of Freddy with a quote.*
 
-Но давайте вернемся немного назад, в 1945 год. Сейчас 16 июля.
+But let’s go back a bit, to the year 1945\. It’s July 16 now.
 
-## Создание и испытание атомной бомбы
+## The Creation and Testing of the Atomic Bomb
 
-В 1945 Соединённые Штаты Америки успешно испытали первую в мире атомную бомбу и уже в августе пришли к выводу о необходимости сбросить на Хиросиму и Нагасаки две другие именитые бомбы. Буквально, они имели имена. 6 августа на Хиросиму сбросили «Little Boy», а 9 августа на Нагасаки сбросили «Fat Man».
+In 1945, the United States successfully tested the world’s first atomic bomb, and by August, they concluded that it was necessary to drop two other notable bombs on Hiroshima and Nagasaki. Literally, they had names. On August 6, “Little Boy” was dropped on Hiroshima, and on August 9, “Fat Man” was dropped on Nagasaki.
 
-Когда-нибудь я опубликую свою коллекцию именитого оружия, которую назову Толстый Густаф.
+Someday, I’ll publish my collection of famous weapons, which I’ll call *Fat Gustav*.
 
-Вторая мировая война подходила к концу, но контрольный выстрел *дзику-коку (Странам «о́си»)* подзадорил ядерную гонку. В 1946 году начинается холодной война, продлится она до 1990 года, а ядерная гонка на 1 год дольше.
+World War II was coming to an end, but the final shot at the Axis powers spurred on the nuclear arms race. In 1946, the Cold War began, lasting until 1990, with the nuclear race stretching one year longer.
 
-Позже мир узнает о проектах E-1 и E-1A, когда в СССР Яков Зельдович планировал отправить советскую ядерную бомбу на луну дабы все земляне увидели “большой бум”, но от этой идеи сам же и отказался, так как риск полёта был необоснованный. Не спешите удивляться: американские ученые корпели над собственным аналогичным проектом A119, но аналогично отказались от рискованной затеи. Так уж вышло, что на годы холодной войны и ядерной гонки приходилась ещё и космическая гонка продлившаяся с 1957 по 1988 год.
+Later, the world would learn of the E-1 and E-1A projects, when in the USSR, Yakov Zel’dovich planned to send a Soviet atomic bomb to the moon so all earthlings could witness a “big boom.” However, he abandoned the idea himself due to the flight's unjustified risks. Don’t rush to be surprised: American scientists were working on their own similar project, A119, but likewise backed away from this risky endeavor. As it turned out, the years of the Cold War and nuclear arms race also coincided with the Space Race, which lasted from 1957 to 1988\.
 
-Масштабы дуэлей гениальных мужей сводят с ума, тем не менее жизнь обычных людей продолжается…
+The scale of these duels between brilliant minds is astounding, yet the lives of ordinary people go on…
 
-### Атомное оружие тревожит монстров
+### Atomic Weapons Stir Monsters
 
-1. В 1953 году, спустя 7 лет после сброса атомной бомбы выходит фильм The Beast from 20,000 Fathoms – экранизация рассказа Рея Бредбери “The Fog Horn”. Это становится первым фильмом посвященным монстрам, которых разбудили испытания ядерного оружия;  
-2. В 1954, в Японии, где совсем недавно испытали оружие массового поражения рождается Godzilla вдохновлённая фильмов 1953 года;  
-3. Пройдёт некоторое время прежде, чем в серии игр Fallot известной своим циничным чёрным юмором появится портативная пусковая установка, стреляющая ядерными зарядами именуемая «Fat Man».
+In 1953, seven years after the atomic bomb was dropped, the film *The Beast from 20,000 Fathoms* was released—an adaptation of Ray Bradbury’s story “The Fog Horn.” This became the first film about monsters awakened by nuclear weapons testing.
 
-Заходим в машину времени и мчимся подальше от ядерных гонок в… куда? Домой, в 2024? Ну, уж нет. Я же говорю – подальше\!
+In 1954, in Japan, a country that had recently experienced weapons of mass destruction, Godzilla was born, inspired by the 1953 film.
 
-*Мы переносимся в эпоху Романтизма, в 1818\.*
+Some time would pass before the *Fallout* game series, known for its cynical dark humor, introduced a portable launcher firing nuclear warheads called the “Fat Man.”
 
-## Гальванизация одним дождливым днём в Женеве
+Let’s get in the time machine and speed away from the nuclear arms race to… where? Back home, to 2024? No way. I said far away\!
 
-Когда-то моя супруга поделилась со мной занимательной [работой о трансплантации передних конечностей](https://www.wired.com/story/devastating-allure-of-medical-miracles/). Не странно, но "отрезать и пришить" так просто не получится, в частности до сих пор сложно бороться с негативным воздействием антибиотиков на почки пациентов.
+We’re traveling to the Romantic Era, to 1818\.
 
-В контексте Женевы и пересадки рук мне вспоминается Mary Shelley и монстр явившейся своей матери во сне. Вот, как Шелли описывала свой сон:
+## Galvanization on a Rainy Day in Geneva
 
-\>\> Мне привиделся бледный учёный, последователь оккультных наук, склонившийся над существом, которое он собирал воедино. Я увидела омерзительного фантома в человеческом обличии, а потом, после включения некоего мощного двигателя, в нём проявились признаки жизни, его движения были скованы и лишены силы. Это было ужасающее зрелище; и в высшей степени ужасающими будут последствия любых попыток человека обмануть совершенный механизм Творца.
+Once, my wife shared with me a fascinating paper on forelimb transplantation. Not surprisingly, simply “cutting and stitching” doesn’t quite work, particularly because of the ongoing struggle with the negative effects of antibiotics on patients' kidneys.
 
-Влияние Франкенштейна сложно переоценить, ведь именно пародируя роман Мэри Говард Лавкрафт спустя чуть больше 104 года написал “Herbert West Reanimator”, который является шаблоном первых зомби.
+In the context of Geneva and hand transplants, Mary Shelley and the monster that appeared to her in a dream come to mind. Here’s how Shelley described her dream:
 
-А ведь начиналось всё с невинного пари предложенного лордом Брайаном, суть которого заключалась в написании самой страшной истории о привидениях… Упиться тоской по минувшей эпохи всем тем, кто в отличие от нас не имеет машины времени, способствует экранизация этого кусочка времени – фильм Gothic (1986).
+<div class="t_center castration cover p_relative atcScreen">
+	<p>"I saw the pale student of unhallowed arts kneeling beside the thing he had put together. I saw the hideous phantom in human form, and then, after the application of some powerful engine, signs of life appeared in it, and it stirred with an uneasy, half-vital motion. Frightful it must be; for supremely frightful would be the effect of any human endeavor to mock the stupendous mechanism of the Creator of the world."</p>
+</div>
 
-Сегодня работы Шелли выглядят насмешкой над современным человечеством. Франкенштейна нам по-прежнему не собрать, как и пересаживать руки мы можем с большим трудом. Не главный вопрос в контексте статьи: что именно отложилось в памяти Мэри, от чего ей приснился тот сон и она смогла приступить к написанию Франкенштейна?
+The influence of *Frankenstein* is hard to overestimate, as just over 104 years later, in a parody of Mary’s novel, H.P. Lovecraft wrote *Herbert West–Reanimator*, which became a template for the first zombies.
 
-### Эксперименты Эразма Дарвина вдохновили Мэрри Шелли на написание Франкенштейна
+And to think, it all started with an innocent wager proposed by Lord Byron, challenging everyone to write the scariest ghost story… For those who, unlike us, lack a time machine, the 1986 film *Gothic* offers a chance to indulge in nostalgia for that era.
 
-Помимо многочисленных тем для разговоров, внутри компании частью которой была и Шелли речь зашла об экспериментах философа и поэта Эразма Дарвина. Философ практиковался в гальванизации. Уточню, что в то время под термином “гальванизация” подразумевали не создание металлических покрытий электрогальваническим способом, а воздействии электрического тока на мёртвый организм по методу описанным Луиджи Гальвани. Слухи о его экспериментах будоражившие умы вдохновили Мэри на написание Франкенштейна.
+Today, Shelley’s work seems a mockery of modern humanity. We still can’t assemble Frankenstein, and even hand transplants remain a struggle. Perhaps a less central question here: what was it exactly that left such an imprint on Mary’s memory, sparking that dream and inspiring her to begin *Frankenstein*?
 
-Продолжим наше путешествие и вернёмся к “насмешкам Шелли над современным человечеством”.
+### Erasmus Darwin’s Experiments Inspired Mary Shelley to Write *Frankenstein*
 
-*Нам пора возвращаться в будущее и что там впереди?*
+Among the many topics discussed within the circle that included Shelley, the conversation turned to the experiments of the philosopher and poet Erasmus Darwin. Darwin practiced galvanization. I should clarify that at the time, “galvanization” didn’t refer to creating metallic coatings through electro-galvanic methods, but rather the application of electric currents to a dead organism, as described by Luigi Galvani. Rumors about these experiments, which stirred imaginations, inspired Mary to write *Frankenstein*.
 
-## Некоторые хорроры основанные на реальных событиях
+Let’s continue our journey and return to “Shelley’s mockery of modern humanity.”
 
-Теперь я хочу упомянуть про работы, которые были вдохновлены не изобретениями человечества для колки дров или уничтожения друг друга, а посвящались социальным проблемам.
+It’s time for us to head back to the future—what lies ahead?
 
-### Последний человек на земле
+## Some Horror Films Based on Real Events
 
-Из 1818 в 1826\. Последний человек на земле – апокалиптический научно-фантастический роман Мэрри Шелли, который получил худшие отзывы из всех её романов. Критики высмеивали саму идею “последнего человека на земле” и оценивали рассудок автора, как “больной”.
+Now I want to mention works that weren’t inspired by humanity’s inventions for chopping wood or destroying one another, but were instead dedicated to social issues.
 
-Сама же Мэри Шелли утверждала, что в 1818 году (а это год публикации Франкенштейна) она обнаружила внутри пещеры недалеко от Неаполя пророческие писания, которые писательница отредактировала и представила миру в форме повествование о человеке, живущем в конце 21-го века. Если быть точным события романа берут начало в 2073 году и заканчиваются в 2100\.
+### The Last Man on Earth
 
-Впечатляет то, как сильно эти старые задачи перед человечеством похожи на наши “молодые и новые”.
+From 1818 to 1826\. *The Last Man on Earth* is an apocalyptic science fiction novel by Mary Shelley, which received the worst reviews of all her novels. Critics mocked the very idea of a “last man on earth” and judged the author’s sanity as “sick.”
 
-В романе:
+Mary Shelley herself claimed that in 1818 (the year *Frankenstein* was published), she discovered prophetic writings in a cave near Naples, which she edited and presented to the world as the story of a man living at the end of the 21st century. Specifically, the events in the novel begin in 2073 and end in 2100\.
 
-* Биографические элементы;  
-* Крах политических романтических идеалов, когда революционной идиллии оказалось недостаточно;  
-* Множество центральных персонажей вдохновлены знакомыми Шелли, например Лорд Рэймонд покинувший Англию, чтобы сражаться за греков и умерший в Константинополе основан на лорде Байроне;  
-* Поднятие вопросов возникающих во время пандемии: самоизоляция и разочарование в медицине, историю которой Шелли хорошо изучила демонстрируя познания в истории разработки вакцины от оспы и актуальное в 19 веке понимание природы заражения вирусами;  
-* Критика расизма со стороны европейских стран по отношению к остальным нациям, так как на фоне пандемии все люди равны;  
-* Рекомендую к ознакомлению вики, [ссылка](https://en.wikipedia.org/wiki/The_Last_Man).
+It’s remarkable how closely these old challenges for humanity resemble our “young and new” ones.
 
-В контексте двух последних пунктов я просто не могу не вспомнить Night of the Living Dead (1968) George Romero, который в своём фильме хотел показать, как обнуляются личностные, национальные и гендерные отличия перед лицом эпидемии. Кстати, этот фильмы сыграл не малую роль в борьбе за права афроамериканцев.
+In the novel:
 
-### Германский экспрессионизм
+* Biographic elements;  
+* The collapse of political and romantic ideals when revolutionary idyll was found insufficient;  
+* Many central characters are inspired by Shelley’s acquaintances, such as Lord Raymond, who left England to fight for the Greeks and died in Constantinople, based on Lord Byron;  
+* Issues arising during a pandemic: self-isolation and disillusionment with medicine—a subject Shelley had studied extensively, as seen in her knowledge of the history of smallpox vaccination development and the 19th-century understanding of virus transmission;  
+* Critique of racism from European countries toward other nations, as, in the face of a pandemic, all people are equal.
 
-Прощаемся с Мэри и устремляемся в будущее. Мимо нас проносится 1924 год и Der Zauberberg. Впереди эпоха экспрессионизма, сменившим собой импрессионизм и постимпрессионизм. О разочаровании германского народа результатами первой мировой войны заявляет о себе Метрополис.
+I recommend checking out the Wikipedia page; link.
+
+In the context of the last two points, I simply cannot help but think of *Night of the Living Dead* (1968) by George Romero, who aimed to show how personal, national, and gender differences dissolve in the face of an epidemic. Incidentally, this film played a significant role in the fight for African American rights.
+
+### German Expressionism
+
+We bid farewell to Mary and head into the future. We pass 1924 and *Der Zauberberg*. Ahead lies the era of Expressionism, which succeeded Impressionism and Post-Impressionism. The disillusionment of the German people with the outcomes of World War I is embodied in *Metropolis*.
 
 ### Matka Joanna Od Aniolow
 
-Мы побывали на премьере Метрополиса и перенеслись в 1961 год, когда в прокат вышел польский фильм Matka Joanna Od Aniolow повествующий о событиях известных, как "Луденский процесс". Эту эпоху наша экскурсионная группа специально не посещала, так как там слишком опасно, но вот короткая брошюра с разными интересными датами, как микро-пример эволюции человеческого сознания и развития гуманизма:
+We attended the premiere of *Metropolis* and then traveled to 1961, when the Polish film *Matka Joanna Od Aniolow* was released, depicting events known as the “Loudun Possessions.” Our tour group didn’t visit this era specifically, as it was too dangerous, but here’s a short pamphlet with various interesting dates as a micro-example of the evolution of human consciousness and the development of humanism:
 
-* 1486 – официальная публикация Молота ведьм, пособия по изувечиванию женщин для выявления ведьм;  
-* 1634 – Лудёнский процесс;  
-* 1961 – Экранизация, которую увидел свет.
+* 1486 – The official publication of *Malleus Maleficarum*, a manual for mutilating women to identify witches;  
+* 1634 – The Loudun Possessions;  
+* 1961 – The film adaptation that saw the light of day.
 
-Впереди нас ждёт всё та же стартовая точка и бензопилы. Мимо проносятся One Flew Over the Cuckoos Nest, The Birds Хичкока, King Stakhs Wild Hunt, Rosemarys Baby, Vargtimmen, Night of the Living Dead, Night Gallery, Auch Zwerge haben klein angefangen, The Exorcist и наконец мы снова в 1974, когда на экраны вышла The Texas Chain Saw Massacre.
+Ahead, we return to our starting point and chainsaws. We speed past *One Flew Over the Cuckoo's Nest*, Hitchcock's *The Birds*, *King Stakh's Wild Hunt*, *Rosemary’s Baby*, *Hour of the Wolf*, *Night of the Living Dead*, *Night Gallery*, *Even Dwarfs Started Small*, *The Exorcist*, and finally we’re back in 1974 when *The Texas Chain Saw Massacre* hit the screens.
 
-Мы, кстати только что пролетели эпоху Золотого века слэшера (1978-1984), которую открыл Хэллоуин Карпентера.
+Incidentally, we just zoomed through the Golden Age of the Slasher (1978–1984), which Carpenter’s *Halloween* inaugurated.
 
 ### BZ
 
-Делаем остановку в 1985 году, когда опубликуют книгу Acid Dreams рассказывающую об эксперименте над солдатами США и наркотике BZ. Спустя пять лет, в 1990 году в прокат выйдет кинолента Jacob's Ladder.
+We make a stop in 1985 when the book *Acid Dreams* was published, detailing experiments conducted on U.S. soldiers involving the drug BZ. Five years later, in 1990, the film *Jacob's Ladder* would be released.
 
-Небольшой рывок и… Все на выход\! Мы в 2024\.
+A short leap, and… everyone out\! We’re in 2024\.
 
-### Бонусный пример влияния современных технологий на искусство
+## The Idea of Apocalypse in Horror Films, Particularly Slasher Films
 
-Covid-19.
+Conclusion? There’s no need to force connections. Significant inventions or discoveries lead to books, movies, games, and songs, on average 4–6 years later—and now, when anyone with a smartphone can be a videographer, it happens even faster. Simple and straightforward, without hidden meanings.
 
-На высоких уровнях активно обсуждались причины возникновения вируса. Но что же происходило на низких?
+Remember how drones first gained popularity? Take, for example, a drone equipped with a chainsaw to knock down icicles:
 
-Я хочу упомянуть самые дерзкие фантазии людей, которые считали, что прививка является частью глобального заговора, а не какой-то там *ничтожной утечкой прототипа биооружия*:
+<div class="t_center castration cover p_relative atcScreen">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/lpgaSM4QzZk?si=nFhp6biffv7Ro91j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
-1. Через неё "чипируют" наноботами;  
-2. Последствия чипирования наноботами заставят людей ловить блютуз;  
-3. И если два первых варианта выглядят отчасти неплохой такой обновой своего потрепанного временем бэкграунда, вот третий: прививка предназначена для уничтожения людей, потому что сам вирус не сработал.
+It didn’t take long for this “toy” to find military applications. Later, I’ll tell you about a few cases where inventions from the military sector were shared with the civilian population.
 
-Это тогда действительно очень апокалиптический заговор, так как обязали делать прививку всё работающее население во всех развитых странах. Если некий рептилоид решил убить всё работающее население, кто должен был остаться? Старики, дети и неработающие? Но зачем? Допущу, что вероятно их будет проще добить физически, но опять же, кто это будет делать?
+### Could the Oil Crisis Have Influenced the Creation of *The Texas Chain Saw Massacre*?
 
-Касательно вакцинаций и последствий, которые для некоторых оказались летальными: во время ковида человечество пережило новую чуму, пусть и не такую страшную, как чёрная, белая или красная (отсылка на По). Логично, что в век высоких технологий и наличие опыта работы с другими заболеваниями, лекарство удалось создать ещё до окончания чумы и применялось оно немедленно. Мы испытали на себе отсутствие временного промежутка нужного для адаптации тела человека к новой прививке, который присутствует в случае с прививками от кори и других заболеваний... От тех самых заболеваний, прививку от которых мечтали иметь многие люди, в том числе, Мэри Шелли.
+In our journey, we have an example of Expressionism in Germany. It certainly could have\! But this isn’t a metaphor; it’s simply a unique case of the Leatherface family’s inability to adapt to the new times. The slasher genre is, after all, built on the shoulders of such monstrous outcasts from society: Michael Myers or Jason Voorhees are also examples of typical American guys—or perhaps just strong boys with fragile psyches?
 
-К сожалению, не все смогли выдержать отсутствие этого промежутка, чаще всего организм таких пациентов был стар.
-
-Как много было снято фильмов про эпидемии самоизоляцию во время ковида? Много.
-
-## The idea of ​​Apocalypse in horror films, particularly slashers films
-
-Вывод? Не нужно натягивать сову на глобус. Про значимые изобретения или открытия люди пишут книги, снимают фильмы, делает игры и поют песни спустя, в среднем 4-6 лет, а сейчас, когда видеооператором может стать любой владелец смартфона – это случается быстрее. Банально и просто, без подтекстов.
-
-Вы помните, как начинали своё шествие дроны? Вот, например дрон с закреплённой бензопилой сбивает сосульки: [https://www.youtube.com/watch?v=lpgaSM4QzZk](https://www.youtube.com/watch?v=lpgaSM4QzZk)
-
-Потребовалось не так много времени, чтобы эта "игрушка" стала использоваться в военных целях. Позже я расскажу о паре случаев, когда изобретения военного сектора были отданы мирному населению.
-
-### Мог ли повлиять нефтяной кризис на создание фильма Техасская резня бензопилой?
-
-В нашем путешествии есть пример с Экспрессионизмом в Германии. Безусловно мог\! Но это не является метафорой, а просто уникальный случай не адаптировавшихся к новому времени семьи Кожаного Лица. Именно на плечах таких монструозных атлантов выпавших из социума и стоит жанр слэшер: Майкл Майерс или Джейсон Вурхиз тоже примеры обычных американских парней или всё же сильные мальчики со слабой психикой?
-
-Слэшер позволяет выпустить пар, но не оценивать политику правительства, которое выбрано избирателями не являющимися армией психопатов из приюта Архкем.
+A slasher lets off steam, but it’s not meant to critique government policies chosen by voters who aren’t an army of Arkham Asylum psychopaths.
