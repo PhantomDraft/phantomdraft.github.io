@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 21.5
+	Version: 21.6
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('font-awesome.min.css');
@@ -1020,24 +1020,27 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
     font-family: 'Roboto', sans-serif; color: #1e1e20;
 }
 
-.aMessage > h2, .aMessage > h3, .aMessage > h4, .aMessage > p, .aMessage > form p, .tnp-subscription, .wpcf7 {padding: 0px 35px;}
-
-.aMessage h2 {font-size: 200%;}
-
-.aMessage h3, .aMessage h4 {
+.aMessage > h2, .aMessage > h3, .aMessage > h4, .aMessage > p, .aMessage > form p {
     position: relative;
     display: block;
-    min-height: 100px;
+}
+
+.aMessage h2 {
+    padding-top: 50px; padding-bottom: 15px;
+    font-size: 200%;
+}
+
+.aMessage h3, .aMessage h4 {
     text-align: center; word-break: break-word; hyphens: auto;
 }
 
 .aMessage h3 {
-    padding-top: 50px !important; padding-bottom: 15px !important;
+    padding-top: 50px; padding-bottom: 15px;
     font-size: 170%;
 }
 
 .aMessage h4 {
-    padding-top: 30px !important; padding-bottom: 15px !important;
+    padding-top: 30px; padding-bottom: 15px;
     font-size: 150%;
 }
 
@@ -1711,8 +1714,6 @@ a.page-numbers:hover {color: #b22;}
         padding-top: 10px;
     }
 
-    .aMessage h3 {max-width: 70%;}
-
     .atcScreen, .atcCentral {margin-top: 30px;}
 
     .sidebar section.update .tabs-titles li {
@@ -1863,8 +1864,6 @@ a.page-numbers:hover {color: #b22;}
     .footer_info .fr {display: none;}
 
     .grid .text h3, .shoes > section, .shoes_for_personal_page > section {text-align: center;}
-
-    .aMessage h3 {max-width: 100%;}
 
     .aMessage iframe {height: 300px;}
 
