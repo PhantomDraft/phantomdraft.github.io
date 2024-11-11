@@ -14,7 +14,7 @@ tags: ["ai", "chatgpt"]
 # seires
 series: ["Project: horrorprom"]
 # Top image for the post /en/images/acid-dreams/cover.jpg
-image: "/en/images/articles/the-cabin-for-grooming/hel-monroe.webp"
+image: "/images/articles/the-cabin-for-grooming/hel-monroe.webp"
 # Hide from home and other main page
 hideFromCenter: false
 # Hide from archive page
