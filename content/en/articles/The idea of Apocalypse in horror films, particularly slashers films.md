@@ -12,8 +12,8 @@ categories: ["My Insights"]
 # refer to categories
 tags: ["The Texas Chain Saw Massacre"]
 # seires
-series: [""]
-# Top image for the post /en/images/acid-dreams/cover.jpg
+series: ["Associative Connection"]
+# Top image for the post /local/images/test/cover.jpg
 image: "/images/articles/the-idea-of-apocalypse-in-horror-films-particularly-slashers-films/cover.webp"
 # Hide from home and other main page
 hideFromCenter: false
@@ -24,7 +24,9 @@ hideFromSection: false
 ---
 Once, after finishing a round in *The Texas Chain Saw Massacre*, I decided to rewatch the original 1974 film and then started reading critics' opinions on it. I found a review by critic Christopher Sharrett, whom I’ll quote verbatim:
 
-"If *Psycho* began an exploration of a new sense of absurdity in contemporary life, of the collapse of causality and the diseased underbelly of American Gothic, *The Texas Chain Saw Massacre* carries this exploration to a logical conclusion, addressing many of the issues of Hitchcock's film while refusing comforting closure."
+<div class="t_center castration cover p_relative atcScreen">
+	<p>"If *Psycho* began an exploration of a new sense of absurdity in contemporary life, of the collapse of causality and the diseased underbelly of American Gothic, *The Texas Chain Saw Massacre* carries this exploration to a logical conclusion, addressing many of the issues of Hitchcock's film while refusing comforting closure."</p>
+</div>
 
 Critic Christopher Sharrett argues that since the release of Alfred Hitchcock’s Psycho (1960) and The Birds (1963), American horror film has been defined by questions it poses "regarding the fundamental validity of the civilizing process in America", with concerns deepening in the 1970s due to "the delegitimation of authority amidst the Vietnam War and Watergate".
 
@@ -92,7 +94,9 @@ Once, my wife shared with me a fascinating paper on forelimb transplantation. No
 
 In the context of Geneva and hand transplants, Mary Shelley and the monster that appeared to her in a dream come to mind. Here’s how Shelley described her dream:
 
-"I saw the pale student of unhallowed arts kneeling beside the thing he had put together. I saw the hideous phantom in human form, and then, after the application of some powerful engine, signs of life appeared in it, and it stirred with an uneasy, half-vital motion. Frightful it must be; for supremely frightful would be the effect of any human endeavor to mock the stupendous mechanism of the Creator of the world."
+<div class="t_center castration cover p_relative atcScreen">
+	<p>"I saw the pale student of unhallowed arts kneeling beside the thing he had put together. I saw the hideous phantom in human form, and then, after the application of some powerful engine, signs of life appeared in it, and it stirred with an uneasy, half-vital motion. Frightful it must be; for supremely frightful would be the effect of any human endeavor to mock the stupendous mechanism of the Creator of the world."</p>
+</div>
 
 The influence of *Frankenstein* is hard to overestimate, as just over 104 years later, in a parody of Mary’s novel, H.P. Lovecraft wrote *Herbert West–Reanimator*, which became a template for the first zombies.
 
@@ -158,7 +162,11 @@ A short leap, and… everyone out\! We’re in 2024\.
 
 Conclusion? There’s no need to force connections. Significant inventions or discoveries lead to books, movies, games, and songs, on average 4–6 years later—and now, when anyone with a smartphone can be a videographer, it happens even faster. Simple and straightforward, without hidden meanings.
 
-Remember how drones first gained popularity? Take, for example, a drone equipped with a chainsaw to knock down icicles: [https://www.youtube.com/watch?v=lpgaSM4QzZk](https://www.youtube.com/watch?v=lpgaSM4QzZk)
+Remember how drones first gained popularity? Take, for example, a drone equipped with a chainsaw to knock down icicles:
+
+<div class="t_center castration cover p_relative atcScreen">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/lpgaSM4QzZk?si=nFhp6biffv7Ro91j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 It didn’t take long for this “toy” to find military applications. Later, I’ll tell you about a few cases where inventions from the military sector were shared with the civilian population.
 

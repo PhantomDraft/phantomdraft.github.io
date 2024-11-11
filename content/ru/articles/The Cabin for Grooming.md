@@ -13,7 +13,7 @@ categories: ["My projects"]
 tags: ["ai", "chatgpt"]
 # seires
 series: ["Project: horrorprom"]
-# Top image for the post /ru/images/articles/the-cabin-for-grooming/cover.jpg
+# Top image for the post /local/images/test/cover.jpg
 image: "/ru/images/articles/the-cabin-for-grooming/hel-monroe.webp"
 # Hide from home and other main page
 hideFromCenter: false

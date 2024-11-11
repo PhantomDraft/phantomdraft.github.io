@@ -13,7 +13,7 @@ categories: []
 tags: []
 # seires
 series: []
-# Top image for the post: /en/images/library/test/cover.jpg
+# Top image for the post: /local/images/test/cover.jpg
 image: ""
 # Hide from home and other main page
 hideFromCenter: false
