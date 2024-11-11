@@ -1,9 +1,32 @@
+---
+title: "The idea of Apocalypse in horror films, particularly slashers films"
+description: ""
+# format for string: "xxxx-xx-xx"
+date: 2024-11-11
+lastmod: "2024-11-11"
+# set false when you want the post publish
+draft: false
+# one category: ["category-1"]
+# more categories: ["category-1", "category-2", ...]
+categories: ["My Insights"]
+# refer to categories
+tags: ["The Texas Chain Saw Massacre"]
+# seires
+series: [""]
+# Top image for the post /en/images/acid-dreams/cover.jpg
+image: "/images/articles/the-idea-of-apocalypse-in-horror-films-particularly-slashers-films/cover.webp"
+# Hide from home and other main page
+hideFromCenter: false
+# Hide from archive page
+hideFromArchives: false
+# Hide from everything but the archive
+hideFromSection: false
+---
 Once, after finishing a round in *The Texas Chain Saw Massacre*, I decided to rewatch the original 1974 film and then started reading critics' opinions on it. I found a review by critic Christopher Sharrett, whom I’ll quote verbatim:
 
-ВСТАВИТЬ ЦИТАТОЙ:  
-Critic Christopher Sharrett argues that since [Alfred Hitchcock](https://en.wikipedia.org/wiki/Alfred_Hitchcock)'s *Psycho* (1960) and *The Birds* (1963), the American horror film has been defined by the questions it poses "about the fundamental validity of the American civilizing process",[\[142\]](https://en.wikipedia.org/wiki/The_Texas_Chain_Saw_Massacre#cite_note-143) concerns amplified during the 1970s by the "delegitimation of authority in the wake of Vietnam and [Watergate](https://en.wikipedia.org/wiki/Watergate_scandal)".[\[143\]](https://en.wikipedia.org/wiki/The_Texas_Chain_Saw_Massacre#cite_note-144) "If *Psycho* began an exploration of a new sense of absurdity in contemporary life, of the collapse of causality and the diseased underbelly of American Gothic", he writes, *The Texas Chain Saw Massacre* "carries this exploration to a logical conclusion, addressing many of the issues of Hitchcock's film while refusing comforting closure".[\[144\]](https://en.wikipedia.org/wiki/The_Texas_Chain_Saw_Massacre#cite_note-145)
+"If *Psycho* began an exploration of a new sense of absurdity in contemporary life, of the collapse of causality and the diseased underbelly of American Gothic, *The Texas Chain Saw Massacre* carries this exploration to a logical conclusion, addressing many of the issues of Hitchcock's film while refusing comforting closure."
 
-Sharrett, Christopher (2004). "The Idea of Apocalypse in The Texas Chain Saw Massacre". In Grant, Barry Keith; Sharrett, Christopher (eds.). Planks of Reason: Essays on the Horror Film. Scarecrow Press. ISBN 978-0-8108-5013-2.
+Critic Christopher Sharrett argues that since the release of Alfred Hitchcock’s Psycho (1960) and The Birds (1963), American horror film has been defined by questions it poses "regarding the fundamental validity of the civilizing process in America", with concerns deepening in the 1970s due to "the delegitimation of authority amidst the Vietnam War and Watergate".
 
 ## Slasher vs. Post-Apocalypse
 
@@ -69,7 +92,7 @@ Once, my wife shared with me a fascinating paper on forelimb transplantation. No
 
 In the context of Geneva and hand transplants, Mary Shelley and the monster that appeared to her in a dream come to mind. Here’s how Shelley described her dream:
 
-“I saw the pale student of unhallowed arts kneeling beside the thing he had put together. I saw the hideous phantom in human form, and then, after the application of some powerful engine, signs of life appeared in it, and it stirred with an uneasy, half-vital motion. Frightful it must be; for supremely frightful would be the effect of any human endeavor to mock the stupendous mechanism of the Creator of the world.”
+"I saw the pale student of unhallowed arts kneeling beside the thing he had put together. I saw the hideous phantom in human form, and then, after the application of some powerful engine, signs of life appeared in it, and it stirred with an uneasy, half-vital motion. Frightful it must be; for supremely frightful would be the effect of any human endeavor to mock the stupendous mechanism of the Creator of the world."
 
 The influence of *Frankenstein* is hard to overestimate, as just over 104 years later, in a parody of Mary’s novel, H.P. Lovecraft wrote *Herbert West–Reanimator*, which became a template for the first zombies.
 
