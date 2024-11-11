@@ -35,7 +35,9 @@
 
             </div>
 
-            
+            {{ if or .PrevInSection .NextInSection }}
+                {{ partial "widgets/pre-next.html" . }}
+            {{ end }}
 
             {{- partial "footer/hugr-init.html" . -}}
             {{ partial "widgets/vars.html" . }}

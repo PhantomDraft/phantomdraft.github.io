@@ -10,13 +10,5 @@
                 {{ end }}
             {{ end }}
         </ul>
-
-        <div class="t_center not_twitch">
-            <a class="page-numbers" href='{{ if and (ne .Site.Language.Weight 1) (and .Site.IsMultiLingual (not .Site.Params.Site.OnlyOneLang)) }}
-                {{ .Lang | relURL}}/library
-            {{ else }}
-                {{ "library" | relURL }}
-            {{ end }}' class="page-numbers">{{ i18n "Home_allPosts" }}</a>
-        </div>
     </section>
 {{ end }}
