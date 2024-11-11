@@ -38,10 +38,10 @@ hideFromSection: false
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/ru/images/articles/the-cabin-for-grooming/transparent-cosmetic-case1.jpg" alt="Прозрачный бьют-кейс" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/transparent-cosmetic-case1.webp" alt="Прозрачный бьют-кейс" />
 	</p>
 	<p>
-		<img src="/ru/images/articles/the-cabin-for-grooming/transparent-cosmetic-case2.jpg" alt="Прозрачный бьюти-кейс" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/transparent-cosmetic-case2.webp" alt="Прозрачный бьюти-кейс" />
 	</p>
 </div>
 
@@ -49,7 +49,7 @@ hideFromSection: false
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/ru/images/articles/the-cabin-for-grooming/monsters-cabin-from-cabin-in-the-woods.jpg" alt="Монстры из Хижины в лесу в камерах" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/monsters-cabin-from-cabin-in-the-woods.webp" alt="Монстры из Хижины в лесу в камерах" />
 	</p>
 </div>
 
@@ -76,7 +76,7 @@ hideFromSection: false
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/ru/images/articles/the-cabin-for-grooming/demons-of-the-prairie.jpg" alt="Демоны прерий" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/demons-of-the-prairie.webp" alt="Демоны прерий" />
 	</p>
 </div>
 
@@ -86,7 +86,7 @@ hideFromSection: false
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/ru/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-logo.jpg" alt="Шрифт из фильма Хижина в лесу" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-logo.webp" alt="Шрифт из фильма Хижина в лесу" />
 	</p>
 </div>
 
@@ -106,13 +106,13 @@ hideFromSection: false
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/ru/images/articles/the-cabin-for-grooming/lady-dimitrescus-bathroom.jpg" alt="Ванная комната леди Димитреску" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/lady-dimitrescus-bathroom.webp" alt="Ванная комната леди Димитреску" />
 	</p>
 	<p>
-		<img src="/ru/images/articles/the-cabin-for-grooming/bathroom-1.jpg" alt="Винтажная ванная" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/bathroom-1.webp" alt="Винтажная ванная" />
 	</p>
 	<p>
-		<img src="/ru/images/articles/the-cabin-for-grooming/bathroom-2.jpg" alt="Занавеска для ванной с логотипом Обитель Зла" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/bathroom-2.webp" alt="Занавеска для ванной с логотипом Обитель Зла" />
 	</p>
 </div>
 
@@ -138,15 +138,15 @@ hideFromSection: false
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/ru/images/articles/the-cabin-for-grooming/printing-1.jpg" alt="Печать изображений сгенерированных AI" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/printing-1.webp" alt="Печать изображений сгенерированных AI" />
 	</p>
 	<p>
-		<img src="/ru/images/articles/the-cabin-for-grooming/printing-2.jpg" alt="Печать изображений сгенерированных AI" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/printing-2.webp" alt="Печать изображений сгенерированных AI" />
 	</p>
 	<p>
-		<img src="/ru/images/articles/the-cabin-for-grooming/printing-3.jpg" alt="Печать изображений сгенерированных AI" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/printing-3.webp" alt="Печать изображений сгенерированных AI" />
 	</p>
-		<img src="/ru/images/articles/the-cabin-for-grooming/printing-4.jpg" alt="Печать изображений сгенерированных AI" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/printing-4.webp" alt="Печать изображений сгенерированных AI" />
 	</p>
 </div>
 

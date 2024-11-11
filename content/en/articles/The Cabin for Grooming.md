@@ -38,10 +38,10 @@ My wife needed a new makeup bag, so I looked up different options online and fou
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/transparent-cosmetic-case1.jpg" alt="Transparent beauty case" />
+		<img src="/images/articles/the-cabin-for-grooming/transparent-cosmetic-case1.webp" alt="Transparent beauty case" />
 	</p>
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/transparent-cosmetic-case2.jpg" alt="Transparent beauty case" />
+		<img src="/images/articles/the-cabin-for-grooming/transparent-cosmetic-case2.webp" alt="Transparent beauty case" />
 	</p>
 </div>
 
@@ -49,7 +49,7 @@ At first, I was just going to gift it as it was, but the Halloween spirit took o
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/monsters-cabin-from-cabin-in-the-woods.jpg" alt="The monster from The Cabin in the Woods in the containment cells" />
+		<img src="/images/articles/the-cabin-for-grooming/monsters-cabin-from-cabin-in-the-woods.webp" alt="The monster from The Cabin in the Woods in the containment cells" />
 	</p>
 </div>
 
@@ -78,7 +78,7 @@ I came up with a brochure detailing the monster's summoning after I had already 
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/demons-of-the-prairie.jpg" alt="Demons of the Prairie" />
+		<img src="/images/articles/the-cabin-for-grooming/demons-of-the-prairie.webp" alt="Demons of the Prairie" />
 	</p>
 </div>
 
@@ -88,7 +88,7 @@ The most interesting part here was the font used in the movie’s logo design. I
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-logo.jpg" alt="The font from the movie The Cabin in the Woods" />
+		<img src="/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-logo.webp" alt="The font from the movie The Cabin in the Woods" />
 	</p>
 </div>
 
@@ -108,13 +108,13 @@ The bathroom reference — Lady Dimitrescu’s bathroom from the game *Resident 
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/lady-dimitrescus-bathroom.jpg" alt="Lady Dimitrescu’s bathroom" />
+		<img src="/images/articles/the-cabin-for-grooming/lady-dimitrescus-bathroom.webp" alt="Lady Dimitrescu’s bathroom" />
 	</p>
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/bathroom-1.jpg" alt="Vintage bathtub" />
+		<img src="/images/articles/the-cabin-for-grooming/bathroom-1.webp" alt="Vintage bathtub" />
 	</p>
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/bathroom-2.jpg" alt="Shower curtain with the Resident Evil logo" />
+		<img src="/images/articles/the-cabin-for-grooming/bathroom-2.webp" alt="Shower curtain with the Resident Evil logo" />
 	</p>
 </div>
 
@@ -140,15 +140,15 @@ I measured the box and went to the local print shop. I requested images of a spe
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/printing-1.jpg" alt="Printing AI-generated images" />
+		<img src="/images/articles/the-cabin-for-grooming/printing-1.webp" alt="Printing AI-generated images" />
 	</p>
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/printing-2.jpg" alt="Printing AI-generated images" />
+		<img src="/images/articles/the-cabin-for-grooming/printing-2.webp" alt="Printing AI-generated images" />
 	</p>
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/printing-3.jpg" alt="Printing AI-generated images" />
+		<img src="/images/articles/the-cabin-for-grooming/printing-3.webp" alt="Printing AI-generated images" />
 	</p>
-		<img src="/images/articles/the-cabin-for-grooming/printing-4.jpg" alt="Printing AI-generated images" />
+		<img src="/images/articles/the-cabin-for-grooming/printing-4.webp" alt="Printing AI-generated images" />
 	</p>
 </div>
 
