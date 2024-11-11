@@ -41,7 +41,7 @@ hideFromSection: false
 		<img src="/ru/images/articles/the-cabin-for-grooming/transparent-cosmetic-case1.jpg" alt="Прозрачный бьют-кейс" />
 	</p>
 	<p>
-		<img src="/ru/images/articles/the-cabin-for-grooming/transparent-cosmetic-case2.jpg" alt="Прозрачный бьют-кейс" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/transparent-cosmetic-case2.jpg" alt="Прозрачный бьюти-кейс" />
 	</p>
 </div>
 
@@ -49,7 +49,7 @@ hideFromSection: false
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/ru/images/articles/the-cabin-for-grooming/monsters-cabin-from-cabin-in-the-woods.jpg" alt="Прозрачный бьют-кейс" />
+		<img src="/ru/images/articles/the-cabin-for-grooming/monsters-cabin-from-cabin-in-the-woods.jpg" alt="Монстры из Хижины в лесу в камерах" />
 	</p>
 </div>
 
