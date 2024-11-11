@@ -63,6 +63,7 @@ hideFromSection: false
 	<p>
 		<img src="/uk/images/articles/the-cabin-for-grooming/hel-monroe.webp" alt="Хель в образі Мерилін Монро" />
 	</p>
+	<p><strong>Prompt:</strong> A single character in a pin-up style, resembling an hourglass figure, pressed against a glass panel as if she is inside the box, trying to get out. The character is vertically divided: the right side is robotic with metallic parts and wires, and the left side is human, feminine, with soft features. She wears a pink Marilyn Monroe-style dress and high heels. The expression on her face is playful yet slightly melancholic. Her hands, chest, and face are squashed against the glass, giving a dynamic, pressed look. The left leg should extend slightly over the robotic side, as if the human leg is partially covering the metallic one. The pink skirt should now fully cover the metallic thigh, creating a seamless flow over both sides of the body. The right side of the face resembles a metallic skeleton, similar to the Terminator, with a glowing red laser eye in the eye socket. The red laser eye should now be brighter, more menacing, and have a more threatening, combat-ready appearance. The right side of the costume is also pink, matching the left side.</p>
 </div>
 
 **Референс образу** – Хель із фільму *Метрополіс*. У німецькому фільмі *Метрополіс* робот є посиланням на германо-скандинавську богиню смерті Хель.  
@@ -100,6 +101,7 @@ hideFromSection: false
 	<p>
 		<img src="/uk/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-bathroom.webp" alt="The Cabin for Grooming: Ванна кімната" />
 	</p>
+	<p><strong>Prompt:</strong> A dark fantasy Halloween-themed art piece with elements of pin-up style. The focal point is a large, ornate, vintage bathtub, scaled to be oversized and suitable for a three-meter-tall vampire woman, inspired by Lady Dimitrescu. The bathtub is now empty, with no silhouette visible. The setting is a Gothic, old-fashioned bathroom with dim lighting, dark tones, and subtle, soft elements to convey a blend of dark fantasy and vintage pin-up. The view is partially obscured by a translucent curtain with a large logo on it. The logo reads 'DesireHazard,' replacing the original Biohazard symbol. Above the logo, on the curtain, there is an additional text: 'DesireHazard.' The overall atmosphere is moody, with a blend of elegance and eeriness, evoking a vampire's luxurious, yet monstrous environment.</p>
 </div>
 
 Референс ванної кімнати — ванна кімната леді Дімітреску з гри *Обитель зла: Село*, а також зображення вінтажної ванни та фото шторки з логотипом *Обитель зла*.
@@ -122,6 +124,7 @@ hideFromSection: false
 	<p>
 		<img src="/uk/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-dressing-room.webp" alt="The Cabin for Grooming: Гардеробна" />
 	</p>
+	<p><strong>Prompt:</strong> A dark fantasy Halloween-themed art piece with elements of pin-up style. The focal point is a large, ornate mirror with bulbs around the frame, placed in the center of a wall that is fully built with shelves. These shelves are filled with 12 porcelain masks, each with a different expression like happy, sad, serious, angry, and more. The masks are arranged under a glass display case that gives a retro feel, adding more detail and elegance to the scene. Underneath each mask, there is a section with unreadable text, adding an eerie yet elegant atmosphere. In the reflection of the mirror, a shadowy figure holding a camera can be seen, as if filming or watching the viewer. Part of the mirror is obscured by a larger, partially drawn curtain, enhancing the mystery. The lighting is dim and moody, creating deep shadows that enhance the Gothic, vintage feel of the room. The mirror, surrounded by soft, glowing bulbs, adds a pin-up style contrast, while the pink pumpkin-shaped ottoman (pouf) in front of the mirror maintains a playful touch. The overall mood is dark, elegant, and slightly unsettling, with a blend of elegance, mystery, and pin-up elements.</p>
 </div>
 
 А ось із полицями, заставленими масками, референс — це наша з дружиною розмова, присвячена "носінню масок у житті". Одні — для сім'ї, інші — для роботи, треті — ще для чогось… їх багато.
