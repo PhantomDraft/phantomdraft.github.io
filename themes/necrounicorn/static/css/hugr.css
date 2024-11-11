@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 21.6
+	Version: 21.7
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('font-awesome.min.css');
@@ -1023,6 +1023,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
 .aMessage > h2, .aMessage > h3, .aMessage > h4, .aMessage > p, .aMessage > form p {
     position: relative;
     display: block;
+    padding: 0px 35px;
 }
 
 .aMessage h2 {
