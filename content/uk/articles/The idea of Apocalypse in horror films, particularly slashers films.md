@@ -1,6 +1,6 @@
 ---
 title: "The idea of Apocalypse in horror films, particularly slashers films"
-description: ""
+description: "Слешер vs. постапокаліпсис"
 # format for string: "xxxx-xx-xx"
 date: 2024-11-11
 lastmod: "2024-11-11"
