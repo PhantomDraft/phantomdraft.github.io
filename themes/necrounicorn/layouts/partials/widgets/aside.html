@@ -4,12 +4,12 @@
         <ul class="castration fr p_relative tabs-titles">
             <li class="castration p_relative">
                 <a class="base_width p_relative" href="#update-categories">
-                    <span>Soon!</span>
+                    <span>Sections</span>
                 </a>
             </li>
             <li class="castration p_relative">
                 <a class="base_width p_relative" href="#update-interesting">
-                    <span>{{ i18n "Home_latestPosts" }}</span>
+                    <span>Soon!</span>
                 </a>
             </li>
             <li class="castration p_relative">
@@ -21,6 +21,13 @@
 
         <div class="castration fl p_relative inner">
             <div id="update-categories">
+                <ul>
+                    {{ range .Site.Taxonomies.categories }}
+                        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div id="update-interesting">
                 <div class="commercial">
                     <h3>Spirits Show No.1</h3>
                     <div class="t_center castration cover p_relative atcScreen">
@@ -28,6 +35,7 @@
                             <img src="/img/stories/spirits-show-1.jpg" />
                         </a>
                     </div>
+                </div>
 
                     <!-- <h3>It's not what it seems...</h3>
                     <canvas id="root_biopunk" width="300" height="300" class="center">
@@ -48,10 +56,6 @@
                         <a href="/">#m</a>
                         <a href="/">#p</a>
                     </div> -->
-                </div>
-            </div>
-            <div id="update-interesting">
-                {{ partial "widgets/other.html" . }}
             </div>
             <div id="update-test">
                 {{ partial "widgets/stat.html" . }}
