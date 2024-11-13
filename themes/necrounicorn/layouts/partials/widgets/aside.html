@@ -23,7 +23,7 @@
             <div id="update-categories">
                 <ul>
                     {{ range .Site.Taxonomies.categories }}
-                        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
+                        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
                     {{ end }}
                 </ul>
             </div>
