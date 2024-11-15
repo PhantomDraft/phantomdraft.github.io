@@ -4,12 +4,10 @@
     {{- partial "head/head.html" . -}}
 
     <body>
-
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5VL5MJD"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-
         {{ if and (eq .Section "stories") .IsPage }}
             {{- block "main" . }}{{- end }}
         {{ else if and (eq .Section "stories") .IsSection }}
@@ -24,10 +22,8 @@
             <div class="base_width p_relative wrap"> <div id="overlay" class="base_width p_fixed"></div>
 
                 {{ partial "breadcrumbs.html" . }}
-
-                {{- partial "header/header.html" . -}}
+                {{ partial "header/header.html" . }}
                 {{ partial "header/search.html" . }}
-
                 {{ partial "widgets/hero.html" . }}
 
                 <div id="container" class="center media_base_width p_relative clearfix">

@@ -1,21 +1,21 @@
 <div class="center media_base_width p_relative breadcrumbs" prefix="v: http://rdf.data-vocabulary.org/#">
-    <!-- Корень сайта -->
     <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="{{ .Site.BaseURL }}" itemprop="item">
-            <span itemprop="name">{{ .Site.Title }}</span>
+        <a href="/" itemprop="item">
+            <span itemprop="name">Phantom Draft</span>
         </a>
     </span>
-
-    <!-- Если есть категории -->
-    {{ $categories := .Params.categories }}
-    {{ if $categories }}
-        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <span itemprop="name">Category: {{ delimit $categories ", " }}</span>
-        </span>
-    {{ end }}
-
-    <!-- Текущая страница -->
     <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <span itemprop="name">{{ .Title }}</span>
+        <span itemprop="name">
+            Category:
+            <a href="/categories/horror" itemprop="item">
+                <span>Horror</span>
+            </a>,
+            <a href="/categories/mystery" itemprop="item">
+                <span>Mystery</span>
+            </a>
+        </span>
+    </span>
+    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <span itemprop="name">Collections</span>
     </span>
 </div>
