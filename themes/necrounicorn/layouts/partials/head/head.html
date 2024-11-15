@@ -12,35 +12,25 @@
         {{ if eq .Site.Language.Lang "ru" }} на русском{{ end }}
         {{ if not .IsHome }}{{ with .Title }} | {{ . }}{{ end }}
     {{ end }}</title>
- <!-- meta description -->
-{{ $lang := .Site.Language.Lang }} <!-- Определяем текущий язык -->
-{{ $taxonomyFile := printf "taxonomyDescriptions_%s" $lang }} <!-- Формируем имя файла данных -->
-{{ $taxonomyDescriptions := index .Site.Data.taxonomy $taxonomyFile }} <!-- Загружаем файл данных -->
-
-<!-- Определяем тип таксономии -->
-{{ $taxonomyType := .Section }} <!-- categories, tags, series -->
-{{ $taxonomyKey := .Title | lower | urlize }} <!-- Преобразуем Title в ключ -->
-
-<!-- Отладочная информация -->
-<p>Taxonomy Type: {{ $taxonomyType }}</p>
-<p>Taxonomy Key: {{ $taxonomyKey }}</p>
-<pre>{{ $taxonomyDescriptions | jsonify }}</pre>
-
-<!-- Выводим meta description -->
-<meta name="description" content="{{ if .Description }}
-    {{ .Description }}
-{{ else if .Summary }}
-    {{ .Summary }}
-{{ else if and $taxonomyType $taxonomyKey }}
-    {{ with index (index $taxonomyDescriptions $taxonomyType) $taxonomyKey }}
-        {{ . }}
+    <!-- meta description -->
+    {{ $lang := .Site.Language.Lang }}
+    {{ $taxonomyFile := printf "taxonomyDescriptions_%s" $lang }}
+    {{ $taxonomyDescriptions := index .Site.Data.taxonomy $taxonomyFile }}
+    {{ $taxonomyType := .Section }}
+    {{ $taxonomyKey := .Title | lower | urlize }}
+    <meta name="description" content="{{ if .Description }}
+        {{ .Description }}
+    {{ else if .Summary }}
+        {{ .Summary }}
+    {{ else if and $taxonomyType $taxonomyKey }}
+        {{ with index (index $taxonomyDescriptions $taxonomyType) $taxonomyKey }}
+            {{ . }}
+        {{ else }}
+            Default description for {{ $taxonomyType }}.
+        {{ end }}
     {{ else }}
-        Default description for {{ $taxonomyType }}.
-    {{ end }}
-{{ else }}
-    Default description for the site.
-{{ end }}">
-
+        Default description for the site.
+    {{ end }}">
     <!-- rel canonical -->
     <link rel="canonical" href="{{ .Permalink }}" />
     <!-- rel alternate : processing of the main page -->
