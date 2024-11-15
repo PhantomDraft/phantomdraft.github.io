@@ -13,7 +13,29 @@
         {{ if eq .Site.Language.Lang "ru" }} на русском{{ end }}
         {{ if not .IsHome }}{{ with .Title }} | {{ . }}{{ end }}{{ end }}
     </title>
-    {{ if or .Description .Summary .Site.Params.description }}<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">{{ end }}
+{{ $lang := .Site.Language.Lang }} <!-- Определяем текущий язык -->
+{{ $taxonomyFile := printf "taxonomyDescriptions_%s" $lang }} <!-- Имя файла данных -->
+{{ $taxonomyDescriptions := index .Site.Data.taxonomy $taxonomyFile }} <!-- Загружаем файл -->
+
+<!-- Отладочная информация -->
+<p>Current Language: {{ $lang }}</p>
+<p>Taxonomy File: {{ $taxonomyFile }}</p>
+<pre>{{ $taxonomyDescriptions | jsonify }}</pre>
+<p>Page Title: {{ .Title }}</p>
+<p>Generated Key: {{ .Title | lower | urlize }}</p>
+
+<!-- Мета-описание -->
+<meta name="description" content="
+  {{ with .Title | lower | urlize }}
+    {{ $key := . }}
+    {{ with index $taxonomyDescriptions.categories $key }}
+      {{ . }}
+    {{ else }}
+      Default description for category '{{ .Title }}'.
+    {{ end }}
+  {{ else }}
+    Default site description.
+  {{ end }}">
     <!-- rel canonical -->
     <link rel="canonical" href="{{ .Permalink }}" />
     <!-- rel alternate : processing of the main page -->
