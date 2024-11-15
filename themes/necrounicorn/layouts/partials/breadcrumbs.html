@@ -6,14 +6,17 @@
         </a>
     </span>
 
-    {{ $parents := .Breadcrumbs }}
-    {{ range $index, $parent := $parents }}
-        <!-- Хлебные крошки для родителей -->
-        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <a href="{{ $parent.Permalink }}" itemprop="item">
-                <span itemprop="name">{{ $parent.Title }}</span>
-            </a>
-        </span>
+    <!-- Родительские страницы -->
+    {{ $current := . }}
+    {{ range (slice) }}
+        {{ $current = $current.Parent }}
+        {{ if $current }}
+            <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a href="{{ $current.Permalink }}" itemprop="item">
+                    <span itemprop="name">{{ $current.Title }}</span>
+                </a>
+            </span>
+        {{ end }}
     {{ end }}
 
     <!-- Текущая страница -->
