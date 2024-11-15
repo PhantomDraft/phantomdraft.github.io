@@ -7,7 +7,7 @@
     </span>
 
     <!-- Если текущая страница принадлежит разделу -->
-    {{ if .IsSection }}
+    {{ if eq .Kind "section" }}
         <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
             <a href="{{ .Permalink }}" itemprop="item">
                 <span itemprop="name">{{ .Title }}</span>
@@ -16,7 +16,7 @@
     {{ end }}
 
     <!-- Если текущая страница принадлежит таксономии -->
-    {{ if .IsTaxonomy }}
+    {{ if eq .Kind "taxonomy" }}
         <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
             <a href="{{ .Permalink }}" itemprop="item">
                 <span itemprop="name">{{ .Title }}</span>
@@ -24,8 +24,8 @@
         </span>
     {{ end }}
 
-    <!-- Если текущая страница является таксономическим термином -->
-    {{ if .IsTaxonomyTerm }}
+    <!-- Если текущая страница является термином таксономии -->
+    {{ if eq .Kind "taxonomyTerm" }}
         <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
             <a href="{{ .Permalink }}" itemprop="item">
                 <span itemprop="name">{{ .Title }}</span>
@@ -76,7 +76,7 @@
     {{ end }}
 
     <!-- Текущая страница -->
-    {{ if .IsPage }}
+    {{ if eq .Kind "page" }}
         <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
             <span itemprop="name">{{ .Title }}</span>
         </span>
