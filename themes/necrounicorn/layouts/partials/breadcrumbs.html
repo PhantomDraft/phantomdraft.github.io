@@ -15,10 +15,10 @@
                 Category:
                 {{ range $index, $category := $categories }}
                     {{ if $index }}, {{ end }} <!-- Добавляет запятую между ссылками -->
-                    {{ $taxonomy := (index (site.GetTerms "categories") $category) }}
+                    {{ $taxonomy := index .Site.Taxonomies.categories $category }}
                     {{ if $taxonomy }}
-                        <a href="{{ $taxonomy.Permalink }}" itemprop="item">
-                            <span>{{ $taxonomy.Title }}</span>
+                        <a href="{{ $taxonomy.Page.Permalink }}" itemprop="item">
+                            <span>{{ $category }}</span>
                         </a>
                     {{ else }}
                         <span>{{ $category }}</span>
