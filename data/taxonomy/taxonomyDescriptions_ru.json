@@ -1,12 +1,12 @@
 {
   "categories": {
-    "My projects": "My projects"
+    "my-projects": "Мои проекты"
   },
   "tags": {
     "ai": "ai",
     "chatgpt": "chatgpt"
   },
   "series": {
-    "Project: horrorprom": "horrorprom"
+    "project-horrorprom": "Хоррорпром"
   }
 }

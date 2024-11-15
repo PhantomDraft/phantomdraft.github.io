@@ -13,39 +13,24 @@
         {{ if eq .Site.Language.Lang "ru" }} на русском{{ end }}
         {{ if not .IsHome }}{{ with .Title }} | {{ . }}{{ end }}{{ end }}
     </title>
-<!-- Debugging Meta Description for Taxonomies -->
-{{ $lang := .Site.Language.Lang }} <!-- Определяем текущий язык -->
-{{ $taxonomyFile := printf "taxonomyDescriptions_%s" $lang }} <!-- Имя файла данных -->
-{{ $taxonomyDescriptions := index .Site.Data.taxonomy $taxonomyFile }} <!-- Данные таксономии -->
-
-<!-- Debug: Текущий язык -->
-<p>Current Language: {{ $lang }}</p>
-
-<!-- Debug: Имя файла таксономии -->
-<p>Taxonomy File: {{ $taxonomyFile }}</p>
-
-<!-- Debug: Содержимое загруженных данных -->
-<pre>
-{{ $taxonomyDescriptions | jsonify }}
-</pre>
-
-<!-- Выводим мета-тег -->
-<meta name="description" content="
-  {{ if .Description }}
-    {{ .Description }}
-  {{ else if .Summary }}
-    {{ .Summary }}
-  {{ else if .Title | lower | urlize }}
-    {{ $key := .Title | lower | urlize }}
-    {{ with index $taxonomyDescriptions.categories $key }}
-      {{ . }}
+    <!-- meta description -->
+    {{ $lang := .Site.Language.Lang }}
+    {{ $taxonomyFile := printf "taxonomyDescriptions_%s" $lang }}
+    {{ $taxonomyDescriptions := index .Site.Data.taxonomy $taxonomyFile }}
+    <meta name="description" content="{{ if .Description }}
+        {{ .Description }}
+    {{ else if .Summary }}
+        {{ .Summary }}
+    {{ else if .Title | lower | urlize }}
+        {{ $key := .Title | lower | urlize }}
+        {{ with index $taxonomyDescriptions.categories $key }}
+            {{ . }}
+        {{ else }}
+            Default description for taxonomies.
+        {{ end }}
     {{ else }}
-      Default description for taxonomies.
-    {{ end }}
-  {{ else }}
-    Default description for the site.
-  {{ end }}">
-
+        Default description for the site.
+    {{ end }}">
     <!-- rel canonical -->
     <link rel="canonical" href="{{ .Permalink }}" />
     <!-- rel alternate : processing of the main page -->
