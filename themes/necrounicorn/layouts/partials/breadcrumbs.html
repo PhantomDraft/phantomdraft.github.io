@@ -14,8 +14,8 @@
             <span itemprop="name">
                 Category:
                 {{ range $index, $category := $categories }}
-                    {{ if $index }}, {{ end }} <!-- Добавляет запятую между ссылками -->
-                    {{ $taxonomy := index .Site.Taxonomies.categories $category }}
+                    {{ if $index }}, {{ end }}
+                    {{ $taxonomy := (index $.Site.Taxonomies.categories $category) }}
                     {{ if $taxonomy }}
                         <a href="{{ $taxonomy.Page.Permalink }}" itemprop="item">
                             <span>{{ $category }}</span>
