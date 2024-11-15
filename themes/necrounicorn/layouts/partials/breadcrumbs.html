@@ -43,9 +43,14 @@
                     {{ if $index }}, {{ end }}
                     {{ $taxonomy := (index $.Site.Taxonomies.categories $category) }}
                     {{ if $taxonomy }}
-                        <a href="{{ $taxonomy.Page.Permalink }}" itemprop="item">
-                            <span>{{ $taxonomy.Title }}</span>
-                        </a>
+                        {{ $firstPage := index $taxonomy.Pages 0 }}
+                        {{ if $firstPage }}
+                            <a href="{{ $firstPage.Permalink }}" itemprop="item">
+                                <span>{{ $firstPage.Title }}</span>
+                            </a>
+                        {{ else }}
+                            <span>{{ $category }}</span>
+                        {{ end }}
                     {{ else }}
                         <span>{{ $category }}</span>
                     {{ end }}
@@ -64,9 +69,14 @@
                     {{ if $index }}, {{ end }}
                     {{ $taxonomy := (index $.Site.Taxonomies.tags $tag) }}
                     {{ if $taxonomy }}
-                        <a href="{{ $taxonomy.Page.Permalink }}" itemprop="item">
-                            <span>{{ $taxonomy.Title }}</span>
-                        </a>
+                        {{ $firstPage := index $taxonomy.Pages 0 }}
+                        {{ if $firstPage }}
+                            <a href="{{ $firstPage.Permalink }}" itemprop="item">
+                                <span>{{ $firstPage.Title }}</span>
+                            </a>
+                        {{ else }}
+                            <span>{{ $tag }}</span>
+                        {{ end }}
                     {{ else }}
                         <span>{{ $tag }}</span>
                     {{ end }}
