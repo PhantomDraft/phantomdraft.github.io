@@ -13,50 +13,7 @@
         {{ if eq .Site.Language.Lang "ru" }} на русском{{ end }}
         {{ if not .IsHome }}{{ with .Title }} | {{ . }}{{ end }}{{ end }}
     </title>
-<!-- Debugging Hugo Taxonomy Data -->
-{{ $lang := .Site.Language.Lang }} <!-- Определяем текущий язык -->
-{{ $taxonomyFile := printf "taxonomyDescriptions_%s" $lang }} <!-- Формируем имя файла -->
-{{ $taxonomyDescriptions := index .Site.Data.taxonomy $taxonomyFile }} <!-- Загружаем файл -->
-
-<!-- Debug: Текущий язык -->
-<p>Current Language: {{ $lang }}</p>
-
-<!-- Debug: Имя файла таксономии -->
-<p>Taxonomy File: {{ $taxonomyFile }}</p>
-
-<!-- Debug: Содержимое загруженных данных -->
-<pre>
-{{ $taxonomyDescriptions | jsonify }}
-</pre>
-
-<!-- Debug: Проверяем ключ из контента -->
-<p>Page Taxonomy Key: {{ .Params.taxonomyKey }}</p>
-
-<!-- Debug: Значение ключа из данных -->
-{{ with .Params.taxonomyKey }}
-  {{ with index $taxonomyDescriptions.categories . }}
-    <p>Found Description for Key '{{ .Params.taxonomyKey }}': {{ . }}</p>
-  {{ else }}
-    <p>Key '{{ .Params.taxonomyKey }}' not found in Taxonomy Data.</p>
-  {{ end }}
-{{ else }}
-  <p>No taxonomyKey provided on this page.</p>
-{{ end }}
-
-<!-- Итоговое содержимое meta description -->
-<meta name="description" content="{{ if .Description }}
-  {{ .Description }}
-{{ else if .Summary }}
-  {{ .Summary }}
-{{ else if .Params.taxonomyKey }}
-  {{ with index $taxonomyDescriptions.categories .Params.taxonomyKey }}
-    {{ . }}
-  {{ else }}
-    Not Found in Taxonomy Data
-  {{ end }}
-{{ else }}
-  {{ .Site.Params.description }}
-{{ end }}">
+    {{ if or .Description .Summary .Site.Params.description }}<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">{{ end }}
     <!-- rel canonical -->
     <link rel="canonical" href="{{ .Permalink }}" />
     <!-- rel alternate : processing of the main page -->
