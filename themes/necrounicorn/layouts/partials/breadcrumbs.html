@@ -15,8 +15,8 @@
         </span>
     {{ end }}
 
-    <!-- Если текущая страница принадлежит таксономии -->
-    {{ if eq .Kind "taxonomy" }}
+    <!-- Если текущая страница является термином таксономии -->
+    {{ if eq .Kind "taxonomyTerm" }}
         <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
             <a href="{{ .Permalink }}" itemprop="item">
                 <span itemprop="name">{{ .Title }}</span>
@@ -24,8 +24,8 @@
         </span>
     {{ end }}
 
-    <!-- Если текущая страница является термином таксономии -->
-    {{ if eq .Kind "taxonomyTerm" }}
+    <!-- Если текущая страница является страницей таксономии -->
+    {{ if eq .Kind "taxonomy" }}
         <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
             <a href="{{ .Permalink }}" itemprop="item">
                 <span itemprop="name">{{ .Title }}</span>
@@ -38,7 +38,7 @@
     {{ if $categories }}
         <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
             <span itemprop="name">
-                Category:
+                Categories:
                 {{ range $index, $category := $categories }}
                     {{ if $index }}, {{ end }}
                     {{ $taxonomy := (index $.Site.Taxonomies.categories $category) }}
