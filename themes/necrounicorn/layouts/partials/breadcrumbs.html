@@ -1,22 +1,17 @@
 <div class="center media_base_width p_relative breadcrumbs" prefix="v: http://rdf.data-vocabulary.org/#">
-    <!-- Главная страница -->
+    <!-- Корень сайта -->
     <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
         <a href="{{ .Site.BaseURL }}" itemprop="item">
-            <span itemprop="name">{{ i18n "Home_latestPosts" }}</span>
+            <span itemprop="name">{{ .Site.Title }}</span>
         </a>
     </span>
 
-    <!-- Родительские страницы -->
-    {{ $current := . }}
-    {{ range (slice) }}
-        {{ $current = $current.Parent }}
-        {{ if $current }}
-            <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                <a href="{{ $current.Permalink }}" itemprop="item">
-                    <span itemprop="name">{{ $current.Title }}</span>
-                </a>
-            </span>
-        {{ end }}
+    <!-- Если есть категории -->
+    {{ $categories := .Params.categories }}
+    {{ if $categories }}
+        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <span itemprop="name">Category: {{ delimit $categories ", " }}</span>
+        </span>
     {{ end }}
 
     <!-- Текущая страница -->
