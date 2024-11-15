@@ -13,23 +13,10 @@
         {{ if eq .Site.Language.Lang "ru" }} на русском{{ end }}
         {{ if not .IsHome }}{{ with .Title }} | {{ . }}{{ end }}{{ end }}
     </title>
-{{ $lang := .Site.Language.Lang }} <!-- Определяем текущий язык -->
-{{ $taxonomyFile := printf "taxonomyDescriptions_%s" $lang }} <!-- Выбираем файл по языку -->
-{{ $taxonomyDescriptions := index .Site.Data.taxonomy $taxonomyFile }} <!-- Загружаем данные -->
-
-<meta name="description" content="{{ if .Description }}
-  {{ .Description }}
-{{ else if .Summary }}
-  {{ .Summary }}
-{{ else if .Params.taxonomyKey }}
-  {{ with index $taxonomyDescriptions.categories .Params.taxonomyKey }}
-    {{ . }}
-  {{ else }}
-    {{ .Site.Params.description }}
-  {{ end }}
-{{ else }}
-  {{ .Site.Params.description }}
-{{ end }}">
+{{ $taxonomyFile := printf "taxonomyDescriptions_%s" $lang }}
+{{ range .Site.Data.taxonomy }}
+  {{ . }}
+{{ end }}
     <!-- rel canonical -->
     <link rel="canonical" href="{{ .Permalink }}" />
     <!-- rel alternate : processing of the main page -->
