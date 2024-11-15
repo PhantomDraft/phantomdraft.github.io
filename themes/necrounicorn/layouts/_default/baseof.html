@@ -23,9 +23,7 @@
             <!-- other -->
             <div class="base_width p_relative wrap"> <div id="overlay" class="base_width p_fixed"></div>
 
-                <div class="center media_base_width p_relative breadcrumbs" prefix="v: http://rdf.data-vocabulary.org/#">
-                    <!--<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">{{ i18n "Home_latestPosts" }}</span>-->
-                </div>
+{{ partial "breadcrumbs.html" . }}
 
                 {{- partial "header/header.html" . -}}
                 {{ partial "header/search.html" . }}

@@ -1,0 +1,23 @@
+<div class="center media_base_width p_relative breadcrumbs" prefix="v: http://rdf.data-vocabulary.org/#">
+    <!-- Главная страница -->
+    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="{{ .Site.BaseURL }}" itemprop="item">
+            <span itemprop="name">{{ i18n "Home_latestPosts" }}</span>
+        </a>
+    </span>
+
+    {{ $parents := .Breadcrumbs }}
+    {{ range $index, $parent := $parents }}
+        <!-- Хлебные крошки для родителей -->
+        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="{{ $parent.Permalink }}" itemprop="item">
+                <span itemprop="name">{{ $parent.Title }}</span>
+            </a>
+        </span>
+    {{ end }}
+
+    <!-- Текущая страница -->
+    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <span itemprop="name">{{ .Title }}</span>
+    </span>
+</div>
