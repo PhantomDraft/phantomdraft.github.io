@@ -28,7 +28,7 @@
   {{- end }}
 
   <!-- Каждая категория -->
-  {{- range .Site.Taxonomies.categories }}
+  {{- range sort .Site.Taxonomies.categories.ByPage "Permalink" }}
   <url>
     <loc>{{ .Page.Permalink }}</loc>
     <priority>0.9</priority>
@@ -46,7 +46,7 @@
   {{- end }}
 
   <!-- Каждый тег -->
-  {{- range .Site.Taxonomies.tags }}
+  {{- range sort .Site.Taxonomies.tags.ByPage "Permalink" }}
   <url>
     <loc>{{ .Page.Permalink }}</loc>
     <priority>0.6</priority>
@@ -54,7 +54,7 @@
   {{- end }}
 
   <!-- Сами материалы -->
-  {{- range .Site.RegularPages }}
+  {{- range sort .Site.RegularPages "Permalink" }}
   <url>
     <loc>{{ .Permalink }}</loc>
     <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}</lastmod>
