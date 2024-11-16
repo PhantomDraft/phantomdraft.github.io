@@ -24,12 +24,6 @@ hasCJKLanguage = false
 #paginate
 paginate = 15
 
-[minify]
-  disableHTML = false
-  [minify.tdewolff]
-    [minify.tdewolff.html]
-      keepQuotes = true
-
 [params]
     [params.site]
         onlyOneLang = false
@@ -226,6 +220,13 @@ paginate = 15
     [[related.indices]]
         name = "date"
         weight = 10
+
+# Minify
+[minify]
+    disableHTML = false
+    [minify.tdewolff]
+        [minify.tdewolff.html]
+            keepQuotes = true
 
 # Markup related configuration in Hugo
 [markup]
