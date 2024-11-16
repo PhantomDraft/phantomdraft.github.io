@@ -1,10 +1,65 @@
 {{- printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{{- range .Site.RegularPages }}
-    <url>
-        <loc>{{ .Permalink }}</loc>
-        <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}</lastmod>
-        <priority>0.8</priority>
-    </url>
-{{- end }}
+
+  <!-- Главная страница -->
+  <url>
+    <loc>{{ .Site.BaseURL }}</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Главные страницы для категорий, коллекций и тегов -->
+  {{- with .Site.GetPage "section" "categories" }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    <priority>0.9</priority>
+  </url>
+  {{- end }}
+  {{- with .Site.GetPage "section" "collections" }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    <priority>0.9</priority>
+  </url>
+  {{- end }}
+  {{- with .Site.GetPage "section" "tags" }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    <priority>0.6</priority>
+  </url>
+  {{- end }}
+
+  <!-- Каждая категория -->
+  {{- range .Site.Taxonomies.categories }}
+  <url>
+    <loc>{{ .Page.Permalink }}</loc>
+    <priority>0.9</priority>
+  </url>
+  {{- end }}
+
+  <!-- Каждая коллекция -->
+  {{- range .Site.Sections }}
+  {{ if eq .Section "collections" }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    <priority>0.9</priority>
+  </url>
+  {{ end }}
+  {{- end }}
+
+  <!-- Каждый тег -->
+  {{- range .Site.Taxonomies.tags }}
+  <url>
+    <loc>{{ .Page.Permalink }}</loc>
+    <priority>0.6</priority>
+  </url>
+  {{- end }}
+
+  <!-- Сами материалы -->
+  {{- range .Site.RegularPages }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}</lastmod>
+    <priority>0.8</priority>
+  </url>
+  {{- end }}
+
 </urlset>
