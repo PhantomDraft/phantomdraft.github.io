@@ -24,6 +24,9 @@ hasCJKLanguage = false
 #paginate
 paginate = 15
 
+[minify]
+  disableHTML = true
+  
 [params]
     [params.site]
         onlyOneLang = false
