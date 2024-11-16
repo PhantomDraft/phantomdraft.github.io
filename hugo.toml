@@ -24,9 +24,6 @@ hasCJKLanguage = false
 #paginate
 paginate = 15
 
-[sitemap]
-disable = true
-
 [params]
     [params.site]
         onlyOneLang = false
@@ -111,7 +108,6 @@ disable = true
         languageName = 'English'
         contentDir = 'content/en'
         weight = 1
-        sitemap = 'sitemap/en.xml'
     [languages.uk]
         languageCode = 'uk'
         languageName = 'Український'
