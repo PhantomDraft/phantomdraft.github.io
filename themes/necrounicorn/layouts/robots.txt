@@ -1,5 +1,3 @@
 User-agent: *
 
-{{ range .Site.Languages }}
-Sitemap: {{ .BaseURL }}sitemap/{{ .Lang }}.xml
-{{ end }}
+Sitemap: https://phantomdraft.github.io/sitemap/en.xml
