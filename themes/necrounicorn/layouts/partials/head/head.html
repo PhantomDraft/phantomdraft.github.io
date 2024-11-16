@@ -32,20 +32,20 @@
         Notes on Horror and Punk Subgenre Projects.
     {{ end }}">
     <!-- rel canonical -->
-    <link rel="canonical" href="{{ .Permalink }}" />
+    <link rel="canonical" href="{{ .Permalink | safeURL  }}" />
     <!-- rel alternate : processing of the main page -->
-    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+    <link rel="alternate" hreflang="{{ .Lang | safeURL  }}" href="{{ .Permalink | safeURL  }}" />
     <!-- rel alternate : all other transfers -->
     {{- range .Translations -}}
-        <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+        <link rel="alternate" hreflang="{{ .Lang | safeURL  }}" href="{{ .Permalink }}" />
     {{- end -}}
     <!-- rel alternate : installing x-default on the English version -->
     {{- if eq .Lang "en" -}}
-        <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+        <link rel="alternate" hreflang="x-default" href="{{ .Permalink | safeURL  }}" />
     {{- else -}}
         {{- range .Translations -}}
             {{- if eq .Lang "en" -}}
-                <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+                <link rel="alternate" hreflang="x-default" href="{{ .Permalink | safeURL  }}" />
             {{- end -}}
         {{- end -}}
     {{- end -}}
