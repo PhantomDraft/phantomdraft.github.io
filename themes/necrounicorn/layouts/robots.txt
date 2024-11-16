@@ -1,3 +1,6 @@
 User-agent: *
 
-Sitemap: https://phantomdraft.github.io/sitemap/en.xml
+Sitemap: https://phantomdraft.github.io/sitemap.xml
+Sitemap: https://phantomdraft.github.io/en/sitemap.xml
+Sitemap: https://phantomdraft.github.io/uk/sitemap.xml
+Sitemap: https://phantomdraft.github.io/ru/sitemap.xml
