@@ -1,0 +1,5 @@
+User-agent: *
+
+{{ range .Site.Languages }}
+Sitemap: {{ .BaseURL }}sitemap/{{ .Lang }}.xml
+{{ end }}
