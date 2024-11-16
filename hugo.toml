@@ -108,6 +108,7 @@ paginate = 15
         languageName = 'English'
         contentDir = 'content/en'
         weight = 1
+        sitemap = "sitemap/en.xml"
     [languages.uk]
         languageCode = 'uk'
         languageName = 'Український'
