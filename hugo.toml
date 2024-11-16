@@ -25,8 +25,11 @@ hasCJKLanguage = false
 paginate = 15
 
 [minify]
-  disableHTML = true
-  
+  disableHTML = false
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepQuotes = true
+
 [params]
     [params.site]
         onlyOneLang = false
