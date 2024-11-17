@@ -8,7 +8,7 @@ $(document).ready(function () {
 	slidenav = $('.slidenav'), 
 	overlay = $('#overlay'), 
 	$tocList = $('#toc-list'), 
-	headers = $('article').find('h1, h2, h3, h4, h5, h6'), 
+	headers = $('.aMessage').find('h1, h2, h3, h4, h5, h6'), 
 	levels = [];
 
 menuHeight = menu.height();
