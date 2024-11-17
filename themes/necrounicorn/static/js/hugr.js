@@ -111,6 +111,7 @@ function toggleNav() {
 	slidenav.toggleClass('active');
 }
 
+// table of contents
 $('#table_of_contents_button').click(function () {
 	$('#table_of_contents').toggle();
 });
