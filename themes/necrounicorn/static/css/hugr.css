@@ -561,6 +561,56 @@ option {
     color: pink;
 }
 
+        /* Минимальная стилизация */
+        #toc-container {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+            max-width: 300px;
+            z-index: 1000;
+        }
+
+        #toc-container ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #toc-container li {
+            margin: 5px 0;
+        }
+
+        #toc-container a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        #toc-container a:hover {
+            text-decoration: underline;
+        }
+
+        #toc-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        #toc-button:hover {
+            background: #0056b3;
+        }
+
 /* Хлебные крошки
 ==============================
  */

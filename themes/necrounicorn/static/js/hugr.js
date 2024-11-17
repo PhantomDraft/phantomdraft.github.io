@@ -5,7 +5,10 @@ let wnd = $(window),
 	pull = $('#pull'), 
 	menuBtn = $('.menuBtn'), 
 	slidenav = $('.slidenav'), 
-	overlay = $('#overlay');
+	overlay = $('#overlay'), 
+	$tocList = $('#toc-list'), 
+	headers = $('article').find('h1, h2, h3, h4, h5, h6'), 
+	levels = [];
 
 menuHeight = menu.height();
 
@@ -94,6 +97,38 @@ function toggleNav() {
 	overlay.toggleClass('show');
 	slidenav.toggleClass('active');
 }
+
+
+
+    headers.each(function () {
+        let tag = $(this).prop('tagName').toLowerCase();
+        let text = $(this).text();
+        let id = $(this).attr('id') || text.toLowerCase().replace(/\s+/g, '-');
+        $(this).attr('id', id);
+
+        // Создаём элемент списка
+        let listItem = $('<li>').append(
+            $('<a>').attr('href', `#${id}`).text(text)
+        );
+
+        // Определяем уровень заголовка
+        let level = parseInt(tag.replace('h', ''), 10);
+
+        // Вложенность
+        if (!levels[level]) levels[level] = $('<ul>');
+        levels[level].append(listItem);
+
+        // Если это первый уровень или родительский существует
+        if (level === 1 || levels[level - 1]) {
+            if (!levels[level - 1]) {
+                $tocList.append(levels[level]); // Первый уровень добавляем напрямую
+            } else {
+                levels[level - 1].append(levels[level]); // Вложенные добавляем к родителю
+            }
+        }
+    });
+
+
 
 // tag
 function DblHelix(n, rx, ry, rz) {
