@@ -6,7 +6,7 @@ let wnd = $(window),
 	menuBtn = $('.menuBtn'), 
 	slidenav = $('.slidenav'), 
 	overlay = $('#overlay'), 
-	$tocList = $('#toc-list'), 
+	$table_of_list = $('#table_of_list'), 
 	headers = $('article').find('h1, h2, h3, h4, h5, h6'), 
 	levels = [];
 
@@ -109,14 +109,14 @@ headers.each(function () {
 		$('<a>').attr('href', `#${id}`).text(text)
 	);
 
-	$tocList.append(listItem);
+	$table_of_list.append(listItem);
 });
 
-$('#toc-button').click(function () {
-	$('#toc-container').toggle();
+$('#table_of_contents_button').click(function () {
+	$('#table_of_contents').toggle();
 });
 
-$('#toc-container a').click(function (e) {
+$('#table_of_contents a').click(function (e) {
 	e.preventDefault();
 	let target = $($(this).attr('href'));
 	if (target.length) {
