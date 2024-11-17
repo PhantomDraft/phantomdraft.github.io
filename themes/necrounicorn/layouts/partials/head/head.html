@@ -7,7 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ end }}
     <meta name="google-site-verification" content="t8jAWmyyFoU9OkD89rkuwkAqVJDTTIXOVQWqHpaznSM" />
-    <title>{{ .Site.Title }}{{ if eq .Site.Language.Lang "uk" }} на українському{{ end }}{{ if eq .Site.Language.Lang "ru" }} на русском{{ end }}{{ if not .IsHome }}{{ with .Title }} | {{ . }}{{ end }}{{ end }}</title>
+    <title>
+        {{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}
+        {{ .Site.Title }}
+        {{ if eq .Site.Language.Lang "uk" }} на українському{{ end }}
+        {{ if eq .Site.Language.Lang "ru" }} на русском{{ end }}
+    </title>
     <!-- meta description -->
     {{ $lang := .Site.Language.Lang }}
     {{ $taxonomyFile := printf "taxonomyDescriptions_%s" $lang }}
