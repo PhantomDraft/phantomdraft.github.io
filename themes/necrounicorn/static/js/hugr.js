@@ -99,8 +99,7 @@ function toggleNav() {
 }
 
 
-
-    headers.each(function () {
+headers.each(function () {
         let tag = $(this).prop('tagName').toLowerCase();
         let text = $(this).text();
         let id = $(this).attr('id') || text.toLowerCase().replace(/\s+/g, '-');
@@ -125,6 +124,22 @@ function toggleNav() {
             } else {
                 levels[level - 1].append(levels[level]); // Вложенные добавляем к родителю
             }
+        }
+    });
+
+    // Переключение видимости оглавления
+    $('#toc-button').click(function () {
+        $('#toc-container').toggle();
+    });
+
+    // Прокрутка к заголовкам
+    $('#toc-container a').click(function (e) {
+        e.preventDefault();
+        let target = $($(this).attr('href'));
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 500);
         }
     });
 
