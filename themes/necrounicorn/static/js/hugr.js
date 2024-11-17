@@ -1,4 +1,5 @@
-let wnd = $(window), 
+$(document).ready(function () {
+	let wnd = $(window), 
 	wrap = $('.wrap'), 
 	menu = $('.in_the_middle'), 
 	mobile_navigation = $('.mobile_navigation'), 
@@ -158,3 +159,5 @@ function DblHelix(n, rx, ry, rz) {
 		}
 	return p;
 }
+
+});
