@@ -18,19 +18,19 @@
     {{ $taxonomyDescriptions := index .Site.Data.taxonomy $taxonomyFile }}
     {{ $taxonomyType := .Section }}
     {{ $taxonomyKey := .Title | lower | urlize }}
-    <meta name="description" content="{{ if .Description }}
+    <meta name="description" content="{{- if .Description -}}
         {{ .Description }}
-    {{ else if .Summary }}
+    {{- else if .Summary -}}
         {{ .Summary }}
-    {{ else if and $taxonomyType $taxonomyKey }}
-        {{ with index (index $taxonomyDescriptions $taxonomyType) $taxonomyKey }}
+    {{- else if and $taxonomyType $taxonomyKey -}}
+        {{- with index (index $taxonomyDescriptions $taxonomyType) $taxonomyKey -}}
             {{ . }}
-        {{ else }}
+        {{- else -}}
             Default description for {{ $taxonomyType }}.
-        {{ end }}
-    {{ else }}
+        {{- end -}}
+    {{- else -}}
         Notes on Horror and Punk Subgenre Projects.
-    {{ end }}">
+    {{- end -}}">
     <!-- rel canonical -->
     <link rel="canonical" href="{{ .Permalink }}" />
     <!-- rel alternate : processing of the main page -->
