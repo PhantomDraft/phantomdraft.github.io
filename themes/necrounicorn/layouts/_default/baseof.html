@@ -21,17 +21,16 @@
             <!-- other -->
             <div class="base_width p_relative wrap"> <div id="overlay" class="base_width p_fixed"></div>
 
-                {{ partial "breadcrumbs.html" . }}
-                {{ partial "header/header.html" . }}
-                {{ partial "header/search.html" . }}
-                {{ partial "widgets/hero.html" . }}
+                {{- partial "breadcrumbs.html" . -}}
+                {{- partial "header/header.html" . -}}
+                {{- partial "header/search.html" . -}}
+                {{- partial "widgets/hero.html" . -}}
 
                 <div id="container" class="center media_base_width p_relative clearfix">
                     {{- block "main" . }}{{- end }}
                 </div>
 
                 {{- partial "footer/footer.html" . -}}
-
             </div>
 
             {{ if .IsPage }}

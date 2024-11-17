@@ -563,15 +563,14 @@ option {
 
 /* Оглавление */
 #table_of_contents {
-    position: fixed;
-    top: 10px; right: 10px;
-    background: #f9f9f9;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
+    z-index: 1000;
     display: none;
     max-width: 300px;
-    z-index: 1000;
+    bottom: 3rem;
+    margin-left: -150px; padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 #table_of_contents ul {list-style: none;}
@@ -579,7 +578,6 @@ option {
 #table_of_contents li {margin: 5px 0;}
 
 #table_of_contents a {text-decoration: none; color: #007bff;}
-
 #table_of_contents a:hover {text-decoration: underline;}
 
 /* Хлебные крошки

@@ -45,6 +45,19 @@ $(function() {
 		// mobile navigation
 		mobile_navigation.css('opacity', opacity);
 	});
+	// table of contents
+	headers.each(function () {
+		let tag = $(this).prop('tagName').toLowerCase();
+		let text = $(this).text();
+		let id = $(this).attr('id') || text.toLowerCase().replace(/\s+/g, '-');
+		$(this).attr('id', id);
+
+		let listItem = $('<li>').append(
+			$('<a>').attr('href', `#${id}`).text(text)
+		);
+
+		$table_of_list.append(listItem);
+	});
 	// aside tabs
 	$('.update').tabs();
 	// slider
@@ -97,20 +110,6 @@ function toggleNav() {
 	overlay.toggleClass('show');
 	slidenav.toggleClass('active');
 }
-
-// table of contents
-headers.each(function () {
-	let tag = $(this).prop('tagName').toLowerCase();
-	let text = $(this).text();
-	let id = $(this).attr('id') || text.toLowerCase().replace(/\s+/g, '-');
-	$(this).attr('id', id);
-
-	let listItem = $('<li>').append(
-		$('<a>').attr('href', `#${id}`).text(text)
-	);
-
-	$table_of_list.append(listItem);
-});
 
 $('#table_of_contents_button').click(function () {
 	$('#table_of_contents').toggle();
