@@ -42,6 +42,9 @@
                     </p>
                 </div>
             {{ end }}
+                    {{ if or .PrevInSection .NextInSection }}
+                        {{ partial "widgets/pre-next.html" . }}
+                    {{ end }}
         </article>
 
         <footer class="castration base_width p_relative footer_info">

@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 22.1
+	Version: 22.3
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('font-awesome.min.css');
@@ -561,55 +561,26 @@ option {
     color: pink;
 }
 
-        /* Минимальная стилизация */
-        #toc-container {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            background: #f9f9f9;
-            border: 1px solid #ccc;
-            padding: 10px;
-            border-radius: 5px;
-            display: none;
-            max-width: 300px;
-            z-index: 1000;
-        }
+/* Оглавление */
+#table_of_contents {
+    position: fixed;
+    top: 10px; right: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    max-width: 300px;
+    z-index: 1000;
+}
 
-        #toc-container ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
+#table_of_contents ul {list-style: none;}
 
-        #toc-container li {
-            margin: 5px 0;
-        }
+#table_of_contents li {margin: 5px 0;}
 
-        #toc-container a {
-            text-decoration: none;
-            color: #007bff;
-        }
+#table_of_contents a {text-decoration: none; color: #007bff;}
 
-        #toc-container a:hover {
-            text-decoration: underline;
-        }
-
-        #toc-button {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 1000;
-        }
-
-        #toc-button:hover {
-            background: #0056b3;
-        }
+#table_of_contents a:hover {text-decoration: underline;}
 
 /* Хлебные крошки
 ==============================

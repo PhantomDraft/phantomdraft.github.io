@@ -1,5 +1,4 @@
-$(document).ready(function () {
-	let wnd = $(window), 
+let wnd = $(window), 
 	wrap = $('.wrap'), 
 	menu = $('.in_the_middle'), 
 	mobile_navigation = $('.mobile_navigation'), 
@@ -8,7 +7,7 @@ $(document).ready(function () {
 	slidenav = $('.slidenav'), 
 	overlay = $('#overlay'), 
 	$tocList = $('#toc-list'), 
-	headers = $('.aMessage').find('h1, h2, h3, h4, h5, h6'), 
+	headers = $('article').find('h1, h2, h3, h4, h5, h6'), 
 	levels = [];
 
 menuHeight = menu.height();
@@ -99,52 +98,33 @@ function toggleNav() {
 	slidenav.toggleClass('active');
 }
 
-
+// table of contents
 headers.each(function () {
-        let tag = $(this).prop('tagName').toLowerCase();
-        let text = $(this).text();
-        let id = $(this).attr('id') || text.toLowerCase().replace(/\s+/g, '-');
-        $(this).attr('id', id);
+	let tag = $(this).prop('tagName').toLowerCase();
+	let text = $(this).text();
+	let id = $(this).attr('id') || text.toLowerCase().replace(/\s+/g, '-');
+	$(this).attr('id', id);
 
-        // Создаём элемент списка
-        let listItem = $('<li>').append(
-            $('<a>').attr('href', `#${id}`).text(text)
-        );
+	let listItem = $('<li>').append(
+		$('<a>').attr('href', `#${id}`).text(text)
+	);
 
-        // Определяем уровень заголовка
-        let level = parseInt(tag.replace('h', ''), 10);
+	$tocList.append(listItem);
+});
 
-        // Вложенность
-        if (!levels[level]) levels[level] = $('<ul>');
-        levels[level].append(listItem);
+$('#toc-button').click(function () {
+	$('#toc-container').toggle();
+});
 
-        // Если это первый уровень или родительский существует
-        if (level === 1 || levels[level - 1]) {
-            if (!levels[level - 1]) {
-                $tocList.append(levels[level]); // Первый уровень добавляем напрямую
-            } else {
-                levels[level - 1].append(levels[level]); // Вложенные добавляем к родителю
-            }
-        }
-    });
-
-    // Переключение видимости оглавления
-    $('#toc-button').click(function () {
-        $('#toc-container').toggle();
-    });
-
-    // Прокрутка к заголовкам
-    $('#toc-container a').click(function (e) {
-        e.preventDefault();
-        let target = $($(this).attr('href'));
-        if (target.length) {
-            $('html, body').animate({
-                scrollTop: target.offset().top
-            }, 500);
-        }
-    });
-
-
+$('#toc-container a').click(function (e) {
+	e.preventDefault();
+	let target = $($(this).attr('href'));
+	if (target.length) {
+		$('html, body').animate({
+			scrollTop: target.offset().top
+		}, 500);
+	}
+});
 
 // tag
 function DblHelix(n, rx, ry, rz) {
@@ -159,5 +139,3 @@ function DblHelix(n, rx, ry, rz) {
 		}
 	return p;
 }
-
-});

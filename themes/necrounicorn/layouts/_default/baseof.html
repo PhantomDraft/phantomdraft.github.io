@@ -34,12 +34,11 @@
 
             </div>
 
-            {{ if or .PrevInSection .NextInSection }}
-                {{ partial "widgets/pre-next.html" . }}
+            {{ if .IsPage }}
+                {{- partial "widgets/table-of-contents.html" . -}}
             {{ end }}
-
             {{- partial "footer/hugr-init.html" . -}}
-            {{ partial "widgets/vars.html" . }}
+            {{- partial "widgets/vars.html" . -}}
         {{ end }}
 
     </body>
