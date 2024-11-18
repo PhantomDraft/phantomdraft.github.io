@@ -83,16 +83,6 @@ I came up with a brochure detailing the monster's summoning after I had already 
 	</p>
 </div>
 
-### Creating the Logo
-
-The most interesting part here was the font used in the movie’s logo design. I searched for something similar for a while and eventually chose the font "Optimus Princeps" by Manfred Klein, which is free to use.
-
-<div class="t_center castration cover p_relative atcScreen">
-	<p>
-		<img src="/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-logo.webp" alt="The font from the movie The Cabin in the Woods" />
-	</p>
-</div>
-
 ### Setting Up the Monster’s Chamber
 
 All the monsters in *Cabin in the Woods* lived in simple transparent chambers, but that’s not enough for our heroine. At the very least, she should have her own bathroom and dressing room.
@@ -134,6 +124,22 @@ The dressing room with shelves lined with masks is a reference to a conversation
 The person inside the mirror was initially meant to be a simple reference to myself, watching as my wife changes her masks, and to a scene from *Cabin in the Woods*, where the characters find a room behind the glass.
 
 Unfortunately, it took on a more metaphorical meaning: perhaps the person in the mirror is simply observing the monster, or perhaps they are the monster themselves.
+
+### Naming
+
+There were many options to play around with The Cabin in the Woods in the context of cosmetics, but The Cabin for Grooming turned out to be the most resonant. Additionally, there’s a subtle wordplay here regarding Grooming—a term also used in the context of predatory behavior.
+
+And of course, on the bathroom curtain, we should be wary not of biohazard but of *desire hazard*.
+
+### Creating the Logo
+
+The most interesting part here was the font used in the movie’s logo design. I searched for something similar for a while and eventually chose the font "Optimus Princeps" by Manfred Klein, which is free to use.
+
+<div class="t_center castration cover p_relative atcScreen">
+	<p>
+		<img src="/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-logo.webp" alt="The font from the movie The Cabin in the Woods" />
+	</p>
+</div>
 
 ### Printing
 
