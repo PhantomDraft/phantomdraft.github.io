@@ -141,7 +141,7 @@ The most interesting part here was the font used in the movie’s logo design. I
 	</p>
 </div>
 
-### Printing
+## Printing
 
 Choosing the right print format isn’t too difficult. My printer is currently living separately from me, but I used to be into printing and would print various images, even on glossy paper... though I never printed PNG images on film.
 
