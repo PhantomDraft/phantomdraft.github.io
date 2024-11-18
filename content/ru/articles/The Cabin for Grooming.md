@@ -66,7 +66,7 @@ hideFromSection: false
 	<p><strong>Prompt:</strong> A single character in a pin-up style, resembling an hourglass figure, pressed against a glass panel as if she is inside the box, trying to get out. The character is vertically divided: the right side is robotic with metallic parts and wires, and the left side is human, feminine, with soft features. She wears a pink Marilyn Monroe-style dress and high heels. The expression on her face is playful yet slightly melancholic. Her hands, chest, and face are squashed against the glass, giving a dynamic, pressed look. The left leg should extend slightly over the robotic side, as if the human leg is partially covering the metallic one. The pink skirt should now fully cover the metallic thigh, creating a seamless flow over both sides of the body. The right side of the face resembles a metallic skeleton, similar to the Terminator, with a glowing red laser eye in the eye socket. The red laser eye should now be brighter, more menacing, and have a more threatening, combat-ready appearance. The right side of the costume is also pink, matching the left side.</p>
 </div>
 
-* Референс образа – Хель из фильма Метрополис. Ну, а в германском фильме Метрополис робот является отсылкой на Германо-скандинавскую богиню смерти Хель;  
+* Референс образа – Хель из фильма *Метрополис*. Ну, а в германском фильме *Метрополис* робот является отсылкой на Германо-скандинавскую богиню смерти Хель;  
 * Референс человеческой половины – Мэрилин Монро.
 
 ### Размышления на тему призыва данного монстра
