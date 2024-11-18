@@ -121,6 +121,8 @@ The bathroom reference — Lady Dimitrescu’s bathroom from the game *Resident 
 
 The dressing room with shelves lined with masks is a reference to a conversation between my wife and me about “wearing masks in life.” Some are for family, others for work, others for something else… there are many.
 
+#### The Person Inside the Mirror
+
 The person inside the mirror was initially meant to be a simple reference to myself, watching as my wife changes her masks, and to a scene from *Cabin in the Woods*, where the characters find a room behind the glass.
 
 Unfortunately, it took on a more metaphorical meaning: perhaps the person in the mirror is simply observing the monster, or perhaps they are the monster themselves.
