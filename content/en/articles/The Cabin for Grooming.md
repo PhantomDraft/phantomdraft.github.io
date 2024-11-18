@@ -55,7 +55,7 @@ At first, I was just going to gift it as it was, but the Halloween spirit took o
 
 <p class="t_center">Alright. But which monster?</p>
 
-### Creating a Character in the Cabin in the Woods Style
+## Creating a Character in the Cabin in the Woods Style
 
 I spent some time working with the AI (specifically, GPT chat) to create an unnamed character inspired by the movie that would reside in the beauty cabinet.
 
@@ -66,7 +66,7 @@ I spent some time working with the AI (specifically, GPT chat) to create an unna
 	<p><strong>Prompt:</strong> A single character in a pin-up style, resembling an hourglass figure, pressed against a glass panel as if she is inside the box, trying to get out. The character is vertically divided: the right side is robotic with metallic parts and wires, and the left side is human, feminine, with soft features. She wears a pink Marilyn Monroe-style dress and high heels. The expression on her face is playful yet slightly melancholic. Her hands, chest, and face are squashed against the glass, giving a dynamic, pressed look. The left leg should extend slightly over the robotic side, as if the human leg is partially covering the metallic one. The pink skirt should now fully cover the metallic thigh, creating a seamless flow over both sides of the body. The right side of the face resembles a metallic skeleton, similar to the Terminator, with a glowing red laser eye in the eye socket. The red laser eye should now be brighter, more menacing, and have a more threatening, combat-ready appearance. The right side of the costume is also pink, matching the left side.</p>
 </div>
 
-#### Character References:
+### Character References:
 
 * The robotic half — inspired by Hel from the film *Metropolis*. In the German movie *Metropolis*, the robot is a reference to the Germanic-Scandinavian goddess of death, Hel.  
 * The human half — inspired by Marilyn Monroe.
@@ -83,11 +83,11 @@ I came up with a brochure detailing the monster's summoning after I had already 
 	</p>
 </div>
 
-### Setting Up the Monster’s Chamber
+## Setting Up the Monster’s Chamber
 
 All the monsters in *Cabin in the Woods* lived in simple transparent chambers, but that’s not enough for our heroine. At the very least, she should have her own bathroom and dressing room.
 
-#### Lady Dimitrescu’s Bathroom
+### Lady Dimitrescu’s Bathroom
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
@@ -110,7 +110,7 @@ The bathroom reference — Lady Dimitrescu’s bathroom from the game *Resident 
 	</p>
 </div>
 
-#### Dressing Room
+### Dressing Room
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
@@ -125,7 +125,7 @@ The person inside the mirror was initially meant to be a simple reference to mys
 
 Unfortunately, it took on a more metaphorical meaning: perhaps the person in the mirror is simply observing the monster, or perhaps they are the monster themselves.
 
-### Naming
+## Naming
 
 There were many options to play around with The Cabin in the Woods in the context of cosmetics, but The Cabin for Grooming turned out to be the most resonant. Additionally, there’s a subtle wordplay here regarding Grooming—a term also used in the context of predatory behavior.
 
@@ -173,7 +173,7 @@ But they were out of stock by the time I arrived. Double sigh.
 
 Oh, yes. As soon as we want to update the art, we’ll face the saga of removing double-sided tape residue from the glass.
 
-### The Cabin For Grooming
+## The Cabin For Grooming
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>It turned out as it did.</p>
