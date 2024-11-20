@@ -53,7 +53,7 @@
     <span itemprop="name">{{ .Title }}</span>
 </span>
 
-{{ else }}
+{{ else if not .IsHome }}
 <!-- Другие страницы (например, 404) -->
 <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
     <span itemprop="name">{{ .Title | default "Неизвестная страница" }}</span>
