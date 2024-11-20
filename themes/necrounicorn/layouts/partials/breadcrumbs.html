@@ -16,13 +16,15 @@
 </span>
 {{ end }}
 
-{{ if or .IsTaxonomy .IsTerm }}
-<!-- Ссылка на текущую таксономию или термин -->
-<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    <a href="{{ .Permalink }}" itemprop="item">
-        <span itemprop="name">{{ .Title }}</span>
-    </a>
-</span>
+{{ if .IsPage }}
+    {{ if or .IsTaxonomy .IsTerm }}
+    <!-- Ссылка на текущую таксономию или термин -->
+    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="{{ .Permalink }}" itemprop="item">
+            <span itemprop="name">{{ .Title }}</span>
+        </a>
+    </span>
+    {{ end }}
 {{ end }}
 
 {{ if .IsPage }}
