@@ -9,7 +9,7 @@
 {{ if .IsPage }}
 <!-- Секция, к которой принадлежит материал -->
 <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    {{ $section := site.GetPage (printf "%s/%s" .Lang .Section) }}
+    {{ $section := site.GetPage "section" .Section }}
     {{ if $section }}
         <a href="{{ $section.Permalink }}" itemprop="item">
             <span itemprop="name">{{ $section.Title | default .Section | humanize }}</span>
