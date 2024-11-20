@@ -33,16 +33,6 @@
         </span>
     {{ end }}
 
-
-{{ if .IsPage }}
-<!-- Секция, к которой принадлежит материал -->
-<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    <a href="{{ .Section.Permalink }}" itemprop="item">
-        <span itemprop="name">{{ .Section.Title }}</span>
-    </a>
-</span>
-{{ end }}
-
     <!-- Текущая страница -->
     {{ if eq .Kind "page" }}
         <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
