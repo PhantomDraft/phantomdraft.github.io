@@ -8,7 +8,7 @@ lastmod: "2024-11-20"
 draft: false
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
-categories: ["Blog"]
+categories: ["My Life"]
 # refer to categories
 tags: ["gsc", "xbox"]
 # seires
