@@ -32,14 +32,7 @@
     </span>
 </span>
 
-{{ else }}
-<!-- Другие страницы (например, посты, 404) -->
-<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    <span itemprop="name">{{ .Title | default "Неизвестная страница" }}</span>
-</span>
-{{ end }}
-
-{{ if .IsPage }}
+{{ else if .IsPage }}
 <!-- Секция, к которой принадлежит материал -->
 <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
     {{ $section := site.GetPage "section" .Section }}
@@ -54,15 +47,16 @@
         </a>
     {{ end }}
 </span>
+
+<!-- Текущая страница -->
+<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <span itemprop="name">{{ .Title }}</span>
+</span>
+
+{{ else }}
+<!-- Другие страницы (например, 404) -->
+<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <span itemprop="name">{{ .Title | default "Неизвестная страница" }}</span>
+</span>
 {{ end }}
-
-
-    <!-- Текущая страница -->
-    {{ if eq .Kind "page" }}
-        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <span itemprop="name">{{ .Title }}</span>
-        </span>
-    {{ end }}
-
-
 </div>
