@@ -6,6 +6,13 @@
     </a>
 </span>
 
+{{ if .IsSection }}
+<!-- Название текущей секции -->
+<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <span itemprop="name">{{ .Title | default .File.Path | humanize }}</span>
+</span>
+{{ end }}
+
 {{ if .IsPage }}
 <!-- Секция, к которой принадлежит материал -->
 <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
