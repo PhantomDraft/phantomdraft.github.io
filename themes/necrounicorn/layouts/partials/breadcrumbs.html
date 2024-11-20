@@ -6,20 +6,18 @@
     </a>
 </span>
 
-{{ if .IsSection }}
-<!-- Вывод для страницы раздела -->
+{{ if .IsPage }}
+<!-- Секция, к которой принадлежит материал -->
 <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    <a href="{{ .Permalink }}" itemprop="item">
-        <span itemprop="name">{{ .Title }}</span>
-    </a>
-</span>
-
-{{ else if .IsPage }}
-<!-- Вывод для страницы материала -->
-<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    <a href="{{ .Section.Permalink }}" itemprop="item">
-        <span itemprop="name">{{ .Section.Title | default .Section | humanize }}</span>
-    </a>
+    {{ $section := site.GetPage (printf "section/%s" .Section) }}
+    {{ if $section }}
+        <a href="{{ $section.Permalink }}" itemprop="item">
+            <span itemprop="name">{{ $section.Title | default .Section | humanize }}</span>
+        </a>
+    {{ else }}
+        <!-- Если секция не найдена -->
+        <span>{{ .Section | humanize }}</span>
+    {{ end }}
 </span>
 {{ end }}
 
