@@ -14,7 +14,7 @@ tags: ["gsc", "xbox"]
 # seires
 series: ["S.T.A.L.K.E.R. 2"]
 # Top image for the post /local/images/test/cover.jpg
-image: "/ru/images/posts/stalker2/cover.jpg"
+image: "/ru/images/posts/stalker2/cover.webp"
 # Hide from home and other main page
 hideFromCenter: false
 # Hide from archive page
@@ -30,7 +30,7 @@ hideFromSection: false
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/posts/screen.png" alt="S.T.A.L.K.E.R. 2" />
+		<img src="/images/posts/screen.webp" alt="S.T.A.L.K.E.R. 2" />
 	</p>
 </div>
 
