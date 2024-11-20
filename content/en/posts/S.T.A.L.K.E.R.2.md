@@ -8,13 +8,13 @@ lastmod: "2024-11-20"
 draft: false
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
-categories: [""]
+categories: ["Blog"]
 # refer to categories
 tags: ["gsc", "xbox"]
 # seires
 series: ["S.T.A.L.K.E.R. 2"]
 # Top image for the post /local/images/test/cover.jpg
-image: "/images/posts/stalker2/screen.png"
+image: "/images/posts/stalker2/cover.jpg"
 # Hide from home and other main page
 hideFromCenter: false
 # Hide from archive page
@@ -34,5 +34,5 @@ I’ll definitely write a review later, but for now, I’m joining the Ukrainian
 	</p>
 </div>
 
-By the way, Stalker is available via <a href="https://www.xbox.com/uk-ua/games/store/stalker-2-heart-of-chornobyl-windows-edition/9n3d6v4n58jr" targer="_blank" rel="nofollow">Game Pass</a>.
+By the way, Stalker is available via <a href="https://www.xbox.com/en-en/games/store/stalker-2-heart-of-chornobyl-windows-edition/9n3d6v4n58jr" targer="_blank" rel="nofollow">Game Pass</a>.
 <!--more-->
