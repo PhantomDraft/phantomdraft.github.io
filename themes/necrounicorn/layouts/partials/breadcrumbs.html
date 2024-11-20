@@ -19,12 +19,23 @@
         {{ end }}
     </span>
 </span>
+
 {{ else if or (eq .Kind "taxonomy") (eq .Kind "taxonomyTerm") }}
 <!-- Название таксономии или термина -->
 <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
     <span itemprop="name">
-        {{ .Title | default "Таксономия" | humanize }}
+        {{ if .Title }}
+            {{ .Title }}
+        {{ else }}
+            {{ .Type | humanize }}
+        {{ end }}
     </span>
+</span>
+
+{{ else }}
+<!-- Другие страницы (например, посты, 404) -->
+<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <span itemprop="name">{{ .Title | default "Неизвестная страница" }}</span>
 </span>
 {{ end }}
 
