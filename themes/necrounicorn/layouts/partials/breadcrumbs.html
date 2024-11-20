@@ -16,15 +16,28 @@
 </span>
 {{ end }}
 
-{{ if .IsPage }}
-    {{ if or .IsTaxonomy .IsTerm }}
-    <!-- Ссылка на текущую таксономию или термин -->
-    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+{{ if and (not .IsHome) (or .IsSection .IsTaxonomy .IsTerm .IsPage) }}
+<!-- Breadcrumbs -->
+<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    {{ if .IsTaxonomy }}
         <a href="{{ .Permalink }}" itemprop="item">
             <span itemprop="name">{{ .Title }}</span>
         </a>
-    </span>
+    {{ else if .IsTerm }}
+        <a href="{{ .Permalink }}" itemprop="item">
+            <span itemprop="name">{{ .Title }}</span>
+        </a>
+    {{ else if .IsPage }}
+        {{ with .Params.categories }}
+        <span>Категории:</span>
+        {{ range . }}
+        <a href="{{ (site.GetPage (printf "taxonomyTerm/categories/%s" .)).Permalink }}" itemprop="item">
+            <span itemprop="name">{{ . }}</span>
+        </a>{{ if not (eq . (last .Params.categories)) }}, {{ end }}
+        {{ end }}
+        {{ end }}
     {{ end }}
+</span>
 {{ end }}
 
 {{ if .IsPage }}
