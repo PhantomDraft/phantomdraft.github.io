@@ -9,17 +9,20 @@
 {{ if .IsPage }}
 <!-- Секция, к которой принадлежит материал -->
 <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    {{ $section := site.GetPage (printf "section/%s" .Section) }}
+    {{ $section := site.GetPage "section" .Section }}
     {{ if $section }}
         <a href="{{ $section.Permalink }}" itemprop="item">
             <span itemprop="name">{{ $section.Title | default .Section | humanize }}</span>
         </a>
     {{ else }}
-        <!-- Если секция не найдена -->
-        <span>{{ .Section | humanize }}</span>
+        <!-- Если объект секции не найден -->
+        <a href="#" itemprop="item">
+            <span itemprop="name">{{ .Section | humanize }}</span>
+        </a>
     {{ end }}
 </span>
 {{ end }}
+
 
     <!-- Текущая страница -->
     {{ if eq .Kind "page" }}
