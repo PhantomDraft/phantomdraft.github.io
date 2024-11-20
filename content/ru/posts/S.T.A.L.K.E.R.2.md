@@ -16,7 +16,7 @@ series: ["S.T.A.L.K.E.R. 2"]
 # Top image for the post /local/images/test/cover.jpg
 image: "/ru/images/posts/stalker2/cover.webp"
 # Hide from home and other main page
-hideFromCenter: false
+hideFromCenter: true
 # Hide from archive page
 hideFromArchives: false
 # Hide from everything but the archive
