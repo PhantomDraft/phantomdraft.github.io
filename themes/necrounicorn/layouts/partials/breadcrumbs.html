@@ -33,17 +33,20 @@
         </span>
     {{ end }}
 
-{{ if or .IsTaxonomy .IsTerm }}
-<!-- Название таксономии или термина -->
-<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    {{ if .IsTaxonomy }}
-        <!-- Название таксономии -->
-        <span itemprop="name">{{ .Title | default "Таксономия" | humanize }}</span>
-    {{ else if .IsTerm }}
-        <!-- Название термина -->
-        <span itemprop="name">{{ .Title | default "Тег" | humanize }}</span>
+{{ with .Kind }}
+    {{ if or (eq . "taxonomy") (eq . "taxonomyTerm") }}
+    <!-- Название таксономии или термина -->
+    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        {{ if .IsTaxonomy }}
+            <!-- Название таксономии -->
+            <span itemprop="name">{{ .Title | default "Таксономия" | humanize }}</span>
+        {{ else if .IsTerm }}
+            <!-- Название термина -->
+            <span itemprop="name">{{ .Title | default "Тег" | humanize }}</span>
+        {{ end }}
+    </span>
     {{ end }}
-</span>
 {{ end }}
+
 
 </div>
