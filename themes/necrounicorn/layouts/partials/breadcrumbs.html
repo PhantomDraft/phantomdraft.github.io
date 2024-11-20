@@ -6,32 +6,22 @@
     </a>
 </span>
 
-    <!-- Если текущая страница принадлежит разделу -->
-    {{ if eq .Kind "section" }}
-        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <a href="{{ .Permalink }}" itemprop="item">
-                <span itemprop="name">{{ .Title }}</span>
-            </a>
-        </span>
-    {{ end }}
+{{ if .IsSection }}
+<!-- Вывод для страницы раздела -->
+<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <a href="{{ .Permalink }}" itemprop="item">
+        <span itemprop="name">{{ .Title }}</span>
+    </a>
+</span>
 
-    <!-- Если текущая страница является термином таксономии -->
-    {{ if eq .Kind "taxonomyTerm" }}
-        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <a href="{{ .Permalink }}" itemprop="item">
-                <span itemprop="name">{{ .Title }}</span>
-            </a>
-        </span>
-    {{ end }}
-
-    <!-- Если текущая страница является страницей таксономии -->
-    {{ if eq .Kind "taxonomy" }}
-        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <a href="{{ .Permalink }}" itemprop="item">
-                <span itemprop="name">{{ .Title }}</span>
-            </a>
-        </span>
-    {{ end }}
+{{ else if .IsPage }}
+<!-- Вывод для страницы материала -->
+<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <a href="{{ .Section.Permalink }}" itemprop="item">
+        <span itemprop="name">{{ .Section.Title | default .Section | humanize }}</span>
+    </a>
+</span>
+{{ end }}
 
     <!-- Текущая страница -->
     {{ if eq .Kind "page" }}
