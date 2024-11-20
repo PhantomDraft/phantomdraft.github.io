@@ -6,7 +6,27 @@
     </a>
 </span>
 
-
+{{ if .IsSection }}
+<!-- Название текущей секции -->
+<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <span itemprop="name">
+        {{ if .Title }}
+            {{ .Title }}
+        {{ else if .File }}
+            {{ .File.Path | humanize }}
+        {{ else }}
+            {{ .Section | humanize }}
+        {{ end }}
+    </span>
+</span>
+{{ else if or (eq .Kind "taxonomy") (eq .Kind "taxonomyTerm") }}
+<!-- Название таксономии или термина -->
+<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <span itemprop="name">
+        {{ .Title | default "Таксономия" | humanize }}
+    </span>
+</span>
+{{ end }}
 
 {{ if .IsPage }}
 <!-- Секция, к которой принадлежит материал -->
@@ -32,21 +52,6 @@
             <span itemprop="name">{{ .Title }}</span>
         </span>
     {{ end }}
-
-{{ with .Kind }}
-    {{ if or (eq . "taxonomy") (eq . "taxonomyTerm") }}
-    <!-- Название таксономии или термина -->
-    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        {{ if .IsTaxonomy }}
-            <!-- Название таксономии -->
-            <span itemprop="name">{{ .Title | default "Таксономия" | humanize }}</span>
-        {{ else if .IsTerm }}
-            <!-- Название термина -->
-            <span itemprop="name">{{ .Title | default "Тег" | humanize }}</span>
-        {{ end }}
-    </span>
-    {{ end }}
-{{ end }}
 
 
 </div>
