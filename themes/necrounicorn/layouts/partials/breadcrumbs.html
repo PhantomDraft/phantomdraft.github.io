@@ -1,89 +1,41 @@
 <div class="center media_base_width p_relative breadcrumbs" prefix="v: http://rdf.data-vocabulary.org/#">
-    <!-- Корень сайта -->
-    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="{{ .Site.BaseURL }}" itemprop="item">
-            <span itemprop="name">{{ .Site.Title }}</span>
-        </a>
-    </span>
+<!-- Корень сайта -->
+<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <a href="{{ .Site.BaseURL | relLangURL }}" itemprop="item">
+        <span itemprop="name">{{ .Site.Title }}</span>
+    </a>
+</span>
 
-    <!-- Если текущая страница принадлежит разделу -->
-    {{ if eq .Kind "section" }}
-        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <a href="{{ .Permalink }}" itemprop="item">
-                <span itemprop="name">{{ .Title }}</span>
-            </a>
-        </span>
-    {{ end }}
 
-    <!-- Если текущая страница является термином таксономии -->
-    {{ if eq .Kind "taxonomyTerm" }}
-        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <a href="{{ .Permalink }}" itemprop="item">
-                <span itemprop="name">{{ .Title }}</span>
-            </a>
-        </span>
-    {{ end }}
+{{ if .IsSection }}
+<!-- Ссылка на текущую секцию -->
+<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <a href="{{ .Permalink }}" itemprop="item">
+        <span itemprop="name">{{ .Title }}</span>
+    </a>
+</span>
+{{ end }}
 
-    <!-- Если текущая страница является страницей таксономии -->
-    {{ if eq .Kind "taxonomy" }}
-        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <a href="{{ .Permalink }}" itemprop="item">
-                <span itemprop="name">{{ .Title }}</span>
-            </a>
-        </span>
-    {{ end }}
+{{ if or .IsTaxonomy .IsTerm }}
+<!-- Ссылка на текущую таксономию или термин -->
+<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <a href="{{ .Permalink }}" itemprop="item">
+        <span itemprop="name">{{ .Title }}</span>
+    </a>
+</span>
+{{ end }}
 
-    <!-- Если текущая страница имеет категории -->
-    {{ $categories := .Params.categories }}
-    {{ if $categories }}
-        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <span itemprop="name">
-                Categories:
-                {{ range $index, $category := $categories }}
-                    {{ if $index }}, {{ end }}
-                    {{ $taxonomy := (index $.Site.Taxonomies.categories $category) }}
-                    {{ if $taxonomy }}
-                        {{ $firstPage := index $taxonomy.Pages 0 }}
-                        {{ if $firstPage }}
-                            <a href="{{ $firstPage.Permalink }}" itemprop="item">
-                                <span>{{ $firstPage.Title }}</span>
-                            </a>
-                        {{ else }}
-                            <span>{{ $category }}</span>
-                        {{ end }}
-                    {{ else }}
-                        <span>{{ $category }}</span>
-                    {{ end }}
-                {{ end }}
-            </span>
-        </span>
+{{ if .IsPage }}
+<!-- Список категорий для материала -->
+<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    Категории:
+    {{ range .Params.categories }}
+    <a href="{{ (site.GetPage (printf "taxonomyTerm/categories/%s" .)).Permalink }}" itemprop="item">
+        <span itemprop="name">{{ . }}</span>
+    </a>{{ if not (eq . (last .Params.categories)) }}, {{ end }}
     {{ end }}
-
-    <!-- Если текущая страница имеет теги -->
-    {{ $tags := .Params.tags }}
-    {{ if $tags }}
-        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <span itemprop="name">
-                Tags:
-                {{ range $index, $tag := $tags }}
-                    {{ if $index }}, {{ end }}
-                    {{ $taxonomy := (index $.Site.Taxonomies.tags $tag) }}
-                    {{ if $taxonomy }}
-                        {{ $firstPage := index $taxonomy.Pages 0 }}
-                        {{ if $firstPage }}
-                            <a href="{{ $firstPage.Permalink }}" itemprop="item">
-                                <span>{{ $firstPage.Title }}</span>
-                            </a>
-                        {{ else }}
-                            <span>{{ $tag }}</span>
-                        {{ end }}
-                    {{ else }}
-                        <span>{{ $tag }}</span>
-                    {{ end }}
-                {{ end }}
-            </span>
-        </span>
-    {{ end }}
+</span>
+{{ end }}
 
     <!-- Текущая страница -->
     {{ if eq .Kind "page" }}
