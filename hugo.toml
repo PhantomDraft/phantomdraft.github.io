@@ -229,8 +229,6 @@ paginate = 15
     disableJS = true
     disableJSON = true
     disableSVG = true
-    [minify.tdewolff.html]
-        keepConditionalComments = true
 
 # Markup related configuration in Hugo
 [markup]
