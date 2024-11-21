@@ -1,11 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    {{ if eq .Kind "home" }}
-        <meta name="viewport" content="width=500px, initial-scale=1.0">
-    {{ else }}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{ end }}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="t8jAWmyyFoU9OkD89rkuwkAqVJDTTIXOVQWqHpaznSM" />
     <!-- title -->
     <title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}{{ if eq .Site.Language.Lang "uk" }} на українському{{ end }}{{ if eq .Site.Language.Lang "ru" }} на русском{{ end }}</title>
