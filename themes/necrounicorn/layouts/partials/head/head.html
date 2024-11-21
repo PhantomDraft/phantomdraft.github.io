@@ -33,14 +33,14 @@
         <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
     {{ end }}
     <!-- rel alternate : installing x-default on the English version -->
-    {{- if eq .Lang "en" -}}
+    {{ if eq .Lang "en" }}
         <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
-    {{- else -}}
-        {{- range .Translations -}}
-            {{- if eq .Lang "en" -}}
+    {{ else }}
+        {{ range .Translations }}
+            {{ if eq .Lang "en" }}
                 <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
-            {{- end -}}
-        {{- end -}}
+            {{ end }}
+        {{ end }}
     {{ end }}
     <!-- rel icon -->
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
