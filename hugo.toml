@@ -223,10 +223,7 @@ paginate = 15
 
 # Minify
 [minify]
-    disableHTML = false
-    [minify.tdewolff]
-        [minify.tdewolff.html]
-            keepQuotes = true
+    disable = true
 
 # Markup related configuration in Hugo
 [markup]
