@@ -224,11 +224,11 @@ paginate = 15
 # Minify
 [minify]
     disableHTML = true
+    disableXML = true
     disableCSS = true
     disableJS = true
     disableJSON = true
     disableSVG = true
-    disableXML = true
 
 # Markup related configuration in Hugo
 [markup]
