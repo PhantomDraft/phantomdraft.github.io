@@ -51,24 +51,4 @@
     {{ else }}
         {{- partial "head/hugr-init.html" . -}}
     {{ end }}
-    <!-- Combined Google Analytics and Google Tag Manager -->
-    <script>
-        // Initialize dataLayer
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        // Google Analytics
-        gtag('js', new Date());
-        gtag('config', 'G-VB7SXFSJZ6');
-        // Google Tag Manager
-        (function(w,d,s,l,i){
-            w[l]=w[l]||[];
-            w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window,document,'script','dataLayer','GTM-P5VL5MJD');
-    </script>
 </head>
