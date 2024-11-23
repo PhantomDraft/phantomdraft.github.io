@@ -84,15 +84,16 @@
                 console.warn("Не удалось извлечь номера страниц из адреса:", currentAddress);
             }
         });
-    });
-
-    window.onload = function () {
-    // introJs
+            // introJs
     introJs().setOptions({
     tooltipClass: 'customTooltip', 
     position: 'left', 
     showButtons: false
     }).addHints();
+    });
+
+    window.onload = function () {
+
     };
 </script>
 {{ end }}
