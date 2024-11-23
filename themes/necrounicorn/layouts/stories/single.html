@@ -83,15 +83,11 @@
             } else {
                 console.warn("Не удалось извлечь номера страниц из адреса:", currentAddress);
             }
-                // introJs
-        introJs().setOptions({
-            tooltipClass: 'customTooltip',
-            position: 'left',
-            showButtons: false
-        }).addHints();
+        });
+        introJs().start({
+            tooltipClass: 'customTooltip'
         });
     });
 </script>
-
 
 {{ end }}
