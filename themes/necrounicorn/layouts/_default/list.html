@@ -3,11 +3,11 @@
 
     <section class="castration fl p_relative modules">
         <ul id="content">
-                    {{ range .Pages }}
-                    {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSection)) }}
-                        {{ partial "widgets/post-card.html" . }}
-                    {{ end }}
-                    {{ end }}
-                </ul>
+            {{ range .Pages }}
+                {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSection)) }}
+                    {{ partial "widgets/post-card.html" . }}
+                {{ end }}
+            {{ end }}
+        </ul>
     </section>
 {{ end }}
