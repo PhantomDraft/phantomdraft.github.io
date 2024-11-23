@@ -57,9 +57,8 @@
     });
 
 $(function() {
-    // Функция для получения номера последней страницы
+    // Получаем номер последней страницы динамически
     function getLastPageNumber() {
-        // Найти все элементы с атрибутом page и взять максимальное значение
         var lastPage = 0;
         $('.turn-page-wrapper').each(function() {
             var page = parseInt($(this).attr('page'), 10);
@@ -70,36 +69,31 @@ $(function() {
         return lastPage;
     }
 
-    // Функция активации подсказок
+    // Активируем подсказки для указанных страниц
     function activateHintsForPages(pages) {
-        // Удаляем предыдущие подсказки
-        introJs().removeHints();
+        introJs().removeHints(); // Удаляем существующие подсказки
 
-        if (pages.length > 0) {
-            pages.forEach(function(page) {
-                var $currentHints = $(`.turn-page-wrapper[page="${page}"]`).find('[data-hint]');
-                if ($currentHints.length > 0) {
-                    $currentHints.each(function() {
-                        var element = $(this).get(0);
-                        introJs().addHints([{
-                            element: element,
-                            hint: $(this).attr('data-hint'),
-                            position: $(this).attr('data-hintposition') || 'bottom-middle',
-                        }]);
-                    });
-                } else {
-                    console.log("Нет подсказок для страницы:", page);
-                }
-            });
+        pages.forEach(function(page) {
+            var $currentHints = $(`.turn-page-wrapper[page="${page}"]`).find('[data-hint]');
+            if ($currentHints.length > 0) {
+                $currentHints.each(function() {
+                    introJs().addHints([{
+                        element: $(this).get(0),
+                        hint: $(this).attr('data-hint'),
+                        position: $(this).attr('data-hintposition') || 'bottom-middle',
+                    }]);
+                });
+            } else {
+                console.log(`Нет подсказок для страницы ${page}`);
+            }
+        });
 
-            // Обновляем подсказки
-            introJs().refresh();
-        }
+        introJs().refresh(); // Обновляем подсказки
     }
 
-    // Обработчик изменения адреса
+    // Основной обработчик изменения адреса
     $.address.change(function(event) {
-        var currentAddress = event.value.slice(1); // Убираем символ "#"
+        var currentAddress = event.value.slice(1); // Убираем "#"
         var pages = [];
 
         if (currentAddress === "book5/page1") {
@@ -118,14 +112,14 @@ $(function() {
         }
 
         if (pages.length > 0) {
-            console.log("Текущие страницы:", pages);
+            console.log("Активируем подсказки для страниц:", pages);
             activateHintsForPages(pages);
         } else {
             console.warn("Не удалось извлечь страницы из адреса:", currentAddress);
         }
     });
 
-    // Инициализация для первой загрузки
+    // Инициализация подсказок при первой загрузке
     var initialAddress = $.address.value().slice(1);
     var pages = [];
 
@@ -142,6 +136,7 @@ $(function() {
     }
 
     if (pages.length > 0) {
+        console.log("Инициализация подсказок для страниц:", pages);
         activateHintsForPages(pages);
     }
 });
