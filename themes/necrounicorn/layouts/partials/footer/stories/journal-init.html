@@ -17,70 +17,103 @@
     });
 
 $(function () {
-    // Функция для обновления классов `active` на страницах
+    // Обновляем активные страницы на основе хэша
     function updateActivePagesFromHash() {
-        const hash = window.location.hash.slice(1); // Убираем символ `#`
+        const hash = window.location.hash.slice(1); // Убираем #
         const pageMatch = hash.match(/page(\d+)-page(\d+)/); // Ищем формат "pageX-pageY"
 
-        // Удаляем класс `active` со всех страниц
-        $('.turn-page-wrapper').removeClass('active');
+        $('.turn-page-wrapper').removeClass('active'); // Удаляем старый класс
 
         if (pageMatch) {
-            const page1 = pageMatch[1]; // Первая страница
-            const page2 = pageMatch[2]; // Вторая страница
+            const page1 = pageMatch[1];
+            const page2 = pageMatch[2];
 
-            // Добавляем класс `active` для найденных страниц
             $(`.turn-page-wrapper[page="${page1}"]`).addClass('active');
             $(`.turn-page-wrapper[page="${page2}"]`).addClass('active');
 
             console.log(`Активные страницы: ${page1}, ${page2}`);
         } else {
-            console.warn("Не удалось найти страницы в адресной строке.");
+            console.warn("Не удалось определить активные страницы из хэша.");
         }
     }
 
-    // Функция для удаления всех подсказок
+    // Удаляем текущие подсказки
     function removeHints() {
-        introJs().hideHints(); // Скрыть все подсказки
+        $('.introjs-hint').remove(); // Удаляем точки подсказок
+        $('.introjs-tooltip').remove(); // Удаляем активные тултипы
     }
 
-    // Функция для добавления подсказок на текущие активные страницы
+    // Добавляем подсказки на активные страницы
     function addHintsToActivePages() {
-        // Удаляем существующие подсказки
+        // Удаляем старые подсказки
         removeHints();
 
-        const hints = [];
+        // Находим все изображения на активных страницах
+        const images = $('.turn-page-wrapper.active img');
 
-        // Ищем все изображения на активных страницах
-        $('.turn-page-wrapper.active img').each(function () {
-            hints.push({
-                element: this, // Текущий элемент
-                hint: 'test', // Текст подсказки
-                hintPosition: 'bottom-middle', // Позиция подсказки
-                hintAnimation: true // Включение анимации
+        if (images.length === 0) {
+            console.log("Нет изображений для добавления подсказок.");
+            return;
+        }
+
+        // Создаём подсказки
+        images.each(function (index) {
+            const $img = $(this);
+            const offset = $img.offset(); // Позиция изображения на странице
+
+            // Создаём точку подсказки
+            const hint = $('<div class="introjs-hint" style="position: absolute;"></div>');
+            const dot = $('<div class="introjs-hint-dot"></div>');
+            const pulse = $('<div class="introjs-hint-pulse"></div>');
+
+            hint.append(dot).append(pulse);
+
+            // Устанавливаем позицию подсказки
+            hint.css({
+                top: offset.top + $img.height() / 2 - 10, // Центр по высоте
+                left: offset.left + $img.width() / 2 - 10 // Центр по ширине
             });
+
+            // Добавляем событие для отображения тултипа
+            hint.on('click', function () {
+                // Удаляем старый тултип
+                $('.introjs-tooltip').remove();
+
+                // Создаём тултип
+                const tooltip = $(`
+                    <div class="introjs-tooltip" style="position: absolute;">
+                        <div class="introjs-tooltiptext">test</div>
+                        <button class="introjs-tooltipbutton">Got it</button>
+                    </div>
+                `);
+
+                // Устанавливаем позицию тултипа
+                tooltip.css({
+                    top: offset.top + $img.height() + 10, // Сдвиг ниже изображения
+                    left: offset.left // Выравнивание по левому краю изображения
+                });
+
+                // Удаляем тултип при клике на кнопку
+                tooltip.find('.introjs-tooltipbutton').on('click', function () {
+                    tooltip.remove();
+                });
+
+                $('body').append(tooltip); // Добавляем тултип на страницу
+            });
+
+            $('body').append(hint); // Добавляем точку подсказки на страницу
         });
 
-        if (hints.length > 0) {
-            console.log(`Добавляем ${hints.length} подсказок для текущих страниц.`);
-            introJs().setOptions({
-                hints: hints, // Передаём массив подсказок
-                hintButtonLabel: "Got it", // Текст кнопки
-                hintShowButton: true, // Показывать кнопку
-                hintAnimation: true // Анимация включена
-            }).addHints(); // Активируем подсказки
-        } else {
-            console.log("Подсказки для активных страниц не найдены.");
-        }
+        console.log(`Добавлено ${images.length} подсказок.`);
     }
 
-    // Функция для обработки изменения страницы
+    // Обрабатываем смену страницы
     function handlePageChange() {
-        updateActivePagesFromHash(); // Обновляем классы `active` для страниц
+        updateActivePagesFromHash(); // Обновляем активные страницы
         addHintsToActivePages(); // Добавляем подсказки для активных страниц
     }
 
-    // Слушатель изменений
+    // Слушаем изменение хэша
     $(window).on("hashchange", function () {
         handlePageChange();
     });
