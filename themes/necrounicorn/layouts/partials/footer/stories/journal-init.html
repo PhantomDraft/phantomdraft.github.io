@@ -17,45 +17,34 @@
     });
 
 $(function () {
-    // Функция для проверки видимости страницы
-    function isPageVisible($page) {
-        return $page.css('display') !== 'none' && $page.is(':visible');
-    }
+    // Функция для обновления классов `active` на страницах
+    function updateActivePagesFromHash() {
+        const hash = window.location.hash.slice(1); // Убираем символ `#`
+        const pageMatch = hash.match(/page(\d+)-page(\d+)/); // Ищем формат "pageX-pageY"
 
-    // Обновление активных страниц
-    function updateActivePages() {
-        $('.turn-page-wrapper').each(function () {
-            const $page = $(this);
-            $page.removeClass('active'); // Удаляем класс перед проверкой
+        // Удаляем класс `active` со всех страниц
+        $('.turn-page-wrapper').removeClass('active');
 
-            if (isPageVisible($page)) {
-                $page.addClass('active'); // Добавляем класс только видимым страницам
-            }
-        });
-    }
+        if (pageMatch) {
+            const page1 = pageMatch[1]; // Первая страница
+            const page2 = pageMatch[2]; // Вторая страница
 
-    // Функция для получения активных страниц
-    function getActivePages() {
-        const activePages = [];
-        $('.turn-page-wrapper.active').each(function () {
-            const page = $(this).attr('page');
-            if (page) {
-                activePages.push(page);
-            }
-        });
-        return activePages;
+            // Добавляем класс `active` для найденных страниц
+            $(`.turn-page-wrapper[page="${page1}"]`).addClass('active');
+            $(`.turn-page-wrapper[page="${page2}"]`).addClass('active');
+
+            console.log(`Активные страницы: ${page1}, ${page2}`);
+        } else {
+            console.warn("Не удалось найти страницы в адресной строке.");
+        }
     }
 
     // Функция для подсказок
     function activateHints() {
         introJs().removeHints(); // Удаляем старые подсказки
 
-        const activePages = getActivePages();
-        console.log("Активные страницы:", activePages);
-
-        activePages.forEach(function (page) {
-            const $pageWrapper = $(`.turn-page-wrapper[page="${page}"]`);
-            const $currentHints = $pageWrapper.find('[data-hint]');
+        $('.turn-page-wrapper.active').each(function () {
+            const $currentHints = $(this).find('[data-hint]');
             $currentHints.each(function () {
                 const element = $(this).get(0);
                 introJs().addHints([{
@@ -66,15 +55,13 @@ $(function () {
             });
         });
 
-        introJs().refresh();
+        introJs().refresh(); // Обновляем подсказки
     }
 
     // Функция для анимации изображений
     function animateImages() {
-        const activePages = getActivePages();
-
-        activePages.forEach(function (page) {
-            const $images = $(`.turn-page-wrapper[page="${page}"]`).find('.fb5-cont-page-book img');
+        $('.turn-page-wrapper.active').each(function () {
+            const $images = $(this).find('.fb5-cont-page-book img');
             $images.each(function (index, img) {
                 $(img).css({
                     'opacity': 0,
@@ -88,27 +75,20 @@ $(function () {
         });
     }
 
-    // Обработчик изменения страницы
+    // Функция для обработки изменения страницы
     function handlePageChange() {
-        updateActivePages(); // Сначала обновляем активные страницы
-        const activePages = getActivePages();
-        console.log("Текущие активные страницы:", activePages);
-
-        if (activePages.length > 0) {
-            animateImages(); // Анимация изображений
-            activateHints(); // Подсказки для активных страниц
-        } else {
-            console.warn("Нет активных страниц для обработки.");
-        }
+        updateActivePagesFromHash(); // Обновляем активные страницы
+        animateImages(); // Анимация для изображений
+        activateHints(); // Подсказки для активных страниц
     }
 
     // Слушатель изменений
     $(window).on("hashchange", function () {
-        setTimeout(handlePageChange, 100); // Задержка для гарантии обновления DOM
+        handlePageChange();
     });
 
     // Инициализация
-    setTimeout(handlePageChange, 100); // Задержка для начальной загрузки
+    handlePageChange();
 });
 
 </script>
