@@ -57,59 +57,92 @@
     });
 
 $(function() {
-    // Инициализация intro.js для подсказок
-    function activateHintsForPages(page1, page2) {
-        // Найдем все элементы с data-hint для текущих страниц
-        var $currentHints = $(`.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]`)
-            .find('[data-hint]');
-        
-        // Удалим ранее активированные подсказки
+    // Функция для получения номера последней страницы
+    function getLastPageNumber() {
+        // Найти все элементы с атрибутом page и взять максимальное значение
+        var lastPage = 0;
+        $('.turn-page-wrapper').each(function() {
+            var page = parseInt($(this).attr('page'), 10);
+            if (page > lastPage) {
+                lastPage = page;
+            }
+        });
+        return lastPage;
+    }
+
+    // Инициализация подсказок
+    function activateHintsForPages(pages) {
+        // Удаляем предыдущие подсказки
         introJs().removeHints();
 
-        if ($currentHints.length > 0) {
-            // Добавим подсказки только для текущих элементов
-            $currentHints.each(function() {
-                var element = $(this).get(0); // Получаем DOM-элемент
-                introJs().addHints([{
-                    element: element,
-                    hint: $(this).attr('data-hint'),
-                    position: $(this).attr('data-hintposition') || 'bottom-middle',
-                }]);
+        if (pages.length > 0) {
+            pages.forEach(function(page) {
+                var $currentHints = $(`.turn-page-wrapper[page="${page}"]`).find('[data-hint]');
+                if ($currentHints.length > 0) {
+                    $currentHints.each(function() {
+                        var element = $(this).get(0);
+                        introJs().addHints([{
+                            element: element,
+                            hint: $(this).attr('data-hint'),
+                            position: $(this).attr('data-hintposition') || 'bottom-middle',
+                        }]);
+                    });
+                } else {
+                    console.log("Нет подсказок для страницы:", page);
+                }
             });
 
-            // Активируем подсказки
+            // Обновляем подсказки
             introJs().refresh();
-        } else {
-            console.log("Нет подсказок для текущего разворота страниц:", page1, page2);
         }
     }
 
     // Обработчик изменения адреса
     $.address.change(function(event) {
         var currentAddress = event.value.slice(1); // Убираем символ "#"
+        var pages = [];
 
-        // Проверяем текущий адрес на соответствие формату "pageX-pageY"
-        var pageMatch = currentAddress.match(/page(\d+)-page(\d+)/);
-
-        if (pageMatch) {
-            var page1 = pageMatch[1];
-            var page2 = pageMatch[2];
-
-            console.log("Текущие страницы:", page1, page2);
-
-            // Активируем подсказки только для текущего разворота
-            activateHintsForPages(page1, page2);
+        if (currentAddress === "book5/page1") {
+            // Первая страница
+            pages = ["1"];
+        } else if (currentAddress === "book5/end") {
+            // Последняя страница
+            var lastPage = getLastPageNumber();
+            pages = [String(lastPage)];
         } else {
-            console.warn("Не удалось извлечь номера страниц из адреса:", currentAddress);
+            // Диапазон страниц, например, "page2-page3"
+            var pageMatch = currentAddress.match(/page(\d+)-page(\d+)/);
+            if (pageMatch) {
+                pages = [pageMatch[1], pageMatch[2]];
+            }
+        }
+
+        if (pages.length > 0) {
+            console.log("Текущие страницы:", pages);
+            activateHintsForPages(pages);
+        } else {
+            console.warn("Не удалось извлечь страницы из адреса:", currentAddress);
         }
     });
 
-    // Начальная инициализация для первой страницы
+    // Инициализация для первой загрузки
     var initialAddress = $.address.value().slice(1);
-    var initialMatch = initialAddress.match(/page(\d+)-page(\d+)/);
+    var pages = [];
 
-    if (initialMatch) {
-        activateHintsForPages(initialMatch[1], initialMatch[2]);
+    if (initialAddress === "book5/page1") {
+        pages = ["1"];
+    } else if (initialAddress === "book5/end") {
+        var lastPage = getLastPageNumber();
+        pages = [String(lastPage)];
+    } else {
+        var initialMatch = initialAddress.match(/page(\d+)-page(\d+)/);
+        if (initialMatch) {
+            pages = [initialMatch[1], initialMatch[2]];
+        }
+    }
+
+    if (pages.length > 0) {
+        activateHintsForPages(pages);
     }
 });
 
