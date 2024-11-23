@@ -16,12 +16,52 @@
         'lazy_loading_pages':'false'
     });
 
+    $(function() {
+    // Отслеживаем изменения адреса
+        $.address.change(function(event) {
+            // Получаем текущий хэш URL и убираем начальный слэш
+            var currentAddress = event.value.slice(1);
+            // Ищем страницы по текущему адресу
+            var pageMatch = currentAddress.match(/page(\d+)-page(\d+)/);
+            // Проверяем, совпадает ли текущий адрес с шаблоном разворота
+            if (pageMatch) {
+                // Извлекаем номера страниц из адреса
+                var page1 = pageMatch[1];
+                var page2 = pageMatch[2];
+                // Логируем номера страниц для проверки
+                console.log("Анимация для страниц:", page1, page2);
+                // Находим изображения на страницах разворота
+                var $images = $('.turn-page-wrapper[page="' + page1 + '"], .turn-page-wrapper[page="' + page2 + '"]').find('.fb5-cont-page-book img');
+                // Проверяем, были ли выбраны изображения
+                if ($images.length === 0) {
+                    console.warn("Изображения не найдены для текущего разворота:", currentAddress);
+                    return;
+                }
+                // Применяем анимацию с плавным появлением изображений
+                $images.each(function(index, img) {
+                    $(img).css({
+                        'opacity': 0, // Начальная прозрачность
+                        'transition': 'opacity 1s ease-in', // Плавное изменение прозрачности
+                        'transition-delay': (index * 0.5) + 's' // Задержка для каждого изображения
+                    });
+                    // Запускаем анимацию появления
+                    setTimeout(function() {
+                        $(img).css('opacity', 1); // Делаем изображение видимым
+                    }, index * 500);
+                });
+            } else {
+                console.warn("Не удалось извлечь номера страниц из адреса:", currentAddress);
+            }
+        });
+
+    });
+
     $(function () {
         // Функция для определения последней страницы
         function getLastPageNumber() {
-            var lastPage = 0;
+            let lastPage = 0;
             $('.turn-page-wrapper').each(function () {
-                var page = parseInt($(this).attr('page'), 10);
+                const page = parseInt($(this).attr('page'), 10);
                 if (page > lastPage) {
                     lastPage = page;
                 }
@@ -33,9 +73,9 @@
             introJs().removeHints(); // Удаляем предыдущие подсказки
 
             pages.forEach(function (page) {
-                var $currentHints = $(`.turn-page-wrapper[page="${page}"]`).find('[data-hint]');
+                const $currentHints = $(.turn-page-wrapper[page="${page}"]).find('[data-hint]');
                 $currentHints.each(function () {
-                    var element = $(this).get(0); // DOM-элемент
+                    const element = $(this).get(0); // DOM-элемент
                     introJs().addHints([{
                         element: element,
                         hint: $(this).attr('data-hint'),
@@ -46,44 +86,23 @@
 
             introJs().refresh(); // Обновляем подсказки
         }
-        // Функция для анимации изображений на страницах
-        function animateImages(page1, page2) {
-            var $images = $(`.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]`).find('.fb5-cont-page-book img');
-            if ($images.length === 0) {
-                console.warn("Изображения не найдены для страниц:", page1, page2);
-                return;
-            }
-            $images.each(function (index, img) {
-                $(img).css({
-                    'opacity': 0, // Начальная прозрачность
-                    'transition': 'opacity 1s ease-in', // Плавное изменение прозрачности
-                    'transition-delay': (index * 0.5) + 's' // Задержка для каждого изображения
-                });
-                setTimeout(function () {
-                    $(img).css('opacity', 1); // Делаем изображение видимым
-                }, index * 500);
-            });
-        }
+
         // Обработчик адреса
         function handleAddressChange(address) {
-            var pages = [];
+            const pages = [];
 
             if (address === "book5/page1") {
                 // Первая страница
                 pages.push("1");
             } else if (address === "book5/end") {
                 // Последняя страница
-                var lastPage = getLastPageNumber();
+                const lastPage = getLastPageNumber();
                 pages.push(String(lastPage));
             } else {
                 // Диапазоны страниц, например, "page2-page3"
-                var pageMatch = address.match(/page(\d+)-page(\d+)/);
+                const pageMatch = address.match(/page(\d+)-page(\d+)/);
                 if (pageMatch) {
-                    var page1 = pageMatch[1];
-                    var page2 = pageMatch[2];
-                    pages.push(page1, page2);
-                    // Запускаем анимацию изображений для текущих страниц
-                    animateImages(page1, page2);
+                    pages.push(pageMatch[1], pageMatch[2]);
                 }
             }
 
@@ -94,14 +113,16 @@
                 console.warn("Не удалось извлечь страницы из адреса:", address);
             }
         }
+
         // Слушатель изменений якоря
         $(window).on("hashchange", function () {
-            var currentAddress = window.location.hash.slice(1); // Убираем #
+            const currentAddress = window.location.hash.slice(1); // Убираем #
             console.log("Изменение адреса:", currentAddress);
             handleAddressChange(currentAddress);
         });
+
         // Инициализация при загрузке страницы
-        var initialAddress = window.location.hash.slice(1);
+        const initialAddress = window.location.hash.slice(1);
         console.log("Инициализация адреса:", initialAddress);
         handleAddressChange(initialAddress);
     });
