@@ -4,11 +4,12 @@
 <li class="castration base_width p_relative grid">
     <div class="castration fl p_relative text">
         <a class="castration fl p_relative grid_cover" href="{{ .Permalink }}">
-            {{ with .Params.image }}
-                <img class="cover p_absolute" src="{{ . }}" alt='{{ i18n "imageLoadingFailed" }}'>
-            {{ else }}
-                <img class="cover p_absolute cover p_absolute" src="{{ .Site.Params.page.defaultPostImg }}" alt='{{ i18n "imageLoadingFailed" }}'>
-            {{ end }}
+               {{ $firstChild := index .Pages 0 }}
+                {{ with $firstChild.Params.image }}
+                    <img class="cover p_absolute" src="{{ . }}" alt='{{ $pageTitle }}' />
+                {{ else }}
+                    <img class="cover p_absolute cover p_absolute" src="{{ $categorypostsImg }}" alt='{{ $pageTitle }}' />
+                {{ end }}
         </a>
         <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
         <ul class="grid_info">

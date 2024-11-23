@@ -65,11 +65,4 @@
         {{ end }}
     {{ end }}
 
-{{ else if eq .Kind "taxonomy" }}
-    {{ if eq .Section "tags" }}
-        {{ partial "widgets/tag-card.html" . }}
-    {{ else }}
-        {{ partial "widgets/category-card.html" . }}
-    {{ end }}
-
 {{ end }}
