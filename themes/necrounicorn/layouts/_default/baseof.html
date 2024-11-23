@@ -4,20 +4,25 @@
     {{- partial "head/head.html" . -}}
 
     <body>
+
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5VL5MJD"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
+
         {{ if and (eq .Section "stories") .IsPage }}
+            <!-- stories : journal -->
             {{- block "main" . }}{{- end }}
             {{- partial "footer/stories/journal-init.html" . -}}
+
         {{ else if and (eq .Section "stories") .IsSection }}
             <!-- stories -->
             <div class="container">
                 {{- partial "header/stories/header.html" . -}}
                 {{- block "main" . }}{{- end }}
-                {{- partial "footer/stories/hugr-init.html" . -}}
             </div>
+            {{- partial "footer/stories/hugr-init.html" . -}}
+
         {{ else }}
             <!-- other -->
             <div class="base_width p_relative wrap"> <div id="overlay" class="base_width p_fixed"></div>
