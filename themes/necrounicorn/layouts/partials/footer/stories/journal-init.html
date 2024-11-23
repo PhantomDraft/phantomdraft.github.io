@@ -17,9 +17,26 @@
     });
 
 $(function () {
+    // Функция для проверки видимости страницы
+    function isPageVisible($page) {
+        return $page.css('display') !== 'none' && $page.is(':visible');
+    }
+
+    // Обновление активных страниц
+    function updateActivePages() {
+        $('.turn-page-wrapper').each(function () {
+            const $page = $(this);
+            $page.removeClass('active'); // Удаляем класс перед проверкой
+
+            if (isPageVisible($page)) {
+                $page.addClass('active'); // Добавляем класс только видимым страницам
+            }
+        });
+    }
+
     // Функция для получения активных страниц
     function getActivePages() {
-        let activePages = [];
+        const activePages = [];
         $('.turn-page-wrapper.active').each(function () {
             const page = $(this).attr('page');
             if (page) {
@@ -29,28 +46,13 @@ $(function () {
         return activePages;
     }
 
-    // Обновляем активные страницы
-    function updateActivePages() {
-        $('.turn-page-wrapper').each(function () {
-            const $page = $(this);
-            if ($page.css('display') !== 'none') {
-                $page.addClass('active'); // Добавляем класс активным страницам
-            } else {
-                $page.removeClass('active'); // Удаляем с неактивных
-            }
-        });
-    }
-
-    // Функция для очистки подсказок
-    function clearHints() {
-        introJs().removeHints(); // Удаляем существующие подсказки
-    }
-
-    // Функция для добавления подсказок на активные страницы
+    // Функция для подсказок
     function activateHints() {
-        clearHints(); // Очистить все старые подсказки
+        introJs().removeHints(); // Удаляем старые подсказки
 
-        const activePages = getActivePages(); // Получить только активные страницы
+        const activePages = getActivePages();
+        console.log("Активные страницы:", activePages);
+
         activePages.forEach(function (page) {
             const $pageWrapper = $(`.turn-page-wrapper[page="${page}"]`);
             const $currentHints = $pageWrapper.find('[data-hint]');
@@ -64,23 +66,23 @@ $(function () {
             });
         });
 
-        introJs().refresh(); // Обновить подсказки
+        introJs().refresh();
     }
 
-    // Функция для анимации изображений на активных страницах
+    // Функция для анимации изображений
     function animateImages() {
-        const activePages = getActivePages(); // Получить активные страницы
+        const activePages = getActivePages();
 
         activePages.forEach(function (page) {
             const $images = $(`.turn-page-wrapper[page="${page}"]`).find('.fb5-cont-page-book img');
             $images.each(function (index, img) {
                 $(img).css({
-                    'opacity': 0, // Начальная прозрачность
-                    'transition': 'opacity 1s ease-in', // Плавное изменение прозрачности
-                    'transition-delay': (index * 0.5) + 's' // Задержка для каждого изображения
+                    'opacity': 0,
+                    'transition': 'opacity 1s ease-in',
+                    'transition-delay': `${index * 0.5}s`
                 });
                 setTimeout(function () {
-                    $(img).css('opacity', 1); // Делаем изображение видимым
+                    $(img).css('opacity', 1);
                 }, index * 500);
             });
         });
@@ -88,12 +90,12 @@ $(function () {
 
     // Обработчик изменения страницы
     function handlePageChange() {
-        updateActivePages(); // Обновить активные страницы
+        updateActivePages(); // Сначала обновляем активные страницы
         const activePages = getActivePages();
-        console.log("Активные страницы:", activePages);
+        console.log("Текущие активные страницы:", activePages);
 
         if (activePages.length > 0) {
-            animateImages(); // Анимация для изображений
+            animateImages(); // Анимация изображений
             activateHints(); // Подсказки для активных страниц
         } else {
             console.warn("Нет активных страниц для обработки.");
@@ -102,11 +104,11 @@ $(function () {
 
     // Слушатель изменений
     $(window).on("hashchange", function () {
-        handlePageChange();
+        setTimeout(handlePageChange, 100); // Задержка для гарантии обновления DOM
     });
 
-    // Инициализация при загрузке
-    handlePageChange();
+    // Инициализация
+    setTimeout(handlePageChange, 100); // Задержка для начальной загрузки
 });
 
 </script>
