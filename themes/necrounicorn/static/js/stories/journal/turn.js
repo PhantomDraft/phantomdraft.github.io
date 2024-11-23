@@ -14,9 +14,8 @@
  *
  * 2. Any redistribution, use, or modification is done solely for personal 
  * benefit and not for any commercial purpose or for monetary gain.
- * 
+ *
  **/
-
 (function($) {
 
 'use strict';
@@ -1926,7 +1925,6 @@ $.extend($.fn, {
 		}
 	}
 });
-
 
 $.isTouch = isTouch;
 
