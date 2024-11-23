@@ -17,106 +17,86 @@
     });
 
 $(function () {
-    // Функция для получения последней страницы
-    function getLastPageNumber() {
-        let lastPage = 0;
+    // Функция для получения активных страниц
+    function getActivePages() {
+        let activePages = [];
         $('.turn-page-wrapper').each(function () {
-            const page = parseInt($(this).attr('page'), 10);
-            if (page > lastPage) {
-                lastPage = page;
+            if ($(this).css('display') !== 'none' && $(this).hasClass('active')) {
+                const page = $(this).attr('page');
+                if (page) {
+                    activePages.push(page);
+                }
             }
         });
-        return lastPage;
+        return activePages;
     }
 
-    // Проверяем, виден ли элемент
-    function isElementVisible($element) {
-        return $element.css('display') !== 'none' && $element.is(':visible');
+    // Функция для очистки подсказок
+    function clearHints() {
+        introJs().removeHints(); // Удаляем существующие подсказки
     }
 
-    // Функция для активации подсказок на текущих видимых страницах
-    function activateHintsForPages(pages) {
-        introJs().removeHints(); // Удаляем все подсказки
+    // Функция для добавления подсказок на активные страницы
+    function activateHints() {
+        clearHints(); // Очистить все старые подсказки
 
-        pages.forEach(function (page) {
+        const activePages = getActivePages(); // Получить только активные страницы
+        activePages.forEach(function (page) {
             const $pageWrapper = $(`.turn-page-wrapper[page="${page}"]`);
-            if (isElementVisible($pageWrapper)) {
-                const $currentHints = $pageWrapper.find('[data-hint]');
-                $currentHints.each(function () {
-                    const element = $(this).get(0);
-                    introJs().addHints([{
-                        element: element,
-                        hint: $(this).attr('data-hint'),
-                        position: $(this).attr('data-hintposition') || 'bottom-middle',
-                    }]);
-                });
-            }
-        });
-
-        introJs().refresh(); // Обновляем подсказки
-    }
-
-    // Функция для анимации изображений
-    function animateImages(page1, page2) {
-        const $images = $(`.turn-page-wrapper[page="${page1}"]:visible, .turn-page-wrapper[page="${page2}"]:visible`).find('.fb5-cont-page-book img');
-        if ($images.length === 0) {
-            console.warn("Изображения не найдены для страниц:", page1, page2);
-            return;
-        }
-        $images.each(function (index, img) {
-            $(img).css({
-                'opacity': 0, // Начальная прозрачность
-                'transition': 'opacity 1s ease-in', // Плавное изменение прозрачности
-                'transition-delay': (index * 0.5) + 's' // Задержка для каждого изображения
+            const $currentHints = $pageWrapper.find('[data-hint]');
+            $currentHints.each(function () {
+                const element = $(this).get(0);
+                introJs().addHints([{
+                    element: element,
+                    hint: $(this).attr('data-hint'),
+                    position: $(this).attr('data-hintposition') || 'bottom-middle',
+                }]);
             });
-            setTimeout(function () {
-                $(img).css('opacity', 1); // Делаем изображение видимым
-            }, index * 500);
+        });
+
+        introJs().refresh(); // Обновить подсказки
+    }
+
+    // Функция для анимации изображений на активных страницах
+    function animateImages() {
+        const activePages = getActivePages(); // Получить активные страницы
+
+        activePages.forEach(function (page) {
+            const $images = $(`.turn-page-wrapper[page="${page}"]`).find('.fb5-cont-page-book img');
+            $images.each(function (index, img) {
+                $(img).css({
+                    'opacity': 0, // Начальная прозрачность
+                    'transition': 'opacity 1s ease-in', // Плавное изменение прозрачности
+                    'transition-delay': (index * 0.5) + 's' // Задержка для каждого изображения
+                });
+                setTimeout(function () {
+                    $(img).css('opacity', 1); // Делаем изображение видимым
+                }, index * 500);
+            });
         });
     }
 
-    // Обработчик адреса
-    function handleAddressChange(address) {
-        let pages = [];
+    // Обработчик изменения страницы
+    function handlePageChange() {
+        console.log("Определение активных страниц...");
+        const activePages = getActivePages();
+        console.log("Активные страницы:", activePages);
 
-        if (address === "book5/page1") {
-            // Первая страница
-            pages.push("1");
-        } else if (address === "book5/end") {
-            // Последняя страница
-            const lastPage = getLastPageNumber();
-            pages.push(String(lastPage));
+        if (activePages.length > 0) {
+            animateImages(); // Анимация для изображений
+            activateHints(); // Подсказки для активных страниц
         } else {
-            // Диапазоны страниц, например, "page2-page3"
-            const pageMatch = address.match(/page(\d+)-page(\d+)/);
-            if (pageMatch) {
-                const page1 = pageMatch[1];
-                const page2 = pageMatch[2];
-                pages.push(page1, page2);
-                // Запускаем анимацию изображений для текущих страниц
-                animateImages(page1, page2);
-            }
-        }
-
-        if (pages.length > 0) {
-            console.log("Активируем подсказки для страниц:", pages);
-            activateHintsForPages(pages);
-        } else {
-            console.warn("Не удалось извлечь страницы из адреса:", address);
+            console.warn("Нет активных страниц для обработки.");
         }
     }
 
-    // Слушатель изменений якоря
+    // Слушатель изменений
     $(window).on("hashchange", function () {
-        const currentAddress = window.location.hash.slice(1); // Убираем #
-        console.log("Изменение адреса:", currentAddress);
-        handleAddressChange(currentAddress);
+        handlePageChange();
     });
 
-    // Инициализация при загрузке страницы
-    const initialAddress = window.location.hash.slice(1);
-    console.log("Инициализация адреса:", initialAddress);
-    handleAddressChange(initialAddress);
+    // Инициализация при загрузке
+    handlePageChange();
 });
 
 </script>
