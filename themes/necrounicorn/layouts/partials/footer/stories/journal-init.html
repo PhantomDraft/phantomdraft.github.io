@@ -39,27 +39,32 @@ $(function () {
         }
     }
 
-    // Функция для подсказок
-    function activateHints() {
-        introJs().removeHints(); // Удаляем старые подсказки
+    // Функция для очистки и создания подсказок только для активных страниц
+    function activateHintsForActivePages() {
+        introJs().removeHints(); // Удаляем все подсказки
 
-        $('.turn-page-wrapper.active').each(function () {
-            const $currentHints = $(this).find('[data-hint]');
-            $currentHints.each(function () {
-                const element = $(this).get(0);
-                introJs().addHints([{
-                    element: element,
-                    hint: $(this).attr('data-hint'),
-                    position: $(this).attr('data-hintposition') || 'bottom-middle',
-                }]);
-            });
+        // Находим все элементы с подсказками на активных страницах
+        const activeHints = $('.turn-page-wrapper.active [data-hint]');
+        if (activeHints.length === 0) {
+            console.log("Подсказки не найдены на активных страницах.");
+            return;
+        }
+
+        activeHints.each(function () {
+            const element = $(this).get(0);
+            introJs().addHints([{
+                element: element,
+                hint: $(this).attr('data-hint'),
+                position: $(this).attr('data-hintposition') || 'bottom-middle',
+            }]);
         });
 
         introJs().refresh(); // Обновляем подсказки
+        console.log(`Подсказки активированы для ${activeHints.length} элементов.`);
     }
 
     // Функция для анимации изображений
-    function animateImages() {
+    function animateImagesOnActivePages() {
         $('.turn-page-wrapper.active').each(function () {
             const $images = $(this).find('.fb5-cont-page-book img');
             $images.each(function (index, img) {
@@ -77,9 +82,9 @@ $(function () {
 
     // Функция для обработки изменения страницы
     function handlePageChange() {
-        updateActivePagesFromHash(); // Обновляем активные страницы
-        animateImages(); // Анимация для изображений
-        activateHints(); // Подсказки для активных страниц
+        updateActivePagesFromHash(); // Обновляем классы `active` для страниц
+        animateImagesOnActivePages(); // Анимация изображений
+        activateHintsForActivePages(); // Подсказки только для активных страниц
     }
 
     // Слушатель изменений
