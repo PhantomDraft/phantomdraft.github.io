@@ -39,28 +39,33 @@ $(function () {
         }
     }
 
-    // Функция для очистки и создания подсказок только для активных страниц
-    function activateHintsForActivePages() {
-        introJs().removeHints(); // Удаляем все подсказки
+    // Функция для полного перезапуска подсказок
+    function restartHints() {
+        // Удаляем текущие подсказки
+        introJs().exit();
 
-        // Находим все элементы с подсказками на активных страницах
-        const activeHints = $('.turn-page-wrapper.active [data-hint]');
-        if (activeHints.length === 0) {
-            console.log("Подсказки не найдены на активных страницах.");
-            return;
-        }
-
-        activeHints.each(function () {
-            const element = $(this).get(0);
-            introJs().addHints([{
-                element: element,
-                hint: $(this).attr('data-hint'),
-                position: $(this).attr('data-hintposition') || 'bottom-middle',
-            }]);
+        // Формируем массив подсказок для активных страниц
+        const hints = [];
+        $('.turn-page-wrapper.active').each(function () {
+            $(this).find('[data-hint]').each(function () {
+                hints.push({
+                    element: this,
+                    hint: $(this).attr('data-hint'),
+                    position: $(this).attr('data-hintposition') || 'bottom-middle'
+                });
+            });
         });
 
-        introJs().refresh(); // Обновляем подсказки
-        console.log(`Подсказки активированы для ${activeHints.length} элементов.`);
+        if (hints.length > 0) {
+            console.log(`Создаём ${hints.length} подсказок для активных страниц.`);
+
+            // Перезапускаем подсказки с новыми данными
+            introJs().setOptions({
+                hints: hints
+            }).addHints();
+        } else {
+            console.log("Нет подсказок для активных страниц.");
+        }
     }
 
     // Функция для анимации изображений
@@ -84,7 +89,7 @@ $(function () {
     function handlePageChange() {
         updateActivePagesFromHash(); // Обновляем классы `active` для страниц
         animateImagesOnActivePages(); // Анимация изображений
-        activateHintsForActivePages(); // Подсказки только для активных страниц
+        restartHints(); // Перезапуск подсказок
     }
 
     // Слушатель изменений
