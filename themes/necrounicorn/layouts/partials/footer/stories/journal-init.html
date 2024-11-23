@@ -39,36 +39,41 @@ $(function () {
         }
     }
 
-    // Функция для полного перезапуска подсказок
-    function restartHints() {
-        // Удаляем текущие подсказки
-        introJs().exit();
-
-        // Формируем массив подсказок для активных страниц
+    // Функция для создания подсказок на основе активных страниц
+    function generateHints() {
         const hints = [];
         $('.turn-page-wrapper.active').each(function () {
             $(this).find('[data-hint]').each(function () {
                 hints.push({
                     element: this,
                     hint: $(this).attr('data-hint'),
-                    position: $(this).attr('data-hintposition') || 'bottom-middle'
+                    hintPosition: $(this).attr('data-hintposition') || 'bottom-middle',
+                    hintAnimation: true
                 });
             });
         });
 
+        return hints;
+    }
+
+    // Функция для запуска подсказок
+    function activateHints() {
+        const hints = generateHints();
+
         if (hints.length > 0) {
             console.log(`Создаём ${hints.length} подсказок для активных страниц.`);
-
-            // Перезапускаем подсказки с новыми данными
             introJs().setOptions({
-                hints: hints
+                hints: hints,
+                hintButtonLabel: "OK",
+                hintShowButton: true,
+                hintAnimation: true
             }).addHints();
         } else {
             console.log("Нет подсказок для активных страниц.");
         }
     }
 
-    // Функция для анимации изображений
+    // Функция для анимации изображений на активных страницах
     function animateImagesOnActivePages() {
         $('.turn-page-wrapper.active').each(function () {
             const $images = $(this).find('.fb5-cont-page-book img');
@@ -89,7 +94,8 @@ $(function () {
     function handlePageChange() {
         updateActivePagesFromHash(); // Обновляем классы `active` для страниц
         animateImagesOnActivePages(); // Анимация изображений
-        restartHints(); // Перезапуск подсказок
+        introJs().hideHints(); // Скрываем все предыдущие подсказки
+        activateHints(); // Генерируем и показываем подсказки для текущих страниц
     }
 
     // Слушатель изменений
