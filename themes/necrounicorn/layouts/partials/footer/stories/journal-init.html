@@ -20,15 +20,25 @@ $(function () {
     // Функция для получения активных страниц
     function getActivePages() {
         let activePages = [];
-        $('.turn-page-wrapper').each(function () {
-            if ($(this).css('display') !== 'none' && $(this).hasClass('active')) {
-                const page = $(this).attr('page');
-                if (page) {
-                    activePages.push(page);
-                }
+        $('.turn-page-wrapper.active').each(function () {
+            const page = $(this).attr('page');
+            if (page) {
+                activePages.push(page);
             }
         });
         return activePages;
+    }
+
+    // Обновляем активные страницы
+    function updateActivePages() {
+        $('.turn-page-wrapper').each(function () {
+            const $page = $(this);
+            if ($page.css('display') !== 'none') {
+                $page.addClass('active'); // Добавляем класс активным страницам
+            } else {
+                $page.removeClass('active'); // Удаляем с неактивных
+            }
+        });
     }
 
     // Функция для очистки подсказок
@@ -78,7 +88,7 @@ $(function () {
 
     // Обработчик изменения страницы
     function handlePageChange() {
-        console.log("Определение активных страниц...");
+        updateActivePages(); // Обновить активные страницы
         const activePages = getActivePages();
         console.log("Активные страницы:", activePages);
 
