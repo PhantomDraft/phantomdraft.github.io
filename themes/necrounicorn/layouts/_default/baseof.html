@@ -10,6 +10,7 @@
         <!-- End Google Tag Manager (noscript) -->
         {{ if and (eq .Section "stories") .IsPage }}
             {{- block "main" . }}{{- end }}
+            {{- partial "footer/stories/journal-init.html" . -}}
         {{ else if and (eq .Section "stories") .IsSection }}
             <!-- stories -->
             <div class="container">
