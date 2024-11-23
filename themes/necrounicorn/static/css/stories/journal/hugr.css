@@ -38,10 +38,7 @@
 }
 
 
-#fb5 fieldset{
-	
-	
-}
+#fb5 fieldset{}
 
 
 #fb5 #fb5-deeplinking{
@@ -197,12 +194,6 @@
 #fb5 .fb5-double.fb5-second {
 	background-position: -100% 0%;
 }
-
-
-
-
-
-
 
 	/* = Nav Arrows
 	---------------------------------------- */
@@ -765,5 +756,3 @@
 		#fb5 .fb5-overlay {
 			background:rgba(0,0,0,0.6);
         }
-
-
