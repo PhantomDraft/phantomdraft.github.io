@@ -39,63 +39,70 @@ $(function () {
         }
     }
 
-    // Функция для создания подсказок на основе активных страниц
-    function generateHints() {
-        const hints = [];
-        $('.turn-page-wrapper.active').each(function () {
-            $(this).find('[data-hint]').each(function () {
-                hints.push({
-                    element: this,
-                    hint: $(this).attr('data-hint'),
-                    hintPosition: $(this).attr('data-hintposition') || 'bottom-middle',
-                    hintAnimation: true
-                });
-            });
-        });
-
-        return hints;
+    // Функция для удаления всех существующих подсказок
+    function removeHints() {
+        $('.introjs-hint').remove(); // Удаляем подсказки из DOM
+        $('.introjs-tooltip').remove(); // Удаляем все активные тултипы
     }
 
-    // Функция для запуска подсказок
-    function activateHints() {
-        const hints = generateHints();
+    // Функция для создания подсказок вручную
+    function createHints() {
+        // Удаляем старые подсказки
+        removeHints();
 
-        if (hints.length > 0) {
-            console.log(`Создаём ${hints.length} подсказок для активных страниц.`);
-            introJs().setOptions({
-                hints: hints,
-                hintButtonLabel: "OK",
-                hintShowButton: true,
-                hintAnimation: true
-            }).addHints();
-        } else {
-            console.log("Нет подсказок для активных страниц.");
-        }
-    }
+        // Находим все элементы с подсказками на активных страницах
+        $('.turn-page-wrapper.active [data-hint]').each(function () {
+            const $element = $(this);
+            const hintText = $element.attr('data-hint');
+            const hintPosition = $element.attr('data-hintposition') || 'bottom-middle';
 
-    // Функция для анимации изображений на активных страницах
-    function animateImagesOnActivePages() {
-        $('.turn-page-wrapper.active').each(function () {
-            const $images = $(this).find('.fb5-cont-page-book img');
-            $images.each(function (index, img) {
-                $(img).css({
-                    'opacity': 0,
-                    'transition': 'opacity 1s ease-in',
-                    'transition-delay': `${index * 0.5}s`
-                });
-                setTimeout(function () {
-                    $(img).css('opacity', 1);
-                }, index * 500);
+            // Создаём подсказку вручную
+            const hint = $(`<div class="introjs-hint" style="position: absolute;"></div>`);
+            const hintDot = $('<div class="introjs-hint-dot"></div>');
+            const hintPulse = $('<div class="introjs-hint-pulse"></div>');
+
+            hint.append(hintDot).append(hintPulse);
+
+            // Располагаем подсказку рядом с элементом
+            const offset = $element.offset();
+            hint.css({
+                top: offset.top,
+                left: offset.left,
             });
+
+            // Добавляем событие на подсказку
+            hint.on('click', function () {
+                // Показываем тултип при клике
+                const tooltip = $(`
+                    <div class="introjs-tooltip" style="position: absolute;">
+                        <div class="introjs-tooltiptext">${hintText}</div>
+                        <button class="introjs-tooltipbutton">OK</button>
+                    </div>
+                `);
+
+                // Расположение тултипа
+                tooltip.css({
+                    top: offset.top + 30, // Сдвиг вниз
+                    left: offset.left, // Сдвиг влево
+                });
+
+                $('body').append(tooltip);
+
+                // Удаление тултипа при нажатии на кнопку
+                tooltip.find('.introjs-tooltipbutton').on('click', function () {
+                    tooltip.remove();
+                });
+            });
+
+            $('body').append(hint);
         });
     }
 
     // Функция для обработки изменения страницы
     function handlePageChange() {
         updateActivePagesFromHash(); // Обновляем классы `active` для страниц
-        animateImagesOnActivePages(); // Анимация изображений
-        introJs().hideHints(); // Скрываем все предыдущие подсказки
-        activateHints(); // Генерируем и показываем подсказки для текущих страниц
+        removeHints(); // Удаляем старые подсказки
+        createHints(); // Создаём новые подсказки для активных страниц
     }
 
     // Слушатель изменений
