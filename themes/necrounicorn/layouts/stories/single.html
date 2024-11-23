@@ -85,5 +85,14 @@
             }
         });
     });
+
+    window.onload = function () {
+    // introJs
+    introJs().setOptions({
+    tooltipClass: 'customTooltip', 
+    position: 'left', 
+    showButtons: false
+    }).addHints();
+    };
 </script>
 {{ end }}
