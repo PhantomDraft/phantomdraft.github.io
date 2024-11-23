@@ -28,7 +28,7 @@
 
     </div>
 </div>
-<script type="text/javascript" src="/js/intro.min.js"></script>
+
 <script>
     jQuery('#fb5').data('config', {
         "page_width":"550",
@@ -84,10 +84,6 @@
                 console.warn("Не удалось извлечь номера страниц из адреса:", currentAddress);
             }
         });
-        introJs().start({
-            tooltipClass: 'customTooltip'
-        });
     });
 </script>
-
 {{ end }}

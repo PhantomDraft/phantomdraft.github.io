@@ -18,3 +18,14 @@
 <script type="text/javascript" src="/js/stories/journal/jquery.address-1.6.min.js"></script>
 <script type="text/javascript" src="/js/stories/journal/wait.js"></script>
 <script type="text/javascript" src="/js/stories/journal/onload.js"></script>
+<script type="text/javascript" src="/js/intro.min.js"></script>
+<script type="text/javascript">
+window.onload = function () {
+// introJs
+introJs().setOptions({
+tooltipClass: 'customTooltip', 
+position: 'left', 
+showButtons: false
+}).addHints();
+};
+</script>
