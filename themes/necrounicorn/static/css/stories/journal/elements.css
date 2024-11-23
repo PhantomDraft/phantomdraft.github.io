@@ -1,6 +1,4 @@
-/* = Show All Pages
--------------------------------------------------------------- */
-
+/* Show All Pages */
 #fb5 #fb5-all-pages .fb5-container-pages {
 	position: absolute; 
 	width: 100%;
@@ -57,11 +55,7 @@
 				height:inherit;
 			}
 
-
-
-/* = Contact Form
--------------------------------------------------------------- */
-
+/* = Contact Form */
 #fb5 #fb5-contact form {
 	position: absolute; left: 50%; top: 50%;
 	background: #161616;
@@ -185,6 +179,3 @@
 		 font-size:11px;
 		 color:#444444;
 	}
-
-	
-
