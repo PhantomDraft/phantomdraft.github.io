@@ -2,14 +2,12 @@
     {{ partial "widgets/aside.html" . }}
 
     <section class="castration fl p_relative modules">
-        <div class="content-block">
-            <div class="content-list-col">
-                <ul>
+        <ul id="content">
+                    {{ range .Pages }}
                     {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSection)) }}
                         {{ partial "widgets/post-card.html" . }}
                     {{ end }}
+                    {{ end }}
                 </ul>
-            </div>
-        </div>
     </section>
 {{ end }}
