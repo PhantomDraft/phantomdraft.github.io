@@ -152,6 +152,74 @@
 	}
 
 
+/* Intro
+==============================
+ */
+.introjs-tooltip {
+    background-color: rgba(56, 56, 56, 0.9);
+    font-family: 'Roboto', sans-serif; color: #fff;
+}
+
+.introjs-button, .introjs-button:hover, .introjs-button:focus, .introjs-button:active, .introjs-disabled, .introjs-disabled:focus, .introjs-disabled:hover {
+    border-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    box-shadow: none;
+    color: #fff; text-shadow: none;
+    outline: none;
+}
+
+.introjs-button:hover, .introjs-button:focus, .introjs-button:active {border: 1px solid #fff;}
+
+.introjs-disabled, .introjs-disabled:focus, .introjs-disabled:hover {
+    border: 1px solid transparent;
+    color: #ccc;
+}
+
+.introjs-arrow {border: 10px solid #fff;}
+
+.introjs-arrow.top, .introjs-arrow.top-middle, .introjs-arrow.top-right {
+    left: 20px;
+    border-color: transparent transparent rgba(56, 56, 56, 0.9);
+}
+
+.introjs-arrow.bottom, .introjs-arrow.bottom-middle, .introjs-arrow.bottom-right {
+    bottom: -20px; left: 20px;
+    border-color: rgba(56, 56, 56, 0.9) transparent transparent;
+}
+
+.introjs-arrow.left, .introjs-arrow.right {top: 20px;}
+
+.introjs-arrow.left-bottom, .introjs-arrow.right-bottom {bottom: 20px;}
+
+.introjs-arrow.left, .introjs-arrow.left-bottom {
+    left: -20px;
+    border-color: transparent rgba(56, 56, 56, 0.9) transparent transparent;
+}
+
+.introjs-arrow.right, .introjs-arrow.right-bottom {
+    right: -20px;
+    border-color: transparent transparent transparent rgba(56, 56, 56, 0.9);
+}
+
+/* Custom */
+.customTooltip .introjs-tooltiptext {
+    max-height: 300px;
+    margin: 10px;
+    overflow-x: hidden; overflow-y: auto;
+}
+
+.customTooltip .introjs-arrow {
+    display: none !important;
+}
+
+.customTooltip a {
+    color: #ccc; text-decoration: underline;
+}
+
+
 /* = Footer
 -------------------------------------------------------------- */
 
@@ -182,5 +250,3 @@
     top: 0;
     width: 100%;
 }
-
-
