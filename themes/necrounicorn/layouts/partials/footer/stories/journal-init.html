@@ -95,4 +95,46 @@ $(function () {
         introJs().start();
     });
 });
+
+
+$(function () {
+    let isTourActive = false; // Флаг состояния тура
+
+    // Функция для блокировки событий клавиатуры
+    function disableTurnKeyEvents() {
+        $(document).off('keydown.turn'); // Убираем обработчики turn.js
+    }
+
+    // Функция для включения событий клавиатуры
+    function enableTurnKeyEvents() {
+        $(document).on('keydown.turn', function (e) {
+            // Пример обработчика turn.js
+            // Замените его реальной логикой из вашей turn.js
+            if (e.keyCode === 37) {
+                // Клавиша стрелка влево
+                $('.turn-page-wrapper').trigger('turnLeft');
+            } else if (e.keyCode === 39) {
+                // Клавиша стрелка вправо
+                $('.turn-page-wrapper').trigger('turnRight');
+            }
+        });
+    }
+
+    // Обработчик для запуска тура
+    $('#startTourButton').on('click', function () {
+        isTourActive = true; // Устанавливаем флаг
+        disableTurnKeyEvents(); // Отключаем переключение страниц
+
+        introJs()
+            .start()
+            .onexit(function () {
+                isTourActive = false; // Сбрасываем флаг
+                enableTurnKeyEvents(); // Включаем переключение страниц
+            });
+    });
+
+    // Инициализация событий turn.js
+    enableTurnKeyEvents(); // Включаем обработчики по умолчанию
+});
+
 </script>
