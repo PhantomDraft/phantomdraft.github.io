@@ -95,20 +95,4 @@ $(function () {
         introJs().start();
     });
 });
-
-function setPage(element) {
-    const page = $(element).data('page'); // Получаем номер страницы из атрибута data-page
-    if (!page) {
-        console.warn('Страница не указана для данного элемента.');
-        return;
-    }
-
-    const newHash = 'book5/page${page}';
-    if (window.location.hash !== '#${newHash}') {
-        window.location.hash = newHash; // Обновляем хэш, чтобы вызвать hashchange
-    } else {
-        handleAddressChange(newHash); // Прямой вызов для текущей страницы
-    }
-}
-
 </script>
