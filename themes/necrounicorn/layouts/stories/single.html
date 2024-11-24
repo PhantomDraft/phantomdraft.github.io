@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <a href="#" id="fb5-button-back">BACK</a>
+        <a href="{{ if eq .Lang "en" }}/stories/{{ else }}/{{ .Lang }}/stories/{{ end }}" id="fb5-button-back">Stories</a>
 
         <div class="fb5-bcg-book"></div>
 
