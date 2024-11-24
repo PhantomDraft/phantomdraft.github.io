@@ -96,7 +96,10 @@ $(function () {
     });
 });
 
-$(document).on('keydown', function (e) {
-    console.log(e.key);
+$(window).on('hashchange', function () {
+    if (introJs()._options && introJs()._options.overlayOpacity !== undefined) {
+        console.log("Изменение адреса заблокировано во время тура");
+        return false; // Блокируем изменение
+    }
 });
 </script>
