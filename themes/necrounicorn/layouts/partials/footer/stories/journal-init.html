@@ -19,7 +19,7 @@
     $(function () {
       // Animation of images for the current page
       function animateImages(page1, page2) {
-        var $images = $(`.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]`).find('.tooltip-img');
+        var $images = $('.turn-page-wrapper[page="' + page1 + '"], .turn-page-wrapper[page="' + page2 + '"]').find('.tooltip-img');
         $images.each(function (index, img) {
           $(img).css({
             'opacity': 0,
