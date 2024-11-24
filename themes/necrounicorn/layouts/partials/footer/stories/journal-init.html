@@ -16,120 +16,84 @@
         'lazy_loading_pages':'false'
     });
 
-$(function () {
-    // Функция для определения последней страницы
-    function getLastPageNumber() {
-        var lastPage = 0;
-        $('.turn-page-wrapper').each(function () {
-            var page = parseInt($(this).attr('page'), 10);
-            if (page > lastPage) {
-                lastPage = page;
-            }
-        });
-        return lastPage;
-    }
-
-    // Функция для анимации изображений на страницах
+  $(function () {
+    // Animates images on the specified pages
     function animateImages(page1, page2) {
-        var $images = $(`.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]`).find('.fb5-cont-page-book img');
-        if ($images.length === 0) {
-            console.warn("Изображения не найдены для страниц:", page1, page2);
-            return;
-        }
-        $images.each(function (index, img) {
-            $(img).css({
-                'opacity': 0, // Начальная прозрачность
-                'transition': 'opacity 1s ease-in', // Плавное изменение прозрачности
-                'transition-delay': (index * 0.5) + 's' // Задержка для каждого изображения
-            });
-            setTimeout(function () {
-                $(img).css('opacity', 1); // Делаем изображение видимым
-            }, index * 500);
+      var $images = $(`.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]`).find('.image-class');
+      $images.each(function (index, img) {
+        $(img).css({
+          'opacity': 0, // Initial transparency
+          'transition': 'opacity 1s ease-in', // Smooth transition for opacity
+          'transition-delay': (index * 0.5) + 's' // Delay for each image
         });
+        setTimeout(function () {
+          $(img).css('opacity', 1); // Set image opacity to fully visible
+        }, index * 500);
+      });
     }
 
-    // Обработчик изменения адреса
+    // Handles hash-based page address changes
     function handleAddressChange(address) {
-        var pages = [];
-
-        if (address === "book5/page1") {
-            // Первая страница
-            pages.push("1");
-        } else if (address === "book5/end") {
-            // Последняя страница
-            var lastPage = getLastPageNumber();
-            pages.push(String(lastPage));
-        } else {
-            // Диапазоны страниц, например, "page2-page3"
-            var pageMatch = address.match(/page(\d+)-page(\d+)/);
-            if (pageMatch) {
-                var page1 = pageMatch[1];
-                var page2 = pageMatch[2];
-                pages.push(page1, page2);
-                // Запускаем анимацию изображений для текущих страниц
-                animateImages(page1, page2);
-            }
+      if (address.includes("page")) {
+        var pageMatch = address.match(/page(\d+)-page(\d+)/);
+        if (pageMatch) {
+          var page1 = pageMatch[1];
+          var page2 = pageMatch[2];
+          animateImages(page1, page2); // Trigger animation for the specified pages
         }
-
-        if (pages.length > 0) {
-            console.log("Анимация для страниц:", pages);
-        } else {
-            console.warn("Не удалось извлечь страницы из адреса:", address);
-        }
+      }
     }
 
-    // Слушатель изменений якоря
+    // Listen for hash changes in the URL
     $(window).on("hashchange", function () {
-        var currentAddress = window.location.hash.slice(1); // Убираем #
-        console.log("Изменение адреса:", currentAddress);
-        handleAddressChange(currentAddress);
+      var currentAddress = window.location.hash.slice(1); // Remove the '#' from the hash
+      handleAddressChange(currentAddress);
     });
 
-    // Инициализация при загрузке страницы
+    // Initialize animation on page load if a hash exists
     var initialAddress = window.location.hash.slice(1);
-    console.log("Инициализация адреса:", initialAddress);
     handleAddressChange(initialAddress);
-});
 
-  // Находим все изображения с классом image-class
-  const images = document.querySelectorAll('.image-class');
+    // Opens a tooltip-like modal when an image is clicked
+    const images = document.querySelectorAll('.image-class');
 
-  images.forEach(image => {
-    image.addEventListener('click', () => {
-      // Создаем модальное окно
-      const tooltipModal = document.createElement('div');
-      tooltipModal.classList.add('tooltip-modal');
+    images.forEach(image => {
+      image.addEventListener('click', () => {
+        // Create the tooltip modal dynamically
+        const tooltipModal = document.createElement('div');
+        tooltipModal.classList.add('tooltip-modal');
 
-      // Создаем содержимое модального окна
-      const tooltipContent = document.createElement('div');
-      tooltipContent.classList.add('tooltip-content');
+        // Create the content container
+        const tooltipContent = document.createElement('div');
+        tooltipContent.classList.add('tooltip-content');
 
-      // Добавляем текст из alt изображения
-      const tooltipText = document.createElement('div');
-      tooltipText.textContent = image.alt;
+        // Add the text from the image's alt attribute
+        const tooltipText = document.createElement('div');
+        tooltipText.textContent = image.alt;
 
-      // Кнопка закрытия
-      const closeButton = document.createElement('button');
-      closeButton.textContent = 'Close';
-      closeButton.classList.add('close-btn');
-      closeButton.addEventListener('click', () => {
-        document.body.removeChild(tooltipModal); // Удаляем модальное окно
+        // Add a close button
+        const closeButton = document.createElement('button');
+        closeButton.textContent = 'Close';
+        closeButton.classList.add('close-btn');
+        closeButton.addEventListener('click', () => {
+          document.body.removeChild(tooltipModal); // Remove modal on close
+        });
+
+        // Append the text and button to the content container
+        tooltipContent.appendChild(tooltipText);
+        tooltipContent.appendChild(closeButton);
+        tooltipModal.appendChild(tooltipContent);
+
+        // Close the modal when clicking outside of the content area
+        tooltipModal.addEventListener('click', (e) => {
+          if (e.target === tooltipModal) {
+            document.body.removeChild(tooltipModal);
+          }
+        });
+
+        // Append the modal to the body
+        document.body.appendChild(tooltipModal);
       });
-
-      // Сборка модального окна
-      tooltipContent.appendChild(tooltipText);
-      tooltipContent.appendChild(closeButton);
-      tooltipModal.appendChild(tooltipContent);
-
-      // Закрытие окна при клике вне контента
-      tooltipModal.addEventListener('click', (e) => {
-        if (e.target === tooltipModal) {
-          document.body.removeChild(tooltipModal);
-        }
-      });
-
-      // Добавляем модальное окно на страницу
-      document.body.appendChild(tooltipModal);
     });
   });
 </script>
