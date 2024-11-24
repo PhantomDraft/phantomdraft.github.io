@@ -16,11 +16,78 @@
         'lazy_loading_pages':'false'
     });
 
-    $(function () {
-        introJs().setOptions({
-    hints: [
-        { hint: 'First hint', element: '#new-feature' }
-    ]
-});
+$(function () {
+    // Массив шагов тура
+    const tourSteps = [
+        {
+            element: '#1', // ID первого изображения
+            intro: 'Это первое изображение в туре.',
+            position: 'bottom',
+        },
+        {
+            element: '#2', // ID второго изображения
+            intro: 'Это второе изображение в туре.',
+            position: 'right',
+        },
+        {
+            element: '#3', // ID третьего изображения
+            intro: 'Это третье изображение. После него переворачиваем страницу!',
+            position: 'top',
+            action: 'flipPage' // Кастомное действие для переворачивания
+        },
+        {
+            element: '#4',
+            intro: 'Это четвёртое изображение.',
+            position: 'left',
+        },
+        {
+            element: '#5',
+            intro: 'Это пятое изображение. Конец тура!',
+            position: 'bottom',
+        }
+    ];
+
+    // Функция для переворачивания страницы
+    function flipPage() {
+        console.log('Переворачиваем страницу...');
+        // Пример смены адреса (если используется хэш-навигация)
+        window.location.hash = '#book5/page4-page5';
+
+        // Пример запуска кастомного события переворота страницы
+        $('.turn-page-wrapper').trigger('page-flip');
+    }
+
+    // Запускаем тур
+    function startTour() {
+        introJs()
+            .setOptions({
+                steps: tourSteps,
+                showButtons: false, // Скрыть кнопки управления
+                showBullets: true, // Показать индикатор прогресса
+                exitOnOverlayClick: false, // Запретить завершение при клике на фон
+                showProgress: true, // Показать прогресс
+                scrollToElement: true, // Прокручивать к текущему элементу
+            })
+            .onbeforechange(function (targetElement) {
+                // Проверяем, есть ли кастомное действие для текущего шага
+                const currentStep = tourSteps[introJs().currentStep()];
+                if (currentStep && currentStep.action === 'flipPage') {
+                    flipPage(); // Выполняем действие переворота
+                }
+            })
+            .onexit(function () {
+                console.log('Тур завершён.');
+            })
+            .oncomplete(function () {
+                console.log('Тур полностью пройден.');
+            })
+            .start();
+    }
+
+    // Пример: Запуск тура при клике на кнопку
+    $('#startTourButton').on('click', function () {
+        startTour();
     });
+});
+
 </script>
