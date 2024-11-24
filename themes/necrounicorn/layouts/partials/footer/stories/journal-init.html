@@ -17,9 +17,9 @@
     });
 
     $(function () {
-      // Анимация изображений для текущей страницы
+      // Animation of images for the current page
       function animateImages(page1, page2) {
-        var $images = $('.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]').find('.tooltip-img');
+        var $images = $(`.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]`).find('.tooltip-img');
         $images.each(function (index, img) {
           $(img).css({
             'opacity': 0,
@@ -31,7 +31,7 @@
           }, index * 500);
         });
       }
-      // Обработчик изменения адреса
+      // Address change handler
       function handleAddressChange(address) {
         if (address.includes("page")) {
           var pageMatch = address.match(/page(\d+)-page(\d+)/);
@@ -42,15 +42,15 @@
           }
         }
       }
-      // Слушатель изменений якоря
+      // Anchor Change Listener
       $(window).on("hashchange", function () {
         var currentAddress = window.location.hash.slice(1);
         handleAddressChange(currentAddress);
       });
-      // Инициализация при загрузке страницы
+      // Initialization on page load
       var initialAddress = window.location.hash.slice(1);
       handleAddressChange(initialAddress);
-      // Открытие подсказки по клику на изображение
+      // Opening a tooltip by clicking on an image
       const images = document.querySelectorAll('.tooltip-img');
       images.forEach(image => {
         image.addEventListener('click', () => {
