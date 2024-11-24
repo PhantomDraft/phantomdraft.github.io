@@ -3,10 +3,10 @@
 	Theme URI: https://phantomdraft.github.io/stories/
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 4.2
+	Version: 4.3
 */
 @import url('reset.css?v=0.2');
-@import url('static.css?v=0.2');
+@import url('static.css?v=0.3');
 @import url('elements.css?v=0.2');
 @import url('preloader.css?v=0.2');
 

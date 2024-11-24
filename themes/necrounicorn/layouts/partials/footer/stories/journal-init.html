@@ -89,10 +89,47 @@ $(function () {
     var initialAddress = window.location.hash.slice(1);
     console.log("Инициализация адреса:", initialAddress);
     handleAddressChange(initialAddress);
-
-    // Пример: Обработчик для кнопки (если нужно)
-    $('#startTourButton').on('click', function () {
-        introJs(".fb5-page-book").start();
-    });
 });
+
+  // Находим все изображения с классом image-class
+  const images = document.querySelectorAll('.image-class');
+
+  images.forEach(image => {
+    image.addEventListener('click', () => {
+      // Создаем модальное окно
+      const tooltipModal = document.createElement('div');
+      tooltipModal.classList.add('tooltip-modal');
+
+      // Создаем содержимое модального окна
+      const tooltipContent = document.createElement('div');
+      tooltipContent.classList.add('tooltip-content');
+
+      // Добавляем текст из alt изображения
+      const tooltipText = document.createElement('div');
+      tooltipText.textContent = image.alt;
+
+      // Кнопка закрытия
+      const closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.classList.add('close-btn');
+      closeButton.addEventListener('click', () => {
+        document.body.removeChild(tooltipModal); // Удаляем модальное окно
+      });
+
+      // Сборка модального окна
+      tooltipContent.appendChild(tooltipText);
+      tooltipContent.appendChild(closeButton);
+      tooltipModal.appendChild(tooltipContent);
+
+      // Закрытие окна при клике вне контента
+      tooltipModal.addEventListener('click', (e) => {
+        if (e.target === tooltipModal) {
+          document.body.removeChild(tooltipModal);
+        }
+      });
+
+      // Добавляем модальное окно на страницу
+      document.body.appendChild(tooltipModal);
+    });
+  });
 </script>
