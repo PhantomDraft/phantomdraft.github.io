@@ -31,51 +31,32 @@ $(function () {
 
     // Функция для активации подсказок для указанных страниц
     function activateHintsForPages(pages) {
-        // Удаляем обработчики кликов для всех изображений
-        $('img[data-hint]').off('click');
+        const hints = []; // Список подсказок
 
-        // Добавляем обработчики кликов только для элементов на активных страницах
         pages.forEach(function (page) {
-            var $currentHints = $(`.turn-page-wrapper[page="${page}"]`).find('[data-hint]');
+            // Находим все элементы с data-hint на текущей странице
+            const $currentHints = $(`.turn-page-wrapper[page="${page}"]`).find('[data-hint]');
             $currentHints.each(function () {
-                var $element = $(this);
-
-                // Добавляем обработчик клика на изображение
-                $element.on('click', function () {
-                    // Показываем тултип с подсказкой
-                    showTooltip($element);
+                hints.push({
+                    element: this, // Элемент DOM
+                    hint: $(this).attr('data-hint'), // Текст подсказки
+                    hintPosition: $(this).attr('data-hintposition') || 'bottom-middle', // Позиция
+                    hintAnimation: true // Включаем анимацию
                 });
             });
         });
-    }
 
-    // Функция для отображения тултипа
-    function showTooltip($element) {
-        // Удаляем старые тултипы
-        $('.introjs-tooltip').remove();
-
-        // Создаём новый тултип
-        var tooltip = $(`
-            <div class="introjs-tooltip" style="position: absolute;">
-                <div class="introjs-tooltiptext">${$element.attr('data-hint')}</div>
-                <button class="introjs-tooltipbutton">Got it</button>
-            </div>
-        `);
-
-        // Располагаем тултип рядом с элементом
-        var offset = $element.offset();
-        tooltip.css({
-            top: offset.top + $element.height() + 10, // Сдвиг вниз
-            left: offset.left // Выравнивание по левому краю элемента
-        });
-
-        // Добавляем тултип на страницу
-        $('body').append(tooltip);
-
-        // Удаляем тултип при нажатии на кнопку
-        tooltip.find('.introjs-tooltipbutton').on('click', function () {
-            tooltip.remove();
-        });
+        if (hints.length > 0) {
+            console.log(`Добавляем ${hints.length} подсказок для текущих страниц.`);
+            // Устанавливаем подсказки через introJs
+            introJs().setOptions({
+                hints: hints, // Массив подсказок
+                hintButtonLabel: "Got it", // Текст кнопки
+                hintShowButton: true // Показывать кнопку
+            }).addHints(); // Активируем подсказки
+        } else {
+            console.log("Нет подсказок для текущих страниц.");
+        }
     }
 
     // Функция для анимации изображений на страницах
@@ -140,4 +121,5 @@ $(function () {
     console.log("Инициализация адреса:", initialAddress);
     handleAddressChange(initialAddress);
 });
+
 </script>
