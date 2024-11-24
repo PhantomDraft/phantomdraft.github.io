@@ -3,7 +3,7 @@
 	Theme URI: https://phantomdraft.github.io/stories/
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 3.5
+	Version: 3.6
 */
 @import url('reset.css');
 @import url('static.css');
@@ -443,10 +443,10 @@
 #fb5 .fb5-page-book .aligin-absolute-r {right: 0;}
 #fb5 .fb5-page-book .aligin-absolute-b {bottom: 0;}
 #fb5 .fb5-page-book .aligin-absolute-l {left: 0;}
-#fb5 .fb5-page-book .aligin-absolute-cv {
+#fb5 .fb5-page-book .aligin-absolute-cy {
 	top: 50%; transform: translateY(-50%);
 }
-#fb5 .fb5-page-book .aligin-absolute-ch {
+#fb5 .fb5-page-book .aligin-absolute-cx {
 	left: 50%; transform: translateX(-50%);
 }
 
