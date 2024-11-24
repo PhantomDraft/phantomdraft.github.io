@@ -95,13 +95,4 @@ $(function () {
         introJs().start();
     });
 });
-
-$(document).on('keydown', function (e) {
-    if (introJs()._options && introJs()._options.overlayOpacity !== undefined) {
-        if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
-            e.preventDefault(); // Останавливаем событие
-            console.log(`Клавиша ${e.key} заблокирована`);
-        }
-    }
-});
 </script>
