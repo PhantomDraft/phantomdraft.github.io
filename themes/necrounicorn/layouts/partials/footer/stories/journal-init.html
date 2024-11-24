@@ -96,10 +96,12 @@ $(function () {
     });
 });
 
-$(window).on('hashchange', function () {
+$(document).on('keydown', function (e) {
     if (introJs()._options && introJs()._options.overlayOpacity !== undefined) {
-        console.log("Изменение адреса заблокировано во время тура");
-        return false; // Блокируем изменение
+        if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+            e.preventDefault(); // Останавливаем событие
+            console.log(`Клавиша ${e.key} заблокирована`);
+        }
     }
 });
 </script>
