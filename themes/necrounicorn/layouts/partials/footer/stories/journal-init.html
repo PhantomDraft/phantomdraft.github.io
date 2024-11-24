@@ -19,7 +19,7 @@
   $(function () {
     // Анимация изображений для текущей страницы
     function animateImages(page1, page2) {
-      var $images = $(`.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]`).find('.image-class');
+      var $images = $(`.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]`).find('.tooltip-img');
       $images.each(function (index, img) {
         $(img).css({
           'opacity': 0,
@@ -55,7 +55,7 @@
     handleAddressChange(initialAddress);
 
     // Открытие подсказки по клику на изображение
-    const images = document.querySelectorAll('.image-class');
+    const images = document.querySelectorAll('.tooltip-img');
 
     images.forEach(image => {
       image.addEventListener('click', () => {
