@@ -16,82 +16,75 @@
         'lazy_loading_pages':'false'
     });
 
- $(function () {
-    // Animates images on the specified pages
+  $(function () {
+    // Анимация изображений для текущей страницы
     function animateImages(page1, page2) {
-      var $images = $('.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]').find('.tooltip-img');
+      var $images = $(`.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]`).find('.image-class');
       $images.each(function (index, img) {
         $(img).css({
-          'opacity': 0, // Initial transparency
-          'transition': 'opacity 1s ease-in', // Smooth transition for opacity
-          'transition-delay': (index * 0.5) + 's' // Delay for each image
+          'opacity': 0,
+          'transition': 'opacity 1s ease-in',
+          'transition-delay': (index * 0.5) + 's'
         });
         setTimeout(function () {
-          $(img).css('opacity', 1); // Set image opacity to fully visible
+          $(img).css('opacity', 1);
         }, index * 500);
       });
     }
 
-    // Handles hash-based page address changes
+    // Обработчик изменения адреса
     function handleAddressChange(address) {
       if (address.includes("page")) {
         var pageMatch = address.match(/page(\d+)-page(\d+)/);
         if (pageMatch) {
           var page1 = pageMatch[1];
           var page2 = pageMatch[2];
-          animateImages(page1, page2); // Trigger animation for the specified pages
+          animateImages(page1, page2);
         }
       }
     }
 
-    // Listen for hash changes in the URL
+    // Слушатель изменений якоря
     $(window).on("hashchange", function () {
-      var currentAddress = window.location.hash.slice(1); // Remove the '#' from the hash
+      var currentAddress = window.location.hash.slice(1);
       handleAddressChange(currentAddress);
     });
 
-    // Initialize animation on page load if a hash exists
+    // Инициализация при загрузке страницы
     var initialAddress = window.location.hash.slice(1);
     handleAddressChange(initialAddress);
 
-    // Opens a tooltip-like modal when an image is clicked
-    const images = document.querySelectorAll('.tooltip-img');
+    // Открытие подсказки по клику на изображение
+    const images = document.querySelectorAll('.image-class');
 
     images.forEach(image => {
       image.addEventListener('click', () => {
-        // Create the tooltip modal dynamically
         const tooltipModal = document.createElement('div');
         tooltipModal.classList.add('tooltip-modal');
 
-        // Create the content container
         const tooltipContent = document.createElement('div');
         tooltipContent.classList.add('tooltip-content');
 
-        // Add the text from the image's alt attribute
         const tooltipText = document.createElement('div');
         tooltipText.textContent = image.alt;
 
-        // Add a close button
         const closeButton = document.createElement('button');
         closeButton.textContent = 'Close';
         closeButton.classList.add('close-btn');
         closeButton.addEventListener('click', () => {
-          document.body.removeChild(tooltipModal); // Remove modal on close
+          document.body.removeChild(tooltipModal);
         });
 
-        // Append the text and button to the content container
         tooltipContent.appendChild(tooltipText);
         tooltipContent.appendChild(closeButton);
         tooltipModal.appendChild(tooltipContent);
 
-        // Close the modal when clicking outside of the content area
         tooltipModal.addEventListener('click', (e) => {
           if (e.target === tooltipModal) {
             document.body.removeChild(tooltipModal);
           }
         });
 
-        // Append the modal to the body
         document.body.appendChild(tooltipModal);
       });
     });
