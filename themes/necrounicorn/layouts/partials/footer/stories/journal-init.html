@@ -2,7 +2,7 @@
     jQuery('#fb5').data('config', {
         "page_width":"550",
         "page_height":"715",
-        "email_form":"office@somedomain.com",
+        "email_form":"",
         "zoom_double_click":"1",
         "zoom_step":"0.06",
         "double_click_enabled":"true",
@@ -16,29 +16,57 @@
         'lazy_loading_pages':'false'
     });
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Tooltip and Animation</title>
+  <style>
+    .image-class {
+      cursor: pointer;
+      max-width: 200px;
+      opacity: 1; /* Default fully visible */
+      transition: opacity 1s ease-in; /* Smooth opacity transition */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Example images -->
+<div class="turn-page-wrapper" page="1">
+  <img src="image1.jpg" alt="This is content for page 1" class="image-class">
+</div>
+<div class="turn-page-wrapper" page="2">
+  <img src="image2.jpg" alt="This is content for page 2" class="image-class">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
   $(function () {
-    // Animates images on the specified pages
+    // Function to animate images on specified pages
     function animateImages(page1, page2) {
-      var $images = $('.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]').find('.tooltip-img');
+      // Select images on the specified pages
+      const $images = $(`.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]`).find('.image-class');
+      
+      // Reset opacity to ensure smooth animations on repeat
+      $images.css('opacity', 0); // Set initial opacity to 0
+      
+      // Trigger animation with a delay for each image
       $images.each(function (index, img) {
-        $(img).css({
-          'opacity': 0, // Initial transparency
-          'transition': 'opacity 1s ease-in', // Smooth transition for opacity
-          'transition-delay': (index * 0.5) + 's' // Delay for each image
-        });
-        setTimeout(function () {
-          $(img).css('opacity', 1); // Set image opacity to fully visible
-        }, index * 500);
+        setTimeout(() => {
+          $(img).css('opacity', 1); // Animate to fully visible
+        }, index * 500); // Staggered delay for each image
       });
     }
 
-    // Handles hash-based page address changes
+    // Handles hash-based address changes
     function handleAddressChange(address) {
       if (address.includes("page")) {
-        var pageMatch = address.match(/page(\d+)-page(\d+)/);
+        const pageMatch = address.match(/page(\d+)-page(\d+)/);
         if (pageMatch) {
-          var page1 = pageMatch[1];
-          var page2 = pageMatch[2];
+          const page1 = pageMatch[1];
+          const page2 = pageMatch[2];
           animateImages(page1, page2); // Trigger animation for the specified pages
         }
       }
@@ -46,54 +74,17 @@
 
     // Listen for hash changes in the URL
     $(window).on("hashchange", function () {
-      var currentAddress = window.location.hash.slice(1); // Remove the '#' from the hash
+      const currentAddress = window.location.hash.slice(1); // Remove '#' from hash
       handleAddressChange(currentAddress);
     });
 
     // Initialize animation on page load if a hash exists
-    var initialAddress = window.location.hash.slice(1);
+    const initialAddress = window.location.hash.slice(1);
     handleAddressChange(initialAddress);
-
-    // Opens a tooltip-like modal when an image is clicked
-    const images = document.querySelectorAll('.tooltip-img');
-
-    images.forEach(image => {
-      image.addEventListener('click', () => {
-        // Create the tooltip modal dynamically
-        const tooltipModal = document.createElement('div');
-        tooltipModal.classList.add('tooltip-modal');
-
-        // Create the content container
-        const tooltipContent = document.createElement('div');
-        tooltipContent.classList.add('tooltip-content');
-
-        // Add the text from the image's alt attribute
-        const tooltipText = document.createElement('div');
-        tooltipText.textContent = image.alt;
-
-        // Add a close button
-        const closeButton = document.createElement('button');
-        closeButton.textContent = 'Close';
-        closeButton.classList.add('close-btn');
-        closeButton.addEventListener('click', () => {
-          document.body.removeChild(tooltipModal); // Remove modal on close
-        });
-
-        // Append the text and button to the content container
-        tooltipContent.appendChild(tooltipText);
-        tooltipContent.appendChild(closeButton);
-        tooltipModal.appendChild(tooltipContent);
-
-        // Close the modal when clicking outside of the content area
-        tooltipModal.addEventListener('click', (e) => {
-          if (e.target === tooltipModal) {
-            document.body.removeChild(tooltipModal);
-          }
-        });
-
-        // Append the modal to the body
-        document.body.appendChild(tooltipModal);
-      });
-    });
   });
+</script>
+
+</body>
+</html>
+
 </script>
