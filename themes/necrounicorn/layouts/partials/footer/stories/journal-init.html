@@ -31,25 +31,50 @@ $(function () {
 
     // Функция для активации подсказок для указанных страниц
     function activateHintsForPages(pages) {
-        introJs().removeHints(); // Удаляем предыдущие подсказки
+        // Удаляем обработчики кликов для всех изображений
+        $('img[data-hint]').off('click');
 
+        // Добавляем обработчики кликов только для элементов на активных страницах
         pages.forEach(function (page) {
             var $currentHints = $(`.turn-page-wrapper[page="${page}"]`).find('[data-hint]');
             $currentHints.each(function () {
-                var element = $(this).get(0); // DOM-элемент
+                var $element = $(this);
 
                 // Добавляем обработчик клика на изображение
-                $(this).off('click').on('click', function () {
-                    // Показываем подсказку при нажатии
-                    introJs().addHints([{
-                        element: element,
-                        hint: $(this).attr('data-hint'),
-                        position: $(this).attr('data-hintposition') || 'bottom-middle',
-                    }]);
-
-                    introJs().refresh(); // Обновляем подсказки
+                $element.on('click', function () {
+                    // Показываем тултип с подсказкой
+                    showTooltip($element);
                 });
             });
+        });
+    }
+
+    // Функция для отображения тултипа
+    function showTooltip($element) {
+        // Удаляем старые тултипы
+        $('.introjs-tooltip').remove();
+
+        // Создаём новый тултип
+        var tooltip = $(`
+            <div class="introjs-tooltip" style="position: absolute;">
+                <div class="introjs-tooltiptext">${$element.attr('data-hint')}</div>
+                <button class="introjs-tooltipbutton">Got it</button>
+            </div>
+        `);
+
+        // Располагаем тултип рядом с элементом
+        var offset = $element.offset();
+        tooltip.css({
+            top: offset.top + $element.height() + 10, // Сдвиг вниз
+            left: offset.left // Выравнивание по левому краю элемента
+        });
+
+        // Добавляем тултип на страницу
+        $('body').append(tooltip);
+
+        // Удаляем тултип при нажатии на кнопку
+        tooltip.find('.introjs-tooltipbutton').on('click', function () {
+            tooltip.remove();
         });
     }
 
@@ -115,5 +140,4 @@ $(function () {
     console.log("Инициализация адреса:", initialAddress);
     handleAddressChange(initialAddress);
 });
-
 </script>
