@@ -16,77 +16,66 @@
         'lazy_loading_pages':'false'
     });
 
-  $(function () {
-    // Анимация изображений для текущей страницы
-    function animateImages(page1, page2) {
-      var $images = $(`.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]`).find('.tooltip-img');
-      $images.each(function (index, img) {
-        $(img).css({
-          'opacity': 0,
-          'transition': 'opacity 1s ease-in',
-          'transition-delay': (index * 0.5) + 's'
+    $(function () {
+      // Анимация изображений для текущей страницы
+      function animateImages(page1, page2) {
+        var $images = $('.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]').find('.tooltip-img');
+        $images.each(function (index, img) {
+          $(img).css({
+            'opacity': 0,
+            'transition': 'opacity 1s ease-in',
+            'transition-delay': (index * 0.5) + 's'
+          });
+          setTimeout(function () {
+            $(img).css('opacity', 1);
+          }, index * 500);
         });
-        setTimeout(function () {
-          $(img).css('opacity', 1);
-        }, index * 500);
-      });
-    }
-
-    // Обработчик изменения адреса
-    function handleAddressChange(address) {
-      if (address.includes("page")) {
-        var pageMatch = address.match(/page(\d+)-page(\d+)/);
-        if (pageMatch) {
-          var page1 = pageMatch[1];
-          var page2 = pageMatch[2];
-          animateImages(page1, page2);
+      }
+      // Обработчик изменения адреса
+      function handleAddressChange(address) {
+        if (address.includes("page")) {
+          var pageMatch = address.match(/page(\d+)-page(\d+)/);
+          if (pageMatch) {
+            var page1 = pageMatch[1];
+            var page2 = pageMatch[2];
+            animateImages(page1, page2);
+          }
         }
       }
-    }
-
-    // Слушатель изменений якоря
-    $(window).on("hashchange", function () {
-      var currentAddress = window.location.hash.slice(1);
-      handleAddressChange(currentAddress);
-    });
-
-    // Инициализация при загрузке страницы
-    var initialAddress = window.location.hash.slice(1);
-    handleAddressChange(initialAddress);
-
-    // Открытие подсказки по клику на изображение
-    const images = document.querySelectorAll('.tooltip-img');
-
-    images.forEach(image => {
-      image.addEventListener('click', () => {
-        const tooltipModal = document.createElement('div');
-        tooltipModal.classList.add('tooltip-modal');
-
-        const tooltipContent = document.createElement('div');
-        tooltipContent.classList.add('tooltip-content');
-
-        const tooltipText = document.createElement('div');
-        tooltipText.textContent = image.alt;
-
-        const closeButton = document.createElement('button');
-        closeButton.textContent = 'Close';
-        closeButton.classList.add('close-btn');
-        closeButton.addEventListener('click', () => {
-          document.body.removeChild(tooltipModal);
-        });
-
-        tooltipContent.appendChild(tooltipText);
-        tooltipContent.appendChild(closeButton);
-        tooltipModal.appendChild(tooltipContent);
-
-        tooltipModal.addEventListener('click', (e) => {
-          if (e.target === tooltipModal) {
+      // Слушатель изменений якоря
+      $(window).on("hashchange", function () {
+        var currentAddress = window.location.hash.slice(1);
+        handleAddressChange(currentAddress);
+      });
+      // Инициализация при загрузке страницы
+      var initialAddress = window.location.hash.slice(1);
+      handleAddressChange(initialAddress);
+      // Открытие подсказки по клику на изображение
+      const images = document.querySelectorAll('.tooltip-img');
+      images.forEach(image => {
+        image.addEventListener('click', () => {
+          const tooltipModal = document.createElement('div');
+          tooltipModal.classList.add('tooltip-modal');
+          const tooltipContent = document.createElement('div');
+          tooltipContent.classList.add('tooltip-content');
+          const tooltipText = document.createElement('div');
+          tooltipText.textContent = image.alt;
+          const closeButton = document.createElement('button');
+          closeButton.textContent = 'Close';
+          closeButton.classList.add('close-btn');
+          closeButton.addEventListener('click', () => {
             document.body.removeChild(tooltipModal);
-          }
+          });
+          tooltipContent.appendChild(tooltipText);
+          tooltipContent.appendChild(closeButton);
+          tooltipModal.appendChild(tooltipContent);
+          tooltipModal.addEventListener('click', (e) => {
+            if (e.target === tooltipModal) {
+              document.body.removeChild(tooltipModal);
+            }
+          });
+          document.body.appendChild(tooltipModal);
         });
-
-        document.body.appendChild(tooltipModal);
       });
     });
-  });
 </script>
