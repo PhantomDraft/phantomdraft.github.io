@@ -3,12 +3,17 @@
 	Theme URI: https://phantomdraft.github.io/stories/
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 4.0
+	Version: 4.1
 */
 @import url('reset.css');
 @import url('static.css');
 @import url('elements.css');
 @import url('preloader.css');
+
+html, body {
+	margin: 0; padding: 0;
+	overflow: hidden !important;
+}
 
 #fb5 {
   font-family: "Metal Mania", system-ui;
@@ -537,6 +542,12 @@
 #fb5 .fb5-page-book .rainbow {border: 6px solid #f2f2c9;}
 
 #fb5 .fb5-page-book .round {border-radius: 50%;}
+
+/* animation opacity */
+.fb5-page-book img {
+	opacity: 0;
+	transition: opacity 1s ease-in;
+}
 
 /* Media queries */
 @media screen and (max-width: 768px) { 
