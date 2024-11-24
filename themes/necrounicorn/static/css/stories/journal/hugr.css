@@ -3,12 +3,13 @@
 	Theme URI: https://phantomdraft.github.io/stories/
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 4.3
+	Version: 4.5
 */
-@import url('reset.css?v=0.2');
-@import url('static.css?v=0.3');
-@import url('elements.css?v=0.2');
-@import url('preloader.css?v=0.2');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('reset.css?v=0.4');
+@import url('static.css?v=0.4');
+@import url('elements.css?v=0.4');
+@import url('preloader.css?v=0.4');
 
 html, body {
 	margin: 0; padding: 0;
@@ -16,7 +17,7 @@ html, body {
 }
 
 #fb5 {
-  font-family: "Metal Mania", system-ui;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
    font-size:14px;	
@@ -290,7 +291,7 @@ html, body {
 	#fb5 .fb5-meta .fb5-description {
 			font-size: 11px;
 			color: #666;
-	        font-family:Arial,sans-serif;
+	        font-family: 'Roboto', sans-serif;
 	}
 
 	#fb5 .fb5-meta.fb5-left { 
@@ -337,7 +338,6 @@ html, body {
 	}
 	
 	#fb5 .fb5-page-book {
-		
 		position:absolute;
 	    -webkit-hyphens:none;
         -moz-hyphens:none;
@@ -572,7 +572,7 @@ html, body {
 	/*/
 }
 
-  /* tools bar*/
+  /* tools bar */
 	    #fb5 .fb5-bcg-book{
 			background-image:url(/img/stories/bg.webp);
 		}
@@ -598,8 +598,7 @@ html, body {
 			 border: 1px solid #1E2F3C;
 		}	
 		
-		/* book /*/
-		
+		/* book */
 		#fb5 #fb5-book .turn-page {
 	       background-color:#FFFFFF;
         }
@@ -610,13 +609,13 @@ html, body {
     		color: #666666;
 		}		
 		
-		/* list thumbs /*/
+		/* list thumbs */
 		#fb5 #fb5-all-pages .fb5-container-pages {
 		    background: none repeat scroll 0 0 #000000;
 						box-shadow: 0 0 40px rgba(100,200, 211, 0.8);
 		}
 		
-		/* form /*/
+		/* form */
 		#fb5 #fb5-contact form {
    			 background: none repeat scroll 0 0 #161616;
 			 			 box-shadow: 0 0 60px rgba(100,200,211, 0.7);
@@ -643,20 +642,20 @@ html, body {
 		  color:#FFFFFF			
 		}				
 		
-		/* preloader /*/
+		/* preloader */
 		#fb5 .fb5-preloader .wBall .wInnerBall{
             background:#f4f1cb;
 		}	
 		
-		/* arrow gif /*/
+		/* arrow gif */
 		#fb5 .fb5-nav-arrow {
    			 background: url("../img/arrow-navpage.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
 		}		
 		
-		/* formatt page for flipbook  /*/
+		/* formatt page for flipbook */
 		#fb5 .fb5-page-book p {
 		   color:#77797F;
-		   font-family:Arial;
+		   font-family: 'Roboto', sans-serif;
 		   font-size:14px;
 	    }
 		#fb5 .fb5-page-book a {
@@ -694,8 +693,7 @@ html, body {
 	        color:#77797F;
 		}
 
-        
-		/*  about style  /*/
+		/* about style */
 		#fb5 #fb5-about p,#fb5 #fb5-about li {
 		   color: #CFEAEE;
 		   font-size:11px;
