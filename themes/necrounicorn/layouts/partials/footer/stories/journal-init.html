@@ -17,109 +17,48 @@
     });
 
 $(function () {
-    // Функция для определения последней страницы
-    function getLastPageNumber() {
-        var lastPage = 0;
-        $('.turn-page-wrapper').each(function () {
-            var page = parseInt($(this).attr('page'), 10);
-            if (page > lastPage) {
-                lastPage = page;
-            }
-        });
-        return lastPage;
+    // Функция для удаления всех подсказок
+    function removeHints() {
+        introJs().removeHints(); // Удаляем все подсказки
     }
 
-    // Функция для активации подсказок для указанных страниц
-    function activateHintsForPages(pages) {
-        const hints = []; // Список подсказок
+    // Функция для показа подсказки при клике
+    function setupHintClick() {
+        // Удаляем старые обработчики кликов, чтобы избежать дублирования
+        $('img[data-hint]').off('click');
 
-        pages.forEach(function (page) {
-            // Находим все элементы с data-hint на текущей странице
-            const $currentHints = $(`.turn-page-wrapper[page="${page}"]`).find('[data-hint]');
-            $currentHints.each(function () {
-                hints.push({
-                    element: this, // Элемент DOM
-                    hint: $(this).attr('data-hint'), // Текст подсказки
-                    hintPosition: $(this).attr('data-hintposition') || 'bottom-middle', // Позиция
-                    hintAnimation: true // Включаем анимацию
-                });
-            });
-        });
+        // Добавляем обработчик клика для всех изображений с data-hint
+        $('img[data-hint]').on('click', function () {
+            const $img = $(this); // Текущий элемент
 
-        if (hints.length > 0) {
-            console.log(`Добавляем ${hints.length} подсказок для текущих страниц.`);
-            // Устанавливаем подсказки через introJs
+            // Создаём подсказку
             introJs().setOptions({
-                hints: hints, // Массив подсказок
-                hintButtonLabel: "Got it", // Текст кнопки
-                hintShowButton: true // Показывать кнопку
-            }).addHints(); // Активируем подсказки
-        } else {
-            console.log("Нет подсказок для текущих страниц.");
-        }
-    }
-
-    // Функция для анимации изображений на страницах
-    function animateImages(page1, page2) {
-        var $images = $(`.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]`).find('.fb5-cont-page-book img');
-        if ($images.length === 0) {
-            console.warn("Изображения не найдены для страниц:", page1, page2);
-            return;
-        }
-        $images.each(function (index, img) {
-            $(img).css({
-                'opacity': 0, // Начальная прозрачность
-                'transition': 'opacity 1s ease-in', // Плавное изменение прозрачности
-                'transition-delay': (index * 0.5) + 's' // Задержка для каждого изображения
-            });
-            setTimeout(function () {
-                $(img).css('opacity', 1); // Делаем изображение видимым
-            }, index * 500);
+                hints: [
+                    {
+                        element: this, // Указываем текущее изображение
+                        hint: $img.attr('data-hint'), // Текст подсказки
+                        hintPosition: $img.attr('data-hintposition') || 'bottom-middle', // Позиция
+                    }
+                ],
+                hintShowButton: true, // Показывать кнопку "Got it"
+                hintAnimation: true // Включить анимацию
+            }).addHints(); // Активируем подсказку
         });
     }
 
-    // Обработчик адреса
-    function handleAddressChange(address) {
-        var pages = [];
-
-        if (address === "book5/page1") {
-            // Первая страница
-            pages.push("1");
-        } else if (address === "book5/end") {
-            // Последняя страница
-            var lastPage = getLastPageNumber();
-            pages.push(String(lastPage));
-        } else {
-            // Диапазоны страниц, например, "page2-page3"
-            var pageMatch = address.match(/page(\d+)-page(\d+)/);
-            if (pageMatch) {
-                var page1 = pageMatch[1];
-                var page2 = pageMatch[2];
-                pages.push(page1, page2);
-                // Запускаем анимацию изображений для текущих страниц
-                animateImages(page1, page2);
-            }
-        }
-
-        if (pages.length > 0) {
-            console.log("Активируем подсказки для страниц:", pages);
-            activateHintsForPages(pages);
-        } else {
-            console.warn("Не удалось извлечь страницы из адреса:", address);
-        }
+    // Функция для обработки переворачивания страницы (если необходимо)
+    function handlePageFlip() {
+        // Удаляем текущие подсказки при перевороте страницы
+        removeHints();
     }
-
-    // Слушатель изменений якоря
-    $(window).on("hashchange", function () {
-        var currentAddress = window.location.hash.slice(1); // Убираем #
-        console.log("Изменение адреса:", currentAddress);
-        handleAddressChange(currentAddress);
-    });
 
     // Инициализация при загрузке страницы
-    var initialAddress = window.location.hash.slice(1);
-    console.log("Инициализация адреса:", initialAddress);
-    handleAddressChange(initialAddress);
+    setupHintClick();
+
+    // Пример: слушатель для переворачивания страницы
+    $('.turn-page-wrapper').on('page-flip', function () {
+        handlePageFlip();
+    });
 });
 
 </script>
