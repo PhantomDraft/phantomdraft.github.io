@@ -1,7 +1,4 @@
-
-
 /* Preloader /*/
-
 #fb5 .fb5-preloader {
 position: relative;
 width: 90px;
@@ -39,7 +36,7 @@ animation: orbit 7.15s infinite;
 position: absolute;
 width: 11px;
 height: 11px;
-background:#64C8D3;
+background:#f4f1cb;
 left:0px;
 top:0px;
 -moz-border-radius: 11px;

@@ -3,12 +3,12 @@
 	Theme URI: https://phantomdraft.github.io/stories/
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 4.1
+	Version: 4.2
 */
-@import url('reset.css');
-@import url('static.css');
-@import url('elements.css');
-@import url('preloader.css');
+@import url('reset.css?v=0.2');
+@import url('static.css?v=0.2');
+@import url('elements.css?v=0.2');
+@import url('preloader.css?v=0.2');
 
 html, body {
 	margin: 0; padding: 0;
@@ -94,11 +94,11 @@ html, body {
 
 /* Back button */
    #fb5 #fb5-button-back{
-	color:#FFFFFF;
+	color:#000;
 	position:absolute;
 	left:-5px;
 	top:45px;
-	background-color:#64C8D3;
+	background-color:#f4f1cb;
 	border-radius: 4px 4px 4px 4px;
 	padding:5px;
 	padding-left:15px;
@@ -108,8 +108,8 @@ html, body {
 	margin-top:-45px;
   }
   #fb5 #fb5-button-back:hover{
-	color:#64C8D3;  
-	background-color:#FFFFFF
+	color:#f4f1cb;  
+	background-color:#000
   }
 
 /* About */
@@ -128,7 +128,7 @@ html, body {
 		margin: 0 0 .5em 0;
 		padding:0px;
 		font-size: 1.375em;
-		color: #64c8d3;
+		color: #000;
 		-webkit-font-smoothing: antialiased;
 		text-transform:none;
 	}
@@ -365,7 +365,7 @@ html, body {
 	
 	#fb5 .fb5-page-book a {
 		text-decoration:underline;
-		color:#64C8D3;
+		color:#000;
 		font-weight:bold;
 	}
 	
@@ -645,7 +645,7 @@ html, body {
 		
 		/* preloader /*/
 		#fb5 .fb5-preloader .wBall .wInnerBall{
-            background:#64C8D3;
+            background:#f4f1cb;
 		}	
 		
 		/* arrow gif /*/
@@ -660,7 +660,7 @@ html, body {
 		   font-size:14px;
 	    }
 		#fb5 .fb5-page-book a {
-		   color:#64C8D3;
+		   color:#f4f1cb;
 		 }
 		#fb5 .fb5-page-book h1 {
 	   	   color:#77797F;
@@ -704,42 +704,42 @@ html, body {
 		  color:#FFFFFF	
 		}
 		#fb5 #fb5-about h1 {
-		   color: #64C8D3;
+		   color: #000;
 		   font-family: "Metal Mania", system-ui;
 		   font-size:26px;
 	    }
 		#fb5 #fb5-about h2 {
-		   color: #64C8D3;
+		   color: #000;
 		   font-family: "Metal Mania", system-ui;
 		   font-size:24px;
 	    }
 		#fb5-about h3 {
-		   color: #64C8D3;
+		   color: #000;
 		   font-family: "Metal Mania", system-ui;
 		   font-size:22px;
 	    }
 		#fb5 #fb5-about h4 {
-		   color: #64C8D3;
+		   color: #000;
 		   font-family: "Metal Mania", system-ui;
 	    }
 		#fb5 #fb5-about h5 {
-		   color: #64C8D3;
+		   color: #000;
 		   font-family: "Metal Mania", system-ui;
 		   font-size:18px;
 	    }
 		#fb5 #fb5-about h6 {
-		   color: #64C8D3;
+		   color: #000;
 		   font-family: "Metal Mania", system-ui;
 		   font-size:16px;
 	    }
 		/* back  button  /*/
 		#fb5 #fb5-button-back {
-    		background-color: #64C8D3;
-   			color: #FFFFFF;
+    		background-color: #f4f1cb;
+   			color: #000;
 		}
 		#fb5 #fb5-button-back:hover{
-			color:#64C8D3;  
-			background-color:#FFFFFF 		}
+			color:#f4f1cb;  
+			background-color:#000 		}
 		
 		/*  Other style   /*/
 		#fb5 .fb5-overlay {
