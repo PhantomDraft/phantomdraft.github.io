@@ -3,7 +3,7 @@
 	Theme URI: https://phantomdraft.github.io/stories/
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 3.9
+	Version: 4.0
 */
 @import url('reset.css');
 @import url('static.css');
@@ -534,7 +534,7 @@
     padding: 0 4px 5px;
 }
 
-#fb5 .fb5-page-book .rainbow {border: 6px solid #fff;}
+#fb5 .fb5-page-book .rainbow {border: 6px solid #f2f2c9;}
 
 #fb5 .fb5-page-book .round {border-radius: 50%;}
 
