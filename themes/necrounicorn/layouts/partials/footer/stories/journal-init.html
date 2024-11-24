@@ -16,41 +16,11 @@
         'lazy_loading_pages':'false'
     });
 
-$(function () {
-    // Функция для показа подсказки при клике на элемент
-    function setupHintClick() {
-        // Удаляем старые обработчики кликов
-        $('img[data-hint]').off('click');
-
-        // Добавляем обработчик клика на все изображения с data-hint
-        $('img[data-hint]').on('click', function () {
-            const $img = $(this); // Текущий элемент
-
-            // Удаляем старые подсказки
-            introJs().removeHints();
-
-            // Настраиваем подсказку для текущего элемента
-            introJs().setOptions({
-                hints: [
-                    {
-                        element: this, // Элемент, на котором будет подсказка
-                        hint: $img.attr('data-hint'), // Текст подсказки из data-hint
-                        hintPosition: $img.attr('data-hintposition') || 'bottom-middle', // Позиция подсказки
-                    }
-                ],
-                hintShowButton: true, // Показывать кнопку "Got it"
-                hintAnimation: true, // Включить анимацию
-            }).addHints(); // Добавляем подсказки и активируем их
-        });
-    }
-
-    // Инициализация подсказок при загрузке страницы
-    setupHintClick();
-
-    // Убедимся, что подсказки обновляются при перевороте страницы (если нужно)
-    $('.turn-page-wrapper').on('page-flip', function () {
-        introJs().removeHints(); // Удаляем подсказки при перевороте страницы
-    });
+    $(function () {
+        introJs().setOptions({
+    hints: [
+        { hint: 'First hint', element: '#new-feature' }
+    ]
 });
-
+    });
 </script>
