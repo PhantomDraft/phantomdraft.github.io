@@ -17,9 +17,83 @@
     });
 
 $(function () {
-    // Запускаем интро-тур при нажатии на кнопку
+    // Функция для определения последней страницы
+    function getLastPageNumber() {
+        var lastPage = 0;
+        $('.turn-page-wrapper').each(function () {
+            var page = parseInt($(this).attr('page'), 10);
+            if (page > lastPage) {
+                lastPage = page;
+            }
+        });
+        return lastPage;
+    }
+
+    // Функция для анимации изображений на страницах
+    function animateImages(page1, page2) {
+        var $images = $(`.turn-page-wrapper[page="${page1}"], .turn-page-wrapper[page="${page2}"]`).find('.fb5-cont-page-book img');
+        if ($images.length === 0) {
+            console.warn("Изображения не найдены для страниц:", page1, page2);
+            return;
+        }
+        $images.each(function (index, img) {
+            $(img).css({
+                'opacity': 0, // Начальная прозрачность
+                'transition': 'opacity 1s ease-in', // Плавное изменение прозрачности
+                'transition-delay': (index * 0.5) + 's' // Задержка для каждого изображения
+            });
+            setTimeout(function () {
+                $(img).css('opacity', 1); // Делаем изображение видимым
+            }, index * 500);
+        });
+    }
+
+    // Обработчик изменения адреса
+    function handleAddressChange(address) {
+        var pages = [];
+
+        if (address === "book5/page1") {
+            // Первая страница
+            pages.push("1");
+        } else if (address === "book5/end") {
+            // Последняя страница
+            var lastPage = getLastPageNumber();
+            pages.push(String(lastPage));
+        } else {
+            // Диапазоны страниц, например, "page2-page3"
+            var pageMatch = address.match(/page(\d+)-page(\d+)/);
+            if (pageMatch) {
+                var page1 = pageMatch[1];
+                var page2 = pageMatch[2];
+                pages.push(page1, page2);
+                // Запускаем анимацию изображений для текущих страниц
+                animateImages(page1, page2);
+            }
+        }
+
+        if (pages.length > 0) {
+            console.log("Анимация для страниц:", pages);
+        } else {
+            console.warn("Не удалось извлечь страницы из адреса:", address);
+        }
+    }
+
+    // Слушатель изменений якоря
+    $(window).on("hashchange", function () {
+        var currentAddress = window.location.hash.slice(1); // Убираем #
+        console.log("Изменение адреса:", currentAddress);
+        handleAddressChange(currentAddress);
+    });
+
+    // Инициализация при загрузке страницы
+    var initialAddress = window.location.hash.slice(1);
+    console.log("Инициализация адреса:", initialAddress);
+    handleAddressChange(initialAddress);
+
+    // Пример: Обработчик для кнопки (если нужно)
     $('#startTourButton').on('click', function () {
-        introJs().start(); // Запуск тура
+        console.log("Кнопка нажата, выполнение действия...");
+        // Можно выполнить дополнительное действие здесь
     });
 });
 </script>
