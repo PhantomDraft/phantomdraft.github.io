@@ -3,7 +3,7 @@
 	Theme URI: https://phantomdraft.github.io/stories/
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 4.9
+	Version: 5.0
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('reset.css?v=0.4');
@@ -149,6 +149,7 @@ html, body {
 	}
 	
 	#fb5 #fb5-about li {
+		text-shadow: 1px 1px 2px #000, 0 0 1em #000;
 		color: #cfeaee;
 		margin-bottom:4px;
 	}
@@ -655,8 +656,7 @@ html, body {
 		
 		/* formatt page for flipbook */
 		#fb5 .fb5-page-book p {
-		   text-shadow: 1px 1px 2px black, 0 0 1em #040405;
-		   color:#eee;
+		   color:#000;
 		   font-family: 'Roboto', sans-serif;
 		   font-size:16px;
 	    }
@@ -689,7 +689,7 @@ html, body {
 	    }
 		#fb5 .fb5-page-book li {
            color:#77797F;	
-		   font-size:14px;		
+		   font-size:16px;		
 		}
 		#fb5 .fb5-page-book ul li a {
 	        color:#77797F;
@@ -697,6 +697,7 @@ html, body {
 
 		/* about style */
 		#fb5 #fb5-about p,#fb5 #fb5-about li {
+		   text-shadow: 1px 1px 2px #000, 0 0 1em #000;
 		   color: #CFEAEE;
 		   font-size:16px;
 	    }  
