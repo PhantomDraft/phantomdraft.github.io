@@ -101,6 +101,11 @@ paginate = 15
         url = "https://www.instagram.com/horrorprom/"
         pre = ""
         weight = 1
+    [[menus.social]]
+        name = "Spirits Show"
+        url = "https://www.youtube.com/@spirits-show"
+        pre = ""
+        weight = 2
 
 [languages]
     [languages.en]
@@ -148,6 +153,11 @@ paginate = 15
                 url = "https://www.instagram.com/horrorprom/"
                 pre = ""
                 weight = 1
+            [[languages.uk.menus.social]]
+                name = "Spirits Show"
+                url = "https://www.youtube.com/@spirits-show"
+                pre = ""
+                weight = 2
 
         [languages.ru.menus]
             # navigation
@@ -178,6 +188,11 @@ paginate = 15
                 url = "https://t.me/horrorprom"
                 pre = ""
                 weight = 1
+            [[languages.ru.menus.social]]
+                name = "Spirits Show"
+                url = "https://www.youtube.com/@spirits-show"
+                pre = ""
+                weight = 2
 
 [author]
     name = "Ruslan Dubinetsky"
