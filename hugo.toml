@@ -132,7 +132,7 @@ paginate = 15
                 weight = 2
                 pre = ""
             [[languages.uk.menus.main]]
-                name = "Історії"
+                name = "Історії!"
                 url = "/uk/stories"
                 weight = 3
                 pre = ""
@@ -162,7 +162,7 @@ paginate = 15
                 weight = 2
                 pre = ""
             [[languages.ru.menus.main]]
-                name = "Истории"
+                name = "Истории!"
                 url = "/ru/stories"
                 weight = 3
                 pre = ""
