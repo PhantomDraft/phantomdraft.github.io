@@ -3,7 +3,7 @@
 	Theme URI: https://phantomdraft.github.io/stories/
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 4.6
+	Version: 4.7
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('reset.css?v=0.4');
@@ -697,10 +697,10 @@ html, body {
 		/* about style */
 		#fb5 #fb5-about p,#fb5 #fb5-about li {
 		   color: #CFEAEE;
-		   font-size:11px;
+		   font-size:16px;
 	    }  
 		#fb5 #fb5-about a {
-		  color:#FFFFFF	
+		  color:#fff;	
 		}
 		#fb5 #fb5-about h1 {
 		   font-size:26px;
