@@ -6,7 +6,7 @@
 					<div class="bk-book book-1 bk-bookdefault">
 						<div class="bk-front">
 							<div class="bk-cover-back"></div>
-							<div class="bk-cover">
+							<div class="bk-cover" style="background-image: url({{ with .Params.image }}{{ . }}{{ end }}); background-position: 10px 40px;">
 								<h2>
 									<span>{{ .Title }}</span>
 								</h2>

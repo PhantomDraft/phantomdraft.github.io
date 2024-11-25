@@ -318,11 +318,7 @@
 	background-color: #ff924a;
 }
 
-.book-1 .bk-cover {
-	background-image: url(../images/1.png);	
-	background-repeat: no-repeat;
-	background-position: 10px 40px;
-}
+.book-1 .bk-cover {background-repeat: no-repeat;}
 
 .book-1 .bk-cover h2 {
 	position: absolute;
