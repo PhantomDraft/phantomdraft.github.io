@@ -3,7 +3,7 @@
 	Theme URI: https://phantomdraft.github.io/stories/
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 5.1
+	Version: 5.2
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('reset.css?v=0.4');
@@ -197,7 +197,7 @@ html, body {
 	/* Nav Arrows */
 	#fb5 .fb5-nav-arrow {
 		position: absolute; top: 50%; z-index: 15;
-		background: url(../img/arrow-navpage.png);
+		background: url(/img/stories/arrow-navpage.png);
 		width: 34px; height: 136px;
 		margin-top: -68px;
 	}
@@ -651,7 +651,7 @@ html, body {
 		
 		/* arrow gif */
 		#fb5 .fb5-nav-arrow {
-   			 background: url("../img/arrow-navpage.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+   			 background: url("/img/stories/arrow-navpage.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
 		}		
 		
 		/* formatt page for flipbook */
