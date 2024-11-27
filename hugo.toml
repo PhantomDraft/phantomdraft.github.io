@@ -7,7 +7,7 @@
 
 baseURL = 'https://phantomdraft.github.io/'
 # website title
-title = 'PhantomDraft'
+title = 'Phantom Draft'
 # theme
 theme = "necrounicorn"
 #mystery
@@ -33,7 +33,7 @@ paginate = 15
     # top image in home page, note that the "/" in path is necessary, the same applies below
     homeTopImg = "/img/cover/home.jpg"
     # title in home top image, support Markdown
-    homeTitle = "PhantomDraft"
+    homeTitle = "Phantom Draft"
     # content in home top image, support Markdown
     homeContent = "Notes on Horror and Punk Subgenre Projects"
     # top image in categories terms page
