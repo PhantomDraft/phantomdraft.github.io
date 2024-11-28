@@ -122,13 +122,11 @@ paginate = 15
         languageCode = 'uk'
         languageName = 'Український'
         contentDir = 'content/uk'
-        urlPrefix = 'uk/'
         weight = 2
     [languages.ru]
         languageCode = 'ru'
         languageName = 'Русский'
         contentDir = 'content/ru'
-        urlPrefix = 'ru/'
         weight = 3
 
         [languages.uk.menus]
