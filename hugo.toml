@@ -81,12 +81,12 @@ paginate = 15
         pre = ""
     [[menus.main]]
         name = "Articles"
-        url = "/articles"
+        url = "/articles/"
         weight = 2
         pre = ""
     [[menus.main]]
         name = "Stories!"
-        url = "/stories"
+        url = "/stories/"
         weight = 3
         pre = ""
     [[menus.main]]
@@ -133,17 +133,17 @@ paginate = 15
             # navigation
             [[languages.uk.menus.main]]
                 name = "Лог"
-                url = "/uk"
+                url = "/uk/"
                 weight = 1
                 pre = ""
             [[languages.uk.menus.main]]
                 name = "Статті"
-                url = "/uk/articles"
+                url = "/uk/articles/"
                 weight = 2
                 pre = ""
             [[languages.uk.menus.main]]
                 name = "Історії!"
-                url = "/uk/stories"
+                url = "/uk/stories/"
                 weight = 3
                 pre = ""
             [[languages.uk.menus.main]]
@@ -173,17 +173,17 @@ paginate = 15
             # navigation
             [[languages.ru.menus.main]]
                 name = "Лог"
-                url = "/ru"
+                url = "/ru/"
                 weight = 1
                 pre = ""
             [[languages.ru.menus.main]]
                 name = "Статьи"
-                url = "/ru/articles"
+                url = "/ru/articles/"
                 weight = 2
                 pre = ""
             [[languages.ru.menus.main]]
                 name = "Истории!"
-                url = "/ru/stories"
+                url = "/ru/stories/"
                 weight = 3
                 pre = ""
             [[languages.ru.menus.main]]
