@@ -22,7 +22,7 @@ hideFromArchives: false
 # Hide from everything but the archive
 hideFromSection: false
 # Hide from everything but the Sitemap
-hideFromSitemap: true
+hideFromSitemap: false
 ---
 test
 <!--more-->
