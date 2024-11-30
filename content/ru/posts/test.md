@@ -5,7 +5,7 @@ description: ""
 date: 2024-11-30
 lastmod: "2024-11-30"
 # set false when you want the post publish
-draft: true
+draft: false
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
 categories: []
