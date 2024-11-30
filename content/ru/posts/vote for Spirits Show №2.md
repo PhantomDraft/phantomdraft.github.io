@@ -22,6 +22,6 @@ hideFromArchives: false
 # Hide from everything but the archive
 hideFromSection: false
 ---
-Если вам понравился  <a href="/stories/spiritsshowno.1/" target="_blank">первый выпуск комикса</a>, пожалуйста, проголосуйте в опросе, где я спрашиваю, о чём бы вы хотели увидеть следующий выпуск.
+Если вам понравился  <a href="/ru/stories/spiritsshowno.1/" target="_blank">первый выпуск комикса</a>, пожалуйста, проголосуйте в опросе, где я спрашиваю, о чём бы вы хотели увидеть следующий выпуск.
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLLd34np5Jx2rIE1k7qx8q7CvrzvYTkuspF7gEUkiuZdaN0g/viewform?embedded=true" width="640" height="522" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>

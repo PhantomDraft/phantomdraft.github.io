@@ -1,13 +1,21 @@
 {
   "categories": {
     "my-projects": "Мои проекты",
-    "my-insights": "Мои заметки"
+    "my-insights": "Мои заметки",
+    "my-life": "Моя жизнь"
   },
   "tags": {
-    "ai": "ai",
-    "chatgpt": "chatgpt"
+    "ai": "AI",
+    "chatgpt": "ChatGPT",
+    "gsc": "GSC",
+    "xbox": "XBOX",
+    "the-texas-chain-saw-massacre": "Техасская резня бензопилой",
+    "poll": "Опрос"
   },
   "series": {
-    "project-horrorprom": "Хоррорпром"
+    "project-horrorprom": "Проект: horrorprom",
+    "project-spirits-show": "Проект: Spirits Show",
+    "associative-connection": "Ассоциативные связи",
+    "s.t.a.l.k.e.r.-2": "S.T.A.L.K.E.R. 2"
   }
 }

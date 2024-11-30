@@ -1,13 +1,21 @@
 {
   "categories": {
     "my-projects": "My projects",
-    "my-insights": "My insights"
+    "my-insights": "My insights",
+    "my-life": "My life"
   },
   "tags": {
-    "ai": "ai",
-    "chatgpt": "chatgpt"
+    "ai": "AI",
+    "chatgpt": "ChatGPT",
+    "gsc": "GSC",
+    "xbox": "XBOX",
+    "the-texas-chain-saw-massacre": "The Texas Chain Saw Massacre",
+    "poll": "Poll"
   },
   "series": {
-    "project-horrorprom": "horrorprom"
+    "project-horrorprom": "Project: horrorprom",
+    "project-spirits-show": "Project: Spirits Show",
+    "associative-connection": "Associative Connection",
+    "s.t.a.l.k.e.r.-2": "S.T.A.L.K.E.R. 2"
   }
 }

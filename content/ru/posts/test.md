@@ -1,9 +1,9 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "test"
 description: ""
 # format for string: "xxxx-xx-xx"
-date: {{ .Date }}
-lastmod: "{{ .Date }}"
+date: 2024-11-30
+lastmod: "2024-11-30"
 # set false when you want the post publish
 draft: true
 # one category: ["category-1"]
@@ -16,13 +16,13 @@ series: []
 # Top image for the post: /local/images/test/cover.jpg
 image: ""
 # Hide from home and other main page
-hideFromCenter: false
+hideFromCenter: true
 # Hide from archive page
 hideFromArchives: false
 # Hide from everything but the archive
 hideFromSection: false
 # Hide from everything but the Sitemap
-hideFromSitemap: false
+hideFromSitemap: true
 ---
-
+test
 <!--more-->
