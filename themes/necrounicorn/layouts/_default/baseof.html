@@ -4,6 +4,14 @@
     {{- partial "head/head.html" . -}}
 
     <body>
+
+        {{ if not .Params.hideFromGtag }}
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5VL5MJD"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        {{ end }}
+
         {{ if and (eq .Section "stories") .IsPage }}
             <!-- stories : journal -->
             {{- block "main" . }}{{- end }}
@@ -40,9 +48,5 @@
             {{- partial "widgets/vars.html" . -}}
         {{ end }}
 
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5VL5MJD"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
     </body>
 </html>
