@@ -97,17 +97,17 @@ paginate = 15
 
     # social, maxum 6
     [[menus.social]]
-        name = "Phantom Draft on facebook"
+        name = "Phantom Draft on Facebook"
         url = "https://www.facebook.com/phantomdrafts/"
         pre = ""
         weight = 1
     [[menus.social]]
-        name = "horrorprom"
+        name = "horrorprom on Instagram"
         url = "https://www.instagram.com/horrorprom/"
         pre = ""
         weight = 2
     [[menus.social]]
-        name = "Spirits Show"
+        name = "Spirits Show on YouTube"
         url = "https://www.youtube.com/@spirits-show"
         pre = ""
         weight = 3
@@ -154,17 +154,17 @@ paginate = 15
 
             # social
             [[languages.uk.menus.social]]
-                name = "Phantom Draft на facebook"
+                name = "Phantom Draft на Facebook"
                 url = "https://www.facebook.com/phantomdrafts/"
                 pre = ""
                 weight = 1
             [[languages.uk.menus.social]]
-                name = "horrorprom"
+                name = "horrorprom на Instagram"
                 url = "https://www.instagram.com/horrorprom/"
                 pre = ""
                 weight = 2
             [[languages.uk.menus.social]]
-                name = "Spirits Show"
+                name = "Spirits Show на YouTube"
                 url = "https://www.youtube.com/@spirits-show"
                 pre = ""
                 weight = 3
@@ -194,12 +194,12 @@ paginate = 15
 
             # social
             [[languages.ru.menus.social]]
-                name = "horrorprom"
+                name = "horrorprom в Telegram"
                 url = "https://t.me/horrorprom"
                 pre = ""
                 weight = 1
             [[languages.ru.menus.social]]
-                name = "Spirits Show"
+                name = "Spirits Show на YouTube"
                 url = "https://www.youtube.com/@spirits-show"
                 pre = ""
                 weight = 2
