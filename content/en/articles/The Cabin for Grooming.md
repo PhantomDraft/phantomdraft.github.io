@@ -21,6 +21,8 @@ hideFromCenter: false
 hideFromArchives: false
 # Hide from everything but the archive
 hideFromSection: false
+# Hide from everything but the Sitemap
+hideFromSitemap: false
 ---
 ## Turning a Beauty Case into a Monster Cabin, like in *Cabin in the Woods*
 

@@ -21,6 +21,8 @@ hideFromCenter: false
 hideFromArchives: false
 # Hide from everything but the archive
 hideFromSection: false
+# Hide from everything but the Sitemap
+hideFromSitemap: false
 ---
 ## Робимо з б’юті-кейса камеру з монстром, як у фільмі *Хижа у лісі*
 

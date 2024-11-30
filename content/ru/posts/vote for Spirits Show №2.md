@@ -21,6 +21,8 @@ hideFromCenter: false
 hideFromArchives: false
 # Hide from everything but the archive
 hideFromSection: false
+# Hide from everything but the Sitemap
+hideFromSitemap: false
 ---
 Если вам понравился  <a href="/ru/stories/spiritsshowno.1/" target="_blank">первый выпуск комикса</a>, пожалуйста, проголосуйте в опросе, где я спрашиваю, о чём бы вы хотели увидеть следующий выпуск.
 

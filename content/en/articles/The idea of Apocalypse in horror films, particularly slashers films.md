@@ -21,6 +21,8 @@ hideFromCenter: false
 hideFromArchives: false
 # Hide from everything but the archive
 hideFromSection: false
+# Hide from everything but the Sitemap
+hideFromSitemap: false
 ---
 Once, after finishing a round in *The Texas Chain Saw Massacre*, I decided to rewatch the original 1974 film and then started reading critics' opinions on it. I found a review by critic Christopher Sharrett, whom I’ll quote verbatim:
 

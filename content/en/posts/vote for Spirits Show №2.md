@@ -21,6 +21,8 @@ hideFromCenter: false
 hideFromArchives: false
 # Hide from everything but the archive
 hideFromSection: false
+# Hide from everything but the Sitemap
+hideFromSitemap: false
 ---
 If you liked the <a href="/stories/spiritsshowno.1/" target="_blank">first issue of the comic</a>, please vote in the poll where I ask what you'd like the next issue to be about.
 

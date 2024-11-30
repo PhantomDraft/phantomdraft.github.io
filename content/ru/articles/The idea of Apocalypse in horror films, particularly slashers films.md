@@ -21,6 +21,8 @@ hideFromCenter: false
 hideFromArchives: false
 # Hide from everything but the archive
 hideFromSection: false
+# Hide from everything but the Sitemap
+hideFromSitemap: false
 ---
 Однажды, закончив игру в The Texas Chain Saw Massacre, я решил пересмотреть оригинальный фильм 1974 года, а затем начал читать мнения критиков об этом фильме. Я нашел рецензию критика Кристофера Шарретта, которого процитирую дословно:
 

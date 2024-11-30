@@ -21,6 +21,8 @@ hideFromCenter: false
 hideFromArchives: false
 # Hide from everything but the archive
 hideFromSection: false
+# Hide from everything but the Sitemap
+hideFromSitemap: false
 ---
 Этот год был полон потрясающих новинок, и вот теперь, 20 ноября, мы наконец дождались выхода S.T.A.L.K.E.R. 2!
 
