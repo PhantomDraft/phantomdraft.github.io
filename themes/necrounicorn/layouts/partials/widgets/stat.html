@@ -9,11 +9,18 @@
         {{ i18n "sidebar_articles" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "articles") }}
     </a></li>
     <li><a href='{{ if $isMultiLingual }}
-        {{ $langNow | relURL}}/library
+        {{ $langNow | relURL}}/posts
     {{ else }}
-        {{ "library/" | relURL }}
+        {{ "posts/" | relURL }}
     {{ end }}'>
-        {{ i18n "sidebar_posts" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "library") }}
+        {{ i18n "sidebar_posts" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "posts") }}
+    </a></li>
+    <li><a href='{{ if $isMultiLingual }}
+        {{ $langNow | relURL}}/stories
+    {{ else }}
+        {{ "stories/" | relURL }}
+    {{ end }}'>
+        {{ i18n "sidebar_posts" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "stories") }}
     </a></li>
     <li><a href='{{ if $isMultiLingual }}
         {{ $langNow | relURL}}/series
