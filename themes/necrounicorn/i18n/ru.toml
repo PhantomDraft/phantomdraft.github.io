@@ -49,6 +49,8 @@
 	other = 'статьи'
 [sidebar_posts]
 	other = 'посты'
+[sidebar_stories]
+	other = 'истории'
 [sidebar_series]
 	other = 'серии'
 [sidebar_categories]

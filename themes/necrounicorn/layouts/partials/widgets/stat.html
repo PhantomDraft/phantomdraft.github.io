@@ -20,7 +20,7 @@
     {{ else }}
         {{ "stories/" | relURL }}
     {{ end }}'>
-        {{ i18n "sidebar_posts" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "stories") }}
+        {{ i18n "sidebar_stories" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "stories") }}
     </a></li>
     <li><a href='{{ if $isMultiLingual }}
         {{ $langNow | relURL}}/series
