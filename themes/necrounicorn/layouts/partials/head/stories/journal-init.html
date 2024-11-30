@@ -5,6 +5,7 @@
 <script type="text/javascript" src="/js/stories/journal/jquery.address-1.6.min.js"></script>
 <script type="text/javascript" src="/js/stories/journal/wait.js"></script>
 <script type="text/javascript" src="/js/stories/journal/onload.js"></script>
+{{ if not .Params.hideFromGtag }}
 <!-- Combined Google Analytics and Google Tag Manager -->
 <script>
     // Initialize dataLayer
@@ -25,3 +26,4 @@
         f.parentNode.insertBefore(j, f);
     })(window,document,'script','dataLayer','GTM-P5VL5MJD');
 </script>
+{{ end }}

@@ -1,6 +1,7 @@
 <link rel="stylesheet" href='{{ "css/stories/hugr.css?v=0.9" | relURL }}' />
 <link rel="stylesheet" href='{{ "css/stories/component.css?v=0.3" | relURL }}' />
 <script type="text/javascript" src="/js/stories/modernizr.custom.js"></script>
+{{ if not .Params.hideFromGtag }}
 <!-- Combined Google Analytics and Google Tag Manager -->
 <script>
     // Initialize dataLayer
@@ -21,3 +22,4 @@
         f.parentNode.insertBefore(j, f);
     })(window,document,'script','dataLayer','GTM-P5VL5MJD');
 </script>
+{{ end }}

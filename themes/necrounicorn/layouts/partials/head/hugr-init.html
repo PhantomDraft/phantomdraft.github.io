@@ -18,6 +18,7 @@
 <script type="text/javascript" src="/js/core/jquery.cookie.min.js"></script>
 <script type="text/javascript" src="/js/core/jquery-ui-1.9.1.custom.min.js"></script>
 <script type="text/javascript" src="/js/search.js"></script>
+{{ if not .Params.hideFromGtag }}
 <!-- Combined Google Analytics and Google Tag Manager -->
 <script>
     // Initialize dataLayer
@@ -38,3 +39,4 @@
         f.parentNode.insertBefore(j, f);
     })(window,document,'script','dataLayer','GTM-P5VL5MJD');
 </script>
+{{ end }}
