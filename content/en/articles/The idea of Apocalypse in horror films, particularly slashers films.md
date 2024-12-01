@@ -62,8 +62,6 @@ In 1962, the first ultra-light chainsaw was created: the Husqvarna 70, which wei
 
 In 1969, Husqvarna chainsaws had already quickly spread across the world, and only five years later, *The Texas Chain Saw Massacre* hit the big screen.
 
-*Image of Freddy with a quote.*
-
 But let’s go back a bit, to the year 1945\. It’s July 16 now.
 
 ## The Creation and Testing of the Atomic Bomb
