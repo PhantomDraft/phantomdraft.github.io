@@ -14,9 +14,10 @@
                 </a></li>
 {{ $active := "" }}
 {{ $inactive := "" }}
+{{ $currentURL := .Permalink }}
 
 {{ range .Site.Menus.main }}
-    {{ if .Page.IsMenuCurrent "main" }}
+    {{ if and .Page (eq .Page.Permalink $currentURL) }}
         {{ $active = printf `<li class="fl"><a href="%s">%s %s</a></li>` .URL .Pre .Name }}
     {{ else }}
         {{ $inactive = printf "%s<li class=\"fl\"><a href=\"%s\">%s %s</a></li>" $inactive .URL .Pre .Name }}
