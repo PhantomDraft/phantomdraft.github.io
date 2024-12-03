@@ -13,14 +13,14 @@
                     <span class="logo">inside</span>
                 </a></li>
 {{ $active := "" }}
-{{ $inactive := "" }}
+{{ $inactive := slice }}
 {{ $currentURL := .Permalink }}
 
 {{ range .Site.Menus.main }}
-    {{ if and .Page (eq .Page.Permalink $currentURL) }}
+    {{ if or (and .Page (eq .Page.Permalink $currentURL)) (eq .URL $currentURL) }}
         {{ $active = printf `<li class="fl"><a href="%s">%s %s</a></li>` .URL .Pre .Name }}
     {{ else }}
-        {{ $inactive = printf "%s<li class=\"fl\"><a href=\"%s\">%s %s</a></li>" $inactive .URL .Pre .Name }}
+        {{ $inactive = $inactive | append . }}
     {{ end }}
 {{ end }}
 
@@ -28,8 +28,8 @@
     {{ $active | safeHTML }}
 {{ end }}
 
-{{ if $inactive }}
-    {{ $inactive | safeHTML }}
+{{ range $inactive }}
+    <li class="fl"><a href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a></li>
 {{ end }}
 
             </ul>
