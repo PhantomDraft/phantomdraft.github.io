@@ -12,24 +12,25 @@
                 <li class="fl"><a class="menuBtn" title="Ссылки" href="javascript:void(0)" href="/">
                     <span class="logo">inside</span>
                 </a></li>
-{{ $active := "" }}
-{{ $inactive := slice }}
 {{ $currentURL := .Permalink }}
+{{ $menu := slice }}
 
 {{ range .Site.Menus.main }}
+    {{ $item := dict "Weight" 10 "Entry" . }}
     {{ if or (and .Page (eq .Page.Permalink $currentURL)) (eq .URL $currentURL) }}
-        {{ $active = printf `<li class="fl"><a href="%s">%s %s</a></li>` .URL .Pre .Name }}
-    {{ else }}
-        {{ $inactive = $inactive | append . }}
+        {{ $item = dict "Weight" 1 "Entry" . }}
+    {{ else if eq .URL "/" }}
+        {{ $item = dict "Weight" 5 "Entry" . }}
     {{ end }}
+    {{ $menu = $menu | append $item }}
 {{ end }}
 
-{{ if $active }}
-    {{ $active | safeHTML }}
-{{ end }}
+{{ $sortedMenu := sort $menu "Weight" "asc" }}
 
-{{ range $inactive }}
-    <li class="fl"><a href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a></li>
+{{ range $sortedMenu }}
+    {{ with .Entry }}
+        <li class="fl"><a href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a></li>
+    {{ end }}
 {{ end }}
 
             </ul>
