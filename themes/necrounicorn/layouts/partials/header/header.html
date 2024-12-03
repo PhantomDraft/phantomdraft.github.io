@@ -12,11 +12,29 @@
                 <li class="fl"><a class="menuBtn" title="Ссылки" href="javascript:void(0)" href="/">
                     <span class="logo">inside</span>
                 </a></li>
-                {{ range .Site.Menus.main }}
-                    <li class="fl"><a href="{{ .URL }}">
-                        {{ .Pre }} {{ .Name }}
-                    </a></li>
-                {{ end }}
+{{ $active := slice }}
+{{ $inactive := slice }}
+
+{{ range .Site.Menus.main }}
+    {{ if .IsMenuCurrent "main" }}
+        {{ $active = $active | append . }}
+    {{ else }}
+        {{ $inactive = $inactive | append . }}
+    {{ end }}
+{{ end }}
+
+{{ range $active }}
+    <li class="fl"><a href="{{ .URL }}">
+        {{ .Pre }} {{ .Name }}
+    </a></li>
+{{ end }}
+
+{{ range $inactive }}
+    <li class="fl"><a href="{{ .URL }}">
+        {{ .Pre }} {{ .Name }}
+    </a></li>
+{{ end }}
+
             </ul>
         </nav>
     </div>
