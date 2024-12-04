@@ -115,5 +115,10 @@
 [imageLoadingFailed]
 	other = 'image loading failed'
 
+#Other
 [Author_name]
-	other = 'Sam'
+	other = 'Ruslan'
+
+[soc_block]
+	title = 'Hi!'
+	desc = 'I’ll be delighted if you find my projects shared on social media interesting! Your subscriptions inspire me, and I also regularly conduct polls there to gather your input on the direction I should take in my future work.'
