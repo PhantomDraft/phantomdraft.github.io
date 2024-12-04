@@ -4,7 +4,7 @@
 
     <section class="castration fl p_relative modules">
         {{ if .IsHome }}
-            {{ partial "/layouts/shortcodes/soc-block.html" . }}
+            {{ partial "layouts/shortcodes/soc-block.html" . }}
         {{ end }}
         <ul id="content">
             {{ range first .Site.Params.page.maxHomePostCount .Site.RegularPages }}
