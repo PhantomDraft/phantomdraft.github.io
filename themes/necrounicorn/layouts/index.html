@@ -3,6 +3,16 @@
     {{ partial "widgets/aside.html" . }}
 
     <section class="castration fl p_relative modules">
+        <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(../necrounicorn/img/necrounicorn.webp); background-blend-mode: saturation; background-position-y: 20% !important;">
+            <div class="fr p_relative">
+                <a href="https://steamcommunity.com/id/sweet_kringe/" target="_blank"><i class="fa fa-steam" aria-hidden="true"></i></a>
+            </div>
+            <div class="t_center castration base_width p_relative">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+
         <ul id="content">
             {{ range first .Site.Params.page.maxHomePostCount .Site.RegularPages }}
                 {{ if and (not .Params.hideFromCenter) (eq $kind "home") }}
