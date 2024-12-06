@@ -5,6 +5,10 @@
 	other = 'All Posts'
 
 # String in Posts
+[Posts_notesPosts]
+	other = 'Notes'
+
+# String in Library
 [Posts_libraryPosts]
 	other = 'Library'
 

@@ -4,6 +4,10 @@
 {{ $hero_des := "" }}
 {{ $isMultiLingual := and (ne .Site.Language.Weight 1) (and .Site.IsMultiLingual (not .Site.Params.Site.OnlyOneLang)) }}
 {{ if eq .Kind "section" }}
+    {{ if eq .Section "posts" }}
+        {{ $hero_img = .Site.Params.page.libraryPostsTopImg }}
+        {{ $hero_title = i18n "Posts_notesPosts" }}
+        {{ $hero_des = .Site.Params.page.libraryPostsDes }}
     {{ if eq .Section "library" }}
         {{ $hero_img = .Site.Params.page.libraryPostsTopImg }}
         {{ $hero_title = i18n "Posts_libraryPosts" }}

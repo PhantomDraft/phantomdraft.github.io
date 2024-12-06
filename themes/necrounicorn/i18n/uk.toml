@@ -5,6 +5,10 @@
 	other = 'Всі публікації'
 
 # String in Posts
+[Posts_notesPosts]
+	other = 'Нотатки'
+
+# String in Library
 [Posts_libraryPosts]
 	other = 'Бібліотека'
 
