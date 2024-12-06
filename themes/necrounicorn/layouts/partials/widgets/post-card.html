@@ -3,71 +3,48 @@
 <li class="castration base_width p_relative grid">
     <div class="castration fl p_relative text">
         <a class="castration fl p_relative grid_cover" href="{{ .Permalink }}">
-             <!-- Проверка: главная таксономия -->
-            {{ if or (eq .Type "taxonomy") (eq .Section "categories") (eq .Section "tags") (eq .Section "series") }}
-                {{ $pages := where .Pages "Lastmod" "!=" nil }}
-                {{ if $pages }}
-                    {{ $sortedPages := $pages | sort "Lastmod" "desc" }}
-                    {{ with first 1 $sortedPages }}
-                        {{ $latest := index $sortedPages 0 }}
-                        {{ with $latest.Params.image }}
-                            <img class="cover p_absolute" src="{{ . }}" alt='{{ i18n "imageLoadingFailed" }}'>
-                        {{ else }}
-                            <img class="cover p_absolute" src="{{ .Site.Params.page.defaultPostImg }}" alt='{{ i18n "imageLoadingFailed" }}'>
-                        {{ end }}
-                    {{ else }}
-                        <img class="cover p_absolute" src="{{ .Site.Params.page.defaultPostImg }}" alt='{{ i18n "imageLoadingFailed" }}'>
-                    {{ end }}
-                {{ else }}
-                    <img class="cover p_absolute" src="{{ .Site.Params.page.defaultPostImg }}" alt='{{ i18n "imageLoadingFailed" }}'>
-                {{ end }}
+            {{ with .Params.image }}
+                <img class="cover p_absolute" src="{{ . }}" alt='{{ i18n "imageLoadingFailed" }}'>
             {{ else }}
-                <!-- Для других страниц используем стандартную логику -->
-                {{ with .Params.image }}
-                    <img class="cover p_absolute" src="{{ . }}" alt='{{ i18n "imageLoadingFailed" }}'>
-                {{ else }}
-                    <img class="cover p_absolute" src="{{ .Site.Params.page.defaultPostImg }}" alt='{{ i18n "imageLoadingFailed" }}'>
-                {{ end }}
+                <img class="cover p_absolute" src="{{ .Site.Params.page.defaultPostImg }}" alt='{{ i18n "imageLoadingFailed" }}'>
             {{ end }}
         </a>
+
         <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
 
-        <!-- Условный вывод данных для таксономий -->
         {{ if or (eq .Type "taxonomy") (eq .Section "categories") (eq .Section "tags") (eq .Section "series") }}
-            <!-- Вывод только даты обновления для таксономий -->
             <ul class="grid_info">
                 <li><i class="fa fa-calendar-check-o"></i> {{ i18n "postInfo_updatedOn" }}: {{ .Lastmod.Format "2006-1-2" }}</li>
             </ul>
         {{ else }}
-            <!-- Для обычных материалов выводим дату публикации -->
             <ul class="grid_info">
                 <li><i class="fa fa-calendar"></i> {{ i18n "postInfo_postedOn" }}: {{ .PublishDate.Format "2006-1-2" }}</li>
                 <li><i class="fa fa-calendar-check-o"></i> {{ i18n "postInfo_updatedOn" }}: {{ .Lastmod.Format "2006-1-2" }}</li>
             </ul>
         {{ end }}
 
-        <!-- Описание или текст для таксономий -->
         {{ if or (eq .Type "taxonomy") (eq .Section "categories") (eq .Section "tags") (eq .Section "series") }}
-            <!-- Используем описание для таксономий -->
             {{ $taxonomyFile := printf "taxonomyDescriptions_%s" $langNow }}
             {{ $taxonomyDescriptions := index .Site.Data.taxonomy $taxonomyFile }}
             {{ $taxonomyType := .Section }}
             {{ $taxonomyKey := .Title | lower | urlize }}
-            <p>
-                {{- with index (index $taxonomyDescriptions $taxonomyType) $taxonomyKey -}}
-                    {{ . }}
-                {{- else -}}
-                    {{ i18n "taxonomyInfo" }}
-                {{- end -}}
-            </p>
-        {{ else }}
-            <p>{{ .Description }}</p>
-        {{ end }}
+                <p>
+                    {{- with index (index $taxonomyDescriptions $taxonomyType) $taxonomyKey -}}
+                        {{ . }}
+                    {{- else -}}
+                        {{ i18n "taxonomyInfo" }}
+                    {{- end -}}
+                </p>
+            {{ else }}
+                <p>
+                    {{ .Description }}
+                </p>
+            {{ end }}
 
-        <ul class="t_right grid_info">
-            {{ with .Params.categories }}
-            <li><i class="fa fa-folder"></i>
-                    {{ i18n "postInfo_includedIn" }}:
+            <ul class="t_right grid_info">
+                {{ with .Params.categories }}
+                    <li><i class="fa fa-folder"></i> 
+                    {{ i18n "postInfo_includedIn" }}: 
                     {{ range $idx, $category := . }}
                         {{- if ne $idx 0 }}, {{ end }}
                         <a href='{{ if $isMultiLingual }}
@@ -78,12 +55,12 @@
                             {{ $category }}
                         </a>
                     {{- end }}
-            </li>
-            {{ end }}
+                    </li>
+                {{ end }}
 
-            {{ with .Params.series }}
-                <li><i class="fa fa-book"></i>
-                    {{ i18n "postInfo_series" }}:
+                {{ with .Params.series }}
+                    <li><i class="fa fa-book"></i> 
+                    {{ i18n "postInfo_series" }}: 
                     {{ range $idx, $series := . }}
                         {{- if ne $idx 0 }}, {{ end }}
                         <a href='{{ if $isMultiLingual }}
@@ -94,14 +71,14 @@
                             {{ $series }}
                         </a>
                     {{- end }}
-                </li>
-            {{ end }}
+                    </li>
+                {{ end }}
 
-            {{ $tagsCount := 0 }}
-            {{ with .Params.tags }}
-                {{ $tagsCount = 1 }}
-            {{ end }}
-            {{ if eq $tagsCount 1 }}
+                {{ $tagsCount := 0 }}
+                {{ with .Params.tags }}
+                    {{ $tagsCount = 1 }}
+                {{ end }}
+                {{ if eq $tagsCount 1 }}
                 <li>
                     {{ range $tag := .Params.tags }}
                         <a href='{{ if $isMultiLingual }}
