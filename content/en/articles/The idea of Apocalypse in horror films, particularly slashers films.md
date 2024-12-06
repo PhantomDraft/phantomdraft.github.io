@@ -38,7 +38,7 @@ Sometimes art reflects the mood within a certain region of the planet; sometimes
 
 I felt inspired to take a little journey through time, and I gladly invite you along. So, all aboard our time machine\!
 
-We’re going back in time to the year 1830\.
+*We’re going back in time to the year 1830\.*
 
 ## The History of the Chainsaw’s Creation
 
@@ -62,7 +62,7 @@ In 1962, the first ultra-light chainsaw was created: the Husqvarna 70, which wei
 
 In 1969, Husqvarna chainsaws had already quickly spread across the world, and only five years later, *The Texas Chain Saw Massacre* hit the big screen.
 
-But let’s go back a bit, to the year 1945\. It’s July 16 now.
+*But let’s go back a bit, to the year 1945\. It’s July 16 now.*
 
 ## The Creation and Testing of the Atomic Bomb
 
@@ -86,7 +86,7 @@ Some time would pass before the *Fallout* game series, known for its cynical dar
 
 Let’s get in the time machine and speed away from the nuclear arms race to… where? Back home, to 2024? No way. I said far away\!
 
-We’re traveling to the Romantic Era, to 1818\.
+*We’re traveling to the Romantic Era, to 1818\.*
 
 ## Galvanization on a Rainy Day in Geneva
 
