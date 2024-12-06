@@ -3,10 +3,10 @@
 <li class="castration base_width p_relative grid">
     <div class="castration fl p_relative text">
         <a class="castration fl p_relative grid_cover" href="{{ .Permalink }}">
-           <!-- Проверка: главная таксономия -->
+            <!-- Проверка: главная таксономия -->
             {{ if or (eq .Type "taxonomy") (eq .Section "categories") (eq .Section "tags") (eq .Section "series") }}
-                {{ $pages := where .Pages "Lastmod" "!=" nil | sort "Lastmod" "desc" }}
-                {{ with first 1 $pages }}
+                {{ $pages := where .Pages "Kind" "page" | sort "Lastmod" "desc" }}
+                {{ if $pages }}
                     {{ $latest := index $pages 0 }}
                     {{ with $latest.Params.image }}
                         <img class="cover p_absolute" src="{{ . }}" alt='{{ i18n "imageLoadingFailed" }}'>
