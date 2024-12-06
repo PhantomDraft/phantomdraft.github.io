@@ -13,7 +13,7 @@
 
         <!-- Условный вывод данных для таксономий -->
         {{ if or (eq .Type "taxonomy") (eq .Section "categories") (eq .Section "tags") (eq .Section "series") }}
-            <!-- Вывод только даты обновления, если это таксономия -->
+            <!-- Вывод только даты обновления для таксономий -->
             <ul class="grid_info">
                 <li><i class="fa fa-calendar-check-o"></i> {{ i18n "postInfo_updatedOn" }}: {{ .Lastmod.Format "2006-1-2" }}</li>
             </ul>
@@ -28,7 +28,17 @@
         <!-- Описание или текст для таксономий -->
         {{ if or (eq .Type "taxonomy") (eq .Section "categories") (eq .Section "tags") (eq .Section "series") }}
             <!-- Используем описание для таксономий -->
-            <p>{{- if .Description }}{{ .Description }}{{- else }}{{ i18n "taxonomyInfo" }}{{- end }}</p>
+            {{ $taxonomyFile := printf "taxonomyDescriptions_%s" $langNow }}
+            {{ $taxonomyDescriptions := index .Site.Data.taxonomy $taxonomyFile }}
+            {{ $taxonomyType := .Section }}
+            {{ $taxonomyKey := .Title | lower | urlize }}
+            <p>
+                {{- with index (index $taxonomyDescriptions $taxonomyType) $taxonomyKey -}}
+                    {{ . }}
+                {{- else -}}
+                    {{ i18n "taxonomyInfo" }}
+                {{- end -}}
+            </p>
         {{ else }}
             <p>{{ .Description }}</p>
         {{ end }}
@@ -48,9 +58,11 @@
                         </a>
                     {{- end }}
                 {{ else }}
-                    {{ i18n "postInfo_notIncluded" }}
+                    <!-- Категория не выводится, если не указана -->
+                    {{- /* Не выводим "Not included" */ }}
                 {{ end }}
             </li>
+
             {{ with .Params.series }}
                 <li><i class="fa fa-book"></i>
                     {{ i18n "postInfo_series" }}:
@@ -66,6 +78,7 @@
                     {{- end }}
                 </li>
             {{ end }}
+
             {{ $tagsCount := 0 }}
             {{ with .Params.tags }}
                 {{ $tagsCount = 1 }}
