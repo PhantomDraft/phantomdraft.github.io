@@ -3,9 +3,9 @@
 <li class="castration base_width p_relative grid">
     <div class="castration fl p_relative text">
         <a class="castration fl p_relative grid_cover" href="{{ .Permalink }}">
-     <!-- Проверка: главная таксономия -->
+            <!-- Проверка: главная таксономия -->
             {{ if or (eq .Type "taxonomy") (eq .Section "categories") (eq .Section "tags") (eq .Section "series") }}
-                {{ $pages := .Pages | sort "Lastmod" "desc" }}
+                {{ $pages := where .Pages "Type" "!=" "taxonomy" | sort "Lastmod" "desc" }}
                 {{ $latest := index $pages 0 }}
                 {{ with $latest.Params.image }}
                     <img class="cover p_absolute" src="{{ . }}" alt='{{ i18n "imageLoadingFailed" }}'>
