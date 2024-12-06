@@ -44,8 +44,8 @@
         {{ end }}
 
         <ul class="t_right grid_info">
+            {{ with .Params.categories }}
             <li><i class="fa fa-folder"></i>
-                {{ with .Params.categories }}
                     {{ i18n "postInfo_includedIn" }}:
                     {{ range $idx, $category := . }}
                         {{- if ne $idx 0 }}, {{ end }}
@@ -57,11 +57,8 @@
                             {{ $category }}
                         </a>
                     {{- end }}
-                {{ else }}
-                    <!-- Категория не выводится, если не указана -->
-                    
-                {{ end }}
             </li>
+            {{ end }}
 
             {{ with .Params.series }}
                 <li><i class="fa fa-book"></i>
