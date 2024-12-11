@@ -1,5 +1,5 @@
 ---
-title: "The idea of Apocalypse in horror films, particularly slashers films"
+title: "The Idea of Apocalypse in Horror Films, Particularly Slashers Films"
 description: "Slasher vs. Post-Apocalypse"
 # format for string: "xxxx-xx-xx"
 date: 2024-11-11
@@ -27,7 +27,7 @@ hideFromSitemap: false
 Once, after finishing a round in *The Texas Chain Saw Massacre*, I decided to rewatch the original 1974 film and then started reading critics' opinions on it. I found a review by critic Christopher Sharrett, whom I’ll quote verbatim:
 
 <div class="t_center castration cover p_relative atcScreen">
-	<p>"If *Psycho* began an exploration of a new sense of absurdity in contemporary life, of the collapse of causality and the diseased underbelly of American Gothic, *The Texas Chain Saw Massacre* carries this exploration to a logical conclusion, addressing many of the issues of Hitchcock's film while refusing comforting closure."</p>
+	<p>"If Psycho began an exploration of a new sense of absurdity in contemporary life, of the collapse of causality and the diseased underbelly of American Gothic, The Texas Chain Saw Massacre carries this exploration to a logical conclusion, addressing many of the issues of Hitchcock's film while refusing comforting closure."</p>
 </div>
 
 Critic Christopher Sharrett argues that since the release of Alfred Hitchcock’s Psycho (1960) and The Birds (1963), American horror film has been defined by questions it poses "regarding the fundamental validity of the civilizing process in America", with concerns deepening in the 1970s due to "the delegitimation of authority amidst the Vietnam War and Watergate".
@@ -72,17 +72,17 @@ Someday, I’ll publish my collection of famous weapons, which I’ll call *Fat 
 
 World War II was coming to an end, but the final shot at the Axis powers spurred on the nuclear arms race. In 1946, the Cold War began, lasting until 1990, with the nuclear race stretching one year longer.
 
-Later, the world would learn of the E-1 and E-1A projects, when in the USSR, Yakov Zel’dovich planned to send a Soviet atomic bomb to the moon so all earthlings could witness a “big boom.” However, he abandoned the idea himself due to the flight's unjustified risks. Don’t rush to be surprised: American scientists were working on their own similar project, A119, but likewise backed away from this risky endeavor. As it turned out, the years of the Cold War and nuclear arms race also coincided with the Space Race, which lasted from 1957 to 1988\.
+Later, the world would learn of the E-1 and E-1A projects, when in the USSR, Yakov Zel’dovich planned to send a Soviet atomic bomb to the moon so all earthlings could witness a “big boom”. However, he abandoned the idea himself due to the flight's unjustified risks. Don’t rush to be surprised: American scientists were working on their own similar project, A119, but likewise backed away from this risky endeavor. As it turned out, the years of the Cold War and nuclear arms race also coincided with the Space Race, which lasted from 1957 to 1988\.
 
 The scale of these duels between brilliant minds is astounding, yet the lives of ordinary people go on…
 
 ### Atomic Weapons Stir Monsters
 
-In 1953, seven years after the atomic bomb was dropped, the film *The Beast from 20,000 Fathoms* was released—an adaptation of Ray Bradbury’s story “The Fog Horn.” This became the first film about monsters awakened by nuclear weapons testing.
+In 1953, seven years after the atomic bomb was dropped, the film *The Beast from 20,000 Fathoms* was released—an adaptation of Ray Bradbury’s story “The Fog Horn”. This became the first film about monsters awakened by nuclear weapons testing.
 
 In 1954, in Japan, a country that had recently experienced weapons of mass destruction, Godzilla was born, inspired by the 1953 film.
 
-Some time would pass before the *Fallout* game series, known for its cynical dark humor, introduced a portable launcher firing nuclear warheads called the “Fat Man.”
+Some time would pass before the *Fallout* game series, known for its cynical dark humor, introduced a portable launcher firing nuclear warheads called the “Fat Man”.
 
 Let’s get in the time machine and speed away from the nuclear arms race to… where? Back home, to 2024? No way. I said far away\!
 
@@ -90,7 +90,7 @@ Let’s get in the time machine and speed away from the nuclear arms race to… 
 
 ## Galvanization on a Rainy Day in Geneva
 
-Once, my wife shared with me a fascinating paper on forelimb transplantation. Not surprisingly, simply “cutting and stitching” doesn’t quite work, particularly because of the ongoing struggle with the negative effects of antibiotics on patients' kidneys.
+Once, my wife shared with me a [fascinating paper on forelimb transplantation](https://www.wired.com/story/devastating-allure-of-medical-miracles/). Not surprisingly, simply “cutting and stitching” doesn’t quite work, particularly because of the ongoing struggle with the negative effects of antibiotics on patients' kidneys.
 
 In the context of Geneva and hand transplants, Mary Shelley and the monster that appeared to her in a dream come to mind. Here’s how Shelley described her dream:
 
@@ -108,7 +108,7 @@ Today, Shelley’s work seems a mockery of modern humanity. We still can’t ass
 
 Among the many topics discussed within the circle that included Shelley, the conversation turned to the experiments of the philosopher and poet Erasmus Darwin. Darwin practiced galvanization. I should clarify that at the time, “galvanization” didn’t refer to creating metallic coatings through electro-galvanic methods, but rather the application of electric currents to a dead organism, as described by Luigi Galvani. Rumors about these experiments, which stirred imaginations, inspired Mary to write *Frankenstein*.
 
-Let’s continue our journey and return to “Shelley’s mockery of modern humanity.”
+Let’s continue our journey and return to “Shelley’s mockery of modern humanity”.
 
 It’s time for us to head back to the future—what lies ahead?
 
@@ -118,7 +118,7 @@ Now I want to mention works that weren’t inspired by humanity’s inventions f
 
 ### The Last Man on Earth
 
-From 1818 to 1826\. *The Last Man on Earth* is an apocalyptic science fiction novel by Mary Shelley, which received the worst reviews of all her novels. Critics mocked the very idea of a “last man on earth” and judged the author’s sanity as “sick.”
+From 1818 to 1826\. *The Last Man on Earth* is an apocalyptic science fiction novel by Mary Shelley, which received the worst reviews of all her novels. Critics mocked the very idea of a “last man on earth” and judged the author’s sanity as “sick”.
 
 Mary Shelley herself claimed that in 1818 (the year *Frankenstein* was published), she discovered prophetic writings in a cave near Naples, which she edited and presented to the world as the story of a man living at the end of the 21st century. Specifically, the events in the novel begin in 2073 and end in 2100\.
 
@@ -132,7 +132,7 @@ In the novel:
 * Issues arising during a pandemic: self-isolation and disillusionment with medicine—a subject Shelley had studied extensively, as seen in her knowledge of the history of smallpox vaccination development and the 19th-century understanding of virus transmission;  
 * Critique of racism from European countries toward other nations, as, in the face of a pandemic, all people are equal.
 
-I recommend checking out the Wikipedia page; link.
+I recommend checking out the Wikipedia page, [link](https://en.wikipedia.org/wiki/The_Last_Man).
 
 In the context of the last two points, I simply cannot help but think of *Night of the Living Dead* (1968) by George Romero, who aimed to show how personal, national, and gender differences dissolve in the face of an epidemic. Incidentally, this film played a significant role in the fight for African American rights.
 
@@ -142,7 +142,7 @@ We bid farewell to Mary and head into the future. We pass 1924 and *Der Zauberbe
 
 ### Matka Joanna Od Aniolow
 
-We attended the premiere of *Metropolis* and then traveled to 1961, when the Polish film *Matka Joanna Od Aniolow* was released, depicting events known as the “Loudun Possessions.” Our tour group didn’t visit this era specifically, as it was too dangerous, but here’s a short pamphlet with various interesting dates as a micro-example of the evolution of human consciousness and the development of humanism:
+We attended the premiere of *Metropolis* and then traveled to 1961, when the Polish film *Matka Joanna Od Aniolow* was released, depicting events known as the “Loudun Possessions”. Our tour group didn’t visit this era specifically, as it was too dangerous, but here’s a short pamphlet with various interesting dates as a micro-example of the evolution of human consciousness and the development of humanism:
 
 * 1486 – The official publication of *Malleus Maleficarum*, a manual for mutilating women to identify witches;  
 * 1634 – The Loudun Possessions;  
@@ -158,7 +158,7 @@ We make a stop in 1985 when the book *Acid Dreams* was published, detailing expe
 
 A short leap, and… everyone out\! We’re in 2024\.
 
-## The Idea of Apocalypse in Horror Films, Particularly Slasher Films
+## The Idea of Apocalypse in Horror Films, Particularly Slashers Films
 
 Conclusion? There’s no need to force connections. Significant inventions or discoveries lead to books, movies, games, and songs, on average 4–6 years later—and now, when anyone with a smartphone can be a videographer, it happens even faster. Simple and straightforward, without hidden meanings.
 
