@@ -55,7 +55,7 @@ paginate = 4
     # default image for a post without "image" param
     defaultPostImg = "/img/cover/default.jpg"
     # The maximum number of articles displayed on the homepage
-    maxHomePostCount = 9
+    maxHomePostCount = 3
     # Maximum number of related articles displayed
     maxPageRelatedCount = 6
     # Maximum number of latest articles displayed
