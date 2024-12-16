@@ -22,7 +22,7 @@ deFaultContentLanguage = "en"
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage = false
 #paginate
-paginate = 4
+paginate = 1
 
 [params]
     [params.site]
