@@ -3,11 +3,39 @@
 
     <section class="castration fl p_relative modules">
         <ul id="content">
-            {{ range .Pages }}
-                {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSection)) }}
-                    {{ partial "widgets/post-card.html" . }}
+            {{ if .IsNode }}
+                {{ $paginator := .Paginate (sort .Pages "Lastmod" "desc") }}
+                {{ range $paginator.Pages }}
+                    {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSection)) }}
+                        {{ partial "widgets/post-card.html" . }}
+                    {{ end }}
                 {{ end }}
+            {{ else }}
+                <!-- Альтернативный вывод для одиночных страниц -->
+                <p>{{ .Title }}</p>
+                <p>{{ .Content }}</p>
             {{ end }}
         </ul>
     </section>
+
+    <!-- Пагинация -->
+    {{ if .IsNode }}
+    <div class="pagination">
+        {{ $paginator := .Paginator }}
+
+        {{ if $paginator.HasPrev }}
+            <a href="{{ $paginator.Prev.URL }}" class="prev">{{ i18n "pagination_previous" }}</a>
+        {{ end }}
+
+        {{ range $paginator.Pagers }}
+            <a href="{{ .URL }}" class="{{ if eq .PageNumber $paginator.PageNumber }}active{{ end }}">
+                {{ .PageNumber }}
+            </a>
+        {{ end }}
+
+        {{ if $paginator.HasNext }}
+            <a href="{{ $paginator.Next.URL }}" class="next">{{ i18n "pagination_next" }}</a>
+        {{ end }}
+    </div>
+    {{ end }}
 {{ end }}
