@@ -12,29 +12,27 @@
                         {{ partial "widgets/post-card.html" . }}
                     {{ end }}
                 {{ end }}
+
+                <!-- Блок пагинации -->
+                <div class="pagination">
+                    {{ if $paginator.HasPrev }}
+                        <a href="{{ $paginator.Prev.URL }}" class="prev">{{ i18n "pagination_previous" }}</a>
+                    {{ end }}
+
+                    {{ range $paginator.Pagers }}
+                        <a href="{{ .URL }}" class="{{ if eq .PageNumber $paginator.PageNumber }}active{{ end }}">
+                            {{ .PageNumber }}
+                        </a>
+                    {{ end }}
+
+                    {{ if $paginator.HasNext }}
+                        <a href="{{ $paginator.Next.URL }}" class="next">{{ i18n "pagination_next" }}</a>
+                    {{ end }}
+                </div>
             {{ else }}
-                <!-- Альтернативный вывод, если это не списковая страница -->
+                <!-- Альтернативный вывод для страниц, не являющихся списками -->
                 <p>{{ i18n "no_content_message" }}</p>
             {{ end }}
         </ul>
-
-        <!-- Блок пагинации -->
-        {{ if .IsNode }}
-        <div class="pagination">
-            {{ if $paginator.HasPrev }}
-                <a href="{{ $paginator.Prev.URL }}" class="prev">{{ i18n "pagination_previous" }}</a>
-            {{ end }}
-
-            {{ range $paginator.Pagers }}
-                <a href="{{ .URL }}" class="{{ if eq .PageNumber $paginator.PageNumber }}active{{ end }}">
-                    {{ .PageNumber }}
-                </a>
-            {{ end }}
-
-            {{ if $paginator.HasNext }}
-                <a href="{{ $paginator.Next.URL }}" class="next">{{ i18n "pagination_next" }}</a>
-            {{ end }}
-        </div>
-        {{ end }}
     </section>
 {{ end }}
