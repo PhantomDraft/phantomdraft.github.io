@@ -23,12 +23,44 @@
                 </div>
             </div>
         {{ end }}
+
         <ul id="content">
-            {{ range first .Site.Params.page.maxHomePostCount .Site.RegularPages }}
-                {{ if and (not .Params.hideFromCenter) (eq $kind "home") }}
-                    {{ partial "widgets/post-card.html" . }}
+            {{ if .IsHome }}
+                <!-- Добавляем пагинацию и сортировку по Lastmod -->
+                {{ $paginator := .Paginate (sort .Site.RegularPages "Lastmod" "desc") .Site.Params.page.maxHomePostCount }}
+                {{ range $paginator.Pages }}
+                    {{ if not .Params.hideFromCenter }}
+                        {{ partial "widgets/post-card.html" . }}
+                    {{ end }}
+                {{ end }}
+            {{ else }}
+                <!-- Для остальных страниц используем обычный вывод -->
+                {{ range .Pages }}
+                    {{ if not .Params.hideFromCenter }}
+                        {{ partial "widgets/post-card.html" . }}
+                    {{ end }}
                 {{ end }}
             {{ end }}
         </ul>
+
+        <!-- Блок пагинации -->
+        {{ if .IsHome }}
+        <div class="pagination">
+            {{ $paginator := .Paginator }}
+            {{ if $paginator.HasPrev }}
+                <a href="{{ $paginator.Prev.URL }}" class="prev">{{ i18n "pagination_previous" }}</a>
+            {{ end }}
+
+            {{ range $paginator.Pagers }}
+                <a href="{{ .URL }}" class="{{ if eq .PageNumber $paginator.PageNumber }}active{{ end }}">
+                    {{ .PageNumber }}
+                </a>
+            {{ end }}
+
+            {{ if $paginator.HasNext }}
+                <a href="{{ $paginator.Next.URL }}" class="next">{{ i18n "pagination_next" }}</a>
+            {{ end }}
+        </div>
+        {{ end }}
     </section>
 {{ end }}
