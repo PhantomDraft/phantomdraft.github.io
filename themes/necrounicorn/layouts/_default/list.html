@@ -4,7 +4,6 @@
     <section class="castration fl p_relative modules">
         <ul id="content">
             {{ if .IsNode }}
-                <!-- Универсальная сортировка и пагинация -->
                 {{ $sortedPages := sort .Pages "Lastmod" "desc" }}
                 {{ $paginator := .Paginate $sortedPages }}
                 {{ range $paginator.Pages }}
@@ -13,25 +12,23 @@
                     {{ end }}
                 {{ end }}
 
-                <!-- Блок пагинации -->
                 <div class="pagination">
                     {{ if $paginator.HasPrev }}
-                        <a href="{{ $paginator.Prev.URL }}" class="prev">{{ i18n "pagination_previous" }}</a>
+                        <a href="{{ $paginator.Prev.URL }}" class="prev">
+                            {{ i18n "pagination_previous" }}
+                        </a>
                     {{ end }}
-
                     {{ range $paginator.Pagers }}
                         <a href="{{ .URL }}" class="{{ if eq .PageNumber $paginator.PageNumber }}active{{ end }}">
                             {{ .PageNumber }}
                         </a>
                     {{ end }}
-
                     {{ if $paginator.HasNext }}
-                        <a href="{{ $paginator.Next.URL }}" class="next">{{ i18n "pagination_next" }}</a>
+                        <a href="{{ $paginator.Next.URL }}" class="next">
+                            {{ i18n "pagination_next" }}
+                        </a>
                     {{ end }}
                 </div>
-            {{ else }}
-                <!-- Альтернативный вывод для страниц, не являющихся списками -->
-                <p>{{ i18n "no_content_message" }}</p>
             {{ end }}
         </ul>
     </section>
