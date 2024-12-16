@@ -3,7 +3,16 @@
 
     <section class="castration fl p_relative modules">
         <ul id="content">
-            {{ if .IsNode }}
+            {{ if .IsHome }}
+                <!-- Для главной страницы используем .Site.RegularPages -->
+                {{ $paginator := .Paginate (sort .Site.RegularPages "Lastmod" "desc") }}
+                {{ range $paginator.Pages }}
+                    {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSection)) }}
+                        {{ partial "widgets/post-card.html" . }}
+                    {{ end }}
+                {{ end }}
+            {{ else if .IsNode }}
+                <!-- Для остальных страниц (списки и разделы) -->
                 {{ $paginator := .Paginate (sort .Pages "Lastmod" "desc") }}
                 {{ range $paginator.Pages }}
                     {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSection)) }}
@@ -11,7 +20,7 @@
                     {{ end }}
                 {{ end }}
             {{ else }}
-                <!-- Альтернативный вывод для одиночных страниц -->
+                <!-- Для одиночных страниц -->
                 <p>{{ .Title }}</p>
                 <p>{{ .Content }}</p>
             {{ end }}
@@ -19,10 +28,8 @@
     </section>
 
     <!-- Пагинация -->
-    {{ if .IsNode }}
     <div class="pagination">
         {{ $paginator := .Paginator }}
-
         {{ if $paginator.HasPrev }}
             <a href="{{ $paginator.Prev.URL }}" class="prev">{{ i18n "pagination_previous" }}</a>
         {{ end }}
@@ -37,5 +44,4 @@
             <a href="{{ $paginator.Next.URL }}" class="next">{{ i18n "pagination_next" }}</a>
         {{ end }}
     </div>
-    {{ end }}
 {{ end }}
