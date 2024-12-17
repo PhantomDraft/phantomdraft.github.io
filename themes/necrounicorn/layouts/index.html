@@ -34,22 +34,28 @@
             {{ end }}
         </ul>
 
-        <div class="pagination">
+        <ul class="t_center not_twitch">
             {{ if $paginator.HasPrev }}
-                <a href="{{ $paginator.Prev.URL }}" class="prev">
+            <li class="page-numbers">
+                <a class="page-numbers prev" href="{{ $paginator.Prev.URL }}">
                     {{ i18n "pagination_previous" }}
                 </a>
+            </li>
             {{ end }}
             {{ range $paginator.Pagers }}
-                <a href="{{ .URL }}" class="{{ if eq .PageNumber $paginator.PageNumber }}active{{ end }}">
+            <li class="page-numbers">
+                <a href="{{ .URL }}" class="page-numbers {{ if eq .PageNumber $paginator.PageNumber }}active{{ end }}">
                     {{ .PageNumber }}
                 </a>
+            </li>
             {{ end }}
             {{ if $paginator.HasNext }}
-                <a href="{{ $paginator.Next.URL }}" class="next">
+            <li class="page-numbers">
+                <a href="{{ $paginator.Next.URL }}" class="page-numbers next">
                     {{ i18n "pagination_next" }}
                 </a>
+            </li>
             {{ end }}
-        </div>
+        </ul>
     </section>
 {{ end }}
