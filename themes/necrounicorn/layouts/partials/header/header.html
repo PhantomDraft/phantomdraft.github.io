@@ -7,18 +7,51 @@
             </div>
         </div>
 
-        <nav class="base_height fl p_relative menu-main">
-            <ul>
-                <li class="fl"><a class="menuBtn" title="Link's" href="javascript:void(0)" href="/">
-                    <span class="logo">Inside</span>
-                </a></li>
-                {{ range .Site.Menus.main }}
-                    <li class="fl"><a href="{{ .URL }}">
-                        {{ .Pre }} {{ .Name }}
-                    </a></li>
-                {{ end }}
-            </ul>
-        </nav>
+<nav class="base_height fl p_relative menu-main">
+    <ul>
+        <!-- Первый пункт вне цикла (не изменяется) -->
+        <li class="fl">
+            <a class="menuBtn" title="Link's" href="javascript:void(0)" href="/">
+                <span class="logo">Inside</span>
+            </a>
+        </li>
+
+        <!-- Определение текущего раздела -->
+        {{ $currentSection := .Section }}
+        {{ $menuItems := .Site.Menus.main }}
+
+        <!-- Создаём активный пункт и список остальных -->
+        {{ $activeMenuItem := false }}
+        {{ $otherMenuItems := slice }}
+
+        {{ range $menuItems }}
+            {{ if in .URL $currentSection }}
+                {{ $activeMenuItem = . }}
+            {{ else }}
+                {{ $otherMenuItems = $otherMenuItems | append . }}
+            {{ end }}
+        {{ end }}
+
+        <!-- Вывод активного пункта первым -->
+        {{ if $activeMenuItem }}
+            <li class="fl active">
+                <a href="{{ $activeMenuItem.URL }}">
+                    {{ $activeMenuItem.Pre }} {{ $activeMenuItem.Name }}
+                </a>
+            </li>
+        {{ end }}
+
+        <!-- Вывод остальных пунктов -->
+        {{ range $otherMenuItems }}
+            <li class="fl">
+                <a href="{{ .URL }}">
+                    {{ .Pre }} {{ .Name }}
+                </a>
+            </li>
+        {{ end }}
+    </ul>
+</nav>
+
     </div>
 
     <a id="pull" href="#" class="t_center base_height base_width p_relative">Menu</a>
