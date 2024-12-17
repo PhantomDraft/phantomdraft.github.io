@@ -18,7 +18,7 @@
 
         <!-- Получаем текущий раздел -->
         {{ $currentSection := .Section }}
-        {{ $menuItems := site.Menus.main | where "Weight" "gt" 0 | sort "Weight" "asc" }}
+        {{ $menuItems := site.Menus.main | where "Weight" "ne" nil | sort "Weight" "asc" }}
 
         <!-- Выводим активный пункт -->
         {{ range $menuItems }}
@@ -31,7 +31,7 @@
             {{ end }}
         {{ end }}
 
-        <!-- Выводим остальные пункты в исходном порядке -->
+        <!-- Вывод остальных пунктов -->
         {{ range $menuItems }}
             {{ if not (in .URL $currentSection) }}
                 <li class="fl">
