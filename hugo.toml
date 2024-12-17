@@ -75,28 +75,29 @@ paginate = 9
     [[menus.main]]
         name = "Log"
         url = "/"
-        
+        # order weight, more small more close to left, at least 1
+        weight = 1
         # icon from FontAwesome in front of single entry
         pre = ""
     [[menus.main]]
         name = "Notes"
         url = "/posts/"
-        
+        weight = 2
         pre = ""
     [[menus.main]]
         name = "Articles"
         url = "/articles/"
-        
+        weight = 3
         pre = ""
     [[menus.main]]
         name = "Stories"
         url = "/stories/"
-        
+        weight = 4
         pre = ""
     [[menus.main]]
         name = "Library - soon!"
         url = "#"
-        
+        weight = 5
         pre = ""
 
     # social, maxum 6

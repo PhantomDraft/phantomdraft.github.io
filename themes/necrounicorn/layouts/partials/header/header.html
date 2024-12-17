@@ -11,16 +11,16 @@
     <ul>
         <!-- Первый пункт вне цикла (не изменяется) -->
         <li class="fl">
-            <a class="menuBtn" title="Link's" href="javascript:void(0)" href="/">
+            <a class="menuBtn" title="Link's" href="javascript:void(0)">
                 <span class="logo">Inside</span>
             </a>
         </li>
 
-        <!-- Определение текущего раздела -->
+        <!-- Получаем текущий раздел -->
         {{ $currentSection := .Section }}
-        {{ $menuItems := .Site.Menus.main }}
+        {{ $menuItems := site.Menus.main | sort "Weight" "asc" }}
 
-        <!-- Вывод активного пункта -->
+        <!-- Выводим активный пункт -->
         {{ range $menuItems }}
             {{ if in .URL $currentSection }}
                 <li class="fl active">
@@ -31,7 +31,7 @@
             {{ end }}
         {{ end }}
 
-        <!-- Вывод остальных пунктов в исходном порядке -->
+        <!-- Выводим остальные пункты в порядке weight -->
         {{ range $menuItems }}
             {{ if not (in .URL $currentSection) }}
                 <li class="fl">
