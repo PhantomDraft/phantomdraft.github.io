@@ -22,7 +22,7 @@ deFaultContentLanguage = "en"
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage = false
 #paginate
-paginate = 1
+paginate = 9
 
 [params]
     [params.site]
@@ -55,7 +55,7 @@ paginate = 1
     # default image for a post without "image" param
     defaultPostImg = "/img/cover/default.jpg"
     # The maximum number of articles displayed on the homepage
-    maxHomePostCount = 1
+    maxHomePostCount = 9
     # Maximum number of related articles displayed
     maxPageRelatedCount = 6
     # Maximum number of latest articles displayed
