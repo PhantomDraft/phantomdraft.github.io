@@ -20,34 +20,26 @@
         {{ $currentSection := .Section }}
         {{ $menuItems := .Site.Menus.main }}
 
-        <!-- Создаём активный пункт и список остальных -->
-        {{ $activeMenuItem := false }}
-        {{ $otherMenuItems := slice }}
-
+        <!-- Вывод активного пункта -->
         {{ range $menuItems }}
             {{ if in .URL $currentSection }}
-                {{ $activeMenuItem = . }}
-            {{ else }}
-                {{ $otherMenuItems = $otherMenuItems | append . }}
+                <li class="fl active">
+                    <a href="{{ .URL }}">
+                        {{ .Pre }} {{ .Name }}
+                    </a>
+                </li>
             {{ end }}
         {{ end }}
 
-        <!-- Вывод активного пункта первым -->
-        {{ if $activeMenuItem }}
-            <li class="fl active">
-                <a href="{{ $activeMenuItem.URL }}">
-                    {{ $activeMenuItem.Pre }} {{ $activeMenuItem.Name }}
-                </a>
-            </li>
-        {{ end }}
-
-        <!-- Вывод остальных пунктов -->
-        {{ range $otherMenuItems }}
-            <li class="fl">
-                <a href="{{ .URL }}">
-                    {{ .Pre }} {{ .Name }}
-                </a>
-            </li>
+        <!-- Вывод остальных пунктов в исходном порядке -->
+        {{ range $menuItems }}
+            {{ if not (in .URL $currentSection) }}
+                <li class="fl">
+                    <a href="{{ .URL }}">
+                        {{ .Pre }} {{ .Name }}
+                    </a>
+                </li>
+            {{ end }}
         {{ end }}
     </ul>
 </nav>
