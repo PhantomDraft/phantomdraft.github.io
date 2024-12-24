@@ -86,13 +86,18 @@ wnd.resize(function() {
 
 $('.mobile_navigation a, #table_of_contents a').on('click', function(e) {
     e.preventDefault();
+
     let href = $(this).attr('href');
     let target = $(href);
 
     if (target.length) {
-        $('html, body').animate({
+        $('html, body').stop().animate({
             scrollTop: target.offset().top
-        }, 370);
+        }, 600, 'swing', function() {
+            if (history.pushState) {
+                history.pushState(null, null, ' '); // Убираем якорь из адресной строки
+            }
+        });
     } else {
         console.error(`Element not found: ${href}`);
     }
