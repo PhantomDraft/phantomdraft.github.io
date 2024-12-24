@@ -1,20 +1,20 @@
 ---
-title: "Metropolis: A Nonpareil Masterpiece of Sci-Fi Film"
-description: ""
+title: "Metropolis (film, 1927)"
+description: "A Nonpareil Masterpiece of Sci-Fi Film"
 # format for string: "xxxx-xx-xx"
-date: 2024-11-20
-lastmod: "2024-11-20"
+date: 1927-01-10
+lastmod: "2024-12-24"
 # set false when you want the post publish
 draft: true
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
-categories: ["My Life"]
+categories: ["My reviews"]
 # refer to categories
-tags: ["gsc", "xbox"]
+tags: ["sci-fi", "cyberpunk", "expressionism", "mythology", "folklore", "northern religion", "industry", "necro fetishism", "humanism", "posthumanism"]
 # seires
-series: ["S.T.A.L.K.E.R. 2"]
+series: ["Horrors that are Referenced"]
 # Top image for the post /local/images/test/cover.jpg
-image: "/uk/images/posts/stalker2/cover.webp"
+image: "/images/library/metropolis-1927/cover.webp"
 # Hide from home and other main page
 hideFromCenter: false
 # Hide from archive page

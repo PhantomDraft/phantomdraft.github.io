@@ -1,20 +1,20 @@
 ---
-title: "The complete social history of LSD is an acid dream"
-description: ""
+title: "Acid Dreams (The Complete Social History of LSD: The CIA, The Sixties, and Beyond)"
+description: "The complete social history of LSD is an acid dream"
 # format for string: "xxxx-xx-xx"
-date: 2024-11-20
-lastmod: "2024-11-20"
+date: 1985-01-01
+lastmod: "2024-12-24"
 # set false when you want the post publish
 draft: true
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
-categories: ["My Life"]
+categories: ["My reviews"]
 # refer to categories
-tags: ["gsc", "xbox"]
+tags: ["drugs", "militarism"]
 # seires
-series: ["S.T.A.L.K.E.R. 2"]
+series: []
 # Top image for the post /local/images/test/cover.jpg
-image: "/uk/images/posts/stalker2/cover.webp"
+image: "/images/library/acid-dreams-1985/cover.webp"
 # Hide from home and other main page
 hideFromCenter: false
 # Hide from archive page
@@ -24,7 +24,7 @@ hideFromSection: false
 # Hide from everything but the Sitemap
 hideFromSitemap: false
 ---
-# The complete social history of LSD is an acid dream
+## The complete social history of LSD is an acid dream
 
 Acid Dreams: The Complete Social History of LSD: the CIA, the Sixties, and Beyond is a complete account by Martin A. Lee and Bruce Shlain, documenting the entire history of LSD controversy. Published in 1985, it makes a journey from the synthesis of the drug by Albert Hofmann in 1938 to its use in Cold War-era CIA experimentation and its advent with 1960s counterculture.
 

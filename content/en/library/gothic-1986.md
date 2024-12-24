@@ -1,20 +1,20 @@
 ---
-title: "Gothic 1986"
+title: "Gothic (1986)"
 description: ""
 # format for string: "xxxx-xx-xx"
-date: 2024-11-20
-lastmod: "2024-11-20"
+date: 1986-11-30
+lastmod: "2024-12-24"
 # set false when you want the post publish
 draft: true
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
-categories: ["My Life"]
+categories: ["My reviews"]
 # refer to categories
-tags: ["gsc", "xbox"]
+tags: ["romanticism", "gothic", "folklore", "drugs", "opium", "gnosis", "mary shelley"]
 # seires
-series: ["S.T.A.L.K.E.R. 2"]
+series: ["Horror about drugs", "Mary Shelley: Mother of Biopunk"]
 # Top image for the post /local/images/test/cover.jpg
-image: "/uk/images/posts/stalker2/cover.webp"
+image: "/images/library/gothic-1986/cover.webp"
 # Hide from home and other main page
 hideFromCenter: false
 # Hide from archive page
@@ -24,10 +24,6 @@ hideFromSection: false
 # Hide from everything but the Sitemap
 hideFromSitemap: false
 ---
-# Gothic 1986
-
-Дать описание картины \+ лошадь\!
-
 ## The Impending Plot
 
 Ken Russell's Gothic (1986) holds the invitation for the audience into those chaotic nights that spun out these two pillars of literary horror: Mary Shelley's Frankenstein, and John Polidori's The Vampyre. It set in the celebrated summer of 1816 at Villa Diodati by Lake Geneva, whereby the film drenches one into the incitements of Lord Byron, Percy Shelley, Mary Shelley, Claire Clairmont, and Dr. John Polidori. By laudanum, by forbidden lusts and by a foul storm, they found their wager-that one would compose the scariest ghost story-turned, in itself, into the descent into hallucinatory horrors.

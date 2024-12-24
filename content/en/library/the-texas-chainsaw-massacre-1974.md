@@ -1,20 +1,20 @@
 ---
-title: "The Texas Chain Saw Massacre"
+title: "The Texas Chainsaw Massacre (1974)"
 description: ""
 # format for string: "xxxx-xx-xx"
-date: 2024-11-20
-lastmod: "2024-11-20"
+date: 1974-10-11
+lastmod: "2024-12-24"
 # set false when you want the post publish
 draft: true
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
-categories: ["My Life"]
+categories: ["My reviews"]
 # refer to categories
-tags: ["gsc", "xbox"]
+tags: ["folklore", "madness", "necro fetishism", "chainsaw", "The Texas Chain Saw Massacre"]
 # seires
-series: ["S.T.A.L.K.E.R. 2"]
+series: []
 # Top image for the post /local/images/test/cover.jpg
-image: "/uk/images/posts/stalker2/cover.webp"
+image: "/images/library/the-texas-chainsaw-massacre-1974/cover.webp"
 # Hide from home and other main page
 hideFromCenter: false
 # Hide from archive page
@@ -24,8 +24,6 @@ hideFromSection: false
 # Hide from everything but the Sitemap
 hideFromSitemap: false
 ---
-# The Texas Chain Saw Massacre
-
 ## The Impending Plot
 
 One of the most frightening tales of isolation, horror, and cruelty was directed by Tobe Hooper in 1974 and is called The Texas Chain Saw Massacre. It begins with the disturbing display of desecrated corpses, which sets up the entire movie for an incredibly grotesque, surreal nightmare. Five young travelers Sally, Franklin, Jerry, Pam, and Kirk are taking a road trip across rural Texas, and that is when they accidentally cross the threshold of Leatherface's twisted family.

@@ -1,20 +1,20 @@
 ---
-title: "Acid Dreams"
-description: ""
+title: "Jacob's Ladder (1990)"
+description: "Acid Dreams"
 # format for string: "xxxx-xx-xx"
-date: 2024-11-20
-lastmod: "2024-11-20"
+date: 1990-11-02
+lastmod: "2024-12-24"
 # set false when you want the post publish
 draft: true
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
-categories: ["My Life"]
+categories: ["My reviews"]
 # refer to categories
-tags: ["gsc", "xbox"]
+tags: ["militarism", "drugs", "biohazard"]
 # seires
-series: ["S.T.A.L.K.E.R. 2"]
+series: ["It's not what it seems"]
 # Top image for the post /local/images/test/cover.jpg
-image: "/uk/images/posts/stalker2/cover.webp"
+image: "/images/library/jacobs-ladder-1990/cover.webp"
 # Hide from home and other main page
 hideFromCenter: false
 # Hide from archive page

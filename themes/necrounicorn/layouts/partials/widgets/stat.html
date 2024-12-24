@@ -2,18 +2,18 @@
 {{ $isMultiLingual := and (ne .Site.Language.Weight 1) (and .Site.IsMultiLingual (not .Site.Params.Site.OnlyOneLang)) }}
 <ul>
     <li><a href='{{ if $isMultiLingual }}
-        {{ $langNow | relURL}}/articles
-    {{ else }}
-        {{ "articles/" | relURL }}
-    {{ end }}'>
-        {{ i18n "sidebar_articles" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "articles") }}
-    </a></li>
-    <li><a href='{{ if $isMultiLingual }}
         {{ $langNow | relURL}}/posts
     {{ else }}
         {{ "posts/" | relURL }}
     {{ end }}'>
         {{ i18n "sidebar_posts" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "posts") }}
+    </a></li>
+    <li><a href='{{ if $isMultiLingual }}
+        {{ $langNow | relURL}}/articles
+    {{ else }}
+        {{ "articles/" | relURL }}
+    {{ end }}'>
+        {{ i18n "sidebar_articles" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "articles") }}
     </a></li>
     <li><a href='{{ if $isMultiLingual }}
         {{ $langNow | relURL}}/stories

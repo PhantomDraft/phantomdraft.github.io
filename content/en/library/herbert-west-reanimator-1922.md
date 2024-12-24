@@ -1,20 +1,20 @@
 ---
-title: "Herbert West - Reanimator. Lovecraft and Shelley: A Parody of Frankenstein"
-description: ""
+title: "Herbert West Reanimator (1922)"
+description: "Herbert West - Reanimator. Lovecraft and Shelley: A Parody of Frankenstein"
 # format for string: "xxxx-xx-xx"
-date: 2024-11-20
-lastmod: "2024-11-20"
+date: 1922-06-01
+lastmod: "2024-12-24"
 # set false when you want the post publish
 draft: true
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
-categories: ["My Life"]
+categories: ["My reviews"]
 # refer to categories
-tags: ["gsc", "xbox"]
+tags: ["gothic", "sci-fi", "folklore", "necro fetishism", "biohazard", "zombie", "mary shelley", "lovecraft"]
 # seires
-series: ["S.T.A.L.K.E.R. 2"]
+series: ["Mary Shelley: Mother of Biopunk", "Horrors that are Referenced"]
 # Top image for the post /local/images/test/cover.jpg
-image: "/uk/images/posts/stalker2/cover.webp"
+image: "/images/library/gothic-1986/cover.webp"
 # Hide from home and other main page
 hideFromCenter: false
 # Hide from archive page
@@ -24,7 +24,7 @@ hideFromSection: false
 # Hide from everything but the Sitemap
 hideFromSitemap: false
 ---
-# Herbert West \- Reanimator. Lovecraft and Shelley: A Parody of Frankenstein
+## Herbert West \- Reanimator. Lovecraft and Shelley: A Parody of Frankenstein
 
 ## Short Story by H. P. Lovecraft
 
@@ -38,13 +38,19 @@ This first experimental reanimation involves the body of a construction worker \
 
 ## Data
 
-Characters and Themes
+### Characters and Themes
 
-Herbert West: Reanimator is the epitome of a brilliant mad scientist who is dangerously arrogant. He crosses the line of amoral human life, driven by his insane bent that seeking to defy death has nothing to do with moral concerns. It is his reanimation serum which the story revolves, leading him every time to bloody, agitated ungovernable consequences. Similarities can be found between West's insanity and the character of Frankenstein's monster in Mary Shelley's Frankenstein, although in this case, Lovecraft 's emphasis is more on the consequences of unbridled scientific ambition rather than their sympathy with the reanimated beings themselves.
+#### Herbert West
 
-The Narrator: The unnamed narrator plays the role of West's observer and reluctant accomplice in crime. His initial fascination changes, as the experiments become more disturbing, into horror at what he learns from West's theories. It is a critical turning point in the story when the narrator finally realizes that West's pursuit is a dangerous obsession.
+Reanimator is the epitome of a brilliant mad scientist who is dangerously arrogant. He crosses the line of amoral human life, driven by his insane bent that seeking to defy death has nothing to do with moral concerns. It is his reanimation serum which the story revolves, leading him every time to bloody, agitated ungovernable consequences. Similarities can be found between West's insanity and the character of Frankenstein's monster in Mary Shelley's Frankenstein, although in this case, Lovecraft 's emphasis is more on the consequences of unbridled scientific ambition rather than their sympathy with the reanimated beings themselves.
 
-Themes: At the heart of the story, Herbert West: Reanimator deals with the menace of overreaching into science, playing god, and the thin boundary that separates genius and madness. Its supernatural aspects, like Lovecraft's other work, also comment on the rising concern during the time about scientific achievement and the ethics of its encroachment. Within that fear, the fear of humans overstepping bounds in the exercise of their science and in the exercise of dying would manifest in the reanimated corpses.
+#### The Narrator
+
+The unnamed narrator plays the role of West's observer and reluctant accomplice in crime. His initial fascination changes, as the experiments become more disturbing, into horror at what he learns from West's theories. It is a critical turning point in the story when the narrator finally realizes that West's pursuit is a dangerous obsession.
+
+### Themes
+
+At the heart of the story, Herbert West: Reanimator deals with the menace of overreaching into science, playing god, and the thin boundary that separates genius and madness. Its supernatural aspects, like Lovecraft's other work, also comment on the rising concern during the time about scientific achievement and the ethics of its encroachment. Within that fear, the fear of humans overstepping bounds in the exercise of their science and in the exercise of dying would manifest in the reanimated corpses.
 
 ## Conclusion
 

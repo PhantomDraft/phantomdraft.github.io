@@ -1,20 +1,20 @@
 ---
-title: "Godzilla (1954): The Monster Born from Humanity’s Hubris"
-description: ""
+title: "Godzilla (1954)"
+description: "The Monster Born from Humanity’s Hubris"
 # format for string: "xxxx-xx-xx"
-date: 2024-11-20
-lastmod: "2024-11-20"
+date: 1954-10-27
+lastmod: "2024-12-24"
 # set false when you want the post publish
 draft: true
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
-categories: ["My Life"]
+categories: ["My reviews"]
 # refer to categories
-tags: ["gsc", "xbox"]
+tags: ["sci-fi", "militarism", "kaiju"]
 # seires
-series: ["S.T.A.L.K.E.R. 2"]
+series: []
 # Top image for the post /local/images/test/cover.jpg
-image: "/uk/images/posts/stalker2/cover.webp"
+image: "/images/library/godzilla-1954/cover.webp"
 # Hide from home and other main page
 hideFromCenter: false
 # Hide from archive page
@@ -24,9 +24,9 @@ hideFromSection: false
 # Hide from everything but the Sitemap
 hideFromSitemap: false
 ---
-# Godzilla (1954): The Monster Born from Humanity’s Hubris
+## Godzilla (1954): The Monster Born from Humanity’s Hubris
 
-## Atomic Weapons Stir Monsters
+### Atomic Weapons Stir Monsters
 
 In 1953, the world bore witness to the cinematic release of The Beast from 20,000 Fathoms, an adaptation of Ray Bradbury's "The Fog Horn." It birthed the monster movie genre related to nuclear testing, setting a precedent for such films that would subsequently deal with human destructive capability. Only a year later, in 1954, Godzilla emerged from Japan—a nation still reeling from the aftermath of Hiroshima and Nagasaki. Drawing direct inspiration from the earlier film, Godzilla not only embodied the terror of nuclear devastation but also reflected Japan’s unique perspective as a victim of such destruction.
 
@@ -40,7 +40,7 @@ Here is a dark but tragic tale that has been introduced with a 1954 film. Godzil
 
 Whereas the regular monster movies have their easy villain, Godzilla himself was just the part of nature, punishing humankind without malice toward it. The story ends with the grueling use of the Oxygen Destroyer, a device of immense destructive power, which, while destroying Godzilla, causes ethical costs as it brings to mind "the atomic bomb".
 
-## Defining the Monster: Who Is Godzilla?
+### Defining the Monster: Who Is Godzilla?
 
 Godzilla is more than a monstrous reptilian figure; it is a cultural symbol. Conceived as a hybrid of a Tyrannosaurus, Stegosaurus, and alligator, its design reflects the scars of nuclear war. The keloid-like texture of its skin evokes the burns suffered by survivors of Hiroshima and Nagasaki.
 

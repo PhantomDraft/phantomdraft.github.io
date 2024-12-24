@@ -1,20 +1,20 @@
 ---
-title: "The Beast from 20,000 Fathoms: A Legacy in Atomic Fear"
+title: "The Beast from 20,000 Fathoms (1953)"
 description: ""
 # format for string: "xxxx-xx-xx"
-date: 2024-11-20
-lastmod: "2024-11-20"
+date: 1953-06-13
+lastmod: "2024-12-24"
 # set false when you want the post publish
 draft: true
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
-categories: ["My Life"]
+categories: ["My reviews"]
 # refer to categories
-tags: ["gsc", "xbox"]
+tags: ["science fiction", "militarism", "fog", "ray bradbury", "eugène lourié"]
 # seires
-series: ["S.T.A.L.K.E.R. 2"]
+series: ["Pioneers of Horror", "Horrors that are Referenced", "Horror stories about lighthouses"]
 # Top image for the post /local/images/test/cover.jpg
-image: "/uk/images/posts/stalker2/cover.webp"
+image: "/images/library/the-beast-from-20000-fathoms-1953/cover.webp"
 # Hide from home and other main page
 hideFromCenter: false
 # Hide from archive page
@@ -24,7 +24,7 @@ hideFromSection: false
 # Hide from everything but the Sitemap
 hideFromSitemap: false
 ---
-# **The Beast from 20,000 Fathoms: A Legacy in Atomic Fear**
+## The Beast from 20,000 Fathoms: A Legacy in Atomic Fear
 
 ## The Fog Horn
 
