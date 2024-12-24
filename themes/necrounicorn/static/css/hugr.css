@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 22.9
+	Version: 23.0
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('font-awesome.min.css');
@@ -217,15 +217,15 @@ option {
  * Выделение
  */
 ::selection {
-    background-color: pink;
+    background-color: #4169E1;
     color: #eee;
 }
 ::-moz-selection {
-    background: none repeat scroll 0 0 pink;
+    background: none repeat scroll 0 0 #4169E1;
     color: #eee;
 }
 ::selection {
-    background: none repeat scroll 0 0 pink;
+    background: none repeat scroll 0 0 #4169E1;
     color: #eee;
 }
 
@@ -1439,7 +1439,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
 .sidebar section .inner ul li a:hover {
     background: #1f1f1f;
     border-left: 1px solid pink;
-    color: pink; text-decoration: none;
+    color: #b22; text-decoration: none;
 }
 
 /*

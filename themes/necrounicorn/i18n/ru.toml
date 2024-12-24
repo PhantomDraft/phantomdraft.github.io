@@ -50,17 +50,17 @@
 [sidebar_comment] # This button will not appear until the comment function is turned on
 	other = 'комментарий'
 [sidebar_articles]
-	other = 'статьи'
+	other = 'Статьи'
 [sidebar_posts]
-	other = 'посты'
+	other = 'Посты'
 [sidebar_stories]
-	other = 'истории'
+	other = 'Истории'
 [sidebar_series]
-	other = 'серии'
+	other = 'Серии'
 [sidebar_categories]
-	other = 'категории'
+	other = 'Категории'
 [sidebar_tags]
-	other = 'теги'
+	other = 'Теги'
 [sidebar_followMe]
 	other = 'Автор сайта'
 [sidebar_tableOfContent]

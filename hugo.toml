@@ -107,7 +107,7 @@ paginate = 9
         pre = ""
         weight = 1
     [[menus.social]]
-        name = "horrorprom on Instagram"
+        name = "Horrorprom on Instagram"
         url = "https://www.instagram.com/horrorprom/"
         pre = ""
         weight = 2
@@ -169,7 +169,7 @@ paginate = 9
                 pre = ""
                 weight = 1
             [[languages.uk.menus.social]]
-                name = "horrorprom на Instagram"
+                name = "Horrorprom на Instagram"
                 url = "https://www.instagram.com/horrorprom/"
                 pre = ""
                 weight = 2
@@ -209,7 +209,7 @@ paginate = 9
 
             # social
             [[languages.ru.menus.social]]
-                name = "horrorprom в Telegram"
+                name = "Horrorprom в Telegram"
                 url = "https://t.me/horrorprom"
                 pre = ""
                 weight = 1

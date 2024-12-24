@@ -50,17 +50,17 @@
 [sidebar_comment] # This button will not appear until the comment function is turned on
 	other = 'comment'
 [sidebar_articles]
-	other = 'articles'
+	other = 'Articles'
 [sidebar_posts]
-	other = 'posts'
+	other = 'Posts'
 [sidebar_stories]
-	other = 'stories'
+	other = 'Stories'
 [sidebar_series]
-	other = 'series'
+	other = 'Series'
 [sidebar_categories]
-	other = 'categories'
+	other = 'Categories'
 [sidebar_tags]
-	other = 'tags'
+	other = 'Tags'
 [sidebar_followMe]
 	other = 'Author of the site'
 [sidebar_tableOfContent]
