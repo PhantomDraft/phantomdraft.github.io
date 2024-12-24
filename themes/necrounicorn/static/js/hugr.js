@@ -85,22 +85,21 @@ wnd.resize(function() {
 });
 
 $(document).on('click', '.mobile_navigation a, #table_of_contents a', function(e) {
-    e.preventDefault(); // Предотвращаем стандартное поведение ссылки
+    e.preventDefault();
 
-    let href = $(this).attr('href'); // Получаем якорь из href
-    let target = $(href); // Находим элемент по ID
+    let href = $(this).attr('href');
+    let target = $(href);
 
-    // Проверяем, существует ли целевой элемент
     if (target.length) {
         $('html, body').stop().animate({
-            scrollTop: target.offset().top // Прокрутка до элемента
+            scrollTop: target.offset().top
         }, 600, 'swing', function() {
             if (history.pushState) {
-                history.pushState(null, null, ' '); // Убираем якорь из адресной строки
+                history.pushState(null, null, ' ');
             }
         });
     } else {
-        console.error(`Element not found: ${href}`); // Логируем ошибку, если якорь отсутствует
+        console.error(`Element not found: ${href}`);
     }
 });
 
