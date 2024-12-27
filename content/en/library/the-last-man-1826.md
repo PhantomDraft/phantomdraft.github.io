@@ -1,11 +1,11 @@
 ---
 title: "The Last Man (1826)"
-description: "The Last Man: An Underrated Dystopian Vision by Mary Shelley"
+description: "An Underrated Dystopian Vision by Mary Shelley"
 # format for string: "xxxx-xx-xx"
 date: 1826-02-01
 lastmod: "2024-12-24"
 # set false when you want the post publish
-draft: true
+draft: false
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
 categories: ["My reviews"]
@@ -30,9 +30,9 @@ Mary Shelley, author of The Last Man, was the first to write an example of dysto
 
 ## The Impending Plot
 
-The novel begins with a fictional recounting of Shelley's discovery of prophetic writings from the Cumaean Sibyl; she then narrates a story from 2073 to 2100, which is about Lionel Verney \- a person who sees the whole human race die of a terrible plague.
+The novel begins with a fictional recounting of Shelley's discovery of prophetic writings from the Cumaean Sibyl; she then narrates a story from 2073 to 2100, which is about Lionel Verney — a person who sees the whole human race die of a terrible plague.
 
-Lionel was a roguish lawless child, but later he matured under Adrian's influence \- a philosophical nobleman but transparently an allusion to Percy Bysshe Shelley. Under Adrian's radicalism, Lionel becomes civilized and learned, standing against the Romantic principles of perfectibility and the high ideal of the connection between man and nature.
+Lionel was a roguish lawless child, but later he matured under Adrian's influence — a philosophical nobleman but transparently an allusion to Percy Bysshe Shelley. Under Adrian's radicalism, Lionel becomes civilized and learned, standing against the Romantic principles of perfectibility and the high ideal of the connection between man and nature.
 
 However, this plague soon attacks this beautiful creation. There are several Romantic influences in the characters of Adrian and Lord Raymond (another Byronic hero touched with passion and ambition) who aspire to lead humanity, but their character will not allow them to fulfill such an ideal. And so the population dwindles to the titular Last Man, wandering alone in a wasted world full of memories of his killed fellows.
 
@@ -40,7 +40,7 @@ Images of apocalypse, such as the sun-blackened earth, storm-wounded, and plagui
 
 ## Data
 
-### Characters in Shelley:
+### Characters in Shelley
 
 Shelley's characters mostly originate from her real-life connections.
 

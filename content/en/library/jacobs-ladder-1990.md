@@ -1,11 +1,11 @@
 ---
 title: "Jacob's Ladder (1990)"
-description: "Acid Dreams"
+description: "A Psychological Horror Between Hope and Despair"
 # format for string: "xxxx-xx-xx"
 date: 1990-11-02
 lastmod: "2024-12-24"
 # set false when you want the post publish
-draft: true
+draft: false
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
 categories: ["My reviews"]
@@ -26,7 +26,7 @@ hideFromSitemap: false
 ---
 ## Acid Dreams
 
-The inspiration behind Jacob's Ladder is Acid Dreams: The Complete Social History of LSD, perhaps Martin A. Lee and Bruce Shlain s most important tome. This book records a 40-year history of LSD, from its experiments by the CIA to those of the military, all during the Cold War. In uncanny parallel to the use of LSD for modification of behavior in the events of the film, soldiers are given a made-up experimental drug \- "The Ladder." Drawing from the voluminous archives of research done by the authors regarding covert drug testing, it makes apparent an uncomfortable truth: the fusion of progress in science and overreach by government in perfect harmony with angst at the heart of Adrian Lyne's haunting cinema.
+The inspiration behind Jacob's Ladder is <a href="/library/acid-dreams-1985/" target="_blank">Acid Dreams: The Complete Social History of LSD</a>, perhaps Martin A. Lee and Bruce Shlain s most important tome. This book records a 40-year history of LSD, from its experiments by the CIA to those of the military, all during the Cold War. In uncanny parallel to the use of LSD for modification of behavior in the events of the film, soldiers are given a made-up experimental drug — "The Ladder." Drawing from the voluminous archives of research done by the authors regarding covert drug testing, it makes apparent an uncomfortable truth: the fusion of progress in science and overreach by government in perfect harmony with angst at the heart of Adrian Lyne's haunting cinema.
 
 ## The Impending Plot
 
@@ -40,11 +40,11 @@ The religious motif adds another layer of dissonance. Louis, though a simple "bo
 
 ### Cultural Inspirations
 
-The title Jacob's Ladder takes from a biblical dream of Jacob indicating a link between Heaven and Earth; it is precisely this kind of journey that the film's structure presents \- Jacob's climb as both a literal and spiritual ascent. The narrative also depicts in a slightly less evident manner part of The Ladder of Jacob, a pseud epigraphic text filled with apocalyptic imagery and mysticism, complementing its rich symbolic fabric.
+The title Jacob's Ladder takes from a biblical dream of Jacob indicating a link between Heaven and Earth; it is precisely this kind of journey that the film's structure presents — Jacob's climb as both a literal and spiritual ascent. The narrative also depicts in a slightly less evident manner part of The Ladder of Jacob, a pseud epigraphic text filled with apocalyptic imagery and mysticism, complementing its rich symbolic fabric.
 
 ### Influence in Pop Culture
 
-The mind left the print quite lasting, most especially in the Silent Hill franchise in films that directly influenced Silent Hill 2, Silent Hill 3, Silent Hill 4: The Room, and Silent Hill: Homecoming. The film's disquieting visual motifs-the now-classic "shaking head" special effects-would render themselves hallmarks of psychological horror. Jacob's Ladder also served as the prime inspiration for The Evil Within, the American Horror Story: Asylum series, and Christopher Nolan's Oppenheimer. The intertextuality going on among all these makes the film cement its status as truly one of the keystones of the surreal horror genre.
+The concept left a lasting impression, most notably on the Silent Hill franchise, directly influencing Silent Hill 1. The film's disquieting visual motifs-the now-classic "shaking head" special effects-would render themselves hallmarks of psychological horror. Jacob's Ladder also served as the prime inspiration for The Evil Within, the American Horror Story: Asylum series, and Christopher Nolan's Oppenheimer. The intertextuality going on among all these makes the film cement its status as truly one of the keystones of the surreal horror genre.
 
 ### Characters
 

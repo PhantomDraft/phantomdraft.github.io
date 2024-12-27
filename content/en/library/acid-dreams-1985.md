@@ -5,7 +5,7 @@ description: "The complete social history of LSD is an acid dream"
 date: 1985-01-01
 lastmod: "2024-12-24"
 # set false when you want the post publish
-draft: true
+draft: false
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
 categories: ["My reviews"]
@@ -30,7 +30,7 @@ Acid Dreams: The Complete Social History of LSD: the CIA, the Sixties, and Beyon
 
 At the heart of this story is the CIA's covert project MKULTRA, which covertly administered subjects with doses of LSD to experiment its truth serum and psychological weapon possibilities. Such experiments often walked an ethical gray line, reflecting the moral ambiguity of the time. It also examines the cultural impacts of LSD, from the social movements, such as hippie counterculture, and antiwar protests during the 1960s.
 
-By comparing institutional manipulation with individual freedom, Acid Dreams propounds a paradox of how a single chemical would change personal consciousness and societal norms. Much of what is narrated in the text resonates with the concept behind Jacob's Ladder involving government experiments on soldiers, which creates the chain reaction through which the protagonist unravels psychologically and spiritually.
+By comparing institutional manipulation with individual freedom, Acid Dreams propounds a paradox of how a single chemical would change personal consciousness and societal norms. Much of what is narrated in the text resonates with the concept behind <a href="/library/jacobs-ladder-1990/" target="_blank">Jacob's Ladder</a> involving government experiments on soldiers, which creates the chain reaction through which the protagonist unravels psychologically and spiritually.
 
 ### Psychiatric Encounters and Experiments
 
@@ -40,7 +40,7 @@ There are accounts of Hofmann’s own hospitalization due to mental strain, whic
 
 ### The Birth of the Hippie Movement
 
-When Hofmann first discovered LSD, he imagined it would only help in meditative and spiritual pursuits. However, the succeeding years eventuated in the radical alteration of LSD's fate. With the likes of Timothy Leary and Ken Kesey, LSD jumped from a research laboratory and traversed into a flourishing counterculture. It became a drug synonymous with the hippie movement, inciting rebellion against mainstream societal norms \- a rebellion that challenged mainstream art, spirituality, personal indulgence, and communal living.
+When Hofmann first discovered LSD, he imagined it would only help in meditative and spiritual pursuits. However, the succeeding years eventuated in the radical alteration of LSD's fate. With the likes of Timothy Leary and Ken Kesey, LSD jumped from a research laboratory and traversed into a flourishing counterculture. It became a drug synonymous with the hippie movement, inciting rebellion against mainstream societal norms — a rebellion that challenged mainstream art, spirituality, personal indulgence, and communal living.
 
 The tract's hegemonic hippie basis is called peace, love, and a wider consciousness than hermetically sealing the acid's allocentricity. And for all the organic, it was fed into a complex of simultaneous happenings scientific discoveries, societal upheavals, and clandestine government programs like the CIA's MKULTRA that did end up making the drug public, albeit for sinister reasons.
 

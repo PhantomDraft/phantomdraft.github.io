@@ -5,12 +5,12 @@ description: "The Flesh Reimagined: Frankenstein as the Blueprint of Biopunk and
 date: 1818-01-01
 lastmod: "2024-12-24"
 # set false when you want the post publish
-draft: true
+draft: false
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
 categories: ["My reviews"]
 # refer to categories
-tags: ["romanticism", "gothic", "sci-fi", "folklore", "necro fetishism", "humanism", "posthumanism", "zombie", "mary shelley", "luigi galvani"]
+tags: ["romanticism", "gothic", "sci-fi", "biopunk", "folklore", "necro fetishism", "humanism", "posthumanism", "zombie", "mary shelley", "luigi galvani"]
 # seires
 series: ["Mary Shelley: Mother of Biopunk", "Pioneers of Horror"]
 # Top image for the post /local/images/test/cover.jpg
@@ -30,9 +30,9 @@ hideFromSitemap: false
 
 He undertakes this effort alone, driven by what seems to be his most idealistic vision. This, in essence, is the story of *Frankenstein*, centered on the theme of isolation and the unintended consequences brought about by the pride and ambition of its scientist protagonist. Such experimentation as these have been carried out by Erasmus Darwin, and with that of Shelley, an examination about the vibrant undertaking of a single scientist to pry into the life secrets. In *Frankenstein*, the protagonist assembles a body from the remains of the dead, using an undisclosed method to bring it to life. The tragedy lies in his relentless intellectual curiosity, which blinds him to the moral consequences of his actions. The line between creating and destroying is worryingly thin. Her vision remains ever-relevant, connecting the anxieties of her time with our own questions about science, identity, and what it means to be human.
 
-The tale is told in letters written by the Arctic explorer Robert Walton and includes Victor’s own account of the experiments he conducted and the subsequent disastrous effects of that monstrous achievement. It reflects a trend so often now: stories at once folded over one another and parsimoniously mirrored, like the characters isolated within their moral dilemmas \- their common inheritance in despair and failure.
+The tale is told in letters written by the Arctic explorer Robert Walton and includes Victor’s own account of the experiments he conducted and the subsequent disastrous effects of that monstrous achievement. It reflects a trend so often now: stories at once folded over one another and parsimoniously mirrored, like the characters isolated within their moral dilemmas — their common inheritance in despair and failure.
 
-These ideas inspired Shelley to create a rich and very particular style of writing that is eternally valid for its deep humanity. *Frankenstein* has transcended its period, influencing many other works across time, genres, and media. Its reach is vast—ranging from the homage in *Army of Frankenstein*, which draws inspiration not only from the theme but also from the title, to the developers of *Resident Evil: Village*, who trace conceptual roots back to Shelley’s work, all the way to the biopunk zombie archetype, directly connected to Herbert West – Reanimator by H.P. Lovecraft.
+These ideas inspired Shelley to create a rich and very particular style of writing that is eternally valid for its deep humanity. *Frankenstein* has transcended its period, influencing many other works across time, genres, and media. Its reach is vast—ranging from the homage in *Army of Frankenstein*, which draws inspiration not only from the theme but also from the title, to the developers of *Resident Evil: Village*, who trace conceptual roots back to Shelley’s work, all the way to the biopunk zombie archetype, directly connected to <a href="/library/herbert-west-reanimator-1922/" target="_blank">Herbert West – Reanimator</a> by H.P. Lovecraft.
 
 ## Data
 

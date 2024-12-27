@@ -1,11 +1,11 @@
 ---
 title: "Gothic (1986)"
-description: ""
+description: "Literary Monsters, the Alchemy of Madness, and the Boundaries of Creation"
 # format for string: "xxxx-xx-xx"
 date: 1986-11-30
 lastmod: "2024-12-24"
 # set false when you want the post publish
-draft: true
+draft: false
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
 categories: ["My reviews"]
@@ -26,11 +26,11 @@ hideFromSitemap: false
 ---
 ## The Impending Plot
 
-Ken Russell's Gothic (1986) holds the invitation for the audience into those chaotic nights that spun out these two pillars of literary horror: Mary Shelley's Frankenstein, and John Polidori's The Vampyre. It set in the celebrated summer of 1816 at Villa Diodati by Lake Geneva, whereby the film drenches one into the incitements of Lord Byron, Percy Shelley, Mary Shelley, Claire Clairmont, and Dr. John Polidori. By laudanum, by forbidden lusts and by a foul storm, they found their wager-that one would compose the scariest ghost story-turned, in itself, into the descent into hallucinatory horrors.
+Ken Russell's Gothic (1986) holds the invitation for the audience into those chaotic nights that spun out these two pillars of literary horror: Mary Shelley's <a href="/library/frankenstein-1818/" target="_blank">Frankenstein</a>, and John Polidori's The Vampyre. It set in the celebrated summer of 1816 at Villa Diodati by Lake Geneva, whereby the film drenches one into the incitements of Lord Byron, Percy Shelley, Mary Shelley, Claire Clairmont, and Dr. John Polidori. By laudanum, by forbidden lusts and by a foul storm, they found their wager-that one would compose the scariest ghost story-turned, in itself, into the descent into hallucinatory horrors.
 
 Mary's dreamlike vision of a "hideous phantom" and the "uneasy, half-vital motion" in herself of her imagined monster echo real-life experiences of loss and fascination with the boundaries set by life. The séance as depicted in the film, both literally and metaphorically, brings out from them the specters of their fears, as well as the seeds of stories that would then haunt generations.
 
-In my article "The Idea of Apocalypse in Horror Movies, Particularly Slashers Movies," I have discussed how Frankenstein is the case study of cultural and technological anxieties that fuel apocalyptic narratives. Russell amplifies this notion with vulgar vision and indecency-a fusion of grueling grotesqueries and psychological torment into a cinematic phantasmagoria.
+In my article <a href="/articles/the-idea-of-apocalypse-in-horror-films-particularly-slashers-films/" target="_blank">"The idea of Apocalypse in horror films, particularly slashers films"</a>, I have discussed how Frankenstein is the case study of cultural and technological anxieties that fuel apocalyptic narratives. Russell amplifies this notion with vulgar vision and indecency-a fusion of grueling grotesqueries and psychological torment into a cinematic phantasmagoria.
 
 ## Data
 
@@ -44,8 +44,8 @@ Russell does not, however, make any qualms about the anarchic and hedonistic nat
 
 ## Conclusion
 
-It is not only a historical record but also an almost viscous descent into the genius of madness. Russell's daring narrative is layered with much intricate imagery and literary allusion to capture the stormy alchemy of that fateful summer night. It cannot be mistaken for hallucinatory \- the viewer is impelled instead to ponder the frail line between creation and destruction.
+It is not only a historical record but also an almost viscous descent into the genius of madness. Russell's daring narrative is layered with much intricate imagery and literary allusion to capture the stormy alchemy of that fateful summer night. It cannot be mistaken for hallucinatory — the viewer is impelled instead to ponder the frail line between creation and destruction.
 
-It was much more than just making up stories with Byron's bet \- an even greater despair and more cosmic depth: the darkest fears and anguishes of humanity. Mary Shelley's tragic loss and the scientific experiments of her age could hardly have inspired anything but her evergreen story of hubris and redemption. As for Russell, Gothic is an unapologetically alive, fierce work: it is the praise spoken by his subversive creativity.
+It was much more than just making up stories with Byron's bet — an even greater despair and more cosmic depth: the darkest fears and anguishes of humanity. Mary Shelley's tragic loss and the scientific experiments of her age could hardly have inspired anything but her evergreen story of hubris and redemption. As for Russell, Gothic is an unapologetically alive, fierce work: it is the praise spoken by his subversive creativity.
 
 Revisiting Gothic, we face not only the monster of Shelley's Frankenstein but also our own ongoing attempts at creation and the shadows they cast.

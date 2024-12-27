@@ -1,11 +1,11 @@
 ---
-title: "Matka Joanna Od Aniolow (1961)"
+title: "Matka Joanna od Aniołów (1961)"
 description: "The Silent Echo of Possession: Matka Joanna od Aniołów as a Testament to Human Resilience"
 # format for string: "xxxx-xx-xx"
 date: 1961-02-09
 lastmod: "2024-12-24"
 # set false when you want the post publish
-draft: true
+draft: false
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
 categories: ["My reviews"]

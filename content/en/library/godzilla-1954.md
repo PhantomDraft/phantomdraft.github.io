@@ -5,14 +5,14 @@ description: "The Monster Born from Humanity’s Hubris"
 date: 1954-10-27
 lastmod: "2024-12-24"
 # set false when you want the post publish
-draft: true
+draft: false
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
 categories: ["My reviews"]
 # refer to categories
-tags: ["sci-fi", "militarism", "kaiju"]
+tags: ["sci-fi", "atompunk", "militarism", "kaiju"]
 # seires
-series: []
+series: ["Godzilla (franchise)"]
 # Top image for the post /local/images/test/cover.jpg
 image: "/images/library/godzilla-1954/cover.webp"
 # Hide from home and other main page
@@ -28,7 +28,7 @@ hideFromSitemap: false
 
 ### Atomic Weapons Stir Monsters
 
-In 1953, the world bore witness to the cinematic release of The Beast from 20,000 Fathoms, an adaptation of Ray Bradbury's "The Fog Horn." It birthed the monster movie genre related to nuclear testing, setting a precedent for such films that would subsequently deal with human destructive capability. Only a year later, in 1954, Godzilla emerged from Japan—a nation still reeling from the aftermath of Hiroshima and Nagasaki. Drawing direct inspiration from the earlier film, Godzilla not only embodied the terror of nuclear devastation but also reflected Japan’s unique perspective as a victim of such destruction.
+In 1953, the world bore witness to the cinematic release of <a href="/library/the-beast-from-20000-fathoms-1953/" target="_blank">The Beast from 20,000 Fathoms</a>, an adaptation of Ray Bradbury's "The Fog Horn." It birthed the monster movie genre related to nuclear testing, setting a precedent for such films that would subsequently deal with human destructive capability. Only a year later, in 1954, Godzilla emerged from Japan—a nation still reeling from the aftermath of Hiroshima and Nagasaki. Drawing direct inspiration from the earlier film, Godzilla not only embodied the terror of nuclear devastation but also reflected Japan’s unique perspective as a victim of such destruction.
 
 ### A Cinematic Influence Across Genres
 

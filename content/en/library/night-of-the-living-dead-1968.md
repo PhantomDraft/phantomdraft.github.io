@@ -1,16 +1,16 @@
 ---
 title: "Night of the Living Dead (1968)"
-description: "Night of the Living Dead: A Harrowing Vision of Unity"
+description: "A Harrowing Vision of Unity"
 # format for string: "xxxx-xx-xx"
 date: 1968-10-01
 lastmod: "2024-12-24"
 # set false when you want the post publish
-draft: true
+draft: false
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
 categories: ["My reviews"]
 # refer to categories
-tags: ["sci-fi", "folklore", "isolation", "biohazard", "pandemic", "zombie", "cannibals", "george romero"]
+tags: ["sci-fi", "biopunk", "folklore", "isolation", "biohazard", "pandemic", "zombie", "cannibals", "george romero"]
 # seires
 series: ["Horrors that are Referenced"]
 # Top image for the post /local/images/test/cover.jpg
@@ -30,13 +30,13 @@ hideFromSitemap: false
 
 George A. Romero's Night of the Living Dead (1968) is a fundamental element of horror cinema, and basing itself on a budget, it is the most commendable tale of survival and social decay. That and the mysterious raising of the dead scattered throughout rural Pennsylvania has turned a house in a farm into a battleground. It begins with Barbra and Johnny visiting a graveyard but ends when they are attacked by some creepy and flesh-hungry aggressor. Barbra takes flight toward the farmhouse, where she meets Ben, an ingenious stranger, and the other survivors who must contend not only with the living among the dead, but also their battles with other members of romantic society.
 
-Unlike Hitchcock’s ***The Birds***, which terrifies with its depiction of nature’s uncontrollable wrath, *Night of the Living Dead* replaces realism with a metaphoric nightmare. The zombies symbolize more than just creatures—they are the fears, failures, and fractures of humanity given flesh. While Hitchcock’s birds instill dread through their unrelenting and natural behavior, Romero's zombies, though slower and less realistic, embody the loss of human identity and order.
+Unlike Hitchcock’s <a href="/library/the-birds-1963/" target="_blank">The Birds</a>, which terrifies with its depiction of nature’s uncontrollable wrath, Night of the Living Dead replaces realism with a metaphoric nightmare. The zombies symbolize more than just creatures—they are the fears, failures, and fractures of humanity given flesh. While Hitchcock’s birds instill dread through their unrelenting and natural behavior, Romero's zombies, though slower and less realistic, embody the loss of human identity and order.
 
 ## Data
 
 ### A Revolution in Cinematography
 
-Night of the Living Dead was the first time that audiences encountered the now-classic zombie archetype of reanimated corpses driven to insatiable compulsions for human flesh. The word "zombie" may not have been employed in the film, but Romero's ghouls transformed the undead, a departure from previous images based on Haitian lore. This image, however, was on its first approaches in the writings by HP Lovecraft-scarcely in Herbert West: Re-Animator, when corpses are being revived horrifically. Romero took another step, creating zombies who could not be controlled by a human but served as messengers of disorder, without any purpose besides feeding upon the living.
+Night of the Living Dead was the first time that audiences encountered the now-classic zombie archetype of reanimated corpses driven to insatiable compulsions for human flesh. The word "zombie" may not have been employed in the film, but Romero's ghouls transformed the undead, a departure from previous images based on Haitian lore. This image, however, was on its first approaches in the writings by HP Lovecraft-scarcely in <a href="/library/herbert-west-reanimator-1922/" target="_blank">Herbert West: Re-Animator</a>, when corpses are being revived horrifically. Romero took another step, creating zombies who could not be controlled by a human but served as messengers of disorder, without any purpose besides feeding upon the living.
 
 ### Characters and Symbolism
 
@@ -50,7 +50,7 @@ One of the most disconcerting and emblematic moments in the film is Karen Cooper
 
 Romero's filmmaking truly is guerrilla because it ends up dictating many pragmatic choices vis-a-vis a budget that might not even have been visible in comparison with the standard size of features. Indeed, black-and-white not only masked the cost problems of shooting but also brought a more realistic "documentary" feel that gave strength to the whole atmosphere of the film. The use of local actors, along with practical phenomena, was used to set up the horror within an element of disturbingly normal.
 
-The brutal and nihilistic ending \- where Ben fails to be recognized as having ghoul status and is shot by a white posse \- serves an unnerving commentary on racial prejudice inspired by systemic violence. The subplot is devastating in a year that witnessed Martin Luther King Jr.’s assassination. The consequence would echo loudly, ensuring the film's positioning as cultural and political touchstones.
+The brutal and nihilistic ending — where Ben fails to be recognized as having ghoul status and is shot by a white posse — serves an unnerving commentary on racial prejudice inspired by systemic violence. The subplot is devastating in a year that witnessed Martin Luther King Jr.’s assassination. The consequence would echo loudly, ensuring the film's positioning as cultural and political touchstones.
 
 That is, Night of the Living Dead could scare its audience and, at the same time, mirror the many fractures and fears of the time. It pioneered a subgenre that is still widely influencing and dominates cinema and culture beyond time or space by integrating Lovecraftian horror elements into contemporary sociopolitical issues.
 

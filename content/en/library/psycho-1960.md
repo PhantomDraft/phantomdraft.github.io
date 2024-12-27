@@ -5,7 +5,7 @@ description: ""
 date: 1960-09-08
 lastmod: "2024-12-24"
 # set false when you want the post publish
-draft: true
+draft: false
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
 categories: ["My reviews"]
@@ -26,9 +26,9 @@ hideFromSitemap: false
 ---
 ## The Impending Plot
 
-The story of Psycho at its own heart is unexpected and, indeed, unsettling. After stealing $40,000 from her employer, Marion Crane, secretary intended to turn her life around, drives to a foreboding, deserted Bates Motel signified by an imposing Victorian house. Their dinner hints at the frailty of his psyche, but no one would suspect what lay ahead.
+The story of Psycho at its own heart is unexpected and, indeed, unsettling. After stealing $40,000 from her employer, Marion Crane, a secretary intending to turn her life around, drives to the foreboding, deserted Bates Motel, signified by an imposing Victorian house. Their dinner hints at the frailty of his psyche, but no one would suspect what lay ahead.
 
-The notorious shower scene, during which Marion meets her tragic end, almost immediately alters the direction of the storyline in the direction of Norman's shadowy world. The most spine-chilling climax \- the revelation of Norman's divided self and the horrific reality regarding his mother \- makes Psycho a psychological thriller, not an archetypal one.
+The notorious shower scene, during which Marion meets her tragic end, almost immediately alters the direction of the storyline in the direction of Norman's shadowy world. The most spine-chilling climax — the revelation of Norman's divided self and the horrific reality regarding his mother — makes Psycho a psychological thriller, not an archetypal one.
 
 ## Data
 
@@ -40,7 +40,7 @@ Joseph Stefano made the script deeper by humanizing Marion; he made Norman a swe
 
 ### Production Innovations
 
-Not filmed in color because in part to save money but also for proper, suspension-raising purposes, Hitchcock shot the film in black and white. Consisting of 78 fast cuts and underscored by a shrieking violin score of Bernard Herrmann, the famed shower episode could make thrilling terror even without explicit gore. In cast with Marion Crane, the performance of Janet Leigh won her not only a Golden Globe but with Academy Award nominations \- Vera Miles and Perkins-both deepened the emotional craziness of the film.
+Not filmed in color because in part to save money but also for proper, suspension-raising purposes, Hitchcock shot the film in black and white. Consisting of 78 fast cuts and underscored by a shrieking violin score of Bernard Herrmann, the famed shower episode could make thrilling terror even without explicit gore. In cast with Marion Crane, the performance of Janet Leigh won her not only a Golden Globe but with Academy Award nominations — Vera Miles and Perkins-both deepened the emotional craziness of the film.
 
 ### The Power of Sound and Vision
 
@@ -48,6 +48,6 @@ There was score-only string music presented by Herrmann to increase the heavy su
 
 ## Conclusion
 
-Psycho is more than a film \- it is a cultural landmark that transformed the horror genre. It has left its legacy on films like Halloween and Scream, and it still evokes themes of disintegration and moral ambiguity in today's psychological thriller. The remaking of the film lives on, including Gus Van Sant's 1998 shot-for-shot reinterpretation, and the Bates Motel TV series, which investigates Norman's evil history.
+Psycho is more than a film — it is a cultural landmark that transformed the horror genre. It has left its legacy on films like Halloween and Scream, and it still evokes themes of disintegration and moral ambiguity in today's psychological thriller. The remaking of the film lives on, including Gus Van Sant's 1998 shot-for-shot reinterpretation, and the Bates Motel TV series, which investigates Norman's evil history.
 
 More than six decades later, Psycho continues to teach how to terrify and enthrall an audience. Hitchcock's genius, combined with groundbreaking storytelling and unforgettable performances, guarantees that this timeless masterpiece will haunt and inspire audiences for generations to come.
