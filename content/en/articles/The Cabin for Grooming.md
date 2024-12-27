@@ -196,7 +196,7 @@ The story of glamorous Hel from the cabin will continue, and she will appear in 
 The inspiration for the music during Hel Monroe’s appearance came from a song by a German rock band, which I’ll talk about later.
 
 ## Read also
-<div class="content-block">
+<div class="content-block" style="border: none;">
 	<div class="content-list-col">
 		<ul>
 			<li><a href="/library/the-cabin-in-the-woods-2012/" target="_blank">

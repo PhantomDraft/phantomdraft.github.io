@@ -194,7 +194,7 @@ hideFromSitemap: false
 Натхненням для створення музики під час появи Хель Монро стала пісня німецької рок-групи, про яку я розповім пізніше.
 
 ## Читайте також
-<div class="content-block">
+<div class="content-block" style="border: none;">
 	<div class="content-list-col">
 		<ul>
 			<li><a href="/uk/library/the-cabin-in-the-woods-2012/" target="_blank">
