@@ -24,7 +24,7 @@ hideFromSection: false
 # Hide from everything but the Sitemap
 hideFromSitemap: false
 ---
-# The Cabin in the Woods: Redefining Horror Tropes
+## The Cabin in the Woods: Redefining Horror Tropes
 
 ## The Impending Plot
 
