@@ -51,3 +51,14 @@ hideFromSitemap: false
 ## Заключение
 
 Как я отмечаю в своей статье <a href="/ru/articles/the-idea-of-apocalypse-in-horror-films-particularly-slashers-films/" target="_blank">«The idea of Apocalypse in horror films, particularly slashers films»</a>, «Техасская резня бензопилой» отражает экзистенциальный ужас своего времени, а также влияние механических инноваций. Этот фильм — зловещее напоминание о том, что ужасы часто становятся зеркалом своей эпохи, показывая, как даже инструменты, предназначенные для безопасности, могут превратиться в оружие террора.
+
+## Читайте также
+<div class="content-block" style="border: none;">
+	<div class="content-list-col">
+		<ul>
+			<li><a href="/ru/articles/the-idea-of-apocalypse-in-horror-films-particularly-slashers-films/" target="_blank">
+				The idea of Apocalypse in horror films, particularly slashers films
+			</a></li>
+		</ul>
+	</div>
+</div>
