@@ -194,4 +194,15 @@ Would be happy to have you follow <a href="" target="_blank">me on Instagram</a>
 The story of glamorous Hel from the cabin will continue, and she will appear in some of my upcoming projects\! 😉
 
 The inspiration for the music during Hel Monroe’s appearance came from a song by a German rock band, which I’ll talk about later.
+
+## Read also
+<div class="content-block">
+	<div class="content-list-col">
+		<ul>
+			<li><a href="/library/the-cabin-in-the-woods-2012/" target="_blank">
+				The Cabin in the Woods (2012)
+			</a></li>
+		</ul>
+	</div>
+</div>
 <!--more-->
