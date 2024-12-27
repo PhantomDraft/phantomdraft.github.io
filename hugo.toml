@@ -95,8 +95,8 @@ paginate = 9
         weight = 4
         pre = ""
     [[menus.main]]
-        name = "Library - soon!"
-        url = "#"
+        name = "Library!"
+        url = "/library/"
         weight = 5
         pre = ""
 
@@ -157,8 +157,8 @@ paginate = 9
                 weight = 4
                 pre = ""
             [[languages.uk.menus.main]]
-                name = "Бібліотека - скоро!"
-                url = "#"
+                name = "Бібліотека!"
+                url = "/uk/library/"
                 weight = 5
                 pre = ""
 
@@ -202,8 +202,8 @@ paginate = 9
                 weight = 4
                 pre = ""
             [[languages.ru.menus.main]]
-                name = "Библиотека - скоро!"
-                url = "#"
+                name = "Библиотека!"
+                url = "/ru/library/"
                 weight = 5
                 pre = ""
 
