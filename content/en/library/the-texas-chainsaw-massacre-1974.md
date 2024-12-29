@@ -12,7 +12,7 @@ categories: ["My reviews"]
 # refer to categories
 tags: ["folklore", "madness", "necro fetishism", "chainsaw", "The Texas Chain Saw Massacre"]
 # seires
-series: []
+series: ["The Texas Chainsaw Massacre (franchise)"]
 # Top image for the post /local/images/test/cover.jpg
 image: "/images/library/the-texas-chainsaw-massacre-1974/cover.webp"
 # Hide from home and other main page
