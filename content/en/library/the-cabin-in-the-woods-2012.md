@@ -65,12 +65,9 @@ The only one who is sane is Marty, as his self-intoxication with marijuana is a 
 By its clever retelling of the well-known narrative conventions of horror, The Cabin in the Woods effectively demonstrates that characters appear stupid not because of any incapacity or folly at the individual level, but rather because of the machinations of the outside world. It goes beyond thrills within the thriller itself; it becomes a sharp commentary on the genre's rules. Finally, it redefines everything horror actually amounts to, as The Cabin in the Woods pays off the horror film with what it mocks as the architecture of the horror trope, even in delivering only the thrills it promises.
 
 ## Read also
-<div class="content-block" style="border: none;">
-	<div class="content-list-col">
-		<ul>
-			<li><a href="/articles/the-cabin-for-grooming/" target="_blank">
-				The Cabin for Grooming
-			</a></li>
-		</ul>
-	</div>
-</div>
+
+<ul>
+	<li><a href="/articles/the-cabin-for-grooming/" target="_blank">
+		The Cabin for Grooming
+	</a></li>
+</ul>
