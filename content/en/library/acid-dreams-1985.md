@@ -1,5 +1,5 @@
 ---
-title: "Acid Dreams (The Complete Social History of LSD: The CIA, The Sixties, and Beyond)"
+title: "Acid Dreams"
 description: "The complete social history of LSD is an acid dream"
 # format for string: "xxxx-xx-xx"
 date: 1985-01-01

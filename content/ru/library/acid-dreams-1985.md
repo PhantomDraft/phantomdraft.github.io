@@ -1,5 +1,5 @@
 ---
-title: "Acid Dreams (Полная социальная история ЛСД — ЦРУ, 60-е и далее)"
+title: "Acid Dreams"
 description: "Полная социальная история ЛСД — кислотная мечта"
 # format for string: "xxxx-xx-xx"
 date: 1985-01-01
