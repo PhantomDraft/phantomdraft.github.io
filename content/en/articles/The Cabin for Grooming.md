@@ -24,7 +24,7 @@ hideFromSection: false
 # Hide from everything but the Sitemap
 hideFromSitemap: false
 ---
-## Turning a Beauty Case into a Monster Cabin, like in *Cabin in the Woods*
+## Turning a Beauty Case into a Monster Cabin, like in Cabin in the Woods
 
 **What You'll Need:**
 
@@ -47,7 +47,7 @@ My wife needed a new makeup bag, so I looked up different options online and fou
 	</p>
 </div>
 
-At first, I was just going to gift it as it was, but the Halloween spirit took over, and I convinced myself that this case could perfectly resemble a monster's camera from *Cabin in the Woods*.
+At first, I was just going to gift it as it was, but the Halloween spirit took over, and I convinced myself that this case could perfectly resemble a monster's camera from <a href="/library/the-cabin-in-the-woods-2012/" target="_blank">Cabin in the Woods</a>.
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
@@ -70,12 +70,12 @@ I spent some time working with the AI (specifically, GPT chat) to create an unna
 
 ### Character References:
 
-* The robotic half — inspired by Hel from the film *Metropolis*. In the German movie *Metropolis*, the robot is a reference to the Germanic-Scandinavian goddess of death, Hel.  
+* The robotic half — inspired by Hel from the film <a href="/library/metropolis/" target="_blank">Metropolis</a>. In the German movie Metropolis, the robot is a reference to the Germanic-Scandinavian goddess of death, Hel.  
 * The human half — inspired by Marilyn Monroe.
 
 ### Thoughts on Summoning This Monster
 
-If you’ve seen *Cabin in the Woods*, you’ll remember that each monster has a unique way of being summoned. To summon my character, you need to decide to put on makeup.
+If you’ve seen Cabin in the Woods, you’ll remember that each monster has a unique way of being summoned. To summon my character, you need to decide to put on makeup.
 
 I came up with a brochure detailing the monster's summoning after I had already given the gift, so I can’t show it, but it could be styled after the kind of religious pamphlet the priest hands out in the film *The Wind*.
 
@@ -87,7 +87,7 @@ I came up with a brochure detailing the monster's summoning after I had already 
 
 ## Setting Up the Monster’s Chamber
 
-All the monsters in *Cabin in the Woods* lived in simple transparent chambers, but that’s not enough for our heroine. At the very least, she should have her own bathroom and dressing room.
+All the monsters in Cabin in the Woods lived in simple transparent chambers, but that’s not enough for our heroine. At the very least, she should have her own bathroom and dressing room.
 
 ### Lady Dimitrescu’s Bathroom
 
@@ -95,7 +95,7 @@ All the monsters in *Cabin in the Woods* lived in simple transparent chambers, b
 	<p>
 		<img src="/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-bathroom.webp" alt="The Cabin for Grooming: Bathroom" />
 	</p>
-	<p><strong>Prompt:</strong> A dark fantasy Halloween-themed art piece with elements of pin-up style. The focal point is a large, ornate, vintage bathtub, scaled to be oversized and suitable for a three-meter-tall vampire woman, inspired by Lady Dimitrescu. The bathtub is now empty, with no silhouette visible. The setting is a Gothic, old-fashioned bathroom with dim lighting, dark tones, and subtle, soft elements to convey a blend of dark fantasy and vintage pin-up. The view is partially obscured by a translucent curtain with a large logo on it. The logo reads 'DesireHazard,' replacing the original Biohazard symbol. Above the logo, on the curtain, there is an additional text: 'DesireHazard.' The overall atmosphere is moody, with a blend of elegance and eeriness, evoking a vampire's luxurious, yet monstrous environment.</p>
+	<p><strong>Prompt:</strong> A dark fantasy Halloween-themed art piece with elements of pin-up style. The focal point is a large, ornate, vintage bathtub, scaled to be oversized and suitable for a three-meter-tall vampire woman, inspired by Lady Dimitrescu. The bathtub is now empty, with no silhouette visible. The setting is a Gothic, old-fashioned bathroom with dim lighting, dark tones, and subtle, soft elements to convey a blend of dark fantasy and vintage pin-up. The view is partially obscured by a translucent curtain with a large logo on it. The logo reads 'DesireHazard', replacing the original Biohazard symbol. Above the logo, on the curtain, there is an additional text: 'DesireHazard'. The overall atmosphere is moody, with a blend of elegance and eeriness, evoking a vampire's luxurious, yet monstrous environment.</p>
 </div>
 
 The bathroom reference — Lady Dimitrescu’s bathroom from the game *Resident Evil Village*, as well as an image of a vintage bathtub and a photo of a curtain with the *Resident Evil* logo.
@@ -121,11 +121,11 @@ The bathroom reference — Lady Dimitrescu’s bathroom from the game *Resident 
 	<p><strong>Prompt:</strong> A dark fantasy Halloween-themed art piece with elements of pin-up style. The focal point is a large, ornate mirror with bulbs around the frame, placed in the center of a wall that is fully built with shelves. These shelves are filled with 12 porcelain masks, each with a different expression like happy, sad, serious, angry, and more. The masks are arranged under a glass display case that gives a retro feel, adding more detail and elegance to the scene. Underneath each mask, there is a section with unreadable text, adding an eerie yet elegant atmosphere. In the reflection of the mirror, a shadowy figure holding a camera can be seen, as if filming or watching the viewer. Part of the mirror is obscured by a larger, partially drawn curtain, enhancing the mystery. The lighting is dim and moody, creating deep shadows that enhance the Gothic, vintage feel of the room. The mirror, surrounded by soft, glowing bulbs, adds a pin-up style contrast, while the pink pumpkin-shaped ottoman (pouf) in front of the mirror maintains a playful touch. The overall mood is dark, elegant, and slightly unsettling, with a blend of elegance, mystery, and pin-up elements.</p>
 </div>
 
-The dressing room with shelves lined with masks is a reference to a conversation between my wife and me about “wearing masks in life.” Some are for family, others for work, others for something else… there are many.
+The dressing room with shelves lined with masks is a reference to a conversation between my wife and me about “wearing masks in life”. Some are for family, others for work, others for something else… there are many.
 
 #### The Person Inside the Mirror
 
-The person inside the mirror was initially meant to be a simple reference to myself, watching as my wife changes her masks, and to a scene from *Cabin in the Woods*, where the characters find a room behind the glass.
+The person inside the mirror was initially meant to be a simple reference to myself, watching as my wife changes her masks, and to a scene from Cabin in the Woods, where the characters find a room behind the glass.
 
 Unfortunately, it took on a more metaphorical meaning: perhaps the person in the mirror is simply observing the monster, or perhaps they are the monster themselves.
 
@@ -165,11 +165,11 @@ I measured the box and went to the local print shop. I requested images of a spe
 	</p>
 </div>
 
-Firstly (oh, really?\!) transparent stickers are printed on film. We live in a small town where printing on film requires a week’s notice, so I had to quickly add a background. Ah well.
+Firstly (oh, really?!) transparent stickers are printed on film. We live in a small town where printing on film requires a week’s notice, so I had to quickly add a background. Ah well.
 
 By the way, because of this, I decided against using brushes for logo styling and kept the movie font style without additional distressing. The effect wouldn’t have been conveyed deeply enough on a white background.
 
-Secondly, I recommend to everyone who, like me, spends 70% of life in front of a monitor, to occasionally do something hands-on. Managing to stick an image crookedly with double-sided tape requires real talent\!
+Secondly, I recommend to everyone who, like me, spends 70% of life in front of a monitor, to occasionally do something hands-on. Managing to stick an image crookedly with double-sided tape requires real talent!
 
 However, that’s exactly why I planned to use these suction cup mounts:
 
@@ -189,20 +189,20 @@ This is a large case that barely fits in the closet. It houses our soap-dish bat
 
 Perhaps you’ll find this guide useful, and you’ll want to place your own monster in a bottle, mug, or somewhere else.
 
-Would be happy to have you follow <a href="" target="_blank">me on Instagram</a>\!
+Would be happy to have you follow <a href="https://www.instagram.com/horrorprom/" target="_blank">me on Instagram</a>!
 
-The story of glamorous Hel from the cabin will continue, and she will appear in some of my upcoming projects\! 😉
+The story of glamorous Hel from the cabin will continue, and she will appear in some of my upcoming projects! 😉
 
 The inspiration for the music during Hel Monroe’s appearance came from a song by a German rock band, which I’ll talk about later.
 
 ## Read also
-<div class="content-block" style="border: none;">
-	<div class="content-list-col">
-		<ul>
-			<li><a href="/library/the-cabin-in-the-woods-2012/" target="_blank">
-				The Cabin in the Woods (2012)
-			</a></li>
-		</ul>
-	</div>
-</div>
+
+<ul>
+	<li><a href="/library/the-cabin-in-the-woods-2012/" target="_blank">
+		The Cabin in the Woods (2012)
+	</a></li>
+	<li><a href="/library/metropolis/" target="_blank">
+		Metropolis (film, 1927)
+	</a></li>
+</ul>
 <!--more-->

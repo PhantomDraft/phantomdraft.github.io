@@ -49,12 +49,14 @@
 	other = 'content'
 [sidebar_comment] # This button will not appear until the comment function is turned on
 	other = 'comment'
-[sidebar_articles]
-	other = 'Articles'
 [sidebar_posts]
 	other = 'Notes'
+[sidebar_articles]
+	other = 'Articles'
 [sidebar_stories]
 	other = 'Stories'
+[sidebar_library]
+	other = 'Library'
 [sidebar_series]
 	other = 'Series'
 [sidebar_categories]

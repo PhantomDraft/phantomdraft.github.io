@@ -23,6 +23,13 @@
         {{ i18n "sidebar_stories" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "stories") }}
     </a></li>
     <li><a href='{{ if $isMultiLingual }}
+        {{ $langNow | relURL}}/library
+    {{ else }}
+        {{ "library/" | relURL }}
+    {{ end }}'>
+        {{ i18n "sidebar_library" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "library") }}
+    </a></li>
+    <li><a href='{{ if $isMultiLingual }}
         {{ $langNow | relURL}}/series
     {{ else }}
         {{ "series/" | relURL }}

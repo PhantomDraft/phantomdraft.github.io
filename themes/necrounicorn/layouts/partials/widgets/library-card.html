@@ -44,6 +44,18 @@
                 {{ i18n "postInfo_notIncluded" }}
             {{ end }}
     </li>
+    {{ if eq $seriesCount 1 }}
+        <li><i class="fa fa-book"></i>
+            {{ range $series := .Params.series }}
+                <a href='{{ if $isMultiLingual }}
+                    {{ $langNow | relURL}}/series/{{ $series | urlize }}
+                {{ else }}
+                    {{ "series/" | relURL }}{{ $series | urlize }}
+                {{ end }}'> {{ . }}
+                </a>
+            {{ end }}
+        </li>
+    {{ end }}
     {{ $tagsCount := 0 }}
     {{ with .Params.tags }}
         {{ $tagsCount = 1 }}
@@ -63,18 +75,6 @@
     {{ $seriesCount := 0 }}
     {{ with .Params.series }}
         {{ $seriesCount = 1 }}
-    {{ end }}
-    {{ if eq $seriesCount 1 }}
-        <li>
-            {{ range $series := .Params.series }}
-                <a href='{{ if $isMultiLingual }}
-                    {{ $langNow | relURL}}/series/{{ $series | urlize }}
-                {{ else }}
-                    {{ "series/" | relURL }}{{ $series | urlize }}
-                {{ end }}'> <i class="fa fa-tag"></i> {{ . }}
-                </a>
-            {{ end }}
-        </li>
     {{ end }}
 </ul>
 <!-- grid_info : done -->

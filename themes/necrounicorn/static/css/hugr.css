@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 23.0
+	Version: 23.03
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('font-awesome.min.css');
@@ -1081,6 +1081,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
 .aMessage a {color: #000; text-decoration: underline;}
 
 .aMessage iframe:not(.instagram-media) {width: 100%; height: 350px;}
+.aMessage iframe.instagram-media {margin: 0 auto !important;}
 
 /*
  * atc
@@ -1737,6 +1738,7 @@ a.page-numbers:hover {color: #b22;}
     .grid .text {
         max-height: none;
         padding-top: 10px;
+        text-align: center;
     }
 
     .atcScreen, .atcCentral {margin-top: 30px;}
@@ -1785,6 +1787,7 @@ a.page-numbers:hover {color: #b22;}
     }
 
     .menu-main ul li {width: 50%;}
+    .menu-main ul li a {padding: 0 14px;}
 
     .in_the_middle, .subs, .share, .bordered th {display: none;}
 
@@ -1833,7 +1836,7 @@ a.page-numbers:hover {color: #b22;}
 
     .bordered td {border-left: none;}
 
-    .slidenav {width: 50%;}
+    .slidenav {width: 70%;}
 }
 
 @media all and (min-width: 550px) {
@@ -1873,8 +1876,6 @@ a.page-numbers:hover {color: #b22;}
 
     .psi, .nm {text-align: center;}
 
-    .menu-main ul li a {padding: 0 14px !important;}
-
     .breadcrumbs {
         padding: 0 10px;
         overflow: hidden;
@@ -1888,7 +1889,7 @@ a.page-numbers:hover {color: #b22;}
 
     .footer_info .fr {display: none;}
 
-    .grid .text h3, .shoes > section, .shoes_for_personal_page > section {text-align: center;}
+    .shoes > section, .shoes_for_personal_page > section {text-align: center;}
 
     .aMessage iframe {height: 300px;}
 

@@ -24,7 +24,7 @@ hideFromSection: false
 # Hide from everything but the Sitemap
 hideFromSitemap: false
 ---
-## Делаем из бьюти-кейса камеру с монстром, как в *Хижине в лесу*
+## Делаем из бьюти-кейса камеру с монстром, как в Хижине в лесу
 
 **Нам понадобится**:
 
@@ -47,7 +47,7 @@ hideFromSitemap: false
 	</p>
 </div>
 
-Сперва я хотел просто подарить его таким какой он был, но потом Хэллуинское настроение взяло верх и я убедил себя в том, что это вылитая камера для монстра из фильма Хижина в лесу.
+Сперва я хотел просто подарить его таким какой он был, но потом Хэллуинское настроение взяло верх и я убедил себя в том, что это вылитая камера для монстра из фильма <a href="/ru/library/the-cabin-in-the-woods-2012/" target="_blank">Хижина в лесу</a>.
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
@@ -68,7 +68,7 @@ hideFromSitemap: false
 	<p><strong>Prompt:</strong> A single character in a pin-up style, resembling an hourglass figure, pressed against a glass panel as if she is inside the box, trying to get out. The character is vertically divided: the right side is robotic with metallic parts and wires, and the left side is human, feminine, with soft features. She wears a pink Marilyn Monroe-style dress and high heels. The expression on her face is playful yet slightly melancholic. Her hands, chest, and face are squashed against the glass, giving a dynamic, pressed look. The left leg should extend slightly over the robotic side, as if the human leg is partially covering the metallic one. The pink skirt should now fully cover the metallic thigh, creating a seamless flow over both sides of the body. The right side of the face resembles a metallic skeleton, similar to the Terminator, with a glowing red laser eye in the eye socket. The red laser eye should now be brighter, more menacing, and have a more threatening, combat-ready appearance. The right side of the costume is also pink, matching the left side.</p>
 </div>
 
-* Референс образа – Хель из фильма *Метрополис*. Ну, а в германском фильме *Метрополис* робот является отсылкой на Германо-скандинавскую богиню смерти Хель;  
+* Референс образа – Хель из фильма <a href="/ru/library/metropolis/" target="_blank">Метрополис</a>. Ну, а в германском фильме Метрополис робот является отсылкой на Германо-скандинавскую богиню смерти Хель;  
 * Референс человеческой половины – Мэрилин Монро.
 
 ### Размышления на тему призыва данного монстра
@@ -93,7 +93,7 @@ hideFromSitemap: false
 	<p>
 		<img src="/ru/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-bathroom.webp" alt="The Cabin for Grooming: ванная комната" />
 	</p>
-	<p><strong>Prompt:</strong> A dark fantasy Halloween-themed art piece with elements of pin-up style. The focal point is a large, ornate, vintage bathtub, scaled to be oversized and suitable for a three-meter-tall vampire woman, inspired by Lady Dimitrescu. The bathtub is now empty, with no silhouette visible. The setting is a Gothic, old-fashioned bathroom with dim lighting, dark tones, and subtle, soft elements to convey a blend of dark fantasy and vintage pin-up. The view is partially obscured by a translucent curtain with a large logo on it. The logo reads 'DesireHazard,' replacing the original Biohazard symbol. Above the logo, on the curtain, there is an additional text: 'DesireHazard.' The overall atmosphere is moody, with a blend of elegance and eeriness, evoking a vampire's luxurious, yet monstrous environment.</p>
+	<p><strong>Prompt:</strong> A dark fantasy Halloween-themed art piece with elements of pin-up style. The focal point is a large, ornate, vintage bathtub, scaled to be oversized and suitable for a three-meter-tall vampire woman, inspired by Lady Dimitrescu. The bathtub is now empty, with no silhouette visible. The setting is a Gothic, old-fashioned bathroom with dim lighting, dark tones, and subtle, soft elements to convey a blend of dark fantasy and vintage pin-up. The view is partially obscured by a translucent curtain with a large logo on it. The logo reads 'DesireHazard', replacing the original Biohazard symbol. Above the logo, on the curtain, there is an additional text: 'DesireHazard'. The overall atmosphere is moody, with a blend of elegance and eeriness, evoking a vampire's luxurious, yet monstrous environment.</p>
 </div>
 
 Референс ванной комнаты — ванная комната леди Димитреску из игры Обитель зла: Деревня, а также изображение винтажной ванной и фото шторки с логотипом Обителя зла.
@@ -163,11 +163,11 @@ hideFromSitemap: false
 	</p>
 </div>
 
-Во-первых (о, неужели?\!) прозрачные наклейки печатаются на плёнке. Мы живём в небольшом городе, где печать на плёнке нужно заказывать за неделю, потому пришлось экстренно добавить фон. Эх.
+Во-первых (о, неужели?!) прозрачные наклейки печатаются на плёнке. Мы живём в небольшом городе, где печать на плёнке нужно заказывать за неделю, потому пришлось экстренно добавить фон. Эх.
 
 Кстати, по этой причине я отказался от кистей в стилизации логотипа и сохранил стиль шрифта из кино без дополнительной потёртости. Эффект не был бы передан достаточно глубоко на белом фоне.
 
-Во-вторых, рекомендую всем тем, кто, как и я проводит 70% жизни за монитором, хоть иногда что-то делать руками. Умудриться криво приклеить на двустороннем скотче изображение — это надо иметь талант\!
+Во-вторых, рекомендую всем тем, кто, как и я проводит 70% жизни за монитором, хоть иногда что-то делать руками. Умудриться криво приклеить на двустороннем скотче изображение — это надо иметь талант!
 
 Впрочем, именно поэтому я собирался воспользоваться именно вот таким крепежами на присосках:
 
@@ -184,22 +184,22 @@ hideFromSitemap: false
 
 Это крупный чемоданчик, который с трудом помещается в шкаф. Он вместил в себя в нашу мыльницу-ванную и внезапно аппликация стала 3D.
 
-Возможно, вам пригодится это пособие и вы захотите поселить своего монстра в бутылке, кружке или где\-то ещё.
+Возможно, вам пригодится это пособие и вы захотите поселить своего монстра в бутылке, кружке или где-то ещё.
 
-Подписывайтесь на мой <a href="https://t.me/horrorprom/6" target="_blank">канал horrorprom в Телеграм</a>, где я оставляю промты генераций\!
+Подписывайтесь на мой <a href="https://t.me/horrorprom/6" target="_blank">канал horrorprom в Телеграм</a>, где я оставляю промты генераций!
 
-История с гламурной Хель из камеры будет иметь продолжение и она появится в нескольких следующих моих работах\! 😉
+История с гламурной Хель из камеры будет иметь продолжение и она появится в нескольких следующих моих работах! 😉
 
 Вдохновением для создания музыка во время появления Хель Монро послужила песня германской рок группы, о чём я расскажу позже.
 
 ## Читайте также
-<div class="content-block" style="border: none;">
-	<div class="content-list-col">
-		<ul>
-			<li><a href="/ru/library/the-cabin-in-the-woods-2012/" target="_blank">
-				The Cabin in the Woods (2012)
-			</a></li>
-		</ul>
-	</div>
-</div>
+
+<ul>
+	<li><a href="/ru/library/the-cabin-in-the-woods-2012/" target="_blank">
+		The Cabin in the Woods (2012)
+	</a></li>
+	<li><a href="/ru/library/metropolis/" target="_blank">
+		Metropolis (film, 1927)
+	</a></li>
+</ul>
 <!--more-->

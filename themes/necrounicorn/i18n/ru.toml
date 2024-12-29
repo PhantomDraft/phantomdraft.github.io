@@ -49,12 +49,14 @@
 	other = 'контент'
 [sidebar_comment] # This button will not appear until the comment function is turned on
 	other = 'комментарий'
-[sidebar_articles]
-	other = 'Статьи'
 [sidebar_posts]
 	other = 'Заметки'
+[sidebar_articles]
+	other = 'Статьи'
 [sidebar_stories]
 	other = 'Истории'
+[sidebar_library]
+	other = 'Библиотека'
 [sidebar_series]
 	other = 'Серии'
 [sidebar_categories]
