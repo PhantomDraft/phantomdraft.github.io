@@ -44,6 +44,10 @@
                 {{ i18n "postInfo_notIncluded" }}
             {{ end }}
     </li>
+    {{ $seriesCount := 0 }}
+    {{ with .Params.series }}
+        {{ $seriesCount = 1 }}
+    {{ end }}
     {{ if eq $seriesCount 1 }}
         <li><i class="fa fa-book"></i>
             {{ range $series := .Params.series }}
@@ -71,10 +75,6 @@
                 </a>
             {{ end }}
         </li>
-    {{ end }}
-    {{ $seriesCount := 0 }}
-    {{ with .Params.series }}
-        {{ $seriesCount = 1 }}
     {{ end }}
 </ul>
 <!-- grid_info : done -->
