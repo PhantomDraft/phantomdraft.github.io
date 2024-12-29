@@ -53,12 +53,9 @@ The movie's very dubious claim that it is based on a true story led to its becom
 Like I consider in my article <a href="/articles/the-idea-of-apocalypse-in-horror-films-particularly-slashers-films/" target="_blank">The idea of Apocalypse in horror films, particularly slashers films</a>, the film depicts the existential horror typical of its time as much as the impact of mechanical innovation. It serves as a chilling reminder that often, horror reflects the time when even the instruments meant to provide safety can become weapons of terror.
 
 ## Read also
-<div class="content-block" style="border: none;">
-	<div class="content-list-col">
-		<ul>
-			<li><a href="/articles/the-idea-of-apocalypse-in-horror-films-particularly-slashers-films/" target="_blank">
-				The idea of Apocalypse in horror films, particularly slashers films
-			</a></li>
-		</ul>
-	</div>
-</div>
+
+<ul>
+	<li><a href="/articles/the-idea-of-apocalypse-in-horror-films-particularly-slashers-films/" target="_blank">
+		The idea of Apocalypse in horror films, particularly slashers films
+	</a></li>
+</ul>

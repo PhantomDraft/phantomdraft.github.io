@@ -53,12 +53,9 @@ hideFromSitemap: false
 Як я зазначаю у своїй статті <a href="/uk/articles/the-idea-of-apocalypse-in-horror-films-particularly-slashers-films/" target="_blank">«The idea of Apocalypse in horror films, particularly slashers films»</a>, фільм відображає екзистенційний жах своєї епохи, а також вплив механічних інновацій. Він є моторошним нагадуванням про те, що жахи часто стають дзеркалом свого часу, показуючи, як навіть інструменти, призначені для безпеки, можуть перетворитися на зброю терору.
 
 ## Читайте також
-<div class="content-block" style="border: none;">
-	<div class="content-list-col">
-		<ul>
-			<li><a href="/uk/articles/the-idea-of-apocalypse-in-horror-films-particularly-slashers-films/" target="_blank">
-				The idea of Apocalypse in horror films, particularly slashers films
-			</a></li>
-		</ul>
-	</div>
-</div>
+
+<ul>
+	<li><a href="/uk/articles/the-idea-of-apocalypse-in-horror-films-particularly-slashers-films/" target="_blank">
+		The idea of Apocalypse in horror films, particularly slashers films
+	</a></li>
+</ul>
