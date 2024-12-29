@@ -88,7 +88,7 @@ Let’s get in the time machine and speed away from the nuclear arms race to… 
 
 ## Galvanization on a Rainy Day in Geneva
 
-Once, my wife shared with me a [fascinating paper on forelimb transplantation](https://www.wired.com/story/devastating-allure-of-medical-miracles/). Not surprisingly, simply “cutting and stitching” doesn’t quite work, particularly because of the ongoing struggle with the negative effects of antibiotics on patients' kidneys.
+Once, my wife shared with me a <a href="https://www.wired.com/story/devastating-allure-of-medical-miracles/" rel="nofollow" target="_blank">fascinating paper on forelimb transplantation</a>. Not surprisingly, simply “cutting and stitching” doesn’t quite work, particularly because of the ongoing struggle with the negative effects of antibiotics on patients' kidneys.
 
 In the context of Geneva and hand transplants, Mary Shelley and the monster that appeared to her in a dream come to mind. Here’s how Shelley described her dream:
 
@@ -124,13 +124,11 @@ It’s remarkable how closely these old challenges for humanity resemble our “
 
 In the novel:
 
-* Biographic elements;  
-* The collapse of political and romantic ideals when revolutionary idyll was found insufficient;  
-* Many central characters are inspired by Shelley’s acquaintances, such as Lord Raymond, who left England to fight for the Greeks and died in Constantinople, based on Lord Byron;  
-* Issues arising during a pandemic: self-isolation and disillusionment with medicine—a subject Shelley had studied extensively, as seen in her knowledge of the history of smallpox vaccination development and the 19th-century understanding of virus transmission;  
+* Biographic elements;
+* The collapse of political and romantic ideals when revolutionary idyll was found insufficient;
+* Many central characters are inspired by Shelley’s acquaintances, such as Lord Raymond, who left England to fight for the Greeks and died in Constantinople, based on Lord Byron;
+* Issues arising during a pandemic: self-isolation and disillusionment with medicine—a subject Shelley had studied extensively, as seen in her knowledge of the history of smallpox vaccination development and the 19th-century understanding of virus transmission;
 * Critique of racism from European countries toward other nations, as, in the face of a pandemic, all people are equal.
-
-I recommend checking out the Wikipedia page, [link](https://en.wikipedia.org/wiki/The_Last_Man).
 
 In the context of the last two points, I simply cannot help but think of <a href="/library/night-of-the-living-dead-1968/" target="_blank">Night of the Living Dead (1968)</a> by George Romero, who aimed to show how personal, national, and gender differences dissolve in the face of an epidemic. Incidentally, this film played a significant role in the fight for African American rights.
 
