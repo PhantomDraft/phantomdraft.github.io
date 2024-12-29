@@ -24,7 +24,7 @@ hideFromSection: false
 # Hide from everything but the Sitemap
 hideFromSitemap: false
 ---
-Once, after finishing a round in *The Texas Chain Saw Massacre*, I decided to rewatch <a href="/library/the-texas-chainsaw-massacre-1974/" target="_blank">the original 1974 film</a> and then started reading critics' opinions on it. I found a review by critic Christopher Sharrett, whom I’ll quote verbatim:
+Once, after finishing a round in The Texas Chain Saw Massacre, I decided to rewatch <a href="/library/the-texas-chainsaw-massacre-1974/" target="_blank">the original 1974 film</a> and then started reading critics' opinions on it. I found a review by critic Christopher Sharrett, whom I’ll quote verbatim:
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>"If Psycho began an exploration of a new sense of absurdity in contemporary life, of the collapse of causality and the diseased underbelly of American Gothic, The Texas Chain Saw Massacre carries this exploration to a logical conclusion, addressing many of the issues of Hitchcock's film while refusing comforting closure."</p>
@@ -34,7 +34,7 @@ Critic Christopher Sharrett argues that since the release of Alfred Hitchcock’
 
 ## Slasher vs. Post-Apocalypse
 
-Sometimes art reflects the mood within a certain region of the planet; sometimes it cannot reflect this due to strict censorship within a country. However, horror—and especially the slasher genre—is, in my view, not a genre meant to analyze society or resolve the issues that it exaggerates. The slasher focuses on problematic issues, often reducing them merely to the goal of survival, with circumstances summarized by the phrase "Wrong Turn." Looking at the world through the slasher genre, or even more so attempting to justify a nation's actions through it, is a rather pessimistic idea doomed to something unpleasant.
+Sometimes art reflects the mood within a certain region of the planet; sometimes it cannot reflect this due to strict censorship within a country. However, horror—and especially the slasher genre—is, in my view, not a genre meant to analyze society or resolve the issues that it exaggerates. The slasher focuses on problematic issues, often reducing them merely to the goal of survival, with circumstances summarized by the phrase "Wrong Turn". Looking at the world through the slasher genre, or even more so attempting to justify a nation's actions through it, is a rather pessimistic idea doomed to something unpleasant.
 
 I felt inspired to take a little journey through time, and I gladly invite you along. So, all aboard our time machine\!
 
