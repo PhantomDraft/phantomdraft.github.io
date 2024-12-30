@@ -15,14 +15,20 @@
             <!-- Display all posts for the selected year -->
             {{ range .Pages }}
                 {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromArchives)) }}
+                    {{ $title := "" }}
+                    {{ with .Title }}
+                        {{ $title = . }}
+                    {{ else }}
+                        {{ $title = "" }}
+                    {{ end }}
                     <li>
                         <a href="{{ .RelPermalink }}">
                             {{ with .Params.image }}
                                 <div class="castration" style="vertical-align: middle; border-radius: 50%; margin-right: 3px; height: 30px; width: 30px; display: inline-block;">
-                                    <img style="width: 100%; min-height: 100%;" src="{{ . }}" loading="lazy" />
+                                    <img style="width: 100%; min-height: 100%;" src="{{ . }}" loading="lazy" alt="$title" />
                                 </div>
                             {{ end }}
-                            {{ .Title }}
+                            {{ $title }}
                         </a>
 <!-- grid_info : start -->
 <ul class="grid_info">
