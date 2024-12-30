@@ -4,9 +4,9 @@
     <div class="castration fl p_relative text">
         <a class="castration fl p_relative grid_cover" href="{{ .Permalink }}">
             {{ with .Params.image }}
-                <img class="cover p_absolute" src="{{ . }}" loading="lazy">
+                <img class="cover p_absolute" src="{{ . }}" loading="lazy" />
             {{ else }}
-                <img class="cover p_absolute" src="{{ .Site.Params.page.defaultPostImg }}" loading="lazy">
+                <img class="cover p_absolute" src="{{ .Site.Params.page.defaultPostImg }}" loading="lazy" />
             {{ end }}
         </a>
 
