@@ -4,9 +4,9 @@
     <div class="castration fl p_relative text">
         <a class="castration fl p_relative grid_cover" href="{{ .Permalink }}">
             {{ with .Params.image }}
-                <img class="cover p_absolute" src="{{ . }}" alt='{{ i18n "imageLoadingFailed" }}'>
+                <img class="cover p_absolute" src="{{ . }}" loading="lazy" alt='{{ i18n "imageLoadingFailed" }}'>
             {{ else }}
-                <img class="cover p_absolute" src="{{ .Site.Params.page.defaultPostImg }}" alt='{{ i18n "imageLoadingFailed" }}'>
+                <img class="cover p_absolute" src="{{ .Site.Params.page.defaultPostImg }}" loading="lazy" alt='{{ i18n "imageLoadingFailed" }}'>
             {{ end }}
         </a>
 
