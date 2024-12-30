@@ -4,9 +4,11 @@
     <div class="castration fl p_relative text">
         <a class="castration fl p_relative grid_cover" href="{{ .Permalink }}">
             {{ with .Params.image }}
-                <img class="cover p_absolute" src="{{ . }}" loading="lazy" />
+                {{ $altText := .Title | default "Image" }}
+                <img class="cover p_absolute" src="{{ . }}" loading="lazy" alt="{{ $altText }}" />
             {{ else }}
-                <img class="cover p_absolute" src="{{ .Site.Params.page.defaultPostImg }}" loading="lazy" />
+                {{ $altText := .Title | default "Default image" }}
+                <img class="cover p_absolute" src="{{ .Site.Params.page.defaultPostImg }}" loading="lazy" alt="{{ $altText }}" />
             {{ end }}
         </a>
 
