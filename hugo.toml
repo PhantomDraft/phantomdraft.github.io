@@ -209,15 +209,20 @@ paginate = 9
 
             # social
             [[languages.ru.menus.social]]
-                name = "Horrorprom в Telegram"
-                url = "https://t.me/horrorprom"
+                name = "Phantom Draft на Facebook"
+                url = "https://www.facebook.com/phantomdrafts/"
                 pre = ""
                 weight = 1
+            [[languages.ru.menus.social]]
+                name = "Horrorprom на Instagram"
+                url = "https://www.instagram.com/horrorprom/"
+                pre = ""
+                weight = 2
             [[languages.ru.menus.social]]
                 name = "Spirits Show на YouTube"
                 url = "https://www.youtube.com/@spirits-show"
                 pre = ""
-                weight = 2
+                weight = 3
 
 [author]
     name = "Ruslan Dubinetsky"
