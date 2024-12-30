@@ -1,18 +1,22 @@
 {{ $langNow := .Lang }}
 {{ $isMultiLingual := and (ne .Site.Language.Weight 1) (and .Site.IsMultiLingual (not .Site.Params.Site.OnlyOneLang)) }}
+{{ $title := "" }}
+{{ with .Title }}
+    {{ $title = . }}
+{{ else }}
+    {{ $title = "Untitled Post" }}
+{{ end }}
 <li class="castration base_width p_relative grid">
     <div class="castration fl p_relative text">
         <a class="castration fl p_relative grid_cover" href="{{ .Permalink }}">
             {{ with .Params.image }}
-                {{ $altText := .Title | default "Image" }}
-                <img class="cover p_absolute" src="{{ . }}" loading="lazy" alt="{{ $altText }}" />
+                <img class="cover p_absolute" src="{{ . }}" loading="lazy" alt="{{ $title }}" />
             {{ else }}
-                {{ $altText := .Title | default "Default image" }}
-                <img class="cover p_absolute" src="{{ .Site.Params.page.defaultPostImg }}" loading="lazy" alt="{{ $altText }}" />
+                <img class="cover p_absolute" src="{{ .Site.Params.page.defaultPostImg }}" loading="lazy" alt="{{ $title }}" />
             {{ end }}
         </a>
 
-        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <h3><a href="{{ .RelPermalink }}">{{ $title }}</a></h3>
 
         {{ if or (eq .Type "taxonomy") (eq .Section "categories") (eq .Section "tags") (eq .Section "series") }}
             <ul class="grid_info">
