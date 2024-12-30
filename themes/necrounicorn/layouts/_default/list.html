@@ -1,6 +1,4 @@
 {{ define "main" }}
-    {{ partial "widgets/aside.html" . }}
-
     <section class="castration fl p_relative modules">
         {{ if .IsNode }}
             <ul id="content">
@@ -37,4 +35,6 @@
             </ul>
         {{ end }}
     </section>
+
+    {{ partial "widgets/aside.html" . }}
 {{ end }}
