@@ -304,3 +304,7 @@ paginate = 9
             section = "stories"
             [frontmatter.defaults.params]
             markup = "html"
+
+[services]
+  [services.disqus]
+    shortname = 'phantom-draft'
