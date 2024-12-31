@@ -26,6 +26,12 @@ hideFromSitemap: false
 ---
 ## 2024 Wrap-Up: Notable Releases and Events
 
+<div class="t_center castration cover p_relative atcScreen">
+	<p>
+		Here are spoilers for Arcane and Suicide Squad by Rocksteady!
+	</p>
+</div>
+
 As 2024 comes to an end, I’d like to highlight some intriguing releases and events. Keep in mind, this is strictly my personal selection, and I’m well aware of its limited scope. Don’t hold it against me if I missed something interesting—feel free to share your thoughts in the comments!
 
 In an ideal world, I would have written a review for every mentioned project, but life isn’t perfect. I’ve been busy, and my reviews this year have been limited. I promise to catch up next year!
@@ -37,7 +43,10 @@ Looking at the releases below, it feels like this year might have been too packe
 ### Creepy Tale 4
 
 A continuation of the eerie fairy-tale-inspired series, where players unravel dark puzzles in a sinister world.
-Alone in the Dark: A reboot of the classic survival horror game, taking players back to the haunted Derceto Manor with new mysteries to uncover.
+
+### Alone in the Dark
+
+A reboot of the classic survival horror game, taking players back to the haunted Derceto Manor with new mysteries to uncover.
 
 ### Silent Hill 2
 
@@ -85,26 +94,23 @@ Other notable competitions include the Witcher: Wild Hunt modding competition by
 
 For me, the top remaster of the year is Clock Tower. My love for classic survival horror makes this an especially welcome gift.
 
-Other remastered highlights include:
-
-The Thing: A game based on John Carpenter’s film, which itself was inspired by The Thing from Another World (YEAR) and the original novella (YEAR).
-Plants vs. Zombies: Reimagined by Chinese developers.
-
-Not exactly a remaster, but tomorrow brings the premiere of the Dracula remake (YEAR).
-
 ### Clock Tower
 
 A remaster of the classic survival horror game, where players evade a relentless stalker in a terrifying mansion.
 
+Other remastered highlights include:
+
 ### The Thing
 
-Based on John Carpenter’s cult film, players face paranoia and shapeshifting alien threats in an isolated Antarctic station.
+A game based on John Carpenter’s film, which itself was inspired by The Thing from Another World (1951) and the original novella (1938).
 
 ### Plants vs. Zombies (Reimagined)
 
 A Chinese-developed reimagining of the tower defense classic, introducing new mechanics and visuals.
 
-### Dracula (Remake)
+Not exactly a remaster, but tomorrow brings the premiere of the Nosferatu remake (1922).
+
+### Nosferatu (Remake)
 
 A reimagining of Bram Stoker’s classic vampire tale, bringing a fresh visual style and narrative twists.
 
@@ -120,87 +126,59 @@ A psychological horror film centered on a mysterious figure with unnaturally elo
 
 A provocative visual novel exploring human relationships and psychology.
 
-Steam: https://store.steampowered.com/app/3002570/Nymphomaniac__Sex_Addict
-
 ### Zoochoices
 
 A narrative-driven exploration game, rumored to be linked to Zoonomaly.
-
-Steam: https://store.steampowered.com/app/XXX
 
 ### Midnight Ghost Hunt
 
 A chaotic multiplayer game where players hunt or become ghosts in haunted locations.
 
-Steam: https://store.steampowered.com/app/915810/Midnight_Ghost_Hunt
-
 ### Banishers: Ghosts of New Eden
 
 A story-driven RPG about two ghost hunters battling spirits and personal loss.
-
-Steam: https://store.steampowered.com/app/1493640/Banishers_Ghosts_of_New_Eden
 
 ### Bureau of Contacts
 
 A strategy-simulation game focused on managing interdimensional communication networks.
 
-Steam: https://store.steampowered.com/app/2840210/Bureau_of_Contacts
-
 ### The Thaumaturge
 
 A supernatural RPG set in early 20th-century Poland, blending mystical powers and historical intrigue.
-
-Steam: https://store.steampowered.com/app/1684350/The_Thaumaturge
 
 ### Backrooms Rec
 
 A survival horror game set in the eerie labyrinth of the Backrooms.
 
-Steam: https://store.steampowered.com/app/2275020/Backrooms_Rec
-
 ### Descending the Woods
 
 A dark exploration game where players navigate haunted forests full of cryptic dangers.
-
-Steam: https://store.steampowered.com/app/2868070/Descending_The_Woods
 
 ### DON’T SCREAM
 
 An experimental horror game where sound detection determines survival.
 
-Steam: https://store.steampowered.com/app/2497900/DONT_SCREAM
-
 ### Fallen Aces
 
 A noir-inspired first-person brawler set in a corrupt city run by gangsters.
-
-Steam: https://store.steampowered.com/app/1411910/Fallen_Aces
 
 ### Helldivers 2
 
 A co-op action game where players fight for humanity’s survival in a galactic war.
 
-Steam: https://store.steampowered.com/app/553850/HELLDIVERS_2
-
 ### Crime Scene Cleaner
 
 A simulation game where players clean up gruesome crime scenes.
-
-Steam: https://store.steampowered.com/app/1040200/Crime_Scene_Cleaner
 
 ### Hands of Necromancy II
 
 A dark fantasy RPG with necromantic magic and sprawling dungeons.
 
-Steam: https://store.steampowered.com/app/2706450/Hands_of_Necromancy_II
-
-## Horror and Trashy Games for Kids
+## Horror and Trashy Projects for Kids
 
 ### Poppy Playtime: Chapter 3
 
 A creepy toy factory comes to life in this next installment of the popular horror series.
-
-Steam: https://store.steampowered.com/app/2555190/Poppy_Playtime__Chapter_3
 
 ### Doors 2 (Roblox)
 
@@ -209,10 +187,6 @@ The sequel to the popular Roblox game, where players unlock eerie mysteries behi
 ### Five Nights at Freddy’s: Into the Pit
 
 A new chapter in the horror series, exploring the sinister animatronics’ origins.
-
-Steam: https://store.steampowered.com/app/2638370/Five_Nights_at_Freddys_Into_the_Pit
-
-## Fun Facts
 
 ### Sprunky
 
@@ -224,16 +198,18 @@ Oxford Dictionary named “brain rot” the word of 2024—an apt description fo
 
 ## Color of the Year
 
-Pantone chose Peach Fuzz (link).
+Pantone chose Peach Fuzz.
 
 ## In Memoriam
 
 Who passed away in 2024? Sadly, many notable figures:
 
-Alain Delon and Phil Donahue, both on August 18.
-Maggie Smith on September 27.
-Former U.S. President Jimmy Carter, the longest-living president, passed away at age 100 on December 20.
+ * Alain Delon and Phil Donahue, both on August 18.
+ * Maggie Smith on September 27.
+ * Former U.S. President Jimmy Carter, the longest-living president, passed away at age 100 on December 20.
 
-## Looking Ahead
+ ## Looking Ahead
 
-I’ll share my expectations for 2025 in a future post. Happy New Year! 🎉
+ I’ll share my expectations for 2025 in a future post.
+
+ Happy New Year! 🎉
