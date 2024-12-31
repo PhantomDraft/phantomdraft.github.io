@@ -14,7 +14,7 @@ tags: ["ai", "chatgpt"]
 # seires
 series: ["Project: Spirits Show"]
 # Top image for the post /local/images/test/cover.jpg
-image: ""
+image: "/images/stories/No.1/splash-page/cover.webp"
 # Hide from home and other main page
 hideFromCenter: false
 # Hide from archive page
@@ -52,7 +52,7 @@ A Tribute to Rammstein:
 This fan fiction remains unfinished, but here’s the premise:
 
 <div class="t_center castration cover p_relative atcScreen">
-	<p>The Sole Survivor, after completing the game’s storyline (as we know, it's extremely challenging), loses their mind. They set off for <a href="https://fallout.fandom.com/wiki/Vault_111" rel="nofollow" target="_blank">Vault 111</a>, crack open the cryogenic chamber containing their spouse, and begin experimenting with mechanized resurrection. Simultaneously, they build a fortress on Spectacle Island, capturing and torturing members of various factions. Ultimately, the Sole Survivor becomes such a significant threat that the factions band together to eliminate this new enemy of humanity’s remnants.</div>
+	<p>The Sole Survivor, after completing the game’s storyline (as we know, it's extremely challenging), loses their mind. They set off for <a href="https://fallout.fandom.com/wiki/Vault_111" rel="nofollow" target="_blank">Vault 111</a>, crack open the cryogenic chamber containing their spouse, and begin experimenting with mechanized resurrection. Simultaneously, they build a fortress on Spectacle Island, capturing and torturing members of various factions. Ultimately, the Sole Survivor becomes such a significant threat that the factions band together to eliminate this new enemy of humanity’s remnants.</p>
 </div>
 
 Back then, I became seriously captivated by the concept of a "maniac Survivor" and meticulously developed the base, essentially transforming Spectacle Island into a fully built fortress. I’ll share the video of this build later, but I’ll hint that it includes many references to Germanic-Scandinavian epics. Given that the Survivor is a person from the past, it's plausible they would have knowledge of Norse mythology—even assuming all copies of the Poetic Edda and Prose Edda were lost. However, this is speculative, and unsurprisingly, I never finished the fan fiction, focusing instead on an epic build in Fallout.
