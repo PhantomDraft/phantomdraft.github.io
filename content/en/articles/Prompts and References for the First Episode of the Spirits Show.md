@@ -75,7 +75,7 @@ Back then, I became seriously captivated by the concept of a "maniac Survivor" a
 ### Music Reference
 
 <ul>
-	<li><a href="/audio/the-confidence-of-a-chainsaw-in-the-evening-apocalypse.mp3" targer="_blank">The confidence of a chainsaw in the evening apocalypse</a></li>
+	<li><a href="/audio/the-confidence-of-a-chainsaw-in-the-evening-apocalypse.mp3" target="_blank">The confidence of a chainsaw in the evening apocalypse</a></li>
 </ul>
 
 The music was AI-generated, drawing from the intro of Komet by Megaherz.

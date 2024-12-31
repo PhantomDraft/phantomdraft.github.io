@@ -86,7 +86,7 @@ A post-apocalyptic drama exploring the lives of survivors in the Wasteland, base
 
 ## Competitions in 2024
 
-I’m thrilled to mention the horror story competition by the Ukrainian publisher Babai, where my wife made it to the finals.
+I’m thrilled to mention the horror story competition by the Ukrainian publisher Babai, where my wife made it to <a href="https://babai.co.ua/contests/number_beast-2024" rel="nofollow" target="_blank">the finals</a>.
 
 Other notable competitions include the Witcher: Wild Hunt modding competition by CD Projekt Red. This aligns perfectly with the announcement of the new modding mode for the game—a logical response to the ever-growing Witcher fanbase.
 
