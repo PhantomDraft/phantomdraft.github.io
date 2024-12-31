@@ -32,7 +32,7 @@ hideFromSitemap: false
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/posts/stalker2/screen.webp" alt="S.T.A.L.K.E.R. 2" />
+		<img src="/images/posts/stalker2/screen.webp" loading="lazy" alt="S.T.A.L.K.E.R. 2" />
 	</p>
 </div>
 

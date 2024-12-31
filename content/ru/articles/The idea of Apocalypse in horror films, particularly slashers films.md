@@ -181,7 +181,7 @@ Covid-19.
 Вы помните, как начинали своё шествие дроны? Вот, например дрон с закреплённой бензопилой сбивает сосульки:
 
 <div class="t_center castration cover p_relative atcScreen">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/lpgaSM4QzZk?si=nFhp6biffv7Ro91j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/lpgaSM4QzZk?si=nFhp6biffv7Ro91j" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 Потребовалось не так много времени, чтобы эта "игрушка" стала использоваться в военных целях. Позже я расскажу о паре случаев, когда изобретения военного сектора были отданы мирному населению.

@@ -26,4 +26,6 @@ hideFromSitemap: false
 ---
 If you liked the <a href="/stories/spiritsshowno.1/" target="_blank">first issue of the comic</a>, please vote in the poll where I ask what you'd like the next issue to be about.
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLLd34np5Jx2rIE1k7qx8q7CvrzvYTkuspF7gEUkiuZdaN0g/viewform?embedded=true" width="640" height="522" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<div class="t_center castration cover p_relative atcScreen">
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLLd34np5Jx2rIE1k7qx8q7CvrzvYTkuspF7gEUkiuZdaN0g/viewform?embedded=true" loading="lazy" width="640" height="522" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>

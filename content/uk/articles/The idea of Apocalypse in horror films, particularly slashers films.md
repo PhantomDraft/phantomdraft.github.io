@@ -161,7 +161,7 @@ hideFromSitemap: false
 Ви пам’ятаєте, як починали свою ходу дрони? Ось, наприклад, дрон із закріпленою бензопилою збиває бурульки:
 
 <div class="t_center castration cover p_relative atcScreen">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/lpgaSM4QzZk?si=nFhp6biffv7Ro91j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/lpgaSM4QzZk?si=nFhp6biffv7Ro91j" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 Не знадобилося багато часу, щоб ця "іграшка" почала використовуватися у військових цілях. Пізніше я розповім про кілька випадків, коли винаходи військового сектора були передані мирному населенню.

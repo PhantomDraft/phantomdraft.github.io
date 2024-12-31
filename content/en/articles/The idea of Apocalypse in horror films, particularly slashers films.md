@@ -161,7 +161,7 @@ Conclusion? There’s no need to force connections. Significant inventions or di
 Remember how drones first gained popularity? Take, for example, a drone equipped with a chainsaw to knock down icicles:
 
 <div class="t_center castration cover p_relative atcScreen">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/lpgaSM4QzZk?si=nFhp6biffv7Ro91j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/lpgaSM4QzZk?si=nFhp6biffv7Ro91j" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 It didn’t take long for this “toy” to find military applications. Later, I’ll tell you about a few cases where inventions from the military sector were shared with the civilian population.

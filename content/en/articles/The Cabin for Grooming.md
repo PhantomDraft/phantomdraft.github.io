@@ -40,10 +40,10 @@ My wife needed a new makeup bag, so I looked up different options online and fou
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/transparent-cosmetic-case1.webp" alt="Transparent beauty case" />
+		<img src="/images/articles/the-cabin-for-grooming/transparent-cosmetic-case1.webp" loading="lazy" alt="Transparent beauty case" />
 	</p>
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/transparent-cosmetic-case2.webp" alt="Transparent beauty case" />
+		<img src="/images/articles/the-cabin-for-grooming/transparent-cosmetic-case2.webp" loading="lazy" alt="Transparent beauty case" />
 	</p>
 </div>
 
@@ -51,7 +51,7 @@ At first, I was just going to gift it as it was, but the Halloween spirit took o
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/monsters-cabin-from-cabin-in-the-woods.webp" alt="The monster from The Cabin in the Woods in the containment cells" />
+		<img src="/images/articles/the-cabin-for-grooming/monsters-cabin-from-cabin-in-the-woods.webp" loading="lazy" alt="The monster from The Cabin in the Woods in the containment cells" />
 	</p>
 </div>
 
@@ -63,7 +63,7 @@ I spent some time working with the AI (specifically, GPT chat) to create an unna
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/hel-monroe.webp" alt="Hel in the image of Marilyn Monroe" />
+		<img src="/images/articles/the-cabin-for-grooming/hel-monroe.webp" loading="lazy" alt="Hel in the image of Marilyn Monroe" />
 	</p>
 	<p><strong>Prompt:</strong> A single character in a pin-up style, resembling an hourglass figure, pressed against a glass panel as if she is inside the box, trying to get out. The character is vertically divided: the right side is robotic with metallic parts and wires, and the left side is human, feminine, with soft features. She wears a pink Marilyn Monroe-style dress and high heels. The expression on her face is playful yet slightly melancholic. Her hands, chest, and face are squashed against the glass, giving a dynamic, pressed look. The left leg should extend slightly over the robotic side, as if the human leg is partially covering the metallic one. The pink skirt should now fully cover the metallic thigh, creating a seamless flow over both sides of the body. The right side of the face resembles a metallic skeleton, similar to the Terminator, with a glowing red laser eye in the eye socket. The red laser eye should now be brighter, more menacing, and have a more threatening, combat-ready appearance. The right side of the costume is also pink, matching the left side.</p>
 </div>
@@ -81,7 +81,7 @@ I came up with a brochure detailing the monster's summoning after I had already 
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/demons-of-the-prairie.webp" alt="Demons of the Prairie" />
+		<img src="/images/articles/the-cabin-for-grooming/demons-of-the-prairie.webp" loading="lazy" alt="Demons of the Prairie" />
 	</p>
 </div>
 
@@ -93,7 +93,7 @@ All the monsters in Cabin in the Woods lived in simple transparent chambers, but
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-bathroom.webp" alt="The Cabin for Grooming: Bathroom" />
+		<img src="/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-bathroom.webp" loading="lazy" alt="The Cabin for Grooming: Bathroom" />
 	</p>
 	<p><strong>Prompt:</strong> A dark fantasy Halloween-themed art piece with elements of pin-up style. The focal point is a large, ornate, vintage bathtub, scaled to be oversized and suitable for a three-meter-tall vampire woman, inspired by Lady Dimitrescu. The bathtub is now empty, with no silhouette visible. The setting is a Gothic, old-fashioned bathroom with dim lighting, dark tones, and subtle, soft elements to convey a blend of dark fantasy and vintage pin-up. The view is partially obscured by a translucent curtain with a large logo on it. The logo reads 'DesireHazard', replacing the original Biohazard symbol. Above the logo, on the curtain, there is an additional text: 'DesireHazard'. The overall atmosphere is moody, with a blend of elegance and eeriness, evoking a vampire's luxurious, yet monstrous environment.</p>
 </div>
@@ -102,13 +102,13 @@ The bathroom reference — Lady Dimitrescu’s bathroom from the game *Resident 
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/lady-dimitrescus-bathroom.webp" alt="Lady Dimitrescu’s bathroom" />
+		<img src="/images/articles/the-cabin-for-grooming/lady-dimitrescus-bathroom.webp" loading="lazy" alt="Lady Dimitrescu’s bathroom" />
 	</p>
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/bathroom-1.webp" alt="Vintage bathtub" />
+		<img src="/images/articles/the-cabin-for-grooming/bathroom-1.webp" loading="lazy" alt="Vintage bathtub" />
 	</p>
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/bathroom-2.webp" alt="Shower curtain with the Resident Evil logo" />
+		<img src="/images/articles/the-cabin-for-grooming/bathroom-2.webp" loading="lazy" alt="Shower curtain with the Resident Evil logo" />
 	</p>
 </div>
 
@@ -116,7 +116,7 @@ The bathroom reference — Lady Dimitrescu’s bathroom from the game *Resident 
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-dressing-room.webp" alt="The Cabin for Grooming: Dressing Room" />
+		<img src="/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-dressing-room.webp" loading="lazy" alt="The Cabin for Grooming: Dressing Room" />
 	</p>
 	<p><strong>Prompt:</strong> A dark fantasy Halloween-themed art piece with elements of pin-up style. The focal point is a large, ornate mirror with bulbs around the frame, placed in the center of a wall that is fully built with shelves. These shelves are filled with 12 porcelain masks, each with a different expression like happy, sad, serious, angry, and more. The masks are arranged under a glass display case that gives a retro feel, adding more detail and elegance to the scene. Underneath each mask, there is a section with unreadable text, adding an eerie yet elegant atmosphere. In the reflection of the mirror, a shadowy figure holding a camera can be seen, as if filming or watching the viewer. Part of the mirror is obscured by a larger, partially drawn curtain, enhancing the mystery. The lighting is dim and moody, creating deep shadows that enhance the Gothic, vintage feel of the room. The mirror, surrounded by soft, glowing bulbs, adds a pin-up style contrast, while the pink pumpkin-shaped ottoman (pouf) in front of the mirror maintains a playful touch. The overall mood is dark, elegant, and slightly unsettling, with a blend of elegance, mystery, and pin-up elements.</p>
 </div>
@@ -141,7 +141,7 @@ The most interesting part here was the font used in the movie’s logo design. I
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-logo.webp" alt="The font from the movie The Cabin in the Woods" />
+		<img src="/images/articles/the-cabin-for-grooming/the-cabin-for-grooming-logo.webp" loading="lazy" alt="The font from the movie The Cabin in the Woods" />
 	</p>
 </div>
 
@@ -153,15 +153,15 @@ I measured the box and went to the local print shop. I requested images of a spe
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/printing-1.webp" alt="Printing AI-generated images" />
+		<img src="/images/articles/the-cabin-for-grooming/printing-1.webp" loading="lazy" alt="Printing AI-generated images" />
 	</p>
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/printing-2.webp" alt="Printing AI-generated images" />
+		<img src="/images/articles/the-cabin-for-grooming/printing-2.webp" loading="lazy" alt="Printing AI-generated images" />
 	</p>
 	<p>
-		<img src="/images/articles/the-cabin-for-grooming/printing-3.webp" alt="Printing AI-generated images" />
+		<img src="/images/articles/the-cabin-for-grooming/printing-3.webp" loading="lazy" alt="Printing AI-generated images" />
 	</p>
-		<img src="/images/articles/the-cabin-for-grooming/printing-4.webp" alt="Printing AI-generated images" />
+		<img src="/images/articles/the-cabin-for-grooming/printing-4.webp" loading="lazy" alt="Printing AI-generated images" />
 	</p>
 </div>
 
