@@ -14,7 +14,7 @@ tags: ["jingle hell", "2024"]
 # seires
 series: []
 # Top image for the post /local/images/test/cover.jpg
-image: ""
+image: "/images/posts/2024-wrap-up/cover.webp"
 # Hide from home and other main page
 hideFromCenter: false
 # Hide from archive page
