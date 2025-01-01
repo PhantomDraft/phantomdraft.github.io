@@ -47,7 +47,9 @@ hideFromSitemap: false
 
 A Tribute to Rammstein:
 
-<iframe title="deezer-widget" src="https://widget.deezer.com/widget/light/album/459405695" loading="lazy" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+<div class="t_center castration cover p_relative atcScreen">
+	<iframe title="deezer-widget" src="https://widget.deezer.com/widget/light/album/459405695" loading="lazy" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+</div>
 
 Этот фанфик остаётся незавершённым, но вот его завязка:
 
