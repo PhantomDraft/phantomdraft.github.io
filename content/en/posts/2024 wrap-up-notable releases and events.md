@@ -34,7 +34,7 @@ hideFromSitemap: false
 
 As 2024 comes to an end, I’d like to highlight some intriguing releases and events. Keep in mind, this is strictly my personal selection, and I’m well aware of its limited scope. Don’t hold it against me if I missed something interesting—feel free to share your thoughts in the comments!
 
-In an ideal world, I would have written a review for every mentioned project, but life isn’t perfect. I’ve been busy, and my reviews this year have been limited. I promise to catch up next year!
+In an ideal world, I would have written a review for every mentioned project, but life isn’t perfect. I’ve been busy, and my reviews this year have been limited. I promise to catch up next year—follow me on <a href="https://www.facebook.com/phantomdrafts/" target="_blank">Facebook</a> so you don’t miss them!
 
 ## The Year of Anticipated Releases
 
@@ -88,7 +88,7 @@ A post-apocalyptic drama exploring the lives of survivors in the Wasteland, base
 
 I’m thrilled to mention the horror story competition by the Ukrainian publisher Babai, where my wife made it to <a href="https://babai.co.ua/contests/number_beast-2024" rel="nofollow" target="_blank">the finals</a>.
 
-Other notable competitions include the Witcher: Wild Hunt modding competition by CD Projekt Red. This aligns perfectly with the announcement of the new modding mode for the game—a logical response to the ever-growing Witcher fanbase.
+Other notable competitions include the Witcher: Wild Hunt modding competition by CD Projekt Red.
 
 ## Remasters of 2024
 

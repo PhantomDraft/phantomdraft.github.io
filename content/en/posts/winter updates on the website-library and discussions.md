@@ -1,6 +1,6 @@
 ---
 title: "Winter Updates on the Website"
-description: "Library and Discussions"
+description: "Library, Discussions and Facebook page"
 # format for string: "xxxx-xx-xx"
 date: 2024-12-31
 lastmod: "2024-12-31"
@@ -24,8 +24,10 @@ hideFromSection: false
 # Hide from everything but the Sitemap
 hideFromSitemap: false
 ---
-## Library and Discussions
+## Library, Discussions and Facebook page
 
 I’ve launched a new section called <a href="/library/" target="_blank">Phantom’s Library</a>, where I’ll be sharing my reviews of favorite horror, sci-fi, and other works.
 
 Additionally, comments are now live on the site! I’d love to hear your feedback. :)
+
+The project now also has a <a href="https://www.facebook.com/phantomdrafts/" target="_blank">Facebook page</a>. I would be happy to have your subscriptions!
