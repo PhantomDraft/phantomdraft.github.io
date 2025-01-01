@@ -192,6 +192,13 @@ RPG у жанрі темного фентезі з некромантичною 
 
 Неочікувано захоплива веб-гра, яка перейшла у версії для Roblox та Minecraft. Як веброзробник, я знаходжу браузерні ігри цікавими, навіть на ранніх етапах їх розвитку.
 
+## Мої завершені проєкти
+
+<ul>
+	<li><a href="/uk/articles/the-cabin-for-grooming/" target="_blank">The Cabin for Grooming</a></li>
+	<li><a href="/uk/stories/spiritsshowno.1/" target="_blank">Spirits Show No. 1</a> (<a href="/uk/articles/prompts-and-references-for-the-first-episode-of-the-spirits-show/" target="_blank">Prompts</a>)</li>
+</ul>
+
 ## Слово року
 
 Словом 2024 року Oxford Dictionary обрав «brain rot» — влучний опис боротьби з «глибинною державою» вдома.
