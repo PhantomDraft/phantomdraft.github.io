@@ -28,7 +28,7 @@ hideFromSitemap: false
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		Здесь есть спойлеры к «Аркейну» и «Отряду самоубийц» от Rocksteady!
+		<strong>Здесь есть спойлеры к «Аркейну» и «Отряду самоубийц» от Rocksteady!</strong>
 	</p>
 </div>
 

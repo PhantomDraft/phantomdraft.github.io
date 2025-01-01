@@ -28,7 +28,7 @@ hideFromSitemap: false
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		Here are spoilers for Arcane and Suicide Squad by Rocksteady!
+		<strong>Here are spoilers for Arcane and Suicide Squad by Rocksteady!</strong>
 	</p>
 </div>
 
