@@ -1,6 +1,6 @@
 ---
-title: "Winter Updates on the Website"
-description: "Library, Discussions and Facebook page"
+title: "Зимние обновления на сайте"
+description: "Библиотека, обсуждения и страница в Facebook"
 # format for string: "xxxx-xx-xx"
 date: 2024-12-31
 lastmod: "2024-12-31"
