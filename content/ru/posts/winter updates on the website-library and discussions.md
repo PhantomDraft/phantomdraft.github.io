@@ -24,10 +24,10 @@ hideFromSection: false
 # Hide from everything but the Sitemap
 hideFromSitemap: false
 ---
-## Библиотека, обсуждения и страница в Facebook
+## Библиотека, обсуждения, страница в Facebook и канал в Telegram
 
 Я запустил новый раздел под названием <a href="/ru/library/" target="_blank">Phantom’s Library</a>, где буду делиться своими обзорами на любимые хоррор, научную фантастику и другие произведения.
 
 Кроме того, на сайте теперь доступны комментарии! Мне будет приятно услышать ваши отзывы. :)
 
-У проекта также появилась <a href="https://www.facebook.com/phantomdrafts/" target="_blank">страница в Facebook</a>. Буду рад вашим подпискам!
+У проекта также появилась <a href="https://www.facebook.com/phantomdrafts/" target="_blank">страница в Facebook</a> и <a href="https://t.me/phantomdrafts" target="_blank">канал в Telegram</a>. Буду рад вашим подпискам!
