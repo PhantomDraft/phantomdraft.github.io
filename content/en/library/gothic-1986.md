@@ -24,6 +24,11 @@ hideFromSection: false
 # Hide from everything but the Sitemap
 hideFromSitemap: false
 ---
+<div class="t_center castration cover p_relative atcScreen">
+	<p><img src="/images/library/gothic-1986/cover.webp" alt="The movie cover almost exactly mirrors the plot of the painting The Nightmare (1781), which, according to some critics, foreshadowed Jungian ideas about the unconscious" /></p>
+	<p>The movie cover almost exactly mirrors the plot of the painting "The Nightmare" (1781), which, according to some critics, foreshadowed Jungian ideas about the unconscious.</p>
+</div>
+
 ## The Impending Plot
 
 Ken Russell's Gothic (1986) holds the invitation for the audience into those chaotic nights that spun out these two pillars of literary horror: Mary Shelley's <a href="/library/frankenstein-1818/" target="_blank">Frankenstein</a>, and John Polidori's The Vampyre. It set in the celebrated summer of 1816 at Villa Diodati by Lake Geneva, whereby the film drenches one into the incitements of Lord Byron, Percy Shelley, Mary Shelley, Claire Clairmont, and Dr. John Polidori. By laudanum, by forbidden lusts and by a foul storm, they found their wager-that one would compose the scariest ghost story-turned, in itself, into the descent into hallucinatory horrors.
