@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 23.05
+	Version: 23.06
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('font-awesome.min.css');
@@ -1236,31 +1236,6 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
     border: 1px solid #333;
 }
 
-/* Post Horror
-------------------------------------------------------------
- * Иконки
- */
-.post_horror_icon {
-    display: inline-block;
-    margin: 5px 15px;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    border-radius: 50%;
-}
-
-.post_horror_icon--active {width: 120px; height: 120px;}
-
-.post_horror_icon--active_black {background-color: rgba(0, 0, 0, .7);}
-.post_horror_icon--active_red {background-color: pink;}
-.post_horror_icon--active_purple {background: linear-gradient(to left, rgba(116, 58, 213, .7), rgba(213, 58, 157, .7));}
-
-.post_horror_icon--no_active {width: 60px; height: 60px;}
-
-.post_horror_icon img {
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 /* Информация о материале
 ------------------------------------------------------------
  * footer_info = p_relative and base_width and castration
@@ -1276,72 +1251,6 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
 .footer_info .fa {font-size: 120%;}
 
 .subs, .share {margin: 0 5px;}
-
-/* Комментарии
-==============================
- */
-.comments_settings {
-    padding: 0 14px;
-    background: #fff;
-    font-family: 'Cormorant Garamond', serif; text-transform: uppercase; font-weight: bold; color: #111;
-}
-
-/* Табы для комментариев */
-.comments .tabs-titles {
-    height: 31px;
-    background-color: #fff;
-}
-
-.comments .tabs-titles li {height: 30px;}
-
-.comments .tabs-titles li:not(.ui-tabs-active) {background-color: #1e1e20;}
-
-.comments .tabs-titles li.ui-tabs-active {background-color: pink;}
-
-.comments .tabs-titles li a {
-    display: block;
-    height: 100%;
-    text-decoration: none;
-}
-
-.comments .tabs-titles li a span {
-    display: block;
-    padding-left: 11px;
-    white-space: nowrap; font-family: 'Cormorant Garamond', serif; font-size: 75%; line-height: 30px; letter-spacing: 5px; text-transform: uppercase;
-}
-
-.comments .tabs-titles li:not(.ui-tabs-active) a span {color: #fff;}
-
-.comments .tabs-titles li.ui-tabs-active a span {color: #111;}
-
-/* Вид комментариев */
-.commentlist .children article {margin-right: 3%; margin-left: 3%}
-
-/* Форма ответа */
-.comment-respond {
-    position: sticky;
-    bottom: 0px;
-    padding-bottom: 50px;
-    background-color: #fff;
-}
-
-.comment-form-comment {
-    width: calc(100% - 100px);
-    margin-left: 10px;
-}
-
-.comment-form-comment #comment {min-height: 60px; height: 60px;}
-
-.form-submit {width: 90px; height: 60px;}
-
-.form-submit input {
-    display: block;
-    width: 60px; height: 60px;
-    margin: auto;
-    background-color: pink;
-    border-radius: 50%;
-    font-size: 150%; color: #111;
-}
 
 /* Правый блок
 ==============================
