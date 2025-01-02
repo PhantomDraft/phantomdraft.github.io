@@ -1,5 +1,5 @@
 ---
-title: "Промти для Spirits Show no.1"
+title: "Промпти для Spirits Show no.1"
 description: "Дебютний епізод Spirits Show натхненний кількома джерелами, включаючи відсилки до Tales from the Crypt"
 # format for string: "xxxx-xx-xx"
 date: 2024-12-31
@@ -86,7 +86,7 @@ A Tribute to Rammstein:
 	<iframe title="deezer-widget" src="https://widget.deezer.com/widget/light/album/52231242" loading="lazy" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
 </div>
 
-## Промти для арту
+## Промпти для арту
 
 Звісно, я також ділюся промтами, використаними для створення арту. Сгенеровані за допомогою ChatGPT, зображення включають:
 
