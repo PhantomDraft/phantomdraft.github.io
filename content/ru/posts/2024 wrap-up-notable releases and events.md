@@ -192,13 +192,6 @@ RPG в жанре тёмного фэнтези с некромантическ�
 
 Неожиданно увлекательная веб-игра, которая перешла в версии для Roblox и Minecraft. Как веб-разработчик, я нахожу браузерные игры захватывающими, даже на ранних этапах их развития.
 
-## Мои завершённые проекты
-
-<ul>
-	<li><a href="/ru/articles/the-cabin-for-grooming/" target="_blank">The Cabin for Grooming</a></li>
-	<li><a href="/ru/stories/spiritsshowno.1/" target="_blank">Spirits Show No. 1</a> (<a href="/ru/articles/prompts-and-references-for-the-first-episode-of-the-spirits-show/" target="_blank">Prompts</a>)</li>
-</ul>
-
 ## Слово года
 
 Словом 2024 года Oxford Dictionary выбрал «brain rot» — меткое описание борьбы с «глубинным государством» дома.
@@ -207,7 +200,20 @@ RPG в жанре тёмного фэнтези с некромантическ�
 
 Pantone выбрал «Peach Fuzz».
 
-## В память
+## Мои завершённые проекты
+
+<ul>
+	<li><a href="/ru/articles/the-cabin-for-grooming/" target="_blank">The Cabin for Grooming</a></li>
+	<li><a href="/ru/stories/spiritsshowno.1/" target="_blank">Spirits Show No. 1</a> (<a href="/ru/articles/prompts-and-references-for-the-first-episode-of-the-spirits-show/" target="_blank">Prompts</a>)</li>
+</ul>
+
+### Мои статьи в 2024
+
+<ul>
+	<li><a href="/ru/articles/the-idea-of-apocalypse-in-horror-films-particularly-slashers-films/" target="_blank">The Idea of Apocalypse in Horror Films, Particularly Slashers Films</a></li>
+</ul>
+
+## Некрологи
 
 Кто ушёл из жизни в 2024 году? Увы, многие выдающиеся личности:
 

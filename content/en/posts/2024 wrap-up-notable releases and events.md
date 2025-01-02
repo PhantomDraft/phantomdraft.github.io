@@ -192,13 +192,6 @@ A new chapter in the horror series, exploring the sinister animatronics’ origi
 
 This unexpectedly engaging web-based game transformed into versions for Roblox and Minecraft. As a web developer, I find browser-based games fascinating, even in their early iterations.
 
-## My Completed Projects
-
-<ul>
-	<li><a href="/articles/the-cabin-for-grooming/" target="_blank">The Cabin for Grooming</a></li>
-	<li><a href="/stories/spiritsshowno.1/" target="_blank">Spirits Show No. 1</a> (<a href="/articles/prompts-and-references-for-the-first-episode-of-the-spirits-show/" target="_blank">Prompts</a>)</li>
-</ul>
-
 ## Word of the Year
 
 Oxford Dictionary named “brain rot” the word of 2024—an apt description for fighting the “deep state” at home.
@@ -206,6 +199,19 @@ Oxford Dictionary named “brain rot” the word of 2024—an apt description fo
 ## Color of the Year
 
 Pantone chose Peach Fuzz.
+
+## My Completed Projects
+
+<ul>
+	<li><a href="/articles/the-cabin-for-grooming/" target="_blank">The Cabin for Grooming</a></li>
+	<li><a href="/stories/spiritsshowno.1/" target="_blank">Spirits Show No. 1</a> (<a href="/articles/prompts-and-references-for-the-first-episode-of-the-spirits-show/" target="_blank">Prompts</a>)</li>
+</ul>
+
+### My articles in 2024
+
+<ul>
+	<li><a href="/articles/the-idea-of-apocalypse-in-horror-films-particularly-slashers-films/" target="_blank">The Idea of Apocalypse in Horror Films, Particularly Slashers Films</a></li>
+</ul>
 
 ## In Memoriam
 
