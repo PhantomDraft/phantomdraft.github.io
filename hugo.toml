@@ -107,12 +107,12 @@ paginate = 9
         pre = ""
         weight = 1
     [[menus.social]]
-        name = "Horrorprom on Instagram"
+        name = "Horrorprom (Instagram)"
         url = "https://www.instagram.com/horrorprom/"
         pre = ""
         weight = 2
     [[menus.social]]
-        name = "Spirits Show on YouTube"
+        name = "Spirits Show (YouTube)"
         url = "https://www.youtube.com/@spirits-show"
         pre = ""
         weight = 3
