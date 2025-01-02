@@ -114,7 +114,7 @@ Let’s continue our journey and return to “Shelley’s mockery of modern huma
 
 Now I want to mention works that weren’t inspired by humanity’s inventions for chopping wood or destroying one another, but were instead dedicated to social issues.
 
-### The Last Man on Earth
+### The Last Man
 
 From 1818 to 1826\. <a href="/library/the-last-man-1826/" target="_blank">The Last Man</a> is an apocalyptic science fiction novel by Mary Shelley, which received the worst reviews of all her novels. Critics mocked the very idea of a “last man on earth” and judged the author’s sanity as “sick”.
 
