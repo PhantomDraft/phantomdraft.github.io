@@ -88,7 +88,7 @@ hideFromSitemap: false
 
 З радістю згадую конкурс на найкраще хорор-оповідання від українського видавництва «Бабай», де моя дружина вийшла у <a href="https://babai.co.ua/contests/number_beast-2024" rel="nofollow" target="_blank">фінал</a>.
 
-Серед інших помітних конкурсів — змагання зі створення модів для The Witcher: Wild Hunt від CD Projekt Red.
+Серед інших помітних конкурсів — <a href="https://www.nexusmods.com/witcher3/mods/10098" rel="nofollow" target="_blank">змагання зі створення модів для The Witcher: Wild Hunt від CD Projekt Red</a>.
 
 ## Ремастери 2024 року
 

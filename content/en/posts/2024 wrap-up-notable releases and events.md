@@ -88,7 +88,7 @@ A post-apocalyptic drama exploring the lives of survivors in the Wasteland, base
 
 I’m thrilled to mention the horror story competition by the Ukrainian publisher Babai, where my wife made it to <a href="https://babai.co.ua/contests/number_beast-2024" rel="nofollow" target="_blank">the finals</a>.
 
-Other notable competitions include the Witcher: Wild Hunt modding competition by CD Projekt Red.
+Other notable competitions include <a href="https://www.nexusmods.com/witcher3/mods/10098" rel="nofollow" target="_blank">the Witcher: Wild Hunt modding competition by CD Projekt Red</a>.
 
 ## Remasters of 2024
 
