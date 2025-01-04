@@ -27,7 +27,7 @@ hideFromSitemap: false
 Дебютний епізод Spirits Show черпає натхнення з кількох джерел, включаючи відсилки до Tales from the Crypt.
 
 <ul>
-	<li><a href=" https://phantomdraft.github.io/ru/stories/spiritsshowno.1/" target="_blank">Інтерактивна веб-версія</a></li>
+	<li><a href=" https://phantomdraft.github.io/uk/stories/spiritsshowno.1/" target="_blank">Інтерактивна веб-версія</a></li>
 	<li>Кольорова версія доступна на моєму новому <a href="https://youtube.com/shorts/9SNh-GGgE_0" target="_blank">YouTube-каналі</a></li>
 	<li>Чорно-біла версія викладена в <a href="https://www.instagram.com/p/DCxzR2hq_cO/" target="_blank">Instagram</a> та <a href="https://t.me/horrorprom/73" target="_blank">Telegram</a></li>
 </ul>
