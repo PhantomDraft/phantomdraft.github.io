@@ -26,15 +26,15 @@ hideFromSitemap: false
 ---
 The debut episode of Spirits Show draws inspiration from several references, including nods to Tales from the Crypt.
 
-## Plot of the Pilot Episode
-
-Hel, from <a href="/library/metropolis/" target="_blank">Metropolis (1927)</a>, reimagined in my vision as Marilyn Monroe, visits a beauty salon located in a crypt. Meanwhile, a spark ignites between her and the worker... and not just one! Her feet are polished with a circular saw.
-
 <ul>
 	<li><a href=" https://phantomdraft.github.io/stories/spiritsshowno.1/" target="_blank">The interactive web version</a></li>
 	<li>The color version is available on my new <a href="https://youtube.com/shorts/9SNh-GGgE_0" target="_blank">YouTube channel</a></li>
 	<li>The black-and-white version is on my <a href="https://www.instagram.com/p/DCxzR2hq_cO/" target="_blank">Instagram</a></li>
 </ul>
+
+## Plot of the Pilot Episode
+
+Hel, from <a href="/library/metropolis/" target="_blank">Metropolis (1927)</a>, reimagined in my vision as Marilyn Monroe, visits a beauty salon located in a crypt. Meanwhile, a spark ignites between her and the worker... and not just one! Her feet are polished with a circular saw.
 
 ### Inspiration: Sonne by Skold and a New Take on Metropolis
 
