@@ -6,48 +6,48 @@
     {{ else }}
         {{ "posts/" | relURL }}
     {{ end }}'>
-        {{ i18n "sidebar_posts" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "posts") }}
+        {{ i18n "sidebar_posts" (len .Site.RegularPages) }}: {{ len (where .Site.RegularPages "Type" "posts") }}
     </a></li>
     <li><a href='{{ if $isMultiLingual }}
         {{ $langNow | relURL}}/articles
     {{ else }}
         {{ "articles/" | relURL }}
     {{ end }}'>
-        {{ i18n "sidebar_articles" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "articles") }}
+        {{ i18n "sidebar_articles" (len .Site.RegularPages) }}: {{ len (where .Site.RegularPages "Type" "articles") }}
     </a></li>
     <li><a href='{{ if $isMultiLingual }}
         {{ $langNow | relURL}}/stories
     {{ else }}
         {{ "stories/" | relURL }}
     {{ end }}'>
-        {{ i18n "sidebar_stories" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "stories") }}
+        {{ i18n "sidebar_stories" (len .Site.RegularPages) }}: {{ len (where .Site.RegularPages "Type" "stories") }}
     </a></li>
     <li><a href='{{ if $isMultiLingual }}
         {{ $langNow | relURL}}/library
     {{ else }}
         {{ "library/" | relURL }}
     {{ end }}'>
-        {{ i18n "sidebar_library" (len .Site.RegularPages) }} : {{ len (where .Site.RegularPages "Type" "library") }}
+        {{ i18n "sidebar_library" (len .Site.RegularPages) }}: {{ len (where .Site.RegularPages "Type" "library") }}
     </a></li>
     <li><a href='{{ if $isMultiLingual }}
         {{ $langNow | relURL}}/series
     {{ else }}
         {{ "series/" | relURL }}
     {{ end }}'>
-        {{ i18n "sidebar_series" (len .Site.Taxonomies.series) }} : {{ len .Site.Taxonomies.series }}
+        {{ i18n "sidebar_series" (len .Site.Taxonomies.series) }}: {{ len .Site.Taxonomies.series }}
     </a></li>
     <li><a href='{{ if $isMultiLingual }}
         {{ $langNow | relURL}}/categories
     {{ else }}
         {{ "categories/" | relURL }}
     {{ end }}'>
-        {{ i18n "sidebar_categories" (len .Site.Taxonomies.categories) }} : {{ len .Site.Taxonomies.categories }}
+        {{ i18n "sidebar_categories" (len .Site.Taxonomies.categories) }}: {{ len .Site.Taxonomies.categories }}
     </a></li>
     <li><a href='{{ if $isMultiLingual }}
         {{ $langNow | relURL}}/tags
     {{ else }}
         {{ "tags/" | relURL }}
     {{ end }}'>
-        {{ i18n "sidebar_tags" (len .Site.Taxonomies.tags) }} : {{ len .Site.Taxonomies.tags }}
+        {{ i18n "sidebar_tags" (len .Site.Taxonomies.tags) }}: {{ len .Site.Taxonomies.tags }}
     </a></li>
 </ul>
