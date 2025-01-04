@@ -53,18 +53,47 @@ $(function() {
         mobile_navigation.css('opacity', opacity);
     }
 
-    headers.each(function() {
-        let tag = $(this).prop('tagName').toLowerCase();
-        let text = $(this).text();
-        let id = $(this).attr('id') || text.toLowerCase().replace(/\s+/g, '-');
-        $(this).attr('id', id);
+headers.each(function() {
+    let tag = $(this).prop('tagName').toLowerCase();
+    let text = $(this).text();
+    let id = $(this).attr('id') || text.toLowerCase().replace(/\s+/g, '-');
+    $(this).attr('id', id);
 
-        let listItem = $('<li>').append(
-            $('<a>').attr('href', `#${id}`).text(text)
-        );
+    let level = parseInt(tag.replace('h', ''), 10);
 
-        $table_of_list.append(listItem);
-    });
+    // Create the list item for the current header
+    let listItem = $('<li>').append(
+        $('<a>').attr('href', `#${id}`).text(text)
+    );
+
+    // Determine where to insert the list item based on the header level
+    if (levels.length === 0 || level > levels[levels.length - 1].level) {
+        // Start a new sublist
+        let subList = $('<ul>').append(listItem);
+
+        if (levels.length > 0) {
+            levels[levels.length - 1].listItem.append(subList);
+        } else {
+            $table_of_list.append(subList);
+        }
+
+        levels.push({ level: level, listItem: listItem });
+    } else {
+        // Move back up the levels until we find the correct parent
+        while (levels.length > 0 && level <= levels[levels.length - 1].level) {
+            levels.pop();
+        }
+
+        if (levels.length > 0) {
+            levels[levels.length - 1].listItem.parent().append(listItem);
+        } else {
+            $table_of_list.append(listItem);
+        }
+
+        levels.push({ level: level, listItem: listItem });
+    }
+});
+
 
     $('.update').tabs();
     $('.slider').glide({
