@@ -56,7 +56,7 @@ $(function() {
 headers.each(function() {
     let tag = $(this).prop('tagName').toLowerCase();
     let text = $(this).text();
-    let id = $(this).attr('id') || text.toLowerCase().replace(/\s+/g, '-');
+    let id = $(this).attr('id') || text.toLowerCase().replace(/\\s+/g, '-');
     $(this).attr('id', id);
 
     let level = parseInt(tag.replace('h', ''), 10);
@@ -94,8 +94,9 @@ headers.each(function() {
     }
 });
 
-// Clear levels array to ensure no lingering sublist issues
-levels = [];
+// Reset levels after processing
+levels.length = 0;
+
 
     $('.update').tabs();
     $('.slider').glide({
