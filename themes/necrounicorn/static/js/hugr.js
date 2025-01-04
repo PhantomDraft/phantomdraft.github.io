@@ -53,42 +53,46 @@ $(function() {
         mobile_navigation.css('opacity', opacity);
     }
 
-headers.each(function() {
-    let tag = $(this).prop('tagName').toLowerCase();
-    let text = $(this).text();
-    let id = $(this).attr('id') || text.toLowerCase().replace(/\s+/g, '-');
-    $(this).attr('id', id);
+    headers.each(function() {
 
-    let level = parseInt(tag.replace('h', ''), 10);
+        let tag = $(this).prop('tagName').toLowerCase();
+        let text = $(this).text();
+        let id = $(this).attr('id') || text.toLowerCase().replace(/\s+/g, '-');
 
-    let listItem = $('<li>').append(
-        $('<a>').attr('href', `#${id}`).text(text)
-    );
+        $(this).attr('id', id);
 
-    if (level === 2) {
-        // Create a top-level item
-        $table_of_list.append(listItem);
-        levels = [{ level: 2, list: listItem }]; // Reset levels array
-    } else {
-        // Find the correct parent level
-        while (levels.length > 0 && levels[levels.length - 1].level >= level) {
-            levels.pop();
-        }
+        let level = parseInt(tag.replace('h', ''), 10);
 
-        if (levels.length > 0) {
-            let parentLevel = levels[levels.length - 1];
-            let subList = parentLevel.list.find('ul');
-            if (subList.length === 0) {
-                subList = $('<ul>');
-                parentLevel.list.append(subList);
+        let listItem = $('<li>').append(
+            $('<a>').attr('href', `#${id}`).text(text)
+        );
+
+        if (level === 2) {
+            // Create a top-level item
+            $table_of_list.append(listItem);
+            levels = [{ level: 2, list: listItem }]; // Reset levels array
+        } else {
+            // Find the correct parent level
+            while (levels.length > 0 && levels[levels.length - 1].level >= level) {
+                levels.pop();
             }
-            subList.append(listItem);
+
+            if (levels.length > 0) {
+
+                let parentLevel = levels[levels.length - 1];
+                let subList = parentLevel.list.find('ul');
+
+                if (subList.length === 0) {
+                    subList = $('<ul>');
+                    parentLevel.list.append(subList);
+                }
+
+                subList.append(listItem);
+            }
+
+            levels.push({ level: level, list: listItem });
         }
-
-        levels.push({ level: level, list: listItem });
-    }
-});
-
+    });
 
     $('.update').tabs();
     $('.slider').glide({
