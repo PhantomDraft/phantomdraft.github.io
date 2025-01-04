@@ -29,7 +29,7 @@ The debut episode of Spirits Show draws inspiration from several references, inc
 <ul>
 	<li><a href=" https://phantomdraft.github.io/stories/spiritsshowno.1/" target="_blank">The interactive web version</a></li>
 	<li>The color version is available on my new <a href="https://youtube.com/shorts/9SNh-GGgE_0" target="_blank">YouTube channel</a></li>
-	<li>The black-and-white version is on my <a href="https://www.instagram.com/p/DCxzR2hq_cO/" target="_blank"> Instagram</a></li>
+	<li>The black-and-white version is on my <a href="https://www.instagram.com/p/DCxzR2hq_cO/" target="_blank">Instagram</a></li>
 </ul>
 
 ## Plot of the Pilot Episode

@@ -28,8 +28,8 @@ hideFromSitemap: false
 
 <ul>
 	<li><a href=" https://phantomdraft.github.io/ru/stories/spiritsshowno.1/" target="_blank">Интерактивная веб-версия</a></li>
-	<li>Цветная версия доступна на моём новом <a href="https://youtube.com/shorts/9SNh-GGgE_0" target="_blank">YouTube-канале</a></li>
-	<li>Черно-белая версия выложена в моём <a href="https://www.instagram.com/p/DCxzR2hq_cO/" target="_blank">Instagram</a></li>
+	<li>Цветная версия доступна на моём новом <a href="https://youtube.com/shorts/9SNh-GGgE_0" target="_blank">канале в Ютуб</a></li>
+	<li>Черно-белая версия выложена в <a href="https://www.instagram.com/p/DCxzR2hq_cO/" target="_blank">инстаграм</a> и <a href="https://t.me/horrorprom/73" target="_blank">телеграм</a></li>
 </ul>
 
 ## Сюжет пилотного эпизода
