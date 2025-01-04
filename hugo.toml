@@ -250,12 +250,23 @@ paginate = 9
                 weight = 5
 
 [author]
-    name = "Ruslan Dubinetsky"
-    description = "Notes on Horror and Punk Subgenre Projects"
-    # profile photo of author in author card
-    image = "/img/author.jpeg"
-    # link of followme in author card and footer
-    link = "https://www.linkedin.com/in/ruslan-dubinetsky/"
+    # profile photo
+    image = "/img/RuslanDubinetsky.jpeg"
+    # profile name
+    [author.name]
+        en = "Ruslan Dubinetsky"
+        uk = "Руслан Дубинецький"
+        ru = "Morguenal"
+    # profile link
+    [author.link]
+        en = "https://www.facebook.com/dubinetsky"
+        uk = "https://t.me/morguenal"
+        ru = "https://t.me/morguenal"
+    # profile desc
+    [author.description]
+        en = "Notes on Horror and Punk Subgenre Projects"
+        uk = "Нотатки про проєкти в жанрах жахів та панку"
+        ru = "Заметки о проектах в жанрах ужаса и панка"
 
 # Taxonomies, Currently, only the following 3 taxonomies are supported
 # If you don't want one of them，delete it in [menus] instead here

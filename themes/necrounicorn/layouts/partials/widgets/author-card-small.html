@@ -1,11 +1,11 @@
 <div class="castration aAva">
-	<a href="https://www.facebook.com/dubinetsky" rel="nofollow" target="_blank">
-		<img class="base_width" src="/img/RuslanDubinetsky.jpeg" loading="lazy" />
+	<a href="{{ .Site.Author.link.[.Site.Language.Lang] }}" rel="nofollow" target="_blank">
+		<img class="base_width" src="{{ .Site.Author.image.[.Site.Language.Lang] }}" loading="lazy" />
 	</a>
 </div>
 
 <p>
-	<a href="https://www.facebook.com/dubinetsky" rel="nofollow" target="_blank">
-		{{ .Site.Author.name }}
+	<a href="{{ .Site.Author.link.[.Site.Language.Lang] }}" rel="nofollow" target="_blank">
+		{{ .Site.Author.name.[.Site.Language.Lang] }}
 	</a>
 </p>
