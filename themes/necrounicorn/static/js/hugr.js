@@ -56,46 +56,33 @@ $(function() {
 headers.each(function() {
     let tag = $(this).prop('tagName').toLowerCase();
     let text = $(this).text();
-    let id = $(this).attr('id') || text.toLowerCase().replace(/\\s+/g, '-');
+    let id = $(this).attr('id') || text.toLowerCase().replace(/\s+/g, '-');
     $(this).attr('id', id);
 
     let level = parseInt(tag.replace('h', ''), 10);
 
-    // Create the list item for the current header
     let listItem = $('<li>').append(
         $('<a>').attr('href', `#${id}`).text(text)
     );
 
-    // Determine where to insert the list item based on the header level
-    if (levels.length === 0 || level > levels[levels.length - 1].level) {
-        // Start a new sublist if the level increases
-        let subList = $('<ul>').append(listItem);
-
-        if (levels.length > 0) {
-            levels[levels.length - 1].listItem.append(subList);
-        } else {
-            $table_of_list.append(subList);
+    if (level === 2) {
+        // Create a top-level item
+        $table_of_list.append(listItem);
+        levels = [{ level: 2, list: listItem }]; // Reset levels array
+    } else if (level === 3) {
+        // Handle h3 nested under the latest h2
+        let lastLevel = levels[levels.length - 1];
+        if (lastLevel.level === 2) {
+            let subList = lastLevel.list.find('ul');
+            if (subList.length === 0) {
+                subList = $('<ul>');
+                lastLevel.list.append(subList);
+            }
+            subList.append(listItem);
         }
-
-        levels.push({ level: level, listItem: listItem });
-    } else {
-        // Move back up the levels until we find the correct parent
-        while (levels.length > 0 && level <= levels[levels.length - 1].level) {
-            levels.pop();
-        }
-
-        if (levels.length > 0) {
-            levels[levels.length - 1].listItem.parent().append(listItem);
-        } else {
-            $table_of_list.append(listItem);
-        }
-
-        levels.push({ level: level, listItem: listItem });
+        levels.push({ level: 3, list: listItem });
     }
 });
-
-// Reset levels after processing
-levels.length = 0;
 
 
     $('.update').tabs();
