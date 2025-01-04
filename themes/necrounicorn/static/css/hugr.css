@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 23.09
+	Version: 24.00
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('font-awesome.min.css');
@@ -579,8 +579,9 @@ option {
 #table_of_contents ul {list-style: none;}
 
 #table_of_contents li {margin: 5px 0;}
+#table_of_contents li li {margin-right: 5px; margin-left: 5px;}
 
-#table_of_contents a {text-decoration: none; color: #007bff;}
+#table_of_contents a {color: #b22; text-decoration: none;}
 #table_of_contents a:hover {text-decoration: underline;}
 
 /* Хлебные крошки
