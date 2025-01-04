@@ -34,7 +34,13 @@
     </div>
     <div class="content-block">
         <div class="content-list-col">
-            {{ partial "widgets/author-card.html" . }}
+            <ul>
+                {{ range .Site.Menus.social }}
+                    <li><a href="{{ .URL }}" target="_blank">
+                        {{ .Pre }} {{ .Name }}
+                    </a></li>
+                {{ end }}
+            </ul>
         </div>
     </div>
 </div>
