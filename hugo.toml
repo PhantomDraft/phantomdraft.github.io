@@ -67,7 +67,7 @@ paginate = 9
         enable = true
         # copyright
         copyRight = true
-        from = 2024
+        from = 2025
         # wheher to enable theme information
         themeInfo = true
 
