@@ -68,7 +68,7 @@ headers.each(function() {
 
     // Determine where to insert the list item based on the header level
     if (levels.length === 0 || level > levels[levels.length - 1].level) {
-        // Start a new sublist
+        // Start a new sublist if the level increases
         let subList = $('<ul>').append(listItem);
 
         if (levels.length > 0) {
@@ -94,6 +94,8 @@ headers.each(function() {
     }
 });
 
+// Clear levels array to ensure no lingering sublist issues
+levels = [];
 
     $('.update').tabs();
     $('.slider').glide({
