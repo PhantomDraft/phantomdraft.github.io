@@ -69,18 +69,23 @@ headers.each(function() {
         // Create a top-level item
         $table_of_list.append(listItem);
         levels = [{ level: 2, list: listItem }]; // Reset levels array
-    } else if (level === 3) {
-        // Handle h3 nested under the latest h2
-        let lastLevel = levels[levels.length - 1];
-        if (lastLevel.level === 2) {
-            let subList = lastLevel.list.find('ul');
+    } else {
+        // Find the correct parent level
+        while (levels.length > 0 && levels[levels.length - 1].level >= level) {
+            levels.pop();
+        }
+
+        if (levels.length > 0) {
+            let parentLevel = levels[levels.length - 1];
+            let subList = parentLevel.list.find('ul');
             if (subList.length === 0) {
                 subList = $('<ul>');
-                lastLevel.list.append(subList);
+                parentLevel.list.append(subList);
             }
             subList.append(listItem);
         }
-        levels.push({ level: 3, list: listItem });
+
+        levels.push({ level: level, list: listItem });
     }
 });
 
