@@ -36,11 +36,6 @@ $(function() {
         }
     });
 
-    // Privacy Policy
-    const notification = document.getElementById("privacy-notification");
-    const acceptButton = document.getElementById("accept-privacy");
-    const isAccepted = localStorage.getItem("privacyAccepted");
-
     function handleScroll() {
         let top = wnd.scrollTop(),
             opacity = top > 500 ? 1 : top * 2 / 1000;
@@ -103,6 +98,11 @@ $(function() {
     $('.slider').glide({
         autoplay: 11000
     });
+
+    // Privacy Policy
+    const notification = document.getElementById("privacy-notification");
+    const acceptButton = document.getElementById("accept-privacy");
+    const isAccepted = localStorage.getItem("privacyAccepted");
 
     if (isAccepted) {
         notification.classList.add("hide");

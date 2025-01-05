@@ -24,10 +24,6 @@ hideFromSection: false
 # Hide from everything but the Sitemap
 hideFromSitemap: false
 ---
-# Privacy Policy for Phantom Draft
-
-**Effective Date:** [Insert Date]
-
 ## Introduction
 
 Welcome to Phantom Draft, a personal blog dedicated to the exploration of horror genres, located at [https://phantomdraft.github.io/](https://phantomdraft.github.io/). Protecting your privacy is important to me. This Privacy Policy explains how I collect, use, and protect your data.
