@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 24.03
+	Version: 24.04
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('font-awesome.min.css');
@@ -586,6 +586,33 @@ option {
 
 #table_of_contents a {color: #1e1e20; text-decoration: none;}
 #table_of_contents a:hover {text-decoration: underline;}
+
+/* Privacy Policy
+==============================
+ */
+.privacy-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+.privacy-banner p {
+  margin: 0;
+  font-size: 14px;
+}
+.privacy-banner button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.privacy-banner button:hover {background: #0056b3;}
 
 /* Хлебные крошки
 ==============================

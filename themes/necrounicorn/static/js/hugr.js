@@ -105,12 +105,12 @@ $(function() {
     });
 
     if (isAccepted) {
-        notification.classList.add("hidden");
+        notification.classList.add("hide");
     }
 
     acceptButton.addEventListener("click", function () {
         localStorage.setItem("privacyAccepted", "true");
-        notification.classList.add("hidden");
+        notification.classList.add("hide");
     });
 });
 
