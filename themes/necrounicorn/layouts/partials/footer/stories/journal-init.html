@@ -79,18 +79,18 @@
       });
     });
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const notification = document.getElementById("privacy-notification");
-    const acceptButton = document.getElementById("accept-privacy");
-    const isAccepted = localStorage.getItem("privacyAccepted");
+    document.addEventListener("DOMContentLoaded", function () {
+      const notification = document.getElementById("privacy-notification");
+      const acceptButton = document.getElementById("accept-privacy");
+      const isAccepted = localStorage.getItem("privacyAccepted");
 
-    if (!isAccepted) {
-      notification.style.display = "block";
-    }
+      if (isAccepted) {
+        notification.classList.add("hide");
+      }
 
-    acceptButton.addEventListener("click", function () {
-      localStorage.setItem("privacyAccepted", "true");
-      notification.style.display = "none";
+      acceptButton.addEventListener("click", function () {
+        localStorage.setItem("privacyAccepted", "true");
+        notification.classList.add("hide");
+      });
     });
-  });
 </script>
