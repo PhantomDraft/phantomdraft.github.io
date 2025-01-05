@@ -108,10 +108,14 @@ $(function() {
         notification.classList.add("hide");
     }
 
-    acceptButton.addEventListener("click", function () {
-        localStorage.setItem("privacyAccepted", "true");
-        notification.classList.add("hide");
-    });
+    if (acceptButton) {
+        acceptButton.addEventListener("click", function () {
+            localStorage.setItem("privacyAccepted", "true");
+            notification.classList.add("hide");
+        });
+    } else {
+        console.error("Accept button not found!");
+    }
 });
 
 $(pull).on('click', function(e) {
