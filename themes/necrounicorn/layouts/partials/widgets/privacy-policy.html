@@ -1,6 +1,6 @@
 <div id="privacy-notification" class="t_center bl base_width p_fixed privacy-banner">
   <p>
-    {{ i18n "privacy_policy.text" }}
+    {{ i18n "privacy_policy.text" | safeHTML }}
   </p>
   <button id="accept-privacy">
     {{ i18n "privacy_policy.accept" }}
