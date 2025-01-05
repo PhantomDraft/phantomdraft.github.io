@@ -1,3 +1,24 @@
+/* Privacy Policy */
+.privacy-banner {
+    z-index: 996;
+    padding: 15px;
+    background: rgba(28, 28, 28, .8);
+    color: #fff;
+}
+
+.privacy-banner p {font-size: 110%;}
+
+.privacy-banner a {color: #007bff;}
+
+.privacy-banner button {
+    padding: 5px 10px;
+    background: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.privacy-banner button:hover {background: #0056b3;}
+
 /* Show All Pages */
 #fb5 #fb5-all-pages .fb5-container-pages {
 	position: absolute; 

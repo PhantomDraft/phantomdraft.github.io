@@ -19,7 +19,7 @@
     $(function () {
       // Animation of images for the current page
       function animateImages(page1, page2) {
-        var $images = $('.turn-page-wrapper[page="' + page1 + '"], .turn-page-wrapper[page="' + page2 + '"]').find('.tooltip-img');
+        let $images = $('.turn-page-wrapper[page="' + page1 + '"], .turn-page-wrapper[page="' + page2 + '"]').find('.tooltip-img');
         $images.each(function (index, img) {
           $(img).css({
             'opacity': 0,
@@ -34,21 +34,21 @@
       // Address change handler
       function handleAddressChange(address) {
         if (address.includes("page")) {
-          var pageMatch = address.match(/page(\d+)-page(\d+)/);
+          let pageMatch = address.match(/page(\d+)-page(\d+)/);
           if (pageMatch) {
-            var page1 = pageMatch[1];
-            var page2 = pageMatch[2];
+            let page1 = pageMatch[1];
+            let page2 = pageMatch[2];
             animateImages(page1, page2);
           }
         }
       }
       // Anchor Change Listener
       $(window).on("hashchange", function () {
-        var currentAddress = window.location.hash.slice(1);
+        let currentAddress = window.location.hash.slice(1);
         handleAddressChange(currentAddress);
       });
       // Initialization on page load
-      var initialAddress = window.location.hash.slice(1);
+      let initialAddress = window.location.hash.slice(1);
       handleAddressChange(initialAddress);
       // Opening a tooltip by clicking on an image
       const images = document.querySelectorAll('.tooltip-img');
@@ -78,4 +78,19 @@
         });
       });
     });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const notification = document.getElementById("privacy-notification");
+    const acceptButton = document.getElementById("accept-privacy");
+    const isAccepted = localStorage.getItem("privacyAccepted");
+
+    if (!isAccepted) {
+      notification.style.display = "block";
+    }
+
+    acceptButton.addEventListener("click", function () {
+      localStorage.setItem("privacyAccepted", "true");
+      notification.style.display = "none";
+    });
+  });
 </script>

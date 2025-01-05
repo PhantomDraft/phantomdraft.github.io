@@ -4,4 +4,19 @@
 	$(function() {
 		Books.init();
 	});
+
+	document.addEventListener("DOMContentLoaded", function () {
+		const notification = document.getElementById("privacy-notification");
+		const acceptButton = document.getElementById("accept-privacy");
+		const isAccepted = localStorage.getItem("privacyAccepted");
+
+		if (!isAccepted) {
+			notification.style.display = "block";
+		}
+
+		acceptButton.addEventListener("click", function () {
+			localStorage.setItem("privacyAccepted", "true");
+			notification.style.display = "none";
+		});
+	});
 </script>

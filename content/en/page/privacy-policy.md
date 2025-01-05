@@ -40,7 +40,7 @@ I use Google Analytics to analyze site traffic and visitor behavior. Google Anal
 - Device types
 - Browsing patterns
 
-For more details on how Google collects and processes data, please visit [Google's Privacy Policy](https://policies.google.com/privacy).
+For more details on how Google collects and processes data, please visit <a href="https://policies.google.com/privacy" rel="nofollow" target="_blank">Google's Privacy Policy</a>.
 
 ### 1.2. Comments via Disqus
 
@@ -50,7 +50,7 @@ Disqus powers the comments section of this blog. When you engage in comments, Di
 - Email address
 - IP address
 
-Disqus may also rely on third-party services for additional features. For more information, please refer to [Disqus's Privacy Policy](https://help.disqus.com/en/articles/1717103-disqus-privacy-policy).
+Disqus may also rely on third-party services for additional features. For more information, please refer to <a href="https://help.disqus.com/en/articles/1717103-disqus-privacy-policy" rel="nofollow" target="_blank">Disqus's Privacy Policy</a>.
 
 ### 1.3. Cookies
 
@@ -71,11 +71,11 @@ From time to time, I use Google Forms to gather feedback from the audience. Data
 
 ### 1.6. Google Ads
 
-This site uses Google Ads to display advertisements. Google Ads may collect data to personalize ad experiences. Refer to [Google's Advertising Policy](https://policies.google.com/technologies/ads) for more details.
+This site uses Google Ads to display advertisements. Google Ads may collect data to personalize ad experiences. Refer to <a href="https://policies.google.com/technologies/ads" rel="nofollow" target="_blank">Google's Advertising Policy</a> for more details.
 
 ### 1.7. Script Control
 
-For users who prefer to limit or block scripts, I recommend using browser extensions like [NoScript](https://noscript.net/). This tool allows you to manage which scripts are executed on websites. Please note that disabling certain scripts may affect the functionality of this site.
+For users who prefer to limit or block scripts, I recommend using browser extensions like <a href="https://noscript.net/" rel="nofollow" target="_blank">NoScript</a>. This tool allows you to manage which scripts are executed on websites. Please note that disabling certain scripts may affect the functionality of this site.
 
 ## 2. Ownership of Content
 
@@ -136,4 +136,4 @@ This Privacy Policy may be updated periodically. The latest version will always 
 ## 9. Contact Information
 
 For questions or concerns regarding this Privacy Policy, you can reach me at:  
-**Email:** [Insert Contact Email]
+**Email:** <a href="mailto:ruslan.dubinetsky@gmail.com">Insert Contact Email</a>
