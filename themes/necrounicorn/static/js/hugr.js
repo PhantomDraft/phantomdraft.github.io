@@ -104,18 +104,14 @@ $(function() {
     const acceptButton = document.getElementById("accept-privacy");
     const isAccepted = localStorage.getItem("privacyAccepted");
 
-    if (isAccepted) {
-        notification.classList.add("hide");
-    }
+if (isAccepted) {
+    notification.style.display = "none";
+}
 
-    if (acceptButton) {
-        acceptButton.addEventListener("click", function () {
-            localStorage.setItem("privacyAccepted", "true");
-            notification.classList.add("hide");
-        });
-    } else {
-        console.error("Accept button not found!");
-    }
+acceptButton.addEventListener("click", function () {
+    localStorage.setItem("privacyAccepted", "true");
+    notification.style.display = "none";
+});
 });
 
 $(pull).on('click', function(e) {
