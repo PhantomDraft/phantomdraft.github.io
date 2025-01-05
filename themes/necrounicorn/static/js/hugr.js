@@ -36,6 +36,11 @@ $(function() {
         }
     });
 
+    // Privacy Policy
+    const notification = document.getElementById("privacy-notification");
+    const acceptButton = document.getElementById("accept-privacy");
+    const isAccepted = localStorage.getItem("privacyAccepted");
+
     function handleScroll() {
         let top = wnd.scrollTop(),
             opacity = top > 500 ? 1 : top * 2 / 1000;
@@ -98,6 +103,15 @@ $(function() {
     $('.slider').glide({
         autoplay: 11000
     });
+
+    if (isAccepted) {
+        notification.classList.add("hidden");
+    }
+
+    acceptButton.addEventListener("click", function () {
+        localStorage.setItem("privacyAccepted", "true");
+        notification.classList.add("hidden");
+    });
 });
 
 $(pull).on('click', function(e) {
@@ -126,8 +140,6 @@ $(document).on('click', '.mobile_navigation a, #table_of_contents a', function(e
                 history.pushState(null, null, ' ');
             }
         });
-    } else {
-        console.error(`Element not found: ${href}`);
     }
 });
 
