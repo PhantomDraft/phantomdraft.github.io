@@ -13,6 +13,7 @@ let wnd = $(window),
 let menuHeight = menu.height();
 
 $(function() {
+
     let hat = $('#hat'),
         pos = hat.offset(),
         index = 'key_tab',
@@ -36,12 +37,12 @@ $(function() {
         }
     });
 
-    // Privacy Policy
     const notification = document.getElementById("privacy-notification");
     const acceptButton = document.getElementById("accept-privacy");
     const isAccepted = localStorage.getItem("privacyAccepted");
 
     function handleScroll() {
+
         let top = wnd.scrollTop(),
             opacity = top > 500 ? 1 : top * 2 / 1000;
 
