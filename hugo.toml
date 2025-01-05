@@ -70,6 +70,8 @@ paginate = 9
         from = 2025
         # wheher to enable theme information
         themeInfo = true
+        # privacy policy
+        privacy_policy = true
 
 [menus]
     [[menus.main]]
