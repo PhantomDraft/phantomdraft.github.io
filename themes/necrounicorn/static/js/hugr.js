@@ -36,6 +36,11 @@ $(function() {
         }
     });
 
+    // Privacy Policy
+    const notification = document.getElementById("privacy-notification");
+    const acceptButton = document.getElementById("accept-privacy");
+    const isAccepted = localStorage.getItem("privacyAccepted");
+
     function handleScroll() {
         let top = wnd.scrollTop(),
             opacity = top > 500 ? 1 : top * 2 / 1000;
@@ -94,29 +99,19 @@ $(function() {
         }
     });
 
+    if (isAccepted) {
+        notification.classList.add("hide");
+    }
+
+    acceptButton.addEventListener("click", function () {
+        localStorage.setItem("privacyAccepted", "true");
+        notification.classList.add("hide");
+    });
+
     $('.update').tabs();
     $('.slider').glide({
         autoplay: 11000
     });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const notification = document.getElementById("privacy-notification");
-  const acceptButton = document.getElementById("accept-privacy");
-
-  // Проверяем, есть ли уже соглашение
-  const isAccepted = localStorage.getItem("privacyAccepted");
-
-  if (!isAccepted) {
-    // Показываем баннер, если пользователь ещё не принял политику
-    notification.style.display = "block";
-  }
-
-  // Обрабатываем нажатие кнопки
-  acceptButton.addEventListener("click", function () {
-    localStorage.setItem("privacyAccepted", "true");
-    notification.style.display = "none"; // Скрываем баннер
-  });
 });
 
 $(pull).on('click', function(e) {
