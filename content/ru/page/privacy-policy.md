@@ -16,7 +16,7 @@ series: []
 # Top image for the post /local/images/test/cover.jpg
 image: ""
 # Hide from home and other main page
-hideFromCenter: false
+hideFromCenter: true
 # Hide from archive page
 hideFromArchives: false
 # Hide from everything but the archive
