@@ -1,29 +1,28 @@
-    <link rel='stylesheet' href='{{ "css/stories/journal/hugr.css?v=5.6" | relURL }}'>
-    <script src="/js/core/jquery-1.8.3.min.js"></script>
-    <script src="/js/stories/journal/turn.js"></script>
-    <script src="/js/stories/journal/jquery.fullscreen.js"></script>
-    <script src="/js/stories/journal/jquery.address-1.6.min.js"></script>
-    <script src="/js/stories/journal/wait.js"></script>
-    <script src="/js/stories/journal/onload.js"></script>
-    {{ if not .Params.hideFromGtag }}
-    <!-- Combined Google Analytics and Google Tag Manager -->
-    <script>
-        // Initialize dataLayer
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {dataLayer.push(arguments);}
-        // Google Analytics
-        gtag('js', new Date());
-        gtag('config', 'G-VB7SXFSJZ6');
-        // Google Tag Manager
-        (function(w,d,s,l,i){
-            w[l]=w[l]||[];
-            w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-            let f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window,document,'script','dataLayer','GTM-P5VL5MJD');
-    </script>
-    {{ end }}
+<link rel='stylesheet' href='{{ "css/stories/journal/hugr.css?v=5.6" | relURL }}'>
+<script src="/js/core/jquery-1.8.3.min.js"></script>
+<script src="/js/stories/journal/turn.js"></script>
+<script src="/js/stories/journal/jquery.fullscreen.js"></script>
+<script src="/js/stories/journal/jquery.address-1.6.min.js"></script>
+<script src="/js/stories/journal/wait.js"></script>
+<script src="/js/stories/journal/onload.js"></script>
+{{ if not .Params.hideFromGtag }}
+<!-- Combined Google Analytics and Google Tag Manager -->
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    // Google Analytics
+    gtag('js', new Date());
+    gtag('config', 'G-VB7SXFSJZ6');
+    // Google Tag Manager
+    (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        let f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window,document,'script','dataLayer','GTM-P5VL5MJD');
+</script>
+{{ end }}

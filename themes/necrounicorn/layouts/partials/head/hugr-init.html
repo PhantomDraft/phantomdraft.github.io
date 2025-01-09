@@ -1,50 +1,49 @@
-    <link rel="stylesheet" href="/css/hugr.critical.css?v=25.01">
-    <link rel="preload" href="/css/introjs.min.css?v=1.0" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="/css/hugr.preload.css?v=25.00" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="/css/font-awesome.min.css?v=4.7.0" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="/css/search.css?v=1.0" as="style" onload="this.rel='stylesheet'">
-    <noscript>
-        <link rel='stylesheet' href='{{ "css/introjs.min.css?v=1.0" | relURL }}'>
-        <link rel='stylesheet' href='{{ "css/hugr.css?v=25.01" | relURL }}'>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap">
-        <link rel='stylesheet' href='{{ "css/font-awesome.min.css" | relURL }}'>
-        <link rel='stylesheet' href='{{ "css/search.css" | relURL }}'>
-    </noscript>
+<link rel="stylesheet" href="/css/hugr.critical.css?v=25.01">
+<link rel="preload" href="/css/introjs.min.css?v=1.0" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="/css/hugr.preload.css?v=25.00" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="/css/font-awesome.min.css?v=4.7.0" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="/css/search.css?v=1.0" as="style" onload="this.rel='stylesheet'">
+<noscript>
+    <link rel='stylesheet' href='{{ "css/introjs.min.css?v=1.0" | relURL }}'>
+    <link rel='stylesheet' href='{{ "css/hugr.css?v=25.01" | relURL }}'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel='stylesheet' href='{{ "css/font-awesome.min.css" | relURL }}'>
+    <link rel='stylesheet' href='{{ "css/search.css" | relURL }}'>
+</noscript>
 
-    {{ "<!--[if lt IE 9]>" | safeHTML }}
-        <link rel="stylesheet" type="text/css" href="/css/lteIE9.css?v=0.1" />
-    {{ "<![endif]-->" | safeHTML }}
-    {{ "<!--[if lt IE 8]>" | safeHTML }}
-        <link rel="stylesheet" type="text/css" href="/css/lteIE8.css?v=0.1" />
-    {{ "<![endif]-->" | safeHTML }}
-    {{ "<!--[if IE 8]>" | safeHTML }}
-        <link rel="stylesheet" type="text/css" href="/css/IE8.css?v=0.1" />
-    {{ "<![endif]-->" | safeHTML }}
-    {{ "<!--[if IE 7]>" | safeHTML }}
-        <link rel="stylesheet" type="text/css" href="/css/IE7.css?v=0.1" />
-    {{ "<![endif]-->" | safeHTML }}
+{{ "<!--[if lt IE 9]>" | safeHTML }}
+    <link rel="stylesheet" type="text/css" href="/css/lteIE9.css?v=0.1" />
+{{ "<![endif]-->" | safeHTML }}
+{{ "<!--[if lt IE 8]>" | safeHTML }}
+    <link rel="stylesheet" type="text/css" href="/css/lteIE8.css?v=0.1" />
+{{ "<![endif]-->" | safeHTML }}
+{{ "<!--[if IE 8]>" | safeHTML }}
+    <link rel="stylesheet" type="text/css" href="/css/IE8.css?v=0.1" />
+{{ "<![endif]-->" | safeHTML }}
+{{ "<!--[if IE 7]>" | safeHTML }}
+    <link rel="stylesheet" type="text/css" href="/css/IE7.css?v=0.1" />
+{{ "<![endif]-->" | safeHTML }}
 
-    {{ if not .Params.hideFromGtag }}
-    <!-- Combined Google Analytics and Google Tag Manager -->
-    <script>
-        // Initialize dataLayer
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {dataLayer.push(arguments);}
-        // Google Analytics
-        gtag('js', new Date());
-        gtag('config', 'G-VB7SXFSJZ6');
-        // Google Tag Manager
-        (function(w,d,s,l,i){
-            w[l]=w[l]||[];
-            w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-            let f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+{{ if not .Params.hideFromGtag }}
+<!-- Combined Google Analytics and Google Tag Manager -->
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    // Google Analytics
+    gtag('js', new Date());
+    gtag('config', 'G-VB7SXFSJZ6');
+    // Google Tag Manager
+    (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        let f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
-        })(window,document,'script','dataLayer','GTM-P5VL5MJD');
-    </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8460989425623962" crossorigin="anonymous"></script>
-    {{ end }}
+    })(window,document,'script','dataLayer','GTM-P5VL5MJD');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8460989425623962" crossorigin="anonymous"></script>
+{{ end }}
