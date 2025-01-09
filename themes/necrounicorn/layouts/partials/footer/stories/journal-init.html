@@ -31,6 +31,7 @@
           }, index * 500);
         });
       }
+
       // Address change handler
       function handleAddressChange(address) {
         if (address.includes("page")) {
@@ -42,14 +43,17 @@
           }
         }
       }
+
       // Anchor Change Listener
       $(window).on("hashchange", function () {
         let currentAddress = window.location.hash.slice(1);
         handleAddressChange(currentAddress);
       });
+
       // Initialization on page load
       let initialAddress = window.location.hash.slice(1);
       handleAddressChange(initialAddress);
+
       // Opening a tooltip by clicking on an image
       const images = document.querySelectorAll('.tooltip-img');
       images.forEach(image => {
