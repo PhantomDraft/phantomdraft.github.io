@@ -2,23 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>{{ .Site.BaseURL }}</loc>
+<lastmod>{{ now.Format "2006-01-02" }}</lastmod>
 <priority>1.0</priority>
 </url>
 {{- with .Site.GetPage "taxonomy" "series" }}
 <url>
 <loc>{{ .Permalink }}</loc>
+<lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
 <priority>0.9</priority>
 </url>
 {{- end }}
 {{- with .Site.GetPage "section" "categories" }}
 <url>
 <loc>{{ .Permalink }}</loc>
+<lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
 <priority>0.9</priority>
 </url>
 {{- end }}
 {{- with .Site.GetPage "taxonomy" "tags" }}
 <url>
 <loc>{{ .Permalink }}</loc>
+<lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
 <priority>0.6</priority>
 </url>
 {{- end }}
@@ -26,6 +30,7 @@
 {{- range .Site.Taxonomies.series }}
 <url>
 <loc>{{ .Page.Permalink }}</loc>
+<lastmod>{{ .Page.Lastmod.Format "2006-01-02" }}</lastmod>
 <priority>0.9</priority>
 </url>
 {{- end }}
@@ -34,6 +39,7 @@
 {{- range .Site.Taxonomies.categories }}
 <url>
 <loc>{{ .Page.Permalink }}</loc>
+<lastmod>{{ .Page.Lastmod.Format "2006-01-02" }}</lastmod>
 <priority>0.9</priority>
 </url>
 {{- end }}
@@ -42,6 +48,7 @@
 {{- range .Site.Taxonomies.tags }}
 <url>
 <loc>{{ .Page.Permalink }}</loc>
+<lastmod>{{ .Page.Lastmod.Format "2006-01-02" }}</lastmod>
 <priority>0.6</priority>
 </url>
 {{- end }}
