@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 24.07
+	Version: 24.08
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('font-awesome.min.css');
@@ -39,9 +39,7 @@ header, footer, aside, nav, section, article, svg, canvas, figure, figcaption {d
     box-sizing: border-box;
 }
 
-/*
- * base elements
- */
+/* base elements */
 html {
     background: #962715;
     -webkit-animation: zoom 1s linear 1 alternate;
@@ -178,8 +176,6 @@ textarea {
     resize: vertical;
 }
 
-textarea:hover, textarea:focus {}
-
 select {
     background: url(/img/select-arrow.png) right center no-repeat #eee;
     text-indent: 0.01px; text-overflow: '';
@@ -195,9 +191,7 @@ option {
     color: #1e1e20;
 }
 
-/*
- * Стилизация скроллбара
- */
+/* Стилизация скроллбара */
 *, html * {
     scrollbar-width: thin;
     scrollbar-color: #1e1e20 white;
@@ -209,13 +203,11 @@ option {
 
 *::-webkit-scrollbar-thumb, html *::-webkit-scrollbar-thumb {
     background-color: #1e1e20;
-    border-radius: 0;
+    border-radius: 6px;
     border: 3px solid white;
 }
 
-/*
- * Выделение
- */
+/* Выделение */
 ::selection {
     background-color: #4169E1;
     color: #eee;
@@ -229,9 +221,7 @@ option {
     color: #eee;
 }
 
-/*
- * base class
- */
+/* base class */
 .p_relative {position: relative;}
 .p_absolute {position: absolute;}
 .p_fixed {position: fixed;}
@@ -358,9 +348,7 @@ option {
     clear: both;
 }
 
-/*
- * Фильтры
- */
+/* Фильтры */
 .black_and_white {
     -webkit-filter: grayscale(70%);
     -moz-filter: grayscale(70%);
@@ -411,9 +399,7 @@ option {
     border-radius: 0 0 4px 4px;
 }
 
-/*
- * clearfix
- */
+/* clearfix */
 #container:after {
     display: block;
     height: 0;
@@ -422,9 +408,7 @@ option {
     content: "";
 }
 
-/*
- * clearfix from IE/MAC
- */
+/* clearfix from IE/MAC */
  * html #container {height: 1%;}
 
  #container {display: block;}
@@ -475,9 +459,7 @@ option {
 .menu-main ul li:not(:nth-child(2)) a:hover {background: #1f1f1f;}
 .menu-main ul li a:hover {color: #b22;}
 
-/*
- * Фон лого при фиксации
- */
+/* Фон лого при фиксации */
 @media all and (min-width: 1150px) {
     .fixed .menu-main ul li:nth-child(2) {
         width: 70px; height: 45px;
@@ -490,9 +472,7 @@ option {
     }
 }
 
-/*
- * Поиск
- */
+/* Поиск */
 .search-form {
     width: 30%;
     font-family: 'Roboto', sans-serif;
@@ -535,57 +515,12 @@ option {
     background: url(/img/search.png) no-repeat;
 }
 
-/*
- * Мобильная навигация: кнопка
- */
+/* Мобильная навигация: кнопка */
 #pull {
     display: none;
     background: #1e1e20;
     font-family: 'Cormorant Garamond', serif; line-height: 45px; font-weight: bold; color: pink; text-decoration: none;
 }
-
-/*
- * Мобильная навигация: секции
- */
-.mobile_navigation {
-    z-index: 99;
-    bottom: 0;
-    background: #962715;
-    opacity: 0;
-}
-.mobile_navigation li {width: 50%;}
-.mobile_navigation ul li a {
-    display: block;
-    padding: 0 11px;
-    line-height: 45px; font-weight: bold; color: #1e1e20; text-decoration: none;
-}
-.mobile_navigation ul li a:hover {
-    background: #1e1e20;
-    color: pink;
-}
-
-/* Оглавление */
-#table_of_contents {
-    z-index: 1000;
-    display: none;
-    max-width: 300px;
-    max-height: calc(100vh - 45px - 3rem);
-    overflow-y: auto;
-    top: 45px; bottom: 3rem;
-    left: 50%; margin-left: -150px;
-    padding: 10px;
-    background: #f9f9f9;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-#table_of_contents ul {list-style: none;}
-
-#table_of_contents li {margin: 5px 0;}
-#table_of_contents li li {margin-right: 10px; margin-left: 10px;}
-
-#table_of_contents a {color: #1e1e20; text-decoration: none;}
-#table_of_contents a:hover {text-decoration: underline;}
 
 /* Privacy Policy
 ==============================
@@ -629,9 +564,7 @@ option {
 /* Слайдер
 ==============================
  */
-.slider {
-    height: 400px;
-}
+.slider {height: 400px;}
 
 .slides {
     height: 100%;
@@ -699,9 +632,7 @@ option {
     background-repeat: no-repeat;
 }
 
-/*
- * Слайды: контент
- */
+/* Слайды: контент */
 .main_slide {height: 100%;}
 
 .main_slide section h3 {font-family: 'Metal Mania', cursive; font-size: 250%; line-height: 350px; font-weight: bold; color: #f5f5f5; text-shadow: 1px 1px 3px #000;}
@@ -933,8 +864,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
 }
 
 /*
- * Анонсы новостей
- * Страницы личных данных
+ * Анонсы
 ------------------------------------------------------------
  * preview = p_relative and base_width and castration
  * preview_center = media_base_width and t_center
@@ -1166,9 +1096,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
     content: '';
 }
 
-/*
- * atc: content
- */
+/* atc: content */
 .atcCentral > div, .atcPostHorror > div {z-index: 1;}
 
 .atcPostHorror > div {
@@ -1333,9 +1261,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
 
 .sidebar section.update .tabs-titles li a span b {font-weight: 900; color: pink;}
 
-/*
- * Правый блок: контент
- */
+/* Правый блок: контент */
 .sidebar section .inner {
     width: 300px;
     min-height: 540px; height: auto;
@@ -1380,14 +1306,10 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
     color: #b22; text-decoration: none;
 }
 
-/*
- * for tag
- */
+/* for tag */
 #associative_biopunk a {color: #b22;}
 
-/*
- * Правый блок: Реклама
- */
+/* Правый блок: Реклама */
 .commercial {
     z-index: 97;
     width: 300px; height: auto;
@@ -1399,13 +1321,31 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
     .commercial iframe {height: 500px;}
 }
 
-/*
- * Правый блок: Статистика
- */
+/* Правый блок: Статистика */
 #update-statistics {
     padding: 20px;
     color: #aaa;
 }
+
+/* Переключатели
+==============================
+ */
+.not_twitch {font-family: 'Roboto', sans-serif; font-weight: bold;}
+
+.page-numbers {
+    display: inline-block;
+    margin: 5px 5px 5px 0; padding: 7px;
+    border-radius: 4px;
+    text-align: center; font-size: 100%; text-decoration: none;
+}
+
+span.page-numbers {
+    background-color: #1e1e20;
+    color: #fff;
+}
+
+a.page-numbers {color: #1e1e20;}
+a.page-numbers:hover {color: #b22;}
 
 /* Туфли
 ==============================
@@ -1427,12 +1367,12 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
 
 .shoes, .shoes a {color: #ccc;}
 
-/* Плеер
+/* Боковая панель
 ==============================
  */
 .slidenav {
     width: 350px; height: 100%;
-    background: #fff;
+    background: #f9f9f9;
     z-index: 997;
     -webkit-animation: pulse 2s infinite;
     -moz-animation: pulse 2s infinite;
@@ -1455,11 +1395,11 @@ keyframes pulse {
     100% {box-shadow: 0 0 1px pink;}
 }
 
+.slidenav {top: 0; right: -350px;}
+.slidenav.active {right: 0px;}
+
 .slidenav a {color: #111;}
 
-/*
- * Выдвижная панель
- */
 #overlay {
     z-index: 997;
     display: none;
@@ -1468,15 +1408,53 @@ keyframes pulse {
     cursor: pointer;
 }
 
-.slidenav {top: 0; right: -350px;}
-.slidenav.active {right: 0px;}
-
-/*
- * Контент панели
- */
+/* Контент панели */
 .slidenav .atcScreen, .slidenav .atcScreen iframe {width: 100%;}
 
 .language-info {pointer-events: none;}
+
+/* Оглавление (ранее мобильная навигация)
+==============================
+ */
+.mobile_navigation {
+    z-index: 99;
+    bottom: 0;
+    background: #962715;
+    opacity: 0;
+}
+
+.mobile_navigation button {
+    display: block;
+    height: 45px;
+    line-height: 45px; color: #f9f9f9;
+}
+.mobile_navigation button:hover, .mobile_navigation button:active {
+    background: #1e1e20;
+    color: #f9f9f9;
+}
+
+/* Контент оглавления */
+#table_of_contents {
+    z-index: 996;
+    display: none;
+    max-width: 300px;
+    max-height: calc(100vh - 45px - 3rem);
+    overflow-y: auto;
+    top: 45px; bottom: 3rem;
+    left: 50%; margin-left: -150px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#table_of_contents ul {list-style: none;}
+
+#table_of_contents li {margin: 5px 0;}
+#table_of_contents li li {margin-right: 10px; margin-left: 10px;}
+
+#table_of_contents a {color: #1e1e20; text-decoration: none;}
+#table_of_contents a:hover {text-decoration: underline;}
 
 /* Intro
 ==============================
@@ -1544,26 +1522,6 @@ keyframes pulse {
 .customTooltip a {
     color: #ccc; text-decoration: underline;
 }
-
-/* Переключатели
-==============================
- */
-.not_twitch {font-family: 'Roboto', sans-serif; font-weight: bold;}
-
-.page-numbers {
-    display: inline-block;
-    margin: 5px 5px 5px 0; padding: 7px;
-    border-radius: 4px;
-    text-align: center; font-size: 100%; text-decoration: none;
-}
-
-span.page-numbers {
-    background-color: #1e1e20;
-    color: #fff;
-}
-
-a.page-numbers {color: #1e1e20;}
-a.page-numbers:hover {color: #b22;}
 
 /* Media Queries
 ==============================
