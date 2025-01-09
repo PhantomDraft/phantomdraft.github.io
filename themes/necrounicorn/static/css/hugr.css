@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 25.00
+	Version: 25.01
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -529,9 +529,10 @@ option {
 
 .breadcrumbs span {
     display: inline-block;
-    margin-right: 5px;
     white-space: nowrap; font-size: 90%; font-weight: bold;
 }
+
+.breadcrumbs > span {margin-right: 5px;}
 
 .breadcrumbs span, .breadcrumbs span a {color: #1e1e20; text-decoration: none;}
 
