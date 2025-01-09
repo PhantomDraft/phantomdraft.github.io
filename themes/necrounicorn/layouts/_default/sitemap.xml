@@ -9,52 +9,50 @@
     <loc>{{ .Permalink }}</loc>
     <priority>0.9</priority>
   </url>
-  {{- end -}}
+  {{- end }}
   {{- with .Site.GetPage "section" "categories" }}
   <url>
     <loc>{{ .Permalink }}</loc>
     <priority>0.9</priority>
   </url>
-  {{- end -}}
+  {{- end }}
   {{- with .Site.GetPage "taxonomy" "tags" }}
   <url>
     <loc>{{ .Permalink }}</loc>
     <priority>0.6</priority>
   </url>
-  {{- end -}}
+  {{- end }}
   {{- if .Site.Taxonomies.series }}
     {{- range .Site.Taxonomies.series }}
     <url>
       <loc>{{ .Page.Permalink }}</loc>
       <priority>0.9</priority>
     </url>
-    {{- end -}}
-  {{- end -}}
+    {{- end }}
+  {{- end }}
   {{- if .Site.Taxonomies.categories }}
     {{- range .Site.Taxonomies.categories }}
     <url>
       <loc>{{ .Page.Permalink }}</loc>
       <priority>0.9</priority>
     </url>
-    {{- end -}}
-  {{- end -}}
+    {{- end }}
+  {{- end }}
   {{- if .Site.Taxonomies.tags }}
     {{- range .Site.Taxonomies.tags }}
     <url>
       <loc>{{ .Page.Permalink }}</loc>
       <priority>0.6</priority>
     </url>
-    {{- end -}}
-  {{- end -}}
+    {{- end }}
+  {{- end }}
   {{- range .Site.RegularPages }}
-    {{- if or (and (not .Params.hideFromCenter) (not .Params.hideFromSitemap)) }}
+    {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSitemap)) }}
     <url>
       <loc>{{ .Permalink }}</loc>
-      {{- if .Lastmod }}
       <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
-      {{- end }}
       <priority>0.8</priority>
     </url>
-    {{- end -}}
-  {{- end -}}
+    {{- end }}
+  {{- end }}
 </urlset>
