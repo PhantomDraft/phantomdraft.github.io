@@ -3,7 +3,7 @@
     Theme URI: localhost
     Author: Ruslan Dubinetsky
     Author URI: https://github.com/PhantomDraft
-    Version: 25.00
+    Version: 25.03
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -884,8 +884,8 @@ a.page-numbers:hover {color: #b22;}
     margin-bottom: 45px;
     font-family: 'Roboto', sans-serif; color: #bbc3c6;
 }
-.shoes > section {padding: 11px;}
-.shoes > section > img {
+.shoes > div {padding: 11px;}
+.shoes > div > img {
     width: auto; height: 100px;
     margin: 4px 8px;
 }
@@ -1126,12 +1126,12 @@ keyframes pulse {
 }
 @media all and (max-width: 550px) {
     .black_sail {background-size: 300px;}
-    .shoes > section img .grid .text {float: none;}
+    .shoes > div img .grid .text {float: none;}
     .atcScreen img.miner, .atcScreen img.fr, .atcScreen img.fl {margin-top: 10px;}
     .atcScreen img.fr {margin-left: auto !important;}
     .atcScreen img.fl {margin-right: auto !important;}
     .footer_info .fr {display: none;}
-    .shoes > section {text-align: center;}
+    .shoes > div {text-align: center;}
     .aMessage iframe {height: 300px;}
     .atcScreen, .atcCentral {width: 84%;}
     .atcScreen, .atcCentral {padding: 10px;}
