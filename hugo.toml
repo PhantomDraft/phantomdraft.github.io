@@ -31,7 +31,7 @@ paginate = 9
     # page configuration
     [params.page]
     # top image in home page, note that the "/" in path is necessary, the same applies below
-    homeTopImg = "/img/cover/home.jpg"
+    homeTopImg = "/img/cover/default.jpg"
     # title in home top image, support Markdown
     homeTitle = "Phantom Draft"
     # top image in categories terms page
