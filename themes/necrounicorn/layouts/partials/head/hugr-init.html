@@ -1,6 +1,17 @@
-<link type="text/css" href='{{ "css/introjs.min.css?v=1.0" | relURL }}' rel="stylesheet" />
-<link rel="stylesheet" href='{{ "css/hugr.css?v=24.09" | relURL }}' />
-<link rel="stylesheet" href='{{ "css/search.css" | relURL }}' />
+<link rel="stylesheet" href="/css/hugr.critical.css?v=25.00" />
+<link rel="preload" href="/css/introjs.min.css?v=1.0" as="style" onload="this.rel='stylesheet'" />
+<link rel="preload" href="/css/hugr.preload.css?v=25.00" as="style" onload="this.rel='stylesheet'" />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" as="style" onload="this.rel='stylesheet'" />
+<link rel="preload" href="/css/font-awesome.min.css?v=4.7.0" as="style" onload="this.rel='stylesheet'" />
+<link rel="preload" href="/css/search.css?v=1.0" as="style" onload="this.rel='stylesheet'" />
+<noscript>
+    <link type='text/css' href='{{ "css/introjs.min.css?v=1.0" | relURL }}' rel='stylesheet' />
+    <link type='text/css' href='{{ "css/hugr.css?v=25.00" | relURL }}' rel='stylesheet' />
+    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <link type='text/css' href='{{ "css/font-awesome.min.css" | relURL }}' rel='stylesheet' />
+    <link type='text/css' href='{{ "css/search.css" | relURL }}' rel='stylesheet' />
+</noscript>
+
 {{ "<!--[if lt IE 9]>" | safeHTML }}
     <link rel="stylesheet" type="text/css" href="/css/lteIE9.css?v=0.1" />
 {{ "<![endif]-->" | safeHTML }}
@@ -13,10 +24,7 @@
 {{ "<!--[if IE 7]>" | safeHTML }}
     <link rel="stylesheet" type="text/css" href="/css/IE7.css?v=0.1" />
 {{ "<![endif]-->" | safeHTML }}
-<script type="text/javascript" src="/js/core/jquery-1.12.4.min.js"></script>
-<script type="text/javascript" src="/js/core/jquery.cookie.min.js"></script>
-<script type="text/javascript" src="/js/core/jquery-ui-1.9.1.custom.min.js"></script>
-<script type="text/javascript" src="/js/search.js"></script>
+
 {{ if not .Params.hideFromGtag }}
 <!-- Combined Google Analytics and Google Tag Manager -->
 <script>
