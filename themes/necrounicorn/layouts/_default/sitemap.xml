@@ -5,73 +5,73 @@
     <priority>1.0</priority>
     <lastmod>{{ now.Format "2006-01-02" }}</lastmod>
   </url>
-  {{- with .Site.GetPage "taxonomy" "series" }}
+  {{- with .Site.GetPage "taxonomy" "series" -}}
   <url>
     <loc>{{ .Permalink }}</loc>
     <priority>0.9</priority>
     <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
   </url>
   {{- end }}
-  {{- with .Site.GetPage "section" "categories" }}
+  {{- with .Site.GetPage "section" "categories" -}}
   <url>
     <loc>{{ .Permalink }}</loc>
     <priority>0.9</priority>
     <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
   </url>
   {{- end }}
-  {{- with .Site.GetPage "taxonomy" "tags" }}
+  {{- with .Site.GetPage "taxonomy" "tags" -}}
   <url>
     <loc>{{ .Permalink }}</loc>
     <priority>0.6</priority>
     <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
   </url>
   {{- end }}
-  {{- if .Site.Taxonomies.series }}
-    {{- range .Site.Taxonomies.series }}
+  {{- if .Site.Taxonomies.series -}}
+    {{- range .Site.Taxonomies.series -}}
     <url>
       <loc>{{ .Page.Permalink }}</loc>
       <priority>0.9</priority>
-      {{- if .Page.Lastmod }}
+      {{- if .Page.Lastmod -}}
       <lastmod>{{ .Page.Lastmod.Format "2006-01-02" }}</lastmod>
-      {{- else }}
+      {{- else -}}
       <lastmod>{{ now.Format "2006-01-02" }}</lastmod>
       {{- end }}
     </url>
     {{- end }}
   {{- end }}
-  {{- if .Site.Taxonomies.categories }}
-    {{- range .Site.Taxonomies.categories }}
+  {{- if .Site.Taxonomies.categories -}}
+    {{- range .Site.Taxonomies.categories -}}
     <url>
       <loc>{{ .Page.Permalink }}</loc>
       <priority>0.9</priority>
-      {{- if .Page.Lastmod }}
+      {{- if .Page.Lastmod -}}
       <lastmod>{{ .Page.Lastmod.Format "2006-01-02" }}</lastmod>
-      {{- else }}
+      {{- else -}}
       <lastmod>{{ now.Format "2006-01-02" }}</lastmod>
       {{- end }}
     </url>
     {{- end }}
   {{- end }}
-  {{- if .Site.Taxonomies.tags }}
-    {{- range .Site.Taxonomies.tags }}
+  {{- if .Site.Taxonomies.tags -}}
+    {{- range .Site.Taxonomies.tags -}}
     <url>
       <loc>{{ .Page.Permalink }}</loc>
       <priority>0.6</priority>
-      {{- if .Page.Lastmod }}
+      {{- if .Page.Lastmod -}}
       <lastmod>{{ .Page.Lastmod.Format "2006-01-02" }}</lastmod>
-      {{- else }}
+      {{- else -}}
       <lastmod>{{ now.Format "2006-01-02" }}</lastmod>
       {{- end }}
     </url>
     {{- end }}
   {{- end }}
-  {{- range .Site.RegularPages }}
-    {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSitemap)) }}
+  {{- range .Site.RegularPages -}}
+    {{- if or (and (not .Params.hideFromCenter) (not .Params.hideFromSitemap)) -}}
     <url>
       <loc>{{ .Permalink }}</loc>
-      {{- if .Lastmod }}
+      {{- if .Lastmod -}}
       <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
-      {{- else }}
+      {{- else -}}
       <lastmod>{{ now.Format "2006-01-02" }}</lastmod>
       {{- end }}
       <priority>0.8</priority>
