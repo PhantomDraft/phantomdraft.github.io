@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 25.03
+	Version: 25.04
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -1359,6 +1359,8 @@ a.page-numbers:hover {color: #b22;}
 .shoes p {margin: 0 0 11px;}
 
 .shoes, .shoes a {color: #ccc;}
+
+.shoes .fr a {text-decoration: none;}
 
 /* Боковая панель
 ==============================
