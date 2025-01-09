@@ -50,7 +50,9 @@
     {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSitemap)) }}
     <url>
       <loc>{{ .Permalink }}</loc>
+      {{- if .Lastmod }}
       <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
+      {{- end }}
       <priority>0.8</priority>
     </url>
     {{- end }}
