@@ -1,18 +1,20 @@
+{{ $lang := .Site.Language.Lang }}
+{{ $taxonomyFile := printf "taxonomyDescriptions_%s" $lang }}
+{{ $taxonomyDescriptions := index .Site.Data.taxonomy $taxonomyFile }}
+{{ $taxonomyType := .Section }}
+{{ $taxonomyKey := .Title | lower | urlize }}
+{{ $localizedDescription := index .Site.Params.page ($lang | lower) "homeContent" }}
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="t8jAWmyyFoU9OkD89rkuwkAqVJDTTIXOVQWqHpaznSM">
     <meta name="google-adsense-account" content="ca-pub-8460989425623962">
+
     <!-- title -->
     <title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}{{ if eq .Site.Language.Lang "uk" }} на українському{{ end }}{{ if eq .Site.Language.Lang "ru" }} на русском{{ end }}</title>
+
     <!-- meta description -->
-    {{ $lang := .Site.Language.Lang }}
-    {{ $taxonomyFile := printf "taxonomyDescriptions_%s" $lang }}
-    {{ $taxonomyDescriptions := index .Site.Data.taxonomy $taxonomyFile }}
-    {{ $taxonomyType := .Section }}
-    {{ $taxonomyKey := .Title | lower | urlize }}
-    {{ $localizedDescription := index .Site.Params.page ($lang | lower) "homeContent" }}
     <meta name="description" content="{{- if .Description -}}
         {{ .Description }}
     {{- else if .Summary -}}
@@ -28,8 +30,10 @@
     {{- else -}}
         Notes on Horror and Punk Subgenre Projects (including Biopunk, Mythpunk, Dreampunk, and others)
     {{- end -}}">
+
     <!-- Open Graph и Twitter -->
-    {{- partial "open-graph.html" . | indent 4 -}}
+    {{- partial "open-graph.html" . -}}
+
     <!-- rel canonical -->
     <link rel="canonical" href="{{ .Permalink }}">
     <!-- rel alternate : processing of the main page -->
@@ -48,8 +52,10 @@
     {{ end }}
     {{ end }}
     {{ end }}
+
     <!-- rel icon -->
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
     {{ if and (eq .Section "stories") .IsPage }}
     {{- partial "head/stories/journal-init.html" . -}}
     {{ else if and (eq .Section "stories") .IsSection }}
