@@ -259,7 +259,10 @@ paginate = 9
 
 [author]
     # profile photo
-    image = "/img/RuslanDubinetsky.jpeg"
+    [author.image]
+        en = "/img/cover/default.jpg"
+        uk = "/img/cover/default.jpg"
+        ru = "/img/morginal.webp"
     # profile name
     [author.name]
         en = "Ruslan Dubinetsky"
@@ -267,8 +270,8 @@ paginate = 9
         ru = "Morguenal"
     # profile link
     [author.link]
-        en = "https://www.facebook.com/dubinetsky"
-        uk = "https://t.me/morguenal"
+        en = "mailto:ruslan.dubinetsky@gmail.com"
+        uk = "mailto:ruslan.dubinetsky@gmail.com"
         ru = "https://t.me/morguenal"
     # profile desc
     [author.description]
