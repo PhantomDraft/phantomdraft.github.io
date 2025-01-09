@@ -6,11 +6,11 @@
                     {{ .Site.Title }} © {{ .Site.Params.footer.from }} <br /> 
                     Theme created by <a href='{{ index .Site.Author.link (.Site.Language.Lang | default "en") }}' rel='nofollow' target='_blank'>{{ index .Site.Author.name (.Site.Language.Lang | default "en") }}</a> | 
                 {{ end }}
-                {{ if .Site.Params.footer.themeInfo }}
-                    Powered by <a href="https://gohugo.io/">Hugo</a>
-                {{ end }}
                 {{ if .Site.Params.footer.privacy_policy }}
-                    <br /> <a href='{{ i18n "privacy_policy.uri" }}'>{{ i18n "privacy_policy.name" }}</a>
+                    <a href='{{ i18n "privacy_policy.uri" }}'>{{ i18n "privacy_policy.name" }}</a>
+                {{ end }}
+                {{ if .Site.Params.footer.themeInfo }}
+                    <br> Powered by <a href="https://gohugo.io/">Hugo</a>
                 {{ end }}
             </p>
         {{ end }}
