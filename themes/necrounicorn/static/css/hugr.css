@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 25.01
+	Version: 25.02
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -461,7 +461,7 @@ option {
     .fixed .menu-main ul li:nth-child(2) {
         width: 70px; height: 45px;
         margin-left: 7px;
-        background: url(/img/logo.png) #b22;
+        background: url(/img/logo.webp) #b22;
         background-size: auto 100%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
