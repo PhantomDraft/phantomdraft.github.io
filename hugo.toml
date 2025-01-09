@@ -34,8 +34,6 @@ paginate = 9
     homeTopImg = "/img/cover/home.jpg"
     # title in home top image, support Markdown
     homeTitle = "Phantom Draft"
-    # content in home top image, support Markdown
-    homeContent = "Notes on Horror and Punk Subgenre Projects"
     # top image in categories terms page
     categoryTopImg = "/img/cover/categories.jpg"
     # description of categories terms page
@@ -60,6 +58,14 @@ paginate = 9
     maxPageRelatedCount = 6
     # Maximum number of latest articles displayed
     maxPageNewestCount = 3
+
+    # content in home top image, support Markdown
+    [params.page.en]
+        homeContent = "Notes on Horror and Punk Subgenre Projects"
+    [params.page.uk]
+        homeContent = "Нотатки про проєкти жахів та панк-субжанру"
+    [params.page.ru]
+        homeContent = "Записи о проектах в жанрах ужасов и панк-субкультуры"
 
     # footer
     [params.footer]

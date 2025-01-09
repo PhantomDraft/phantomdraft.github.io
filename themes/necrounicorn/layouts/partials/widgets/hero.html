@@ -47,7 +47,8 @@
 {{ else if eq .Kind "home" }}
     {{ $hero_img = .Site.Params.page.homeTopImg }}
     {{ $hero_title = .Site.Params.page.homeTitle }}
-    {{ $hero_des = .Site.Params.page.homeContent }}
+    {{ $localizedContent := index .Site.Params.page (.Lang | lower) "homeContent" }}
+    {{ $hero_des = cond (not (eq $localizedContent nil)) $localizedContent .Site.Params.page.homeContent }}
 {{ end }}
 
 <div class="castration base_width p_relative preview">
