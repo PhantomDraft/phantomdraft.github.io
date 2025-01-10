@@ -135,5 +135,6 @@ This Privacy Policy may be updated periodically. The latest version will always 
 
 ## 9. Contact Information
 
-For questions or concerns regarding this Privacy Policy, you can reach me at:
-**Email:** <a href="mailto:ruslan.dubinetsky@gmail.com">ruslan.dubinetsky@gmail.com</a>
+For questions or concerns regarding this Privacy Policy, you can reach out to the designated point of contact:
+
+**Email:** <a href="mailto:ruslan.dubinetsky@gmail.com">ruslan.dubinetsky@gmail.com (Ruslan)</a>
