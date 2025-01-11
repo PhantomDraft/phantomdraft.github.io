@@ -5,7 +5,7 @@
 #URL = "https://phantomdraft.github.io/"
 #publishDir = "public"
 
-baseURL = 'https://phantomdraft.github.io/'
+baseURL = 'https://phantom-draft.com/'
 # website title
 title = 'Phantom Draft'
 # theme
