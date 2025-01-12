@@ -137,5 +137,5 @@ Disqus також може використовувати сторонні се�
 
 З питаннями або зауваженнями щодо цієї Політики конфіденційності ви можете звернутися до визначеної контактної особи:
 
-**Email:** <a href="mailto:ruslan.dubinetsky@gmail.com">ruslan.dubinetsky@gmail.com (Руслан)</a>
-**Telegram:** <a href="https://t.me/morguenal" rel="nofollow" target="_blank">morguenal</a>
+- **Email:** <a href="mailto:ruslan.dubinetsky@gmail.com">ruslan.dubinetsky@gmail.com (Руслан)</a>
+- **Telegram:** <a href="https://t.me/morguenal" rel="nofollow" target="_blank">morguenal</a>

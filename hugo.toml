@@ -110,23 +110,23 @@ paginate = 9
 
     # social, maxum 6
     [[menus.social]]
-        name = "Phantom Draft on Facebook"
-        url = "https://www.facebook.com/phantomdrafts/"
-        pre = ""
-        weight = 1
-    [[menus.social]]
         name = "Horrorprom (Instagram)"
         url = "https://www.instagram.com/horrorprom/"
         pre = ""
-        weight = 2
+        weight = 1
     [[menus.social]]
         name = "Spirits Show (YouTube)"
         url = "https://www.youtube.com/@spirits-show"
         pre = ""
-        weight = 3
+        weight = 2
     [[menus.social]]
         name = "Doomform (TikTok)"
         url = "https://www.tiktok.com/@doomform"
+        pre = ""
+        weight = 3
+    [[menus.social]]
+        name = "Phantom Draft on Facebook"
+        url = "https://www.facebook.com/phantomdrafts/"
         pre = ""
         weight = 4
 
@@ -177,28 +177,28 @@ paginate = 9
 
             # social
             [[languages.uk.menus.social]]
-                name = "Phantom Draft у Facebook"
-                url = "https://www.facebook.com/phantomdrafts/"
-                pre = ""
-                weight = 1
-            [[languages.uk.menus.social]]
-                name = "Phantom Draft у Telegram"
-                url = "https://t.me/phantomdrafts"
-                pre = ""
-                weight = 2
-            [[languages.uk.menus.social]]
                 name = "Horrorprom (Instagram)"
                 url = "https://www.instagram.com/horrorprom/"
                 pre = ""
-                weight = 3
+                weight = 1
             [[languages.uk.menus.social]]
                 name = "Spirits Show (YouTube)"
                 url = "https://www.youtube.com/@spirits-show"
                 pre = ""
-                weight = 4
+                weight = 2
             [[languages.uk.menus.social]]
                 name = "Doomform (TikTok)"
                 url = "https://www.tiktok.com/@doomform"
+                pre = ""
+                weight = 3
+            [[languages.uk.menus.social]]
+                name = "Phantom Draft у Facebook"
+                url = "https://www.facebook.com/phantomdrafts/"
+                pre = ""
+                weight = 4
+            [[languages.uk.menus.social]]
+                name = "Phantom Draft у Telegram"
+                url = "https://t.me/phantomdrafts"
                 pre = ""
                 weight = 5
 
@@ -232,28 +232,28 @@ paginate = 9
 
             # social
             [[languages.ru.menus.social]]
-                name = "Phantom Draft в Facebook"
-                url = "https://www.facebook.com/phantomdrafts/"
-                pre = ""
-                weight = 1
-            [[languages.ru.menus.social]]
-                name = "Phantom Draft в Telegram"
-                url = "https://t.me/phantomdrafts"
-                pre = ""
-                weight = 2
-            [[languages.ru.menus.social]]
                 name = "Horrorprom (Instagram)"
                 url = "https://www.instagram.com/horrorprom/"
                 pre = ""
-                weight = 3
+                weight = 1
             [[languages.ru.menus.social]]
                 name = "Spirits Show (YouTube)"
                 url = "https://www.youtube.com/@spirits-show"
                 pre = ""
-                weight = 4
+                weight = 2
             [[languages.ru.menus.social]]
                 name = "Doomform (TikTok)"
                 url = "https://www.tiktok.com/@doomform"
+                pre = ""
+                weight = 3
+            [[languages.ru.menus.social]]
+                name = "Phantom Draft в Facebook"
+                url = "https://www.facebook.com/phantomdrafts/"
+                pre = ""
+                weight = 4
+            [[languages.ru.menus.social]]
+                name = "Phantom Draft в Telegram"
+                url = "https://t.me/phantomdrafts"
                 pre = ""
                 weight = 5
 

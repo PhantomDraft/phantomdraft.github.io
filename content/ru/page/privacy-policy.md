@@ -141,5 +141,5 @@ Disqus также может использовать сторонние сер�
 
 По вопросам или замечаниям относительно данной Политики конфиденциальности вы можете обратиться к назначенному контактному лицу:
 
-**Email:** <a href="mailto:vsezlodov@gmail.com">vsezlodov@gmail.com (Sam)</a>
-**Telegram:** <a href="https://t.me/morguenal" rel="nofollow" target="_blank">morginal (t.me)</a>
+- **Email:** <a href="mailto:vsezlodov@gmail.com">vsezlodov@gmail.com (Sam)</a>
+- **Telegram:** <a href="https://t.me/morguenal" rel="nofollow" target="_blank">morginal (t.me)</a>
