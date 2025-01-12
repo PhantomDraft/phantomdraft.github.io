@@ -1,62 +1,68 @@
 <div itemscope itemtype="http://schema.org/BreadcrumbList" class="center media_base_width p_relative breadcrumbs">
-<!-- Корень сайта -->
-<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    <a href="{{ .Site.BaseURL | relLangURL }}" itemprop="item">
-        <span itemprop="name">{{ .Site.Title }}</span>
-    </a>
-</span>
-
-{{ if .IsSection }}
-<!-- Название текущей секции -->
-<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    <span itemprop="name">
-        {{ if .Title }}
-            {{ .Title }}
-        {{ else if .File }}
-            {{ .File.Path | humanize }}
-        {{ else }}
-            {{ .Section | humanize }}
-        {{ end }}
-    </span>
-</span>
-
-{{ else if or (eq .Kind "taxonomy") (eq .Kind "taxonomyTerm") }}
-<!-- Название таксономии или термина -->
-<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    <span itemprop="name">
-        {{ if .Title }}
-            {{ .Title }}
-        {{ else }}
-            {{ .Type | humanize }}
-        {{ end }}
-    </span>
-</span>
-
-{{ else if .IsPage }}
-<!-- Секция, к которой принадлежит материал -->
-<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    {{ $section := site.GetPage "section" .Section }}
-    {{ if $section }}
-        <a href="{{ $section.Permalink }}" itemprop="item">
-            <span itemprop="name">{{ $section.Title | default .Section | humanize }}</span>
+    <!-- Корень сайта -->
+    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="{{ .Site.BaseURL | relLangURL }}" itemprop="item">
+            <span itemprop="name">{{ .Site.Title }}</span>
         </a>
-    {{ else }}
-        <!-- Если объект секции не найден -->
-        <a href="#" itemprop="item">
-            <span itemprop="name">{{ .Section | humanize }}</span>
-        </a>
+        <meta itemprop="position" content="1" />
+    </span>
+
+    {{ if .IsSection }}
+    <!-- Название текущей секции -->
+    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <span itemprop="name">
+            {{ if .Title }}
+                {{ .Title }}
+            {{ else if .File }}
+                {{ .File.Path | humanize }}
+            {{ else }}
+                {{ .Section | humanize }}
+            {{ end }}
+        </span>
+        <meta itemprop="position" content="2" />
+    </span>
+
+    {{ else if or (eq .Kind "taxonomy") (eq .Kind "taxonomyTerm") }}
+    <!-- Название таксономии или термина -->
+    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <span itemprop="name">
+            {{ if .Title }}
+                {{ .Title }}
+            {{ else }}
+                {{ .Type | humanize }}
+            {{ end }}
+        </span>
+        <meta itemprop="position" content="2" />
+    </span>
+
+    {{ else if .IsPage }}
+    <!-- Секция, к которой принадлежит материал -->
+    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        {{ $section := site.GetPage "section" .Section }}
+        {{ if $section }}
+            <a href="{{ $section.Permalink }}" itemprop="item">
+                <span itemprop="name">{{ $section.Title | default .Section | humanize }}</span>
+            </a>
+        {{ else }}
+            <!-- Если объект секции не найден -->
+            <a href="#" itemprop="item">
+                <span itemprop="name">{{ .Section | humanize }}</span>
+            </a>
+        {{ end }}
+        <meta itemprop="position" content="2" />
+    </span>
+
+    <!-- Текущая страница -->
+    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <span itemprop="name">{{ .Title }}</span>
+        <meta itemprop="position" content="3" />
+    </span>
+
+    {{ else if not .IsHome }}
+    <!-- Другие страницы (например, 404) -->
+    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <span itemprop="name">{{ .Title | default "Неизвестная страница" }}</span>
+        <meta itemprop="position" content="2" />
+    </span>
     {{ end }}
-</span>
-
-<!-- Текущая страница -->
-<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    <span itemprop="name">{{ .Title }}</span>
-</span>
-
-{{ else if not .IsHome }}
-<!-- Другие страницы (например, 404) -->
-<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    <span itemprop="name">{{ .Title | default "Неизвестная страница" }}</span>
-</span>
-{{ end }}
 </div>
