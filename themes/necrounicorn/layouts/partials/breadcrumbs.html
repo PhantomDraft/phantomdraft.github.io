@@ -4,7 +4,7 @@
         <a href="{{ .Site.BaseURL | relLangURL }}" itemprop="item">
             <span itemprop="name">{{ .Site.Title }}</span>
         </a>
-        <meta itemprop="position" content="1" />
+        <meta itemprop="position" content="1">
     </span>
 
     {{ if .IsSection }}
@@ -19,7 +19,7 @@
                 {{ .Section | humanize }}
             {{ end }}
         </span>
-        <meta itemprop="position" content="2" />
+        <meta itemprop="position" content="2">
     </span>
 
     {{ else if or (eq .Kind "taxonomy") (eq .Kind "taxonomyTerm") }}
@@ -32,7 +32,7 @@
                 {{ .Type | humanize }}
             {{ end }}
         </span>
-        <meta itemprop="position" content="2" />
+        <meta itemprop="position" content="2">
     </span>
 
     {{ else if .IsPage }}
@@ -49,20 +49,20 @@
                 <span itemprop="name">{{ .Section | humanize }}</span>
             </a>
         {{ end }}
-        <meta itemprop="position" content="2" />
+        <meta itemprop="position" content="2">
     </span>
 
     <!-- Текущая страница -->
     <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
         <span itemprop="name">{{ .Title }}</span>
-        <meta itemprop="position" content="3" />
+        <meta itemprop="position" content="3">
     </span>
 
     {{ else if not .IsHome }}
     <!-- Другие страницы (например, 404) -->
     <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
         <span itemprop="name">{{ .Title | default "Неизвестная страница" }}</span>
-        <meta itemprop="position" content="2" />
+        <meta itemprop="position" content="2">
     </span>
     {{ end }}
 </div>
