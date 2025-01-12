@@ -38,10 +38,9 @@
 					<div class="bk-info">
 						<button class="bk-bookback">Flip</button>
 						<button class="bk-bookview">View inside</button>
-						<h3>
-							<span>{{ .Title }}</span>
-						</h3>
-						<p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+						<form action="{{ .RelPermalink }}" method="post">
+							<button class="bk-bookview">Read</button>
+						</form>
 					</div>
 				</li>
 			{{ end }}
