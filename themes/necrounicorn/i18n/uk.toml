@@ -132,6 +132,6 @@
 
 [privacy_policy]
 	name = 'Політика конфіденційності'
-	uri = 'https://phantomdraft.github.io/uk/page/privacy-policy/'
+	uri = 'https://phantom-draft.com/uk/page/privacy-policy/'
 	text = 'Ми використовуємо файли cookie та сторонні сервіси для покращення роботи сайту. Продовжуючи користуватися сайтом, ви погоджуєтесь із нашою <a href="/uk/page/privacy-policy/" target="_blank">Політикою конфіденційності</a>.'
 	accept = 'Прийняти'
