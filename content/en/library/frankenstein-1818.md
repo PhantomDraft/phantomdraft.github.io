@@ -3,7 +3,7 @@ title: "Frankenstein: or, The Modern Prometheus"
 description: "The Flesh Reimagined: Frankenstein as the Blueprint of Biopunk and Posthumanism"
 # format for string: "xxxx-xx-xx"
 date: 1818-01-01
-lastmod: "2024-12-24"
+lastmod: "2025-01-18"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]

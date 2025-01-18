@@ -3,7 +3,7 @@ title: "Франкенштейн, или Современный Прометей
 description: "Плоть переосмыслена: Франкенштейн как прототип биопанка и постгуманизма"
 # format for string: "xxxx-xx-xx"
 date: 1818-01-01
-lastmod: "2024-12-24"
+lastmod: "2025-01-18"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
