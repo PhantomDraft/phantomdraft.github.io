@@ -29,7 +29,7 @@ hideFromSitemap: false
 Mary Shelley, author of The Last Man, was the first to write an example of dystopian fiction. Published in 1826, criticized during its time, and remained largely ignored until the 1960s when the loss, political decay along with human fragility found new meanings. The novel sets in the late 21st century, combining tenderness with the prophetic voice, an autobiographical eulogy of a woman from the early 21st century, as well as a bitter jab at Romantic ideals and political failure.
 
 <div class="t_center castration cover p_relative atcScreen">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/7J3AqftvBrs?si=L9dabNBa2TkFcVpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/7J3AqftvBrs?si=L9dabNBa2TkFcVpo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## The Impending Plot

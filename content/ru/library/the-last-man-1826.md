@@ -29,7 +29,7 @@ hideFromSitemap: false
 Мэри Шелли, автор «Последнего человека», стала одной из первых, кто создал пример антиутопической литературы. Опубликованный в 1826 году, роман подвергся критике в своё время и оставался в основном незамеченным вплоть до 1960-х годов, когда темы утраты, политического упадка и человеческой хрупкости обрели новый смысл. События романа разворачиваются в конце XXI века, соединяя нежность с пророческим голосом, автобиографическую элегию женщины начала XXI века и горький удар по романтическим идеалам и политическим провалам.
 
 <div class="t_center castration cover p_relative atcScreen">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/7J3AqftvBrs?si=L9dabNBa2TkFcVpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/7J3AqftvBrs?si=L9dabNBa2TkFcVpo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## Неизбежный сюжет

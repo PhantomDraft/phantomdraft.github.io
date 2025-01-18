@@ -26,6 +26,10 @@ hideFromSitemap: false
 ---
 ## Herbert West — Reanimator. Lovecraft and Shelley: A Parody of Frankenstein
 
+<div class="t_center castration cover p_relative atcScreen">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/wKA8PSA_mME?si=xQsRlEV_bLzv3Ddh" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## Short Story by H. P. Lovecraft
 
 Herbert West — Reanimator is a significant horror short fiction work by H. P. Lovecraft, which was serialized between February and July of 1922. Best known as a combination of science fiction and grotesque horror, this story introduces Herbert West, a brilliant but immoral scientist trying to overcome death by bringing back the dead to life again. As such, he proposes the grotesque and animalistic resurrection through his scientific methods of what life would be like after death, foreshadowing many horror tropes. Not only did this story inspire several films and adaptations, but it also created many sub-genres of horror, casting zombies as the modern audience knows them.

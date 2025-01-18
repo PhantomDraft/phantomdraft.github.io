@@ -26,6 +26,10 @@ hideFromSitemap: false
 ---
 ## Герберт Вест — Реаніматор. Лавкрафт і Шеллі: Пародія на Франкенштейна
 
+<div class="t_center castration cover p_relative atcScreen">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/wKA8PSA_mME?si=xQsRlEV_bLzv3Ddh" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## Коротке оповідання Г. Ф. Лавкрафта
 
 «Герберт Вест — Реаніматор» є значним твором жахів, написаним Г. Ф. Лавкрафтом, який публікувався в серіях з лютого по липень 1922 року. Відомий як поєднання наукової фантастики та гротескного жаху, цей твір представляє Герберта Веста — блискучого, але аморального вченого, який намагається перемогти смерть, оживляючи мертвих. Таким чином, він пропонує гротескне й тваринне воскресіння через свої наукові методи, зображуючи, яким може бути життя після смерті, і передбачаючи багато жанрових троп жахів.

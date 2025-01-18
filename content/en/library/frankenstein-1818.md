@@ -27,7 +27,7 @@ hideFromSitemap: false
 ## The Flesh Reimagined: Frankenstein as the Blueprint of Biopunk and Posthumanism
 
 <div class="t_center castration cover p_relative atcScreen">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/xqM2Y-fqjvw?si=wHpx72JacuL099zj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/xqM2Y-fqjvw?si=wHpx72JacuL099zj" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## The Impending Plot
