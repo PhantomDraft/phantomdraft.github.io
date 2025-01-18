@@ -26,6 +26,10 @@ hideFromSitemap: false
 ---
 ## The Flesh Reimagined: Frankenstein as the Blueprint of Biopunk and Posthumanism
 
+<div class="t_center castration cover p_relative atcScreen">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/xqM2Y-fqjvw?si=wHpx72JacuL099zj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## The Impending Plot
 
 He undertakes this effort alone, driven by what seems to be his most idealistic vision. This, in essence, is the story of *Frankenstein*, centered on the theme of isolation and the unintended consequences brought about by the pride and ambition of its scientist protagonist. Such experimentation as these have been carried out by Erasmus Darwin, and with that of Shelley, an examination about the vibrant undertaking of a single scientist to pry into the life secrets. In *Frankenstein*, the protagonist assembles a body from the remains of the dead, using an undisclosed method to bring it to life. The tragedy lies in his relentless intellectual curiosity, which blinds him to the moral consequences of his actions. The line between creating and destroying is worryingly thin. Her vision remains ever-relevant, connecting the anxieties of her time with our own questions about science, identity, and what it means to be human.
