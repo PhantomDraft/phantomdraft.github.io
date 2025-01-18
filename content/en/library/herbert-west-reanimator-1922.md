@@ -3,7 +3,7 @@ title: "Herbert West Reanimator (1922)"
 description: "Lovecraft and Shelley: A Parody of Frankenstein"
 # format for string: "xxxx-xx-xx"
 date: 1922-06-01
-lastmod: "2024-12-24"
+lastmod: "2025-01-18"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
