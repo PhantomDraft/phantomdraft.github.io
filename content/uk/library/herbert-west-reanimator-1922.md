@@ -14,7 +14,7 @@ tags: ["gothic", "sci-fi", "biopunk", "folklore", "necro fetishism", "biohazard"
 # seires
 series: ["Mary Shelley: Mother of Biopunk", "Horrors that are Referenced"]
 # Top image for the post /local/images/test/cover.jpg
-image: "/uk/images/library/gothic-1986/cover.webp"
+image: "/uk/images/library/herbert-west-reanimator-1922/cover.webp"
 # Hide from home and other main page
 hideFromCenter: false
 # Hide from archive page
