@@ -28,6 +28,10 @@ hideFromSitemap: false
 
 Мері Шеллі, авторка «Останньої людини», першою створила приклад антиутопічної літератури. Опублікований у 1826 році, роман був критикований свого часу і залишався здебільшого непоміченим аж до 1960-х років, коли теми втрати, політичного занепаду й людської крихкості знайшли новий зміст. Події роману розгортаються наприкінці XXI століття, поєднуючи ніжність із пророчим голосом, автобиографічну елегію жінки з початку XXI століття та гіркий удар по романтичних ідеалах і політичним провалам.
 
+<div class="t_center castration cover p_relative atcScreen">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/7J3AqftvBrs?si=L9dabNBa2TkFcVpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## Неминучий сюжет
 
 Роман починається з вигаданої історії про те, як Мері Шеллі знаходить пророчі записи Кумської сивіли. Потім вона розповідає історію, яка охоплює період з 2073 по 2100 рік і зосереджується на Лайонелі Верні — людині, яка стає свідком вимирання всього людства через страшну чуму.
