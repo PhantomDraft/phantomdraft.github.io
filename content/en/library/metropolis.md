@@ -28,6 +28,10 @@ hideFromSitemap: false
 
 Metropolis is more than a movie; it is a monument in the history of cinema. It established the visual and thematic foundation of science fiction as we know it today. Based on a novel by director’s wife, Thea von Harbou, the film is a flashback and reflection of the time and quite probably a beautiful display of what visual narrative could do. And yet, the world today responds to the film much more at that time; audiences are affected by it in ways not unlike someone would be by modern classics like Arcane.
 
+<div class="t_center castration cover p_relative atcScreen">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/QbtB4UXTD-M?si=9rVDAhvJX-UXaS0D" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## The impending Plot
 
 It depicts a future city, a gigantic metropolis, whose stark cleavages separate two classes: the rich elite, above, living in luxury; and the oppressed workers who toil endlessly below to keep the entire mega-structure alive. The authoritarian Joh Fredersen is ruler of this monument city from his "New Tower of Babel," and he remains unmindful of the workers.
