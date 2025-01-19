@@ -3,7 +3,7 @@ title: "Metropolis (film, 1927)"
 description: "A Nonpareil Masterpiece of Sci-Fi Film"
 # format for string: "xxxx-xx-xx"
 date: 1927-01-10
-lastmod: "2024-12-24"
+lastmod: "2025-01-20"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
