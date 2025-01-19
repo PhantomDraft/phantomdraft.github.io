@@ -26,7 +26,7 @@ hideFromSitemap: false
 ---
 ## The Impending Plot
 
-Which is why Alfred Hitchcock's The Birds (1963) can safely be regarded as one of the earliest films to present a disturbing twist on ordinary reality: the terror of nature's irrationality. Birds, mundane and omnipresent in daily life, transform into more than mere evil agents—they become masterminds and harbingers of haunting dread, isolating and unsettling those they target. A budding romantic interest rapidly deteriorates into near-chaos as flocks of birds inundate the town of Bodega Bay, shattering the already fragile coexistence between humanity and nature. This escalation highlights not only humanity's vulnerability but also its resilience in the face of insurmountable odds.
+Alfred Hitchcock's The Birds (1963) can safely be regarded as one of the earliest films to present a disturbing twist on ordinary reality: the terror of nature's irrationality. Birds, mundane and omnipresent in daily life, transform into more than mere evil agents—they become masterminds and harbingers of haunting dread, isolating and unsettling those they target. A budding romantic interest rapidly deteriorates into near-chaos as flocks of birds inundate the town of Bodega Bay, shattering the already fragile coexistence between humanity and nature. This escalation highlights not only humanity's vulnerability but also its resilience in the face of insurmountable odds.
 
 ## Data
 

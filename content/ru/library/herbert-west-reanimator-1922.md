@@ -27,7 +27,7 @@ hideFromSitemap: false
 ## Герберт Уэст — Реаниматор. Лавкрафт и Шелли: Пародия на Франкенштейна
 
 <div class="t_center castration cover p_relative atcScreen">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/wKA8PSA_mME?si=xQsRlEV_bLzv3Ddh" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/RtdTLgehrvQ?si=yhRHbkplGD3wfbqp" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## Короткий рассказ Г. Ф. Лавкрафта
