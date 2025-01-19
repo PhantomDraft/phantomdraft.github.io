@@ -3,7 +3,7 @@ title: "Чудовисько з глибини 20 000 сажнів (1953)"
 description: "Спадщина атомного страху"
 # format for string: "xxxx-xx-xx"
 date: 1953-06-13
-lastmod: "2024-12-24"
+lastmod: "2025-01-20"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
@@ -25,6 +25,10 @@ hideFromSection: false
 hideFromSitemap: false
 ---
 ## Чудовисько з глибини 20 000 сажнів: Спадщина атомного страху
+
+<div class="t_center castration cover p_relative atcScreen">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/gtTuR0c5COg?si=gkh4hg_U4Uk4KxO9" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## Туманний ріг
 
