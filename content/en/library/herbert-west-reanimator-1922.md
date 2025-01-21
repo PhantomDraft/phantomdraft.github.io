@@ -61,3 +61,11 @@ At the heart of the story, Herbert West: Reanimator deals with the menace of ove
 Herbert West: Reanimator is a kind of science fiction horror parody of Frankenstein, in the same way that the novel is modified by deep psychological interest in the way that the monster represents the sympathetic nature of the creator. In contrast to such sympathetic possibilities, Lovecraft's treatment is far colder, cynically regarding the tale as a moral lesson turned on its head to become a story about the perils that scientific hubris can bring.
 
 The performance of Herbert West: Reanimator has had many far-reaching influences. Not only was it the primary innovator of the whole zombie fun in the popular culture, but it also helped to birth a biopunk subgenre in fiction that focused on the marriage of biology and technology. Much of what came after has reverberated with the horrific implications reanimation brings to resurrecting the dead, most especially George A. Romero's <a href="/library/night-of-the-living-dead-1968/" target="_blank">Night of the Living Dead</a>, which helped to transform the zombie into a mindless, carnivorous creature. Lovecraft's primitive treatment of the reanimated as violent and uncontrollable continues to be one of the foundations along which modern horror films are made, testifying to the far-reaching influence he has had on the genre quasi-mythically.
+
+## Read also
+
+<ul>
+	<li><a href="/library/frankenstein-1818/" target="_blank">
+		Frankenstein: or, The Modern Prometheus
+	</a></li>
+</ul>

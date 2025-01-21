@@ -70,4 +70,7 @@ hideFromSitemap: false
 	<li><a href="/ru/articles/the-cabin-for-grooming/" target="_blank">
 		The Cabin for Grooming
 	</a></li>
+	<li><a href="/ru/articles/pandoras-toxin/" target="_blank">
+		Яд Пандоры: Первая форма биооружия в хорроре
+	</a></li>
 </ul>

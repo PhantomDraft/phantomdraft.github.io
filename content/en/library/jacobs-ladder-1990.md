@@ -55,3 +55,14 @@ Jacob’s torment is underscored by his relationships with Jezzie (Elizabeth Pe�
 Jacob's Ladder can be described as a very touching theme concerning trauma, spirituality, and the human perceptions that are so fragile. The combination of Biblical allegory and psychological horror with socio-political commentary forms an eternal narrative with many layers. The symbolism implied by that ladder relates first and foremost to Jacob's spiritual ascension-and shall also represent the general moral descent of society-the descent reflected by human experimentation on soldiers in the Vietnam War.
 
 Adrian Lyne's masterpiece is a powerful, haunting description of human suffering and transcendence, in which every step on the ladder reveals deeper pain and the possibility of freedom. That tension between the two states-hope and despair-makes this work a classic in psychological horror.
+
+## Read also
+
+<ul>
+	<li><a href="/library/acid-dreams-1985/" target="_blank">
+		Acid Dreams: The Complete Social History of LSD
+	</a></li>
+	<li><a href="/articles/pandoras-toxin/" target="_blank">
+		Pandora’s Toxin: The First Form of Bioweapon in Horror
+	</a></li>
+</ul>

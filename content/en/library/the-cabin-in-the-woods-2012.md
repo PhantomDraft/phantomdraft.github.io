@@ -70,4 +70,7 @@ By its clever retelling of the well-known narrative conventions of horror, The C
 	<li><a href="/articles/the-cabin-for-grooming/" target="_blank">
 		The Cabin for Grooming
 	</a></li>
+	<li><a href="/articles/pandoras-toxin/" target="_blank">
+		Pandora’s Toxin: The First Form of Bioweapon in Horror
+	</a></li>
 </ul>

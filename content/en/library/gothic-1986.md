@@ -54,3 +54,14 @@ It is not only a historical record but also an almost viscous descent into the g
 It was much more than just making up stories with Byron's bet — an even greater despair and more cosmic depth: the darkest fears and anguishes of humanity. Mary Shelley's tragic loss and the scientific experiments of her age could hardly have inspired anything but her evergreen story of hubris and redemption. As for Russell, Gothic is an unapologetically alive, fierce work: it is the praise spoken by his subversive creativity.
 
 Revisiting Gothic, we face not only the monster of Shelley's Frankenstein but also our own ongoing attempts at creation and the shadows they cast.
+
+## Read also
+
+<ul>
+	<li><a href="/library/frankenstein-1818/" target="_blank">
+		Frankenstein: or, The Modern Prometheus
+	</a></li>
+	<li><a href="/articles/pandoras-toxin/" target="_blank">
+		Pandora’s Toxin: The First Form of Bioweapon in Horror
+	</a></li>
+</ul>

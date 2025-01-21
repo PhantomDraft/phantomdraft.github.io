@@ -49,3 +49,14 @@ The tract's hegemonic hippie basis is called peace, love, and a wider consciousn
 Hofmann's contributions to science and culture are dual. On one side, he opened new dimensions in the understanding of human consciousness to inspire a generation into the search for transcendence. At the same time, his work produced the very unethical utilization of psychedelics in psychiatric experiments, where patients often ceased being individuals and transformed into test subjects. The hippie movement which did not emerge as a contradiction, but as the very cultural revolution born of a substance that liberates and at the same time manipulates.
 
 In the context of Jacob's Ladder, Hofmann's story echoes so much. The government experimenting on soldiers, just like psychotropic LSD misuse in psychiatric trials, is depicted in the film. Hallucinatory images and existential questions mirror countercultural ideals spawned by the discoveries of Hofmann. Like the film, life weighs heavily in its testimony of the thin line drawn between progress and exploitation, vision and delusion, and the search for meaning in the ever-fractured world.
+
+## Read also
+
+<ul>
+	<li><a href="/library/jacobs-ladder-1990/" target="_blank">
+		Jacob’s Ladder (1990)
+	</a></li>
+	<li><a href="/articles/pandoras-toxin/" target="_blank">
+		Pandora’s Toxin: The First Form of Bioweapon in Horror
+	</a></li>
+</ul>

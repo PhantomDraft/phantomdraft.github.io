@@ -75,3 +75,14 @@ This book is a kind of forerunner to the philosophical challenges that posthuman
 Even today, more than two centuries later, the novel possesses a disconcertingly prophetic quality. Its questions on creation, accountability, and moral scientific progress echo the issues that we are currently facing in the areas of artificial intelligence, synthetic biology, and biotechnology.
 
 The dissimilarities between Victor's flawed creation and our own experiments with life at its edges emphasize an eternal truth: the genius of humanity lies almost as much in our power to dream as in our ability to destroy. In a posthuman world, ever more created by realities at posthuman ages, Frankenstein still serves as both a warning and a guide: that even in our most creative moments, we remain, still creatures of flesh and consequence.
+
+## Read also
+
+<ul>
+	<li><a href="/library/gothic-1986/" target="_blank">
+		Gothic (1986)
+	</a></li>
+	<li><a href="/library/herbert-west-reanimator-1922/" target="_blank">
+		Herbert West Reanimator (1922)
+	</a></li>
+</ul>

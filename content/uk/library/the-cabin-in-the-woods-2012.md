@@ -70,4 +70,7 @@ hideFromSitemap: false
 	<li><a href="/uk/articles/the-cabin-for-grooming/" target="_blank">
 		The Cabin for Grooming
 	</a></li>
+	<li><a href="/uk/articles/pandoras-toxin/" target="_blank">
+		Отрута Пандори: Перша форма біозброї в горорі
+	</a></li>
 </ul>
