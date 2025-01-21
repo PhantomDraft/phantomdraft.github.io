@@ -40,6 +40,10 @@
 [SeriesTerms_series]
 	other = 'Серии'
 
+# String in Page
+[Page_page]
+	other = 'Страницы'
+
 # String in About
 [About_about]
 	other = 'О сайте'
