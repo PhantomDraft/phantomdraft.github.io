@@ -279,7 +279,7 @@ hideFromSitemap: false
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>
-		<img class="miner fl" src="/ru/images/articles/horror-about-drugs/CloseCallc.webp" loading="lazy" alt="Close Callc (2017)">
+		<img src="/ru/images/articles/horror-about-drugs/CloseCallc.webp" loading="lazy" alt="Close Callc (2017)">
 	</p>
 </div>
 
