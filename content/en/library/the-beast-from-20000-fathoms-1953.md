@@ -1,6 +1,6 @@
 ---
 title: "The Beast from 20,000 Fathoms (1953)"
-description: ""
+description: "A Legacy in Atomic Fear"
 # format for string: "xxxx-xx-xx"
 date: 1953-06-13
 lastmod: "2025-01-20"
