@@ -26,7 +26,7 @@ hideFromSitemap: false
 ---
 ## Introduction
 
-Welcome to Phantom Draft, a personal blog dedicated to the exploration of horror genres, located at [https://phantomdraft.github.io/](https://phantomdraft.github.io/). Protecting your privacy is important to me. This Privacy Policy explains how I collect, use, and protect your data.
+Welcome to Phantom Draft, a personal blog dedicated to the exploration of horror genres, located at [https://phantom-draft.com/](https://phantom-draft.com/). Protecting your privacy is important to me. This Privacy Policy explains how I collect, use, and protect your data.
 
 ## 1. Data Collection
 
