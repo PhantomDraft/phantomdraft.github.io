@@ -57,7 +57,7 @@ I spent some time trying to understand what was happening in these works.
 
 ## Horror Movies About Cannabis
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/images/articles/horror-about-drugs/marijuana.webp" loading="lazy" alt="Horror Movies About Cannabis">
 	</p>
@@ -87,7 +87,7 @@ One of my favorite black comedies, The Cabin in the Woods (2011), belongs to the
 
 ## Horror Movies About Psilocybin
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/images/articles/horror-about-drugs/psilocybin.webp" loading="lazy" alt="Horror Movies About Psilocybin">
 	</p>
@@ -142,7 +142,7 @@ The Portrayal of Psilocybin Mushroom Consumption in This Film Seemed Realistic t
 
 ## Horror Movies About Dissociatives, Deliriants, and Psychedelics (LSD)
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/images/articles/horror-about-drugs/psychedelics.webp" loading="lazy" alt="Horror Movies About Dissociatives, Deliriants, and Psychedelics (LSD)">
 	</p>
@@ -229,7 +229,7 @@ Sniff, eat, drink, inhale your world, Homo sapiens.
 
 ## Horror Movies About Opium
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/images/articles/horror-about-drugs/opium.webp" loading="lazy" alt="Horror Movies About Opium">
 	</p>
@@ -301,7 +301,7 @@ One should not forget that Poe drank himself to death and died in poverty, beggi
 
 A schoolgirl…
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/images/articles/horror-about-drugs/CloseCallc.webp" loading="lazy" alt="Close Callc (2017)">
 	</p>
@@ -329,7 +329,7 @@ No, this is not a sequel and prequel that devoted fans shot 20 years apart. Thes
 
 ## Horrors About Nicotine
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/images/articles/horror-about-drugs/nicotine.webp" loading="lazy" alt="Horrors About Nicotine">
 	</p>
@@ -356,7 +356,7 @@ I highly recommend watching it in its original language with subtitles, as Rober
 
 ### Sennentuntschi (2010)
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/images/articles/horror-about-drugs/absinthe.webp" loading="lazy" alt="Shepherd’s Doll (2010)">
 	</p>

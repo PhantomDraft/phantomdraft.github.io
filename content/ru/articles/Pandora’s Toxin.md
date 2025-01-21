@@ -53,7 +53,7 @@ hideFromSitemap: false
 
 ## Хорроры про коноплю
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/ru/images/articles/horror-about-drugs/marijuana.webp" loading="lazy" alt="Хорроры про коноплю">
 	</p>
@@ -77,7 +77,7 @@ hideFromSitemap: false
 
 ## Хорроры про псилоцибин
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/ru/images/articles/horror-about-drugs/psilocybin.webp" loading="lazy" alt="Хорроры про псилоцибин">
 	</p>
@@ -121,7 +121,7 @@ hideFromSitemap: false
 
 ## Хорроры про диссоциативы, делирианты и психоделики (ЛСД)
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/ru/images/articles/horror-about-drugs/psychedelics.webp" loading="lazy" alt="Хорроры про диссоциативы, делирианты и психоделики (ЛСД)">
 	</p>
@@ -205,7 +205,7 @@ hideFromSitemap: false
 
 ## Хорроры про опиум
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/ru/images/articles/horror-about-drugs/opium.webp" loading="lazy" alt="Хорроры про опиум">
 	</p>
@@ -277,7 +277,7 @@ hideFromSitemap: false
 
 Школьница...
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/ru/images/articles/horror-about-drugs/CloseCallc.webp" loading="lazy" alt="Close Callc (2017)">
 	</p>
@@ -305,7 +305,7 @@ hideFromSitemap: false
 
 ## Хорроры про никотин
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/ru/images/articles/horror-about-drugs/nicotine.webp" loading="lazy" alt="Хорроры про никотин">
 	</p>
@@ -332,7 +332,7 @@ hideFromSitemap: false
 
 ### Пастушья кукла (Sennentuntschi, 2010-го)
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/ru/images/articles/horror-about-drugs/absinthe.webp" loading="lazy" alt="Shepherd’s Doll (2010)">
 	</p>

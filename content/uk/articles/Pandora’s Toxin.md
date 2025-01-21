@@ -53,7 +53,7 @@ hideFromSitemap: false
 
 ## Горори про коноплі
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/uk/images/articles/horror-about-drugs/marijuana.webp" loading="lazy" alt="Горори про коноплі">
 	</p>
@@ -77,7 +77,7 @@ hideFromSitemap: false
 
 ## Горори про псилоцибін
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/uk/images/articles/horror-about-drugs/psilocybin.webp" loading="lazy" alt="Горори про псилоцибін">
 	</p>
@@ -121,7 +121,7 @@ hideFromSitemap: false
 
 ## Горори про дисоціативи, деліріанти та психоделики (ЛСД)
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/uk/images/articles/horror-about-drugs/psychedelics.webp" loading="lazy" alt="Горори про дисоціативи, деліріанти та психоделики (ЛСД)">
 	</p>
@@ -205,7 +205,7 @@ hideFromSitemap: false
 
 ## Горори про опіум
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/uk/images/articles/horror-about-drugs/opium.webp" loading="lazy" alt="Горори про опіум">
 	</p>
@@ -279,7 +279,7 @@ hideFromSitemap: false
 
 Школярка...
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/uk/images/articles/horror-about-drugs/CloseCallc.webp" loading="lazy" alt="Close Callc (2017)">
 	</p>
@@ -307,7 +307,7 @@ hideFromSitemap: false
 
 ## Горори про нікотин
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/uk/images/articles/horror-about-drugs/nicotine.webp" loading="lazy" alt="Горори про нікотин">
 	</p>
@@ -334,7 +334,7 @@ hideFromSitemap: false
 
 ### Пастуша лялька (Sennentuntschi, 2010-го)
 
-<div class="castration cover p_relative atcScreen">
+<div class="t_center castration cover p_relative atcScreen">
 	<p>
 		<img class="miner fl" src="/uk/images/articles/horror-about-drugs/absinthe.webp" loading="lazy" alt="Пастуша лялька (2010-го)">
 	</p>
