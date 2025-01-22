@@ -27,8 +27,10 @@ hideFromSitemap: false
 <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.jpg); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h2>Phantom Draft</h2>
+		<p>Notif Hubs:</p>
 		<p>
 			<a rel="nofollow" href="https://www.facebook.com/phantomdrafts/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+			<a rel="nofollow" href="https://t.me/phantomdrafts" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
 		</p>
 	</div>
 </div>
@@ -36,12 +38,12 @@ hideFromSitemap: false
 ### Типи опублікованого контенту
 
 - <a href="/uk/posts/" target="_blank"><strong>Notes</strong></a> — пости з життя, оновлення про проєкт.
-- <a href="/uk/articles/" target="_blank"><strong>Articles</strong></a> — мої статті про роботи в жанрі хорор, піджанрах кіберпанку, фантастиці та фентезі (зокрема, дарк-фентезі).
+- <a href="/uk/articles/" target="_blank"><strong>Articles</strong></a> — мої статті про роботи в жанрі горор, піджанрах кіберпанку, фантастиці та фентезі (зокрема, дарк-фентезі).
 - <a href="/uk/stories/" target="_blank"><strong>Stories</strong></a> — тут розміщений веб-журнал *Spirits Show*.
 
 #### Spirits Show
 
-*Spirits Show* — це інтерактивні історії в жанрах хорор і чорної комедії. Назва є грою слів. Ймовірно, одного дня я розповім окрему історію про торговця алкоголем, який стикається з проблемами експорту через початок війни і вирішує змінити свій бізнес. Натхненням для мене, звісно, будуть спіритичні сеанси, популярні під час Першої світової війни, а також *Хатина в лісі* з *Gravity Falls*.
+*Spirits Show* — це інтерактивні історії в жанрах горор і чорної комедії. Назва є грою слів. Ймовірно, одного дня я розповім окрему історію про торговця алкоголем, який стикається з проблемами експорту через початок війни і вирішує змінити свій бізнес. Натхненням для мене, звісно, будуть спіритичні сеанси, популярні під час Першої світової війни, а також *Mystery Hack* з *Gravity Falls*.
 
 Цей розділ безпосередньо пов’язаний з <a href="https://youtube.com/playlist?list=PLRSQ_MvJCAAgpwDfSlsxjm9BasAn61rB0&si=XXDnGKBleC7qy4WO" target="_blank"><strong>плейлистом "Stories"</strong></a> на моєму YouTube-каналі, AI-генераціями в Instagram, а також платформами, де я публікую свої оповідання.
 

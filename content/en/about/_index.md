@@ -43,7 +43,7 @@ hideFromSitemap: false
 
 #### Spirits Show
 
-*Spirits Show* is an interactive series in the horror and dark comedy genres. The title is a play on words. At some point, I might tell a separate story about a liquor trader who faces export problems due to an outbreak of war and decides to repurpose his business. I am certainly inspired by spiritual séances that were popular during World War I, as well as *The Cabin in the Woods* from *Gravity Falls*.
+*Spirits Show* is an interactive series in the horror and dark comedy genres. The title is a play on words. At some point, I might tell a separate story about a liquor trader who faces export problems due to an outbreak of war and decides to repurpose his business. I am certainly inspired by spiritual séances that were popular during World War I, as well as *Mystery Hack* from *Gravity Falls*.
 
 This section is directly connected to the <a href="https://youtube.com/playlist?list=PLRSQ_MvJCAAgpwDfSlsxjm9BasAn61rB0&si=XXDnGKBleC7qy4WO" target="_blank"><strong>"Stories" playlist</strong></a> on my YouTube channel, AI-generated content on Instagram, and platforms where I publish stories.
 
