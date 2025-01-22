@@ -27,7 +27,7 @@ hideFromSitemap: false
 <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.jpg); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h2>Phantom Draft</h2>
-		<p>Notif Hubs:</p>
+		<p>Підпишіться на оновлення:</p>
 		<p>
 			<a rel="nofollow" href="https://www.facebook.com/phantomdrafts/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
 			<a rel="nofollow" href="https://t.me/phantomdrafts" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
@@ -47,7 +47,7 @@ hideFromSitemap: false
 
 Цей розділ безпосередньо пов’язаний з <a href="https://youtube.com/playlist?list=PLRSQ_MvJCAAgpwDfSlsxjm9BasAn61rB0&si=XXDnGKBleC7qy4WO" target="_blank"><strong>плейлистом "Stories"</strong></a> на моєму YouTube-каналі, AI-генераціями в Instagram, а також платформами, де я публікую свої оповідання.
 
-- <a href="/uk/library/" target="_blank"><strong>Library</strong></a> — бібліотека, куди я поступово додаю всі вивчені роботи і, відповідно, пишу рецензії. Цей розділ пов’язаний з плейлистом *Гурман*. Я почав додавати свої улюблені та найзначущіші роботи, орієнтуючись на часову позначку, коли було написано *Франкенштейн* Мері Шеллі, тож варто розуміти, що я збираюся розглянути багато творів. Однак сучасні роботи, які я вважаю важливими, будуть з’являтися позачергово.
+- <a href="/uk/library/" target="_blank"><strong>Library</strong></a> — бібліотека, куди я поступово додаю всі вивчені роботи і, відповідно, пишу рецензії. Цей розділ пов’язаний з <a href="https://youtube.com/playlist?list=PLRSQ_MvJCAAgfE99FrnjgDgLP6NG9AjGC&si=eZ79NL3seBIAhtdq" target="_blank">плейлистом "Gourmet of Horror"</a>. Я почав додавати свої улюблені та найзначущіші роботи, орієнтуючись на часову позначку, коли було написано *Франкенштейн* Мері Шеллі, тож варто розуміти, що я збираюся розглянути багато творів. Однак сучасні роботи, які я вважаю важливими, будуть з’являтися позачергово.
 
 ### Категорії проєкту
 
