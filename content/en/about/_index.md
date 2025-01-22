@@ -2,8 +2,8 @@
 title: "Morginal Projects"
 description: "Biotrash Prodactions"
 # format for string: "xxxx-xx-xx"
-date: 2024-05-05
-lastmod: "2024-05-05"
+date: 2025-01-22
+lastmod: "2025-01-22"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
@@ -47,7 +47,7 @@ hideFromSitemap: false
 
 This section is directly connected to the <a href="https://youtube.com/playlist?list=PLRSQ_MvJCAAgpwDfSlsxjm9BasAn61rB0&si=XXDnGKBleC7qy4WO" target="_blank"><strong>"Stories" playlist</strong></a> on my YouTube channel, AI-generated content on Instagram, and platforms where I publish stories.
 
-- <a href="/library/" target="_blank"><strong>Library</strong></a> — a library where I gradually add all studied works and, as a result, write reviews. This section is linked to the <a href="https://youtube.com/playlist?list=PLRSQ_MvJCAAgfE99FrnjgDgLP6NG9AjGC&si=eZ79NL3seBIAhtdq" target="_blank">Gourmet playlist</a>. I started adding my favorite and most significant works based on a timeline that begins with *Frankenstein* by Mary Shelley, so it's important to understand that I plan to review a lot of works. However, modern works that I find essential will also appear out of order.
+- <a href="/library/" target="_blank"><strong>Library</strong></a> — a library where I gradually add all studied works and, as a result, write reviews. This section is linked to the <a href="https://youtube.com/playlist?list=PLRSQ_MvJCAAgfE99FrnjgDgLP6NG9AjGC&si=eZ79NL3seBIAhtdq" target="_blank">"Gourmet of Horror" playlist</a>. I started adding my favorite and most significant works based on a timeline that begins with *Frankenstein* by Mary Shelley, so it's important to understand that I plan to review a lot of works. However, modern works that I find essential will also appear out of order.
 
 ### Project Categories
 
