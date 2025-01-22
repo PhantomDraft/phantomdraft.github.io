@@ -1,6 +1,6 @@
 ---
-title: "About"
-description: ""
+title: "Morginal Projects"
+description: "Biotrash Prodactions"
 # format for string: "xxxx-xx-xx"
 date: 2024-05-05
 lastmod: "2024-05-05"
@@ -27,8 +27,10 @@ hideFromSitemap: false
 <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.jpg); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h2>Phantom Draft</h2>
+		<p>Notif Hubs:</p>
 		<p>
 			<a rel="nofollow" href="https://www.facebook.com/phantomdrafts/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+			<a rel="nofollow" href="https://t.me/phantomdrafts" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
 		</p>
 	</div>
 </div>
@@ -45,7 +47,7 @@ hideFromSitemap: false
 
 This section is directly connected to the <a href="https://youtube.com/playlist?list=PLRSQ_MvJCAAgpwDfSlsxjm9BasAn61rB0&si=XXDnGKBleC7qy4WO" target="_blank"><strong>"Stories" playlist</strong></a> on my YouTube channel, AI-generated content on Instagram, and platforms where I publish stories.
 
-- <a href="/library/" target="_blank"><strong>Library</strong></a> — a library where I gradually add all studied works and, as a result, write reviews. This section is linked to the *Gourmet* playlist. I started adding my favorite and most significant works based on a timeline that begins with *Frankenstein* by Mary Shelley, so it's important to understand that I plan to review a lot of works. However, modern works that I find essential will also appear out of order.
+- <a href="/library/" target="_blank"><strong>Library</strong></a> — a library where I gradually add all studied works and, as a result, write reviews. This section is linked to the <a href="https://youtube.com/playlist?list=PLRSQ_MvJCAAgfE99FrnjgDgLP6NG9AjGC&si=eZ79NL3seBIAhtdq" target="_blank">Gourmet playlist</a>. I started adding my favorite and most significant works based on a timeline that begins with *Frankenstein* by Mary Shelley, so it's important to understand that I plan to review a lot of works. However, modern works that I find essential will also appear out of order.
 
 ### Project Categories
 
