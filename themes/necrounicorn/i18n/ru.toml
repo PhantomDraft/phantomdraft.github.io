@@ -46,7 +46,7 @@
 
 # String in About
 [About_about]
-	other = 'О сайте'
+	other = 'Morguenal Projects'
 
 # String in sidebar
 [sidebar_content] # This button will not appear until the comment function is turned on

@@ -1,27 +1,33 @@
 ---
-title: "About"
-date: 2024-05-05T20:31:34+03:00
-
+title: "Morguenal Projects"
+description: "Biotrash Prodactions"
 # format for string: "xxxx-xx-xx"
-# lastmod: "2022-10-01"
-
+date: 2025-01-22
+lastmod: "2025-01-22"
 # set false when you want the post publish
 draft: false
-# one category: ["category-1"] 
+# one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
 categories: []
 # refer to categories
 tags: []
 # seires
 series: []
-# Top image for the post
+# Top image for the post /local/images/test/cover.jpg
 image: ""
-# Hide from home page
-hideFromHomePage: false
+# Hide from home and other main page
+hideFromCenter: false
+# Hide from archive page
+hideFromArchives: false
+# Hide from everything but the archive
+hideFromSection: false
+# Hide from everything but the Sitemap
+hideFromSitemap: false
 ---
 <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.jpg); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h2>Phantom Draft</h2>
+		<p>Записи о проектах в жанре хоррора и панк-поджанрах (включая Биопанк, Мифпанк, Дримпанк и другие).</p>
 		<p>Подпишитесь на обновления:</p>
 		<p>
 			<a rel="nofollow" href="https://www.facebook.com/phantomdrafts/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>

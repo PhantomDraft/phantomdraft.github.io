@@ -27,6 +27,7 @@ hideFromSitemap: false
 <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.jpg); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h2>Phantom Draft</h2>
+		<p>Notes on Horror and Punk Subgenre Projects (including Biopunk, Mythpunk, Dreampunk, and others).</p>
 		<p>Notif Hubs:</p>
 		<p>
 			<a rel="nofollow" href="https://www.facebook.com/phantomdrafts/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
