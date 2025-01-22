@@ -48,12 +48,18 @@
         </article>
 
         <footer class="castration base_width p_relative footer_info">
-            <p>
+            <p class="fl">
                 <i class="fa fa-pencil"></i> {{ i18n "postInfo_wordsCount" }}: {{ .WordCount }} &nbsp; 
                 <i class="fa fa-clock-o"></i> {{ i18n "postInfo_readingTime" }}: {{ .ReadingTime }} {{ i18n "postInfo_minute" .ReadingTime }} &nbsp; 
                 {{ if .Site.Params.footer.visitor }}
                     <i class="fa fa-eye"></i> {{ i18n "postInfo_viewers" }}: 
                 {{ end }}
+            </p>
+            <p class="fr">
+                <a rel="nofollow" href="https://www.facebook.com/phantomdrafts/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            {{ if or (eq $.Site.Language.Lang "uk") (eq $.Site.Language.Lang "ru") }}
+                <a rel="nofollow" href="https://t.me/phantomdrafts" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+            {{ end }}
             </p>
         </footer>
 {{ template "_internal/disqus.html" . }}
