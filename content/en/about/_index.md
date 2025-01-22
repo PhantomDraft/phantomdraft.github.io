@@ -33,46 +33,43 @@ hideFromSitemap: false
 	</div>
 </div>
 
-#### Типы публикуемого контента
+### Types of Published Content
 
-- **Notes** — посты из жизни, уведомления об обновлениях на проекте.
-- **Articles** — мои статьи о работах в жанре хоррор, поджанрах киберпанка, фантастике и фэнтези (в частности, дарк-фэнтези).
-- **Stories** — веб-журнал *Spirits Show*.
+- <a href="/posts/" target="_blank"><strong>Notes</strong></a> — life posts, updates on the project.
+- <a href="/articles/" target="_blank"><strong>Articles</strong></a> — my articles about works in the horror genre, cyberpunk subgenres, science fiction, and fantasy (particularly dark fantasy).
+- <a href="/stories/" target="_blank"><strong>Stories</strong></a> — this section features the web magazine *Spirits Show*.
 
 #### Spirits Show
 
-Spirits Show* — это интерактивные истории. Название является игрой слов, и, без сомнения, ранее журнал был посвящён алкогольной продукции. Вероятно, однажды я расскажу отдельную историю о том, как некий торговец алкоголем сталкивается с проблемами экспорта из-за войны и решает переделать свой бизнес. Вдохновляться я, конечно, буду спиритическими сеансами, популярными во времена мировой войны.
+*Spirits Show* is an interactive series in the horror and dark comedy genres. The title is a play on words. At some point, I might tell a separate story about a liquor trader who faces export problems due to an outbreak of war and decides to repurpose his business. I am certainly inspired by spiritual séances that were popular during World War I, as well as *The Cabin in the Woods* from *Gravity Falls*.
 
-Этот раздел напрямую связан с плейлистом "Истории" на YouTube-канале, моим аккаунтом в Instagram, а также площадками, где я публикую свои рассказы.
+This section is directly connected to the <a href="https://youtube.com/playlist?list=PLRSQ_MvJCAAgpwDfSlsxjm9BasAn61rB0&si=XXDnGKBleC7qy4WO" target="_blank"><strong>"Stories" playlist</strong></a> on my YouTube channel, AI-generated content on Instagram, and platforms where I publish stories.
 
-- **Library** — библиотека, куда я постепенно добавляю все изученные работы и, как следствие, пишу рецензии. Этот раздел связан с плейлистом "Гурман". Я начал добавлять работы с временной метки, когда был написан *Франкенштейн* Мэри Шелли, так что стоит понимать, что я собираюсь обозреть действительно много произведений. Однако вне очереди будут появляться современные работы, которые я считаю важными для обзора.
+- <a href="/library/" target="_blank"><strong>Library</strong></a> — a library where I gradually add all studied works and, as a result, write reviews. This section is linked to the *Gourmet* playlist. I started adding my favorite and most significant works based on a timeline that begins with *Frankenstein* by Mary Shelley, so it's important to understand that I plan to review a lot of works. However, modern works that I find essential will also appear out of order.
 
-### Категории проекта
+### Project Categories
 
-Категории позволяют идеологически разделять контент на группы:
+Categories allow for the content to be grouped thematically:
 
-- **My Insights** — материалы, где я излагаю своё видение. Как правило, это длинные размышления из раздела *Articles*.
-- **My Life** — события из моей жизни (в основном это материалы из раздела *Notes*).
-- **My Projects** — мои проекты, подробное описание заложенной идеи (включая, например, промпты генераций), а также обновления.
-- **My Reviews** — мои рецензии, которые публикуются в разделе *Library*, но, возможно, эта категория будет использоваться и для других типов контента.
+- <a href="/categories/my-insights/" target="_blank"><strong>My Insights</strong></a> — materials where I present my perspective. Usually, these are extensive thoughts from the *Articles* section.
+- <a href="/categories/my-life/" target="_blank"><strong>My Life</strong></a> — events from my life (mostly content from the *Notes* section).
+- <a href="" target="_blank"><strong>My Projects</strong></a> — my projects, detailed descriptions of the ideas behind them (including, for example, AI generation prompts), as well as project engagement calls (such as polls).
+- <a href="/categories/my-reviews/" target="_blank"><strong>My Reviews</strong></a> — my reviews, published in the *Library* section, but this category may also be used for other types of content.
 
-### Способы фильтрации контента
+### Content Filtering Methods
 
-На сайте есть специализированные подборки материалов, которые позволяют строго фильтровать контент по определённым темам:
+The site features specialized content collections that allow for strict filtering based on specific topics:
 
-- **Секции** — коллекции материалов, объединённые общей идеей, атмосферой и другими критериями.
-- **Теги** — стандартный способ фильтрации по ключевым словам. Список тегов будет постепенно расширяться.
+- <a href="/series/" target="_blank"><strong>Series</strong></a> — collections of materials unified by a common idea, atmosphere, or other criteria.
+- <a href="/tags/" target="_blank"><strong>Tags</strong></a> — the standard method of filtering content by keywords.
 
-### Подпроекты Phantom Draft
+### Phantom Draft Subprojects
 
-Эти проекты существуют отдельно от основного сайта, но часто ссылаются на него или дополняют его уникальным контентом.
-
-### Форматы контента
+These projects exist separately from the main site but frequently reference it or enhance it with unique content.
 
 <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/images/about/horrorprom.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
-		<h2>Horror Writing Prompts</h2>
-		<p>Full Stack Web Developer by day, horror and punk fan by night. I use AI to bring my creative ideas to life in the form of unique projects.</p>
+		<h4>Horror Writing Prompts</h4>
 		<p>
 			<a rel="nofollow" href="https://www.instagram.com/horrorprom" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 			<a rel="nofollow" href="https://t.me/horrorprom" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
@@ -80,25 +77,25 @@ Spirits Show* — это интерактивные истории. Назван
 	</div>
 </div>
 
-В Instagram не попадают черновики моих работ или случайные генерации — их можно посмотреть в одноимённом Telegram-канале.
+Drafts of my works or random AI-generated content do not appear on Instagram — they can be found in the dedicated Telegram channel.
 
 <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/images/about/horrorprom.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
-		<h2>Spirits Show</h2>
+		<h4>Spirits Show</h4>
 		<p>
 			<a rel="nofollow" href="https://www.youtube.com/@spirits-show" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
 		</p>
 	</div>
 </div>
 
-Я привык писать статьи текстом, поэтому здесь в основном не длинные видео. Они либо кратко излагают информацию, либо просто зрелищные.
+The channel is named after the interactive journal mentioned earlier. Videos on the channel either concisely present information related to materials on the site or are purely for entertainment.
 
 <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/images/about/doomform.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h2>Doomform</h2>
-		<p>Epic cringe</p>
+		<p><a href="" target="_blank"><strong>Epic Cringe on TikTok</strong></a></p>
 	</div>
 </div>
 
-- Вряд ли я буду развивать TikTok, но иногда у меня появляются идеи для коротких зацикленных видео. Как правило, это что-то одновременно эпичное и кринжовое, так что если что — добро пожаловать!
+I am unlikely to seriously develop a TikTok presence, but sometimes I have ideas for short looping videos. These are usually something both epic and cringe-worthy.
 <!--more-->
