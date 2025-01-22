@@ -96,6 +96,8 @@
 	other = 'минут'
 [postInfo_viewers]
 	other = 'читателей'
+[postInfo_subscription]
+	other = 'Подпишитесь на нас'
 
 # String in search
 [search_search]

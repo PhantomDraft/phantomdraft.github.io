@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: Ruslan Dubinetsky
 	Author URI: https://github.com/PhantomDraft
-	Version: 25.04
+	Version: 25.05
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -1783,7 +1783,7 @@ keyframes pulse {
     .atcScreen img.fr {margin-left: auto !important;}
     .atcScreen img.fl {margin-right: auto !important;}
 
-    .footer_info .fr {display: none;}
+    .footer_info span {display: none;}
 
     .shoes > div {text-align: center;}
 

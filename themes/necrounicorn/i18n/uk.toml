@@ -96,6 +96,8 @@
 	other = 'хвилин'
 [postInfo_viewers]
 	other = 'читачів'
+[postInfo_subscription]
+	other = 'Підпишіться на нас'
 
 # String in search
 [search_search]

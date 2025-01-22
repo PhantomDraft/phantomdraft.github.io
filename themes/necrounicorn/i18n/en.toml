@@ -96,6 +96,8 @@
 	other = 'mins'
 [postInfo_viewers]
 	other = 'viewers'
+[postInfo_subscription]
+	other = 'Subscribe to us'
 
 # String in search
 [search_search]
