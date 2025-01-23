@@ -1,9 +1,9 @@
 ---
 title: "Pandora’s Toxin: The First Form of Bioweapon in Horror"
-description: "Horror About Drugs"
+description: "Horrors About Drugs"
 # format for string: "xxxx-xx-xx"
 date: 2025-01-21
-lastmod: "2025-01-21"
+lastmod: "2025-01-23"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
@@ -26,9 +26,9 @@ hideFromSitemap: false
 ---
 Once, I Thought About the Influence of Narcotic Substances on Horror Movie Characters. Horror is primarily a speculative genre. In my opinion, horror struggles to promote self-destruction or violence in modern society, let alone predict social issues for the near future. However, some people claim to think otherwise (<a href="/articles/the-idea-of-apocalypse-in-horror-films-particularly-slashers-films/" target="_blank">post</a>).
 
-### The Initial Goal of This Compilation
+## Horrors About Drugs
 
-I became interested in how realistic the behavior of horror characters is when using narcotics. The precedent for my reflections was the movie Fever. However, due to the opinions of impressionable critics, as mentioned above, I want to clarify:
+I became interested in how realistic the behavior of horror characters is when using narcotics. The precedent for my reflections was the movie Cabin Fever (2002). However, due to the opinions of impressionable critics, as mentioned above, I want to clarify:
 
 * I do not promote drug use.  
 * I do not believe this genre is capable of positively developing this theme.
