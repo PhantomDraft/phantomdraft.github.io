@@ -5,7 +5,7 @@
                 {{ $sortedPages := sort .Pages "Lastmod" "desc" }}
                 {{ $paginator := .Paginate $sortedPages }}
                 {{ range $paginator.Pages }}
-                    {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSection)) }}
+                    {{ if and (not .Params.hideFromSection) (or (not .Params.hideFromCenter) (eq .Section "page")) }}
                         {{ partial "widgets/post-card.html" . }}
                     {{ end }}
                 {{ end }}
