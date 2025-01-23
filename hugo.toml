@@ -34,22 +34,6 @@ paginate = 9
     homeTopImg = "/img/cover/default.jpg"
     # title in home top image, support Markdown
     homeTitle = "Phantom Draft"
-    # top image in categories terms page
-    categoryTopImg = "/img/cover/categories.jpg"
-    # description of categories terms page
-    categoryDes = "description of categories page"
-    # top image in tags terms page
-    tagTopImg = "/img/cover/tag.jpg"
-    # description of tags terms page
-    tagDes = "description of tags page"
-    # top image in allosts page
-    allPostsTopImg = "/img/cover/allPosts.jpg"
-    # description of allposts page
-    allPostsDes = "description of allPosts page"
-    # top image in about page
-    aboutTopImg = "/img/cover/about.jpg"
-    # description of about page
-    aboutDes = "description of about page"
     # default image for a post without "image" param
     defaultPostImg = "/img/cover/default.jpg"
     # The maximum number of articles displayed on the homepage
@@ -78,6 +62,8 @@ paginate = 9
         themeInfo = true
         # privacy policy
         privacy_policy = true
+        # about us
+        about_us = true
 
 [menus]
     [[menus.main]]

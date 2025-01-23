@@ -70,7 +70,7 @@ hideFromSitemap: false
 
 Ці проєкти існують окремо від основного сайту, але часто посилаються на нього або доповнюють його унікальним контентом.
 
-<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/uk/images/about/horrorprom.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
+<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/uk/images/page/about-us/horrorprom.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h4>Horror Writing Prompts</h4>
 		<p>
@@ -82,7 +82,7 @@ hideFromSitemap: false
 
 В Instagram не потрапляють чернетки моїх робіт або випадкові AI-генерації — їх можна знайти в однойменному Telegram-каналі.
 
-<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/uk/images/about/horrorprom.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
+<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/uk/images/page/about-us/horrorprom.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h4>Spirits Show</h4>
 		<p>
@@ -93,7 +93,7 @@ hideFromSitemap: false
 
 Канал названий на честь вищезгаданого інтерактивного журналу. Відео на каналі або коротко викладають інформацію, посилаючись на матеріали на сайті, або просто є видовищними.
 
-<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/uk/images/about/doomform.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
+<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/uk/images/page/about-us/doomform.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h2>Doomform</h2>
 		<p><a href="" target="_blank"><strong>Epic Cringe у TikTok</strong></a></p>

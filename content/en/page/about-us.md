@@ -70,7 +70,7 @@ The site features specialized content collections that allow for strict filterin
 
 These projects exist separately from the main site but frequently reference it or enhance it with unique content.
 
-<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/images/about/horrorprom.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
+<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/images/page/about-us/horrorprom.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h4>Horror Writing Prompts</h4>
 		<p>
@@ -82,7 +82,7 @@ These projects exist separately from the main site but frequently reference it o
 
 Drafts of my works or random AI-generated content do not appear on Instagram — they can be found in the dedicated Telegram channel.
 
-<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/images/about/horrorprom.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
+<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/images/page/about-us/horrorprom.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h4>Spirits Show</h4>
 		<p>
@@ -93,7 +93,7 @@ Drafts of my works or random AI-generated content do not appear on Instagram —
 
 The channel is named after the interactive journal mentioned earlier. Videos on the channel either concisely present information related to materials on the site or are purely for entertainment.
 
-<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/images/about/doomform.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
+<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/images/page/about-us/doomform.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h2>Doomform</h2>
 		<p><a href="" target="_blank"><strong>Epic Cringe on TikTok</strong></a></p>

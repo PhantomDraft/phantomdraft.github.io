@@ -6,18 +6,15 @@
 
 {{ if eq .Kind "section" }}
     {{ if eq .Section "posts" }}
-        {{ $hero_img = .Site.Params.page.libraryPostsTopImg }}
         {{ $hero_title = i18n "Posts_notesPosts" }}
         {{ $hero_des = .Site.Params.page.libraryNotesDes }}
     {{ else if eq .Section "library" }}
-        {{ $hero_img = .Site.Params.page.libraryPostsTopImg }}
         {{ $hero_title = i18n "Posts_libraryPosts" }}
         {{ $hero_des = .Site.Params.page.libraryPostsDes }}
     {{ else if eq .Section "page" }}
         {{ $hero_title = i18n "Page_page" }}
         {{ $hero_des = .Site.Params.page.pageDes }}
     {{ else if eq .Section "about" }}
-        {{ $hero_img = .Site.Params.page.aboutTopImg }}
         {{ $hero_title = i18n "About_about" }}
         {{ $hero_des = .Site.Params.page.aboutDes }}
     {{ else if eq .Section "articles" }}
@@ -26,15 +23,12 @@
 
 {{ else if eq .Kind "taxonomy" }}
     {{ if eq .Section "categories" }}
-        {{ $hero_img = .Site.Params.page.categoryTopImg }}
         {{ $hero_title = i18n "Categories_categories" }}
         {{ $hero_des = .Site.Params.page.categoryDes }}
     {{ else if eq .Section "tags" }}
-        {{ $hero_img = .Site.Params.page.tagTopImg }}
         {{ $hero_title = i18n "Tags_tags" }}
         {{ $hero_des = .Site.Params.page.tagDes }}
     {{ else if eq .Section "series" }}
-        {{ $hero_img = .Site.Params.page.seriesTopImg }}
         {{ $hero_title = i18n "Series_series" }}
         {{ $hero_des = .Site.Params.page.seriesDes }}
     {{ end }}
@@ -49,7 +43,6 @@
     {{ end }}
 
 {{ else if eq .Kind "home" }}
-    {{ $hero_img = .Site.Params.page.homeTopImg }}
     {{ $hero_title = .Site.Params.page.homeTitle }}
     {{ $localizedContent := index .Site.Params.page (.Lang | lower) "homeContent" }}
     {{ $hero_des = cond (not (eq $localizedContent nil)) $localizedContent .Site.Params.page.homeContent }}

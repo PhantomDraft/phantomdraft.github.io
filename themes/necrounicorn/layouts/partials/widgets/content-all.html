@@ -1,4 +1,4 @@
-{{ $isPage := or (eq .Kind "page") (eq .Section "about") }}
+{{ $isPage := or (eq .Kind "page") }}
 {{ $langNow := .Lang }}
 {{ $isMultiLingual := and (ne .Site.Language.Weight 1) (and .Site.IsMultiLingual (not .Site.Params.Site.OnlyOneLang)) }}
 
@@ -48,18 +48,42 @@
         </article>
 
         <footer class="castration base_width p_relative footer_info">
-            <p class="fl">
-                <span>{{ i18n "postInfo_subscription" }}:</span> 
-                <a rel="nofollow" href="https://www.facebook.com/phantomdrafts/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-            {{ if or (eq $.Site.Language.Lang "uk") (eq $.Site.Language.Lang "ru") }}
-                &nbsp; 
-                <a rel="nofollow" href="https://t.me/phantomdrafts" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-            {{ end }}
-            </p>
-            <p class="fr">
-                <i class="fa fa-pencil"></i> <span>{{ i18n "postInfo_wordsCount" }}:</span> {{ .WordCount }} &nbsp; 
-                <i class="fa fa-clock-o"></i> <span>{{ i18n "postInfo_readingTime" }}:</span> {{ .ReadingTime }} {{ i18n "postInfo_minute" .ReadingTime }}
-            </p>
+            <div class="fl">
+                <p>
+                    <span>
+                        {{ i18n "postInfo_subscription" }}:
+                    </span>
+                    &nbsp;
+                    <a rel="nofollow" href="https://www.facebook.com/phantomdrafts/" target="_blank">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a>
+                {{ if or (eq $.Site.Language.Lang "uk") (eq $.Site.Language.Lang "ru") }}
+                    &nbsp;
+                    <a rel="nofollow" href="https://t.me/phantomdrafts" target="_blank">
+                        <i class="fa fa-telegram" aria-hidden="true"></i>
+                    </a>
+                {{ end }}
+                </p>
+            </div>
+            <div class="fr">
+                <p>
+                    <i class="fa fa-pencil" title='{{ i18n "postInfo_wordsCount" }}'></i>
+                    &nbsp;
+                    <span>
+                        {{ i18n "postInfo_wordsCount" }}:
+                    </span>
+                    &nbsp;
+                    {{ .WordCount }}
+                    &nbsp;
+                    <i class="fa fa-clock-o" title='{{ i18n "postInfo_readingTime" }}'></i>
+                    &nbsp;
+                    <span>
+                        {{ i18n "postInfo_readingTime" }}:
+                    </span>
+                    &nbsp;
+                    {{ .ReadingTime }} {{ i18n "postInfo_minute" .ReadingTime }}
+                </p>
+            </div>
         </footer>
 {{ template "_internal/disqus.html" . }}
     {{ end }}
