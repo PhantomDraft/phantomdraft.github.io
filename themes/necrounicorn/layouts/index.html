@@ -25,8 +25,10 @@
         {{ end }}
 
         <ul id="content">
-            {{ $filteredPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
-            {{ $sortedPages := sort $filteredPages "Lastmod" "desc" }}
+            {{ $filteredPages := where .Site.RegularPages "Section" "!=" "page" }}
+            {{ $filteredPages = where $filteredPages ".Params.hideFromCenter" "!=" true }}
+            {{ $filteredPagesWithPage := union $filteredPages (where .Site.RegularPages "Section" "==" "page") }}
+            {{ $sortedPages := sort $filteredPagesWithPage "Lastmod" "desc" }}
             {{ $paginator := .Paginate $sortedPages .Site.Params.page.maxHomePostCount }}
 
             {{ range $paginator.Pages }}
