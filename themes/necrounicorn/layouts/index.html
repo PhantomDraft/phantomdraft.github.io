@@ -25,13 +25,13 @@
         {{ end }}
 
         <ul id="content">
-{{ $filteredPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
-{{ $sortedPages := sort $filteredPages "Lastmod" "desc" }}
-{{ $paginator := .Paginate $sortedPages .Site.Params.page.maxHomePostCount }}
+            {{ $filteredPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
+            {{ $sortedPages := sort $filteredPages "Lastmod" "desc" }}
+            {{ $paginator := .Paginate $sortedPages .Site.Params.page.maxHomePostCount }}
 
-{{ range $paginator.Pages }}
-    {{ partial "widgets/post-card.html" . }}
-{{ end }}
+            {{ range $paginator.Pages }}
+                {{ partial "widgets/post-card.html" . }}
+            {{ end }}
         </ul>
 
         <ul class="t_center not_twitch">
