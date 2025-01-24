@@ -256,8 +256,8 @@ paginate = 9
         ru = "Morguenal"
     # profile link
     [author.link]
-        en = "mailto:ruslan.dubinetsky@gmail.com"
-        uk = "mailto:ruslan.dubinetsky@gmail.com"
+        en = "https://www.linkedin.com/in/ruslan-dubinetsky/"
+        uk = "https://www.linkedin.com/in/ruslan-dubinetsky/"
         ru = "https://t.me/morguenal"
     # profile desc
     [author.description]
