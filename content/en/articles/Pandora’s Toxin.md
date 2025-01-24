@@ -134,7 +134,7 @@ Despite a number of circumstances that unfolded exactly as shown in the film—w
 
 What Did I Feel After Watching This Not-So-Short Film?
 
-I felt like I had spied on God going to the bathroom—under the condition that I had never encountered gods before. It had never even crossed my mind that a god would need to use the toilet\! But he did it so naturally that I whispered in awe: — "In your image and likeness."
+I felt like I had spied on God going to the bathroom—under the condition that I had never encountered gods before. It had never even crossed my mind that a god would need to use the toilet\! But he did it so naturally that I whispered in awe: — "In your image and likeness".
 
 This is nothing like Tarantino’s Hostel, where you start wondering if the director has paranoia. Here, everything is banally simple, yet due to the isolation of this place—which doesn't even try to hide itself—I began to wonder: could this place actually exist? It has its own atmosphere. It is not part of Myanmar’s wildlands. It is a popular tourist destination for wealthy people.
 
@@ -146,11 +146,11 @@ The Portrayal of Psilocybin Mushroom Consumption in This Film Seemed Realistic t
 	<p>
 		<img class="miner fl" src="/images/articles/horror-about-drugs/psychedelics.webp" loading="lazy" alt="Horror Movies About Dissociatives, Deliriants, and Psychedelics (LSD)">
 	</p>
-	<p>BZ – a military-grade combat drug. LSD – also known as "acid" or "tabs."</p>
+	<p>BZ – a military-grade combat drug. LSD – also known as "acid" or "tabs".</p>
 	<p>This is a group of psychedelic substances that alter consciousness.</p>
 </div>
 
-Welcome to the World of LSD Horror Movies. Currently, LSD is the most sexualized drug in the horror genre. This is superficially (literally) linked to the method of consuming LSD tabs, which has become a tribute to porn culture and the concept of a "cumshot." And it doesn’t matter that: placing a tab under the tongue is more logical, because absorption is better there. No. They all place them on top.
+Welcome to the World of LSD Horror Movies. Currently, LSD is the most sexualized drug in the horror genre. This is superficially (literally) linked to the method of consuming LSD tabs, which has become a tribute to porn culture and the concept of a "cumshot". And it doesn’t matter that: placing a tab under the tongue is more logical, because absorption is better there. No. They all place them on top.
 
 Most acid horror movies are just that—"naked and funny." But not all of them. There is one particularly serious project that lurks in the background like a shadow of all these tongues sticking out… And it belongs in the section on fictional drugs—but alas. "Stay with us, boy. You will be our king." /c
 
@@ -196,26 +196,28 @@ An example of the aforementioned "tongue-showing" film. A low-budget movie dedic
 ## Horror Movies About Fictional Drugs
 
 <div class="castration cover p_relative atcScreen">
-	<p>By spending a little time on lore, one can create a fictional drug that fits seamlessly into the everyday lives of any characters, only to tragically destroy them or alter their existence to the level described in High on Life. Unfortunately, it sometimes feels like many authors rely solely on subjective, Lovecraftian-style descriptions of the "indescribable," and their only references are fan art of Venom.</p>
+	<p>By spending a little time on lore, one can create a fictional drug that fits seamlessly into the everyday lives of any characters, only to tragically destroy them or alter their existence to the level described in High on Life. Unfortunately, it sometimes feels like many authors rely solely on subjective, Lovecraftian-style descriptions of the "indescribable", and their only references are fan art of Venom.</p>
 </div>
 
 I have selected a few interesting works that I personally liked. "Body Melt" (1993) is not included here because I didn’t particularly enjoy it, but still—I've mentioned it (just now, actually).
 
 ### The Evil in Us (2016)
 
-The film was criticized, but I honestly don’t understand why. It is both cynical and ironic—everything fits together well. Thanks to its ending, it doesn’t get lost among the stream of "not-so-generic horror films."
+The film was criticized, but I honestly don’t understand why. It is both cynical and ironic—everything fits together well. Thanks to its ending, it doesn’t get lost among the stream of "not-so-generic horror films".
 
 ### To Kill the Dragon (2019)
 
 I will not give this film a higher rating out of pity simply because of its "idea." I strongly recommend watching it in its original voiceover with subtitles—just like The Bouquet. In fact, I always recommend watching non-Hollywood films with subs rather than dubbing, unless you speak the language fluently.
 
-The next two films are somewhat "about Venom."
+<div class="t_center castration cover p_relative atcScreen">
+	<p>The next two films are somewhat "about Venom".</p>
+</div>
 
 ### Discarnate (2018)
 
-This movie is a great example of "films about fictional drugs," where a lot of attention is paid to isolation and the personal tragedies of the characters. The circumstances of the film’s dynamic opening are firmly lodged in my memory.
+This movie is a great example of "films about fictional drugs", where a lot of attention is paid to isolation and the personal tragedies of the characters. The circumstances of the film’s dynamic opening are firmly lodged in my memory.
 
-This ended up being a "review for the sake of completion," but I wrote it sincerely, and I have nothing to add.
+This ended up being a "review for the sake of completion", but I wrote it sincerely, and I have nothing to add.
 
 ### Hausen (2020)
 
@@ -279,7 +281,7 @@ The difference between this film and the real-life story of two German men, wher
 
 The climax of Toad Road—*"Am I guilty of you disappearing?"*—should be delivered without a question mark. Because, in reality, Sarah didn’t disappear. **Sarah died**. First, she died of an overdose in the film. Then, she died of an overdose in real life.
 
-This reminds me of Vysotsky and his lyrics: *"Those who voluntarily accepted suffering—this song is written for you."* Poet, did you really accept suffering? Are you some kind of Forged from Fallout? Or perhaps even Darth Sion, resurrected by pain?
+This reminds me of Vysotsky and his lyrics: *"Those who voluntarily accepted suffering—this song is written for you".* Poet, did you really accept suffering? Are you some kind of Forged from Fallout? Or perhaps even Darth Sion, resurrected by pain?
 
 #### Somewhere in the Woods, Vysotsky Was Waiting for Them
 
@@ -294,7 +296,7 @@ At the beginning of this article, I said that horror cannot promote self-destruc
 One should not forget that Poe drank himself to death and died in poverty, begging God for help. Meanwhile, Stephen King, with all his problems resolved, once said:
 
 <div class="t_center castration cover p_relative atcScreen">
-	<p><em>"Pop your pills and quit whining."</em></p>
+	<p><em>"Pop your pills and quit whining".</em></p>
 </div>
 
 ### Close Callc (2017)
@@ -396,7 +398,7 @@ Talking About Mushrooms some people claim that consuming psychedelic mushrooms l
 
 I started smoking at the age of 15, not because I needed to, but because everyone around me smoked. I have tried to quit three times and have firmly realized that the psychological attachment to nicotine is just as strong as the physical one. I have not quit smoking, and I will most likely not quit in the next ten years, because my life is too stressful. My body is only getting older, and enduring stress is becoming harder than slowly poisoning myself.
 
-Would I Have Stopped My Younger Self From Smoking? Yes, absolutely.  
+Would I Have Stopped My Younger Self From Smoking? Yes, absolutely.
 Do I Want to Quit Smoking Now? Yes, I do.
 
 My wife and I have been married for 10 years and have been in a relationship for about 15 years. Our son is 7 years old. I have been smoking for 2-3 years longer than I have been in a relationship with my wife. I remember my transition into adulthood with nicotine, and nicotine remembers even more than I do. Many things have disappeared from my life, but nicotine has remained.

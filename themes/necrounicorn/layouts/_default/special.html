@@ -1,0 +1,447 @@
+<link rel="stylesheet" href='{{ "css/main/hugr.css?v=0.7" | relURL }}' />
+<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+
+
+
+
+<main>
+
+
+
+
+<a id="open" class="open" style="position: fixed; width: 50px; height: 50px; right: 0; top: 50%; margin-top: -25px;" href="#"><img src="img/logo.png" /></a>
+
+<div class="hat--biohazard hat">
+	<div class="b_memory_section">
+		<canvas id="root" width="600" style="width: 100%" height="300">
+			<p>In Internet Explorer versions up to 8, things inside the canvas are inaccessible!</p>
+		</canvas>
+		<div id="memory_root">
+			<ul>
+				<li>
+					<a onclick="selectBiopunk(event)" href="#spiritis_show" class="linkBiopunk">
+						#biohazard
+						<audio src="/audio/Go_Tell_Aunt_Rhody.ogg"></audio>
+					</a>
+				</li>
+				<li>
+					<a onclick="selectCulture(event)" href="#til_hell" class="linkCulture">
+						#culture
+						<audio src="/audio/Slokd_Sonne.ogg"></audio>
+					</a>
+				</li>
+				<li>
+					<a onclick="selectDreams(event)" href="#insanity_forever" class="linkDreams">
+						#last dreams
+						<audio src="/audio/Sweet_Dreams_Acoustic.ogg"></audio>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+	<section class="content" id="section1">
+		<div class="grid grid--0">
+			<div class="grid-wrap" id="page-wrap">
+
+
+
+
+<div class="curtain grid__item">
+	<div class="grid__item-inner">
+		<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<filter id="poisonFilter1">
+					<feTurbulence type="turbulence" baseFrequency="0.0001" numOctaves="1" result="turbulence">
+						<animate attributeName="baseFrequency" dur="15s" values="0.0001;0.02;0.0001" begin="imgBiopunk1.load" repeatDur="indefinite" />
+					</feTurbulence>
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="25" in="SourceGraphic" in2="turbulence" />
+				</filter>
+				<mask id="bottleMask1" fill="white">
+					<image id="imgBiopunk1" xlink:href="/img/main/biopunk/001.webp" width="100%" height="120%" filter="url(#poisonFilter1)" />
+				</mask>
+			</defs>
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<path class="bottleMask" mask="url(#bottleMask1)" fill="#ff0000" d="M0, 0h300v300H0V0z" />
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<rect width="40" height="33" x="130" y="0" fill="#ff0000" />
+		</svg>
+	</div>
+</div>
+
+<div class="curtain grid__item">
+	<div class="grid__item-inner">
+		<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<filter id="poisonFilter2">
+					<feTurbulence type="turbulence" baseFrequency="0.0001" numOctaves="1" result="turbulence">
+						<animate attributeName="baseFrequency" dur="15s" values="0.0001;0.02;0.0001" begin="imgBiopunk2.load" repeatDur="indefinite" />
+					</feTurbulence>
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="25" in="SourceGraphic" in2="turbulence" />
+				</filter>
+				<mask id="bottleMask2" fill="white">
+					<image id="imgBiopunk2" xlink:href="/img/main/biopunk/002.webp" width="100%" height="120%" filter="url(#poisonFilter2)" />
+				</mask>
+			</defs>
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<path class="bottleMask" mask="url(#bottleMask2)" fill="#ff8000" d="M0, 0h300v300H0V0z" />
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<rect width="40" height="33" x="130" y="0" fill="#ff8000" />
+		</svg>
+	</div>
+</div>
+
+<div class="curtain grid__item">
+	<div class="grid__item-inner">
+		<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<filter id="poisonFilter3">
+					<feTurbulence type="turbulence" baseFrequency="0.0001" numOctaves="1" result="turbulence">
+						<animate attributeName="baseFrequency" dur="15s" values="0.0001;0.02;0.0001" begin="imgBiopunk3.load" repeatDur="indefinite" />
+					</feTurbulence>
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="25" in="SourceGraphic" in2="turbulence" />
+				</filter>
+				<mask id="bottleMask3" fill="white">
+					<image id="imgBiopunk3" xlink:href="/img/main/biopunk/003.webp" width="100%" height="120%" filter="url(#poisonFilter3)" />
+				</mask>
+			</defs>
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<path class="bottleMask" mask="url(#bottleMask3)" fill="#ffff00" d="M0, 0h300v300H0V0z" />
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<rect width="40" height="33" x="130" y="0" fill="#ffff00" />
+		</svg>
+	</div>
+</div>
+
+<div class="curtain grid__item">
+	<div class="grid__item-inner">
+		<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<filter id="poisonFilter4">
+					<feTurbulence type="turbulence" baseFrequency="0.0001" numOctaves="1" result="turbulence">
+						<animate attributeName="baseFrequency" dur="15s" values="0.0001;0.02;0.0001" begin="imgBiopunk4.load" repeatDur="indefinite" />
+					</feTurbulence>
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="25" in="SourceGraphic" in2="turbulence" />
+				</filter>
+				<mask id="bottleMask4" fill="white">
+					<image id="imgBiopunk4" xlink:href="/img/main/biopunk/004.webp" width="100%" height="120%" filter="url(#poisonFilter4)" />
+				</mask>
+			</defs>
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<path class="bottleMask" mask="url(#bottleMask4)" fill="#008000" d="M0, 0h300v300H0V0z" />
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<rect width="40" height="33" x="130" y="0" fill="#008000" />
+		</svg>
+	</div>
+</div>
+
+<div class="curtain grid__item">
+	<div class="grid__item-inner">
+		<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<filter id="poisonFilter5">
+					<feTurbulence type="turbulence" baseFrequency="0.0001" numOctaves="1" result="turbulence">
+						<animate attributeName="baseFrequency" dur="15s" values="0.0001;0.02;0.0001" begin="imgBiopunk5.load" repeatDur="indefinite" />
+					</feTurbulence>
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="25" in="SourceGraphic" in2="turbulence" />
+				</filter>
+				<mask id="bottleMask5" fill="white">
+					<image id="imgBiopunk5" xlink:href="/img/main/biopunk/005.webp" width="100%" height="150%" filter="url(#poisonFilter5)" />
+				</mask>
+			</defs>
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<path class="bottleMask" mask="url(#bottleMask5)" fill="#00BFFF" d="M0, 0h300v300H0V0z" />
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<rect width="40" height="33" x="130" y="0" fill="#00BFFF" />
+		</svg>
+	</div>
+</div>
+
+<div class="curtain grid__item">
+	<div class="grid__item-inner">
+		<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<filter id="poisonFilter6">
+					<feTurbulence type="turbulence" baseFrequency="0.0001" numOctaves="1" result="turbulence">
+						<animate attributeName="baseFrequency" dur="15s" values="0.0001;0.02;0.0001" begin="imgBiopunk6.load" repeatDur="indefinite" />
+					</feTurbulence>
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="25" in="SourceGraphic" in2="turbulence" />
+				</filter>
+				<mask id="bottleMask6" fill="white">
+					<image id="imgBiopunk6" xlink:href="/img/main/biopunk/006.webp" width="100%" height="120%" filter="url(#poisonFilter6)" />
+				</mask>
+			</defs>
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<path class="bottleMask" mask="url(#bottleMask6)" fill="#0ff" d="M0, 0h300v300H0V0z" />
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<rect width="40" height="33" x="130" y="0" fill="#0ff" />
+		</svg>
+	</div>
+</div>
+
+<div class="curtain grid__item">
+	<div class="grid__item-inner">
+		<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<filter id="poisonFilter7">
+					<feTurbulence type="turbulence" baseFrequency="0.0001" numOctaves="1" result="turbulence">
+						<animate attributeName="baseFrequency" dur="15s" values="0.0001;0.02;0.0001" begin="imgBiopunk7.load" repeatDur="indefinite" />
+					</feTurbulence>
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="25" in="SourceGraphic" in2="turbulence" />
+				</filter>
+				<mask id="bottleMask7" fill="white">
+					<image id="imgBiopunk7" xlink:href="/img/main/biopunk/007.webp" width="100%" height="120%" filter="url(#poisonFilter7)" />
+				</mask>
+			</defs>
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<path class="bottleMask" mask="url(#bottleMask7)" fill="#0000FF" d="M0, 0h300v300H0V0z" />
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<rect width="40" height="33" x="130" y="0" fill="#0000FF" />
+		</svg>
+	</div>
+</div>
+
+<div class="curtain grid__item">
+	<div class="grid__item-inner">
+		<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<filter id="poisonFilter8">
+					<feTurbulence type="turbulence" baseFrequency="0.0001" numOctaves="1" result="turbulence">
+						<animate attributeName="baseFrequency" dur="15s" values="0.0001;0.02;0.0001" begin="imgBiopunk8.load" repeatDur="indefinite" />
+					</feTurbulence>
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="25" in="SourceGraphic" in2="turbulence" />
+				</filter>
+				<mask id="bottleMask8" fill="white">
+					<image id="imgBiopunk8" xlink:href="/img/main/biopunk/008.webp" width="100%" height="120%" filter="url(#poisonFilter8)" />
+				</mask>
+			</defs>
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<path class="bottleMask" mask="url(#bottleMask8)" fill="#0ff" d="M0, 0h300v300H0V0z" />
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<rect width="40" height="33" x="130" y="0" fill="#0ff" />
+		</svg>
+	</div>
+</div>
+
+<div class="curtain grid__item">
+	<div class="grid__item-inner">
+		<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<filter id="poisonFilter9">
+					<feTurbulence type="turbulence" baseFrequency="0.0001" numOctaves="1" result="turbulence">
+						<animate attributeName="baseFrequency" dur="15s" values="0.0001;0.02;0.0001" begin="imgBiopunk9.load" repeatDur="indefinite" />
+					</feTurbulence>
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="25" in="SourceGraphic" in2="turbulence" />
+				</filter>
+				<mask id="bottleMask9" fill="white">
+					<image id="imgBiopunk9" xlink:href="/img/main/biopunk/009.gif" width="100%" height="120%" filter="url(#poisonFilter9)" />
+				</mask>
+			</defs>
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<path class="bottleMask" mask="url(#bottleMask9)" fill="#0ff" d="M0, 0h300v300H0V0z" />
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<rect width="40" height="33" x="130" y="0" fill="#0ff" />
+		</svg>
+	</div>
+</div>
+
+<div class="curtain grid__item">
+	<div class="grid__item-inner">
+		<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<filter id="poisonFilter10">
+					<feTurbulence type="turbulence" baseFrequency="0.0001" numOctaves="1" result="turbulence">
+						<animate attributeName="baseFrequency" dur="15s" values="0.0001;0.02;0.0001" begin="imgBiopunk10.load" repeatDur="indefinite" />
+					</feTurbulence>
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="25" in="SourceGraphic" in2="turbulence" />
+				</filter>
+				<mask id="bottleMask10" fill="white">
+					<image id="imgBiopunk10" xlink:href="/img/main/biopunk/010.webp" width="100%" height="120%" filter="url(#poisonFilter10)" />
+				</mask>
+			</defs>
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<path class="bottleMask" mask="url(#bottleMask10)" fill="#6900C6" d="M0, 0h300v300H0V0z" />
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<rect width="40" height="33" x="130" y="0" fill="#6900C6" />
+		</svg>
+	</div>
+</div>
+
+<div class="curtain grid__item">
+	<div class="grid__item-inner">
+		<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<filter id="poisonFilter11">
+					<feTurbulence type="turbulence" baseFrequency="0.0001" numOctaves="1" result="turbulence">
+						<animate attributeName="baseFrequency" dur="15s" values="0.0001;0.02;0.0001" begin="imgBiopunk11.load" repeatDur="indefinite" />
+					</feTurbulence>
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="25" in="SourceGraphic" in2="turbulence" />
+				</filter>
+				<mask id="bottleMask11" fill="white">
+					<image id="imgBiopunk11" xlink:href="/img/main/biopunk/011.webp" width="100%" height="120%" filter="url(#poisonFilter11)" />
+				</mask>
+			</defs>
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<path class="bottleMask" mask="url(#bottleMask11)" fill="#0ff" d="M0, 0h300v300H0V0z" />
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<rect width="40" height="33" x="130" y="0" fill="#0ff" />
+		</svg>
+	</div>
+</div>
+
+<div class="curtain grid__item">
+	<div class="grid__item-inner">
+		<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<filter id="poisonFilter12">
+					<feTurbulence type="turbulence" baseFrequency="0.0001" numOctaves="1" result="turbulence">
+						<animate attributeName="baseFrequency" dur="15s" values="0.0001;0.02;0.0001" begin="imgBiopunk12.load" repeatDur="indefinite" />
+					</feTurbulence>
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="25" in="SourceGraphic" in2="turbulence" />
+				</filter>
+				<mask id="bottleMask12" fill="white">
+					<image id="imgBiopunk12" xlink:href="/img/main/biopunk/012.webp" width="100%" height="120%" filter="url(#poisonFilter12)" />
+				</mask>
+			</defs>
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<path class="bottleMask" mask="url(#bottleMask12)" fill="#0ff" d="M0, 0h300v300H0V0z" />
+			<image xlink:href="/img/main/bottle-white.webp" width="300" />
+			<rect width="40" height="33" x="130" y="0" fill="#0ff" />
+		</svg>
+	</div>
+</div>
+
+
+
+
+			</div>
+		</div>
+		<div class="content__title--right content__title">
+			<div class="b_memory_section-biohazard b_memory_section">
+				<h3 id="spiritis_show">Spir<span class="animation--run">i</span>tis <br /> sho<span style="text-shadow: none; color: #333">p</span>w</h3>
+				{{ if eq .Site.Language.LanguageCode "uk" }}
+					<p>Check out the selection <a href="series/its-not-what-it-seems/">&#8220;It's Not What It Seems&#8221;</a> and <a href="series/horror-about-drugs/">&#8220;Horror about drugs&#8221;</a></p>
+				{{ end }}
+				<canvas id="root_biopunk" width="600" style="width: 100%" height="300">
+					<p>In Internet Explorer versions up to 8, things inside the canvas are inaccessible!</p>
+				</canvas>
+			</div>
+			<div id="associative_biopunk" style="display: none;">
+				<a href="uk/tags/mystic/">c</a><a href="uk/tags/poison/">n</a><a href="uk/tags/mystic/">i</a><a href="uk/tags/poison/">o</a><a href="uk/tags/mystic/">t</a><a href="uk/tags/poison/">s</a><a href="uk/tags/mystic/">s</a><a href="uk/tags/poison/">i</a><a href="uk/tags/mystic/">y</a><a href="uk/tags/poison/">o</a><a href="uk/tags/mystic/">#m</a><a href="uk/tags/poison/">#p</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="content--spacing content" id="section2">
+		<div class="grid grid--1">
+			<div class="grid-wrap">
+
+
+
+
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/culture/001.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/culture/002.gif)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/culture/003.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/culture/004.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/culture/005.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/culture/006.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/culture/007.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/culture/008.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/culture/009.webp)"></div></div>
+
+
+
+
+			</div>
+		</div>
+		<div class="content__title--bottom content__title">
+			<div class="b_memory_section">
+				<h3 id="til_hell">Til Hell!</h3>
+				{{ if eq .Site.Language.LanguageCode "uk" }}
+					<p>Check out the selection <a href="series/business-approach-military/">&#8220;Business approach military&#8221;</a>, <a href="series/horror-about-the-earth/">&#8220;Horror about the earth&#8221;</a> and <a href="series/horror-about-world-wars/">&#8220;Horror about world wars&#8221;</a></p>
+				{{ end }}
+				<canvas id="root_culture" width="600" style="width: 100%" height="300">
+					<p>In Internet Explorer versions up to 8, things inside the canvas are inaccessible!</p>
+				</canvas>
+			</div>
+			<div id="associative_culture" style="display: none;">
+				<a href="tags/mythology/">#mythology</a>
+				<a href="tags/industry/">#industry</a>
+				<a href="tags/militarism/">#militarism</a>
+				<a href="tags/folklore/">#folklore</a>
+				<a href="tags/necro-fetishism/">#necro fetishism</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="content--spacing content" id="section3">
+		<div class="grid grid--2">
+			<div class="grid-wrap">
+
+
+
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/001.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/002.pnwebpg)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/003.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/004.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/005.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/006.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/007.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/008.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/009.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/010.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/011.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/012.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/013.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/014.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/015.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/016.webp)"></div></div>
+<div class="grid__item"><div class="grid__item-inner" style="background-image:url(/img/main/dreams/017.webp)"></div></div>
+
+
+
+			</div>
+		</div>
+		<div class="content__title--top content__title">
+			<div class="b_memory_section">
+				<h3 id="insanity_forever">Insanity Forever</h3>
+				{{ if eq .Site.Language.LanguageCode "uk" }}
+					<p><a href="series/through-the-eyes-of-the-monster/">&#8220;Through the Eyes of the Monster&#8221;</a> <br /> <a href="series/horror-worlds-and-writers/">&#8220;Horror Worlds and Writers&#8221;</a> <br /> <a href="series/horrors-about-investigations-inside-monasteries/">&#8220;Horrors About Investigations Inside Monasteries&#8221;</a> <br /> <a href="series/insanity-forever/">&#8220;Insanity Forever&#8221;</a></p>
+				{{ end }}
+				<canvas id="root_dreams" width="600" style="width: 100%" height="300">
+					<p>In Internet Explorer versions up to 8, things inside the canvas are inaccessible!</p>
+				</canvas>
+			</div>
+			<div id="associative_dreams" style="display: none;">
+				<a href="tags/houses-of-sorrow/">#house of sorrow</a>
+				<a href="tags/faith/">#faith</a>
+			</div>
+		</div>
+	</section>
+
+	<div class="credits">
+		{{- partial "widgets/crystal-ball.html" . -}}
+	</div>
+
+</main>
+
+
+
+
+<script type="text/javascript" src="/js/main/lost-memories.js"></script>
+<script type="text/javascript" src="/js/main/core/tagcanvas.min.js"></script>
+<script type="text/javascript" src="/js/main/TagCloud.js"></script>
+<script type="text/javascript" src="/js/main/core/gsap.min.js"></script>
+<script type="text/javascript" src="/js/main/ScrollTrigger.min.js"></script>
+<script type="text/javascript" src="/js/main/Draggable.min.js"></script>
+<script type="text/javascript" src="/js/main/EaselPlugin.min.js"></script>
+<script type="text/javascript" src="/js/main/EasePack.min.js"></script>
+<script type="text/javascript" src="/js/main/ScrollToPlugin.min.js"></script>
+<script type="text/javascript" src="/js/main/lenis.min.js"></script>
+<script type="text/javascript" src="/js/main/imagesloaded.pkgd.min.js"></script>
+<script type="module" src="/js/main/animation.js"></script>
+<script type="text/javascript" src="/js/main/crystal-ball.js"></script>
