@@ -62,8 +62,8 @@ I spent some time trying to understand what was happening in these works.
 	<p>
 		<img class="miner fl" src="/images/articles/horror-about-drugs/marijuana.webp" loading="lazy" alt="Horror Movies About Cannabis">
 	</p>
-	<p>Cannabis-based drugs: Marijuana, Hashish</p>
-	<p>Active substances: Cannabinoids</p>
+	<p><strong>Cannabis-based drugs<strong>: Marijuana, Hashish<</p>
+	<p><strong>Active substances</strong>: Cannabinoids</p>
 </div>
 
 Not everyone knows that during the filming of the old BBC series Teletubbies, the crew used drugs. So, the horror films about cannabis that I know of are like Teletubbies on minimal settings—where the characters are either idiots or divinely gifted. I will mention one movie specifically dedicated to this type of drug and one more film I simply cannot ignore. In the first case, the protagonists are just idiots. In the second, perhaps they really are divinely gifted... by someone.
@@ -82,7 +82,7 @@ Just kidding about the last part—it's just an alien organism. I doubt the crea
 
 ### The Cabin in the Woods (2011)
 
-One of my favorite black comedies, The Cabin in the Woods (2011), belongs to the "Post-Horror We Deserve" selection. The constant use of weed helped the character Marty develop immunity to the fictional corporation’s chemical weapon, and that struck me as funny. Like cures like.
+One of my favorite black comedies, The Cabin in the Woods (2011), belongs to the <a href="/series/post-horror-we-deserve/" target="_blank">"Post-Horror We Deserve"</a> selection. The constant use of weed helped the character Marty develop immunity to the fictional corporation’s chemical weapon, and that struck me as funny. Like cures like.
 
 <p><a href="/library/the-cabin-in-the-woods-2012/" target="_blank">Read More</a></p>
 
@@ -92,8 +92,8 @@ One of my favorite black comedies, The Cabin in the Woods (2011), belongs to the
 	<p>
 		<img class="miner fl" src="/images/articles/horror-about-drugs/psilocybin.webp" loading="lazy" alt="Horror Movies About Psilocybin">
 	</p>
-	<p>Hallucinogens</p>
-	<p>Psilocin and Psilocybin—commonly referred to as "shrooms" or "toadstools"</p>
+	<p><strong>Hallucinogens</strong></p>
+	<p>Psilocin and Psilocybin—commonly referred to as "shrooms" or "toadstools".</p>
 </div>
 
 The problem of direction is as old as Wagnerian opera, where horned helmets and armored bras were costume designer Carl Döpler’s blessing upon gods, Vikings, and valkyries. These clichés go hand in hand with another: the idea that consuming poisonous mushrooms (not only psilocybin but also fly agarics) somehow stimulates muscle growth and increases aggression (this explains why berserkers died quickly in battle—because these were not the most suitable poisons for enhancing physical activity). Where did they even find all these different mushrooms?
@@ -147,7 +147,7 @@ The Portrayal of Psilocybin Mushroom Consumption in This Film Seemed Realistic t
 	<p>
 		<img class="miner fl" src="/images/articles/horror-about-drugs/psychedelics.webp" loading="lazy" alt="Horror Movies About Dissociatives, Deliriants, and Psychedelics (LSD)">
 	</p>
-	<p>BZ – a military-grade combat drug. LSD – also known as "acid" or "tabs".</p>
+	<p><strong>BZ</strong> – a military-grade combat drug. <strong>LSD</strong> – also known as "acid" or "tabs".</p>
 	<p>This is a group of psychedelic substances that alter consciousness.</p>
 </div>
 
@@ -244,9 +244,9 @@ Sniff, eat, drink, inhale your world, Homo sapiens.
 	<p>
 		<img class="miner fl" src="/images/articles/horror-about-drugs/opium.webp" loading="lazy" alt="Horror Movies About Opium">
 	</p>
-	<p>Opiates</p>
-	<p>Heroin, Methadone</p>
-	<p>All natural narcotic substances in the opium group are derived from poppies</p>
+	<p><strong>Opiates</strong></p>
+	<p><strong>Heroin, Methadone</strong></p>
+	<p>All natural narcotic substances in the opium group are derived from poppies.</p>
 </div>
 
 There is only one film here, but you could also watch "From Hell," where a young Johnny Depp hangs out in an Eastern opium den.
@@ -373,8 +373,8 @@ I highly recommend watching it in its original language with subtitles, as Rober
 	<p>
 		<img class="miner fl" src="/images/articles/horror-about-drugs/absinthe.webp" loading="lazy" alt="Shepherd’s Doll (2010)">
 	</p>
-	<p>Wormwood = Absinthe or the Green Fairy</p>
-	<p>This drink contains thujone, a compound chemically similar to tetrahydrocannabinol (THC), the active ingredient found in marijuana and hashish</p>
+	<p><strong>Wormwood</strong> = Absinthe or the Green Fairy</p>
+	<p>This drink contains thujone, a compound chemically similar to tetrahydrocannabinol (THC), the active ingredient found in marijuana and hashish.</p>
 </div>
 
 The Green Fairy has had a full life—a mysterious birth with multiple versions, a rise, a fall, and a return from oblivion.
