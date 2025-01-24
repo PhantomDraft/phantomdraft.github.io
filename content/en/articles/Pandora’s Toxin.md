@@ -62,7 +62,7 @@ I spent some time trying to understand what was happening in these works.
 	<p>
 		<img class="miner fl" src="/images/articles/horror-about-drugs/marijuana.webp" loading="lazy" alt="Horror Movies About Cannabis">
 	</p>
-	<p><strong>Cannabis-based drugs<strong>: Marijuana, Hashish<</p>
+	<p><strong>Cannabis-based drugs</strong>: Marijuana, Hashish<</p>
 	<p><strong>Active substances</strong>: Cannabinoids</p>
 </div>
 
