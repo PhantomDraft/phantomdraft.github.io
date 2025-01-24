@@ -3,7 +3,7 @@ title: "The Idea of Apocalypse in Horror Films, Particularly Slashers Films"
 description: "Slasher vs. Post-Apocalypse"
 # format for string: "xxxx-xx-xx"
 date: 2024-11-11
-lastmod: "2024-12-24"
+lastmod: "2025-01-24"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
@@ -148,9 +148,13 @@ Ahead, we return to our starting point and chainsaws. We speed past *One Flew Ov
 
 Incidentally, we just zoomed through the Golden Age of the Slasher (1978–1984), which Carpenter’s *Halloween* inaugurated.
 
-### BZ
+### BZ and Zombie
 
-We make a stop in 1985 when the book <a href="/library/acid-dreams-1985/" target="_blank">Acid Dreams</a> was published, detailing experiments conducted on U.S. soldiers involving the drug BZ. Five years later, in 1990, the film <a href="/library/jacobs-ladder-1990/" target="_blank">Jacob's Ladder</a> would be released.
+We make a stop in 1985 when the books <a href="/library/acid-dreams-1985/" target="_blank">Acid Dreams</a> and *The Serpent and the Rainbow: A Harvard Scientist's Astonishing Journey into the Secret Societies of Haitian Voodoo, Zombis, and Magic* were published. Acid Dreams detailed experiments conducted on U.S. soldiers involving the drug BZ, while The Serpent and the Rainbow explored the alleged use of toxins in Haitian voodoo rituals. Only three years later, its film adaptation of the same name would be released. Five years after that, in 1990, the film <a href="/library/jacobs-ladder-1990/" target="_blank">Jacob's Ladder</a> would be released.
+
+<div class="t_center castration cover p_relative atcScreen">
+	<p>Read more in the article <a href="/articles/pandoras-toxin/" target="_blank">Pandora’s Toxin: The First Form of Bioweapon in Horror</a></p>
+</div>
 
 A short leap, and… everyone out\! We’re in 2024\.
 

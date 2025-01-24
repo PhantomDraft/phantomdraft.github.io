@@ -3,7 +3,7 @@ title: "Pandora’s Toxin: The First Form of Bioweapon in Horror"
 description: "Horrors About Drugs"
 # format for string: "xxxx-xx-xx"
 date: 2025-01-21
-lastmod: "2025-01-23"
+lastmod: "2025-01-24"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
@@ -53,7 +53,8 @@ I spent some time trying to understand what was happening in these works.
 1. I visited the websites of the Ministries of Internal Affairs of several countries and studied their drug information pamphlets. Based on data provided by law enforcement agencies, I compiled a list of the most popular drugs worldwide (Europe, Russia, and the USA). The context of substance use is often chaotic and depends on socioeconomic factors (see point 3\) and social groups.  
 2. My primary source of information was the English Wikipedia, which helped classify these poisons by chemical groups.  
 3. With a basic understanding of where and when certain drugs were used en masse at the state level, I drew my own conclusions, which helped me assess the average influence of specific substances on people.  
-4. Key Selection Criterion: in my understanding, a pimple horror movie is "How to Get Ahead in Advertising", not just a surprise pimple that the protagonist of "Scary Stories to Tell in the Dark" found unattractive. I did not include numerous horror movies where drugs are not a central part of the plot but are merely a crutch for an inexperienced screenwriter.
+4. **The first key selection factor**: in my understanding, a pimple horror movie is "How to Get Ahead in Advertising", not just a surprise pimple that the protagonist of "Scary Stories to Tell in the Dark" found unattractive. I did not include numerous horror movies where drugs are not a central part of the plot but are merely a crutch for an inexperienced screenwriter.
+5. **The second key selection factor**: I ignored works where poisons cannot be classified, such as "The Serpent and the Rainbow: A Harvard Scientist's Astonishing Journey into the Secret Societies of Haitian Voodoo, Zombis, and Magic" (1985). The book faced serious criticism from the scientific community, and I can say the following: have we observed rising corpses of soldiers during our wars? The answer is obvious, and my conclusion is logical: if the military sector did not adopt these developments, then most likely, these texts are useless. The "zombie" state in people was maintained through regular doses of the poisonous plant Datura stramonium, which causes amnesia, delirium, and suggestibility, but literally dead bodies did not rise. Later, you will be able to compare this work with "Jacob's Ladder", and you will most likely come to the same conclusion as I did. The book was adapted into a film in 1988, just three years after its publication.
 
 ## Horror Movies About Cannabis
 
@@ -193,6 +194,10 @@ Initially, I Thought "Stalin's Acid" Was Just a Creepypasta. I expected somethin
 
 An example of the aforementioned "tongue-showing" film. A low-budget movie dedicated to a so-called "trip"—without any hint of the "otherworldly." This is purely the horrors of real life.
 
+### Climax (2018)
+
+The film takes place in 1996 and tells the story of a French dance troupe rehearsing in an abandoned school, then throwing a party after a successful final performance. The celebration turns into chaos when LSD is mixed into the communal bowl of sangria, plunging the dancers into a nightmarish whirlpool of hallucinations, paranoia, and violence.
+
 ## Horror Movies About Fictional Drugs
 
 <div class="castration cover p_relative atcScreen">
@@ -205,9 +210,13 @@ I have selected a few interesting works that I personally liked. "Body Melt" (19
 
 The film was criticized, but I honestly don’t understand why. It is both cynical and ironic—everything fits together well. Thanks to its ending, it doesn’t get lost among the stream of "not-so-generic horror films".
 
+### Antibirth (2016)
+
+A surreal body horror with elements of psychedelia, in which drugs and mutations intertwine into a nightmarish picture. The main character, Lou, leading a reckless lifestyle, suddenly begins to experience pregnancy symptoms despite not having engaged in sexual relations for over a year. As the events unfold, it turns out that she has become a victim of a secret military experiment aimed at creating a new humanity resistant to a toxic environment.
+
 ### To Kill the Dragon (2019)
 
-I will not give this film a higher rating out of pity simply because of its "idea." I strongly recommend watching it in its original voiceover with subtitles—just like The Bouquet. In fact, I always recommend watching non-Hollywood films with subs rather than dubbing, unless you speak the language fluently.
+I will not give this film a higher rating out of pity simply because of its "idea". I strongly recommend watching it in its original voiceover with subtitles—just like The Bouquet. In fact, I always recommend watching non-Hollywood films with subs rather than dubbing, unless you speak the language fluently.
 
 <div class="t_center castration cover p_relative atcScreen">
 	<p>The next two films are somewhat "about Venom".</p>
@@ -311,6 +320,8 @@ A schoolgirl…
 
 ...stays home alone when her widowed father goes on a date with his new partner. The girl expects to have a great time but makes a mistake. After a line of cocaine and a joint of weed, someone begins to terrorize her over the phone.
 
+If the protagonist were not so sexualized and the film took itself a bit more seriously – it would have been something like "Reefer Madness" (1936).
+
 ### Dry Blood (2017)
 
 A drug addict retreats into the wilderness in an attempt to break free from his addiction and is left alone with his hallucinations. Apparently, people do not always have the opportunity to seek medical help, and that is a problem.
@@ -393,6 +404,14 @@ Alice has recently divorced and is raising her teenage son, Joe. She works at a 
 This movie reminded me of "Splice", "The Babadook" on a minimal budget, and "Little Shop of Horrors" (1986).
 
 ## Dependency—The Key is Wanting It
+
+At the very beginning of the article, I wrote that I would focus on horror films where the plot revolves around specific (i.e., classifiable) drugs and categorized the works into groups. I made an exception for the subsection that included the film "Toad Road", but if I were to review other works focusing on people's addictions or their inability to cope with their lives, the article would have been much longer and would have included many more works:
+
+- **Alyce** (2011) - about a girl's depression after losing her friend.
+- **Grave** (2016) - about cannibalism addiction as a lens through which the author examines issues of social interaction.
+- **Synchronic** - about time travel through the use of a fictional drug.
+
+And so on.
 
 Talking About Mushrooms some people claim that consuming psychedelic mushrooms led to an expansion of their consciousness. However, this is simply the breakdown of social norms, which turned out to be incompatible with the lifestyle of newly minted drug users. These norms are so deeply ingrained in people's consciousness, and their violation is so strongly condemned, that it may be impossible to break free from them without the help of substances. This explains why psilocybin started being used in psychiatry. Often, drug addicts (and I mean alcoholics as well) develop a "symbiosis", expressed in their shared belief that they are not responsible for their own lives. In such cases, using drugs together almost inevitably leads to someone’s downfall—in nearly 100% of cases.
 

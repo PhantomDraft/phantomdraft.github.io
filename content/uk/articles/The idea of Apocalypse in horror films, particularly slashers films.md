@@ -3,7 +3,7 @@ title: "The Idea of Apocalypse in Horror Films, Particularly Slashers Films"
 description: "Слешер vs. постапокаліпсис"
 # format for string: "xxxx-xx-xx"
 date: 2024-11-11
-lastmod: "2024-12-24"
+lastmod: "2025-01-24"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
@@ -148,9 +148,13 @@ hideFromSitemap: false
 
 До речі, ми щойно пролетіли епоху Золотого віку слешера (1978–1984), яку відкрив *Гелловін* Карпентера.
 
-### BZ
+### BZ та зомбі
 
-Робимо зупинку у 1985 році, коли опублікують книгу <a href="/uk/library/acid-dreams-1985/" target="_blank">Acid Dreams</a>, що розповідає про експеримент над солдатами США та наркотик BZ. Через п’ять років, у 1990 році, вийде фільм <a href="/uk/library/jacobs-ladder-1990/" target="_blank">Jacob's Ladder</a>.
+Ми зупиняємося у 1985 році, коли були опубліковані книги <a href="/uk/library/acid-dreams-1985/" target="_blank">Acid Dreams</a> та *The Serpent and the Rainbow: A Harvard Scientist's Astonishing Journey into the Secret Societies of Haitian Voodoo, Zombis, and Magic*. Acid Dreams детально описувала експерименти, проведені на американських солдатах із використанням препарату BZ, тоді як The Serpent and the Rainbow досліджувала ймовірне використання токсинів у гаїтянських вуду-ритуалах. Лише через три роки вийшла її однойменна екранізація. Ще через п’ять років, у 1990-му, був випущений фільм <a href="/uk/library/jacobs-ladder-1990/" target="_blank">Jacob's Ladder</a>.
+
+<div class="t_center castration cover p_relative atcScreen">
+	<p>Читайте докладніше у статті <a href="/uk/articles/pandoras-toxin/" target="_blank">Яд Пандоры: Первая форма биооружия в хорроре</a></p>
+</div>
 
 Невеликий ривок і… Всі на вихід\! Ми у 2024\.
 
