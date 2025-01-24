@@ -258,6 +258,7 @@ It hits, forgive me, like bohemian youth during the era of galvanization experim
 <p><a href="/library/gothic-1986/" target="_blank">Read More</a></p>
 
 **Bonus Section\!**
+
 Before I wrap up the topic of drugs (for which people can be imprisoned) and move on to substances legally available to all adults (alcohol, nicotine, etc.), here are two micro-selections that I deliberately left out of the previous sections.
 
 ## Alone With Oneself – Three Horror Movies About What Happens When You "Climb Up" or "Climb Down" Incorrectly
