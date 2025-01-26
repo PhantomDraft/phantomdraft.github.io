@@ -44,9 +44,11 @@
             {{ end }}
             {{ range $paginator.Pagers }}
             <li class="page-numbers">
-                <a href="{{ .URL }}" class="page-numbers {{ if eq .PageNumber $paginator.PageNumber }}active{{ end }}">
-                    {{ .PageNumber }}
-                </a>
+                {{ if eq .PageNumber $paginator.PageNumber }}
+                    <span class="page-numbers active">{{ .PageNumber }}</span>
+                {{ else }}
+                    <a href="{{ .URL }}" class="page-numbers">{{ .PageNumber }}</a>
+                {{ end }}
             </li>
             {{ end }}
             {{ if $paginator.HasNext }}
