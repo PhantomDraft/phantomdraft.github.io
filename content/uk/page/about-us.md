@@ -39,7 +39,7 @@ hideFromSitemap: false
 ### Типи опублікованого контенту
 
 - <a href="/uk/posts/" target="_blank"><strong>Notes</strong></a> — пости з життя, оновлення про проєкт.
-- <a href="/uk/articles/" target="_blank"><strong>Articles</strong></a> — мої статті про роботи в жанрі горор, піджанрах кіберпанку, фантастиці та фентезі (зокрема, дарк-фентезі).
+- <a href="/uk/articles/" target="_blank"><strong>Articles</strong></a> — мої статті про роботи в жанрі хорору, піджанрах кіберпанку, фантастиці та фентезі (зокрема, дарк-фентезі), а також описи моїх власних проєктів.
 - <a href="/uk/stories/" target="_blank"><strong>Stories</strong></a> — тут розміщений веб-журнал *Spirits Show*.
 
 #### Spirits Show
@@ -56,7 +56,7 @@ hideFromSitemap: false
 
 - <a href="/uk/categories/my-insights/" target="_blank"><strong>My Insights</strong></a> — матеріали, де я викладаю своє бачення. Як правило, це довгі роздуми з розділу *Articles*.
 - <a href="/uk/categories/my-life/" target="_blank"><strong>My Life</strong></a> — події з мого життя (здебільшого це матеріали з розділу *Notes*).
-- <a href="/uk/categories/my-projects/" target="_blank"><strong>My Projects</strong></a> — мої проєкти, детальний опис ідей, закладених у них (включаючи, наприклад, промпти генерацій), а також заклики до взаємодії з проєктами (наприклад, опитування).
+- <a href="/uk/categories/my-projects/" target="_blank"><strong>My Projects</strong></a> — мої проєкти, представлені в межах розділу Articles: детальний опис ідей, закладених у проєктах (включаючи, наприклад, промпти генерацій), а також заклики до взаємодії з проєктами (наприклад, опитування).
 - <a href="/uk/categories/my-reviews/" target="_blank"><strong>My Reviews</strong></a> — мої рецензії, які публікуються в розділі *Library*, але, можливо, ця категорія буде використовуватися і для іншого контенту.
 
 ### Методи фільтрації контенту
@@ -82,7 +82,7 @@ hideFromSitemap: false
 
 В Instagram не потрапляють чернетки моїх робіт або випадкові AI-генерації — їх можна знайти в однойменному Telegram-каналі.
 
-<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/uk/images/page/about-us/horrorprom.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
+<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h4>Spirits Show</h4>
 		<p>

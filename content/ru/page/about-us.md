@@ -39,7 +39,7 @@ hideFromSitemap: false
 ### Типы публикуемого контента
 
 - <a href="/ru/posts/" target="_blank"><strong>Notes</strong></a> — посты из жизни, уведомления об обновлениях на проекте.
-- <a href="/ru/articles/" target="_blank"><strong>Articles</strong></a> — мои статьи о работах в жанре хоррор, поджанрах киберпанка, фантастике и фэнтези (в частности, дарк-фэнтези).
+- <a href="/ru/articles/" target="_blank"><strong>Articles</strong></a> — мои статьи о работах в жанре хоррор, поджанрах киберпанка, фантастике и фэнтези (в частности, дарк-фэнтези), а также описания моих собственных проектов.
 - <a href="/ru/stories/" target="_blank"><strong>Stories</strong></a> — здесь размещён веб-журнал *Spirits Show*.
 
 #### Spirits Show
@@ -56,7 +56,7 @@ hideFromSitemap: false
 
 - <a href="/ru/categories/my-insights/" target="_blank"><strong>My Insights</strong></a> — материалы, где я излагаю своё видение. Как правило, это длинные размышления из раздела *Articles*.
 - <a href="/ru/categories/my-life/" target="_blank"><strong>My Life</strong></a> — события из моей жизни (в основном это материалы из раздела *Notes*).
-- <a href="/ru" target="_blank"><strong>My Projects</strong></a> — мои проекты, подробное описание идей, заложенных в проектах (включая, например, промпты генераций), а также призывы к взаимодействию с проектами (например, опросы).
+- <a href="/ru/categories/my-projects/" target="_blank"><strong>My Projects</strong></a> — мои проекты, представленные в рамках раздела Articles: подробное описание идей, заложенных в проектах (включая, например, промпты генераций), а также призывы к взаимодействию с проектами (например, опросы).
 - <a href="/ru/categories/my-reviews/" target="_blank"><strong>My Reviews</strong></a> — мои рецензии, которые публикуются в разделе *Library*, но, возможно, эта категория будет использоваться и для других типов контента.
 
 ### Способы фильтрации контента
@@ -82,7 +82,7 @@ hideFromSitemap: false
 
 В Instagram не попадают черновики моих работ или случайные AI-генерации — их можно посмотреть в одноимённом Telegram-канале.
 
-<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/ru/images/page/about-us/horrorprom.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
+<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h4>Spirits Show</h4>
 		<p>

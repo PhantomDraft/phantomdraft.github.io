@@ -39,7 +39,7 @@ hideFromSitemap: false
 ### Types of Published Content
 
 - <a href="/posts/" target="_blank"><strong>Notes</strong></a> — life posts, updates on the project.
-- <a href="/articles/" target="_blank"><strong>Articles</strong></a> — my articles about works in the horror genre, cyberpunk subgenres, science fiction, and fantasy (particularly dark fantasy).
+- <a href="/articles/" target="_blank"><strong>Articles</strong></a> — my articles on works in the horror genre, cyberpunk subgenres, science fiction, and fantasy (particularly dark fantasy), as well as descriptions of my own projects.
 - <a href="/stories/" target="_blank"><strong>Stories</strong></a> — this section features the web magazine *Spirits Show*.
 
 #### Spirits Show
@@ -56,7 +56,7 @@ Categories allow for the content to be grouped thematically:
 
 - <a href="/categories/my-insights/" target="_blank"><strong>My Insights</strong></a> — materials where I present my perspective. Usually, these are extensive thoughts from the *Articles* section.
 - <a href="/categories/my-life/" target="_blank"><strong>My Life</strong></a> — events from my life (mostly content from the *Notes* section).
-- <a href="/categories/my-projects/" target="_blank"><strong>My Projects</strong></a> — my projects, detailed descriptions of the ideas behind them (including, for example, AI generation prompts), as well as project engagement calls (such as polls).
+- <a href="/categories/my-projects/" target="_blank"><strong>My Projects</strong></a> — my projects, presented within the Articles section: a detailed description of the ideas behind the projects (including, for example, generation prompts), as well as calls for interaction with the projects (such as surveys).
 - <a href="/categories/my-reviews/" target="_blank"><strong>My Reviews</strong></a> — my reviews, published in the *Library* section, but this category may also be used for other types of content.
 
 ### Content Filtering Methods
@@ -82,7 +82,7 @@ These projects exist separately from the main site but frequently reference it o
 
 Drafts of my works or random AI-generated content do not appear on Instagram — they can be found in the dedicated Telegram channel.
 
-<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/images/page/about-us/horrorprom.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
+<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h4>Spirits Show</h4>
 		<p>
