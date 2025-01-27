@@ -3,7 +3,7 @@ title: "Privacy Policy for Phantom Draft"
 description: ""
 # format for string: "xxxx-xx-xx"
 date: 2024-01-05
-lastmod: "2024-01-05"
+lastmod: "2025-01-27"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
@@ -59,7 +59,7 @@ This site uses cookies to enhance user experience, such as:
 - Storing tab positions for interface consistency
 - Improving website navigation
 
-I do not use cookies for marketing or tracking purposes directly. However, third-party services like Google Analytics, Google Ads, and Disqus may set cookies.
+I do not use cookies for marketing or tracking purposes directly. However, third-party services like Google Analytics and Disqus may set cookies.
 
 ### 1.4. Embedded Content
 
@@ -69,11 +69,7 @@ Posts on this blog may include embedded content (e.g., YouTube videos, Instagram
 
 From time to time, I use Google Forms to gather feedback from the audience. Data collected through surveys is used internally to improve content and shared only as aggregated, anonymous results.
 
-### 1.6. Google Ads
-
-This site uses Google Ads to display advertisements. Google Ads may collect data to personalize ad experiences. Refer to <a href="https://policies.google.com/technologies/ads" rel="nofollow" target="_blank">Google's Advertising Policy</a> for more details.
-
-### 1.7. Script Control
+### 1.6. Script Control
 
 For users who prefer to limit or block scripts, I recommend using browser extensions like <a href="https://noscript.net/" rel="nofollow" target="_blank">NoScript</a>. This tool allows you to manage which scripts are executed on websites. Please note that disabling certain scripts may affect the functionality of this site.
 
@@ -108,7 +104,6 @@ This site relies on third-party services, which may collect and process data ind
 
 - **Google Analytics**: Traffic analysis
 - **Disqus**: Comment management
-- **Google Ads**: Advertising
 - **Embedded Content**: YouTube, Instagram, TikTok
 
 Each service operates under its own privacy policy, which I recommend you review for further details.
