@@ -19,13 +19,6 @@
 <priority>0.9</priority>
 </url>
 {{- end }}
-{{- with .Site.GetPage "taxonomy" "tags" }}
-<url>
-<loc>{{ .Permalink }}</loc>
-<lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
-<priority>0.6</priority>
-</url>
-{{- end }}
 {{- if .Site.Taxonomies.series }}
 {{- range .Site.Taxonomies.series }}
 <url>
@@ -41,15 +34,6 @@
 <loc>{{ .Page.Permalink }}</loc>
 <lastmod>{{ .Page.Lastmod.Format "2006-01-02" }}</lastmod>
 <priority>0.9</priority>
-</url>
-{{- end }}
-{{- end }}
-{{- if .Site.Taxonomies.tags }}
-{{- range .Site.Taxonomies.tags }}
-<url>
-<loc>{{ .Page.Permalink }}</loc>
-<lastmod>{{ .Page.Lastmod.Format "2006-01-02" }}</lastmod>
-<priority>0.6</priority>
 </url>
 {{- end }}
 {{- end }}

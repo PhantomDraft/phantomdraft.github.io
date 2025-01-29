@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /tags/
+Disallow: /tags/*
+
 Sitemap: https://phantom-draft.com/sitemap.xml
 Sitemap: https://phantom-draft.com/en/sitemap.xml
 Sitemap: https://phantom-draft.com/uk/sitemap.xml
