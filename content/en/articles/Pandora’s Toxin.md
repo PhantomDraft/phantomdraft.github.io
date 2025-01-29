@@ -43,8 +43,7 @@ One of <a rel="nofollow" href="https://en.wikipedia.org/wiki/History_of_biologic
 * <a href="/library/acid-dreams-1985/" target="_blank">Acid Dreams (The Complete Social History of LSD: The CIA, The Sixties, and Beyond)</a> – about BZ, a military-grade combat drug.  
 * **Addiction and Its Human** – a book by Marat Aginyan, offering a modern alternative to historical cases of gnosis stimulation through opium bread or Viking black henbane.
 
-Alcohol and narcotics are an integral part of the cyclical overheating of the global economy.  
-This is why they are deeply embedded in the cultures of many countries. I believe it is not useless to give this originally curiosity-driven selection an anti-drug propaganda context. But more on that—and on alternatives—in the conclusion of this article.
+Alcohol and narcotics are an integral part of the cyclical overheating of the global economy. This is why they are deeply embedded in the cultures of many countries. I believe it is not useless to give this originally curiosity-driven selection an anti-drug propaganda context. But more on that—and on alternatives—in the conclusion of this article.
 
 ### My Sources
 
