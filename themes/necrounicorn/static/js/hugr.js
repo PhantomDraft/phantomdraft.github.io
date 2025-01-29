@@ -147,7 +147,8 @@ $(document).on('click', '.mobile_navigation a, #table_of_contents a', function(e
 menuBtn.click(toggleNav);
 overlay.click(toggleNav);
 
-function toggleNav() {
+function toggleNav(e) {
+    e.preventDefault();
     wrap.toggleClass('navOut');
     overlay.toggleClass('show');
     slidenav.toggleClass('active');

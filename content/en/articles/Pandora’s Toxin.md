@@ -1,9 +1,9 @@
 ---
-title: "Pandora’s Toxin: The First Form of Bioweapon in Horror"
-description: "Horrors About Drugs"
+title: "Pandora’s Toxin: Horrors About Drugs"
+description: "The First Form of Bioweapon in Horror"
 # format for string: "xxxx-xx-xx"
 date: 2025-01-21
-lastmod: "2025-01-24"
+lastmod: "2025-01-29"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
@@ -33,7 +33,7 @@ I became interested in how realistic the behavior of horror characters is when u
 * I do not promote drug use.  
 * I do not believe this genre is capable of positively developing this theme.
 
-### The First Biological Weapon in the World
+### The First Form of Bioweapon in World
 
 Strictly speaking, I consider narcotics the first biological weapon on the planet. And if you think they are harmless or incapable of scaling, like the peyote god-drink used in Native American Church ceremonies to this day—read these books:
 
