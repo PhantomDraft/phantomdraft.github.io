@@ -16,7 +16,9 @@
             {{ end }}
         </a>
 
-        <h3><a href="{{ .RelPermalink }}">{{ $title }}</a></h3>
+        <h2><a href="{{ .RelPermalink }}">
+            {{ $title }}
+        </a></h2>
 
         {{ if or (eq .Type "taxonomy") (eq .Section "categories") (eq .Section "tags") (eq .Section "series") }}
             <ul class="grid_info">

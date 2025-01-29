@@ -1,16 +1,16 @@
-{{ $libraryPages := where .Site.RegularPages "Type" "library" }}
-{{ $langNow := .Lang }}
-{{ $isMultiLingual := and (ne .Site.Language.Weight 1) (and .Site.IsMultiLingual (not .Site.Params.Site.OnlyOneLang)) }}
-{{ $includedIn := "newnewnew" }}
-{{ $currentLangPages := where $libraryPages ".Lang" .Site.Language.Lang }}
-{{ $groups := $currentLangPages.GroupByDate "2006" }}
+{{- $libraryPages := where .Site.RegularPages "Type" "library" -}}
+{{- $langNow := .Lang -}}
+{{- $isMultiLingual := and (ne .Site.Language.Weight 1) (and .Site.IsMultiLingual (not .Site.Params.Site.OnlyOneLang)) -}}
+{{- $includedIn := "newnewnew" -}}
+{{- $currentLangPages := where $libraryPages ".Lang" .Site.Language.Lang -}}
+{{- $groups := $currentLangPages.GroupByDate "2006" -}}
 <!-- Paginator for year groups -->
-{{ $paginator := .Paginate $groups }}
+{{- $paginator := .Paginate $groups -}}
 <!-- Iterate by year on each page -->
 {{ range $paginator.PageGroups }}
     <div class="content-block">
         <div class="content-list-col">
-            <h3>{{ .Key }}</h3>
+            <h2>{{ .Key }}</h2>
             <ul>
             <!-- Display all posts for the selected year -->
             {{ range .Pages }}
