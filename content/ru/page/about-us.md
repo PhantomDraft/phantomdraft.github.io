@@ -3,7 +3,7 @@ title: "Morguenal Projects"
 description: "Biotrash Prodactions"
 # format for string: "xxxx-xx-xx"
 date: 2025-01-22
-lastmod: "2025-01-22"
+lastmod: "2025-01-29"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
@@ -28,10 +28,22 @@ hideFromSitemap: false
 	<div class="t_center castration base_width p_relative">
 		<h2>Phantom Draft</h2>
 		<p>Записи о проектах в жанре хоррора и панк-поджанрах (включая Биопанк, Мифпанк, Дримпанк и другие).</p>
+		<p>Официальные языковые версии проекта:</p>
+		<ul>
+			<li>
+				Русский (Активная)
+			</li>
+			<li><a href="/">
+				English
+			</a></li>
+			<li><a href="/uk/">
+				Український
+			</a></li>
+		</ul>
 		<p>Подпишитесь на обновления:</p>
 		<p>
-			<a rel="nofollow" href="https://www.facebook.com/phantomdrafts/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-			<a rel="nofollow" href="https://t.me/phantomdrafts" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+			<a title="Facebook" rel="nofollow" href="https://www.facebook.com/phantomdrafts/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+			<a title="Telegram" rel="nofollow" href="https://t.me/phantomdrafts" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
 		</p>
 	</div>
 </div>
@@ -74,8 +86,8 @@ hideFromSitemap: false
 	<div class="t_center castration base_width p_relative">
 		<h4>Horror Writing Prompts</h4>
 		<p>
-			<a rel="nofollow" href="https://www.instagram.com/horrorprom" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-			<a rel="nofollow" href="https://t.me/horrorprom" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+			<a title="Instagram" rel="nofollow" href="https://www.instagram.com/horrorprom" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a title="Telegram" rel="nofollow" href="https://t.me/horrorprom" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
 		</p>
 	</div>
 </div>
@@ -86,7 +98,7 @@ hideFromSitemap: false
 	<div class="t_center castration base_width p_relative">
 		<h4>Spirits Show</h4>
 		<p>
-			<a rel="nofollow" href="https://www.youtube.com/@spirits-show" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+			<a title="YouTube" rel="nofollow" href="https://www.youtube.com/@spirits-show" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
 		</p>
 	</div>
 </div>

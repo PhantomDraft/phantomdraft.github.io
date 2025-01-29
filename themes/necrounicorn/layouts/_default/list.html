@@ -16,7 +16,7 @@
             <ul class="t_center not_twitch">
                 {{ if $paginator.HasPrev }}
                 <li class="page-numbers">
-                    <a class="page-numbers prev" href="{{ $paginator.Prev.URL }}">
+                    <a title="{{ i18n \"Page_page\" }} {{ $paginator.Prev.PageNumber }}" class="page-numbers prev" href="{{ $paginator.Prev.URL }}">
                         {{ i18n "pagination_previous" }}
                     </a>
                 </li>
@@ -24,15 +24,15 @@
                 {{ range $paginator.Pagers }}
                 <li class="page-numbers">
                     {{ if eq .PageNumber $paginator.PageNumber }}
-                        <span class="page-numbers active">{{ .PageNumber }}</span>
+                        <span title="{{ i18n \"Page_page\" }} {{ .PageNumber }}" class="page-numbers active">{{ .PageNumber }}</span>
                     {{ else }}
-                        <a href="{{ .URL }}" class="page-numbers">{{ .PageNumber }}</a>
+                        <a title="{{ i18n \"Page_page\" }} {{ .PageNumber }}" href="{{ .URL }}" class="page-numbers">{{ .PageNumber }}</a>
                     {{ end }}
                 </li>
                 {{ end }}
                 {{ if $paginator.HasNext }}
                 <li class="page-numbers">
-                    <a href="{{ $paginator.Next.URL }}" class="page-numbers next">
+                    <a title="{{ i18n \"Page_page\" }} {{ $paginator.Next.PageNumber }}" href="{{ $paginator.Next.URL }}" class="page-numbers next">
                         {{ i18n "pagination_next" }}
                     </a>
                 </li>

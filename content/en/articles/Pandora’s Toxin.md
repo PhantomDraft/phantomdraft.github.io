@@ -35,7 +35,7 @@ I became interested in how realistic the behavior of horror characters is when u
 
 ### The First Form of Bioweapon in World
 
-Strictly speaking, I consider narcotics the first biological weapon on the planet. And if you think they are harmless or incapable of scaling, like the peyote god-drink used in Native American Church ceremonies to this day—read these books:
+One of <a rel="nofollow" href="https://en.wikipedia.org/wiki/History_of_biological_warfare" target="_blank">the earliest recorded cases of biological warfare</a> is the 1346 siege of Caffa, where Mongol forces catapulted the bodies of their soldiers infected with the plague over the city walls, attempting to spread the disease among the defenders. However, the use of biological weapons began long before that: as early as antiquity, poisons and toxic substances were employed to harm enemies on a chemical level. Viruses, like poisons, are a natural part of the world, and their use in warfare is merely a continuation of the ancient tradition of utilizing natural mechanisms to eliminate adversaries. In this context, narcotics can be considered the oldest biological weapon in history, affecting consciousness and causing destruction within societies. And if you think they are harmless or incapable of scaling, like the peyote god-drink used in Native American Church ceremonies to this day—read these books:
 
 * **The Opium War: Drugs, Dreams, and the Making of Modern China** – a book included in the Oxford Library.  
 * **Confessions of an English Opium Eater (1821)** – a firsthand account of the Opium Wars. De Quincey continues his thoughts in Levana and Our Ladies of Sorrow.  
