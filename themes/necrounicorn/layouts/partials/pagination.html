@@ -14,7 +14,7 @@
     <!-- First page. -->
     {{- if ne $paginator.PageNumber 1 -}}
     <li class="page-numbers pagination__item--first">
-      <a title="{{ i18n \"Page_page\" }} 1" class="page-numbers pagination__link--first" href="{{ $paginator.First.URL }}">
+      <a title='{{ i18n "Page_page" }} 1' class="page-numbers pagination__link--first" href="{{ $paginator.First.URL }}">
         ««
       </a>
     </li>
@@ -22,7 +22,7 @@
     <!-- Previous page. -->
     {{- if $paginator.HasPrev -}}
     <li class="page-numbers pagination__item--previous">
-      <a title="{{ i18n \"Page_page\" }} {{ $paginator.Prev.PageNumber }}" href="{{ $paginator.Prev.URL }}" class="page-numbers pagination__link--previous">
+      <a title='{{ i18n "Page_page" }} {{ $paginator.Prev.PageNumber }}' href="{{ $paginator.Prev.URL }}" class="page-numbers pagination__link--previous">
         «
       </a>
     </li>
@@ -60,9 +60,9 @@
       {{- if eq ($.Scratch.Get "page_number_flag") true -}}
         <li class="page-numbers">
           {{- if eq . $paginator -}}
-            <span title="{{ i18n \"Page_page\" }} {{ .PageNumber }}" class="page-numbers">
+            <span title='{{ i18n "Page_page" }} {{ .PageNumber }}' class="page-numbers">
           {{- else -}}
-            <a title="{{ i18n \"Page_page\" }} {{ .PageNumber }}" href="{{ .URL }}" class="page-numbers">
+            <a title='{{ i18n "Page_page" }} {{ .PageNumber }}' href="{{ .URL }}" class="page-numbers">
           {{- end -}}
             {{ .PageNumber }}
           </a>
@@ -72,7 +72,7 @@
     <!-- Next page. -->
     {{- if $paginator.HasNext -}}
     <li class="page-numbers pagination__item--next">
-      <a title="{{ i18n \"Page_page\" }} {{ $paginator.Next.PageNumber }}" href="{{ $paginator.Next.URL }}" class="page-numbers pagination__link--next">
+      <a title='{{ i18n "Page_page" }} {{ $paginator.Next.PageNumber }}' href="{{ $paginator.Next.URL }}" class="page-numbers pagination__link--next">
         »
       </a>
     </li>
@@ -80,7 +80,7 @@
     <!-- Last page. -->
     {{- if ne $paginator.PageNumber $paginator.TotalPages -}}
     <li class="page-numbers pagination__item--last">
-      <a title="{{ i18n \"Page_page\" }} {{ $paginator.TotalPages }}" class="page-numbers pagination__link--last" href="{{ $paginator.Last.URL }}">
+      <a title='{{ i18n "Page_page" }} {{ $paginator.TotalPages }}' class="page-numbers pagination__link--last" href="{{ $paginator.Last.URL }}">
         »»
       </a>
     </li>
