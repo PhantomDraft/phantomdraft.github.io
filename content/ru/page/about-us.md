@@ -36,9 +36,6 @@ hideFromSitemap: false
 			<li><a href="/">
 				English
 			</a></li>
-			<li><a href="/uk/">
-				Український
-			</a></li>
 		</ul>
 		<p>Подпишитесь на обновления:</p>
 		<p>
