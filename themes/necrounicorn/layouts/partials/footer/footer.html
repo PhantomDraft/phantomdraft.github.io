@@ -17,7 +17,7 @@
                             {{ index .Site.Author.name (.Site.Language.Lang | default "en") }}
                         </a>
                     {{ else }}
-                        Theme created by {{ index .Site.Author.name (.Site.Language.Lang | default "en") }}
+                        Theme created by <strong>{{ index .Site.Author.name (.Site.Language.Lang | default "en") }}</strong>
                     {{ end }} | 
                 {{ end }}
                 {{ if .Site.Params.footer.about_us }}

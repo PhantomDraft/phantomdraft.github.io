@@ -14,6 +14,8 @@
 			{{ index .Site.Author.name (.Site.Language.Lang | default "en") }}
 		</a>
 	{{ else }}
-		{{ index .Site.Author.name (.Site.Language.Lang | default "en") }}
+		<strong>
+			{{ index .Site.Author.name (.Site.Language.Lang | default "en") }}
+		</strong>
 	{{ end }}
 </p>
