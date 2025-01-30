@@ -1,9 +1,13 @@
+{{ $currentLang := .Language.Lang }}
 {{ $nowIsDefaultLang := eq .Site.Language.Weight 1 }}
+
 <h3 class="t_center">Select: {{ .Language.LanguageName }}</h3>
 <ul class="lang-up">
     {{ range $.Site.Home.AllTranslations }}
-        <li class="lang"><a href="{{ .Permalink }}">
-            {{ .Language.LanguageName }}
-        </a></li>
+        {{ if or (and (eq $currentLang "ru") (ne .Language.Lang "uk")) (and (eq $currentLang "uk") (ne .Language.Lang "ru")) (and (ne $currentLang "ru") (ne $currentLang "uk")) }}
+            <li class="lang"><a href="{{ .Permalink }}">
+                {{ .Language.LanguageName }}
+            </a></li>
+        {{ end }}
     {{ end }}
 </ul>
