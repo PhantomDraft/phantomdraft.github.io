@@ -9,7 +9,11 @@
 </div>
 
 <p>
-	<a href='{{ index .Site.Author.link (.Site.Language.Lang | default "en") }}' rel='nofollow' target='_blank'>
+	{{ if index .Site.Author.link (.Site.Language.Lang | default "en") }}
+		<a href='{{ index .Site.Author.link (.Site.Language.Lang | default "en") }}' rel='nofollow' target='_blank'>
+			{{ index .Site.Author.name (.Site.Language.Lang | default "en") }}
+		</a>
+	{{ else }}
 		{{ index .Site.Author.name (.Site.Language.Lang | default "en") }}
-	</a>
+	{{ end }}
 </p>
