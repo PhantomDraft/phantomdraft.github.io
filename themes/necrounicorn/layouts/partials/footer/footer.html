@@ -12,9 +12,13 @@
             <p>
                 {{ if .Site.Params.footer.copyRight }}
                     {{ .Site.Title }} © {{ .Site.Params.footer.from }} <br> 
-                    Theme created by <a href='{{ index .Site.Author.link (.Site.Language.Lang | default "en") }}' rel='nofollow' target='_blank'>
-                        {{ index .Site.Author.name (.Site.Language.Lang | default "en") }}
-                    </a> | 
+                    {{ if index .Site.Author.link (.Site.Language.Lang | default "en") }}
+                        Theme created by <a href='{{ index .Site.Author.link (.Site.Language.Lang | default "en") }}' rel='nofollow' target='_blank'>
+                            {{ index .Site.Author.name (.Site.Language.Lang | default "en") }}
+                        </a>
+                    {{ else }}
+                        Theme created by {{ index .Site.Author.name (.Site.Language.Lang | default "en") }}
+                    {{ end }} | 
                 {{ end }}
                 {{ if .Site.Params.footer.about_us }}
                     <a href='{{ i18n "about_us.uri" }}'>
