@@ -2,8 +2,8 @@
 title: "Subscribe"
 description: "Biotrash Prodactions"
 # format for string: "xxxx-xx-xx"
-date: 2025-02-01
-lastmod: "2025-02-01"
+date: 2025-01-22
+lastmod: "2025-01-29"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
