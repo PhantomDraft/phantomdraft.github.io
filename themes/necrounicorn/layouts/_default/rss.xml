@@ -6,28 +6,20 @@
     <description>{{ .Site.Params.description | plainify }}</description>
     <language>{{ .Site.Language.Lang }}</language>
 
-    {{ $allItems := slice }}
+    {{ $articles := where .RegularPages "Section" "!=" "library" }} <!-- Обычные статьи -->
+    {{ $library := where .RegularPages "Section" "library" }} <!-- Библиотека -->
+    {{ $filteredLibrary := where $library ".Lastmod" "gt" (now.AddDate 0 -1 0) }} <!-- Только обновления -->
 
-    <!-- Обычные статьи (не библиотека) -->
-    {{ range where .RegularPages "Section" "!=" "library" }}
-      {{ $allItems = $allItems | append (dict "title" .Title "link" .Permalink "description" (.Summary | plainify) "pubDate" .Date "guid" .Permalink) }}
-    {{ end }}
+    {{ $allItems := union $articles $filteredLibrary }} <!-- Объединяем статьи и библиотеку -->
+    {{ $sortedItems := sort $allItems "Date" "desc" }} <!-- Сортируем по дате -->
 
-    <!-- Материалы из библиотеки (только обновлённые за последний месяц) -->
-    {{ range where .RegularPages "Section" "library" }}
-      {{ if gt .Lastmod (now.AddDate 0 -1 0) }}
-        {{ $allItems = $allItems | append (dict "title" .Title "link" .Permalink "description" (.Summary | plainify) "pubDate" .Lastmod "guid" .Permalink) }}
-      {{ end }}
-    {{ end }}
-
-    <!-- Если есть материалы, выводим их -->
-    {{ range sort $allItems "pubDate" "desc" }}
+    {{ range $sortedItems }}
     <item>
-      <title>{{ .title }}</title>
-      <link>{{ .link }}</link>
-      <description>{{ .description }}</description>
-      <pubDate>{{ .pubDate.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
-      <guid isPermaLink="true">{{ .guid }}</guid>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <description>{{ .Summary | plainify }}</description>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
+      <guid isPermaLink="true">{{ .Permalink }}</guid>
     </item>
     {{ end }}
 
