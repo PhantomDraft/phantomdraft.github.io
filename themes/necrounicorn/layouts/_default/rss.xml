@@ -6,12 +6,12 @@
     <description>{{ .Site.Params.description | plainify }}</description>
     <language>{{ .Site.Language.Lang }}</language>
 
-    {{ $articles := where .RegularPages "Section" "!=" "library" }} <!-- Обычные статьи -->
-    {{ $library := where .RegularPages "Section" "library" }} <!-- Библиотека -->
-    {{ $filteredLibrary := where $library ".Lastmod" "gt" (now.AddDate 0 -1 0) }} <!-- Только обновления -->
+    {{ $articles := where .Site.RegularPages "Section" "!=" "library" }} <!-- Все посты кроме библиотеки -->
+    {{ $library := where .Site.RegularPages "Section" "library" }} <!-- Все записи библиотеки -->
+    {{ $filteredLibrary := where $library ".Lastmod" "gt" (now.AddDate 0 -1 0) }} <!-- Только обновления библиотеки -->
 
     {{ $allItems := union $articles $filteredLibrary }} <!-- Объединяем статьи и библиотеку -->
-    {{ $sortedItems := sort $allItems "Date" "desc" }} <!-- Сортируем по дате -->
+    {{ $sortedItems := sort $allItems ".Date" "desc" }} <!-- Сортируем по дате публикации/обновления -->
 
     {{ range $sortedItems }}
     <item>
