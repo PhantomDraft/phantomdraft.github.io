@@ -6,26 +6,29 @@
     <description>{{ .Site.Params.description | plainify }}</description>
     <language>{{ .Site.Language.Lang }}</language>
 
-    {{ range where .Pages "Section" "!=" "library" }} <!-- Обычные посты -->
-    <item>
-      <title>{{ .Title }}</title>
-      <link>{{ .Permalink }}</link>
-      <description>{{ .Summary | plainify }}</description>
-      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
-      <guid isPermaLink="true">{{ .Permalink }}</guid>
-    </item>
+    {{ $allItems := slice }} <!-- Создаём пустой массив для всех записей -->
+
+    <!-- Обычные статьи (не библиотека) -->
+    {{ range where .RegularPages "Section" "!=" "library" }}
+      {{ $allItems = $allItems | append (dict "title" .Title "link" .Permalink "description" (.Summary | plainify) "pubDate" .Date "guid" .Permalink) }}
     {{ end }}
 
-    {{ range where .Pages "Section" "library" }} <!-- Фильтр для Библиотеки -->
-      {{ if gt .Lastmod (now.AddDate 0 -1 0) }} <!-- Только обновления за месяц -->
-      <item>
-        <title>{{ .Title }}</title>
-        <link>{{ .Permalink }}</link>
-        <description>{{ .Summary | plainify }}</description>
-        <pubDate>{{ .Lastmod.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
-        <guid isPermaLink="true">{{ .Permalink }}</guid>
-      </item>
+    <!-- Материалы из библиотеки (только обновлённые за последний месяц) -->
+    {{ range where .RegularPages "Section" "library" }}
+      {{ if gt .Lastmod (now.AddDate 0 -1 0) }}
+        {{ $allItems = $allItems | append (dict "title" .Title "link" .Permalink "description" (.Summary | plainify) "pubDate" .Lastmod "guid" .Permalink) }}
       {{ end }}
+    {{ end }}
+
+    <!-- Сортируем все элементы по дате (новые вверху) -->
+    {{ range sort $allItems "pubDate" "desc" }}
+    <item>
+      <title>{{ .title }}</title>
+      <link>{{ .link }}</link>
+      <description>{{ .description }}</description>
+      <pubDate>{{ .pubDate.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
+      <guid isPermaLink="true">{{ .guid }}</guid>
+    </item>
     {{ end }}
 
   </channel>
