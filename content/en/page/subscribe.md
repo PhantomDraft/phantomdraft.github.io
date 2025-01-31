@@ -24,4 +24,4 @@ hideFromSection: false
 # Hide from everything but the Sitemap
 hideFromSitemap: false
 ---
-text
+<a href="#" class="sp_notify_prompt">Включить уведомления</a>
