@@ -24,4 +24,6 @@ hideFromSection: false
 # Hide from everything but the Sitemap
 hideFromSitemap: false
 ---
-test
+<!-- BEGIN: Benchmark Email Signup Form Code -->
+<script type="text/javascript" id="lbscript1764842" src="https://lb.benchmarkemail.com//code/lbformnew.js?mFcQnoBFKMQgc2%252BfKvs%252BcMxpSu0%252BSv5KFUCgJ7%252BHUw1b7ySm5Tc90g%253D%253D"></script><noscript>Please enable JavaScript <br /><div align="center" style="padding-top:5px;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;"><a href="https://www.benchmarkemail.com/email-marketing?utm_source=usersignupforms&utm_medium=customers&utm_campaign=usersignupforms" target="_new" style="text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;">Email Marketing </a> by Benchmark</div></noscript>
+<!-- END: Benchmark Email Signup Form Code -->
