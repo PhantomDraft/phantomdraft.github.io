@@ -29,6 +29,6 @@ hideFromSitemap: false
 <!-- BEGIN: Benchmark Email Signup Form Code -->
 <script type="text/javascript" id="lbscript1764846" src="https://lb.benchmarkemail.com//code/lbformnew.js?mFcQnoBFKMQgc2%252BfKvs%252BcBcwvUXpuXVDFUCgJ7%252BHUw16pEP3L%252FZhNQ%253D%253D"></script>
 <noscript>
-	<p>Пожалуйста, включите JavaScript <br /> Email Marketing </a> by Benchmark</p>
+	<p>Пожалуйста, включите JavaScript <br /> Email Marketing by Benchmark</p>
 </noscript>
 <!-- END: Benchmark Email Signup Form Code -->
