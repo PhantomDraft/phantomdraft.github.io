@@ -37,28 +37,6 @@ $(function() {
         }
     });
 
-
-    let currentURL = window.location.href;
-
-    if (currentURL.includes("/ru/")) {
-        localStorage.setItem("siteLang", "ru");
-    } else if (currentURL.includes("/uk/")) {
-        localStorage.setItem("siteLang", "uk");
-    } else {
-        localStorage.setItem("siteLang", "en");
-    }
-
-    if (!currentURL.includes("/ru/") && !currentURL.includes("/uk/")) {
-        let savedLang = localStorage.getItem("siteLang");
-
-        if (savedLang === "ru") {
-            $("a[href='https://phantom-draft.com/uk/']").closest("li").hide();
-        } else if (savedLang === "uk") {
-            $("a[href='https://phantom-draft.com/ru/']").closest("li").hide();
-        }
-    }
-
-
     const notification = document.getElementById("privacy-notification");
     const acceptButton = document.getElementById("accept-privacy");
     const isAccepted = localStorage.getItem("privacyAccepted");
@@ -179,6 +157,32 @@ function toggleNav(e) {
 $('#table_of_contents_button').click(function() {
     $('#table_of_contents').toggle();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Определяем текущий URL
+    const currentURL = window.location.href;
+    
+    // Проверяем, на какой версии сайта находится пользователь и записываем в localStorage
+    if (currentURL.includes("/ru/")) {
+        localStorage.setItem("siteLang", "ru");
+    } else if (currentURL.includes("/uk/")) {
+        localStorage.setItem("siteLang", "uk");
+    } else {
+        localStorage.setItem("siteLang", "en"); // Если пользователь на английской версии
+    }
+
+    // Проверяем, если мы на английской версии, то скрываем ненужный язык
+    if (!currentURL.includes("/ru/") && !currentURL.includes("/uk/")) {
+        const savedLang = localStorage.getItem("siteLang");
+
+        if (savedLang === "ru") {
+            document.querySelector("a[href='https://phantom-draft.com/uk/']").closest("li").style.display = "none";
+        } else if (savedLang === "uk") {
+            document.querySelector("a[href='https://phantom-draft.com/ru/']").closest("li").style.display = "none";
+        }
+    }
+});
+
 
 function DblHelix(n, rx, ry, rz) {
     let a = Math.PI / n, p = [], z = rz * 2 / n;
