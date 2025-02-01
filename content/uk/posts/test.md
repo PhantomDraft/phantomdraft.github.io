@@ -2,8 +2,8 @@
 title: "test"
 description: "test"
 # format for string: "xxxx-xx-xx"
-date: 2025-02-02T02:15:00+01:00
-lastmod: "2025-02-02T02:15:00+01:00"
+date: 2025-02-02
+lastmod: "2025-02-02"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
