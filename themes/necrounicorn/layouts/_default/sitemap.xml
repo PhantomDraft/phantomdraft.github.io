@@ -1,15 +1,13 @@
 {{- printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" | safeHTML -}}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<!-- Главная страница -->
+<!-- main page -->
 <url>
 <loc>{{ .Site.BaseURL }}</loc>
 <lastmod>{{ now.Format "2006-01-02" }}</lastmod>
 <priority>1.0</priority>
 </url>
-
-<!-- Корневые разделы (Notes, Articles, Stories, Library, Series, Categories) -->
-{{- range (slice "notes" "articles" "stories" "library" "series" "categories") }}
+<!-- root sections (Notes, Articles, Stories, Library, Series, Categories) -->
+{{- range (slice "posts" "articles" "stories" "library" "series" "categories") }}
   {{- with $.Site.GetPage "section" . }}
   <url>
   <loc>{{ .Permalink }}</loc>
@@ -18,8 +16,7 @@
   </url>
   {{- end }}
 {{- end }}
-
-<!-- Таксономии (Series, Categories) -->
+<!-- taxonomies (Series, Categories) -->
 {{- if .Site.Taxonomies.series }}
   {{- range .Site.Taxonomies.series }}
   <url>
@@ -29,7 +26,6 @@
   </url>
   {{- end }}
 {{- end }}
-
 {{- if .Site.Taxonomies.categories }}
   {{- range .Site.Taxonomies.categories }}
   <url>
@@ -39,8 +35,7 @@
   </url>
   {{- end }}
 {{- end }}
-
-<!-- Обычные страницы (Regular Pages), отсортированные по последней модификации -->
+<!-- posts (Regular Pages), отсортированные по последней модификации -->
 {{- range sort .Site.RegularPages ".Lastmod" "desc" }}
   {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSitemap)) }}
   <url>
@@ -50,5 +45,4 @@
   </url>
   {{- end }}
 {{- end }}
-
 </urlset>
