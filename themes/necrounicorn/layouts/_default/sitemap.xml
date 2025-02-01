@@ -80,7 +80,7 @@
 {{- end }}
 
 <!-- Обычные страницы (Regular Pages) -->
-{{- range .Site.RegularPages }}
+{{- range sort .Site.RegularPages ".Lastmod" "desc" }}
   {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSitemap)) }}
   <url>
   <loc>{{ .Permalink }}</loc>
