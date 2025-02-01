@@ -15,6 +15,8 @@ tags: []
 series: []
 # Top image for the post /local/images/test/cover.jpg
 image: ""
+# Comments
+disqus: false
 # Hide from home and other main page
 hideFromCenter: true
 # Hide from archive page
