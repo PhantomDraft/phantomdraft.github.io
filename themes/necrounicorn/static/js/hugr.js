@@ -158,42 +158,6 @@ $('#table_of_contents_button').click(function() {
     $('#table_of_contents').toggle();
 });
 
-$(document).ready(function() {
-    let currentURL = window.location.href;
-    let savedLang = localStorage.getItem("siteLang");
-
-    console.log("Текущий URL:", currentURL);
-    console.log("Сохранённый язык перед установкой:", savedLang);
-
-    // Запоминаем язык, если находимся на RU или UK версии
-    if (currentURL.includes("/ru/")) {
-        localStorage.setItem("siteLang", "ru");
-        console.log("Язык установлен: ru");
-    } else if (currentURL.includes("/uk/")) {
-        localStorage.setItem("siteLang", "uk");
-        console.log("Язык установлен: uk");
-    } else if (!savedLang) {
-        localStorage.setItem("siteLang", "en"); // По умолчанию английский
-        console.log("Язык установлен: en");
-    }
-
-    // Получаем записанный язык
-    savedLang = localStorage.getItem("siteLang");
-    console.log("Сохранённый язык после установки:", savedLang);
-
-    // Если на английской версии, скрываем противоположный язык
-    if (!currentURL.includes("/ru/") && !currentURL.includes("/uk/")) {
-        if (savedLang === "ru") {
-            $("a[href$='/uk/']").closest("li").hide();
-            console.log("Скрываем украинский язык");
-        } else if (savedLang === "uk") {
-            $("a[href$='/ru/']").closest("li").hide();
-            console.log("Скрываем русский язык");
-        }
-    }
-});
-
-
 function DblHelix(n, rx, ry, rz) {
     let a = Math.PI / n, p = [], z = rz * 2 / n;
     for (let i = 0; i < n; ++i) {
