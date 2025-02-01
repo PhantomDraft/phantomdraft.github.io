@@ -81,7 +81,9 @@
                 </p>
             </div>
         </footer>
-        {{ if not .Params.disqus }}
+        {{ if not (isset .Params "disqus") }}
+            {{ template "_internal/disqus.html" . }}
+        {{ else if .Params.disqus }}
             {{ template "_internal/disqus.html" . }}
         {{ end }}
     {{ end }}
