@@ -109,36 +109,27 @@ $(function() {
         notification.classList.add("hide");
     });
 
-    var currentURL = window.location.href;
-    var storedLang = localStorage.getItem("siteLang");
+    let currentURL = window.location.href;
+    let storedLang = localStorage.getItem("siteLang");
 
-    console.log("Текущий URL:", currentURL);
-    console.log("Сохранённый язык перед установкой:", storedLang);
-
-    // 1️⃣ Если в localStorage нет языка, записываем текущий язык
     if (!storedLang) {
         if (currentURL.includes("/ru/")) {
             localStorage.setItem("siteLang", "ru");
         } else if (currentURL.includes("/uk/")) {
             localStorage.setItem("siteLang", "uk");
         } else {
-            localStorage.setItem("siteLang", "en"); // Первый заход с EN
+            localStorage.setItem("siteLang", "en"); // en start
         }
-        storedLang = localStorage.getItem("siteLang"); // Обновляем значение
+        storedLang = localStorage.getItem("siteLang");
     }
-
-    console.log("Сохранённый язык после установки:", storedLang);
-
-    // 2️⃣ Если мы зашли на англ версию (и это не первый заход)
+    // en not first
     if (!currentURL.includes("/ru/") && !currentURL.includes("/uk/")) {
-        var savedLang = localStorage.getItem("siteLang");
+        let savedLang = localStorage.getItem("siteLang");
 
         if (savedLang === "ru") {
             $(".lang-up a[href$='/uk/']").closest("li").hide();
-            console.log("Скрываем украинский язык");
         } else if (savedLang === "uk") {
             $(".lang-up a[href$='/ru/']").closest("li").hide();
-            console.log("Скрываем русский язык");
         }
     }
 
