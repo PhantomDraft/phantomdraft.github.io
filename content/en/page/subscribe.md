@@ -2,8 +2,8 @@
 title: "Subscribe"
 description: "Subscribe"
 # format for string: "xxxx-xx-xx"
-date: 2025-01-22
-lastmod: "2025-01-29"
+date: 2025-02-01
+lastmod: "2025-02-01"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
@@ -25,5 +25,7 @@ hideFromSection: false
 hideFromSitemap: false
 ---
 <!-- BEGIN: Benchmark Email Signup Form Code -->
-<script type="text/javascript" id="lbscript1764844" src="https://lb.benchmarkemail.com//code/lbformnew.js?mFcQnoBFKMQgc2%252BfKvs%252BcKjgVtVj7bhtFUCgJ7%252BHUw29NusDfMaqwA%253D%253D"></script><noscript>Please enable JavaScript <br /><div align="center" style="padding-top:5px;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;"><a href="https://www.benchmarkemail.com/email-marketing?utm_source=usersignupforms&utm_medium=customers&utm_campaign=usersignupforms" target="_new" style="text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;">Email Marketing </a> by Benchmark</div></noscript>
+<script type="text/javascript" id="lbscript1764844" src="https://lb.benchmarkemail.com//code/lbformnew.js?mFcQnoBFKMQgc2%252BfKvs%252BcKjgVtVj7bhtFUCgJ7%252BHUw29NusDfMaqwA%253D%253D"></script>
+<noscript>Please enable JavaScript <br /><div align="center" style="padding-top:5px;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;"><a href="https://www.benchmarkemail.com/email-marketing?utm_source=usersignupforms&utm_medium=customers&utm_campaign=usersignupforms" target="_new" style="text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;">Email Marketing </a> by Benchmark</div>
+</noscript>
 <!-- END: Benchmark Email Signup Form Code -->

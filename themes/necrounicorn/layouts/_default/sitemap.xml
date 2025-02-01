@@ -5,14 +5,28 @@
 <lastmod>{{ now.Format "2006-01-02" }}</lastmod>
 <priority>1.0</priority>
 </url>
-{{- with .Site.GetPage "taxonomy" "series" }}
+{{- with .Site.GetPage "section" "notes" }}
 <url>
 <loc>{{ .Permalink }}</loc>
 <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
 <priority>0.9</priority>
 </url>
 {{- end }}
-{{- with .Site.GetPage "section" "categories" }}
+{{- with .Site.GetPage "section" "articles" }}
+<url>
+<loc>{{ .Permalink }}</loc>
+<lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
+<priority>0.9</priority>
+</url>
+{{- end }}
+{{- with .Site.GetPage "section" "stories" }}
+<url>
+<loc>{{ .Permalink }}</loc>
+<lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
+<priority>0.9</priority>
+</url>
+{{- end }}
+{{- with .Site.GetPage "section" "library" }}
 <url>
 <loc>{{ .Permalink }}</loc>
 <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
