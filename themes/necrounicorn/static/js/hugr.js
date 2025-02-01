@@ -109,6 +109,38 @@ $(function() {
         notification.classList.add("hide");
     });
 
+
+    var currentURL = window.location.href;
+    var storedLang = localStorage.getItem("siteLang");
+
+    // 1️⃣ Запоминаем язык при первом заходе
+    if (!storedLang) {
+        if (currentURL.includes("/ru/")) {
+            localStorage.setItem("siteLang", "ru");
+        } else if (currentURL.includes("/uk/")) {
+            localStorage.setItem("siteLang", "uk");
+        } else {
+            localStorage.setItem("siteLang", "en"); // Первый заход с EN
+        }
+    }
+
+    // 2️⃣ Если EN – ничего не скрываем
+    if (localStorage.getItem("siteLang") === "en") {
+        return;
+    }
+
+    // 3️⃣ Если пользователь вернулся на англ версию, скрываем противоположный язык
+    if (!currentURL.includes("/ru/") && !currentURL.includes("/uk/")) {
+        var savedLang = localStorage.getItem("siteLang");
+
+        if (savedLang === "ru") {
+            $("a[href$='/uk/']").closest("li").hide();
+        } else if (savedLang === "uk") {
+            $("a[href$='/ru/']").closest("li").hide();
+        }
+    }
+
+
     $('.update').tabs();
     $('.slider').glide({
         autoplay: 11000
