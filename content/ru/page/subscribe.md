@@ -27,5 +27,8 @@ hideFromSection: false
 hideFromSitemap: false
 ---
 <!-- BEGIN: Benchmark Email Signup Form Code -->
-<script type="text/javascript" id="lbscript1764843" src="https://lb.benchmarkemail.com//code/lbformnew.js?mFcQnoBFKMQgc2%252BfKvs%252BcMVHaffN5KY0FUCgJ7%252BHUw1b7ySm5Tc90g%253D%253D"></script><noscript>Please enable JavaScript <br /><div align="center" style="padding-top:5px;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;"><a href="https://www.benchmarkemail.com/email-marketing?utm_source=usersignupforms&utm_medium=customers&utm_campaign=usersignupforms" target="_new" style="text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;">Email Marketing </a> by Benchmark</div></noscript>
+<script type="text/javascript" id="lbscript1764846" src="https://lb.benchmarkemail.com//code/lbformnew.js?mFcQnoBFKMQgc2%252BfKvs%252BcBcwvUXpuXVDFUCgJ7%252BHUw16pEP3L%252FZhNQ%253D%253D"></script>
+<noscript>
+	<p>Пожалуйста, включите JavaScript <br /> Email Marketing </a> by Benchmark</p>
+</noscript>
 <!-- END: Benchmark Email Signup Form Code -->
