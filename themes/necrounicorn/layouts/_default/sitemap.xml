@@ -1,17 +1,22 @@
 {{- printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" | safeHTML -}}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<!-- Главная страница -->
 <url>
 <loc>{{ .Site.BaseURL }}</loc>
 <lastmod>{{ now.Format "2006-01-02" }}</lastmod>
 <priority>1.0</priority>
 </url>
-{{- with .Site.GetPage "section" "posts" }}
+
+<!-- Корневые разделы (Notes, Articles, Stories, Library) -->
+{{- with .Site.GetPage "section" "notes" }}
 <url>
 <loc>{{ .Permalink }}</loc>
 <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
 <priority>0.9</priority>
 </url>
 {{- end }}
+
 {{- with .Site.GetPage "section" "articles" }}
 <url>
 <loc>{{ .Permalink }}</loc>
@@ -19,6 +24,7 @@
 <priority>0.9</priority>
 </url>
 {{- end }}
+
 {{- with .Site.GetPage "section" "stories" }}
 <url>
 <loc>{{ .Permalink }}</loc>
@@ -26,6 +32,7 @@
 <priority>0.9</priority>
 </url>
 {{- end }}
+
 {{- with .Site.GetPage "section" "library" }}
 <url>
 <loc>{{ .Permalink }}</loc>
@@ -33,31 +40,54 @@
 <priority>0.9</priority>
 </url>
 {{- end }}
-{{- if .Site.Taxonomies.series }}
-{{- range .Site.Taxonomies.series }}
-<url>
-<loc>{{ .Page.Permalink }}</loc>
-<lastmod>{{ .Page.Lastmod.Format "2006-01-02" }}</lastmod>
-<priority>0.9</priority>
-</url>
-{{- end }}
-{{- end }}
-{{- if .Site.Taxonomies.categories }}
-{{- range .Site.Taxonomies.categories }}
-<url>
-<loc>{{ .Page.Permalink }}</loc>
-<lastmod>{{ .Page.Lastmod.Format "2006-01-02" }}</lastmod>
-<priority>0.9</priority>
-</url>
-{{- end }}
-{{- end }}
-{{- range .Site.RegularPages }}
-{{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSitemap)) }}
+
+<!-- Таксономии (Series, Categories) -->
+{{- with .Site.GetPage "taxonomy" "series" }}
 <url>
 <loc>{{ .Permalink }}</loc>
 <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
-<priority>0.8</priority>
+<priority>0.9</priority>
 </url>
 {{- end }}
+
+{{- with .Site.GetPage "section" "categories" }}
+<url>
+<loc>{{ .Permalink }}</loc>
+<lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
+<priority>0.9</priority>
+</url>
 {{- end }}
+
+<!-- Если есть таксономии, выводим их -->
+{{- if .Site.Taxonomies.series }}
+  {{- range .Site.Taxonomies.series }}
+  <url>
+  <loc>{{ .Page.Permalink }}</loc>
+  <lastmod>{{ .Page.Lastmod.Format "2006-01-02" }}</lastmod>
+  <priority>0.9</priority>
+  </url>
+  {{- end }}
+{{- end }}
+
+{{- if .Site.Taxonomies.categories }}
+  {{- range .Site.Taxonomies.categories }}
+  <url>
+  <loc>{{ .Page.Permalink }}</loc>
+  <lastmod>{{ .Page.Lastmod.Format "2006-01-02" }}</lastmod>
+  <priority>0.9</priority>
+  </url>
+  {{- end }}
+{{- end }}
+
+<!-- Обычные страницы (Regular Pages) -->
+{{- range .Site.RegularPages }}
+  {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSitemap)) }}
+  <url>
+  <loc>{{ .Permalink }}</loc>
+  <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
+  <priority>0.8</priority>
+  </url>
+  {{- end }}
+{{- end }}
+
 </urlset>
