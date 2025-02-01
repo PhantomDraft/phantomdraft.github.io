@@ -160,24 +160,35 @@ $('#table_of_contents_button').click(function() {
 
 $(document).ready(function() {
     let currentURL = window.location.href;
+    let savedLang = localStorage.getItem("siteLang");
 
-    // Запоминаем язык при посещении русской или украинской версии
+    console.log("Текущий URL:", currentURL);
+    console.log("Сохранённый язык перед установкой:", savedLang);
+
+    // Запоминаем язык, если находимся на RU или UK версии
     if (currentURL.includes("/ru/")) {
         localStorage.setItem("siteLang", "ru");
+        console.log("Язык установлен: ru");
     } else if (currentURL.includes("/uk/")) {
         localStorage.setItem("siteLang", "uk");
-    } else {
-        localStorage.setItem("siteLang", "en"); // Если зашли на англ версию
+        console.log("Язык установлен: uk");
+    } else if (!savedLang) {
+        localStorage.setItem("siteLang", "en"); // По умолчанию английский
+        console.log("Язык установлен: en");
     }
 
-    // Если сейчас на английской версии, скрываем ненужный язык
-    if (!currentURL.includes("/ru/") && !currentURL.includes("/uk/")) {
-        let savedLang = localStorage.getItem("siteLang");
+    // Получаем записанный язык
+    savedLang = localStorage.getItem("siteLang");
+    console.log("Сохранённый язык после установки:", savedLang);
 
+    // Если на английской версии, скрываем противоположный язык
+    if (!currentURL.includes("/ru/") && !currentURL.includes("/uk/")) {
         if (savedLang === "ru") {
-            $("a[href$='/uk/']").closest("li").hide(); // Скрываем украинский
+            $("a[href$='/uk/']").closest("li").hide();
+            console.log("Скрываем украинский язык");
         } else if (savedLang === "uk") {
-            $("a[href$='/ru/']").closest("li").hide(); // Скрываем русский
+            $("a[href$='/ru/']").closest("li").hide();
+            console.log("Скрываем русский язык");
         }
     }
 });
