@@ -110,11 +110,6 @@ paginate = 9
         url = "https://www.tiktok.com/@doomform"
         pre = ""
         weight = 3
-    [[menus.social]]
-        name = "Phantom Draft on Facebook"
-        url = "https://www.facebook.com/phantomdrafts/"
-        pre = ""
-        weight = 4
 
 [languages]
     [languages.en]
@@ -177,16 +172,6 @@ paginate = 9
                 url = "https://www.tiktok.com/@doomform"
                 pre = ""
                 weight = 3
-            [[languages.uk.menus.social]]
-                name = "Phantom Draft у Facebook"
-                url = "https://www.facebook.com/phantomdrafts/"
-                pre = ""
-                weight = 4
-            [[languages.uk.menus.social]]
-                name = "Phantom Draft у Telegram"
-                url = "https://t.me/phantomdrafts"
-                pre = ""
-                weight = 5
 
         [languages.ru.menus]
             # navigation
@@ -232,16 +217,6 @@ paginate = 9
                 url = "https://www.tiktok.com/@doomform"
                 pre = ""
                 weight = 3
-            [[languages.ru.menus.social]]
-                name = "Phantom Draft в Facebook"
-                url = "https://www.facebook.com/phantomdrafts/"
-                pre = ""
-                weight = 4
-            [[languages.ru.menus.social]]
-                name = "Phantom Draft в Telegram"
-                url = "https://t.me/phantomdrafts"
-                pre = ""
-                weight = 5
 
 [author]
     # profile photo

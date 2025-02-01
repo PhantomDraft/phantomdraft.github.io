@@ -5,7 +5,7 @@
 <lastmod>{{ now.Format "2006-01-02" }}</lastmod>
 <priority>1.0</priority>
 </url>
-{{- with .Site.GetPage "section" "notes" }}
+{{- with .Site.GetPage "section" "posts" }}
 <url>
 <loc>{{ .Permalink }}</loc>
 <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
