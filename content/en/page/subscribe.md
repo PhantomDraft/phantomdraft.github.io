@@ -1,6 +1,6 @@
 ---
-title: "Subscribe"
-description: "Subscribe"
+title: "Newsletter"
+description: "Subscription to Phantom Draft notifications"
 # format for string: "xxxx-xx-xx"
 date: 2025-02-01
 lastmod: "2025-02-01"

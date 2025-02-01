@@ -1,6 +1,6 @@
 ---
-title: "Розсилка"
-description: "Підписка на сповіщення про фантомні проекти"
+title: "Рассылка"
+description: "Подписка на уведомления Phantom Draft"
 # format for string: "xxxx-xx-xx"
 date: 2025-02-01
 lastmod: "2025-02-01"

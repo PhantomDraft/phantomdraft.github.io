@@ -93,6 +93,11 @@ paginate = 9
         url = "/library/"
         weight = 5
         pre = ""
+    [[menus.main]]
+        name = "Newsletter"
+        url = "/page/subscribe/"
+        weight = 6
+        pre = ""
 
     # social, maxum 6
     [[menus.social]]
@@ -155,6 +160,11 @@ paginate = 9
                 url = "/uk/library/"
                 weight = 5
                 pre = ""
+            [[languages.uk.menus.main]]
+                name = "Розсилка"
+                url = "/uk/page/subscribe/"
+                weight = 6
+                pre = ""
 
             # social
             [[languages.uk.menus.social]]
@@ -199,6 +209,11 @@ paginate = 9
                 name = "Библиотека"
                 url = "/ru/library/"
                 weight = 5
+                pre = ""
+            [[languages.ru.menus.main]]
+                name = "Рассылка"
+                url = "/ru/page/subscribe/"
+                weight = 6
                 pre = ""
 
             # social
