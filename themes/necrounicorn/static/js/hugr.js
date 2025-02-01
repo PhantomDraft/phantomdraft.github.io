@@ -37,6 +37,28 @@ $(function() {
         }
     });
 
+
+    let currentURL = window.location.href;
+
+    if (currentURL.includes("/ru/")) {
+        localStorage.setItem("siteLang", "ru");
+    } else if (currentURL.includes("/uk/")) {
+        localStorage.setItem("siteLang", "uk");
+    } else {
+        localStorage.setItem("siteLang", "en");
+    }
+
+    if (!currentURL.includes("/ru/") && !currentURL.includes("/uk/")) {
+        let savedLang = localStorage.getItem("siteLang");
+
+        if (savedLang === "ru") {
+            $("a[href='https://phantom-draft.com/uk/']").closest("li").hide();
+        } else if (savedLang === "uk") {
+            $("a[href='https://phantom-draft.com/ru/']").closest("li").hide();
+        }
+    }
+
+
     const notification = document.getElementById("privacy-notification");
     const acceptButton = document.getElementById("accept-privacy");
     const isAccepted = localStorage.getItem("privacyAccepted");
