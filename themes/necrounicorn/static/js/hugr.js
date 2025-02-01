@@ -109,9 +109,8 @@ $(function() {
         notification.classList.add("hide");
     });
 
-
-    var currentURL = window.location.href;
-    var storedLang = localStorage.getItem("siteLang");
+    let currentURL = window.location.href;
+    let storedLang = localStorage.getItem("siteLang");
 
     // 1️⃣ Запоминаем язык при первом заходе
     if (!storedLang) {
@@ -129,17 +128,16 @@ $(function() {
         return;
     }
 
-    // 3️⃣ Если пользователь вернулся на англ версию, скрываем противоположный язык
+    // 3️⃣ Если пользователь вернулся на англ версию, скрываем противоположный язык (только внутри .lang-up)
     if (!currentURL.includes("/ru/") && !currentURL.includes("/uk/")) {
         var savedLang = localStorage.getItem("siteLang");
 
         if (savedLang === "ru") {
-            $("a[href$='/uk/']").closest("li").hide();
+            $(".lang-up a[href$='/uk/']").closest("li").hide();
         } else if (savedLang === "uk") {
-            $("a[href$='/ru/']").closest("li").hide();
+            $(".lang-up a[href$='/ru/']").closest("li").hide();
         }
     }
-
 
     $('.update').tabs();
     $('.slider').glide({
