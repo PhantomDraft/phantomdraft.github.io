@@ -5,30 +5,30 @@
     <link>{{ .Site.BaseURL }}</link>
     <description>{{ .Site.Params.description | plainify }}</description>
     <language>{{ .Site.Language.Lang }}</language>
-
-    {{ $articles := where .Site.RegularPages "Section" "not in" (slice "library" "page") }}
- <!-- Все посты кроме библиотеки и страниц -->
-    {{ $library := where .Site.RegularPages "Section" "library" }} <!-- Все записи библиотеки -->
-    {{ $filteredLibrary := where $library ".Lastmod" "gt" (now.AddDate 0 -1 0) }} <!-- Только обновления библиотеки -->
-
-    {{ $allItems := union $articles $filteredLibrary }} <!-- Объединяем статьи и библиотеку -->
-    {{ $sortedItems := sort $allItems ".Date" "desc" }} <!-- Сортируем по дате публикации/обновления -->
-
-    {{ range $sortedItems }}
+    <!-- Все посты кроме библиотеки и страниц -->
+    {{- $articles := where .Site.RegularPages "Section" "not in" (slice "library" "page") -}}
+    <!-- Все записи библиотеки -->
+    {{- $library := where .Site.RegularPages "Section" "library" -}}
+    <!-- Только обновления библиотеки -->
+    {{- $filteredLibrary := where $library ".Lastmod" "gt" (now.AddDate 0 -1 0) -}}
+    <!-- Объединяем статьи и библиотеку -->
+    {{- $allItems := union $articles $filteredLibrary -}}
+    <!-- Сортируем по дате публикации/обновления -->
+    {{- $sortedItems := sort $allItems ".Date" "desc" -}}
+    {{- range $sortedItems -}}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
       <description>
-        {{ if .Params.description }}
+        {{- if .Params.description -}}
           {{ .Params.description | plainify }}
-        {{ else }}
+        {{- else -}}
           {{ .Summary | plainify }}
-        {{ end }}
+        {{- end -}}
       </description>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
       <guid isPermaLink="true">{{ .Permalink }}</guid>
     </item>
-    {{ end }}
-
+    {{- end -}}
   </channel>
 </rss>

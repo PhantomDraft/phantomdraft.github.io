@@ -8,41 +8,41 @@
 </url>
 <!-- root sections (Notes, Articles, Stories, Library, Series, Categories) -->
 {{- range (slice "posts" "articles" "stories" "library" "series" "categories") }}
-  {{- with $.Site.GetPage "section" . }}
-  <url>
-  <loc>{{ .Permalink }}</loc>
-  <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
-  <priority>0.9</priority>
-  </url>
-  {{- end }}
+	{{- with $.Site.GetPage "section" . }}
+	<url>
+		<loc>{{ .Permalink }}</loc>
+		<lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
+		<priority>0.9</priority>
+	</url>
+	{{- end }}
 {{- end }}
 <!-- taxonomies (Series, Categories) -->
 {{- if .Site.Taxonomies.series }}
-  {{- range .Site.Taxonomies.series }}
-  <url>
-  <loc>{{ .Page.Permalink }}</loc>
-  <lastmod>{{ .Page.Lastmod.Format "2006-01-02" }}</lastmod>
-  <priority>0.9</priority>
-  </url>
-  {{- end }}
+{{- range .Site.Taxonomies.series }}
+	<url>
+		<loc>{{ .Page.Permalink }}</loc>
+		<lastmod>{{ .Page.Lastmod.Format "2006-01-02" }}</lastmod>
+		<priority>0.9</priority>
+	</url>
+	{{- end }}
 {{- end }}
 {{- if .Site.Taxonomies.categories }}
-  {{- range .Site.Taxonomies.categories }}
-  <url>
-  <loc>{{ .Page.Permalink }}</loc>
-  <lastmod>{{ .Page.Lastmod.Format "2006-01-02" }}</lastmod>
-  <priority>0.9</priority>
-  </url>
-  {{- end }}
+	{{- range .Site.Taxonomies.categories }}
+	<url>
+		<loc>{{ .Page.Permalink }}</loc>
+		<lastmod>{{ .Page.Lastmod.Format "2006-01-02" }}</lastmod>
+		<priority>0.9</priority>
+	</url>
+	{{- end }}
 {{- end }}
-<!-- posts (Regular Pages), отсортированные по последней модификации -->
+<!-- posts (Regular Pages), sort - lastmod -->
 {{- range sort .Site.RegularPages ".Lastmod" "desc" }}
-  {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSitemap)) }}
-  <url>
-  <loc>{{ .Permalink }}</loc>
-  <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
-  <priority>0.8</priority>
-  </url>
-  {{- end }}
+	{{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromSitemap)) }}
+	<url>
+		<loc>{{ .Permalink }}</loc>
+		<lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
+		<priority>0.8</priority>
+	</url>
+	{{- end }}
 {{- end }}
 </urlset>
