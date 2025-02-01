@@ -34,7 +34,7 @@ hideFromSitemap: false
 				English (active)
 			</li>
 			<li><a href="/uk/">
-				Український
+				Українська
 			</a></li>
 			<li><a href="/ru/">
 				Русский

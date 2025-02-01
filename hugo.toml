@@ -124,7 +124,7 @@ paginate = 9
         weight = 1
     [languages.uk]
         languageCode = 'uk'
-        languageName = 'Український'
+        languageName = 'Українська'
         contentDir = 'content/uk'
         weight = 2
     [languages.ru]
