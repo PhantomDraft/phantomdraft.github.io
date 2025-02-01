@@ -10,7 +10,7 @@
 
 <!-- Корневые разделы (Notes, Articles, Stories, Library, Series, Categories) -->
 {{- range (slice "notes" "articles" "stories" "library" "series" "categories") }}
-  {{- with .Site.GetPage "section" . }}
+  {{- with $.Site.GetPage "section" . }}
   <url>
   <loc>{{ .Permalink }}</loc>
   <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
