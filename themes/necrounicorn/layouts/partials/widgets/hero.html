@@ -14,9 +14,8 @@
     {{ else if eq .Section "page" }}
         {{ $hero_title = i18n "Page_page" }}
         {{ $hero_des = .Site.Params.page.pageDes }}
-    {{ else if eq .Section "about" }}
-        {{ $hero_title = i18n "About_about" }}
-        {{ $hero_des = .Site.Params.page.aboutDes }}
+    {{ else if eq .Section "404" }}
+        {{ $hero_title = "404" }}
     {{ else if eq .Section "articles" }}
         {{ $hero_title = i18n "Articles_articles" }}
     {{ end }}
