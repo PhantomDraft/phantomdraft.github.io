@@ -59,45 +59,41 @@ $(function() {
         mobile_navigation.css('opacity', opacity);
     }
 
-headers.each(function() {
-    let tag = $(this).prop('tagName').toLowerCase();
-    let text = $(this).text().trim();
-    let id = $(this).attr('id'); // Используем существующий id
+    headers.each(function() {
+        let tag = $(this).prop('tagName').toLowerCase();
+        let text = $(this).text().trim();
+        let id = $(this).attr('id'); // Используем существующий id
 
-    if (!id) return; // Пропускаем заголовки без id
+        if (!id) return; // Пропускаем заголовки без id
 
-    let level = parseInt(tag.replace('h', ''), 10);
-    let listItem = $('<li>').append(
-        $('<a>').attr('href', `#${id}`).text(text)
-    );
+        let level = parseInt(tag.replace('h', ''), 10);
+        let listItem = $('<li>').append(
+            $('<a>').attr('href', `#${id}`).text(text)
+        );
 
-    if (level === 2) {
-        // Если это новый h2, сбрасываем стек и начинаем новый раздел
-        $table_of_list.append(listItem);
-        levels = [{ level: 2, list: listItem }];
-    } else {
-        // Удаляем все уровни, которые выше или равны текущему
-        while (levels.length > 0 && levels[levels.length - 1].level >= level) {
-            levels.pop();
-        }
-
-        // Добавляем новый заголовок в правильный родительский уровень
-        if (levels.length > 0) {
-            let parentLevel = levels[levels.length - 1];
-            let subList = parentLevel.list.children('ul');
-
-            if (subList.length === 0) {
-                subList = $('<ul>');
-                parentLevel.list.append(subList);
+        if (level === 2) {
+            $table_of_list.append(listItem);
+            levels = [{ level: 2, list: listItem }];
+        } else {
+            while (levels.length > 0 && levels[levels.length - 1].level >= level) {
+                levels.pop();
             }
 
-            subList.append(listItem);
-        }
+            if (levels.length > 0) {
+                let parentLevel = levels[levels.length - 1];
+                let subList = parentLevel.list.children('ul');
 
-        // Добавляем текущий уровень в стек
-        levels.push({ level: level, list: listItem });
-    }
-});
+                if (subList.length === 0) {
+                    subList = $('<ul>');
+                    parentLevel.list.append(subList);
+                }
+
+                subList.append(listItem);
+            }
+
+            levels.push({ level: level, list: listItem });
+        }
+    });
 
     if (isAccepted) {
         notification.classList.add("hide");
