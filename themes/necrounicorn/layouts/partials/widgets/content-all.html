@@ -54,7 +54,7 @@
                         <i class="fa fa-envelope" title="{{ i18n "postInfo_subscription" }}"></i>
                     </span>
                     &nbsp;
-                    <a rel="nofollow" href="{{ print $.Site.BaseURL $.Site.Language.Lang "/page/subscribe/" }}" target="_blank">
+                    <a rel="nofollow" href="{{ if eq $.Site.Language.Lang "en" }}/page/subscribe/{{ else }}{{ print $.Site.BaseURL $.Site.Language.Lang "/page/subscribe/" }}{{ end }}" target="_blank">
                         {{ i18n "postInfo_subscription" }}
                     </a>
                 </p>
