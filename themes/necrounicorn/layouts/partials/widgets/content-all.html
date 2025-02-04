@@ -51,18 +51,12 @@
             <div class="fl">
                 <p>
                     <span>
-                        {{ i18n "postInfo_subscription" }}:
+                        <i class="fa fa-envelope" title="{{ i18n "postInfo_subscription" }}"></i>
                     </span>
                     &nbsp;
-                    <a title="Facebook" rel="nofollow" href="https://www.facebook.com/phantomdrafts/" target="_blank">
-                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <a rel="nofollow" href="{{ print $.Site.BaseURL $.Site.Language.Lang "/page/subscribe/" }}" target="_blank">
+                        {{ i18n "postInfo_subscription" }}
                     </a>
-                {{ if or (eq $.Site.Language.Lang "uk") (eq $.Site.Language.Lang "ru") }}
-                    &nbsp;
-                    <a title="Telegram" rel="nofollow" href="https://t.me/phantomdrafts" target="_blank">
-                        <i class="fa fa-telegram" aria-hidden="true"></i>
-                    </a>
-                {{ end }}
                 </p>
             </div>
             <div class="fr">
