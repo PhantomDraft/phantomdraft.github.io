@@ -3,11 +3,17 @@
         {{ if .IsHome }}
             <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
                 <div class="fl p_relative">
-                    <a title="Instagram" rel="nofollow" href="https://www.instagram.com/horrorprom" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a title="YouTube" rel="nofollow" href="https://www.youtube.com/@spirits-show" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a title="Instagram" rel="nofollow" href="https://www.instagram.com/horrorprom" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a title="YouTube" rel="nofollow" href="https://www.youtube.com/@spirits-show" target="_blank">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
                 </div>
                 <div class="fr p_relative">
-                    <a title="Discord" rel="nofollow" href="https://discord.com/users/morguenal" target="_blank"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
+                    <a title="Discord" rel="nofollow" href="https://discord.com/users/morguenal" target="_blank">
+                        <i class="fa fa-gamepad" aria-hidden="true"></i>
+                    </a>
                 </div>
                 <div class="t_center castration base_width p_relative">
                     <p>{{ i18n "soc_block_title" }}</p>
@@ -21,11 +27,11 @@
                 {{/* Получаем все страницы, не скрытые для центра */}}
                 {{ $allPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
 
-                {{/* Создаём срез словарей с распарсенной датой и uid */}}
+                {{/* Преобразуем каждую страницу в словарь с распарсенной датой и uid (используем .RelPermalink) */}}
                 {{ $allPagesParsed := slice }}
                 {{ range $allPages }}
                     {{ $parsed := time .Params.lastmod }}
-                    {{ $allPagesParsed = $allPagesParsed | append (dict "page" . "lastmod" $parsed "uid" .File.UniqueID) }}
+                    {{ $allPagesParsed = $allPagesParsed | append (dict "page" . "lastmod" $parsed "uid" .RelPermalink) }}
                 {{ end }}
                 {{ $sortedPagesParsed := sort $allPagesParsed "lastmod" "desc" }}
 
@@ -33,7 +39,7 @@
                 {{ $articlesParsed := slice }}
                 {{ range (where $allPages "Section" "articles") }}
                     {{ $parsed := time .Params.lastmod }}
-                    {{ $articlesParsed = $articlesParsed | append (dict "page" . "lastmod" $parsed "uid" .File.UniqueID) }}
+                    {{ $articlesParsed = $articlesParsed | append (dict "page" . "lastmod" $parsed "uid" .RelPermalink) }}
                 {{ end }}
                 {{ $sortedArticlesParsed := sort $articlesParsed "lastmod" "desc" }}
                 {{ $forcedArticlesParsed := first 3 $sortedArticlesParsed }}
@@ -42,7 +48,7 @@
                 {{ $libraryParsed := slice }}
                 {{ range (where $allPages "Section" "library") }}
                     {{ $parsed := time .Params.lastmod }}
-                    {{ $libraryParsed = $libraryParsed | append (dict "page" . "lastmod" $parsed "uid" .File.UniqueID) }}
+                    {{ $libraryParsed = $libraryParsed | append (dict "page" . "lastmod" $parsed "uid" .RelPermalink) }}
                 {{ end }}
                 {{ $sortedLibraryParsed := sort $libraryParsed "lastmod" "desc" }}
                 {{ $forcedLibraryParsed := first 3 $sortedLibraryParsed }}
@@ -55,7 +61,7 @@
                 {{ range $forcedParsed }}
                     {{ $forcedIDs = $forcedIDs | append (index . "uid") }}
                 {{ end }}
-                {{/* Собираем uid материалов из раздела "Библиотека" для обёртки */}}
+                {{/* Собираем uid материалов из раздела "Библиотека" для дополнительной обёртки */}}
                 {{ $forcedLibraryIDs := slice }}
                 {{ range $forcedLibraryParsed }}
                     {{ $forcedLibraryIDs = $forcedLibraryIDs | append (index . "uid") }}
@@ -69,7 +75,7 @@
                     {{ end }}
                 {{ end }}
 
-                {{/* Объединяем принудительно выбранные и оставшиеся материалы */}}
+                {{/* Объединяем принудительные и оставшиеся материалы */}}
                 {{ $combinedParsed := append $forcedParsed $remainingParsed }}
 
                 {{/* Преобразуем срез словарей обратно в срез страниц */}}
@@ -81,7 +87,7 @@
                 {{ $paginator := .Paginate $combinedPages .Site.Params.page.maxHomePostCount }}
 
                 {{ range $paginator.Pages }}
-                    {{ if and (eq .Section "library") (in $forcedLibraryIDs .File.UniqueID) }}
+                    {{ if and (eq .Section "library") (in $forcedLibraryIDs .RelPermalink) }}
                         <div class="library-wrapper">
                             {{ partial "widgets/post-card.html" . }}
                         </div>
@@ -91,12 +97,12 @@
                 {{ end }}
 
             {{ else }}
-                {{/* Для остальных страниц стандартная сортировка с распарсенной датой */}}
+                {{/* Для остальных страниц используем стандартную сортировку с распарсенной датой */}}
                 {{ $filteredPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
                 {{ $allPagesParsed := slice }}
                 {{ range $filteredPages }}
                     {{ $parsed := time .Params.lastmod }}
-                    {{ $allPagesParsed = $allPagesParsed | append (dict "page" . "lastmod" $parsed "uid" .File.UniqueID) }}
+                    {{ $allPagesParsed = $allPagesParsed | append (dict "page" . "lastmod" $parsed "uid" .RelPermalink) }}
                 {{ end }}
                 {{ $sortedPagesParsed := sort $allPagesParsed "lastmod" "desc" }}
                 {{ $sortedPages := slice }}
