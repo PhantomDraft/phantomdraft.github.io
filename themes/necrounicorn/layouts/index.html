@@ -21,54 +21,63 @@
         {{ end }}
 
         <ul id="content">
-            {{ $articles := first 3 (where .Site.RegularPages "Section" "eq" "articles") }}
-            {{ $library := first 3 (where .Site.RegularPages "Section" "eq" "library") }}
-            {{ $remainingPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
-            {{ $remainingPages := where $remainingPages "Section" "not in" (slice "articles" "library") }}
-            {{ $sortedPages := sort $remainingPages "Lastmod" "desc" }}
-            {{ $paginator := .Paginate $sortedPages .Site.Params.page.maxHomePostCount }}
+            {{/* Если главная и это первая страница пагинации – применяем принудительный порядок */}}
+            {{ if and .IsHome (eq .Paginator.PageNumber 1) }}
+                {{/* Получаем отфильтрованные материалы */}}
+                {{ $allPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
+                {{ $sortedPages := sort $allPages "Lastmod" "desc" }}
 
-            {{ range $articles }}
-                {{ partial "widgets/post-card.html" . }}
-            {{ end }}
+                {{/* Извлекаем 3 последних материала из раздела "Статьи" */}}
+                {{ $forcedArticles := first 3 (where $allPages "Section" "articles" | sort "Lastmod" "desc") }}
+                {{/* Извлекаем 3 последних материала из раздела "Библиотека" */}}
+                {{ $forcedLibrary := first 3 (where $allPages "Section" "library" | sort "Lastmod" "desc") }}
+                {{ $forced := append $forcedArticles $forcedLibrary }}
 
-            <div class="library-section">
-                {{ range $library }}
+                {{/* Собираем идентификаторы принудительно выбранных материалов */}}
+                {{ $forcedIDs := slice }}
+                {{ range $forced }}
+                    {{ $forcedIDs = $forcedIDs | append .UniqueID }}
+                {{ end }}
+                {{/* Отдельно сохраняем ID материалов из "Библиотеки" для обёртки */}}
+                {{ $forcedLibraryIDs := slice }}
+                {{ range $forcedLibrary }}
+                    {{ $forcedLibraryIDs = $forcedLibraryIDs | append .UniqueID }}
+                {{ end }}
+
+                {{/* Остальные материалы – исключая принудительно выбранные */}}
+                {{ $remaining := slice }}
+                {{ range $sortedPages }}
+                    {{ if not (in $forcedIDs .UniqueID) }}
+                        {{ $remaining = $remaining | append . }}
+                    {{ end }}
+                {{ end }}
+
+                {{/* Собираем итоговый список: сначала принудительные, затем остальные */}}
+                {{ $combined := append $forced $remaining }}
+                {{ $paginator := .Paginate $combined .Site.Params.page.maxHomePostCount }}
+
+                {{ range $paginator.Pages }}
+                    {{ if and (eq .Section "library") (in $forcedLibraryIDs .UniqueID) }}
+                        <div class="library-wrapper">
+                            {{ partial "widgets/post-card.html" . }}
+                        </div>
+                    {{ else }}
+                        {{ partial "widgets/post-card.html" . }}
+                    {{ end }}
+                {{ end }}
+
+            {{ else }}
+                {{/* Для всех остальных страниц – стандартная сортировка */}}
+                {{ $filteredPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
+                {{ $sortedPages := sort $filteredPages "Lastmod" "desc" }}
+                {{ $paginator := .Paginate $sortedPages .Site.Params.page.maxHomePostCount }}
+
+                {{ range $paginator.Pages }}
                     {{ partial "widgets/post-card.html" . }}
                 {{ end }}
-            </div>
-
-            {{ range $paginator.Pages }}
-                {{ partial "widgets/post-card.html" . }}
             {{ end }}
         </ul>
 
-        <ul class="t_center not_twitch">
-            {{ if $paginator.HasPrev }}
-            <li class="page-numbers">
-                <a title='{{ i18n "Page_page" }} {{ $paginator.Prev.PageNumber }}' class="page-numbers prev" href="{{ $paginator.Prev.URL }}">
-                    {{ i18n "pagination_previous" }}
-                </a>
-            </li>
-            {{ end }}
-            {{ range $paginator.Pagers }}
-            <li class="page-numbers">
-                {{ if eq .PageNumber $paginator.PageNumber }}
-                    <span title='{{ i18n "Page_page" }} {{ .PageNumber }}' class="page-numbers active">{{ .PageNumber }}</span>
-                {{ else }}
-                    <a title='{{ i18n "Page_page" }} {{ .PageNumber }}' href="{{ .URL }}" class="page-numbers">{{ .PageNumber }}</a>
-                {{ end }}
-            </li>
-            {{ end }}
-            {{ if $paginator.HasNext }}
-            <li class="page-numbers">
-                <a title='{{ i18n "Page_page" }} {{ $paginator.Next.PageNumber }}' href="{{ $paginator.Next.URL }}" class="page-numbers next">
-                    {{ i18n "pagination_next" }}
-                </a>
-            </li>
-            {{ end }}
-        </ul>
+        {{ partial "widgets/aside.html" . }}
     </section>
-
-    {{ partial "widgets/aside.html" . }}
 {{ end }}
