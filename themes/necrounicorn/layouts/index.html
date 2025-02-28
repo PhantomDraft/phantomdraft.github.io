@@ -10,50 +10,76 @@
                     <a title="Discord" rel="nofollow" href="https://discord.com/users/morguenal" target="_blank"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
                 </div>
                 <div class="t_center castration base_width p_relative">
-                    <p>
-                        {{ i18n "soc_block_title" }}
-                    </p>
-                    <p>
-                        {{ i18n "soc_block_desc" | safeHTML }}
-                    </p>
+                    <p>{{ i18n "soc_block_title" }}</p>
+                    <p>{{ i18n "soc_block_desc" | safeHTML }}</p>
                 </div>
             </div>
         {{ end }}
 
         <ul id="content">
             {{ if and .IsHome (eq .Paginator.PageNumber 1) }}
-                {{/* Получаем все материалы, не скрытые для центра */}}
+                {{/* Получаем все страницы, не скрытые для центра */}}
                 {{ $allPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
-                {{/* Сортировка по .Params.lastmod, который имеет формат "YYYY-MM-DD" */}}
-                {{ $sortedPages := sort $allPages "Params.lastmod" "desc" }}
-                {{/* Принудительно выбираем 3 последних материала из раздела "Статьи" */}}
-                {{ $forcedArticles := first 3 (where $allPages "Section" "articles" | sort "Params.lastmod" "desc") }}
-                {{/* Принудительно выбираем 3 последних материала из раздела "Библиотека" */}}
-                {{ $forcedLibrary := first 3 (where $allPages "Section" "library" | sort "Params.lastmod" "desc") }}
-                {{ $forced := append $forcedArticles $forcedLibrary }}
 
-                {{/* Собираем ID принудительно выбранных материалов */}}
+                {{/* Формируем срез словарей с распарсенной датой из Params.lastmod */}}
+                {{ $allPagesParsed := slice }}
+                {{ range $allPages }}
+                    {{ $parsed := time .Params.lastmod }}
+                    {{ $allPagesParsed = $allPagesParsed | append (dict "page" . "lastmod" $parsed) }}
+                {{ end }}
+                {{ $sortedPagesParsed := sort $allPagesParsed "lastmod" "desc" }}
+
+                {{/* Извлекаем 3 последних материала из раздела "Статьи" */}}
+                {{ $articlesParsed := slice }}
+                {{ range (where $allPages "Section" "articles") }}
+                    {{ $parsed := time .Params.lastmod }}
+                    {{ $articlesParsed = $articlesParsed | append (dict "page" . "lastmod" $parsed) }}
+                {{ end }}
+                {{ $sortedArticlesParsed := sort $articlesParsed "lastmod" "desc" }}
+                {{ $forcedArticlesParsed := first 3 $sortedArticlesParsed }}
+
+                {{/* Извлекаем 3 последних материала из раздела "Библиотека" */}}
+                {{ $libraryParsed := slice }}
+                {{ range (where $allPages "Section" "library") }}
+                    {{ $parsed := time .Params.lastmod }}
+                    {{ $libraryParsed = $libraryParsed | append (dict "page" . "lastmod" $parsed) }}
+                {{ end }}
+                {{ $sortedLibraryParsed := sort $libraryParsed "lastmod" "desc" }}
+                {{ $forcedLibraryParsed := first 3 $sortedLibraryParsed }}
+
+                {{/* Объединяем принудительно выбранные материалы */}}
+                {{ $forcedParsed := append $forcedArticlesParsed $forcedLibraryParsed }}
+
+                {{/* Собираем уникальные идентификаторы принудительно выбранных страниц */}}
                 {{ $forcedIDs := slice }}
-                {{ range $forced }}
-                    {{ $forcedIDs = $forcedIDs | append .UniqueID }}
-                {{ end }}
-                {{/* Сохраняем ID материалов из "Библиотека" для дополнительной обёртки */}}
-                {{ $forcedLibraryIDs := slice }}
-                {{ range $forcedLibrary }}
-                    {{ $forcedLibraryIDs = $forcedLibraryIDs | append .UniqueID }}
+                {{ range $forcedParsed }}
+                    {{ $forcedIDs = $forcedIDs | append .page.UniqueID }}
                 {{ end }}
 
-                {{/* Остальные материалы, исключая принудительно выбранные */}}
-                {{ $remaining := slice }}
-                {{ range $sortedPages }}
-                    {{ if not (in $forcedIDs .UniqueID) }}
-                        {{ $remaining = $remaining | append . }}
+                {{/* Формируем срез оставшихся страниц */}}
+                {{ $remainingParsed := slice }}
+                {{ range $sortedPagesParsed }}
+                    {{ if not (in $forcedIDs .page.UniqueID) }}
+                        {{ $remainingParsed = $remainingParsed | append . }}
                     {{ end }}
                 {{ end }}
 
-                {{/* Объединяем принудительно выбранные и оставшиеся материалы */}}
-                {{ $combined := append $forced $remaining }}
-                {{ $paginator := .Paginate $combined .Site.Params.page.maxHomePostCount }}
+                {{/* Объединяем принудительные и оставшиеся материалы */}}
+                {{ $combinedParsed := append $forcedParsed $remainingParsed }}
+
+                {{/* Преобразуем срез словарей обратно в срез страниц */}}
+                {{ $combinedPages := slice }}
+                {{ range $combinedParsed }}
+                    {{ $combinedPages = $combinedPages | append .page }}
+                {{ end }}
+
+                {{/* Собираем идентификаторы принудительных страниц из раздела "Библиотека" для дополнительной обёртки */}}
+                {{ $forcedLibraryIDs := slice }}
+                {{ range $forcedLibraryParsed }}
+                    {{ $forcedLibraryIDs = $forcedLibraryIDs | append .page.UniqueID }}
+                {{ end }}
+
+                {{ $paginator := .Paginate $combinedPages .Site.Params.page.maxHomePostCount }}
 
                 {{ range $paginator.Pages }}
                     {{ if and (eq .Section "library") (in $forcedLibraryIDs .UniqueID) }}
@@ -66,11 +92,19 @@
                 {{ end }}
 
             {{ else }}
-                {{/* Для остальных страниц стандартная сортировка */}}
+                {{/* Для остальных страниц стандартная сортировка с распарсенной датой */}}
                 {{ $filteredPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
-                {{ $sortedPages := sort $filteredPages "Params.lastmod" "desc" }}
+                {{ $allPagesParsed := slice }}
+                {{ range $filteredPages }}
+                    {{ $parsed := time .Params.lastmod }}
+                    {{ $allPagesParsed = $allPagesParsed | append (dict "page" . "lastmod" $parsed) }}
+                {{ end }}
+                {{ $sortedPagesParsed := sort $allPagesParsed "lastmod" "desc" }}
+                {{ $sortedPages := slice }}
+                {{ range $sortedPagesParsed }}
+                    {{ $sortedPages = $sortedPages | append .page }}
+                {{ end }}
                 {{ $paginator := .Paginate $sortedPages .Site.Params.page.maxHomePostCount }}
-
                 {{ range $paginator.Pages }}
                     {{ partial "widgets/post-card.html" . }}
                 {{ end }}
