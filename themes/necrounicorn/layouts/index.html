@@ -23,89 +23,48 @@
     {{ end }}
 
     <ul id="content">
-        {{/* Только если это главная страница и первая пагинация — включаем «приоритетную» логику */}}
+        {{/* Если это главная и первая страница пагинации – встраиваем логику приоритетных блоков */}}
         {{ if and .IsHome (eq .Paginator.PageNumber 1) }}
-            {{/* Получаем все страницы, не скрытые для центра */}}
-            {{ $all := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
+            {{/* Все страницы, не скрытые для центра */}}
+            {{ $allPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
 
-            {{/*
-               Функция: превращаем список страниц в список словарей для сортировки.
-               Поле .Params.lastmod парсим функцией `time`.
-            */}}
-            {{ $parsePages := func ($pages) ->
-                slice
-                | $acc := .
-                | range $pages
-                    $dt := time .Params.lastmod
-                    $acc = $acc | append (dict
-                        "page"      .
-                        "lastmod"   $dt
-                        "permalink" .RelPermalink
-                    )
-                end
-                return $acc
-            }}
+            {{/* Общий список, отсортированный по дате (убывание) */}}
+            {{ $sortedAll := sort $allPages "Date" "desc" }}
 
-            {{/*
-               1) Преобразуем ВСЕ страницы в список словарей, сортируем.
-            */}}
-            {{ $allParsed := $parsePages $all }}
-            {{ $allSorted := sort $allParsed "lastmod" "desc" }}
+            {{/* Принудительная выборка: 3 последних из "articles" по дате */}}
+            {{ $forcedArticles := first 3 (where $allPages "Section" "articles" | sort "Date" "desc") }}
+            {{/* Принудительная выборка: 3 последних из "library" по дате */}}
+            {{ $forcedLibrary := first 3 (where $allPages "Section" "library" | sort "Date" "desc") }}
 
-            {{/*
-               2) Преобразуем и сортируем нужные разделы (Статьи + Библиотека).
-                  Берём из каждого первые 3 шт.
-            */}}
-            {{ $articlesParsed := $parsePages (where $all "Section" "articles") }}
-            {{ $articlesSorted := sort $articlesParsed "lastmod" "desc" }}
-            {{ $forcedArticles := first 3 $articlesSorted }}
-
-            {{ $libraryParsed := $parsePages (where $all "Section" "library") }}
-            {{ $librarySorted := sort $libraryParsed "lastmod" "desc" }}
-            {{ $forcedLibrary := first 3 $librarySorted }}
-
-            {{/* Собираем все «принудительные» записи в один список */}}
-            {{ $forcedParsed := append $forcedArticles $forcedLibrary }}
-
-            {{/* Собираем все их permalinks в массив */}}
-            {{ $forcedPLinks := slice }}
-            {{ range $forcedParsed }}
-                {{ $forcedPLinks = $forcedPLinks | append .permalink }}
+            {{/* Собираем .RelPermalink, чтобы исключить дубликаты из общего списка */}}
+            {{ $forcedIDs := slice }}
+            {{ range $forcedArticles }}
+                {{ $forcedIDs = $forcedIDs | append .RelPermalink }}
+            {{ end }}
+            {{ range $forcedLibrary }}
+                {{ $forcedIDs = $forcedIDs | append .RelPermalink }}
             {{ end }}
 
-            {{/*
-               3) Остальные страницы: это $allSorted за вычетом всех принудительных permalinks
-            */}}
-            {{ $remainingParsed := slice }}
-            {{ range $allSorted }}
-                {{ if not (in $forcedPLinks .permalink) }}
-                    {{ $remainingParsed = $remainingParsed | append . }}
+            {{/* Формируем список прочих страниц, исключая принудительные */}}
+            {{ $others := slice }}
+            {{ range $sortedAll }}
+                {{ if not (in $forcedIDs .RelPermalink) }}
+                    {{ $others = $others | append . }}
                 {{ end }}
             {{ end }}
 
-            {{/*
-               4) Формируем итоговый список: сначала «принудительные», потом остальные.
-            */}}
-            {{ $combinedParsed := append $forcedParsed $remainingParsed }}
+            {{/* Итоговый список: сначала статьи, затем библиотека, затем остальные */}}
+            {{ $combined := append (append $forcedArticles $forcedLibrary) $others }}
 
-            {{/*
-               5) Превращаем итоговый список словарей обратно в список страниц
-            */}}
-            {{ $combinedPages := slice }}
-            {{ range $combinedParsed }}
-                {{ $combinedPages = $combinedPages | append .page }}
-            {{ end }}
-
-            {{/* Список permalinks материалов из «Библиотеки» для обёртки */}}
-            {{ $forcedLibraryPLinks := slice }}
+            {{/* Собираем ссылки из библиотеки для специальной обёртки */}}
+            {{ $forcedLibraryLinks := slice }}
             {{ range $forcedLibrary }}
-                {{ $forcedLibraryPLinks = $forcedLibraryPLinks | append .permalink }}
+                {{ $forcedLibraryLinks = $forcedLibraryLinks | append .RelPermalink }}
             {{ end }}
 
-            {{/* Проводим пагинацию и выводим результат */}}
-            {{ $paginator := .Paginate $combinedPages .Site.Params.page.maxHomePostCount }}
+            {{ $paginator := .Paginate $combined .Site.Params.page.maxHomePostCount }}
             {{ range $paginator.Pages }}
-                {{ if and (eq .Section "library") (in $forcedLibraryPLinks .RelPermalink) }}
+                {{ if and (eq .Section "library") (in $forcedLibraryLinks .RelPermalink) }}
                     <div class="library-wrapper">
                         {{ partial "widgets/post-card.html" . }}
                     </div>
@@ -113,25 +72,10 @@
                     {{ partial "widgets/post-card.html" . }}
                 {{ end }}
             {{ end }}
-
         {{ else }}
-            {{/* Для всех остальных страниц и пагинаций – стандартная сортировка без приоритетной выборки */}}
-            {{ $filtered := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
-            {{ $filteredParsed := slice }}
-            {{ range $filtered }}
-                {{ $filteredParsed = $filteredParsed | append (dict
-                    "page"      .
-                    "lastmod"   (time .Params.lastmod)
-                    "permalink" .RelPermalink
-                ) }}
-            {{ end }}
-
-            {{ $sortedFiltered := sort $filteredParsed "lastmod" "desc" }}
-            {{ $sortedPages := slice }}
-            {{ range $sortedFiltered }}
-                {{ $sortedPages = $sortedPages | append .page }}
-            {{ end }}
-
+            {{/* Для всех остальных страниц пагинации – стандартная логика */}}
+            {{ $filteredPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
+            {{ $sortedPages := sort $filteredPages "Date" "desc" }}
             {{ $paginator := .Paginate $sortedPages .Site.Params.page.maxHomePostCount }}
             {{ range $paginator.Pages }}
                 {{ partial "widgets/post-card.html" . }}
