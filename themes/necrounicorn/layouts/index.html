@@ -1,61 +1,125 @@
 {{ define "main" }}
-    <section class="castration fl p_relative modules">
-        {{ if .IsHome }}
-            <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
-                <div class="fl p_relative">
-                    <a title="Instagram" rel="nofollow" href="https://www.instagram.com/horrorprom" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a title="YouTube" rel="nofollow" href="https://www.youtube.com/@spirits-show" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                </div>
-                <div class="fr p_relative">
-                    <a title="Discord" rel="nofollow" href="https://discord.com/users/morguenal" target="_blank"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
-                </div>
-                <div class="t_center castration base_width p_relative">
-                    <p>
-                        {{ i18n "soc_block_title" }}
-                    </p>
-                    <p>
-                        {{ i18n "soc_block_desc" | safeHTML }}
-                    </p>
-                </div>
+<section class="castration fl p_relative modules">
+
+    {{ if .IsHome }}
+        <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
+            <!-- Шапка/обложка (соц. ссылки и т. п.) -->
+            <div class="fl p_relative">
+                <a title="Instagram" rel="nofollow" href="https://www.instagram.com/horrorprom" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a title="YouTube" rel="nofollow" href="https://www.youtube.com/@spirits-show" target="_blank">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
             </div>
-        {{ end }}
+            <div class="fr p_relative">
+                <a title="Discord" rel="nofollow" href="https://discord.com/users/morguenal" target="_blank">
+                    <i class="fa fa-gamepad" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="t_center castration base_width p_relative">
+                <p>{{ i18n "soc_block_title" }}</p>
+                <p>{{ i18n "soc_block_desc" | safeHTML }}</p>
+            </div>
+        </div>
+    {{ end }}
 
-        <ul id="content">
-            {{ $filteredPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
-            {{ $sortedPages := sort $filteredPages "Lastmod" "desc" }}
-            {{ $paginator := .Paginate $sortedPages .Site.Params.page.maxHomePostCount }}
+    <ul id="content">
+        {{/*
+           Проверяем:
+           - .IsHome — это ли главная
+           - eq .Paginator.PageNumber 1 — первая ли это страница пагинации
+        */}}
+        {{ if and .IsHome (eq .Paginator.PageNumber 1) }}
 
+            {{/*
+               1) Получаем все материалы, не скрытые (hideFromCenter != true),
+                  которые Hugo уже сам отсортировал по lastmod (убывание).
+                  .ByLastmod.Reverse => список по убыванию .Lastmod
+            */}}
+            {{ $allPages := where .Site.RegularPages.ByLastmod.Reverse ".Params.hideFromCenter" "!=" true }}
+
+            {{/* 2) Выбираем 3 последних из раздела "articles" */}}
+            {{ $forcedArticles := first 3 (where $allPages "Section" "articles") }}
+
+            {{/* 3) Выбираем 3 последних из раздела "library" */}}
+            {{ $forcedLibrary := first 3 (where $allPages "Section" "library") }}
+
+            {{/*
+               4) Собираем .RelPermalink выбранных, чтобы исключить их из общего списка.
+            */}}
+            {{ $forcedIDs := slice }}
+            {{ range $forcedArticles }}
+                {{ $forcedIDs = $forcedIDs | append .RelPermalink }}
+            {{ end }}
+            {{ range $forcedLibrary }}
+                {{ $forcedIDs = $forcedIDs | append .RelPermalink }}
+            {{ end }}
+
+            {{/*
+               5) Формируем список остальных (тех, кто не попал в принудительные)
+            */}}
+            {{ $others := slice }}
+            {{ range $allPages }}
+                {{ if not (in $forcedIDs .RelPermalink) }}
+                    {{ $others = $others | append . }}
+                {{ end }}
+            {{ end }}
+
+            {{/*
+               6) Итоговый массив:
+                  Сначала "articles" (3 шт),
+                  Потом "library" (3 шт),
+                  Потом остальные.
+            */}}
+            {{ $combined := append (append $forcedArticles $forcedLibrary) $others }}
+
+            {{/*
+               7) Собираем ссылки из library, чтобы при выводе
+                  обернуть их в <div class="library-wrapper">.
+            */}}
+            {{ $forcedLibraryLinks := slice }}
+            {{ range $forcedLibrary }}
+                {{ $forcedLibraryLinks = $forcedLibraryLinks | append .RelPermalink }}
+            {{ end }}
+
+            {{/*
+               8) Пагинация по полученному списку (количество на страницу задаётся
+                  в .Site.Params.page.maxHomePostCount или paginate).
+            */}}
+            {{ $paginator := .Paginate $combined .Site.Params.page.maxHomePostCount }}
+
+            {{/* 9) Выводим принудительные + остальные, в нужном порядке */}}
+            {{ range $paginator.Pages }}
+                {{ if and (eq .Section "library") (in $forcedLibraryLinks .RelPermalink) }}
+                    <!-- "Библиотека" с обёрткой -->
+                    <div class="library-wrapper">
+                        {{ partial "widgets/post-card.html" . }}
+                    </div>
+                {{ else }}
+                    {{ partial "widgets/post-card.html" . }}
+                {{ end }}
+            {{ end }}
+
+        {{ else }}
+
+            {{/*
+               Для второй и следующих страниц главной (или если не home)
+               используем обычную логику: берём все материалы (не скрытые),
+               по убыванию lastmod, пагинируем, выводим.
+            */}}
+            {{ $filtered := where .Site.RegularPages.ByLastmod.Reverse ".Params.hideFromCenter" "!=" true }}
+            {{ $paginator := .Paginate $filtered .Site.Params.page.maxHomePostCount }}
             {{ range $paginator.Pages }}
                 {{ partial "widgets/post-card.html" . }}
             {{ end }}
-        </ul>
 
-        <ul class="t_center not_twitch">
-            {{ if $paginator.HasPrev }}
-            <li class="page-numbers">
-                <a title='{{ i18n "Page_page" }} {{ $paginator.Prev.PageNumber }}' class="page-numbers prev" href="{{ $paginator.Prev.URL }}">
-                    {{ i18n "pagination_previous" }}
-                </a>
-            </li>
-            {{ end }}
-            {{ range $paginator.Pagers }}
-            <li class="page-numbers">
-                {{ if eq .PageNumber $paginator.PageNumber }}
-                    <span title='{{ i18n "Page_page" }} {{ .PageNumber }}' class="page-numbers active">{{ .PageNumber }}</span>
-                {{ else }}
-                    <a title='{{ i18n "Page_page" }} {{ .PageNumber }}' href="{{ .URL }}" class="page-numbers">{{ .PageNumber }}</a>
-                {{ end }}
-            </li>
-            {{ end }}
-            {{ if $paginator.HasNext }}
-            <li class="page-numbers">
-                <a title='{{ i18n "Page_page" }} {{ $paginator.Next.PageNumber }}' href="{{ $paginator.Next.URL }}" class="page-numbers next">
-                    {{ i18n "pagination_next" }}
-                </a>
-            </li>
-            {{ end }}
-        </ul>
-    </section>
+        {{ end }}
+    </ul>
+
+    {{!-- Кнопки пагинации. Можно подключить свой partial "pagination.html" --}}
+    {{ partial "pagination.html" . }}
 
     {{ partial "widgets/aside.html" . }}
+</section>
 {{ end }}
