@@ -21,9 +21,22 @@
         {{ end }}
 
         <ul id="content">
-            {{ $filteredPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
-            {{ $sortedPages := sort $filteredPages "Lastmod" "desc" }}
+            {{ $articles := first 3 (where .Site.RegularPages "Section" "eq" "articles") }}
+            {{ $library := first 3 (where .Site.RegularPages "Section" "eq" "library") }}
+            {{ $remainingPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
+            {{ $remainingPages := where $remainingPages "Section" "not in" (slice "articles" "library") }}
+            {{ $sortedPages := sort $remainingPages "Lastmod" "desc" }}
             {{ $paginator := .Paginate $sortedPages .Site.Params.page.maxHomePostCount }}
+
+            {{ range $articles }}
+                {{ partial "widgets/post-card.html" . }}
+            {{ end }}
+
+            <div class="library-section">
+                {{ range $library }}
+                    {{ partial "widgets/post-card.html" . }}
+                {{ end }}
+            </div>
 
             {{ range $paginator.Pages }}
                 {{ partial "widgets/post-card.html" . }}
