@@ -21,7 +21,7 @@
                 {{/* Получаем все страницы, не скрытые для центра */}}
                 {{ $allPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
 
-                {{/* Формируем срез словарей с распарсенной датой из Params.lastmod */}}
+                {{/* Преобразуем каждую страницу в словарь с распарсенной датой Params.lastmod */}}
                 {{ $allPagesParsed := slice }}
                 {{ range $allPages }}
                     {{ $parsed := time .Params.lastmod }}
@@ -53,13 +53,18 @@
                 {{/* Собираем уникальные идентификаторы принудительно выбранных страниц */}}
                 {{ $forcedIDs := slice }}
                 {{ range $forcedParsed }}
-                    {{ $forcedIDs = $forcedIDs | append .page.UniqueID }}
+                    {{ $forcedIDs = $forcedIDs | append (index . "page").UniqueID }}
+                {{ end }}
+                {{/* Собираем ID страниц из раздела "Библиотека" для дополнительной обёртки */}}
+                {{ $forcedLibraryIDs := slice }}
+                {{ range $forcedLibraryParsed }}
+                    {{ $forcedLibraryIDs = $forcedLibraryIDs | append (index . "page").UniqueID }}
                 {{ end }}
 
-                {{/* Формируем срез оставшихся страниц */}}
+                {{/* Формируем срез оставшихся страниц, исключая принудительно выбранные */}}
                 {{ $remainingParsed := slice }}
                 {{ range $sortedPagesParsed }}
-                    {{ if not (in $forcedIDs .page.UniqueID) }}
+                    {{ if not (in $forcedIDs (index . "page").UniqueID) }}
                         {{ $remainingParsed = $remainingParsed | append . }}
                     {{ end }}
                 {{ end }}
@@ -70,13 +75,7 @@
                 {{/* Преобразуем срез словарей обратно в срез страниц */}}
                 {{ $combinedPages := slice }}
                 {{ range $combinedParsed }}
-                    {{ $combinedPages = $combinedPages | append .page }}
-                {{ end }}
-
-                {{/* Собираем идентификаторы принудительных страниц из раздела "Библиотека" для дополнительной обёртки */}}
-                {{ $forcedLibraryIDs := slice }}
-                {{ range $forcedLibraryParsed }}
-                    {{ $forcedLibraryIDs = $forcedLibraryIDs | append .page.UniqueID }}
+                    {{ $combinedPages = $combinedPages | append (index . "page") }}
                 {{ end }}
 
                 {{ $paginator := .Paginate $combinedPages .Site.Params.page.maxHomePostCount }}
@@ -92,7 +91,7 @@
                 {{ end }}
 
             {{ else }}
-                {{/* Для остальных страниц стандартная сортировка с распарсенной датой */}}
+                {{/* Для остальных страниц используем стандартную сортировку с распарсенной датой */}}
                 {{ $filteredPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
                 {{ $allPagesParsed := slice }}
                 {{ range $filteredPages }}
@@ -102,7 +101,7 @@
                 {{ $sortedPagesParsed := sort $allPagesParsed "lastmod" "desc" }}
                 {{ $sortedPages := slice }}
                 {{ range $sortedPagesParsed }}
-                    {{ $sortedPages = $sortedPages | append .page }}
+                    {{ $sortedPages = $sortedPages | append (index . "page") }}
                 {{ end }}
                 {{ $paginator := .Paginate $sortedPages .Site.Params.page.maxHomePostCount }}
                 {{ range $paginator.Pages }}
