@@ -22,21 +22,28 @@
 
         <ul id="content">
             {{ if and .IsHome (eq .Paginator.PageNumber 1) }}
+                {{/* Получаем все материалы, не скрытые для центра */}}
                 {{ $allPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
-                {{ $sortedPages := sort $allPages "Date" "desc" }}
-                {{ $forcedArticles := first 3 (where $allPages "Section" "articles" | sort "Date" "desc") }}
-                {{ $forcedLibrary := first 3 (where $allPages "Section" "library" | sort "Date" "desc") }}
+                {{/* Сортировка по .Params.lastmod, который имеет формат "YYYY-MM-DD" */}}
+                {{ $sortedPages := sort $allPages "Params.lastmod" "desc" }}
+                {{/* Принудительно выбираем 3 последних материала из раздела "Статьи" */}}
+                {{ $forcedArticles := first 3 (where $allPages "Section" "articles" | sort "Params.lastmod" "desc") }}
+                {{/* Принудительно выбираем 3 последних материала из раздела "Библиотека" */}}
+                {{ $forcedLibrary := first 3 (where $allPages "Section" "library" | sort "Params.lastmod" "desc") }}
                 {{ $forced := append $forcedArticles $forcedLibrary }}
 
+                {{/* Собираем ID принудительно выбранных материалов */}}
                 {{ $forcedIDs := slice }}
                 {{ range $forced }}
                     {{ $forcedIDs = $forcedIDs | append .UniqueID }}
                 {{ end }}
+                {{/* Сохраняем ID материалов из "Библиотека" для дополнительной обёртки */}}
                 {{ $forcedLibraryIDs := slice }}
                 {{ range $forcedLibrary }}
                     {{ $forcedLibraryIDs = $forcedLibraryIDs | append .UniqueID }}
                 {{ end }}
 
+                {{/* Остальные материалы, исключая принудительно выбранные */}}
                 {{ $remaining := slice }}
                 {{ range $sortedPages }}
                     {{ if not (in $forcedIDs .UniqueID) }}
@@ -44,6 +51,7 @@
                     {{ end }}
                 {{ end }}
 
+                {{/* Объединяем принудительно выбранные и оставшиеся материалы */}}
                 {{ $combined := append $forced $remaining }}
                 {{ $paginator := .Paginate $combined .Site.Params.page.maxHomePostCount }}
 
@@ -56,10 +64,13 @@
                         {{ partial "widgets/post-card.html" . }}
                     {{ end }}
                 {{ end }}
+
             {{ else }}
+                {{/* Для остальных страниц стандартная сортировка */}}
                 {{ $filteredPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
-                {{ $sortedPages := sort $filteredPages "Date" "desc" }}
+                {{ $sortedPages := sort $filteredPages "Params.lastmod" "desc" }}
                 {{ $paginator := .Paginate $sortedPages .Site.Params.page.maxHomePostCount }}
+
                 {{ range $paginator.Pages }}
                     {{ partial "widgets/post-card.html" . }}
                 {{ end }}
