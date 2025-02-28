@@ -23,20 +23,20 @@
     {{ end }}
 
     <ul id="content">
-        {{/* Если это главная и первая страница пагинации – встраиваем логику приоритетных блоков */}}
+        {{/* Если это главная и первая страница пагинации, применяем «приоритетную» логику */}}
         {{ if and .IsHome (eq .Paginator.PageNumber 1) }}
-            {{/* Все страницы, не скрытые для центра */}}
-            {{ $allPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
+            {{/*
+               Берём все страницы (кроме hideFromCenter = true),
+               которые Hugo уже сам отсортировал по дате (по убыванию).
+            */}}
+            {{ $allPages := where .Site.RegularPages.ByDate.Reverse ".Params.hideFromCenter" "!=" true }}
 
-            {{/* Общий список, отсортированный по дате (убывание) */}}
-            {{ $sortedAll := sort $allPages "Date" "desc" }}
+            {{/* 3 последних из "articles" */}}
+            {{ $forcedArticles := first 3 (where $allPages "Section" "articles") }}
+            {{/* 3 последних из "library" */}}
+            {{ $forcedLibrary := first 3 (where $allPages "Section" "library") }}
 
-            {{/* Принудительная выборка: 3 последних из "articles" по дате */}}
-            {{ $forcedArticles := first 3 (where $allPages "Section" "articles" | sort "Date" "desc") }}
-            {{/* Принудительная выборка: 3 последних из "library" по дате */}}
-            {{ $forcedLibrary := first 3 (where $allPages "Section" "library" | sort "Date" "desc") }}
-
-            {{/* Собираем .RelPermalink, чтобы исключить дубликаты из общего списка */}}
+            {{/* Собираем их Permalink, чтобы дальше исключить из общего списка */}}
             {{ $forcedIDs := slice }}
             {{ range $forcedArticles }}
                 {{ $forcedIDs = $forcedIDs | append .RelPermalink }}
@@ -45,23 +45,30 @@
                 {{ $forcedIDs = $forcedIDs | append .RelPermalink }}
             {{ end }}
 
-            {{/* Формируем список прочих страниц, исключая принудительные */}}
+            {{/* Формируем список «остальных» */}}
             {{ $others := slice }}
-            {{ range $sortedAll }}
+            {{ range $allPages }}
                 {{ if not (in $forcedIDs .RelPermalink) }}
                     {{ $others = $others | append . }}
                 {{ end }}
             {{ end }}
 
-            {{/* Итоговый список: сначала статьи, затем библиотека, затем остальные */}}
+            {{/* Итоговый срез: forcedArticles + forcedLibrary + остальные */}}
             {{ $combined := append (append $forcedArticles $forcedLibrary) $others }}
 
-            {{/* Собираем ссылки из библиотеки для специальной обёртки */}}
+            {{/*
+               Собираем ссылки из forcedLibrary, чтобы
+               при выводе обернуть их в library-wrapper
+            */}}
             {{ $forcedLibraryLinks := slice }}
             {{ range $forcedLibrary }}
                 {{ $forcedLibraryLinks = $forcedLibraryLinks | append .RelPermalink }}
             {{ end }}
 
+            {{/*
+               Пагинация по итоговому срезу, который уже «перемешан»
+               (вверху статьи, затем библиотека, потом все остальные)
+            */}}
             {{ $paginator := .Paginate $combined .Site.Params.page.maxHomePostCount }}
             {{ range $paginator.Pages }}
                 {{ if and (eq .Section "library") (in $forcedLibraryLinks .RelPermalink) }}
@@ -73,10 +80,9 @@
                 {{ end }}
             {{ end }}
         {{ else }}
-            {{/* Для всех остальных страниц пагинации – стандартная логика */}}
-            {{ $filteredPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
-            {{ $sortedPages := sort $filteredPages "Date" "desc" }}
-            {{ $paginator := .Paginate $sortedPages .Site.Params.page.maxHomePostCount }}
+            {{/* Для всех остальных страниц (и второй, третьей...) используем обычную сортировку */}}
+            {{ $filtered := where .Site.RegularPages.ByDate.Reverse ".Params.hideFromCenter" "!=" true }}
+            {{ $paginator := .Paginate $filtered .Site.Params.page.maxHomePostCount }}
             {{ range $paginator.Pages }}
                 {{ partial "widgets/post-card.html" . }}
             {{ end }}
