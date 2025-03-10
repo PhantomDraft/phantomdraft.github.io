@@ -1,23 +1,13 @@
 {{ define "main" }}
 <section class="castration fl p_relative modules">
-
     {{ if .IsHome }}
-        <!-- Шапка / Обложка -->
-        <div class="castration cover p_relative atcCentral" 
-             style="background-image: linear-gradient(black, black), url(/img/cover/default.webp); 
-                    background-blend-mode: saturation; background-position-y: 30% !important;">
+        <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
             <div class="fl p_relative">
-                <a title="Instagram" rel="nofollow" href="https://www.instagram.com/horrorprom" target="_blank">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a title="YouTube" rel="nofollow" href="https://www.youtube.com/@spirits-show" target="_blank">
-                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
+                <a title="Instagram" rel="nofollow" href="https://www.instagram.com/horrorprom" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a title="YouTube" rel="nofollow" href="https://www.youtube.com/@spirits-show" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
             </div>
             <div class="fr p_relative">
-                <a title="Discord" rel="nofollow" href="https://discord.com/users/morguenal" target="_blank">
-                    <i class="fa fa-gamepad" aria-hidden="true"></i>
-                </a>
+                <a title="Discord" rel="nofollow" href="https://discord.com/users/morguenal" target="_blank"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
             </div>
             <div class="t_center castration base_width p_relative">
                 <p>{{ i18n "soc_block_title" }}</p>
@@ -27,33 +17,23 @@
     {{ end }}
 
     <ul id="content">
-
-        {{/* Проверяем: главная страница + первая пагинация? */}}
         {{ if and .IsHome (eq .Paginator.PageNumber 1) }}
-
-            {{/* 1) Собираем все страницы, которые НЕ hideFromCenter */}}
-            {{ $allPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
-
-            
-            {{ $sortedAll := sort $allPages "Lastmod" "desc" }}
-
-            
-            {{ $forcedArticles := slice }}
-            {{ $forcedLibrary := slice }}
-
-           
-            {{ $forcedArticles = $forcedArticles | append $tmpArticles }}
-
-            
-            {{ $tmpLibrary := slice }}
-            {{ range (where $sortedAll "Section" "library") }}
-                {{ if not (in (slice) $forcedArticles .) }}
-                    {{ $tmpLibrary = $tmpLibrary | append . }}
+            {{ $all := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
+            {{ $sortedAll := sort $all "Lastmod" "desc" }}
+            {{ $articles := where $sortedAll "Section" "articles" }}
+            {{ $forcedArticles := first 3 $articles }}
+            {{ $forcedIDsArticles := slice }}
+            {{ range $forcedArticles }}
+                {{ $forcedIDsArticles = $forcedIDsArticles | append .RelPermalink }}
+            {{ end }}
+            {{ $libraryAll := where $sortedAll "Section" "library" }}
+            {{ $libraryNoDupes := slice }}
+            {{ range $libraryAll }}
+                {{ if not (in $forcedIDsArticles .RelPermalink) }}
+                    {{ $libraryNoDupes = $libraryNoDupes | append . }}
                 {{ end }}
             {{ end }}
-            {{ $forcedLibrary = first 3 $tmpLibrary }}
-
-            
+            {{ $forcedLibrary := first 3 $libraryNoDupes }}
             {{ $forcedIDs := slice }}
             {{ range $forcedArticles }}
                 {{ $forcedIDs = $forcedIDs | append .RelPermalink }}
@@ -61,53 +41,37 @@
             {{ range $forcedLibrary }}
                 {{ $forcedIDs = $forcedIDs | append .RelPermalink }}
             {{ end }}
-
-            
             {{ $remaining := slice }}
             {{ range $sortedAll }}
                 {{ if not (in $forcedIDs .RelPermalink) }}
                     {{ $remaining = $remaining | append . }}
                 {{ end }}
             {{ end }}
-
-            
-            {{ $need := sub .Site.Params.page.maxHomePostCount (add (len $forcedArticles) (len $forcedLibrary)) }}
-            {{ if lt $need 0 }} 
-                
+            {{ $countForced := add (len $forcedArticles) (len $forcedLibrary) }}
+            {{ $need := sub .Site.Params.page.maxHomePostCount $countForced }}
+            {{ if lt $need 0 }}
                 {{ $need = 0 }}
             {{ end }}
-
-           
             {{ $additional := first $need $remaining }}
-
-            
-            {{ $addedIDs := slice }}
+            {{ $additionalIDs := slice }}
             {{ range $additional }}
-                {{ $addedIDs = $addedIDs | append .RelPermalink }}
+                {{ $additionalIDs = $additionalIDs | append .RelPermalink }}
             {{ end }}
             {{ $remaining2 := slice }}
             {{ range $remaining }}
-                {{ if not (in $addedIDs .RelPermalink) }}
+                {{ if not (in $additionalIDs .RelPermalink) }}
                     {{ $remaining2 = $remaining2 | append . }}
                 {{ end }}
             {{ end }}
-
-            
             {{ $frontBlock := append (append $forcedArticles $forcedLibrary) $additional }}
             {{ $final := append $frontBlock $remaining2 }}
-
-            
             {{ $paginator := .Paginate $final .Site.Params.page.maxHomePostCount }}
-
-            
-            {{ $libraryIDs := slice }}
+            {{ $libLinks := slice }}
             {{ range $forcedLibrary }}
-                {{ $libraryIDs = $libraryIDs | append .RelPermalink }}
+                {{ $libLinks = $libLinks | append .RelPermalink }}
             {{ end }}
-
-            <!-- Выводим посты на текущей (первой) странице -->
             {{ range $paginator.Pages }}
-                {{ if and (eq .Section "library") (in $libraryIDs .RelPermalink) }}
+                {{ if and (eq .Section "library") (in $libLinks .RelPermalink) }}
                     <div class="library-wrapper">
                         {{ partial "widgets/post-card.html" . }}
                     </div>
@@ -115,14 +79,10 @@
                     {{ partial "widgets/post-card.html" . }}
                 {{ end }}
             {{ end }}
-
-            <!-- Пагинация (можно подключить ваш advanced partial) -->
             <ul class="t_center not_twitch">
                 {{ if $paginator.HasPrev }}
                 <li class="page-numbers">
-                    <a href="{{ $paginator.Prev.URL }}" class="page-numbers prev">
-                        {{ i18n "pagination_previous" }}
-                    </a>
+                    <a href="{{ $paginator.Prev.URL }}" class="page-numbers prev">{{ i18n "pagination_previous" }}</a>
                 </li>
                 {{ end }}
                 {{ range $paginator.Pagers }}
@@ -136,30 +96,21 @@
                 {{ end }}
                 {{ if $paginator.HasNext }}
                 <li class="page-numbers">
-                    <a href="{{ $paginator.Next.URL }}" class="page-numbers next">
-                        {{ i18n "pagination_next" }}
-                    </a>
+                    <a href="{{ $paginator.Next.URL }}" class="page-numbers next">{{ i18n "pagination_next" }}</a>
                 </li>
                 {{ end }}
             </ul>
-
         {{ else }}
-
-            <!-- Не первая страница: обычная логика -->
             {{ $filtered := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
             {{ $sorted := sort $filtered "Lastmod" "desc" }}
             {{ $paginator := .Paginate $sorted .Site.Params.page.maxHomePostCount }}
-
             {{ range $paginator.Pages }}
                 {{ partial "widgets/post-card.html" . }}
             {{ end }}
-
             <ul class="t_center not_twitch">
                 {{ if $paginator.HasPrev }}
                 <li class="page-numbers">
-                    <a href="{{ $paginator.Prev.URL }}" class="page-numbers prev">
-                        {{ i18n "pagination_previous" }}
-                    </a>
+                    <a href="{{ $paginator.Prev.URL }}" class="page-numbers prev">{{ i18n "pagination_previous" }}</a>
                 </li>
                 {{ end }}
                 {{ range $paginator.Pagers }}
@@ -173,9 +124,7 @@
                 {{ end }}
                 {{ if $paginator.HasNext }}
                 <li class="page-numbers">
-                    <a href="{{ $paginator.Next.URL }}" class="page-numbers next">
-                        {{ i18n "pagination_next" }}
-                    </a>
+                    <a href="{{ $paginator.Next.URL }}" class="page-numbers next">{{ i18n "pagination_next" }}</a>
                 </li>
                 {{ end }}
             </ul>
