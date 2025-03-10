@@ -34,27 +34,17 @@
             {{/* 1) Собираем все страницы, которые НЕ hideFromCenter */}}
             {{ $allPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
 
-            {{/* 2) Сортируем по Lastmod (убывание). 
-                   Если выдаёт ошибку — замените на: 
-                   $sortedAll := .Site.RegularPages.ByLastmod.Reverse | where ".Params.hideFromCenter" "!=" true 
-            */}}
+            
             {{ $sortedAll := sort $allPages "Lastmod" "desc" }}
 
-            {{--
-               3) Из $sortedAll берём 3 последних "articles", 
-                  потом 3 "library", не допуская дублей.
-            --}}
+            
             {{ $forcedArticles := slice }}
             {{ $forcedLibrary := slice }}
 
-            {{/* сначала 3 articles (если меньше 3, берётся сколько есть) */}}
-            {{ $tmpArticles := first 3 (where $sortedAll "Section" "articles") }}
+           
             {{ $forcedArticles = $forcedArticles | append $tmpArticles }}
 
-            {{/*
-                потом 3 library, но исключая из library те, что уже попали в articles 
-                (чтобы не было дублирования одного и того же поста).
-            */}}
+            
             {{ $tmpLibrary := slice }}
             {{ range (where $sortedAll "Section" "library") }}
                 {{ if not (in (slice) $forcedArticles .) }}
@@ -63,9 +53,7 @@
             {{ end }}
             {{ $forcedLibrary = first 3 $tmpLibrary }}
 
-            {{/*
-               4) Собираем их .RelPermalink, чтобы исключить из общего массива
-            */}}
+            
             {{ $forcedIDs := slice }}
             {{ range $forcedArticles }}
                 {{ $forcedIDs = $forcedIDs | append .RelPermalink }}
@@ -74,9 +62,7 @@
                 {{ $forcedIDs = $forcedIDs | append .RelPermalink }}
             {{ end }}
 
-            {{/*
-               5) Удаляем принудительные из $sortedAll => $remaining
-            */}}
+            
             {{ $remaining := slice }}
             {{ range $sortedAll }}
                 {{ if not (in $forcedIDs .RelPermalink) }}
@@ -84,27 +70,17 @@
                 {{ end }}
             {{ end }}
 
-            {{/*
-               6) Подсчитываем, сколько ещё нужно «добрать» в первую страницу 
-                  (чтобы итогом было .Site.Params.page.maxHomePostCount).
-                  Если forcedArticles + forcedLibrary уже = 6, 
-                  то "добрать" = 3. Если где-то меньше (нет 3 статей), будет побольше.
-            */}}
+            
             {{ $need := sub .Site.Params.page.maxHomePostCount (add (len $forcedArticles) (len $forcedLibrary)) }}
             {{ if lt $need 0 }} 
-                {{/* Если получилось отрицательное => уже набрали больше, чем нужно. Обрубим */}}
+                
                 {{ $need = 0 }}
             {{ end }}
 
-            {{/*
-               7) first $need из $remaining => это 0..3 дополнительных постов,
-                  чтобы в сумме на первой странице оказалось ровно 9 (или paginate).
-            */}}
+           
             {{ $additional := first $need $remaining }}
 
-            {{/*
-               8) Убираем эти добавленные из $remaining, чтобы не дублировались.
-            */}}
+            
             {{ $addedIDs := slice }}
             {{ range $additional }}
                 {{ $addedIDs = $addedIDs | append .RelPermalink }}
@@ -116,25 +92,14 @@
                 {{ end }}
             {{ end }}
 
-            {{/*
-               9) Собираем финальный массив:
-                  [принудительные статьи + библиотека + добор], 
-                  а затем всё остальное.
-            */}}
+            
             {{ $frontBlock := append (append $forcedArticles $forcedLibrary) $additional }}
             {{ $final := append $frontBlock $remaining2 }}
 
-            {{/*
-               10) Пагинация по $final.
-               На первой странице выведется именно $frontBlock (то есть 9 шт. максимум).
-               На второй и далее — пойдёт $remaining2, в том же порядке убывания Lastmod.
-            */}}
+            
             {{ $paginator := .Paginate $final .Site.Params.page.maxHomePostCount }}
 
-            {{/*
-               Обёртка для библиотечных записей:
-               соберём permalinks "library", если хотим особый <div> обёртки
-            */}}
+            
             {{ $libraryIDs := slice }}
             {{ range $forcedLibrary }}
                 {{ $libraryIDs = $libraryIDs | append .RelPermalink }}
