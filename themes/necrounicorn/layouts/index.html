@@ -28,7 +28,7 @@
         {{/* Только если это главная и первая страница пагинации – выносим «6 приоритетных» */}}
         {{ if and .IsHome (eq .Paginator.PageNumber 1) }}
 
-            {{!-- 1) Собираем все страницы, не скрытые от центра --}}
+            
             {{ $all := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
 
             {{!-- 2) Сортируем по .Lastmod (убывание).
