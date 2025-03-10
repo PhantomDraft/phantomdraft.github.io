@@ -31,15 +31,14 @@
             
             {{ $all := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
 
-            {{!-- 2) Сортируем по .Lastmod (убывание).
-                     Если вызывает ошибку, замените на .ByLastmod.Reverse --}}
+            
             {{ $sortedAll := sort $all "Lastmod" "desc" }}
 
-            {{!-- 3) Берём последние 3 из "articles" и 3 из "library" --}}
+            
             {{ $forcedArticles := first 3 (where $sortedAll "Section" "articles") }}
             {{ $forcedLibrary := first 3 (where $sortedAll "Section" "library") }}
 
-            {{!-- 4) Собираем permalinks приоритетных, чтобы исключить их из общего списка --}}
+            
             {{ $forcedIDs := slice }}
             {{ range $forcedArticles }}
                 {{ $forcedIDs = $forcedIDs | append .RelPermalink }}
@@ -48,7 +47,7 @@
                 {{ $forcedIDs = $forcedIDs | append .RelPermalink }}
             {{ end }}
 
-            {{!-- 5) Остальные материалы = всё минус принудительно выбранные --}}
+            
             {{ $remaining := slice }}
             {{ range $sortedAll }}
                 {{ if not (in $forcedIDs .RelPermalink) }}
@@ -56,19 +55,19 @@
                 {{ end }}
             {{ end }}
 
-            {{!-- 6) Собираем итоговый массив: [3 статьи] + [3 библиотека] + [остальные] --}}
+            
             {{ $combined := append (append $forcedArticles $forcedLibrary) $remaining }}
 
-            {{!-- Для обёртки «.library-wrapper» запомним ссылки библиотеки --}}
+            
             {{ $libLinks := slice }}
             {{ range $forcedLibrary }}
                 {{ $libLinks = $libLinks | append .RelPermalink }}
             {{ end }}
 
-            {{!-- 7) Пагинация по объединённому списку, общее кол-во страниц не меняется --}}
+            
             {{ $paginator := .Paginate $combined .Site.Params.page.maxHomePostCount }}
 
-            {{!-- 8) Выводим материалы на текущей (первой) странице --}}
+            
             {{ range $paginator.Pages }}
                 {{ if and (eq .Section "library") (in $libLinks .RelPermalink) }}
                     <!-- Блоки из «Библиотеки» обёрнуты в div -->
@@ -110,7 +109,7 @@
 
         {{ else }}
 
-            {{!-- Если это не первая страница главной – обычная логика вывода --}}
+            
             {{ $filtered := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
             {{ $sorted := sort $filtered "Lastmod" "desc" }}
             {{ $paginator := .Paginate $sorted .Site.Params.page.maxHomePostCount }}
