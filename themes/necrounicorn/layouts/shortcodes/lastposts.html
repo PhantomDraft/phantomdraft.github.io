@@ -1,0 +1,23 @@
+{{- $section := .Get "section" | default "articles" -}}
+{{- $num := .Get "num" | default "3" -}}
+{{- $itemPartial := .Get "partial" | default "" -}}
+{{- $all := $.Site.RegularPages -}}
+{{- $langPages := where $all ".Lang" $.Site.Language.Lang -}}
+{{- $visible := where $langPages ".Params.hideFromCenter" "!=" true -}}
+{{- $filtered := where $visible "Section" $section -}}
+{{- $sorted := sort $filtered "Lastmod" "desc" -}}
+{{- $count := (atoi $num) -}}
+{{- $list := first $count $sorted -}}
+{{ if eq $itemPartial "" }}
+<ul>
+{{- range $list }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+{{- end }}
+</ul>
+{{ else }}
+{{- range $list }}
+  {{ partial $itemPartial . }}
+{{- end }}
+{{ end -}}
