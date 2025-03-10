@@ -2,8 +2,10 @@
 <section class="castration fl p_relative modules">
 
     {{ if .IsHome }}
-        <!-- Блок шапки / обложки -->
-        <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
+        <!-- Шапка / Обложка -->
+        <div class="castration cover p_relative atcCentral" 
+             style="background-image: linear-gradient(black, black), url(/img/cover/default.webp); 
+                    background-blend-mode: saturation; background-position-y: 30% !important;">
             <div class="fl p_relative">
                 <a title="Instagram" rel="nofollow" href="https://www.instagram.com/horrorprom" target="_blank">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -25,20 +27,45 @@
     {{ end }}
 
     <ul id="content">
-        {{/* Только если это главная и первая страница пагинации – выносим «6 приоритетных» */}}
+
+        {{/* Проверяем: главная страница + первая пагинация? */}}
         {{ if and .IsHome (eq .Paginator.PageNumber 1) }}
 
-            
-            {{ $all := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
+            {{/* 1) Собираем все страницы, которые НЕ hideFromCenter */}}
+            {{ $allPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
 
-            
-            {{ $sortedAll := sort $all "Lastmod" "desc" }}
+            {{/* 2) Сортируем по Lastmod (убывание). 
+                   Если выдаёт ошибку — замените на: 
+                   $sortedAll := .Site.RegularPages.ByLastmod.Reverse | where ".Params.hideFromCenter" "!=" true 
+            */}}
+            {{ $sortedAll := sort $allPages "Lastmod" "desc" }}
 
-            
-            {{ $forcedArticles := first 3 (where $sortedAll "Section" "articles") }}
-            {{ $forcedLibrary := first 3 (where $sortedAll "Section" "library") }}
+            {{--
+               3) Из $sortedAll берём 3 последних "articles", 
+                  потом 3 "library", не допуская дублей.
+            --}}
+            {{ $forcedArticles := slice }}
+            {{ $forcedLibrary := slice }}
 
-            
+            {{/* сначала 3 articles (если меньше 3, берётся сколько есть) */}}
+            {{ $tmpArticles := first 3 (where $sortedAll "Section" "articles") }}
+            {{ $forcedArticles = $forcedArticles | append $tmpArticles }}
+
+            {{/*
+                потом 3 library, но исключая из library те, что уже попали в articles 
+                (чтобы не было дублирования одного и того же поста).
+            */}}
+            {{ $tmpLibrary := slice }}
+            {{ range (where $sortedAll "Section" "library") }}
+                {{ if not (in (slice) $forcedArticles .) }}
+                    {{ $tmpLibrary = $tmpLibrary | append . }}
+                {{ end }}
+            {{ end }}
+            {{ $forcedLibrary = first 3 $tmpLibrary }}
+
+            {{/*
+               4) Собираем их .RelPermalink, чтобы исключить из общего массива
+            */}}
             {{ $forcedIDs := slice }}
             {{ range $forcedArticles }}
                 {{ $forcedIDs = $forcedIDs | append .RelPermalink }}
@@ -47,7 +74,9 @@
                 {{ $forcedIDs = $forcedIDs | append .RelPermalink }}
             {{ end }}
 
-            
+            {{/*
+               5) Удаляем принудительные из $sortedAll => $remaining
+            */}}
             {{ $remaining := slice }}
             {{ range $sortedAll }}
                 {{ if not (in $forcedIDs .RelPermalink) }}
@@ -55,22 +84,65 @@
                 {{ end }}
             {{ end }}
 
-            
-            {{ $combined := append (append $forcedArticles $forcedLibrary) $remaining }}
-
-            
-            {{ $libLinks := slice }}
-            {{ range $forcedLibrary }}
-                {{ $libLinks = $libLinks | append .RelPermalink }}
+            {{/*
+               6) Подсчитываем, сколько ещё нужно «добрать» в первую страницу 
+                  (чтобы итогом было .Site.Params.page.maxHomePostCount).
+                  Если forcedArticles + forcedLibrary уже = 6, 
+                  то "добрать" = 3. Если где-то меньше (нет 3 статей), будет побольше.
+            */}}
+            {{ $need := sub .Site.Params.page.maxHomePostCount (add (len $forcedArticles) (len $forcedLibrary)) }}
+            {{ if lt $need 0 }} 
+                {{/* Если получилось отрицательное => уже набрали больше, чем нужно. Обрубим */}}
+                {{ $need = 0 }}
             {{ end }}
 
-            
-            {{ $paginator := .Paginate $combined .Site.Params.page.maxHomePostCount }}
+            {{/*
+               7) first $need из $remaining => это 0..3 дополнительных постов,
+                  чтобы в сумме на первой странице оказалось ровно 9 (или paginate).
+            */}}
+            {{ $additional := first $need $remaining }}
 
-            
+            {{/*
+               8) Убираем эти добавленные из $remaining, чтобы не дублировались.
+            */}}
+            {{ $addedIDs := slice }}
+            {{ range $additional }}
+                {{ $addedIDs = $addedIDs | append .RelPermalink }}
+            {{ end }}
+            {{ $remaining2 := slice }}
+            {{ range $remaining }}
+                {{ if not (in $addedIDs .RelPermalink) }}
+                    {{ $remaining2 = $remaining2 | append . }}
+                {{ end }}
+            {{ end }}
+
+            {{/*
+               9) Собираем финальный массив:
+                  [принудительные статьи + библиотека + добор], 
+                  а затем всё остальное.
+            */}}
+            {{ $frontBlock := append (append $forcedArticles $forcedLibrary) $additional }}
+            {{ $final := append $frontBlock $remaining2 }}
+
+            {{/*
+               10) Пагинация по $final.
+               На первой странице выведется именно $frontBlock (то есть 9 шт. максимум).
+               На второй и далее — пойдёт $remaining2, в том же порядке убывания Lastmod.
+            */}}
+            {{ $paginator := .Paginate $final .Site.Params.page.maxHomePostCount }}
+
+            {{/*
+               Обёртка для библиотечных записей:
+               соберём permalinks "library", если хотим особый <div> обёртки
+            */}}
+            {{ $libraryIDs := slice }}
+            {{ range $forcedLibrary }}
+                {{ $libraryIDs = $libraryIDs | append .RelPermalink }}
+            {{ end }}
+
+            <!-- Выводим посты на текущей (первой) странице -->
             {{ range $paginator.Pages }}
-                {{ if and (eq .Section "library") (in $libLinks .RelPermalink) }}
-                    <!-- Блоки из «Библиотеки» обёрнуты в div -->
+                {{ if and (eq .Section "library") (in $libraryIDs .RelPermalink) }}
                     <div class="library-wrapper">
                         {{ partial "widgets/post-card.html" . }}
                     </div>
@@ -79,8 +151,7 @@
                 {{ end }}
             {{ end }}
 
-            <!-- Блок пагинации на основе $paginator -->
-            <!-- Если вы уже используете дополнительный partial "pagination.html", подключайте его -->
+            <!-- Пагинация (можно подключить ваш advanced partial) -->
             <ul class="t_center not_twitch">
                 {{ if $paginator.HasPrev }}
                 <li class="page-numbers">
@@ -109,7 +180,7 @@
 
         {{ else }}
 
-            
+            <!-- Не первая страница: обычная логика -->
             {{ $filtered := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
             {{ $sorted := sort $filtered "Lastmod" "desc" }}
             {{ $paginator := .Paginate $sorted .Site.Params.page.maxHomePostCount }}
@@ -118,7 +189,6 @@
                 {{ partial "widgets/post-card.html" . }}
             {{ end }}
 
-            <!-- Кнопки пагинации -->
             <ul class="t_center not_twitch">
                 {{ if $paginator.HasPrev }}
                 <li class="page-numbers">
@@ -144,7 +214,6 @@
                 </li>
                 {{ end }}
             </ul>
-
         {{ end }}
     </ul>
 
