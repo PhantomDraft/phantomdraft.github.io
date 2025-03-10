@@ -1,136 +1,61 @@
 {{ define "main" }}
-<section class="castration fl p_relative modules">
-    {{ if .IsHome }}
-        <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
-            <div class="fl p_relative">
-                <a title="Instagram" rel="nofollow" href="https://www.instagram.com/horrorprom" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a title="YouTube" rel="nofollow" href="https://www.youtube.com/@spirits-show" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+    <section class="castration fl p_relative modules">
+        {{ if .IsHome }}
+            <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
+                <div class="fl p_relative">
+                    <a title="Instagram" rel="nofollow" href="https://www.instagram.com/horrorprom" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a title="YouTube" rel="nofollow" href="https://www.youtube.com/@spirits-show" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                </div>
+                <div class="fr p_relative">
+                    <a title="Discord" rel="nofollow" href="https://discord.com/users/morguenal" target="_blank"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
+                </div>
+                <div class="t_center castration base_width p_relative">
+                    <p>
+                        {{ i18n "soc_block_title" }}
+                    </p>
+                    <p>
+                        {{ i18n "soc_block_desc" | safeHTML }}
+                    </p>
+                </div>
             </div>
-            <div class="fr p_relative">
-                <a title="Discord" rel="nofollow" href="https://discord.com/users/morguenal" target="_blank"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
-            </div>
-            <div class="t_center castration base_width p_relative">
-                <p>{{ i18n "soc_block_title" }}</p>
-                <p>{{ i18n "soc_block_desc" | safeHTML }}</p>
-            </div>
-        </div>
-    {{ end }}
+        {{ end }}
 
-    <ul id="content">
-        {{ if and .IsHome (eq .Paginator.PageNumber 1) }}
-            {{ $all := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
-            {{ $sortedAll := sort $all "Lastmod" "desc" }}
-            {{ $articles := where $sortedAll "Section" "articles" }}
-            {{ $forcedArticles := first 3 $articles }}
-            {{ $forcedIDsArticles := slice }}
-            {{ range $forcedArticles }}
-                {{ $forcedIDsArticles = $forcedIDsArticles | append .RelPermalink }}
-            {{ end }}
-            {{ $libraryAll := where $sortedAll "Section" "library" }}
-            {{ $libraryNoDupes := slice }}
-            {{ range $libraryAll }}
-                {{ if not (in $forcedIDsArticles .RelPermalink) }}
-                    {{ $libraryNoDupes = $libraryNoDupes | append . }}
-                {{ end }}
-            {{ end }}
-            {{ $forcedLibrary := first 3 $libraryNoDupes }}
-            {{ $forcedIDs := slice }}
-            {{ range $forcedArticles }}
-                {{ $forcedIDs = $forcedIDs | append .RelPermalink }}
-            {{ end }}
-            {{ range $forcedLibrary }}
-                {{ $forcedIDs = $forcedIDs | append .RelPermalink }}
-            {{ end }}
-            {{ $remaining := slice }}
-            {{ range $sortedAll }}
-                {{ if not (in $forcedIDs .RelPermalink) }}
-                    {{ $remaining = $remaining | append . }}
-                {{ end }}
-            {{ end }}
-            {{ $countForced := add (len $forcedArticles) (len $forcedLibrary) }}
-            {{ $need := sub .Site.Params.page.maxHomePostCount $countForced }}
-            {{ if lt $need 0 }}
-                {{ $need = 0 }}
-            {{ end }}
-            {{ $additional := first $need $remaining }}
-            {{ $additionalIDs := slice }}
-            {{ range $additional }}
-                {{ $additionalIDs = $additionalIDs | append .RelPermalink }}
-            {{ end }}
-            {{ $remaining2 := slice }}
-            {{ range $remaining }}
-                {{ if not (in $additionalIDs .RelPermalink) }}
-                    {{ $remaining2 = $remaining2 | append . }}
-                {{ end }}
-            {{ end }}
-            {{ $frontBlock := append (append $forcedArticles $forcedLibrary) $additional }}
-            {{ $final := append $frontBlock $remaining2 }}
-            {{ $paginator := .Paginate $final .Site.Params.page.maxHomePostCount }}
-            {{ $libLinks := slice }}
-            {{ range $forcedLibrary }}
-                {{ $libLinks = $libLinks | append .RelPermalink }}
-            {{ end }}
-            {{ range $paginator.Pages }}
-                {{ if and (eq .Section "library") (in $libLinks .RelPermalink) }}
-                    <div class="library-wrapper">
-                        {{ partial "widgets/post-card.html" . }}
-                    </div>
-                {{ else }}
-                    {{ partial "widgets/post-card.html" . }}
-                {{ end }}
-            {{ end }}
-            <ul class="t_center not_twitch">
-                {{ if $paginator.HasPrev }}
-                <li class="page-numbers">
-                    <a href="{{ $paginator.Prev.URL }}" class="page-numbers prev">{{ i18n "pagination_previous" }}</a>
-                </li>
-                {{ end }}
-                {{ range $paginator.Pagers }}
-                <li class="page-numbers">
-                    {{ if eq .PageNumber $paginator.PageNumber }}
-                        <span class="page-numbers active">{{ .PageNumber }}</span>
-                    {{ else }}
-                        <a href="{{ .URL }}" class="page-numbers">{{ .PageNumber }}</a>
-                    {{ end }}
-                </li>
-                {{ end }}
-                {{ if $paginator.HasNext }}
-                <li class="page-numbers">
-                    <a href="{{ $paginator.Next.URL }}" class="page-numbers next">{{ i18n "pagination_next" }}</a>
-                </li>
-                {{ end }}
-            </ul>
-        {{ else }}
-            {{ $filtered := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
-            {{ $sorted := sort $filtered "Lastmod" "desc" }}
-            {{ $paginator := .Paginate $sorted .Site.Params.page.maxHomePostCount }}
+        <ul id="content">
+            {{ $filteredPages := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
+            {{ $sortedPages := sort $filteredPages "Lastmod" "desc" }}
+            {{ $paginator := .Paginate $sortedPages .Site.Params.page.maxHomePostCount }}
+
             {{ range $paginator.Pages }}
                 {{ partial "widgets/post-card.html" . }}
             {{ end }}
-            <ul class="t_center not_twitch">
-                {{ if $paginator.HasPrev }}
-                <li class="page-numbers">
-                    <a href="{{ $paginator.Prev.URL }}" class="page-numbers prev">{{ i18n "pagination_previous" }}</a>
-                </li>
+        </ul>
+
+        <ul class="t_center not_twitch">
+            {{ if $paginator.HasPrev }}
+            <li class="page-numbers">
+                <a title='{{ i18n "Page_page" }} {{ $paginator.Prev.PageNumber }}' class="page-numbers prev" href="{{ $paginator.Prev.URL }}">
+                    {{ i18n "pagination_previous" }}
+                </a>
+            </li>
+            {{ end }}
+            {{ range $paginator.Pagers }}
+            <li class="page-numbers">
+                {{ if eq .PageNumber $paginator.PageNumber }}
+                    <span title='{{ i18n "Page_page" }} {{ .PageNumber }}' class="page-numbers active">{{ .PageNumber }}</span>
+                {{ else }}
+                    <a title='{{ i18n "Page_page" }} {{ .PageNumber }}' href="{{ .URL }}" class="page-numbers">{{ .PageNumber }}</a>
                 {{ end }}
-                {{ range $paginator.Pagers }}
-                <li class="page-numbers">
-                    {{ if eq .PageNumber $paginator.PageNumber }}
-                        <span class="page-numbers active">{{ .PageNumber }}</span>
-                    {{ else }}
-                        <a href="{{ .URL }}" class="page-numbers">{{ .PageNumber }}</a>
-                    {{ end }}
-                </li>
-                {{ end }}
-                {{ if $paginator.HasNext }}
-                <li class="page-numbers">
-                    <a href="{{ $paginator.Next.URL }}" class="page-numbers next">{{ i18n "pagination_next" }}</a>
-                </li>
-                {{ end }}
-            </ul>
-        {{ end }}
-    </ul>
+            </li>
+            {{ end }}
+            {{ if $paginator.HasNext }}
+            <li class="page-numbers">
+                <a title='{{ i18n "Page_page" }} {{ $paginator.Next.PageNumber }}' href="{{ $paginator.Next.URL }}" class="page-numbers next">
+                    {{ i18n "pagination_next" }}
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </section>
 
     {{ partial "widgets/aside.html" . }}
-</section>
 {{ end }}
