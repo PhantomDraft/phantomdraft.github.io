@@ -23,8 +23,7 @@
     {{ end }}
 
     <ul id="content">
-        {{ partial "widgets/last-posts.html" (dict "section" "articles" "num" 3 "partial" "widgets/post-card.html") }}
-        {{ partial "widgets/last-posts.html" (dict "section" "library" "num" 3 "partial" "widgets/post-card.html") }}
+        {{ partial "widgets/last-posts.html" (dict "section" "articles" "num" 3 "partial" "widgets/post-card.html" "Site" .Site) }}
 
         {{ $all := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
         {{ $sorted := sort $all "Lastmod" "desc" }}

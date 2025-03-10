@@ -1,13 +1,13 @@
-{{- $section := .Get "section" | default "articles" -}}
-{{- $num := .Get "num" | default "3" | int -}}
-{{- $itemPartial := .Get "partial" | default "" -}}
-{{- $all := $.Site.RegularPages -}}
-{{- $langPages := where $all ".Lang" $.Site.Language.Lang -}}
+{{- $site := .Site -}}
+{{- $section := .section | default "articles" -}}
+{{- $num := .num | default 3 | int -}}
+{{- $itemPartial := .partial | default "" -}}
+{{- $all := $site.RegularPages -}}
+{{- $langPages := where $all ".Lang" $site.Language.Lang -}}
 {{- $visible := where $langPages ".Params.hideFromCenter" "!=" true -}}
 {{- $filtered := where $visible "Section" $section -}}
 {{- $sorted := sort $filtered "Lastmod" "desc" -}}
 {{- $list := first $num $sorted -}}
-
 {{- if eq $itemPartial "" -}}
 {{- range $list }}
   <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
