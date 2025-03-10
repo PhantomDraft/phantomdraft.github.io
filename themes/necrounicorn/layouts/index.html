@@ -24,13 +24,12 @@
 
     <ul id="content">
         {{ partial "widgets/last-posts.html" (dict "section" "articles" "num" 3 "partial" "widgets/post-card.html" "Site" .Site) }}
+        {{ partial "widgets/last-posts.html" (dict "section" "articles" "num" 3 "library" "widgets/post-card.html" "Site" .Site) }}
 
         {{ $all := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
         {{ $sorted := sort $all "Lastmod" "desc" }}
-
         {{ $exclArt := first 3 (where $sorted "Section" "articles") }}
         {{ $exclLib := first 3 (where $sorted "Section" "library") }}
-
         {{ $exclIDs := slice }}
         {{ range $exclArt }}
             {{ $exclIDs = $exclIDs | append .RelPermalink }}
@@ -38,16 +37,13 @@
         {{ range $exclLib }}
             {{ $exclIDs = $exclIDs | append .RelPermalink }}
         {{ end }}
-
         {{ $final := slice }}
         {{ range $sorted }}
             {{ if not (in $exclIDs .RelPermalink) }}
                 {{ $final = $final | append . }}
             {{ end }}
         {{ end }}
-
         {{ $paginator := .Paginate $final .Site.Params.page.maxHomePostCount }}
-
         {{ range $paginator.Pages }}
             {{ partial "widgets/post-card.html" . }}
         {{ end }}
