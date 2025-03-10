@@ -23,16 +23,15 @@
     {{ end }}
 
     <ul id="content">
-        
-        {{/* Собираем все страницы (не скрытые), сортируем по Lastmod (убывание) */}}
+        {{ partial "widgets/last-posts.html" (dict "section" "articles" "num" 3 "partial" "widgets/post-card.html") }}
+        {{ partial "widgets/last-posts.html" (dict "section" "library" "num" 3 "partial" "widgets/post-card.html") }}
+
         {{ $all := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
         {{ $sorted := sort $all "Lastmod" "desc" }}
 
-        {{/* Находим 3 последних из "articles" и 3 из "library" */}}
         {{ $exclArt := first 3 (where $sorted "Section" "articles") }}
         {{ $exclLib := first 3 (where $sorted "Section" "library") }}
 
-        {{/* Собираем их RelPermalink, чтобы исключить */}}
         {{ $exclIDs := slice }}
         {{ range $exclArt }}
             {{ $exclIDs = $exclIDs | append .RelPermalink }}
@@ -41,7 +40,6 @@
             {{ $exclIDs = $exclIDs | append .RelPermalink }}
         {{ end }}
 
-        {{/* Формируем итоговый список, исключая найденные 6 штук */}}
         {{ $final := slice }}
         {{ range $sorted }}
             {{ if not (in $exclIDs .RelPermalink) }}
@@ -49,7 +47,6 @@
             {{ end }}
         {{ end }}
 
-        {{/* Пагинация по «очищенному» списку */}}
         {{ $paginator := .Paginate $final .Site.Params.page.maxHomePostCount }}
 
         {{ range $paginator.Pages }}
