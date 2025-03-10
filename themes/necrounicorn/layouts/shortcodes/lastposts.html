@@ -1,23 +1,26 @@
 {{- $section := .Get "section" | default "articles" -}}
-{{- $num := .Get "num" | default "3" -}}
+{{- $num := .Get "num" | default "3" | int -}}
 {{- $itemPartial := .Get "partial" | default "" -}}
+
 {{- $all := $.Site.RegularPages -}}
 {{- $langPages := where $all ".Lang" $.Site.Language.Lang -}}
 {{- $visible := where $langPages ".Params.hideFromCenter" "!=" true -}}
 {{- $filtered := where $visible "Section" $section -}}
+
+{{- /* Если "can't sort string" – вместо sort $filtered "Lastmod" "desc"
+     можно: $filtered = $filtered.ByLastmod.Reverse */ -}}
 {{- $sorted := sort $filtered "Lastmod" "desc" -}}
-{{- $count := (atoi $num) -}}
-{{- $list := first $count $sorted -}}
-{{ if eq $itemPartial "" }}
+
+{{- $list := first $num $sorted -}}
+
+{{- if eq $itemPartial "" -}}
 <ul>
 {{- range $list }}
-  <li>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </li>
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 {{- end }}
 </ul>
-{{ else }}
+{{- else -}}
 {{- range $list }}
   {{ partial $itemPartial . }}
 {{- end }}
-{{ end -}}
+{{- end -}}
