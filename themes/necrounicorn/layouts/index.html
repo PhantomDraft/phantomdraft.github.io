@@ -39,7 +39,12 @@
     {{ end }}
 
     <ul id="content">
-        {{ $all := where .Site.Pages ".Params.hideFromCenter" "!=" true }}
+{{ $all := slice }}
+{{ range .Site.Pages }}
+    {{ if not (.Params.hideFromCenter | default false) }}
+        {{ $all = $all | append . }}
+    {{ end }}
+{{ end }}
 
         {{ $exclArt := first 3 (where $all "Section" "articles") }}
         {{ $exclLib := first 3 (where $all "Section" "lib") }}
