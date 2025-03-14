@@ -1,7 +1,7 @@
 {{ define "main" }}
 <section class="castration fl p_relative modules">
     {{/* Вывод обложки и боковых блоков только на главной странице первой пагинации */}}
-    {{ if and .IsHome (or (not .Paginator) (eq .Paginator.PageNumber 1)) }}
+    {{ if .IsHome }}
         <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
             <div class="fl p_relative">
                 <a title="Instagram" rel="nofollow" href="https://www.instagram.com/horrorprom" target="_blank">
