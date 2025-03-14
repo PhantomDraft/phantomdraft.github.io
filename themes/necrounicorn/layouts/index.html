@@ -38,31 +38,27 @@
         </div>
     {{ end }}
 
-<ul id="content">
-    {{ $all := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
+    <ul id="content">
+        {{ $all := where .Site.Pages ".Params.hideFromCenter" "!=" true }}
 
-    {{/* Готовим списки страниц на исключение */}}
-    {{ $exclArt := first 3 (where $all "Section" "articles") }}
-    {{ $exclLib := first 3 (where $all "Section" "lib") }}
+        {{ $exclArt := first 3 (where $all "Section" "articles") }}
+        {{ $exclLib := first 3 (where $all "Section" "lib") }}
 
-    {{/* Создаём список для исключения страниц */}}
-    {{ $exclIDs := slice }}
-    {{ range $exclArt }}
-        {{ $exclIDs = $exclIDs | append .RelPermalink }}
-    {{ end }}
-    {{ range $exclLib }}
-        {{ $exclIDs = $exclIDs | append .RelPermalink }}
-    {{ end }}
+        {{ $exclIDs := slice }}
+        {{ range $exclArt }}
+            {{ $exclIDs = $exclIDs | append .RelPermalink }}
+        {{ end }}
+        {{ range $exclLib }}
+            {{ $exclIDs = $exclIDs | append .RelPermalink }}
+        {{ end }}
 
-    {{/* Фильтруем страницы, исключая найденные выше */}}
-    {{ $final := where $all "RelPermalink" "not in" $exclIDs }}
+        {{ $final := where $all "RelPermalink" "not in" $exclIDs }}
 
-    {{/* Выводим итоговый список страниц через пагинацию */}}
-    {{ $paginator := .Paginate $final }}
-    {{ range $paginator.Pages }}
-        {{ partial "widgets/post-card.html" . }}
-    {{ end }}
-</ul>
+        {{ $paginator := .Paginate $final }}
+        {{ range $paginator.Pages }}
+            {{ partial "widgets/post-card.html" . }}
+        {{ end }}
+    </ul>
 
     <ul class="t_center not_twitch">
         {{ if $paginator.HasPrev }}
