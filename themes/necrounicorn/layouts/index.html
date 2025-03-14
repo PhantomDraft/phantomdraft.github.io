@@ -39,9 +39,7 @@
     {{ end }}
 
     <ul id="content">
-        {{ if (not .Params.hideFromCenter)) }}
-        {{ $all := .Site.RegularPages }}
-        {{ end }}
+        {{ $all := cond (not .Params.hideFromCenter) .Site.RegularPages (slice) }}
         {{ $sorted := sort $all "Lastmod" "desc" }}
         {{ $exclArt := first 3 (where $sorted "Section" "articles") }}
         {{ $exclLib := first 3 (where $sorted "Section" "library") }}
