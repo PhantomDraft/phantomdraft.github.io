@@ -39,9 +39,16 @@
     {{ end }}
 
     <ul id="content">
-        {{/* Фильтруем все страницы: исключаем те, где hideFromCenter равен true */}}
-        {{ $all := where .Site.RegularPages ".Params.hideFromCenter" "ne" true }}
-        {{ $sorted := sort $all "Lastmod" "desc" }}
+        {{/* Ручная фильтрация: отбираем только те страницы, где hideFromCenter не установлен или равен false */}}
+        {{ $filtered := slice }}
+        {{ range .Site.RegularPages }}
+            {{ if not .Params.hideFromCenter }}
+                {{ $filtered = $filtered | append . }}
+            {{ end }}
+        {{ end }}
+
+        {{/* Сортируем отфильтрованный срез по дате изменения (Lastmod) по убыванию */}}
+        {{ $sorted := sort $filtered "Lastmod" "desc" }}
 
         {{/* Выбираем для исключения первые 3 материала для разделов articles и library */}}
         {{ $exclArt := first 3 (where $sorted "Section" "articles") }}
@@ -54,7 +61,7 @@
             {{ $exclIDs = $exclIDs | append .RelPermalink }}
         {{ end }}
 
-        {{/* Формируем финальный срез, исключая страницы с найденными RelPermalink */}}
+        {{/* Формируем финальный срез, исключая страницы, идентификаторы которых содержатся в $exclIDs */}}
         {{ $final := slice }}
         {{ range $sorted }}
             {{ if not (in $exclIDs .RelPermalink) }}
