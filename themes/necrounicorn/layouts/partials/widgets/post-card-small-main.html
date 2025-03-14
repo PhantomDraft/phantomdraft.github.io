@@ -1,3 +1,4 @@
+{{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromArchives)) }}
 <li>
     <a href="{{ .RelPermalink }}">
         {{ with .Params.image }}
@@ -8,3 +9,4 @@
         {{ .Title }}
     </a>
 </li>
+{{ end }}
