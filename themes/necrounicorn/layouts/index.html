@@ -39,7 +39,11 @@
     {{ end }}
 
     <ul id="content">
-        {{ $all := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
+{{ $all := .Site.RegularPages }}
+{{ if .Params.hideFromCenter }}
+  {{ $all = slice }}
+{{ end }}
+
         {{ $sorted := sort $all "Lastmod" "desc" }}
         {{ $exclArt := first 3 (where $sorted "Section" "articles") }}
         {{ $exclLib := first 3 (where $sorted "Section" "library") }}
