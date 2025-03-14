@@ -74,23 +74,23 @@ paginate = 9
         # icon from FontAwesome in front of single entry
         pre = ""
     [[menus.main]]
-        name = "Notes"
-        url = "/posts/"
-        weight = 2
-        pre = ""
-    [[menus.main]]
         name = "Articles"
         url = "/articles/"
-        weight = 3
+        weight = 2
         pre = ""
     [[menus.main]]
         name = "Stories"
         url = "/stories/"
-        weight = 4
+        weight = 3
         pre = ""
     [[menus.main]]
         name = "Library"
         url = "/library/"
+        weight = 4
+        pre = ""
+    [[menus.main]]
+        name = "Notes"
+        url = "/posts/"
         weight = 5
         pre = ""
     [[menus.main]]
@@ -141,23 +141,23 @@ paginate = 9
                 weight = 1
                 pre = ""
             [[languages.uk.menus.main]]
-                name = "Нотатки"
-                url = "/uk/posts/"
-                weight = 2
-                pre = ""
-            [[languages.uk.menus.main]]
                 name = "Статті"
                 url = "/uk/articles/"
-                weight = 3
+                weight = 2
                 pre = ""
             [[languages.uk.menus.main]]
                 name = "Історії"
                 url = "/uk/stories/"
-                weight = 4
+                weight = 3
                 pre = ""
             [[languages.uk.menus.main]]
                 name = "Бібліотека"
                 url = "/uk/library/"
+                weight = 4
+                pre = ""
+            [[languages.uk.menus.main]]
+                name = "Нотатки"
+                url = "/uk/posts/"
                 weight = 5
                 pre = ""
             [[languages.uk.menus.main]]
@@ -191,23 +191,23 @@ paginate = 9
                 weight = 1
                 pre = ""
             [[languages.ru.menus.main]]
-                name = "Заметки"
-                url = "/ru/posts/"
-                weight = 2
-                pre = ""
-            [[languages.ru.menus.main]]
                 name = "Статьи"
                 url = "/ru/articles/"
-                weight = 3
+                weight = 2
                 pre = ""
             [[languages.ru.menus.main]]
                 name = "Истории"
                 url = "/ru/stories/"
-                weight = 4
+                weight = 3
                 pre = ""
             [[languages.ru.menus.main]]
                 name = "Библиотека"
                 url = "/ru/library/"
+                weight = 4
+                pre = ""
+            [[languages.ru.menus.main]]
+                name = "Заметки"
+                url = "/ru/posts/"
                 weight = 5
                 pre = ""
             [[languages.ru.menus.main]]
