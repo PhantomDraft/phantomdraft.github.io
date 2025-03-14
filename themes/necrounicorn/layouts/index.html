@@ -1,7 +1,6 @@
 {{ define "main" }}
 <section class="castration fl p_relative modules">
     {{ if and .IsHome (not .Paginator.HasPrev) }}
-        <!-- Блок с обложкой и сайдбаром -->
         <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
             <div class="fl p_relative">
                 <a title="Instagram" rel="nofollow" href="https://www.instagram.com/horrorprom" target="_blank">
@@ -40,22 +39,13 @@
     {{ end }}
 
     <ul id="content">
-        {{/* Шаг 1. Формируем срез $all, исключая страницы с hideFromCenter */}}
-        {{ $all := slice }}
-        {{ range .Site.RegularPages }}
-            {{ if not .Params.hideFromCenter }}
-                {{ $all = $all | append . }}
-            {{ end }}
-        {{ end }}
-
-        {{/* Шаг 2. Сортируем отфильтрованные страницы по Lastmod (desc) */}}
+        {{/* 1. Используем весь набор страниц */}}
+        {{ $all := .Site.RegularPages }}
+        {{/* 2. Сортируем по Lastmod в порядке убывания */}}
         {{ $sorted := sort $all "Lastmod" "desc" }}
-
-        {{/* Шаг 3. Для разделов articles и library выбираем первые 3 материала */}}
+        {{/* 3. Выбираем для исключения первые 3 материала для разделов articles и library */}}
         {{ $exclArt := first 3 (where $sorted "Section" "articles") }}
         {{ $exclLib := first 3 (where $sorted "Section" "library") }}
-
-        {{/* Собираем RelPermalink исключаемых страниц в срез $exclIDs */}}
         {{ $exclIDs := slice }}
         {{ range $exclArt }}
             {{ $exclIDs = $exclIDs | append .RelPermalink }}
@@ -63,16 +53,9 @@
         {{ range $exclLib }}
             {{ $exclIDs = $exclIDs | append .RelPermalink }}
         {{ end }}
-
-        {{/* Шаг 4. Формируем финальный срез, исключая страницы с RelPermalink из $exclIDs */}}
-        {{ $final := slice }}
-        {{ range $sorted }}
-            {{ if not (in $exclIDs .RelPermalink) }}
-                {{ $final = $final | append . }}
-            {{ end }}
-        {{ end }}
-
-        {{/* Шаг 5. Пагинация и вывод карточек постов */}}
+        {{/* 4. Формируем финальный список, исключая страницы, чей RelPermalink содержится в $exclIDs */}}
+        {{ $final := where $sorted "RelPermalink" "not in" $exclIDs }}
+        {{/* 5. Пагинация и вывод карточек постов */}}
         {{ $paginator := .Paginate $final .Site.Params.page.maxHomePostCount }}
         {{ range $paginator.Pages }}
             {{ partial "widgets/post-card.html" . }}
