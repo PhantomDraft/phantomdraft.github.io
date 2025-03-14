@@ -2,9 +2,9 @@
     <a href="{{ .RelPermalink }}">
         {{ with .Params.image }}
         <div class="castration" style="vertical-align: middle; border-radius: 50%; margin-right: 3px; height: 30px; width: 30px; display: inline-block;">
-            <img style="width: 100%; min-height: 100%;" src="{{ . }}" loading="lazy" alt="{{ $title }}" />
+            <img style="width: 100%; min-height: 100%;" src="{{ . }}" loading="lazy" alt="{{ .Title }}" />
         </div>
         {{ end }}
-        {{ $title }}
+        {{ .Title }}
     </a>
 </li>
