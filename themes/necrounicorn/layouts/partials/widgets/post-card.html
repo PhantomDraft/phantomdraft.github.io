@@ -6,6 +6,7 @@
 {{- else -}}
     {{- $title = "" -}}
 {{- end -}}
+{{- if or (and (not .Params.hideFromCenter) (not .Params.hideFromArchives)) -}}
 <li class="castration base_width p_relative grid">
     <div class="castration fl p_relative text">
         <a class="castration fl p_relative grid_cover" href="{{ .Permalink }}">
@@ -102,3 +103,4 @@
         </ul>
     </div>
 </li>
+{{- end -}}

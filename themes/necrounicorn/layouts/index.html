@@ -39,28 +39,27 @@
     {{ end }}
 
     <ul id="content">
-{{ $allPages := where .Site.RegularPages ".Params.hideFromCenter" "ne" true }}
-{{ $sorted := sort $allPages "Lastmod" "desc" }}
-{{ $exclArt := first 3 (where $sorted "Section" "articles") }}
-{{ $exclLib := first 3 (where $sorted "Section" "library") }}
-{{ $exclIDs := slice }}
-{{ range $exclArt }}
-  {{ $exclIDs = $exclIDs | append .RelPermalink }}
-{{ end }}
-{{ range $exclLib }}
-  {{ $exclIDs = $exclIDs | append .RelPermalink }}
-{{ end }}
-{{ $final := slice }}
-{{ range $sorted }}
-  {{ if not (in $exclIDs .RelPermalink) }}
-    {{ $final = $final | append . }}
-  {{ end }}
-{{ end }}
-{{ $paginator := .Paginate $final .Site.Params.page.maxHomePostCount }}
-{{ range $paginator.Pages }}
-  {{ partial "widgets/post-card.html" . }}
-{{ end }}
-
+        {{ $all := .Site.RegularPages }}
+        {{ $sorted := sort $all "Lastmod" "desc" }}
+        {{ $exclArt := first 3 (where $sorted "Section" "articles") }}
+        {{ $exclLib := first 3 (where $sorted "Section" "library") }}
+        {{ $exclIDs := slice }}
+        {{ range $exclArt }}
+            {{ $exclIDs = $exclIDs | append .RelPermalink }}
+        {{ end }}
+        {{ range $exclLib }}
+            {{ $exclIDs = $exclIDs | append .RelPermalink }}
+        {{ end }}
+        {{ $final := slice }}
+        {{ range $sorted }}
+            {{ if not (in $exclIDs .RelPermalink) }}
+                {{ $final = $final | append . }}
+            {{ end }}
+        {{ end }}
+        {{ $paginator := .Paginate $final .Site.Params.page.maxHomePostCount }}
+        {{ range $paginator.Pages }}
+            {{ partial "widgets/post-card.html" . }}
+        {{ end }}
     </ul>
 
     <ul class="t_center not_twitch">
