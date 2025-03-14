@@ -23,13 +23,17 @@
         <div class="content-block">
             <div class="content-list-col">
                 <h2>{{ i18n "sidebar_stories" (len .Site.RegularPages) }}</h2>
-                {{ partial "widgets/last-posts.html" (dict "section" "articles" "num" 3 "partial" "widgets/post-card-small.html" "Site" .Site) }}
+                <ul>
+                    {{ partial "widgets/last-posts.html" (dict "section" "articles" "num" 3 "partial" "widgets/post-card-small-main.html" "Site" .Site) }}
+                </ul>
             </div>
         </div>
         <div class="content-block">
             <div class="content-list-col">
                 <h2>{{ i18n "sidebar_library" (len .Site.RegularPages) }}</h2>
-                {{ partial "widgets/last-posts.html" (dict "section" "library" "num" 3 "partial" "widgets/post-card-small.html" "Site" .Site) }}
+                <ul>
+                    {{ partial "widgets/last-posts.html" (dict "section" "library" "num" 3 "partial" "widgets/post-card-small-main.html" "Site" .Site) }}
+                </ul>
             </div>
         </div>
     {{ end }}
