@@ -39,7 +39,7 @@
     {{ end }}
 
     <ul id="content">
-        {{ $all := .Site.RegularPages }}
+        {{ $all := where .Site.RegularPages ".Params.hideFromCenter" "!=" "true" }}
         {{ $sorted := sort $all "Lastmod" "desc" }}
         {{ $exclArt := first 3 (where $sorted "Section" "articles") }}
         {{ $exclLib := first 3 (where $sorted "Section" "library") }}
@@ -58,9 +58,7 @@
         {{ end }}
         {{ $paginator := .Paginate $final .Site.Params.page.maxHomePostCount }}
         {{ range $paginator.Pages }}
-            {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromArchives)) }}
-                {{ partial "widgets/post-card.html" . }}
-            {{ end }}
+            {{ partial "widgets/post-card.html" . }}
         {{ end }}
     </ul>
 
