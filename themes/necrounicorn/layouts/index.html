@@ -39,7 +39,9 @@
     {{ end }}
 
     <ul id="content">
-        {{ $all := where .Site.RegularPages ".Params.hideFromCenter" "ne" true }}
+        {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromArchives)) }}
+        {{ $all := .Site.RegularPages }}
+        {{ end }}
         {{ $sorted := sort $all "Lastmod" "desc" }}
         {{ $exclArt := first 3 (where $sorted "Section" "articles") }}
         {{ $exclLib := first 3 (where $sorted "Section" "library") }}
