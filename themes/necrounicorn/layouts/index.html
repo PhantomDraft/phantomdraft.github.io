@@ -39,7 +39,7 @@
     {{ end }}
 
     <ul id="content">
-        {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromArchives)) }}
+        {{ if (not .Params.hideFromCenter)) }}
         {{ $all := .Site.RegularPages }}
         {{ end }}
         {{ $sorted := sort $all "Lastmod" "desc" }}
