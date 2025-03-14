@@ -58,7 +58,9 @@
         {{ end }}
         {{ $paginator := .Paginate $final .Site.Params.page.maxHomePostCount }}
         {{ range $paginator.Pages }}
-            {{ partial "widgets/post-card.html" . }}
+            {{ if or (and (not .Params.hideFromCenter) (not .Params.hideFromArchives)) }}
+                {{ partial "widgets/post-card.html" . }}
+            {{ end }}
         {{ end }}
     </ul>
 
