@@ -39,15 +39,10 @@
     {{ end }}
 
     <ul id="content">
-{{ $sorted := sort .Site.RegularPages "Lastmod" "desc" }}
-{{ $filtered := slice }}
-{{ range $sorted }}
-  {{ if not .Params.hideFromCenter }}
-    {{ $filtered = $filtered | append . }}
-  {{ end }}
-{{ end }}
-{{ $exclArt := first 3 (where $filtered "Section" "articles") }}
-{{ $exclLib := first 3 (where $filtered "Section" "library") }}
+{{ $allPages := where .Site.RegularPages ".Params.hideFromCenter" "ne" true }}
+{{ $sorted := sort $allPages "Lastmod" "desc" }}
+{{ $exclArt := first 3 (where $sorted "Section" "articles") }}
+{{ $exclLib := first 3 (where $sorted "Section" "library") }}
 {{ $exclIDs := slice }}
 {{ range $exclArt }}
   {{ $exclIDs = $exclIDs | append .RelPermalink }}
@@ -56,7 +51,7 @@
   {{ $exclIDs = $exclIDs | append .RelPermalink }}
 {{ end }}
 {{ $final := slice }}
-{{ range $filtered }}
+{{ range $sorted }}
   {{ if not (in $exclIDs .RelPermalink) }}
     {{ $final = $final | append . }}
   {{ end }}
