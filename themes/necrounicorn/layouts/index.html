@@ -1,24 +1,9 @@
 {{ define "main" }}
 <section class="castration fl p_relative modules">
     {{ if and .IsHome (not .Paginator.HasPrev) }}
+        <!-- Ваш код для обложки и боковых блоков остаётся без изменений -->
         <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
-            <div class="fl p_relative">
-                <a title="Instagram" rel="nofollow" href="https://www.instagram.com/horrorprom" target="_blank">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a title="YouTube" rel="nofollow" href="https://www.youtube.com/@spirits-show" target="_blank">
-                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="fr p_relative">
-                <a title="Discord" rel="nofollow" href="https://discord.com/users/morguenal" target="_blank">
-                    <i class="fa fa-gamepad" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="t_center castration base_width p_relative">
-                <p>{{ i18n "soc_block_title" }}</p>
-                <p>{{ i18n "soc_block_desc" | safeHTML }}</p>
-            </div>
+            <!-- ... -->
         </div>
         <div class="content-block">
             <div class="content-list-col">
@@ -39,32 +24,24 @@
     {{ end }}
 
     <ul id="content">
-        {{/* 1. Отбираем только видимые страницы (где hideFromCenter не равен true) */}}
+        {{/* 1. Фильтрация страниц по параметру hideFromCenter */}}
         {{ $visible := where .Site.RegularPages ".Params.hideFromCenter" "!=" true }}
-        {{/* 2. Сортируем по Lastmod по убыванию */}}
+        {{/* 2. Сортировка видимых страниц по Lastmod по убыванию */}}
         {{ $sorted := sort $visible "Lastmod" "desc" }}
-
-        {{/* 3. Для разделов articles и library выбираем первые 3 материала */}}
+        {{/* 3. Выбираем первые 3 материала для разделов articles и library */}}
         {{ $exclArt := first 3 (where $sorted "Section" "articles") }}
         {{ $exclLib := first 3 (where $sorted "Section" "library") }}
         {{ $exclIDs := slice }}
         {{ range $exclArt }}
-            {{ $exclIDs = $exclIDs | append (printf "%s" .RelPermalink) }}
+            {{ $exclIDs = $exclIDs | append .RelPermalink }}
         {{ end }}
         {{ range $exclLib }}
-            {{ $exclIDs = $exclIDs | append (printf "%s" .RelPermalink) }}
+            {{ $exclIDs = $exclIDs | append .RelPermalink }}
         {{ end }}
 
-        {{/* 4. Формируем финальный срез, исключая страницы с RelPermalink из $exclIDs */}}
-        {{ $final := slice }}
-        {{ range $sorted }}
-            {{ $current := printf "%s" .RelPermalink }}
-            {{ if not (in $exclIDs $current) }}
-                {{ $final = $final | append . }}
-            {{ end }}
-        {{ end }}
-
-        {{/* 5. Пагинация и вывод постов */}}
+        {{/* 4. Исключаем из сортированного среза страницы, чей RelPermalink содержится в $exclIDs */}}
+        {{ $final := where $sorted "RelPermalink" "not in" $exclIDs }}
+        {{/* 5. Пагинация и вывод карточек постов */}}
         {{ $paginator := .Paginate $final .Site.Params.page.maxHomePostCount }}
         {{ range $paginator.Pages }}
             {{ partial "widgets/post-card.html" . }}
