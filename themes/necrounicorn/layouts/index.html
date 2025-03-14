@@ -39,12 +39,11 @@
     {{ end }}
 
     <ul id="content">
-{{ $all := .Site.RegularPages }}
-{{ if .Params.hideFromCenter }}
-  {{ $all = slice }}
-{{ end }}
-
+        {{/* Фильтруем все страницы: исключаем те, где hideFromCenter равен true */}}
+        {{ $all := where .Site.RegularPages ".Params.hideFromCenter" "ne" true }}
         {{ $sorted := sort $all "Lastmod" "desc" }}
+
+        {{/* Выбираем для исключения первые 3 материала для разделов articles и library */}}
         {{ $exclArt := first 3 (where $sorted "Section" "articles") }}
         {{ $exclLib := first 3 (where $sorted "Section" "library") }}
         {{ $exclIDs := slice }}
@@ -54,12 +53,15 @@
         {{ range $exclLib }}
             {{ $exclIDs = $exclIDs | append .RelPermalink }}
         {{ end }}
+
+        {{/* Формируем финальный срез, исключая страницы с найденными RelPermalink */}}
         {{ $final := slice }}
         {{ range $sorted }}
             {{ if not (in $exclIDs .RelPermalink) }}
                 {{ $final = $final | append . }}
             {{ end }}
         {{ end }}
+
         {{ $paginator := .Paginate $final .Site.Params.page.maxHomePostCount }}
         {{ range $paginator.Pages }}
             {{ partial "widgets/post-card.html" . }}
