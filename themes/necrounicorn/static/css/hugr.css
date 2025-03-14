@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: Morginal (Morguenal)
 	Author URI: https://github.com/PhantomDraft
-	Version: 26.00
+	Version: 26.01
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -963,6 +963,14 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
 .content-list h4 {
     margin: 20px 0 0 20px;
     font-size: 90%;
+}
+
+.content-list > h2, .content-list > h3 {
+    display: block;
+    width: 50px;
+    margin: -20px auto 0;
+    background: #fff;
+    text-align: center;
 }
 
 /* Контент
