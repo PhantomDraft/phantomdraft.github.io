@@ -39,7 +39,7 @@
     {{ end }}
 
     <ul id="content">
-        {{ $all := .Site.RegularPages }}
+        {{ $all := where .Site.RegularPages ".Params.hideFromCenter" "ne" true }}
         {{ $sorted := sort $all "Lastmod" "desc" }}
         {{ $exclArt := first 3 (where $sorted "Section" "articles") }}
         {{ $exclLib := first 3 (where $sorted "Section" "library") }}
