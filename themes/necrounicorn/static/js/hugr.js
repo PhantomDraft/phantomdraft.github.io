@@ -169,13 +169,13 @@ class CookieNotice {
       this.acceptButton.addEventListener("click", this.accept.bind(this));
     }
   }
-  
+
   init() {
     if (localStorage.getItem(this.storageKey)) {
       if (this.notification) this.notification.classList.add("hide");
     }
   }
-  
+
   accept(e) {
     e.preventDefault();
     localStorage.setItem(this.storageKey, "true");
@@ -196,7 +196,7 @@ class TableOfContents {
     this.article = document.querySelector(articleSelector);
     this.levels = [];
   }
-  
+
   init() {
     if (!this.tocContainer || !this.article) return;
     const headers = this.article.querySelectorAll("h1, h2, h3, h4, h5, h6");
@@ -304,20 +304,20 @@ class NavigationManager {
     this.slidenav = document.querySelector(options.slidenavSelector);
     this.tableOfContentsButton = document.querySelector(options.tableOfContentsButtonSelector);
     this.tableOfContents = document.querySelector(options.tableOfContentsSelector);
-    
+
     // Initialize the sidebar panel
     this.sidePanel = new SidePanel({
       wrapSelector: options.wrapSelector,
       overlaySelector: options.overlaySelector,
       slidenavSelector: options.slidenavSelector
     });
-    
+
     this.mobileNavLinks = document.querySelectorAll(options.mobileNavLinkSelector);
     this.tocLinks = document.querySelectorAll(options.tocLinkSelector);
     
     this.bindEvents();
   }
-  
+
   bindEvents() {
     if (this.menuBtn) {
       this.menuBtn.addEventListener('click', (e) => {
@@ -351,7 +351,7 @@ class NavigationManager {
         this.menu.removeAttribute('style');
       }
     });
-    
+
     // Smooth scroll handler for mobile navigation and TOC links
     const smoothScrollHandler = (e) => {
       e.preventDefault();
@@ -371,7 +371,7 @@ class NavigationManager {
     this.tocLinks.forEach(link => {
       link.addEventListener('click', smoothScrollHandler);
     });
-    
+
     // Toggle the display of the table of contents when its button is clicked
     if (this.tableOfContentsButton && this.tableOfContents) {
       this.tableOfContentsButton.addEventListener('click', () => {
@@ -413,21 +413,21 @@ class SearchManager {
         this.showSearch();
       });
     });
-    
+
     // Attach click event to each element with class "search-zz"
     this.searchZzButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         this.hideSearch();
       });
     });
-    
+
     // Attach click event to each search button to trigger search.
     this.searchButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         this.search();
       });
     });
-    
+
     // Attach click event to each clear button (class "sclear")
     this.clearButtons.forEach(btn => {
       btn.addEventListener('click', () => {
@@ -438,7 +438,7 @@ class SearchManager {
         this.clearPosts();
       });
     });
-    
+
     // Attach keydown event to trigger search on "Enter" key press.
     document.addEventListener('keydown', (ev) => {
       if (ev.key === 'Enter') {
@@ -446,7 +446,7 @@ class SearchManager {
       }
     });
   }
-  
+
   // Displays the search interface: show the search root, animate marginTop to 10px and focus the input.
   showSearch() {
     this.searchRoots.forEach(root => {
@@ -460,7 +460,7 @@ class SearchManager {
       input.focus();
     });
   }
-  
+
   // Hides the search interface: resets marginTop, hides the search root, clears the input, and clears search results.
   hideSearch() {
     this.searchContainers.forEach(searchElem => {
@@ -474,7 +474,7 @@ class SearchManager {
     }
     this.clearPosts();
   }
-  
+
   // Performs the search and displays results.
   search() {
     this.clearPosts();
@@ -497,7 +497,7 @@ class SearchManager {
       }
       return;
     }
-    
+
     // Loop through posts; assume arrPosts is an array and postsCount is defined globally.
     for (let i = 0; i < postsCount; i++) {
       const post = arrPosts[i];
@@ -533,7 +533,7 @@ class SearchManager {
       sbodyElem.style.display = 'block';
     }
   }
-  
+
   // Adds a search result item to the results container.
   addItem(title, pubDate, mark, link) {
     const pHtml = `<a href="${link}" target="_blank" class="post">
@@ -551,7 +551,7 @@ class SearchManager {
       sbody1Elem.appendChild(div);
     }
   }
-  
+
   // Clears previous search results.
   clearPosts() {
     const sbodyElem = document.querySelector('.sbody');
@@ -560,7 +560,7 @@ class SearchManager {
     }
     document.querySelectorAll('.post-root, .at-bottom').forEach(el => el.remove());
   }
-  
+
   // Extracts a snippet from the post plain text where the search key is found.
   toMark(oPlain, key) {
     const kIdx = oPlain.indexOf(key);
@@ -581,7 +581,7 @@ class SearchManager {
       return oPlain === '' ? '...' : oPlain;
     }
   }
-  
+
   // Extracts a snippet from the post title where the search key is found.
   toMarkTitle(oPlain, key) {
     const kIdx = oPlain.indexOf(key);
@@ -601,7 +601,7 @@ class SearchManager {
     }
     return oPlain;
   }
-  
+
   // Highlights the occurrences of the search key in the text by wrapping them in a span element.
   hlHtml(oMark, key) {
     let keyIdx = oMark.indexOf(key);
