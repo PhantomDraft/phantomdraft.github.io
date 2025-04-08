@@ -1,4 +1,4 @@
-/**
+/***
  * Utility functions for fading out and fading in an element
  * (used to mimic fadeOut/fadeIn effects with approximately 200ms duration).
  */
