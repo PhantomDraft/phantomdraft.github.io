@@ -1,7 +1,7 @@
 <header id="hat" class="default">
   <div class="center p_relative in_the_middle">
     <div class="castration base_height fr p_relative search-form">
-      <!-- search form здесь без изменений -->
+      <!-- search form -->
     </div>
     <nav class="base_height fl p_relative menu-main">
       <ul>
@@ -28,40 +28,43 @@
 </header>
 
 <div class="p_fixed slidenav">
-  <!-- INSIDE panel -->
-  <div class="inside-content">
-    <div class="content-block">
-      <div class="content-list-col">
-        {{ if and .Site.IsMultiLingual (not .Site.Params.Site.OnlyOneLang) }}
-          {{ partial "widgets/selectLang.html" . }}
-        {{ end }}
-      </div>
-    </div>
-    <div class="content-block">
-      <div class="content-list-col">
-        <ul>
-          {{ range .Site.Menus.social }}
-            <li><a href="{{ .URL }}" target="_blank">
-              {{ .Pre }} {{ .Name }}
-            </a></li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- PROJECTS panel -->
-    <div class="projects-content" style="display:none;">
-      <h3 class="t_center">
-        {{ if eq .Site.Language.Lang "uk" }}Проєкти{{ else if eq .Site.Language.Lang "ru" }}Проекты{{ else }}Projects{{ end }}
-      </h3>
-      <ul>
-        {{ range .Site.Menus.main }}
-          {{ if eq .Identifier "projects" }}
-            {{ range .Children }}
-              <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    <div class="inside-content">
+        <div class="content-block">
+            <div class="content-list-col">
+            {{ if and .Site.IsMultiLingual (not .Site.Params.Site.OnlyOneLang) }}
+                {{ partial "widgets/selectLang.html" . }}
             {{ end }}
-          {{ end }}
-        {{ end }}
-      </ul>
+            </div>
+        </div>
+        <div class="content-block">
+            <div class="content-list-col">
+                <ul>
+                {{ range .Site.Menus.social }}
+                    <li><a href="{{ .URL }}" target="_blank">
+                        {{ .Pre }} {{ .Name }}
+                    </a></li>
+                {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-content" style="display:none;">
+        <h3 class="t_center">
+            {{ if eq .Site.Language.Lang "uk" }}Проєкти{{ else if eq .Site.Language.Lang "ru" }}Проекты{{ else }}Projects{{ end }}
+        </h3>
+        <div class="content-block">
+            <div class="content-list-col">
+                <ul>
+                {{ range .Site.Menus.main }}
+                    {{ if eq .Identifier "projects" }}
+                        {{ range .Children }}
+                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+                </ul>
+            </div>
+        </div>
     </div>
 </div>

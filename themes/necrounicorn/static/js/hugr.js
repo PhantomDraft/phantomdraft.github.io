@@ -1,24 +1,4 @@
 /**
- * Utility functions for fading out and fading in an element
- * (used to mimic fadeOut/fadeIn effects with approximately 200ms duration).
- */
-function fadeOut(element, duration = 200, callback) {
-  element.style.transition = `opacity ${duration}ms`;
-  element.style.opacity = 0;
-  setTimeout(() => {
-    if (callback) callback();
-  }, duration);
-}
-
-function fadeIn(element, duration = 200, callback) {
-  element.style.transition = `opacity ${duration}ms`;
-  element.style.opacity = 1;
-  setTimeout(() => {
-    if (callback) callback();
-  }, duration);
-}
-
-/**
  * HeaderManager class
  * - Toggles header classes ("default" ↔ "fixed") based on scroll position.
  * - Adjusts the opacity of mobile navigation.
@@ -36,11 +16,11 @@ class HeaderManager {
       this.header.classList.add('default');
     }
   }
-  
+
   init() {
     window.addEventListener('scroll', this.onScroll.bind(this));
   }
-  
+
   onScroll() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const opacity = scrollTop > 500 ? 1 : scrollTop * 2 / 1000;
@@ -50,18 +30,12 @@ class HeaderManager {
     // Toggle header state based on scroll position
     if (scrollTop > this.originalPos + this.headerHeight && 
         this.header.classList.contains('default')) {
-      fadeOut(this.header, 200, () => {
-        this.header.classList.remove('default');
-        this.header.classList.add('fixed');
-        fadeIn(this.header, 200);
-      });
+      this.header.classList.remove('default');
+      this.header.classList.add('fixed');
     } else if (scrollTop <= this.originalPos && 
                this.header.classList.contains('fixed')) {
-      fadeOut(this.header, 200, () => {
-        this.header.classList.remove('fixed');
-        this.header.classList.add('default');
-        fadeIn(this.header, 200);
-      });
+      this.header.classList.remove('fixed');
+      this.header.classList.add('default');
     }
   }
 }
@@ -84,7 +58,7 @@ class Tabs {
       this.activateTab(this.tabTitles[0]);
     }
   }
-  
+
   bindEvents() {
     this.tabTitles.forEach(tab => {
       tab.addEventListener('click', (e) => {
@@ -93,7 +67,7 @@ class Tabs {
       });
     });
   }
-  
+
   activateTab(tab) {
     // Remove active state from all tabs and hide all content sections
     this.tabTitles.forEach(t => t.classList.remove('active'));
@@ -122,7 +96,7 @@ class LanguageManager {
     this.currentURL = window.location.href;
     this.siteLangKey = "siteLang";
   }
-  
+
   init() {
     let storedLang = localStorage.getItem(this.siteLangKey);
     if (!storedLang) {
@@ -135,7 +109,7 @@ class LanguageManager {
       }
       storedLang = localStorage.getItem(this.siteLangKey);
     }
-    
+
     if (!this.currentURL.includes("/ru/") && !this.currentURL.includes("/uk/")) {
       if (storedLang === "ru") {
         const elems = document.querySelectorAll(".lang-up a[href$='/uk/']");
@@ -169,13 +143,13 @@ class CookieNotice {
       this.acceptButton.addEventListener("click", this.accept.bind(this));
     }
   }
-  
+
   init() {
     if (localStorage.getItem(this.storageKey)) {
       if (this.notification) this.notification.classList.add("hide");
     }
   }
-  
+
   accept(e) {
     e.preventDefault();
     localStorage.setItem(this.storageKey, "true");
@@ -196,7 +170,7 @@ class TableOfContents {
     this.article = document.querySelector(articleSelector);
     this.levels = [];
   }
-  
+
   init() {
     if (!this.tocContainer || !this.article) return;
     const headers = this.article.querySelectorAll("h1, h2, h3, h4, h5, h6");
@@ -211,7 +185,7 @@ class TableOfContents {
       anchor.setAttribute("href", `#${id}`);
       anchor.textContent = text;
       listItem.appendChild(anchor);
-      
+
       if (level === 2) {
         this.tocContainer.appendChild(listItem);
         this.levels = [{ level: 2, listItem: listItem }];
@@ -245,14 +219,14 @@ class TableOfContents {
  */
 class SidePanel {
   static currentOpenPanel = null;
-  
+
   constructor(options) {
     // options: { wrapSelector, overlaySelector, slidenavSelector }
     this.wrap = document.querySelector(options.wrapSelector);
     this.overlay = document.querySelector(options.overlaySelector);
     this.slidenav = document.querySelector(options.slidenavSelector);
   }
-  
+
   open() {
     if (SidePanel.currentOpenPanel && SidePanel.currentOpenPanel !== this) {
       SidePanel.currentOpenPanel.close();
@@ -262,7 +236,7 @@ class SidePanel {
     if (this.slidenav) this.slidenav.classList.add("active");
     SidePanel.currentOpenPanel = this;
   }
-  
+
   close() {
     if (this.wrap) this.wrap.classList.remove("navOut");
     if (this.overlay) this.overlay.classList.remove("show");
@@ -271,7 +245,7 @@ class SidePanel {
       SidePanel.currentOpenPanel = null;
     }
   }
-  
+
   toggle() {
     if (this.wrap && this.wrap.classList.contains("navOut")) {
       this.close();
@@ -304,23 +278,21 @@ class NavigationManager {
     this.slidenav = document.querySelector(options.slidenavSelector);
     this.tableOfContentsButton = document.querySelector(options.tableOfContentsButtonSelector);
     this.tableOfContents = document.querySelector(options.tableOfContentsSelector);
-    
     // Initialize the sidebar panel
     this.sidePanel = new SidePanel({
       wrapSelector: options.wrapSelector,
       overlaySelector: options.overlaySelector,
       slidenavSelector: options.slidenavSelector
     });
-    
+
     this.mobileNavLinks = document.querySelectorAll(options.mobileNavLinkSelector);
     this.tocLinks = document.querySelectorAll(options.tocLinkSelector);
-    
-    this.bindEvents();
 
     window.navigationManagerInstance = navigationManager;
 
+    this.bindEvents();
   }
-  
+
   bindEvents() {
     if (this.menuBtn) {
       this.menuBtn.addEventListener('click', (e) => {
@@ -354,7 +326,7 @@ class NavigationManager {
         this.menu.removeAttribute('style');
       }
     });
-    
+
     // Smooth scroll handler for mobile navigation and TOC links
     const smoothScrollHandler = (e) => {
       e.preventDefault();
@@ -367,14 +339,14 @@ class NavigationManager {
         }
       }
     };
-    
+
     this.mobileNavLinks.forEach(link => {
       link.addEventListener('click', smoothScrollHandler);
     });
     this.tocLinks.forEach(link => {
       link.addEventListener('click', smoothScrollHandler);
     });
-    
+
     // Toggle the display of the table of contents when its button is clicked
     if (this.tableOfContentsButton && this.tableOfContents) {
       this.tableOfContentsButton.addEventListener('click', () => {
@@ -408,7 +380,7 @@ class SearchManager {
     this.searchKeyInput = document.getElementById('search-key');
     // Assumes existence of global variables: arrPosts, postsCount, search_nothing, search_found, search_results, search_result, search_theEnd.
   }
-  
+
   init() {
     // Attach click event to each element with class "search-form"
     this.searchForms.forEach(form => {
@@ -416,21 +388,21 @@ class SearchManager {
         this.showSearch();
       });
     });
-    
+
     // Attach click event to each element with class "search-zz"
     this.searchZzButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         this.hideSearch();
       });
     });
-    
+
     // Attach click event to each search button to trigger search.
     this.searchButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         this.search();
       });
     });
-    
+
     // Attach click event to each clear button (class "sclear")
     this.clearButtons.forEach(btn => {
       btn.addEventListener('click', () => {
@@ -441,7 +413,7 @@ class SearchManager {
         this.clearPosts();
       });
     });
-    
+
     // Attach keydown event to trigger search on "Enter" key press.
     document.addEventListener('keydown', (ev) => {
       if (ev.key === 'Enter') {
@@ -449,7 +421,7 @@ class SearchManager {
       }
     });
   }
-  
+
   // Displays the search interface: show the search root, animate marginTop to 10px and focus the input.
   showSearch() {
     this.searchRoots.forEach(root => {
@@ -463,7 +435,7 @@ class SearchManager {
       input.focus();
     });
   }
-  
+
   // Hides the search interface: resets marginTop, hides the search root, clears the input, and clears search results.
   hideSearch() {
     this.searchContainers.forEach(searchElem => {
@@ -477,7 +449,7 @@ class SearchManager {
     }
     this.clearPosts();
   }
-  
+
   // Performs the search and displays results.
   search() {
     this.clearPosts();
@@ -486,7 +458,7 @@ class SearchManager {
     const sbodyElem = document.querySelector('.sbody');
     const stipElem = document.querySelector('.stip');
     const sbody1Elem = document.querySelector('.sbody-1');
-    
+
     if (!key) {
       if (stipElem) {
         stipElem.innerHTML = search_nothing + '，';
@@ -500,7 +472,7 @@ class SearchManager {
       }
       return;
     }
-    
+
     // Loop through posts; assume arrPosts is an array and postsCount is defined globally.
     for (let i = 0; i < postsCount; i++) {
       const post = arrPosts[i];
@@ -510,7 +482,7 @@ class SearchManager {
       const link = post.link;
       const keyIndex = postPlain.indexOf(key);
       const keyIndexTitle = postTitle.indexOf(key);
-      
+
       if (keyIndex >= 0 || keyIndexTitle >= 0) {
         const postMark = this.toMark(postPlain, key);
         const postMark2 = this.toMarkTitle(postTitle, key);
@@ -520,7 +492,7 @@ class SearchManager {
         }
       }
     }
-    
+
     if (stipElem) {
       if (postCount === 0) {
         stipElem.innerHTML = search_nothing + '，';
@@ -531,12 +503,12 @@ class SearchManager {
         }
       }
     }
-    
+
     if (sbodyElem) {
       sbodyElem.style.display = 'block';
     }
   }
-  
+
   // Adds a search result item to the results container.
   addItem(title, pubDate, mark, link) {
     const pHtml = `<a href="${link}" target="_blank" class="post">
@@ -554,7 +526,7 @@ class SearchManager {
       sbody1Elem.appendChild(div);
     }
   }
-  
+
   // Clears previous search results.
   clearPosts() {
     const sbodyElem = document.querySelector('.sbody');
@@ -563,7 +535,7 @@ class SearchManager {
     }
     document.querySelectorAll('.post-root, .at-bottom').forEach(el => el.remove());
   }
-  
+
   // Extracts a snippet from the post plain text where the search key is found.
   toMark(oPlain, key) {
     const kIdx = oPlain.indexOf(key);
@@ -584,7 +556,7 @@ class SearchManager {
       return oPlain === '' ? '...' : oPlain;
     }
   }
-  
+
   // Extracts a snippet from the post title where the search key is found.
   toMarkTitle(oPlain, key) {
     const kIdx = oPlain.indexOf(key);
@@ -604,7 +576,7 @@ class SearchManager {
     }
     return oPlain;
   }
-  
+
   // Highlights the occurrences of the search key in the text by wrapping them in a span element.
   hlHtml(oMark, key) {
     let keyIdx = oMark.indexOf(key);
@@ -630,22 +602,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // Header management
   const headerManager = new HeaderManager('#hat', '.mobile_navigation');
   headerManager.init();
-  
+
   // Tabs initialization
   const tabs = new Tabs('.update');
-  
+
   // Language management
   const languageManager = new LanguageManager();
   languageManager.init();
-  
+
   // Cookie/privacy notice
   const cookieNotice = new CookieNotice('#privacy-notification', '#accept-privacy');
   cookieNotice.init();
-  
+
   // Build the table of contents
   const toc = new TableOfContents('#table_of_list', 'article');
   toc.init();
-  
+
   // Navigation management (sidebar panel, smooth scrolling, menu toggling)
   const navigationManager = new NavigationManager({
     menuSelector: '.in_the_middle',
@@ -659,7 +631,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileNavLinkSelector: '.mobile_navigation a',
     tocLinkSelector: '#table_of_contents a'
   });
-  
+
   // Search functionality initialization
   const searchManager = new SearchManager();
   searchManager.init();
@@ -681,8 +653,7 @@ document.querySelectorAll('.menuBtn[data-panel]').forEach(btn => {
       inside.style.display = 'block';
     }
     // use SidePanel API to show overlay & slide panel
-    const navMgr = window.navigationManagerInstance; 
-    // if вы сохраняете инстанс NavigationManager в глобальную переменную:
+    const navMgr = window.navigationManagerInstance;
     if (navMgr && navMgr.sidePanel) {
       navMgr.sidePanel.open();
     } else {
