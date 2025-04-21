@@ -621,7 +621,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Navigation management (sidebar panel, smooth scrolling, menu toggling)
   const navigationManager = new NavigationManager({
     menuSelector: '.in_the_middle',
-    menuBtnSelector: '.menuBtn',
+    menuBtnSelector: '.menuBtn[data-panel]',
     overlaySelector: '#overlay',
     pullSelector: '#pull',
     wrapSelector: '.wrap',
