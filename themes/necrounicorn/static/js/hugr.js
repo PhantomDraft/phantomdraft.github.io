@@ -290,7 +290,7 @@ class NavigationManager {
 
     this.bindEvents();
 
-    window.navigationManagerInstance = navigationManager;
+    window.navigationManagerInstance = this;
   }
 
   bindEvents() {
