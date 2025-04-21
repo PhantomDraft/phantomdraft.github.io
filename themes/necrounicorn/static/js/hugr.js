@@ -316,6 +316,9 @@ class NavigationManager {
     this.tocLinks = document.querySelectorAll(options.tocLinkSelector);
     
     this.bindEvents();
+
+    window.navigationManagerInstance = navigationManager;
+
   }
   
   bindEvents() {
@@ -660,4 +663,33 @@ document.addEventListener('DOMContentLoaded', () => {
   // Search functionality initialization
   const searchManager = new SearchManager();
   searchManager.init();
+});
+
+// Panel toggler: opens only one panel at a time
+document.querySelectorAll('.menuBtn[data-panel]').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    const panelName = btn.getAttribute('data-panel'); // "projects"
+    const inside = document.querySelector('.inside-content');
+    const projects = document.querySelector('.projects-content');
+    // close other panel
+    if (panelName === 'projects') {
+      inside.style.display = 'none';
+      projects.style.display = 'block';
+    } else {
+      projects.style.display = 'none';
+      inside.style.display = 'block';
+    }
+    // use SidePanel API to show overlay & slide panel
+    const navMgr = window.navigationManagerInstance; 
+    // if вы сохраняете инстанс NavigationManager в глобальную переменную:
+    if (navMgr && navMgr.sidePanel) {
+      navMgr.sidePanel.open();
+    } else {
+      // fallback: add classes manually
+      document.querySelector('.wrap').classList.add('navOut');
+      document.querySelector('#overlay').classList.add('show');
+      document.querySelector('.slidenav').classList.add('active');
+    }
+  });
 });
