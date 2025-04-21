@@ -42,11 +42,6 @@ hideFromSitemap: false
 				Русский
 			</a></li>
 		</ul>
-		<p>Notif Hubs:</p>
-		<p>
-			<a title="Facebook" rel="nofollow" href="https://www.facebook.com/phantomdrafts/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-			<a title="Telegram" rel="nofollow" href="https://t.me/phantomdrafts" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-		</p>
 	</div>
 </div>
 
