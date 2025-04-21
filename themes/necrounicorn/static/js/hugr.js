@@ -635,9 +635,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Search functionality initialization
   const searchManager = new SearchManager();
   searchManager.init();
-});
 
-document.addEventListener('DOMContentLoaded', () => {
   // Panel toggler: opens only one panel at a time
   document.querySelectorAll('.menuBtn[data-panel]').forEach(btn => {
     btn.addEventListener('click', e => {
