@@ -3,7 +3,7 @@
     Theme URI: localhost
     Author: Morginal (Morguenal)
     Author URI: https://github.com/PhantomDraft
-    Version: 26.02
+    Version: 26.03
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -270,7 +270,7 @@ option {
 #disqus_thread {padding: 10px 10px 0;}
 .skiptranslate {display: none !important;}
 
-.wrap, .fixed, .slidenav {
+.wrap, .slidenav {
     -webkit-transition: 0.30s;
     -moz-transition: 0.30s;
     -o-transition: 0.30s;
