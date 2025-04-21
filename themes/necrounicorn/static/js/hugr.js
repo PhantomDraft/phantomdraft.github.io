@@ -288,9 +288,9 @@ class NavigationManager {
     this.mobileNavLinks = document.querySelectorAll(options.mobileNavLinkSelector);
     this.tocLinks = document.querySelectorAll(options.tocLinkSelector);
 
-    window.navigationManagerInstance = navigationManager;
-
     this.bindEvents();
+
+    window.navigationManagerInstance = navigationManager;
   }
 
   bindEvents() {
