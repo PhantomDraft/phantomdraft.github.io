@@ -641,26 +641,14 @@ document.addEventListener('DOMContentLoaded', () => {
 document.querySelectorAll('.menuBtn[data-panel]').forEach(btn => {
   btn.addEventListener('click', e => {
     e.preventDefault();
-    const panelName = btn.getAttribute('data-panel'); // "projects"
-    const inside = document.querySelector('.inside-content');
-    const projects = document.querySelector('.projects-content');
-    // close other panel
-    if (panelName === 'projects') {
-      inside.style.display = 'none';
-      projects.style.display = 'block';
-    } else {
-      projects.style.display = 'none';
-      inside.style.display = 'block';
-    }
-    // use SidePanel API to show overlay & slide panel
-    const navMgr = window.navigationManagerInstance;
-    if (navMgr && navMgr.sidePanel) {
-      navMgr.sidePanel.open();
-    } else {
-      // fallback: add classes manually
-      document.querySelector('.wrap').classList.add('navOut');
-      document.querySelector('#overlay').classList.add('show');
-      document.querySelector('.slidenav').classList.add('active');
-    }
+    const panelName = btn.getAttribute('data-panel');           // e.g. "inside" или "projects"
+    const allContents = document.querySelectorAll('[data-panel-content]');
+    // Скрыть все панели
+    allContents.forEach(el => el.style.display = 'none');
+    // Показать ту, чей data-panel-content совпадает с panelName
+    const target = document.querySelector(`[data-panel-content="${panelName}"]`);
+    if (target) target.style.display = 'block';
+    // Открыть сайд‑панель
+    window.navigationManagerInstance.sidePanel.open();
   });
 });
