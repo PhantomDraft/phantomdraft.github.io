@@ -641,14 +641,14 @@ document.addEventListener('DOMContentLoaded', () => {
 document.querySelectorAll('.menuBtn[data-panel]').forEach(btn => {
   btn.addEventListener('click', e => {
     e.preventDefault();
-    const panelName = btn.getAttribute('data-panel');           // e.g. "inside" или "projects"
+    const panelName = btn.getAttribute('data-panel'); // e.g. "inside" or "projects"
     const allContents = document.querySelectorAll('[data-panel-content]');
-    // Скрыть все панели
+    // Hide all panels
     allContents.forEach(el => el.style.display = 'none');
-    // Показать ту, чей data-panel-content совпадает с panelName
+    // Show the panel whose data-panel-content matches panelName
     const target = document.querySelector(`[data-panel-content="${panelName}"]`);
     if (target) target.style.display = 'block';
-    // Открыть сайд‑панель
+    // Open the side panel
     window.navigationManagerInstance.sidePanel.open();
   });
 });
