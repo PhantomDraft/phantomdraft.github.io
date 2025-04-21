@@ -50,17 +50,18 @@
     </div>
   </div>
   <!-- PROJECTS panel -->
-<div class="projects-content" style="display:none;">
-  <h3 class="t_center">
-    {{ if eq .Site.Language.Lang "uk" }}Проєкти{{ else if eq .Site.Language.Lang "ru" }}Проекты{{ else }}Projects{{ end }}
-  </h3>
-  <ul>
-    {{ range .Site.Menus.main }}
-      {{ if eq .Identifier "projects" }}
-        {{ range .Children }}
-          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    <div class="projects-content" style="display:none;">
+      <h3 class="t_center">
+        {{ if eq .Site.Language.Lang "uk" }}Проєкти{{ else if eq .Site.Language.Lang "ru" }}Проекты{{ else }}Projects{{ end }}
+      </h3>
+      <ul>
+        {{ range .Site.Menus.main }}
+          {{ if eq .Identifier "projects" }}
+            {{ range .Children }}
+              <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+          {{ end }}
         {{ end }}
-      {{ end }}
-    {{ end }}
-  </ul>
+      </ul>
+    </div>
 </div>
