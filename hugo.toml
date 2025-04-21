@@ -86,8 +86,8 @@ paginate = 9
         pre = ""
     [[menus.main]]
         parent = "projects"
-        name = "Project Alpha"
-        url = "/stories/project‑alpha/"
+        name = "Stories"
+        url = "/stories/"
         weight = 1
         pre = ""
     [[menus.main]]
