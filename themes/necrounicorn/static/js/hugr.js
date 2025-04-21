@@ -637,18 +637,20 @@ document.addEventListener('DOMContentLoaded', () => {
   searchManager.init();
 });
 
-// Panel toggler: opens only one panel at a time
-document.querySelectorAll('.menuBtn[data-panel]').forEach(btn => {
-  btn.addEventListener('click', e => {
-    e.preventDefault();
-    const panelName = btn.getAttribute('data-panel'); // e.g. "inside" or "projects"
-    const allContents = document.querySelectorAll('[data-panel-content]');
-    // Hide all panels
-    allContents.forEach(el => el.style.display = 'none');
-    // Show the panel whose data-panel-content matches panelName
-    const target = document.querySelector(`[data-panel-content="${panelName}"]`);
-    if (target) target.style.display = 'block';
-    // Open the side panel
-    window.navigationManagerInstance.sidePanel.open();
+document.addEventListener('DOMContentLoaded', () => {
+  // Panel toggler: opens only one panel at a time
+  document.querySelectorAll('.menuBtn[data-panel]').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      const panelName = btn.getAttribute('data-panel'); // "inside" или "projects"
+      const allContents = document.querySelectorAll('[data-panel-content]');
+      // Hide all panels
+      allContents.forEach(el => el.style.display = 'none');
+      // Show matching panel
+      const target = document.querySelector(`[data-panel-content="${panelName}"]`);
+      if (target) target.style.display = 'block';
+      // Open the side panel
+      window.navigationManagerInstance.sidePanel.open();
+    });
   });
 });
