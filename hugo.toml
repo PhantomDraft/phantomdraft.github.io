@@ -257,14 +257,14 @@ paginate = 9
 [author]
     # profile photo
     [author.image]
-        en = "/img/morginal.webp"
-        uk = "/img/morginal.webp"
-        ru = "/img/morginal.webp"
+        en = "/img/pan_kanon.webp"
+        uk = "/img/pan_kanon.webp"
+        ru = "/img/pan_kanon.webp"
     # profile name
     [author.name]
-        en = "Morginal"
-        uk = "Morginal"
-        ru = "Morguenal"
+        en = "Pan Kanon"
+        uk = "Pan Kanon"
+        ru = "Pan Kanon"
     # profile link
     [author.link]
         en = ""
