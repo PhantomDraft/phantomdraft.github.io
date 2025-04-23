@@ -624,17 +624,21 @@ class CoverManager {
 
   init() {
     if (this.defaultUrl) {
+      this.container.style.backgroundBlendMode = 'saturation';
       this._setBackground(this.defaultUrl);
     }
+
     this.links.forEach(link => {
       const img = link.querySelector('img');
       if (!img) return;
 
       link.addEventListener('mouseenter', () => {
-        this._setBackground(img.src);
+        this.container.style.backgroundBlendMode = 'normal';
+        this.container.style.backgroundImage = `url(${img.src})`;
       });
 
       link.addEventListener('mouseleave', () => {
+        this.container.style.backgroundBlendMode = 'saturation';
         this._setBackground(this.defaultUrl);
       });
     });
