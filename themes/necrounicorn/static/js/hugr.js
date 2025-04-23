@@ -698,8 +698,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize dynamic cover background
   const coverManager = new CoverManager(
-    '.dynamic_cover',             // теперь новый класс
-    '.content-list-col ul li a'   // ссылки списка
+    '.dynamic_cover', 
+    '.content-list-col ul li a'
   );
   coverManager.init();
 });
