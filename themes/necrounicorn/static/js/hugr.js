@@ -602,11 +602,17 @@ class SearchManager {
  * - On mouseleave, reverts to the initial cover.
  */
 class CoverManager {
-  constructor(containerSelector, linkSelector) {
-    this.container = document.querySelector(containerSelector);
-    this.links     = this.container
-                       ? this.container.querySelectorAll(linkSelector)
-                       : [];
+  constructor(containerOrSelector, linkSelector) {
+
+    this.container = containerOrSelector instanceof Element
+      ? containerOrSelector
+      : document.querySelector(containerOrSelector);
+
+    this.links = this.container
+      ? (typeof linkSelector === 'string'
+         ? this.container.querySelectorAll(linkSelector)
+         : linkSelector)
+      : [];
     if (!this.container || this.links.length === 0) return;
 
     const computed = window.getComputedStyle(this.container);
@@ -697,9 +703,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Initialize dynamic cover background
-  const coverManager = new CoverManager(
-    '.dynamic_cover', 
-    '.content-list-col ul li a'
-  );
-  coverManager.init();
+  document.querySelectorAll('.dynamic_cover').forEach(container => {
+    const manager = new CoverManager(
+      container, 
+      '.content-list-col ul li a'
+    );
+    manager.init();
+  });
 });
