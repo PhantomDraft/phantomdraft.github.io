@@ -1,9 +1,9 @@
 /*
     Theme Name: Necrounicorn
     Theme URI: localhost
-    Author: Morginal (Morguenal)
+    Author: Pan Kanon (Sam)
     Author URI: https://github.com/PhantomDraft
-    Version: 26.03
+    Version: 26.04
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -711,10 +711,9 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
     font-family: 'Philosopher', sans-serif; font-size: 110%;
 }
 .atcScreen a {color: #1e1e20;}
-.atcCentral a {
-    margin-right: 5px; margin-left: 5px;
-    color: #eee;
-}
+.atcCentral p > a, 
+.atcCentral div > a {margin-right: 5px; margin-left: 5px;}
+.atcCentral a {color: #eee;}
 .atcScreen, .atcCentral, .atcScreen img {border-radius: 6px;}
 .atcScreen:not(.atcPostHorror) img {max-width: 100%;}
 .atcPostHorror img {max-width: 70%}
