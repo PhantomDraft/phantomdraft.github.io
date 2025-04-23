@@ -604,21 +604,33 @@ class SearchManager {
 class CoverManager {
   constructor(containerSelector, linkSelector) {
     this.container = document.querySelector(containerSelector);
-    this.links     = document.querySelectorAll(linkSelector);
+    this.links     = this.container
+                       ? this.container.querySelectorAll(linkSelector)
+                       : [];
     if (!this.container || this.links.length === 0) return;
-    const style = window.getComputedStyle(this.container);
-    this.gradient   = style.backgroundImage.split('),')[0] + ')';
+
+    const computed = window.getComputedStyle(this.container);
+    this.gradient  = computed.backgroundImage;
+
     const firstImg  = this.links[0].querySelector('img');
     this.defaultUrl = firstImg ? firstImg.src : '';
   }
 
   init() {
-    if (this.defaultUrl) this._setBackground(this.defaultUrl);
+    if (this.defaultUrl) {
+      this._setBackground(this.defaultUrl);
+    }
     this.links.forEach(link => {
       const img = link.querySelector('img');
       if (!img) return;
-      link.addEventListener('mouseenter', () => this._setBackground(img.src));
-      link.addEventListener('mouseleave', () => this._setBackground(this.defaultUrl));
+
+      link.addEventListener('mouseenter', () => {
+        this._setBackground(img.src);
+      });
+
+      link.addEventListener('mouseleave', () => {
+        this._setBackground(this.defaultUrl);
+      });
     });
   }
 
