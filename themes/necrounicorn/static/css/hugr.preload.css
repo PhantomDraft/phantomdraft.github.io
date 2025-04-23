@@ -3,7 +3,7 @@
     Theme URI: localhost
     Author: Pan Kanon
     Author URI: https://github.com/PhantomDraft
-    Version: 26.06
+    Version: 26.07
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -564,11 +564,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
 .grid_quote {padding: 10px 15px;}
 .grid_quote .ChildrenOfTheDark em {font-family: 'Philosopher', sans-serif;}
 
-.content-block {
-    margin: 20px;
-    border-radius: 6px;
-    border: 1px solid #111;
-}
+.content-block {margin: 20px;}
 .content-list-col {
     padding: 10px;
     font-family: 'Philosopher', sans-serif; font-size: 110%;
@@ -614,9 +610,14 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
     display: block;
     width: 50px;
     margin: -20px auto 0;
-    background: #fff;
     text-align: center;
 }
+
+.slidenav .content-block {
+    border-radius: 6px;
+    border: 1px solid #111;
+}
+.slidenav .content-list-col > h3 {background: ##f9f9f9;}
 
 .aAva {
     position: sticky;
