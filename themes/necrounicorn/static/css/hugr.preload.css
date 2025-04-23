@@ -1,9 +1,9 @@
 /*
     Theme Name: Necrounicorn
     Theme URI: localhost
-    Author: Pan Kanon (Sam)
+    Author: Pan Kanon
     Author URI: https://github.com/PhantomDraft
-    Version: 26.04
+    Version: 26.05
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -574,6 +574,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
     font-family: 'Philosopher', sans-serif; font-size: 110%;
 }
 .content-list-col, .content-list-col ul li a {color: #1e1e20;}
+.atcCentral .content-list-col, .atcCentral .content-list-col ul li a {color: #eee;}
 .content-list-col > ul {margin-top: 5px;}
 .content-list-col li ul {padding: 10px 30px;}
 .content-list-col li:not(:last-child) ul {
