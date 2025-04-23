@@ -604,43 +604,26 @@ class SearchManager {
 class CoverManager {
   constructor(containerSelector, linkSelector) {
     this.container = document.querySelector(containerSelector);
-    this.links = document.querySelectorAll(linkSelector);
+    this.links     = document.querySelectorAll(linkSelector);
     if (!this.container || this.links.length === 0) return;
-
-    // Extract gradient part of existing style
     const style = window.getComputedStyle(this.container);
-    this.gradient = style.backgroundImage.split('),')[0] + ')';
-
-    // Determine initial cover URL from first link’s img
-    const firstImg = this.links[0].querySelector('img');
+    this.gradient   = style.backgroundImage.split('),')[0] + ')';
+    const firstImg  = this.links[0].querySelector('img');
     this.defaultUrl = firstImg ? firstImg.src : '';
   }
 
   init() {
-    // Apply initial background
-    if (this.defaultUrl) {
-      this._setBackground(this.defaultUrl);
-    }
-
-    // Bind hover events
+    if (this.defaultUrl) this._setBackground(this.defaultUrl);
     this.links.forEach(link => {
       const img = link.querySelector('img');
       if (!img) return;
-
-      link.addEventListener('mouseenter', () => {
-        this._setBackground(img.src);
-      });
-
-      link.addEventListener('mouseleave', () => {
-        this._setBackground(this.defaultUrl);
-      });
+      link.addEventListener('mouseenter', () => this._setBackground(img.src));
+      link.addEventListener('mouseleave', () => this._setBackground(this.defaultUrl));
     });
   }
 
   _setBackground(imageUrl) {
-    // Comment: update background-image to gradient + url
-    this.container.style.backgroundImage = 
-      `${this.gradient}, url(${imageUrl})`;
+    this.container.style.backgroundImage = `${this.gradient}, url(${imageUrl})`;
   }
 }
 
@@ -703,8 +686,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize dynamic cover background
   const coverManager = new CoverManager(
-    '.castration.cover',       // селектор контейнера
-    '.content-list-col ul li a'// селектор ссылок на посты
+    '.dynamic_cover',             // теперь новый класс
+    '.content-list-col ul li a'   // ссылки списка
   );
   coverManager.init();
 });
