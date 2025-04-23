@@ -3,7 +3,7 @@
     Theme URI: localhost
     Author: Pan Kanon
     Author URI: https://github.com/PhantomDraft
-    Version: 26.05
+    Version: 26.06
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -599,6 +599,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
     transition: margin-left 0.2s ease-in-out;
 }
 .content-list-col li ul li a:hover {color: #111;}
+.atcCentral .content-list-col ul li a:hover {color: #b22;}
 .content-list {padding: 10px 0 10px 0;}
 .content-list h3, .content-list h4 {font-weight: bold; letter-spacing: 0;}
 .content-list h3 {
