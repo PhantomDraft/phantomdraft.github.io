@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: PD
 	Author URI: https://github.com/PhantomDraft
-	Version: 26.07
+	Version: 26.08
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -947,7 +947,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
     transition: margin-left 0.2s ease-in-out;
 }
 .content-list-col li ul li a:hover {color: #111;}
-.atcCentral .content-list-col ul li a:hover {color: #b22;}
+.atcCentral .content-list-col ul li a:hover {color: #eee; text-decoration: underline;}
 
 .content-list {padding: 10px 0 10px 0;}
 
@@ -1099,7 +1099,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
     position: absolute;
     width: 100%; height: 100%;
     top: 0; left: 0;
-    background: rgba(0, 0, 0, .44);
+    background: rgba(0, 0, 0, .55);
     content: '';
 }
 
