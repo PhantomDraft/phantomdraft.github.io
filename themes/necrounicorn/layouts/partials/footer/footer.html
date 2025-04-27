@@ -20,8 +20,11 @@
                         Theme created by <strong>{{ index .Site.Author.name (.Site.Language.Lang | default "en") }}</strong>
                     {{ end }} | 
                 {{ end }}
+                {{ if .Site.Params.footer.themeInfo }}
+                    Powered by <a href="https://gohugo.io/">Hugo</a>
+                {{ end }}
                 {{ if .Site.Params.footer.about_us }}
-                    <a href='{{ i18n "about_us.uri" }}'>
+                    <br> <a href='{{ i18n "about_us.uri" }}'>
                         {{ i18n "about_us.name" }}
                     </a> | 
                 {{ end }}
@@ -29,9 +32,6 @@
                     <a href='{{ i18n "privacy_policy.uri" }}'>
                         {{ i18n "privacy_policy.name" }}
                     </a>
-                {{ end }}
-                {{ if .Site.Params.footer.themeInfo }}
-                    <br> Powered by <a href="https://gohugo.io/">Hugo</a>
                 {{ end }}
             </p>
         {{ end }}
