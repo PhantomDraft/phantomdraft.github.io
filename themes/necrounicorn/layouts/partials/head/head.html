@@ -8,10 +8,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- title -->
     <title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}{{ if eq .Site.Language.Lang "uk" }} на українському{{ end }}{{ if eq .Site.Language.Lang "ru" }} на русском{{ end }}</title>
-
     <!-- meta description -->
     <meta name="description" content="{{- if .Description -}}
         {{ .Description }}
@@ -28,10 +26,8 @@
     {{- else -}}
         Notes on Horror and Punk Subgenre Projects (including Biopunk, Mythpunk, Dreampunk, and others)
     {{- end -}}">
-
     <!-- Open Graph и Twitter -->
     {{- partial "open-graph.html" . }}
-
     {{ if eq .Type "tags" }}
     <!-- noindex else tags -->
     <meta name="robots" content="noindex, follow">
@@ -55,10 +51,8 @@
     {{ end }}
     {{ end }}
     {{ end }}
-
     <!-- rel icon -->
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-
     {{ if and (eq .Section "stories") .IsPage }}
     {{- partial "head/stories/journal-init.html" . -}}
     {{ else if and (eq .Section "stories") .IsSection }}
