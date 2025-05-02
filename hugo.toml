@@ -79,21 +79,21 @@ paginate = 9
         weight = 2
         pre = ""
     [[menus.main]]
+        name = "Library"
+        url = "/library/"
+        weight = 3
+        pre = ""
+    [[menus.main]]
         name = "Projects"
         url = "/page/about-us/"
         identifier = "projects"
-        weight = 3
+        weight = 4
         pre = ""
     [[menus.main]]
         parent = "projects"
         name = "Stories"
         url = "/stories/"
         weight = 1
-        pre = ""
-    [[menus.main]]
-        name = "Library"
-        url = "/library/"
-        weight = 4
         pre = ""
     [[menus.main]]
         name = "Notes"
@@ -153,21 +153,21 @@ paginate = 9
                 weight = 2
                 pre = ""
             [[languages.uk.menus.main]]
+                name = "Бібліотека"
+                url = "/uk/library/"
+                weight = 3
+                pre = ""
+            [[languages.uk.menus.main]]
                 name = "Проєкти"
                 url = "/uk/page/about-us/"
                 identifier = "projects"
-                weight = 3
+                weight = 4
                 pre = ""
             [[languages.uk.menus.main]]
                 parent = "projects"
                 name = "Історії"
                 url = "/uk/stories/"
                 weight = 1
-                pre = ""
-            [[languages.uk.menus.main]]
-                name = "Бібліотека"
-                url = "/uk/library/"
-                weight = 4
                 pre = ""
             [[languages.uk.menus.main]]
                 name = "Нотатки"
@@ -210,21 +210,21 @@ paginate = 9
                 weight = 2
                 pre = ""
             [[languages.ru.menus.main]]
+                name = "Библиотека"
+                url = "/ru/library/"
+                weight = 3
+                pre = ""
+            [[languages.ru.menus.main]]
                 name = "Проекты"
                 url = "/ru/page/about-us/"
                 identifier = "projects"
-                weight = 3
+                weight = 4
                 pre = ""
             [[languages.ru.menus.main]]
                 parent = "projects"
                 name = "Истории"
                 url = "/ru/stories/"
                 weight = 1
-                pre = ""
-            [[languages.ru.menus.main]]
-                name = "Библиотека"
-                url = "/ru/library/"
-                weight = 4
                 pre = ""
             [[languages.ru.menus.main]]
                 name = "Заметки"
