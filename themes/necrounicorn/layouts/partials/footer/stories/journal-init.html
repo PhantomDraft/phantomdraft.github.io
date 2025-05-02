@@ -19,7 +19,7 @@
     $(function () {
       // Animation of images for the current page
       function animateImages(page1, page2) {
-        let $images = $('.turn-page-wrapper[page="' + page1 + '"], .turn-page-wrapper[page="' + page2 + '"]').find('.tooltip-img');
+        let $images = $('.turn-page-wrapper[page="' + page1 + '"], .turn-page-wrapper[page="' + page2 + '"]').find('.tooltip-img, .tooltip-img-extended');
         $images.each(function (index, img) {
           $(img).css({
             'opacity': 0,
@@ -82,37 +82,32 @@
         });
       });
 
-  // NEW: show full image + alt-text on double-click of .tooltip-img-extended
-  $(document).on('dblclick', '.tooltip-img-extended', function() {
-    const $img    = $(this);
-    const src     = $img.attr('src');
-    const altText = $img.attr('alt') || '';
-
-    // create modal container
-    const $modal   = $('<div>', { class: 'tooltip-modal' });
-    const $content = $('<div>', { class: 'tooltip-content' });
-    const $fullImg = $('<img>', { 
-      src: src,
-      alt: altText,
-      class: 'tooltip-full-img'
-    });
-    const $caption = $('<div>').text(altText);
-    const $close   = $('<button>', { class: 'close-btn' })
-                       .text('Close');
-
-    // close handlers
-    $close.on('click', () => $modal.remove());
-    $modal.on('click', e => {
-      if (e.target === $modal[0]) {
-        $modal.remove();
-      }
-    });
-
-    // assemble modal
-    $content.append($fullImg, $caption, $close);
-    $modal.append($content).appendTo('body');
-  });
-
+      // NEW: show full image + alt-text on double-click of .tooltip-img-extended
+      $(document).on('dblclick', '.tooltip-img-extended', function() {
+        const $img = $(this);
+        const src = $img.attr('src');
+        const altText = $img.attr('alt') || '';
+        // create modal container
+        const $modal = $('<div>', { class: 'tooltip-modal' });
+        const $content = $('<div>', { class: 'tooltip-content' });
+        const $fullImg = $('<img>', {
+          src: src, 
+          alt: altText, 
+          class: 'tooltip-full-img'
+        });
+        const $caption = $('<div>').text(altText);
+        const $close = $('<button>', { class: 'close-btn' }).text('Close');
+        // close handlers
+        $close.on('click', () => $modal.remove());
+        $modal.on('click', e => {
+          if (e.target === $modal[0]) {
+            $modal.remove();
+          }
+        });
+        // assemble modal
+        $content.append($fullImg, $caption, $close);
+        $modal.append($content).appendTo('body');
+      });
     });
 
     document.addEventListener("DOMContentLoaded", function () {

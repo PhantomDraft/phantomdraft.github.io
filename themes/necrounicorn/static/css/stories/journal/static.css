@@ -175,6 +175,8 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
+    .tooltip-full-img {max-width: 100%;}
+
     .close-btn {
       background: #f4f1cb;
       color: #000;
