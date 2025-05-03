@@ -83,7 +83,7 @@
       });
 
       // NEW: show full image + alt-text on double-click of .tooltip-img-extended
-      $(document).on('dblclick', '.tooltip-img-extended', function() {
+      $(document).on('click', '.tooltip-img-extended', function() {
         const $img = $(this);
         const src = $img.attr('src');
         const altText = $img.attr('alt') || '';
