@@ -91,7 +91,7 @@ paginate = 9
         pre = ""
     [[menus.main]]
         parent = "projects"
-        name = "Stories"
+        name = "Spirits Show"
         url = "/stories/"
         weight = 1
         pre = ""
@@ -108,17 +108,17 @@ paginate = 9
 
     # social, maxum 6
     [[menus.social]]
-        name = "Horrorprom (Instagram)"
+        name = "Instagram"
         url = "https://www.instagram.com/horrorprom/"
         pre = ""
         weight = 1
     [[menus.social]]
-        name = "Spirits Show (YouTube)"
+        name = "YouTube"
         url = "https://www.youtube.com/@spirits-show"
         pre = ""
         weight = 2
     [[menus.social]]
-        name = "Doomform (TikTok)"
+        name = "TikTok"
         url = "https://www.tiktok.com/@doomform"
         pre = ""
         weight = 3
@@ -165,7 +165,7 @@ paginate = 9
                 pre = ""
             [[languages.uk.menus.main]]
                 parent = "projects"
-                name = "Історії"
+                name = "Spirits Show"
                 url = "/uk/stories/"
                 weight = 1
                 pre = ""
@@ -182,17 +182,17 @@ paginate = 9
 
             # social
             [[languages.uk.menus.social]]
-                name = "Horrorprom (Instagram)"
+                name = "Instagram"
                 url = "https://www.instagram.com/horrorprom/"
                 pre = ""
                 weight = 1
             [[languages.uk.menus.social]]
-                name = "Spirits Show (YouTube)"
+                name = "YouTube"
                 url = "https://www.youtube.com/@spirits-show"
                 pre = ""
                 weight = 2
             [[languages.uk.menus.social]]
-                name = "Doomform (TikTok)"
+                name = "TikTok"
                 url = "https://www.tiktok.com/@doomform"
                 pre = ""
                 weight = 3
@@ -222,7 +222,7 @@ paginate = 9
                 pre = ""
             [[languages.ru.menus.main]]
                 parent = "projects"
-                name = "Истории"
+                name = "Spirits Show"
                 url = "/ru/stories/"
                 weight = 1
                 pre = ""
@@ -239,17 +239,17 @@ paginate = 9
 
             # social
             [[languages.ru.menus.social]]
-                name = "Horrorprom (Instagram)"
+                name = "Instagram"
                 url = "https://www.instagram.com/horrorprom/"
                 pre = ""
                 weight = 1
             [[languages.ru.menus.social]]
-                name = "Spirits Show (YouTube)"
+                name = "YouTube"
                 url = "https://www.youtube.com/@spirits-show"
                 pre = ""
                 weight = 2
             [[languages.ru.menus.social]]
-                name = "Doomform (TikTok)"
+                name = "TikTok"
                 url = "https://www.tiktok.com/@doomform"
                 pre = ""
                 weight = 3
