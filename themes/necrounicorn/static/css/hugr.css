@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: PD
 	Author URI: https://github.com/PhantomDraft
-	Version: 28.01
+	Version: 28.02
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -1444,7 +1444,7 @@ keyframes pulse {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
-    line-height: 45px; color: red;
+    line-height: 45px; color: #fff;
 }
 .mobile_navigation button:hover, .mobile_navigation button:active {
     background: #1e1e20;
