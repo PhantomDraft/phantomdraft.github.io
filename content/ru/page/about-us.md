@@ -1,9 +1,9 @@
 ---
-title: "Morguenal Projects"
+title: "Project PD"
 description: "Biotrash Prodactions"
 # format for string: "xxxx-xx-xx"
 date: 2025-01-22
-lastmod: "2025-01-29"
+lastmod: "2025-05-07"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
@@ -28,7 +28,7 @@ hideFromSitemap: false
 ---
 <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.jpg); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
-		<h2>Phantom Draft</h2>
+		<h2>PD (Phantom Draft)</h2>
 		<p>Записи о проектах в жанре хоррора и панк-поджанрах (включая Биопанк, Мифпанк, Дримпанк и другие).</p>
 		<p>Официальные языковые версии проекта:</p>
 		<ul>
@@ -46,14 +46,6 @@ hideFromSitemap: false
 
 - <a href="/ru/posts/" target="_blank"><strong>Notes</strong></a> — посты из жизни, уведомления об обновлениях на проекте.
 - <a href="/ru/articles/" target="_blank"><strong>Articles</strong></a> — мои статьи о работах в жанре хоррор, поджанрах киберпанка, фантастике и фэнтези (в частности, дарк-фэнтези), а также описания моих собственных проектов.
-- <a href="/ru/stories/" target="_blank"><strong>Stories</strong></a> — здесь размещён веб-журнал *Spirits Show*.
-
-#### Spirits Show
-
-*Spirits Show* — это интерактивные истории в жанрах хоррор и чёрной комедии. Название является игрой слов. Вероятно, однажды я расскажу отдельную историю о том, как некий торговец алкоголем сталкивается с проблемами экспорта из-за начавшейся войны и решает переделать свой бизнес. Вдохновляться я, конечно, буду спиритическими сеансами, популярными во времена мировой войны, а также *Mystery Hack* из *Gravity Falls*.
-
-Этот раздел напрямую связан с <a href="https://youtube.com/playlist?list=PLRSQ_MvJCAAgpwDfSlsxjm9BasAn61rB0&si=XXDnGKBleC7qy4WO" target="_blank"><strong>плейлистом "Stories"</strong></a> на YouTube-канале, AI-генерациями в Instagram, а также площадками, где я публикую рассказы.
-
 - <a href="/ru/library/" target="_blank"><strong>Library</strong></a> — библиотека, куда я постепенно добавляю все изученные работы и, как следствие, пишу рецензии. Этот раздел связан с <a href="https://youtube.com/playlist?list=PLRSQ_MvJCAAgfE99FrnjgDgLP6NG9AjGC&si=eZ79NL3seBIAhtdq" target="_blank">плейлистом "Gourmet of Horror"</a>. Я начал добавлять свои любимые и самые значимые работы, опираясь на временную отметку, когда был написан *Франкенштейн* Мэри Шелли, так что стоит понимать, что я собираюсь обозреть действительно много произведений. Однако вне очереди будут появляться современные работы, которые я считаю важными для обзора.
 
 ### Категории проекта
@@ -76,6 +68,19 @@ hideFromSitemap: false
 
 Эти проекты существуют отдельно от основного сайта, но часто на него ссылаются или дополняют уникальным контентом.
 
+#### Spirits Show
+
+<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(); background-blend-mode: saturation; background-position-y: 30% !important;">
+	<div class="t_center castration base_width p_relative">
+		<h4>Spirits Show</h4>
+		<p>
+			<a title="YouTube" rel="nofollow" href="https://www.youtube.com/@spirits-show" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+		</p>
+	</div>
+</div>
+
+- <a href="/ru/stories/" target="_blank">*Spirits Show*</a> — это интерактивные истории в жанрах хоррор и чёрной комедии. Название является игрой слов. Вероятно, однажды я расскажу отдельную историю о том, как некий торговец алкоголем сталкивается с проблемами экспорта из-за начавшейся войны и решает переделать свой бизнес. Вдохновляться я, конечно, буду спиритическими сеансами, популярными во времена мировой войны, а также *Mystery Hack* из *Gravity Falls*.
+
 <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/ru/images/page/about-us/horrorprom.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h4>Horror Writing Prompts</h4>
@@ -87,17 +92,6 @@ hideFromSitemap: false
 </div>
 
 В Instagram не попадают черновики моих работ или случайные AI-генерации — их можно посмотреть в одноимённом Telegram-канале.
-
-<div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(); background-blend-mode: saturation; background-position-y: 30% !important;">
-	<div class="t_center castration base_width p_relative">
-		<h4>Spirits Show</h4>
-		<p>
-			<a title="YouTube" rel="nofollow" href="https://www.youtube.com/@spirits-show" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-		</p>
-	</div>
-</div>
-
-Канал назван в честь упомянутого выше интерактивного журнала. Видео на канале либо кратко излагают информацию и отсылаются к материалам на сайте, либо просто зрелищные.
 
 <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/ru/images/page/about-us/doomform.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">

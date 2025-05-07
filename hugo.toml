@@ -7,7 +7,7 @@
 
 baseURL = 'https://phantom-draft.com/'
 # website title
-title = 'Phantom Draft'
+title = 'PD'
 # theme
 theme = "necrounicorn"
 #mystery
@@ -33,7 +33,7 @@ paginate = 9
     # top image in home page, note that the "/" in path is necessary, the same applies below
     homeTopImg = "/img/cover/default.webp"
     # title in home top image, support Markdown
-    homeTitle = "Phantom Draft"
+    homeTitle = "PD"
     # default image for a post without "image" param
     defaultPostImg = "/img/cover/default.webp"
     # The maximum number of articles displayed on the homepage

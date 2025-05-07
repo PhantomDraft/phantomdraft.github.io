@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: PD
 	Author URI: https://github.com/PhantomDraft
-	Version: 27.03
+	Version: 27.04
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -419,10 +419,10 @@ option {
 }
 
 .default {
-    position: absolute;
+    position: relative;
     width: 1100px;
-    top: 385px; left: 50%;
-    margin-left: -550px;
+    margin: 10px auto 0;
+    overflow-x: hidden;
 }
 .fixed {
     position: fixed;
@@ -1544,8 +1544,6 @@ keyframes pulse {
     /* 1950 */
     .media_base_width, .default {width: 1390px;}
 
-    .default {margin-left: -695px;}
-
     .mobile_navigation {left: 50%; transform: translateX(-695px);}
 
     .modules {
@@ -1569,8 +1567,6 @@ keyframes pulse {
     /* 1750 */
     .media_base_width, .default {width: 1190px;}
 
-    .default {margin-left: -595px;}
-
     .mobile_navigation {left: 50%; transform: translateX(-595px);}
 
     .modules {width: 860px;}
@@ -1587,8 +1583,6 @@ keyframes pulse {
 @media all and (max-width: 1550px) {
     /* 1550 */
     .media_base_width, .default {width: 990px;}
-
-    .default {margin-left: -495px;}
 
     .mobile_navigation {left: 50%; transform: translateX(-495px);}
 
@@ -1620,11 +1614,6 @@ keyframes pulse {
 @media all and (max-width: 1150px) {
     /* 1150 */
     .media_base_width, .default {width: 90%;}
-
-    .default {
-        top: 340px;
-        margin-left: -45%;
-    }
 
     .menu-main, .search-form, .sidebar section.update .tabs-titles {border-bottom: 1px solid #333;}
 
@@ -1778,9 +1767,7 @@ keyframes pulse {
 
     .media_base_width, .default, .menu-main ul li {width: 100%;}
 
-    .default {margin-left: 0;}
-
-    .default, .mobile_navigation {left: 0;}
+    .mobile_navigation {left: 0;}
 
     .mobile_navigation {transform: translateX(0);}
 
