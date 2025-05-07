@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: PD
 	Author URI: https://github.com/PhantomDraft
-	Version: 27.04
+	Version: 27.05
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -1008,7 +1008,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
     font-family: 'Roboto', sans-serif; color: #1e1e20;
 }
 
-.aMessage > h2, .aMessage > h3, .aMessage > h4, .aMessage > p, .aMessage > form p {
+.aMessage > h1, .aMessage > h2, .aMessage > h3, .aMessage > h4, .aMessage > p, .aMessage > form p {
     position: relative;
     display: block;
     padding: 0px 35px;
