@@ -3,7 +3,7 @@
     Theme URI: localhost
     Author: PD
     Author URI: https://github.com/PhantomDraft
-    Version: 28.00
+    Version: 28.01
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -909,6 +909,7 @@ a.page-numbers:hover {color: #b22;}
 
 .slidenav {
     width: 350px; height: 100%;
+    top: 0;
     background: #f9f9f9;
     z-index: 997;
     -webkit-animation: pulse 2s infinite;
