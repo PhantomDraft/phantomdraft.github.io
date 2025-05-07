@@ -3,7 +3,7 @@
     Theme URI: localhost
     Author: PD
     Author URI: https://github.com/PhantomDraft
-    Version: 27.07
+    Version: 27.08
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -532,7 +532,7 @@ option {
     margin: 5px 15px;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    border-radius: 50%;
+    border-radius: 6px;
     border-bottom: 1px solid #bbc3c6;
 }
 body:not(.page-template-feed-main):not(.page-template-feed-main-uk):not(.page-template-feed-main-en) .grid_cover {background-size: 240% !important;}
@@ -543,7 +543,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
     transform: translate(-50%, -30%);
     filter: grayscale(100%);
 }
-.grid_cover:hover img {filter: grayscale(0%);}
+.grid:hover img {filter: grayscale(0%);}
 .grid video {
     height: 150%;
     margin-top: -30%;
