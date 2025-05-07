@@ -68,8 +68,6 @@ hideFromSitemap: false
 
 Ці проєкти існують окремо від основного сайту, але часто посилаються на нього або доповнюють його унікальним контентом.
 
-#### Spirits Show
-
 <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h4>Spirits Show</h4>
@@ -79,7 +77,7 @@ hideFromSitemap: false
 	</div>
 </div>
 
-- <a href="/uk/stories/" target="_blank">*Spirits Show*</a> — це інтерактивні історії в жанрах горор і чорної комедії. Назва є грою слів. Ймовірно, одного дня я розповім окрему історію про торговця алкоголем, який стикається з проблемами експорту через початок війни і вирішує змінити свій бізнес. Натхненням для мене, звісно, будуть спіритичні сеанси, популярні під час Першої світової війни, а також *Mystery Hack* з *Gravity Falls*.
+<a href="/uk/stories/" target="_blank">*Spirits Show*</a> — це інтерактивні історії в жанрах горор і чорної комедії. Назва є грою слів. Ймовірно, одного дня я розповім окрему історію про торговця алкоголем, який стикається з проблемами експорту через початок війни і вирішує змінити свій бізнес. Натхненням для мене, звісно, будуть спіритичні сеанси, популярні під час Першої світової війни, а також *Mystery Hack* з *Gravity Falls*.
 
 <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/uk/images/page/about-us/horrorprom.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">

@@ -71,8 +71,6 @@ The site features specialized content collections that allow for strict filterin
 
 These projects exist separately from the main site but frequently reference it or enhance it with unique content.
 
-#### Spirits Show
-
 <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
 		<h4>Spirits Show</h4>
@@ -82,7 +80,7 @@ These projects exist separately from the main site but frequently reference it o
 	</div>
 </div>
 
-- <a href="/stories/" target="_blank">*Spirits Show*</a> is an interactive series in the horror and dark comedy genres. The title is a play on words. At some point, I might tell a separate story about a liquor trader who faces export problems due to an outbreak of war and decides to repurpose his business. I am certainly inspired by spiritual séances that were popular during World War I, as well as *Mystery Hack* from *Gravity Falls*.
+<a href="/stories/" target="_blank">*Spirits Show*</a> is an interactive series in the horror and dark comedy genres. The title is a play on words. At some point, I might tell a separate story about a liquor trader who faces export problems due to an outbreak of war and decides to repurpose his business. I am certainly inspired by spiritual séances that were popular during World War I, as well as *Mystery Hack* from *Gravity Falls*.
 
 <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/images/page/about-us/horrorprom.webp); background-blend-mode: saturation; background-position-y: 30% !important;">
 	<div class="t_center castration base_width p_relative">
