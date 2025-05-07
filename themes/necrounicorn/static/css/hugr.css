@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: PD
 	Author URI: https://github.com/PhantomDraft
-	Version: 28.02
+	Version: 28.03
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -1409,7 +1409,7 @@ keyframes pulse {
 }
 
 .slidenav {top: 0; right: -350px;}
-.slidenav.active {right: 0px;}
+.slidenav.active {top: 0; right: 0px;}
 
 .slidenav a {color: #111;}
 
