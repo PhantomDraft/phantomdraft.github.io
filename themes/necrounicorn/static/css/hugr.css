@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: PD
 	Author URI: https://github.com/PhantomDraft
-	Version: 27.05
+	Version: 27.06
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -524,6 +524,7 @@ option {
  */
 .breadcrumbs {
     height: 30px;
+    margin-top: 10px;
     font-family: 'Philosopher', sans-serif; line-height: 30px;
 }
 
