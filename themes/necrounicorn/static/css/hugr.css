@@ -3,7 +3,7 @@
 	Theme URI: localhost
 	Author: PD
 	Author URI: https://github.com/PhantomDraft
-	Version: 28.03
+	Version: 28.04
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -74,8 +74,8 @@ body {
     position: static !important;
     top: 0 !important; /* for Google translate */
     min-width: 320px; width: 100%;
-    background-image: url(/img/seamGLOBAL.svg), url(/img/seamGLOBAL.svg);
-    background-repeat: no-repeat;
+    /*background-image: url(/img/seamGLOBAL.svg), url(/img/seamGLOBAL.svg);
+    background-repeat: no-repeat;*/
     overflow-x: hidden; overflow-y: auto;
     font-size: 16px; font-weight: normal;
     -webkit-font-smoothing: antialiased;
@@ -1408,7 +1408,7 @@ keyframes pulse {
     100% {box-shadow: 0 0 1px pink;}
 }
 
-.slidenav {top: 0; right: -350px;}
+.slidenav {right: -350px;}
 .slidenav.active {top: 0; right: 0px;}
 
 .slidenav a {color: #111;}
@@ -1417,6 +1417,7 @@ keyframes pulse {
     z-index: 997;
     display: none;
     height: 100%;
+    top: 0;
     background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);
     cursor: pointer;
 }
