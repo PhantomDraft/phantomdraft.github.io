@@ -3,7 +3,7 @@
     Theme URI: localhost
     Author: PD
     Author URI: https://github.com/PhantomDraft
-    Version: 27.09
+    Version: 28.00
 */
 @font-face {
     font-family: 'FontAwesome';
@@ -550,7 +550,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
 }
 .grid .text h2, .grid .text p {padding: 0 15px;}
 .grid .text h2 a {font-size: 150%; color: #1e1e20; text-decoration: none;}
-.grid .text h2 a:hover {color: #595959; text-decoration: none;}
+.grid .text h2 a:hover {color: red; text-decoration: none;}
 .grid_info {
     padding: 0 15px;
     font-family: 'Roboto', sans-serif;
@@ -560,7 +560,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
     margin: 5px 10px 5px 0;
 }
 .grid_info a {line-height: 1.6; color: #111;}
-.grid_info a:hover {color: pink;}
+.grid_info a:hover {color: red;}
 .grid .text p {font-family: 'Roboto', sans-serif;}
 .grid .text > p {text-align: center;}
 .grid_quote {padding: 10px 15px;}
@@ -589,7 +589,7 @@ body.page-template-feed-main .grid_cover, body.page-template-feed-main-uk .grid_
 .content-list-col > ul > li > a:hover {
     margin-left: 5px;
     background: url(/img/li.png) no-repeat left center;
-    color: #111;
+    color: #111; text-decoration: none;
     -webkit-transition: margin-left 0.2s ease-in-out;
     -moz-transition: margin-left 0.2s ease-in-out;
     -o-transition: margin-left 0.2s ease-in-out;
@@ -956,11 +956,11 @@ keyframes pulse {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
-    line-height: 45px; color: #f9f9f9;
+    line-height: 45px; color: red;
 }
 .mobile_navigation button:hover, .mobile_navigation button:active {
     background: #1e1e20;
-    color: #f9f9f9;
+    color: red;
 }
 
 #table_of_contents {
