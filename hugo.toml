@@ -267,9 +267,9 @@ paginate = 9
         ru = "Канон"
     # profile link
     [author.link]
-        en = ""
-        uk = ""
-        ru = ""
+        en = "https://github.com/pan-canon"
+        uk = "https://github.com/pan-canon"
+        ru = "https://github.com/pan-canon"
     # profile desc
     [author.description]
         en = "Notes on Horror and Punk Subgenre Projects"
