@@ -84,26 +84,21 @@ paginate = 9
         weight = 3
         pre = ""
     [[menus.main]]
+        name = "Notes"
+        url = "/posts/"
+        weight = 4
+        pre = ""
+    [[menus.main]]
         name = "Projects"
         url = "/page/about-us/"
         identifier = "projects"
-        weight = 4
+        weight = 5
         pre = ""
     [[menus.main]]
         parent = "projects"
         name = "Spirits Show"
         url = "/stories/"
         weight = 1
-        pre = ""
-    [[menus.main]]
-        name = "Notes"
-        url = "/posts/"
-        weight = 5
-        pre = ""
-    [[menus.main]]
-        name = "Newsletter"
-        url = "/page/subscribe/"
-        weight = 6
         pre = ""
 
     # social, maxum 6
@@ -158,26 +153,21 @@ paginate = 9
                 weight = 3
                 pre = ""
             [[languages.uk.menus.main]]
+                name = "Нотатки"
+                url = "/uk/posts/"
+                weight = 4
+                pre = ""
+            [[languages.uk.menus.main]]
                 name = "Проєкти"
                 url = "/uk/page/about-us/"
                 identifier = "projects"
-                weight = 4
+                weight = 5
                 pre = ""
             [[languages.uk.menus.main]]
                 parent = "projects"
                 name = "Spirits Show"
                 url = "/uk/stories/"
                 weight = 1
-                pre = ""
-            [[languages.uk.menus.main]]
-                name = "Нотатки"
-                url = "/uk/posts/"
-                weight = 5
-                pre = ""
-            [[languages.uk.menus.main]]
-                name = "Розсилка"
-                url = "/uk/page/subscribe/"
-                weight = 6
                 pre = ""
 
             # social
@@ -215,26 +205,21 @@ paginate = 9
                 weight = 3
                 pre = ""
             [[languages.ru.menus.main]]
+                name = "Заметки"
+                url = "/ru/posts/"
+                weight = 4
+                pre = ""
+            [[languages.ru.menus.main]]
                 name = "Проекты"
                 url = "/ru/page/about-us/"
                 identifier = "projects"
-                weight = 4
+                weight = 5
                 pre = ""
             [[languages.ru.menus.main]]
                 parent = "projects"
                 name = "Spirits Show"
                 url = "/ru/stories/"
                 weight = 1
-                pre = ""
-            [[languages.ru.menus.main]]
-                name = "Заметки"
-                url = "/ru/posts/"
-                weight = 5
-                pre = ""
-            [[languages.ru.menus.main]]
-                name = "Рассылка"
-                url = "/ru/page/subscribe/"
-                weight = 6
                 pre = ""
 
             # social

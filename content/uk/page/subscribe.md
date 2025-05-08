@@ -5,7 +5,7 @@ description: "Підписка на сповіщення про фантомні
 date: 2025-02-01
 lastmod: "2025-02-01"
 # set false when you want the post publish
-draft: false
+draft: true
 # one category: ["category-1"]
 # more categories: ["category-1", "category-2", ...]
 categories: []
