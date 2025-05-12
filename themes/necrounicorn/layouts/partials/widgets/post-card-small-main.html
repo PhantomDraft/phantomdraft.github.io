@@ -1,11 +1,11 @@
 <li>
     <a class="castration" href="{{ .RelPermalink }}">
         {{ with .Params.image }}
-        <div class="castration fl" style="vertical-align: middle; border-radius: 6px; margin-right: 5px; height: 60px; width: 60px; display: block;">
-            <img style="width: 100%; min-height: 100%;" src="{{ . }}" loading="lazy" alt="{{ $.Title }}">
+        <div class="castration fl" style="border-radius: 6px; margin-right: 5px; height: 50px; width: 50px; display: block">
+            <img style="min-height: 100%; width: 100%" src="{{ . }}" loading="lazy" alt="{{ $.Title }}">
         </div>
         {{ end }}
-        <h2>
+        <h2 style="margin: 0 0">
             {{ .Title }}
         </h2>
     </a>
