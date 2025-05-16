@@ -3,7 +3,7 @@ title: "Project PD"
 description: "Biotrash Prodactions"
 # format for string: "xxxx-xx-xx"
 date: 2025-01-22
-lastmod: "2025-05-07"
+lastmod: "2025-05-16"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
@@ -27,6 +27,9 @@ hideFromSection: false
 hideFromSitemap: false
 ---
 <div class="castration cover p_relative atcCentral" style="background-image: linear-gradient(black, black), url(/img/cover/default.jpg); background-blend-mode: saturation; background-position-y: 30% !important;">
+    <div class="fr p_relative">
+        <a title="Github" rel="me" href="https://github.com/users/PhantomDraft/projects/2" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+    </div>
 	<div class="t_center castration base_width p_relative">
 		<h2>PD (Phantom Draft)</h2>
 		<p>Notes on Horror and Punk Subgenre Projects (including Biopunk, Mythpunk, Dreampunk, and others).</p>
