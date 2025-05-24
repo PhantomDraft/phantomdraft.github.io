@@ -38,7 +38,9 @@
         </div>
         <div class="content-block">
             <div class="content-list-col">
-                <h3 class="t_center">Socials</h3>
+                <h3 class="t_center">
+                    Links
+                </h3>
                 <ul>
                 {{ range .Site.Menus.social }}
                     <li><a href="{{ .URL }}" target="_blank">
@@ -50,7 +52,9 @@
         </div>
         <div class="content-block">
             <div class="content-list-col">
-                <h3 class="t_center">Pan Canon</h3>
+                <h3 class="t_center">
+                    {{ index .Site.Author.name (.Site.Language.Lang | default "en") }}
+                </h3>
                 <ul>
                     <li><a href="https://github.com/pan-canon" target="_blank">
                         Github
