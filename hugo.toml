@@ -100,6 +100,13 @@ paginate = 9
         url = "/stories/"
         weight = 1
         pre = ""
+    [[menus.main]]
+        parent = "projects"
+        name = "Northern Myths"
+        url = "https://northernmyths.phantom-draft.com/"
+        weight = 2
+        pre = ""
+        params.target = "_blank"
 
     # social, maxum 6
     [[menus.social]]
@@ -169,6 +176,13 @@ paginate = 9
                 url = "/uk/stories/"
                 weight = 1
                 pre = ""
+            [[languages.uk.menus.main]]
+                parent = "projects"
+                name = "Northern Myths"
+                url = "https://northernmyths.phantom-draft.com/"
+                weight = 2
+                pre = ""
+                params.target = "_blank"
 
             # social
             [[languages.uk.menus.social]]
@@ -221,6 +235,13 @@ paginate = 9
                 url = "/ru/stories/"
                 weight = 1
                 pre = ""
+            [[languages.ru.menus.main]]
+                parent = "projects"
+                name = "Northern Myths"
+                url = "https://northernmyths.phantom-draft.com/"
+                weight = 2
+                pre = ""
+                params.target = "_blank"
 
             # social
             [[languages.ru.menus.social]]

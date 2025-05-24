@@ -38,7 +38,7 @@
         </div>
         <div class="content-block">
             <div class="content-list-col">
-                <h3 class="t_center">Social networks</h3>
+                <h3 class="t_center">Socials</h3>
                 <ul>
                 {{ range .Site.Menus.social }}
                     <li><a href="{{ .URL }}" target="_blank">
@@ -73,7 +73,7 @@
                 {{ range .Site.Menus.main }}
                     {{ if eq .Identifier "projects" }}
                         {{ range .Children }}
-                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        <li><a href="{{ .URL }}"{{ with .Params.target }} target="{{ . }}"{{ end }}>{{ .Name }}</a></li>
                         {{ end }}
                     {{ end }}
                 {{ end }}

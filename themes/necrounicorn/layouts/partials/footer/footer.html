@@ -16,7 +16,7 @@
                 {{ if .Site.Params.footer.copyRight }}
                     {{ .Site.Title }} © {{ .Site.Params.footer.from }} <br> 
                     {{ if index .Site.Author.link (.Site.Language.Lang | default "en") }}
-                        Theme created by <a href='{{ index .Site.Author.link (.Site.Language.Lang | default "en") }}' rel='nofollow' target='_blank'>
+                        Theme created by <a href='{{ index .Site.Author.link (.Site.Language.Lang | default "en") }}' target='_blank'>
                             {{ index .Site.Author.name (.Site.Language.Lang | default "en") }}
                         </a>
                     {{ else }}
@@ -24,7 +24,7 @@
                     {{ end }} | 
                 {{ end }}
                 {{ if .Site.Params.footer.themeInfo }}
-                    Powered by <a href="https://gohugo.io/">Hugo</a>
+                    Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
                 {{ end }}
                 {{ if .Site.Params.footer.about_us }}
                     <br> <a href='{{ i18n "about_us.uri" }}'>
