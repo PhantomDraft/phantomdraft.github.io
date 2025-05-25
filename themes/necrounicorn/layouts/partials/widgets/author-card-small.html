@@ -10,7 +10,7 @@
 
 <p>
 	{{ if index .Site.Author.link (.Site.Language.Lang | default "en") }}
-		<a href='{{ index .Site.Author.link (.Site.Language.Lang | default "en") }}' rel='nofollow' target='_blank'>
+		<a href='{{ index .Site.Author.link (.Site.Language.Lang | default "en") }}' target='_blank'>
 			{{ index .Site.Author.name (.Site.Language.Lang | default "en") }}
 		</a>
 	{{ else }}
