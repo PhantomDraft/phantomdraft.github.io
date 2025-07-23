@@ -3,7 +3,7 @@ title: "Project PD"
 description: "Biotrash Prodactions"
 # format for string: "xxxx-xx-xx"
 date: 2025-01-22
-lastmod: "2025-05-16"
+lastmod: "2025-07-23"
 # set false when you want the post publish
 draft: false
 # one category: ["category-1"]
@@ -51,6 +51,22 @@ hideFromSitemap: false
 - <a href="/uk/library/" target="_blank"><strong>Library</strong></a> — бібліотека, куди я поступово додаю всі вивчені роботи і, відповідно, пишу рецензії. Цей розділ пов’язаний з <a href="https://youtube.com/playlist?list=PLRSQ_MvJCAAgfE99FrnjgDgLP6NG9AjGC&si=eZ79NL3seBIAhtdq" target="_blank">плейлистом "Gourmet of Horror"</a>. Я почав додавати свої улюблені та найзначущіші роботи, орієнтуючись на часову позначку, коли було написано *Франкенштейн* Мері Шеллі, тож варто розуміти, що я збираюся розглянути багато творів. Однак сучасні роботи, які я вважаю важливими, будуть з’являтися позачергово.
 - <a href="/uk/posts/" target="_blank"><strong>Notes</strong></a> — пости з життя, оновлення про проєкт.
 
+### Категорії проєкту
+
+Категорії дозволяють групувати контент за темами:
+
+- <a href="/uk/categories/my-insights/" target="_blank"><strong>My Insights</strong></a> — матеріали, де я викладаю своє бачення. Як правило, це довгі роздуми з розділу *Articles*.
+- <a href="/uk/categories/my-life/" target="_blank"><strong>My Life</strong></a> — події з мого життя (здебільшого це матеріали з розділу *Notes*).
+- <a href="/uk/categories/my-projects/" target="_blank"><strong>My Projects</strong></a> — мої проєкти, представлені в межах розділу Articles: детальний опис ідей, закладених у проєктах (включаючи, наприклад, промпти генерацій), а також заклики до взаємодії з проєктами (наприклад, опитування).
+- <a href="/uk/categories/my-reviews/" target="_blank"><strong>My Reviews</strong></a> — мої рецензії, які публікуються в розділі *Library*, але, можливо, ця категорія буде використовуватися і для іншого контенту.
+
+### Методи фільтрації контенту
+
+На сайті є спеціалізовані добірки матеріалів, які дозволяють суворо фільтрувати контент за конкретними темами:
+
+- <a href="/uk/series/" target="_blank"><strong>Серії</strong></a> — колекції матеріалів, об’єднані спільною ідеєю, атмосферою або іншими критеріями.
+- <a href="/uk/tags/" target="_blank"><strong>Теги</strong></a> — стандартний спосіб фільтрації контенту за ключовими словами.
+
 ### Підпроєкти Phantom Draft
 
 Ці проєкти існують окремо від основного сайту, але часто посилаються на нього або доповнюють його унікальним контентом.
@@ -87,19 +103,8 @@ hideFromSitemap: false
 
 Навряд чи я серйозно розвиватиму TikTok, але іноді у мене з’являються ідеї для коротких зациклених відео. Як правило, це щось водночас епічне та крінжове.
 
-### Категорії проєкту
+### Самостійні проєкти
+Хоча ці самостійні проєкти безпосередньо не пов’язані з нашими субпроєктами, вони створені студією Phantom Draft як окремі втілення нашого творчого бачення.
 
-Категорії дозволяють групувати контент за темами:
-
-- <a href="/uk/categories/my-insights/" target="_blank"><strong>My Insights</strong></a> — матеріали, де я викладаю своє бачення. Як правило, це довгі роздуми з розділу *Articles*.
-- <a href="/uk/categories/my-life/" target="_blank"><strong>My Life</strong></a> — події з мого життя (здебільшого це матеріали з розділу *Notes*).
-- <a href="/uk/categories/my-projects/" target="_blank"><strong>My Projects</strong></a> — мої проєкти, представлені в межах розділу Articles: детальний опис ідей, закладених у проєктах (включаючи, наприклад, промпти генерацій), а також заклики до взаємодії з проєктами (наприклад, опитування).
-- <a href="/uk/categories/my-reviews/" target="_blank"><strong>My Reviews</strong></a> — мої рецензії, які публікуються в розділі *Library*, але, можливо, ця категорія буде використовуватися і для іншого контенту.
-
-### Методи фільтрації контенту
-
-На сайті є спеціалізовані добірки матеріалів, які дозволяють суворо фільтрувати контент за конкретними темами:
-
-- <a href="/uk/series/" target="_blank"><strong>Серії</strong></a> — колекції матеріалів, об’єднані спільною ідеєю, атмосферою або іншими критеріями.
-- <a href="/uk/tags/" target="_blank"><strong>Теги</strong></a> — стандартний спосіб фільтрації контенту за ключовими словами.
+- <a href="https://northernmyths.phantom-draft.com/" target="_blank"><strong>Northern Myths</strong></a> — Viking Myths and Their Debunking (en).
 <!--more-->
