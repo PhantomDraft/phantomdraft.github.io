@@ -17,7 +17,7 @@ enableRobotsTXT = true
 # length of summary
 summaryLength = 50
 # default content of website
-deFaultContentLanguage = "en"
+defaultContentLanguage = "en"
 # If true, auto-detect Chinese/Japanese/Korean Languages in the content.
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage = false
@@ -56,9 +56,9 @@ paginate = 9
         # whether to enable footer
         enable = true
         # copyright
-        copyRight = true
+        copyright = true
         from = 2025
-        # wheher to enable theme information
+        # whether to enable theme information
         themeInfo = true
         # privacy policy
         privacy_policy = true

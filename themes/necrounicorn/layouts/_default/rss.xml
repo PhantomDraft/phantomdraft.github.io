@@ -5,15 +5,15 @@
     <link>{{ .Site.BaseURL }}</link>
     <description>{{ .Site.Params.description | plainify }}</description>
     <language>{{ .Site.Language.Lang }}</language>
-    <!-- Все посты кроме библиотеки и страниц -->
+    <!-- All posts except the library and pages -->
     {{- $articles := where .Site.RegularPages "Section" "not in" (slice "library" "page") -}}
-    <!-- Все записи библиотеки -->
+    <!-- All library entries -->
     {{- $library := where .Site.RegularPages "Section" "library" -}}
-    <!-- Только обновления библиотеки -->
+    <!-- Only library updates -->
     {{- $filteredLibrary := where $library ".Lastmod" "gt" (now.AddDate 0 -1 0) -}}
-    <!-- Объединяем статьи и библиотеку -->
+    <!-- Combine articles and the library -->
     {{- $allItems := union $articles $filteredLibrary -}}
-    <!-- Сортируем по дате публикации/обновления -->
+    <!-- Sort by publication/update date -->
     {{- $sortedItems := sort $allItems ".Date" "desc" -}}
     {{- range $sortedItems -}}
     <item>

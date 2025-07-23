@@ -13,7 +13,7 @@
         </p>
         {{ if .Site.Params.footer.enable }}
             <p>
-                {{ if .Site.Params.footer.copyRight }}
+                {{ if .Site.Params.footer.copyright }}
                     {{ .Site.Title }} © {{ .Site.Params.footer.from }} <br> 
                     {{ if index .Site.Author.link (.Site.Language.Lang | default "en") }}
                         Theme created by <a href='{{ index .Site.Author.link (.Site.Language.Lang | default "en") }}' target='_blank'>
